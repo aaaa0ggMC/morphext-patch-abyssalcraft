@@ -333,5 +333,112 @@ public final class AbyssalActions {
         }
     }
 
+    /** 恐惧生物：恐惧战吼（范围声波与恐惧震慑） */
+    public static class DreadRoar extends AbyssalCraftAction {
+        public DreadRoar() { super(120); }
+
+        @Override
+        protected boolean executeServer(EntityLivingBase entity, AbstractMorph morph) {
+            World world = entity.world;
+            List<EntityLivingBase> list = findNearbyEntities(entity, 8.0D);
+            DamageSource source = entity instanceof EntityPlayer ? DamageSource.causePlayerDamage((EntityPlayer) entity) : DamageSource.causeMobDamage(entity);
+            for (EntityLivingBase e : list) {
+                e.attackEntityFrom(source, 6.0F);
+                e.addPotionEffect(new PotionEffect(MobEffects.SLOWNESS, 80, 1));
+                e.addPotionEffect(new PotionEffect(MobEffects.WEAKNESS, 120, 0));
+                if (AbyssalCraftAPI.dread_plague != null) {
+                    e.addPotionEffect(new PotionEffect(AbyssalCraftAPI.dread_plague, 100, 0));
+                }
+            }
+            if (world instanceof WorldServer) {
+                ((WorldServer) world).spawnParticle(EnumParticleTypes.SMOKE_LARGE,
+                        entity.posX, entity.posY + 0.5D, entity.posZ,
+                        40, 2.0D, 0.4D, 2.0D, 0.05D);
+            }
+            world.playSound(null, entity.posX, entity.posY, entity.posZ,
+                    SoundEvents.ENTITY_WITHER_SPAWN, SoundCategory.PLAYERS, 1.0F, 1.4F);
+            return true;
+        }
+    }
+
+    /** 暗影生物：暗影闪烁步（向前暗影突进） */
+    public static class ShadowStep extends AbyssalCraftAction {
+        public ShadowStep() { super(70); }
+
+        @Override
+        protected boolean executeServer(EntityLivingBase entity, AbstractMorph morph) {
+            World world = entity.world;
+            Vec3d look = entity.getLook(1.0F);
+            double targetX = entity.posX + look.x * 7.0D;
+            double targetY = entity.posY + look.y * 7.0D;
+            double targetZ = entity.posZ + look.z * 7.0D;
+
+            // 检查目标点安全地形
+            net.minecraft.util.math.BlockPos targetPos = new net.minecraft.util.math.BlockPos(targetX, targetY, targetZ);
+            if (!world.getBlockState(targetPos).getMaterial().isSolid()) {
+                entity.setPositionAndUpdate(targetX, targetY, targetZ);
+            } else {
+                entity.setPositionAndUpdate(entity.posX + look.x * 3.5D, entity.posY, entity.posZ + look.z * 3.5D);
+            }
+
+            if (world instanceof WorldServer) {
+                ((WorldServer) world).spawnParticle(EnumParticleTypes.PORTAL,
+                        entity.posX, entity.posY + 0.5D, entity.posZ,
+                        30, 0.5D, 0.5D, 0.5D, 0.1D);
+            }
+            world.playSound(null, entity.posX, entity.posY, entity.posZ,
+                    SoundEvents.ENTITY_ENDERMEN_TELEPORT, SoundCategory.PLAYERS, 1.2F, 0.8F);
+            return true;
+        }
+    }
+
+    /** 修格斯：腐蚀酸雾喷射 */
+    public static class AcidMelt extends AbyssalCraftAction {
+        public AcidMelt() { super(80); }
+
+        @Override
+        protected boolean executeServer(EntityLivingBase entity, AbstractMorph morph) {
+            World world = entity.world;
+            List<EntityLivingBase> list = findNearbyEntities(entity, 5.0D);
+            DamageSource source = entity instanceof EntityPlayer ? DamageSource.causePlayerDamage((EntityPlayer) entity) : DamageSource.causeMobDamage(entity);
+            for (EntityLivingBase e : list) {
+                e.attackEntityFrom(source, 7.0F);
+                e.addPotionEffect(new PotionEffect(MobEffects.SLOWNESS, 60, 2));
+                e.addPotionEffect(new PotionEffect(MobEffects.MINING_FATIGUE, 100, 1));
+            }
+            if (world instanceof WorldServer) {
+                ((WorldServer) world).spawnParticle(EnumParticleTypes.VILLAGER_ANGRY,
+                        entity.posX, entity.posY + 0.5D, entity.posZ,
+                        25, 1.5D, 0.3D, 1.5D, 0.05D);
+            }
+            world.playSound(null, entity.posX, entity.posY, entity.posZ,
+                    SoundEvents.BLOCK_LAVA_EXTINGUISH, SoundCategory.PLAYERS, 1.2F, 0.9F);
+            return true;
+        }
+    }
+
+    /** 反物质生物：反物质脉冲射击 */
+    public static class AntimatterBlast extends AbyssalCraftAction {
+        public AntimatterBlast() { super(90); }
+
+        @Override
+        protected boolean executeServer(EntityLivingBase entity, AbstractMorph morph) {
+            World world = entity.world;
+            List<EntityLivingBase> list = findNearbyEntities(entity, 6.0D);
+            DamageSource source = entity instanceof EntityPlayer ? DamageSource.causePlayerDamage((EntityPlayer) entity) : DamageSource.causeMobDamage(entity);
+            for (EntityLivingBase e : list) {
+                e.attackEntityFrom(source, 10.0F);
+                if (AbyssalCraftAPI.antimatter_potion != null) {
+                    e.addPotionEffect(new PotionEffect(AbyssalCraftAPI.antimatter_potion, 80, 0));
+                } else {
+                    e.addPotionEffect(new PotionEffect(MobEffects.WITHER, 80, 0));
+                }
+            }
+            world.playSound(null, entity.posX, entity.posY, entity.posZ,
+                    SoundEvents.ENTITY_GENERIC_EXPLODE, SoundCategory.PLAYERS, 0.8F, 1.6F);
+            return true;
+        }
+    }
+
     private AbyssalActions() { }
 }

@@ -39,25 +39,11 @@ public abstract class AbyssalCraftAction implements IAction, ICooldownAction {
         }
 
         if (!entity.world.isRemote) {
-            boolean success = executeServer(entity, morph);
-            if (success && cooldownTicks > 0) {
-                applyCooldown(entity, cooldownTicks);
-            }
+            executeServer(entity, morph);
         }
     }
 
     protected abstract boolean executeServer(EntityLivingBase entity, AbstractMorph morph);
-
-    protected void applyCooldown(EntityLivingBase entity, int ticks) {
-        try {
-            Class<?> clazz = Class.forName("jones.metamorphmax.init.PotionInit");
-            Potion potion = (Potion) clazz.getField("MOB_ABILITY_COOLDOWN").get(null);
-            if (potion != null) {
-                entity.addPotionEffect(new PotionEffect(potion, ticks, 0, false, false));
-            }
-        } catch (Throwable ignored) {
-        }
-    }
 
     /**
      * 计算安全的弹射物生成坐标（朝视线方向前向偏移，避免与释放者 AABB 重叠碰撞导致自伤）

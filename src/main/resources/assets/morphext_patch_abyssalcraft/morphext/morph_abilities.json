@@ -5,13 +5,16 @@
       "water_breath",
       "swim"
     ],
-    "action": "ac_acid_spit",
     "immunities": [
       "abyssalcraft:dread_plague",
       "potion.dplague"
     ],
     "damageImmunities": [
       "acid"
+    ],
+    "actions": [
+      "ac_acid_spit",
+      "ac_acid_melt"
     ]
   },
   "abyssalcraft.lessershoggoth": {
@@ -20,13 +23,16 @@
       "water_breath",
       "swim"
     ],
-    "action": "ac_acid_spit",
     "immunities": [
       "abyssalcraft:dread_plague",
       "potion.dplague"
     ],
     "damageImmunities": [
       "acid"
+    ],
+    "actions": [
+      "ac_acid_spit",
+      "ac_acid_melt"
     ]
   },
   "abyssalcraft:shoggoth": {
@@ -37,7 +43,8 @@
     ],
     "actions": [
       "ac_acid_spit",
-      "ac_shoggoth_ooze"
+      "ac_shoggoth_ooze",
+      "ac_acid_melt"
     ],
     "immunities": [
       "abyssalcraft:dread_plague",
@@ -55,7 +62,8 @@
     ],
     "actions": [
       "ac_acid_spit",
-      "ac_shoggoth_ooze"
+      "ac_shoggoth_ooze",
+      "ac_acid_melt"
     ],
     "immunities": [
       "abyssalcraft:dread_plague",
@@ -73,7 +81,8 @@
     ],
     "actions": [
       "ac_acid_spit",
-      "ac_shoggoth_ooze"
+      "ac_shoggoth_ooze",
+      "ac_acid_melt"
     ],
     "immunities": [
       "abyssalcraft:dread_plague",
@@ -91,7 +100,8 @@
     ],
     "actions": [
       "ac_acid_spit",
-      "ac_shoggoth_ooze"
+      "ac_shoggoth_ooze",
+      "ac_acid_melt"
     ],
     "immunities": [
       "abyssalcraft:dread_plague",
@@ -109,13 +119,16 @@
       "sun_allergy",
       "rotten"
     ],
-    "action": "ac_ghoul_pounce",
     "immunities": [
       "abyssalcraft:coralium_plague",
       "potion.cplague"
     ],
     "damageImmunities": [
       "drown"
+    ],
+    "actions": [
+      "ac_ghoul_pounce",
+      "ac_remnant_screech"
     ]
   },
   "abyssalcraft.depthsghoul": {
@@ -126,13 +139,16 @@
       "sun_allergy",
       "rotten"
     ],
-    "action": "ac_ghoul_pounce",
     "immunities": [
       "abyssalcraft:coralium_plague",
       "potion.cplague"
     ],
     "damageImmunities": [
       "drown"
+    ],
+    "actions": [
+      "ac_ghoul_pounce",
+      "ac_remnant_screech"
     ]
   },
   "abyssalcraft:abyssalzombie": {
@@ -142,13 +158,16 @@
       "sun_allergy",
       "rotten"
     ],
-    "action": "ac_coralium_squirt",
     "immunities": [
       "abyssalcraft:coralium_plague",
       "potion.cplague"
     ],
     "damageImmunities": [
       "drown"
+    ],
+    "actions": [
+      "ac_ghoul_pounce",
+      "ac_remnant_screech"
     ]
   },
   "abyssalcraft.abyssalzombie": {
@@ -158,13 +177,16 @@
       "sun_allergy",
       "rotten"
     ],
-    "action": "ac_coralium_squirt",
     "immunities": [
       "abyssalcraft:coralium_plague",
       "potion.cplague"
     ],
     "damageImmunities": [
       "drown"
+    ],
+    "actions": [
+      "ac_ghoul_pounce",
+      "ac_remnant_screech"
     ]
   },
   "abyssalcraft:coralsquid": {
@@ -172,13 +194,16 @@
       "water_breath",
       "swim"
     ],
-    "action": "ac_coralium_squirt",
     "immunities": [
       "abyssalcraft:coralium_plague",
       "potion.cplague"
     ],
     "damageImmunities": [
       "drown"
+    ],
+    "actions": [
+      "ac_coralium_squirt",
+      "ac_ghoul_pounce"
     ]
   },
   "abyssalcraft.coralsquid": {
@@ -186,13 +211,16 @@
       "water_breath",
       "swim"
     ],
-    "action": "ac_coralium_squirt",
     "immunities": [
       "abyssalcraft:coralium_plague",
       "potion.cplague"
     ],
     "damageImmunities": [
       "drown"
+    ],
+    "actions": [
+      "ac_coralium_squirt",
+      "ac_ghoul_pounce"
     ]
   },
   "abyssalcraft:coraliumsquid": {
@@ -200,13 +228,16 @@
       "water_breath",
       "swim"
     ],
-    "action": "ac_coralium_squirt",
     "immunities": [
       "abyssalcraft:coralium_plague",
       "potion.cplague"
     ],
     "damageImmunities": [
       "drown"
+    ],
+    "actions": [
+      "ac_coralium_squirt",
+      "ac_ghoul_pounce"
     ]
   },
   "abyssalcraft.coraliumsquid": {
@@ -214,13 +245,16 @@
       "water_breath",
       "swim"
     ],
-    "action": "ac_coralium_squirt",
     "immunities": [
       "abyssalcraft:coralium_plague",
       "potion.cplague"
     ],
     "damageImmunities": [
       "drown"
+    ],
+    "actions": [
+      "ac_coralium_squirt",
+      "ac_ghoul_pounce"
     ]
   },
   "abyssalcraft:dragonboss": {
@@ -228,7 +262,6 @@
       "fly",
       "fire_proof"
     ],
-    "action": "ac_spectral_fireball",
     "immunities": [
       "abyssalcraft:coralium_plague",
       "potion.cplague"
@@ -238,6 +271,10 @@
       "onFire",
       "lava",
       "fall"
+    ],
+    "actions": [
+      "ac_spectral_fireball",
+      "ac_remnant_screech"
     ]
   },
   "abyssalcraft.dragonboss": {
@@ -245,7 +282,6 @@
       "fly",
       "fire_proof"
     ],
-    "action": "ac_spectral_fireball",
     "immunities": [
       "abyssalcraft:coralium_plague",
       "potion.cplague"
@@ -255,6 +291,10 @@
       "onFire",
       "lava",
       "fall"
+    ],
+    "actions": [
+      "ac_spectral_fireball",
+      "ac_remnant_screech"
     ]
   },
   "abyssalcraft:dragonminion": {
@@ -262,7 +302,6 @@
       "fly",
       "fire_proof"
     ],
-    "action": "ac_spectral_fireball",
     "immunities": [
       "abyssalcraft:coralium_plague",
       "potion.cplague"
@@ -272,6 +311,10 @@
       "onFire",
       "lava",
       "fall"
+    ],
+    "actions": [
+      "ac_spectral_fireball",
+      "ac_remnant_screech"
     ]
   },
   "abyssalcraft.dragonminion": {
@@ -279,7 +322,6 @@
       "fly",
       "fire_proof"
     ],
-    "action": "ac_spectral_fireball",
     "immunities": [
       "abyssalcraft:coralium_plague",
       "potion.cplague"
@@ -289,6 +331,10 @@
       "onFire",
       "lava",
       "fall"
+    ],
+    "actions": [
+      "ac_spectral_fireball",
+      "ac_remnant_screech"
     ]
   },
   "abyssalcraft:dreadling": {
@@ -298,12 +344,16 @@
       "sun_allergy",
       "rotten"
     ],
-    "action": "ac_dread_slug",
     "immunities": [
       "abyssalcraft:dread_plague",
       "potion.dplague"
     ],
-    "damageImmunities": []
+    "damageImmunities": [],
+    "actions": [
+      "ac_dread_slug",
+      "ac_dread_charge",
+      "ac_ghoul_pounce"
+    ]
   },
   "abyssalcraft.dreadling": {
     "abilities": [
@@ -312,60 +362,80 @@
       "sun_allergy",
       "rotten"
     ],
-    "action": "ac_dread_slug",
     "immunities": [
       "abyssalcraft:dread_plague",
       "potion.dplague"
     ],
-    "damageImmunities": []
+    "damageImmunities": [],
+    "actions": [
+      "ac_dread_slug",
+      "ac_dread_charge",
+      "ac_ghoul_pounce"
+    ]
   },
   "abyssalcraft:dreadspawn": {
     "abilities": [
       "night_vision",
       "sun_allergy"
     ],
-    "action": "ac_dread_charge",
     "immunities": [
       "abyssalcraft:dread_plague",
       "potion.dplague"
     ],
-    "damageImmunities": []
+    "damageImmunities": [],
+    "actions": [
+      "ac_dread_slug",
+      "ac_dread_charge",
+      "ac_ghoul_pounce"
+    ]
   },
   "abyssalcraft.dreadspawn": {
     "abilities": [
       "night_vision",
       "sun_allergy"
     ],
-    "action": "ac_dread_charge",
     "immunities": [
       "abyssalcraft:dread_plague",
       "potion.dplague"
     ],
-    "damageImmunities": []
+    "damageImmunities": [],
+    "actions": [
+      "ac_dread_slug",
+      "ac_dread_charge",
+      "ac_ghoul_pounce"
+    ]
   },
   "abyssalcraft:greaterdreadspawn": {
     "abilities": [
       "night_vision",
       "sun_allergy"
     ],
-    "action": "ac_dread_charge",
     "immunities": [
       "abyssalcraft:dread_plague",
       "potion.dplague"
     ],
-    "damageImmunities": []
+    "damageImmunities": [],
+    "actions": [
+      "ac_dread_slug",
+      "ac_dread_charge",
+      "ac_ghoul_pounce"
+    ]
   },
   "abyssalcraft.greaterdreadspawn": {
     "abilities": [
       "night_vision",
       "sun_allergy"
     ],
-    "action": "ac_dread_charge",
     "immunities": [
       "abyssalcraft:dread_plague",
       "potion.dplague"
     ],
-    "damageImmunities": []
+    "damageImmunities": [],
+    "actions": [
+      "ac_dread_slug",
+      "ac_dread_charge",
+      "ac_ghoul_pounce"
+    ]
   },
   "abyssalcraft:dreadguard": {
     "abilities": [
@@ -375,7 +445,8 @@
     ],
     "actions": [
       "ac_dread_barrage",
-      "ac_dread_slug"
+      "ac_dread_slug",
+      "ac_dread_charge"
     ],
     "immunities": [
       "abyssalcraft:dread_plague",
@@ -391,7 +462,8 @@
     ],
     "actions": [
       "ac_dread_barrage",
-      "ac_dread_slug"
+      "ac_dread_slug",
+      "ac_dread_charge"
     ],
     "immunities": [
       "abyssalcraft:dread_plague",
@@ -406,12 +478,15 @@
       "sun_allergy",
       "rotten"
     ],
-    "action": "ac_ghoul_pounce",
     "immunities": [
       "abyssalcraft:dread_plague",
       "potion.dplague"
     ],
-    "damageImmunities": []
+    "damageImmunities": [],
+    "actions": [
+      "ac_ghoul_pounce",
+      "ac_remnant_screech"
+    ]
   },
   "abyssalcraft.dreadedghoul": {
     "abilities": [
@@ -420,49 +495,64 @@
       "sun_allergy",
       "rotten"
     ],
-    "action": "ac_ghoul_pounce",
     "immunities": [
       "abyssalcraft:dread_plague",
       "potion.dplague"
     ],
-    "damageImmunities": []
+    "damageImmunities": [],
+    "actions": [
+      "ac_ghoul_pounce",
+      "ac_remnant_screech"
+    ]
   },
   "abyssalcraft:lesserdreadbeast": {
     "abilities": [
       "night_vision",
       "sun_allergy"
     ],
-    "action": "ac_dread_slug",
     "immunities": [
       "abyssalcraft:dread_plague",
       "potion.dplague"
     ],
-    "damageImmunities": []
+    "damageImmunities": [],
+    "actions": [
+      "ac_dread_slug",
+      "ac_dread_charge",
+      "ac_ghoul_pounce"
+    ]
   },
   "abyssalcraft.lesserdreadbeast": {
     "abilities": [
       "night_vision",
       "sun_allergy"
     ],
-    "action": "ac_dread_slug",
     "immunities": [
       "abyssalcraft:dread_plague",
       "potion.dplague"
     ],
-    "damageImmunities": []
+    "damageImmunities": [],
+    "actions": [
+      "ac_dread_slug",
+      "ac_dread_charge",
+      "ac_ghoul_pounce"
+    ]
   },
   "abyssalcraft:dreadgolem": {
     "abilities": [
       "prevent_fall",
       "step_up"
     ],
-    "action": "ac_dread_slam",
     "immunities": [
       "abyssalcraft:dread_plague",
       "potion.dplague"
     ],
     "damageImmunities": [
       "fall"
+    ],
+    "actions": [
+      "ac_dread_slam",
+      "ac_dread_charge",
+      "ac_dread_roar"
     ]
   },
   "abyssalcraft.dreadgolem": {
@@ -470,13 +560,17 @@
       "prevent_fall",
       "step_up"
     ],
-    "action": "ac_dread_slam",
     "immunities": [
       "abyssalcraft:dread_plague",
       "potion.dplague"
     ],
     "damageImmunities": [
       "fall"
+    ],
+    "actions": [
+      "ac_dread_slam",
+      "ac_dread_charge",
+      "ac_dread_roar"
     ]
   },
   "abyssalcraft:abygolem": {
@@ -484,13 +578,17 @@
       "prevent_fall",
       "step_up"
     ],
-    "action": "ac_dread_slam",
     "immunities": [
       "abyssalcraft:coralium_plague",
       "potion.cplague"
     ],
     "damageImmunities": [
       "fall"
+    ],
+    "actions": [
+      "ac_dread_slam",
+      "ac_dread_charge",
+      "ac_dread_roar"
     ]
   },
   "abyssalcraft.abygolem": {
@@ -498,20 +596,23 @@
       "prevent_fall",
       "step_up"
     ],
-    "action": "ac_dread_slam",
     "immunities": [
       "abyssalcraft:coralium_plague",
       "potion.cplague"
     ],
     "damageImmunities": [
       "fall"
+    ],
+    "actions": [
+      "ac_dread_slam",
+      "ac_dread_charge",
+      "ac_dread_roar"
     ]
   },
   "abyssalcraft:chagaroth": {
     "abilities": [
       "fire_proof"
     ],
-    "action": "ac_dread_slam",
     "immunities": [
       "abyssalcraft:dread_plague",
       "potion.dplague"
@@ -520,13 +621,17 @@
       "inFire",
       "onFire",
       "lava"
+    ],
+    "actions": [
+      "ac_dread_slam",
+      "ac_dread_charge",
+      "ac_dread_roar"
     ]
   },
   "abyssalcraft.chagaroth": {
     "abilities": [
       "fire_proof"
     ],
-    "action": "ac_dread_slam",
     "immunities": [
       "abyssalcraft:dread_plague",
       "potion.dplague"
@@ -535,37 +640,49 @@
       "inFire",
       "onFire",
       "lava"
+    ],
+    "actions": [
+      "ac_dread_slam",
+      "ac_dread_charge",
+      "ac_dread_roar"
     ]
   },
   "abyssalcraft:chagarothfist": {
     "abilities": [
       "prevent_fall"
     ],
-    "action": "ac_dread_slam",
     "immunities": [
       "abyssalcraft:dread_plague"
     ],
     "damageImmunities": [
       "arrow"
+    ],
+    "actions": [
+      "ac_dread_slam",
+      "ac_dread_charge",
+      "ac_dread_roar"
     ]
   },
   "abyssalcraft.chagarothfist": {
     "abilities": [
       "prevent_fall"
     ],
-    "action": "ac_dread_slam",
     "immunities": [
       "abyssalcraft:dread_plague"
     ],
     "damageImmunities": [
       "arrow"
+    ],
+    "actions": [
+      "ac_dread_slam",
+      "ac_dread_charge",
+      "ac_dread_roar"
     ]
   },
   "abyssalcraft:chagarothspawn": {
     "abilities": [
       "fire_proof"
     ],
-    "action": "ac_dread_slam",
     "immunities": [
       "abyssalcraft:dread_plague",
       "potion.dplague"
@@ -574,13 +691,17 @@
       "inFire",
       "onFire",
       "lava"
+    ],
+    "actions": [
+      "ac_dread_slam",
+      "ac_dread_charge",
+      "ac_dread_roar"
     ]
   },
   "abyssalcraft.chagarothspawn": {
     "abilities": [
       "fire_proof"
     ],
-    "action": "ac_dread_slam",
     "immunities": [
       "abyssalcraft:dread_plague",
       "potion.dplague"
@@ -589,6 +710,11 @@
       "inFire",
       "onFire",
       "lava"
+    ],
+    "actions": [
+      "ac_dread_slam",
+      "ac_dread_charge",
+      "ac_dread_roar"
     ]
   },
   "abyssalcraft:shadowcreature": {
@@ -596,7 +722,6 @@
       "night_vision",
       "sun_allergy"
     ],
-    "action": "ac_shadow_veil",
     "immunities": [
       "abyssalcraft:antimatter",
       "potion.antimatter"
@@ -604,6 +729,10 @@
     "damageImmunities": [
       "shadow",
       "fall"
+    ],
+    "actions": [
+      "ac_shadow_veil",
+      "ac_shadow_step"
     ]
   },
   "abyssalcraft.shadowcreature": {
@@ -611,7 +740,6 @@
       "night_vision",
       "sun_allergy"
     ],
-    "action": "ac_shadow_veil",
     "immunities": [
       "abyssalcraft:antimatter",
       "potion.antimatter"
@@ -619,6 +747,10 @@
     "damageImmunities": [
       "shadow",
       "fall"
+    ],
+    "actions": [
+      "ac_shadow_veil",
+      "ac_shadow_step"
     ]
   },
   "abyssalcraft:shadowmonster": {
@@ -626,13 +758,16 @@
       "night_vision",
       "sun_allergy"
     ],
-    "action": "ac_shadow_veil",
     "immunities": [
       "abyssalcraft:antimatter",
       "potion.antimatter"
     ],
     "damageImmunities": [
       "shadow"
+    ],
+    "actions": [
+      "ac_shadow_veil",
+      "ac_shadow_step"
     ]
   },
   "abyssalcraft.shadowmonster": {
@@ -640,13 +775,16 @@
       "night_vision",
       "sun_allergy"
     ],
-    "action": "ac_shadow_veil",
     "immunities": [
       "abyssalcraft:antimatter",
       "potion.antimatter"
     ],
     "damageImmunities": [
       "shadow"
+    ],
+    "actions": [
+      "ac_shadow_veil",
+      "ac_shadow_step"
     ]
   },
   "abyssalcraft:shadowbeast": {
@@ -654,13 +792,17 @@
       "night_vision",
       "sun_allergy"
     ],
-    "action": "ac_shadow_collapse",
     "immunities": [
       "abyssalcraft:antimatter",
       "potion.antimatter"
     ],
     "damageImmunities": [
       "shadow"
+    ],
+    "actions": [
+      "ac_shadow_veil",
+      "ac_shadow_collapse",
+      "ac_shadow_step"
     ]
   },
   "abyssalcraft.shadowbeast": {
@@ -668,13 +810,17 @@
       "night_vision",
       "sun_allergy"
     ],
-    "action": "ac_shadow_collapse",
     "immunities": [
       "abyssalcraft:antimatter",
       "potion.antimatter"
     ],
     "damageImmunities": [
       "shadow"
+    ],
+    "actions": [
+      "ac_shadow_veil",
+      "ac_shadow_collapse",
+      "ac_shadow_step"
     ]
   },
   "abyssalcraft:shadowboss": {
@@ -683,7 +829,6 @@
       "night_vision",
       "sun_allergy"
     ],
-    "action": "ac_shadow_collapse",
     "immunities": [
       "abyssalcraft:antimatter",
       "potion.antimatter"
@@ -691,6 +836,10 @@
     "damageImmunities": [
       "shadow",
       "fall"
+    ],
+    "actions": [
+      "ac_shadow_veil",
+      "ac_shadow_step"
     ]
   },
   "abyssalcraft.shadowboss": {
@@ -699,7 +848,6 @@
       "night_vision",
       "sun_allergy"
     ],
-    "action": "ac_shadow_collapse",
     "immunities": [
       "abyssalcraft:antimatter",
       "potion.antimatter"
@@ -707,6 +855,10 @@
     "damageImmunities": [
       "shadow",
       "fall"
+    ],
+    "actions": [
+      "ac_shadow_veil",
+      "ac_shadow_step"
     ]
   },
   "abyssalcraft:shadowtitan": {
@@ -714,12 +866,16 @@
       "night_vision",
       "sun_allergy"
     ],
-    "action": "ac_shadow_collapse",
     "immunities": [
       "abyssalcraft:antimatter"
     ],
     "damageImmunities": [
       "shadow"
+    ],
+    "actions": [
+      "ac_shadow_veil",
+      "ac_shadow_collapse",
+      "ac_shadow_step"
     ]
   },
   "abyssalcraft.shadowtitan": {
@@ -727,12 +883,16 @@
       "night_vision",
       "sun_allergy"
     ],
-    "action": "ac_shadow_collapse",
     "immunities": [
       "abyssalcraft:antimatter"
     ],
     "damageImmunities": [
       "shadow"
+    ],
+    "actions": [
+      "ac_shadow_veil",
+      "ac_shadow_collapse",
+      "ac_shadow_step"
     ]
   },
   "abyssalcraft:shadowghoul": {
@@ -742,12 +902,15 @@
       "sun_allergy",
       "rotten"
     ],
-    "action": "ac_ghoul_pounce",
     "immunities": [
       "abyssalcraft:antimatter"
     ],
     "damageImmunities": [
       "shadow"
+    ],
+    "actions": [
+      "ac_shadow_veil",
+      "ac_shadow_step"
     ]
   },
   "abyssalcraft.shadowghoul": {
@@ -757,112 +920,142 @@
       "sun_allergy",
       "rotten"
     ],
-    "action": "ac_ghoul_pounce",
     "immunities": [
       "abyssalcraft:antimatter"
     ],
     "damageImmunities": [
       "shadow"
+    ],
+    "actions": [
+      "ac_shadow_veil",
+      "ac_shadow_step"
     ]
   },
   "abyssalcraft:antizombie": {
     "abilities": [
       "rotten"
     ],
-    "action": "ac_anti_implosion",
     "immunities": [
       "abyssalcraft:antimatter",
       "potion.antimatter"
     ],
-    "damageImmunities": []
+    "damageImmunities": [],
+    "actions": [
+      "ac_anti_implosion",
+      "ac_anti_matter_blast"
+    ]
   },
   "abyssalcraft.antizombie": {
     "abilities": [
       "rotten"
     ],
-    "action": "ac_anti_implosion",
     "immunities": [
       "abyssalcraft:antimatter",
       "potion.antimatter"
     ],
-    "damageImmunities": []
+    "damageImmunities": [],
+    "actions": [
+      "ac_anti_implosion",
+      "ac_anti_matter_blast"
+    ]
   },
   "abyssalcraft:antiskeleton": {
     "abilities": [
       "sun_allergy",
       "rotten"
     ],
-    "action": "ac_anti_implosion",
     "immunities": [
       "abyssalcraft:antimatter",
       "potion.antimatter"
     ],
-    "damageImmunities": []
+    "damageImmunities": [],
+    "actions": [
+      "ac_anti_implosion",
+      "ac_anti_matter_blast"
+    ]
   },
   "abyssalcraft.antiskeleton": {
     "abilities": [
       "sun_allergy",
       "rotten"
     ],
-    "action": "ac_anti_implosion",
     "immunities": [
       "abyssalcraft:antimatter",
       "potion.antimatter"
     ],
-    "damageImmunities": []
+    "damageImmunities": [],
+    "actions": [
+      "ac_anti_implosion",
+      "ac_anti_matter_blast"
+    ]
   },
   "abyssalcraft:antispider": {
     "abilities": [
       "climb"
     ],
-    "action": "ac_anti_implosion",
     "immunities": [
       "abyssalcraft:antimatter",
       "potion.antimatter"
     ],
-    "damageImmunities": []
+    "damageImmunities": [],
+    "actions": [
+      "ac_anti_implosion",
+      "ac_anti_matter_blast"
+    ]
   },
   "abyssalcraft.antispider": {
     "abilities": [
       "climb"
     ],
-    "action": "ac_anti_implosion",
     "immunities": [
       "abyssalcraft:antimatter",
       "potion.antimatter"
     ],
-    "damageImmunities": []
+    "damageImmunities": [],
+    "actions": [
+      "ac_anti_implosion",
+      "ac_anti_matter_blast"
+    ]
   },
   "abyssalcraft:anticreeper": {
     "abilities": [],
-    "action": "ac_anti_implosion",
     "immunities": [
       "abyssalcraft:antimatter",
       "potion.antimatter"
     ],
-    "damageImmunities": []
+    "damageImmunities": [],
+    "actions": [
+      "ac_anti_implosion",
+      "ac_anti_matter_blast"
+    ]
   },
   "abyssalcraft.anticreeper": {
     "abilities": [],
-    "action": "ac_anti_implosion",
     "immunities": [
       "abyssalcraft:antimatter",
       "potion.antimatter"
     ],
-    "damageImmunities": []
+    "damageImmunities": [],
+    "actions": [
+      "ac_anti_implosion",
+      "ac_anti_matter_blast"
+    ]
   },
   "abyssalcraft:antibat": {
     "abilities": [
       "fly",
       "prevent_fall"
     ],
-    "action": "ac_anti_implosion",
     "immunities": [
       "abyssalcraft:antimatter",
       "potion.antimatter"
     ],
     "damageImmunities": [
       "fall"
+    ],
+    "actions": [
+      "ac_anti_implosion",
+      "ac_anti_matter_blast"
     ]
   },
   "abyssalcraft.antibat": {
@@ -870,84 +1063,108 @@
       "fly",
       "prevent_fall"
     ],
-    "action": "ac_anti_implosion",
     "immunities": [
       "abyssalcraft:antimatter",
       "potion.antimatter"
     ],
     "damageImmunities": [
       "fall"
+    ],
+    "actions": [
+      "ac_anti_implosion",
+      "ac_anti_matter_blast"
     ]
   },
   "abyssalcraft:antichicken": {
     "abilities": [
       "glide"
     ],
-    "action": "ac_anti_implosion",
     "immunities": [
       "abyssalcraft:antimatter",
       "potion.antimatter"
     ],
-    "damageImmunities": []
+    "damageImmunities": [],
+    "actions": [
+      "ac_anti_implosion",
+      "ac_anti_matter_blast"
+    ]
   },
   "abyssalcraft.antichicken": {
     "abilities": [
       "glide"
     ],
-    "action": "ac_anti_implosion",
     "immunities": [
       "abyssalcraft:antimatter",
       "potion.antimatter"
     ],
-    "damageImmunities": []
+    "damageImmunities": [],
+    "actions": [
+      "ac_anti_implosion",
+      "ac_anti_matter_blast"
+    ]
   },
   "abyssalcraft:anticow": {
     "abilities": [],
-    "action": "ac_anti_implosion",
     "immunities": [
       "abyssalcraft:antimatter",
       "potion.antimatter"
     ],
-    "damageImmunities": []
+    "damageImmunities": [],
+    "actions": [
+      "ac_anti_implosion",
+      "ac_anti_matter_blast"
+    ]
   },
   "abyssalcraft.anticow": {
     "abilities": [],
-    "action": "ac_anti_implosion",
     "immunities": [
       "abyssalcraft:antimatter",
       "potion.antimatter"
     ],
-    "damageImmunities": []
+    "damageImmunities": [],
+    "actions": [
+      "ac_anti_implosion",
+      "ac_anti_matter_blast"
+    ]
   },
   "abyssalcraft:antipig": {
     "abilities": [],
-    "action": "ac_anti_implosion",
     "immunities": [
       "abyssalcraft:antimatter",
       "potion.antimatter"
     ],
-    "damageImmunities": []
+    "damageImmunities": [],
+    "actions": [
+      "ac_anti_implosion",
+      "ac_anti_matter_blast"
+    ]
   },
   "abyssalcraft.antipig": {
     "abilities": [],
-    "action": "ac_anti_implosion",
     "immunities": [
       "abyssalcraft:antimatter",
       "potion.antimatter"
     ],
-    "damageImmunities": []
+    "damageImmunities": [],
+    "actions": [
+      "ac_anti_implosion",
+      "ac_anti_matter_blast"
+    ]
   },
   "abyssalcraft:evilchicken": {
     "abilities": [
       "fire_proof",
       "glide"
     ],
-    "action": "ac_dread_charge",
     "immunities": [],
     "damageImmunities": [
       "inFire",
       "onFire",
       "lava"
+    ],
+    "actions": [
+      "ac_ghoul_pounce",
+      "ac_remnant_screech"
     ]
   },
   "abyssalcraft.evilchicken": {
@@ -955,84 +1172,105 @@
       "fire_proof",
       "glide"
     ],
-    "action": "ac_dread_charge",
     "immunities": [],
     "damageImmunities": [
       "inFire",
       "onFire",
       "lava"
+    ],
+    "actions": [
+      "ac_ghoul_pounce",
+      "ac_remnant_screech"
     ]
   },
   "abyssalcraft:evilcow": {
     "abilities": [
       "fire_proof"
     ],
-    "action": "ac_dread_charge",
     "immunities": [],
     "damageImmunities": [
       "inFire",
       "onFire",
       "lava"
+    ],
+    "actions": [
+      "ac_ghoul_pounce",
+      "ac_remnant_screech"
     ]
   },
   "abyssalcraft.evilcow": {
     "abilities": [
       "fire_proof"
     ],
-    "action": "ac_dread_charge",
     "immunities": [],
     "damageImmunities": [
       "inFire",
       "onFire",
       "lava"
+    ],
+    "actions": [
+      "ac_ghoul_pounce",
+      "ac_remnant_screech"
     ]
   },
   "abyssalcraft:evilpig": {
     "abilities": [
       "fire_proof"
     ],
-    "action": "ac_dread_charge",
     "immunities": [],
     "damageImmunities": [
       "inFire",
       "onFire",
       "lava"
+    ],
+    "actions": [
+      "ac_ghoul_pounce",
+      "ac_remnant_screech"
     ]
   },
   "abyssalcraft.evilpig": {
     "abilities": [
       "fire_proof"
     ],
-    "action": "ac_dread_charge",
     "immunities": [],
     "damageImmunities": [
       "inFire",
       "onFire",
       "lava"
+    ],
+    "actions": [
+      "ac_ghoul_pounce",
+      "ac_remnant_screech"
     ]
   },
   "abyssalcraft:evilsheep": {
     "abilities": [
       "fire_proof"
     ],
-    "action": "ac_dread_charge",
     "immunities": [],
     "damageImmunities": [
       "inFire",
       "onFire",
       "lava"
+    ],
+    "actions": [
+      "ac_ghoul_pounce",
+      "ac_remnant_screech"
     ]
   },
   "abyssalcraft.evilsheep": {
     "abilities": [
       "fire_proof"
     ],
-    "action": "ac_dread_charge",
     "immunities": [],
     "damageImmunities": [
       "inFire",
       "onFire",
       "lava"
+    ],
+    "actions": [
+      "ac_ghoul_pounce",
+      "ac_remnant_screech"
     ]
   },
   "abyssalcraft:demonchicken": {
@@ -1040,12 +1278,14 @@
       "fire_proof",
       "glide"
     ],
-    "action": "ac_dread_charge",
     "immunities": [],
     "damageImmunities": [
       "inFire",
       "onFire",
       "lava"
+    ],
+    "actions": [
+      "ac_dread_charge"
     ]
   },
   "abyssalcraft.demonchicken": {
@@ -1053,84 +1293,98 @@
       "fire_proof",
       "glide"
     ],
-    "action": "ac_dread_charge",
     "immunities": [],
     "damageImmunities": [
       "inFire",
       "onFire",
       "lava"
+    ],
+    "actions": [
+      "ac_dread_charge"
     ]
   },
   "abyssalcraft:demoncow": {
     "abilities": [
       "fire_proof"
     ],
-    "action": "ac_dread_charge",
     "immunities": [],
     "damageImmunities": [
       "inFire",
       "onFire",
       "lava"
+    ],
+    "actions": [
+      "ac_dread_charge"
     ]
   },
   "abyssalcraft.demoncow": {
     "abilities": [
       "fire_proof"
     ],
-    "action": "ac_dread_charge",
     "immunities": [],
     "damageImmunities": [
       "inFire",
       "onFire",
       "lava"
+    ],
+    "actions": [
+      "ac_dread_charge"
     ]
   },
   "abyssalcraft:demonpig": {
     "abilities": [
       "fire_proof"
     ],
-    "action": "ac_dread_charge",
     "immunities": [],
     "damageImmunities": [
       "inFire",
       "onFire",
       "lava"
+    ],
+    "actions": [
+      "ac_dread_charge"
     ]
   },
   "abyssalcraft.demonpig": {
     "abilities": [
       "fire_proof"
     ],
-    "action": "ac_dread_charge",
     "immunities": [],
     "damageImmunities": [
       "inFire",
       "onFire",
       "lava"
+    ],
+    "actions": [
+      "ac_dread_charge"
     ]
   },
   "abyssalcraft:demonsheep": {
     "abilities": [
       "fire_proof"
     ],
-    "action": "ac_dread_charge",
     "immunities": [],
     "damageImmunities": [
       "inFire",
       "onFire",
       "lava"
+    ],
+    "actions": [
+      "ac_dread_charge"
     ]
   },
   "abyssalcraft.demonsheep": {
     "abilities": [
       "fire_proof"
     ],
-    "action": "ac_dread_charge",
     "immunities": [],
     "damageImmunities": [
       "inFire",
       "onFire",
       "lava"
+    ],
+    "actions": [
+      "ac_dread_charge"
     ]
   },
   "abyssalcraft:ghoul": {
@@ -1139,11 +1393,14 @@
       "sun_allergy",
       "rotten"
     ],
-    "action": "ac_ghoul_pounce",
     "immunities": [
       "potion.poison"
     ],
-    "damageImmunities": []
+    "damageImmunities": [],
+    "actions": [
+      "ac_ghoul_pounce",
+      "ac_remnant_screech"
+    ]
   },
   "abyssalcraft.ghoul": {
     "abilities": [
@@ -1151,33 +1408,42 @@
       "sun_allergy",
       "rotten"
     ],
-    "action": "ac_ghoul_pounce",
     "immunities": [
       "potion.poison"
     ],
-    "damageImmunities": []
+    "damageImmunities": [],
+    "actions": [
+      "ac_ghoul_pounce",
+      "ac_remnant_screech"
+    ]
   },
   "abyssalcraft:remnant": {
     "abilities": [
       "hungerless"
     ],
-    "action": "ac_remnant_screech",
     "immunities": [
       "potion.poison",
       "potion.antimatter"
     ],
-    "damageImmunities": []
+    "damageImmunities": [],
+    "actions": [
+      "ac_ghoul_pounce",
+      "ac_remnant_screech"
+    ]
   },
   "abyssalcraft.remnant": {
     "abilities": [
       "hungerless"
     ],
-    "action": "ac_remnant_screech",
     "immunities": [
       "potion.poison",
       "potion.antimatter"
     ],
-    "damageImmunities": []
+    "damageImmunities": [],
+    "actions": [
+      "ac_ghoul_pounce",
+      "ac_remnant_screech"
+    ]
   },
   "abyssalcraft:omotholghoul": {
     "abilities": [
@@ -1185,12 +1451,15 @@
       "hungerless",
       "rotten"
     ],
-    "action": "ac_ghoul_pounce",
     "immunities": [
       "abyssalcraft:antimatter",
       "potion.antimatter"
     ],
-    "damageImmunities": []
+    "damageImmunities": [],
+    "actions": [
+      "ac_ghoul_pounce",
+      "ac_remnant_screech"
+    ]
   },
   "abyssalcraft.omotholghoul": {
     "abilities": [
@@ -1198,34 +1467,41 @@
       "hungerless",
       "rotten"
     ],
-    "action": "ac_ghoul_pounce",
     "immunities": [
       "abyssalcraft:antimatter",
       "potion.antimatter"
     ],
-    "damageImmunities": []
+    "damageImmunities": [],
+    "actions": [
+      "ac_ghoul_pounce",
+      "ac_remnant_screech"
+    ]
   },
   "abyssalcraft:omotholwarden": {
     "abilities": [
       "night_vision",
       "prevent_fall"
     ],
-    "action": "ac_shadow_collapse",
     "immunities": [
       "abyssalcraft:antimatter"
     ],
-    "damageImmunities": []
+    "damageImmunities": [],
+    "actions": [
+      "ac_shadow_collapse"
+    ]
   },
   "abyssalcraft.omotholwarden": {
     "abilities": [
       "night_vision",
       "prevent_fall"
     ],
-    "action": "ac_shadow_collapse",
     "immunities": [
       "abyssalcraft:antimatter"
     ],
-    "damageImmunities": []
+    "damageImmunities": [],
+    "actions": [
+      "ac_shadow_collapse"
+    ]
   },
   "abyssalcraft:jzahar": {
     "abilities": [
@@ -1235,7 +1511,6 @@
       "night_vision",
       "prevent_fall"
     ],
-    "action": "ac_jzahar_oblivion",
     "immunities": [
       "abyssalcraft:dread_plague",
       "abyssalcraft:coralium_plague",
@@ -1248,6 +1523,12 @@
       "onFire",
       "lava",
       "fall"
+    ],
+    "actions": [
+      "ac_jzahar_oblivion",
+      "ac_shadow_collapse",
+      "ac_spectral_fireball",
+      "ac_anti_matter_blast"
     ]
   },
   "abyssalcraft.jzahar": {
@@ -1258,7 +1539,6 @@
       "night_vision",
       "prevent_fall"
     ],
-    "action": "ac_jzahar_oblivion",
     "immunities": [
       "abyssalcraft:dread_plague",
       "abyssalcraft:coralium_plague",
@@ -1271,6 +1551,12 @@
       "onFire",
       "lava",
       "fall"
+    ],
+    "actions": [
+      "ac_jzahar_oblivion",
+      "ac_shadow_collapse",
+      "ac_spectral_fireball",
+      "ac_anti_matter_blast"
     ]
   }
 }

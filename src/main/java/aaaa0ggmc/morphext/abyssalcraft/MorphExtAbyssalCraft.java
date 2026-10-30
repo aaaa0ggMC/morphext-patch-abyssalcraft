@@ -47,5 +47,9 @@ public class MorphExtAbyssalCraft {
         MorphManager.INSTANCE.actions.put("ac_shadow_collapse", new AbyssalActions.ShadowCollapse());
         MorphManager.INSTANCE.actions.put("ac_anti_implosion", new AbyssalActions.AntiImplosion());
         MorphManager.INSTANCE.actions.put("ac_jzahar_oblivion", new AbyssalActions.JzaharOblivion());
+        MorphManager.INSTANCE.actions.put("ac_dread_roar", new AbyssalActions.DreadRoar());
+        MorphManager.INSTANCE.actions.put("ac_shadow_step", new AbyssalActions.ShadowStep());
+        MorphManager.INSTANCE.actions.put("ac_acid_melt", new AbyssalActions.AcidMelt());
+        MorphManager.INSTANCE.actions.put("ac_anti_matter_blast", new AbyssalActions.AntimatterBlast());
     }
 }

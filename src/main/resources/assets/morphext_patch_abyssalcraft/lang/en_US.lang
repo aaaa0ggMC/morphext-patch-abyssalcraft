@@ -13,3 +13,7 @@ morphext.metamorph.desc.ac_shadow_veil=Shadow Veil: Melts into darkness, gaining
 morphext.metamorph.desc.ac_shadow_collapse=Shadow Collapse: Triggers a localized gravitational singularity, violently pulling nearby entities inward and blinding them.
 morphext.metamorph.desc.ac_anti_implosion=Antimatter Implosion: Triggers a micro antimatter collapse that implodes the surrounding space with annihilation damage and antimatter effects.
 morphext.metamorph.desc.ac_jzahar_oblivion=Oblivion Singular: Manifests the dread void of Omothol, crushing and levitating surrounding foes with wither and void damage.
+morphext.metamorph.desc.ac_dread_roar=Dread Roar: Emits a bloodcurdling dread roar, terrifying and weakening nearby enemies while inflicting Dread Plague.
+morphext.metamorph.desc.ac_shadow_step=Shadow Step: Steps through the shadows to instantly blink forward several blocks.
+morphext.metamorph.desc.ac_acid_melt=Acid Melt: Sprays a cone of concentrated acid fog, dealing corroding damage and impairing enemy actions.
+morphext.metamorph.desc.ac_anti_matter_blast=Antimatter Blast: Detonates antimatter energy in front, blasting enemies with annihilating force.
