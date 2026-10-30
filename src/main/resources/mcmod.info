@@ -1,0 +1,16 @@
+[
+{
+  "modid": "morphext_patch_abyssalcraft",
+  "name": "Morph Extension Patch: AbyssalCraft",
+  "description": "Metamorph and Morph Extension integration patch for AbyssalCraft. Automatically grants active and passive abilities and entity immunities for AbyssalCraft mob forms.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "https://github.com/aaaa0ggMC/morphext-patch-abyssalcraft",
+  "updateUrl": "",
+  "authorList": ["aaaa0ggmc"],
+  "credits": "Shinoow for AbyssalCraft, McHorse for Metamorph",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": ["aaaa0ggmc_morph_extension", "abyssalcraft", "metamorph"]
+}
+]
