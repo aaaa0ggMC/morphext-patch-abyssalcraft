@@ -42,8 +42,9 @@ public class MorphExtAbyssalCraft {
     @Mod.EventHandler
     public void init(FMLInitializationEvent event) {
         MinecraftForge.EVENT_BUS.register(MorphBossAdaptHandler.class);
+        aaaa0ggmc.morphext.integration.metamorph.SafeMobActAction.registerAdapter(new AbyssalBossMobActAdapter());
         proxy.init(event);
-        LOGGER.info("[morphext-abyssalcraft] Initialized boss adapt handler and proxies");
+        LOGGER.info("[morphext-abyssalcraft] Initialized boss adapt handler, mob act adapter, and proxies");
     }
 
     private void registerActions() {
