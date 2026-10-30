@@ -29,6 +29,9 @@ public class MorphExtAbyssalCraft {
 
     @Mod.EventHandler
     public void init(FMLInitializationEvent event) {
+        if (event.getSide().isClient()) {
+            SafeCleansingRitualHandler.install();
+        }
         LOGGER.info("[morphext-abyssalcraft] Initialized");
     }
 

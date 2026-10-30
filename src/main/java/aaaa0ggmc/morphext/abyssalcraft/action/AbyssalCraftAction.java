@@ -39,6 +39,7 @@ public abstract class AbyssalCraftAction implements IAction, ICooldownAction {
         }
 
         if (!entity.world.isRemote) {
+            entity.swingArm(net.minecraft.util.EnumHand.MAIN_HAND);
             executeServer(entity, morph);
         }
     }

@@ -15,6 +15,8 @@ import net.minecraft.potion.PotionEffect;
 import net.minecraft.util.DamageSource;
 import net.minecraft.util.EnumParticleTypes;
 import net.minecraft.util.SoundCategory;
+import net.minecraft.util.math.AxisAlignedBB;
+import net.minecraft.util.math.RayTraceResult;
 import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.World;
 import net.minecraft.world.WorldServer;
@@ -135,7 +137,7 @@ public final class AbyssalActions {
         }
     }
 
-    /** 查加洛斯之拳 / 恐惧傀儡：恐惧震地重砸 */
+    /** 查加洛斯之拳 / 恐惧傀儡：恐惧震地重砸 - 满特效重构版 */
     public static class DreadSlam extends AbyssalCraftAction {
         public DreadSlam() { super(90); }
 
@@ -146,13 +148,30 @@ public final class AbyssalActions {
             DamageSource source = entity instanceof EntityPlayer ? DamageSource.causePlayerDamage((EntityPlayer) entity) : DamageSource.causeMobDamage(entity);
             for (EntityLivingBase e : list) {
                 e.attackEntityFrom(source, 12.0F);
-                e.motionY += 0.45D;
+                e.motionY += 0.55D;
+                e.velocityChanged = true;
                 if (AbyssalCraftAPI.dread_plague != null) {
                     e.addPotionEffect(new PotionEffect(AbyssalCraftAPI.dread_plague, 140, 0));
                 }
             }
+
+            // 震地同心圆碎屑与恐惧烈焰粒子
+            if (world instanceof net.minecraft.world.WorldServer) {
+                net.minecraft.world.WorldServer ws = (net.minecraft.world.WorldServer) world;
+                for (int angle = 0; angle < 360; angle += 15) {
+                    double rad = Math.toRadians(angle);
+                    double px = entity.posX + Math.cos(rad) * 4.5D;
+                    double pz = entity.posZ + Math.sin(rad) * 4.5D;
+                    ws.spawnParticle(EnumParticleTypes.SMOKE_LARGE, px, entity.posY + 0.2D, pz, 2, 0.1, 0.2, 0.1, 0.05);
+                    ws.spawnParticle(EnumParticleTypes.LAVA, px, entity.posY + 0.2D, pz, 1, 0.0, 0.0, 0.0, 0.0);
+                }
+                ws.spawnParticle(EnumParticleTypes.EXPLOSION_LARGE, entity.posX, entity.posY + 0.2D, entity.posZ, 2, 0.5, 0.1, 0.5, 0.0);
+            }
+
             world.playSound(null, entity.posX, entity.posY, entity.posZ,
-                    SoundEvents.ENTITY_IRONGOLEM_ATTACK, SoundCategory.PLAYERS, 1.5F, 0.5F);
+                    SoundEvents.ENTITY_IRONGOLEM_ATTACK, SoundCategory.PLAYERS, 1.8F, 0.5F);
+            world.playSound(null, entity.posX, entity.posY, entity.posZ,
+                    SoundEvents.BLOCK_ANVIL_LAND, SoundCategory.PLAYERS, 1.0F, 0.6F);
             return true;
         }
     }
@@ -176,7 +195,7 @@ public final class AbyssalActions {
         }
     }
 
-    /** 食尸鬼家族：飞扑撕咬 */
+    /** 食尸鬼家族：飞扑撕咬 - 修正时序与前向判定盒 */
     public static class GhoulPounce extends AbyssalCraftAction {
         public GhoulPounce() { super(70); }
 
@@ -184,20 +203,33 @@ public final class AbyssalActions {
         protected boolean executeServer(EntityLivingBase entity, AbstractMorph morph) {
             World world = entity.world;
             Vec3d look = entity.getLook(1.0F);
-            entity.motionX += look.x * 1.15D;
-            entity.motionY += 0.36D;
-            entity.motionZ += look.z * 1.15D;
+
+            // 扑跃突进
+            entity.motionX += look.x * 1.25D;
+            entity.motionY += 0.38D;
+            entity.motionZ += look.z * 1.25D;
             entity.velocityChanged = true;
 
-            List<EntityLivingBase> list = findNearbyEntities(entity, 3.2D);
+            // 判定盒沿着位移向量向前延伸平移至落点中心，防止扑中却判定失效
+            AxisAlignedBB hitBox = entity.getEntityBoundingBox().offset(look.x * 1.5D, 0.2D, look.z * 1.5D).grow(2.4D, 1.4D, 2.4D);
+            List<EntityLivingBase> list = world.getEntitiesWithinAABB(EntityLivingBase.class, hitBox,
+                    e -> e != entity && e.isEntityAlive() && !e.isOnSameTeam(entity));
+
             DamageSource source = entity instanceof EntityPlayer ? DamageSource.causePlayerDamage((EntityPlayer) entity) : DamageSource.causeMobDamage(entity);
+            boolean hit = false;
             for (EntityLivingBase target : list) {
-                target.attackEntityFrom(source, 8.0F);
+                target.attackEntityFrom(source, 8.5F);
                 target.addPotionEffect(new PotionEffect(MobEffects.HUNGER, 120, 1));
-                target.addPotionEffect(new PotionEffect(MobEffects.SLOWNESS, 80, 1));
+                target.addPotionEffect(new PotionEffect(MobEffects.SLOWNESS, 60, 1));
+                hit = true;
             }
+
             world.playSound(null, entity.posX, entity.posY, entity.posZ,
                     SoundEvents.ENTITY_ZOMBIE_ATTACK_IRON_DOOR, SoundCategory.PLAYERS, 1.0F, 1.4F);
+            if (hit) {
+                world.playSound(null, entity.posX, entity.posY, entity.posZ,
+                        SoundEvents.ENTITY_GENERIC_EAT, SoundCategory.PLAYERS, 1.4F, 1.2F);
+            }
             return true;
         }
     }
@@ -417,25 +449,57 @@ public final class AbyssalActions {
         }
     }
 
-    /** 反物质生物：反物质脉冲射击 */
+    /** 反物质生物：反物质脉冲射击 (Antimatter Blast) - 自由贯穿光束重构版 */
     public static class AntimatterBlast extends AbyssalCraftAction {
         public AntimatterBlast() { super(90); }
 
         @Override
         protected boolean executeServer(EntityLivingBase entity, AbstractMorph morph) {
             World world = entity.world;
-            List<EntityLivingBase> list = findNearbyEntities(entity, 6.0D);
+            Vec3d look = entity.getLook(1.0F);
+            Vec3d eyes = entity.getPositionEyes(1.0F);
+            double maxDist = 24.0D;
+            Vec3d end = eyes.add(look.x * maxDist, look.y * maxDist, look.z * maxDist);
+
+            // 检查方块阻挡
+            RayTraceResult blockHit = world.rayTraceBlocks(eyes, end, false, true, false);
+            Vec3d impactPoint = blockHit != null ? blockHit.hitVec : end;
+
+            // 沿光束检测所有贯穿的实体
+            AxisAlignedBB beamBox = new AxisAlignedBB(eyes.x, eyes.y, eyes.z, impactPoint.x, impactPoint.y, impactPoint.z).grow(1.2D);
+            List<EntityLivingBase> list = world.getEntitiesWithinAABB(EntityLivingBase.class, beamBox,
+                    e -> e != entity && e.isEntityAlive() && !e.isOnSameTeam(entity));
+
             DamageSource source = entity instanceof EntityPlayer ? DamageSource.causePlayerDamage((EntityPlayer) entity) : DamageSource.causeMobDamage(entity);
             for (EntityLivingBase e : list) {
-                e.attackEntityFrom(source, 10.0F);
-                if (AbyssalCraftAPI.antimatter_potion != null) {
-                    e.addPotionEffect(new PotionEffect(AbyssalCraftAPI.antimatter_potion, 80, 0));
-                } else {
-                    e.addPotionEffect(new PotionEffect(MobEffects.WITHER, 80, 0));
+                AxisAlignedBB aabb = e.getEntityBoundingBox().grow(0.4D);
+                RayTraceResult intercept = aabb.calculateIntercept(eyes, impactPoint);
+                if (intercept != null || e.getDistanceSq(eyes.x, eyes.y, eyes.z) < 9.0D) {
+                    e.attackEntityFrom(source, 12.0F);
+                    if (AbyssalCraftAPI.antimatter_potion != null) {
+                        e.addPotionEffect(new PotionEffect(AbyssalCraftAPI.antimatter_potion, 100, 0));
+                    } else {
+                        e.addPotionEffect(new PotionEffect(MobEffects.WITHER, 100, 1));
+                    }
                 }
             }
+
+            // 服务端绘制反物质暗能光束粒子
+            if (world instanceof WorldServer) {
+                WorldServer ws = (WorldServer) world;
+                double dist = eyes.distanceTo(impactPoint);
+                int steps = Math.max(1, (int) (dist / 0.5D));
+                Vec3d dir = impactPoint.subtract(eyes).normalize();
+                for (int i = 0; i <= steps; i++) {
+                    Vec3d p = eyes.add(dir.x * i * 0.5D, dir.y * i * 0.5D, dir.z * i * 0.5D);
+                    ws.spawnParticle(EnumParticleTypes.PORTAL, p.x, p.y, p.z, 2, 0.05, 0.05, 0.05, 0.05);
+                    ws.spawnParticle(EnumParticleTypes.SMOKE_NORMAL, p.x, p.y, p.z, 1, 0.02, 0.02, 0.02, 0.0);
+                }
+                ws.spawnParticle(EnumParticleTypes.EXPLOSION_NORMAL, impactPoint.x, impactPoint.y, impactPoint.z, 5, 0.2, 0.2, 0.2, 0.05);
+            }
+
             world.playSound(null, entity.posX, entity.posY, entity.posZ,
-                    SoundEvents.ENTITY_GENERIC_EXPLODE, SoundCategory.PLAYERS, 0.8F, 1.6F);
+                    SoundEvents.ENTITY_GENERIC_EXPLODE, SoundCategory.PLAYERS, 1.0F, 1.8F);
             return true;
         }
     }
