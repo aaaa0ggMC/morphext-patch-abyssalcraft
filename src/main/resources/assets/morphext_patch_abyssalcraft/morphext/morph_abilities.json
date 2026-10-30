@@ -388,6 +388,7 @@
       "onFire"
     ],
     "actions": [
+      "ac_dragon_boss_breath",
       "ac_spectral_fireball",
       "ac_remnant_screech"
     ]
@@ -411,6 +412,7 @@
       "onFire"
     ],
     "actions": [
+      "ac_dragon_boss_breath",
       "ac_spectral_fireball",
       "ac_remnant_screech"
     ]
@@ -863,6 +865,7 @@
       "onFire"
     ],
     "actions": [
+      "ac_chagaroth_dread_salvo",
       "ac_dread_slam",
       "ac_dread_charge",
       "ac_dread_roar"
@@ -886,6 +889,7 @@
       "onFire"
     ],
     "actions": [
+      "ac_chagaroth_dread_salvo",
       "ac_dread_slam",
       "ac_dread_charge",
       "ac_dread_roar"
@@ -1199,8 +1203,9 @@
       "shoggoth_acid"
     ],
     "actions": [
-      "ac_shadow_veil",
-      "ac_shadow_step"
+      "ac_sacthoth_shadow_flame",
+      "ac_sacthoth_shadow_step",
+      "ac_shadow_veil"
     ]
   },
   "abyssalcraft.shadowboss": {
@@ -1231,8 +1236,9 @@
       "shoggoth_acid"
     ],
     "actions": [
-      "ac_shadow_veil",
-      "ac_shadow_step"
+      "ac_sacthoth_shadow_flame",
+      "ac_sacthoth_shadow_step",
+      "ac_shadow_veil"
     ]
   },
   "abyssalcraft:shadowtitan": {
@@ -2241,10 +2247,10 @@
       "wither"
     ],
     "actions": [
-      "ac_jzahar_oblivion",
-      "ac_shadow_collapse",
-      "ac_spectral_fireball",
-      "ac_anti_matter_blast"
+      "ac_jzahar_wither_salvo",
+      "ac_jzahar_shout_blast",
+      "ac_jzahar_singularity",
+      "ac_jzahar_earthquake"
     ]
   },
   "abyssalcraft.jzahar": {
@@ -2283,10 +2289,10 @@
       "wither"
     ],
     "actions": [
-      "ac_jzahar_oblivion",
-      "ac_shadow_collapse",
-      "ac_spectral_fireball",
-      "ac_anti_matter_blast"
+      "ac_jzahar_wither_salvo",
+      "ac_jzahar_shout_blast",
+      "ac_jzahar_singularity",
+      "ac_jzahar_earthquake"
     ]
   }
 }

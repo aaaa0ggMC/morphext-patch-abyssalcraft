@@ -17,3 +17,13 @@ morphext.metamorph.desc.ac_dread_roar=恐惧战吼：仰天发出令人战栗的
 morphext.metamorph.desc.ac_shadow_step=暗影突进：遁入暗影瞬间闪烁至前方数格位置，规避障碍与伤害。
 morphext.metamorph.desc.ac_acid_melt=酸雾腐蚀：向身前扇形区域喷射强酸浓雾，造成腐蚀伤害并严重破坏敌人攻速与移速。
 morphext.metamorph.desc.ac_anti_matter_blast=反物质脉冲：引爆前方空间的反物质能量，对大范围敌人造成湮灭冲击。
+
+# 原生 Boss 机制复用动作
+morphext.metamorph.desc.ac_jzahar_wither_salvo=古神凋灵齐射：挥舞浮空法杖，三头齐发多重凋灵首，中头有几率轰出蓝色无敌凋灵首，智能直击准星目标。
+morphext.metamorph.desc.ac_jzahar_shout_blast=终焉咆哮：仰天长啸“...mglagln!”，头前喷涌上千爆炸粒子，前方48格内掀起毁灭性古神气浪，重创并击飞一切生灵！
+morphext.metamorph.desc.ac_jzahar_singularity=虚空湮灭：在准星交点引爆奇点！普通释放生成虚空内爆(“Nilgh'ri mtli!”)；潜行释放降下黑洞引力坍缩(“Ph'nilgh'ri n'ghft!”)，伴随末影龙长啸。
+morphext.metamorph.desc.ac_jzahar_earthquake=奥穆索尔大地震：挥动法杖高呼“Shugnah throd!”，64格大地剧烈摇晃，岩浆喷涌，令敌人陷入失衡、反胃与极速迟缓。
+morphext.metamorph.desc.ac_sacthoth_shadow_flame=暗影烈焰喷涌：自口中喷出纯正暗影烈焰与浓密黑烟，重创准星前方敌人，附加纯正暗影伤害、致盲与迟缓。
+morphext.metamorph.desc.ac_sacthoth_shadow_step=战术暗影瞬移：留下128道大号末影黑烟瞬间闪烁至准星落脚点，穿梭虚空遁逃或追击。
+morphext.metamorph.desc.ac_chagaroth_dread_salvo=恐惧母体弹幕：三头轮流轰出高速恐惧蛞蝓与爆裂弹，概率召唤骑乘蛞蝓的恐惧巨拳与恐惧幼体协同突袭！
+morphext.metamorph.desc.ac_dragon_boss_breath=阿萨托斯恐惧龙息：仰天怒吼并发射扇形恐惧爆裂弹幕，前方区域陷入火海与剧毒恐惧。
