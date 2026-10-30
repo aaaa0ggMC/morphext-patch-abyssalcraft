@@ -1,0 +1,768 @@
+{
+  "abyssalcraft.lessershoggoth": {
+    "abilities": [
+      "climb",
+      "amphibian"
+    ],
+    "action": "ac_acid_spit",
+    "immunities": [
+      "abyssalcraft:dread_plague"
+    ],
+    "damageImmunities": [
+      "acid"
+    ]
+  },
+  "abyssalcraft:lessershoggoth": {
+    "abilities": [
+      "climb",
+      "amphibian"
+    ],
+    "action": "ac_acid_spit",
+    "immunities": [
+      "abyssalcraft:dread_plague"
+    ],
+    "damageImmunities": [
+      "acid"
+    ]
+  },
+  "abyssalcraft.dreadling": {
+    "abilities": [
+      "climb",
+      "night_vision"
+    ],
+    "action": "ac_dread_charge",
+    "immunities": [
+      "abyssalcraft:dread_plague",
+      "potion.dplague"
+    ],
+    "damageImmunities": []
+  },
+  "abyssalcraft:dreadling": {
+    "abilities": [
+      "climb",
+      "night_vision"
+    ],
+    "action": "ac_dread_charge",
+    "immunities": [
+      "abyssalcraft:dread_plague",
+      "potion.dplague"
+    ],
+    "damageImmunities": []
+  },
+  "abyssalcraft.dreadspawn": {
+    "abilities": [
+      "night_vision"
+    ],
+    "action": "ac_dread_charge",
+    "immunities": [
+      "abyssalcraft:dread_plague",
+      "potion.dplague"
+    ],
+    "damageImmunities": []
+  },
+  "abyssalcraft:dreadspawn": {
+    "abilities": [
+      "night_vision"
+    ],
+    "action": "ac_dread_charge",
+    "immunities": [
+      "abyssalcraft:dread_plague",
+      "potion.dplague"
+    ],
+    "damageImmunities": []
+  },
+  "abyssalcraft.greaterdreadspawn": {
+    "abilities": [
+      "natural_armor",
+      "night_vision"
+    ],
+    "action": "ac_dread_charge",
+    "immunities": [
+      "abyssalcraft:dread_plague",
+      "potion.dplague"
+    ],
+    "damageImmunities": []
+  },
+  "abyssalcraft:greaterdreadspawn": {
+    "abilities": [
+      "natural_armor",
+      "night_vision"
+    ],
+    "action": "ac_dread_charge",
+    "immunities": [
+      "abyssalcraft:dread_plague",
+      "potion.dplague"
+    ],
+    "damageImmunities": []
+  },
+  "abyssalcraft.dreadguard": {
+    "abilities": [
+      "knockback_resistant",
+      "natural_armor"
+    ],
+    "action": "ac_dread_barrage",
+    "immunities": [
+      "abyssalcraft:dread_plague",
+      "potion.dplague"
+    ],
+    "damageImmunities": []
+  },
+  "abyssalcraft:dreadguard": {
+    "abilities": [
+      "knockback_resistant",
+      "natural_armor"
+    ],
+    "action": "ac_dread_barrage",
+    "immunities": [
+      "abyssalcraft:dread_plague",
+      "potion.dplague"
+    ],
+    "damageImmunities": []
+  },
+  "abyssalcraft.dreadgolem": {
+    "abilities": [
+      "knockback_immune",
+      "natural_armor"
+    ],
+    "action": "ac_dread_slam",
+    "immunities": [
+      "abyssalcraft:dread_plague",
+      "potion.dplague"
+    ],
+    "damageImmunities": []
+  },
+  "abyssalcraft:dreadgolem": {
+    "abilities": [
+      "knockback_immune",
+      "natural_armor"
+    ],
+    "action": "ac_dread_slam",
+    "immunities": [
+      "abyssalcraft:dread_plague",
+      "potion.dplague"
+    ],
+    "damageImmunities": []
+  },
+  "abyssalcraft.lesserdreadbeast": {
+    "abilities": [
+      "regenerative",
+      "night_vision"
+    ],
+    "action": "ac_dread_charge",
+    "immunities": [
+      "abyssalcraft:dread_plague",
+      "potion.dplague"
+    ],
+    "damageImmunities": []
+  },
+  "abyssalcraft:lesserdreadbeast": {
+    "abilities": [
+      "regenerative",
+      "night_vision"
+    ],
+    "action": "ac_dread_charge",
+    "immunities": [
+      "abyssalcraft:dread_plague",
+      "potion.dplague"
+    ],
+    "damageImmunities": []
+  },
+  "abyssalcraft.chagaroth": {
+    "abilities": [
+      "knockback_immune",
+      "fire_proof"
+    ],
+    "action": "ac_dread_slam",
+    "immunities": [
+      "abyssalcraft:dread_plague",
+      "potion.dplague"
+    ],
+    "damageImmunities": []
+  },
+  "abyssalcraft:chagaroth": {
+    "abilities": [
+      "knockback_immune",
+      "fire_proof"
+    ],
+    "action": "ac_dread_slam",
+    "immunities": [
+      "abyssalcraft:dread_plague",
+      "potion.dplague"
+    ],
+    "damageImmunities": []
+  },
+  "abyssalcraft.chagarothspawn": {
+    "abilities": [
+      "knockback_immune",
+      "fire_proof"
+    ],
+    "action": "ac_dread_slam",
+    "immunities": [
+      "abyssalcraft:dread_plague",
+      "potion.dplague"
+    ],
+    "damageImmunities": []
+  },
+  "abyssalcraft:chagarothspawn": {
+    "abilities": [
+      "knockback_immune",
+      "fire_proof"
+    ],
+    "action": "ac_dread_slam",
+    "immunities": [
+      "abyssalcraft:dread_plague",
+      "potion.dplague"
+    ],
+    "damageImmunities": []
+  },
+  "abyssalcraft.abyssalzombie": {
+    "abilities": [
+      "water_breath",
+      "rotten"
+    ],
+    "action": "ac_coralium_squirt",
+    "immunities": [
+      "abyssalcraft:coralium_plague",
+      "potion.cplague"
+    ],
+    "damageImmunities": []
+  },
+  "abyssalcraft:abyssalzombie": {
+    "abilities": [
+      "water_breath",
+      "rotten"
+    ],
+    "action": "ac_coralium_squirt",
+    "immunities": [
+      "abyssalcraft:coralium_plague",
+      "potion.cplague"
+    ],
+    "damageImmunities": []
+  },
+  "abyssalcraft.depthsghoul": {
+    "abilities": [
+      "amphibian",
+      "night_vision"
+    ],
+    "action": "ac_coralium_squirt",
+    "immunities": [
+      "abyssalcraft:coralium_plague",
+      "potion.cplague"
+    ],
+    "damageImmunities": []
+  },
+  "abyssalcraft:depthsghoul": {
+    "abilities": [
+      "amphibian",
+      "night_vision"
+    ],
+    "action": "ac_coralium_squirt",
+    "immunities": [
+      "abyssalcraft:coralium_plague",
+      "potion.cplague"
+    ],
+    "damageImmunities": []
+  },
+  "abyssalcraft.abygolem": {
+    "abilities": [
+      "knockback_immune",
+      "natural_armor"
+    ],
+    "action": "ac_dread_slam",
+    "immunities": [
+      "abyssalcraft:coralium_plague",
+      "potion.cplague"
+    ],
+    "damageImmunities": []
+  },
+  "abyssalcraft:abygolem": {
+    "abilities": [
+      "knockback_immune",
+      "natural_armor"
+    ],
+    "action": "ac_dread_slam",
+    "immunities": [
+      "abyssalcraft:coralium_plague",
+      "potion.cplague"
+    ],
+    "damageImmunities": []
+  },
+  "abyssalcraft.coralsquid": {
+    "abilities": [
+      "water_breath",
+      "squid_swim"
+    ],
+    "action": "ac_coralium_squirt",
+    "immunities": [
+      "abyssalcraft:coralium_plague",
+      "potion.cplague"
+    ],
+    "damageImmunities": []
+  },
+  "abyssalcraft:coralsquid": {
+    "abilities": [
+      "water_breath",
+      "squid_swim"
+    ],
+    "action": "ac_coralium_squirt",
+    "immunities": [
+      "abyssalcraft:coralium_plague",
+      "potion.cplague"
+    ],
+    "damageImmunities": []
+  },
+  "abyssalcraft.coraliumsquid": {
+    "abilities": [
+      "water_breath",
+      "squid_swim"
+    ],
+    "action": "ac_coralium_squirt",
+    "immunities": [
+      "abyssalcraft:coralium_plague",
+      "potion.cplague"
+    ],
+    "damageImmunities": []
+  },
+  "abyssalcraft:coraliumsquid": {
+    "abilities": [
+      "water_breath",
+      "squid_swim"
+    ],
+    "action": "ac_coralium_squirt",
+    "immunities": [
+      "abyssalcraft:coralium_plague",
+      "potion.cplague"
+    ],
+    "damageImmunities": []
+  },
+  "abyssalcraft.dragonboss": {
+    "abilities": [
+      "dragon_flight",
+      "fire_proof",
+      "knockback_immune"
+    ],
+    "action": "ac_jzahar_oblivion",
+    "immunities": [
+      "abyssalcraft:coralium_plague",
+      "potion.cplague"
+    ],
+    "damageImmunities": []
+  },
+  "abyssalcraft:dragonboss": {
+    "abilities": [
+      "dragon_flight",
+      "fire_proof",
+      "knockback_immune"
+    ],
+    "action": "ac_jzahar_oblivion",
+    "immunities": [
+      "abyssalcraft:coralium_plague",
+      "potion.cplague"
+    ],
+    "damageImmunities": []
+  },
+  "abyssalcraft.shadowcreature": {
+    "abilities": [
+      "night_vision"
+    ],
+    "action": "ac_shadow_veil",
+    "immunities": [
+      "abyssalcraft:antimatter"
+    ],
+    "damageImmunities": [
+      "shadow"
+    ]
+  },
+  "abyssalcraft:shadowcreature": {
+    "abilities": [
+      "night_vision"
+    ],
+    "action": "ac_shadow_veil",
+    "immunities": [
+      "abyssalcraft:antimatter"
+    ],
+    "damageImmunities": [
+      "shadow"
+    ]
+  },
+  "abyssalcraft.shadowmonster": {
+    "abilities": [
+      "night_vision"
+    ],
+    "action": "ac_shadow_veil",
+    "immunities": [
+      "abyssalcraft:antimatter"
+    ],
+    "damageImmunities": [
+      "shadow"
+    ]
+  },
+  "abyssalcraft:shadowmonster": {
+    "abilities": [
+      "night_vision"
+    ],
+    "action": "ac_shadow_veil",
+    "immunities": [
+      "abyssalcraft:antimatter"
+    ],
+    "damageImmunities": [
+      "shadow"
+    ]
+  },
+  "abyssalcraft.shadowbeast": {
+    "abilities": [
+      "knockback_resistant",
+      "night_vision"
+    ],
+    "action": "ac_shadow_collapse",
+    "immunities": [
+      "abyssalcraft:antimatter"
+    ],
+    "damageImmunities": [
+      "shadow"
+    ]
+  },
+  "abyssalcraft:shadowbeast": {
+    "abilities": [
+      "knockback_resistant",
+      "night_vision"
+    ],
+    "action": "ac_shadow_collapse",
+    "immunities": [
+      "abyssalcraft:antimatter"
+    ],
+    "damageImmunities": [
+      "shadow"
+    ]
+  },
+  "abyssalcraft.shadowtitan": {
+    "abilities": [
+      "natural_armor",
+      "knockback_immune"
+    ],
+    "action": "ac_shadow_collapse",
+    "immunities": [
+      "abyssalcraft:antimatter"
+    ],
+    "damageImmunities": [
+      "shadow"
+    ]
+  },
+  "abyssalcraft:shadowtitan": {
+    "abilities": [
+      "natural_armor",
+      "knockback_immune"
+    ],
+    "action": "ac_shadow_collapse",
+    "immunities": [
+      "abyssalcraft:antimatter"
+    ],
+    "damageImmunities": [
+      "shadow"
+    ]
+  },
+  "abyssalcraft.omotholghoul": {
+    "abilities": [
+      "night_vision"
+    ],
+    "action": "ac_shadow_veil",
+    "immunities": [
+      "abyssalcraft:antimatter"
+    ],
+    "damageImmunities": [
+      "shadow"
+    ]
+  },
+  "abyssalcraft:omotholghoul": {
+    "abilities": [
+      "night_vision"
+    ],
+    "action": "ac_shadow_veil",
+    "immunities": [
+      "abyssalcraft:antimatter"
+    ],
+    "damageImmunities": [
+      "shadow"
+    ]
+  },
+  "abyssalcraft.omotholwarden": {
+    "abilities": [
+      "natural_armor",
+      "knockback_immune"
+    ],
+    "action": "ac_shadow_collapse",
+    "immunities": [
+      "abyssalcraft:antimatter"
+    ],
+    "damageImmunities": [
+      "shadow"
+    ]
+  },
+  "abyssalcraft:omotholwarden": {
+    "abilities": [
+      "natural_armor",
+      "knockback_immune"
+    ],
+    "action": "ac_shadow_collapse",
+    "immunities": [
+      "abyssalcraft:antimatter"
+    ],
+    "damageImmunities": [
+      "shadow"
+    ]
+  },
+  "abyssalcraft.jzahar": {
+    "abilities": [
+      "flight",
+      "fire_proof",
+      "knockback_immune"
+    ],
+    "action": "ac_jzahar_oblivion",
+    "immunities": [
+      "abyssalcraft:dread_plague",
+      "abyssalcraft:coralium_plague",
+      "abyssalcraft:antimatter"
+    ],
+    "damageImmunities": [
+      "shadow",
+      "acid"
+    ]
+  },
+  "abyssalcraft:jzahar": {
+    "abilities": [
+      "flight",
+      "fire_proof",
+      "knockback_immune"
+    ],
+    "action": "ac_jzahar_oblivion",
+    "immunities": [
+      "abyssalcraft:dread_plague",
+      "abyssalcraft:coralium_plague",
+      "abyssalcraft:antimatter"
+    ],
+    "damageImmunities": [
+      "shadow",
+      "acid"
+    ]
+  },
+  "abyssalcraft.anticreeper": {
+    "abilities": [],
+    "action": "ac_anti_implosion",
+    "immunities": [
+      "abyssalcraft:antimatter",
+      "potion.antimatter"
+    ],
+    "damageImmunities": []
+  },
+  "abyssalcraft:anticreeper": {
+    "abilities": [],
+    "action": "ac_anti_implosion",
+    "immunities": [
+      "abyssalcraft:antimatter",
+      "potion.antimatter"
+    ],
+    "damageImmunities": []
+  },
+  "abyssalcraft.antizombie": {
+    "abilities": [
+      "rotten"
+    ],
+    "action": "ac_anti_implosion",
+    "immunities": [
+      "abyssalcraft:antimatter",
+      "potion.antimatter"
+    ],
+    "damageImmunities": []
+  },
+  "abyssalcraft:antizombie": {
+    "abilities": [
+      "rotten"
+    ],
+    "action": "ac_anti_implosion",
+    "immunities": [
+      "abyssalcraft:antimatter",
+      "potion.antimatter"
+    ],
+    "damageImmunities": []
+  },
+  "abyssalcraft.antibat": {
+    "abilities": [
+      "bat_flight"
+    ],
+    "action": "ac_anti_implosion",
+    "immunities": [
+      "abyssalcraft:antimatter",
+      "potion.antimatter"
+    ],
+    "damageImmunities": []
+  },
+  "abyssalcraft:antibat": {
+    "abilities": [
+      "bat_flight"
+    ],
+    "action": "ac_anti_implosion",
+    "immunities": [
+      "abyssalcraft:antimatter",
+      "potion.antimatter"
+    ],
+    "damageImmunities": []
+  },
+  "abyssalcraft.antichicken": {
+    "abilities": [
+      "glide"
+    ],
+    "action": "ac_anti_implosion",
+    "immunities": [
+      "abyssalcraft:antimatter",
+      "potion.antimatter"
+    ],
+    "damageImmunities": []
+  },
+  "abyssalcraft:antichicken": {
+    "abilities": [
+      "glide"
+    ],
+    "action": "ac_anti_implosion",
+    "immunities": [
+      "abyssalcraft:antimatter",
+      "potion.antimatter"
+    ],
+    "damageImmunities": []
+  },
+  "abyssalcraft.evilpig": {
+    "abilities": [
+      "fire_proof"
+    ],
+    "action": "ac_dread_charge",
+    "immunities": [],
+    "damageImmunities": []
+  },
+  "abyssalcraft:evilpig": {
+    "abilities": [
+      "fire_proof"
+    ],
+    "action": "ac_dread_charge",
+    "immunities": [],
+    "damageImmunities": []
+  },
+  "abyssalcraft.evilcow": {
+    "abilities": [
+      "fire_proof"
+    ],
+    "action": "ac_dread_charge",
+    "immunities": [],
+    "damageImmunities": []
+  },
+  "abyssalcraft:evilcow": {
+    "abilities": [
+      "fire_proof"
+    ],
+    "action": "ac_dread_charge",
+    "immunities": [],
+    "damageImmunities": []
+  },
+  "abyssalcraft.evilchicken": {
+    "abilities": [
+      "fire_proof"
+    ],
+    "action": "ac_dread_charge",
+    "immunities": [],
+    "damageImmunities": []
+  },
+  "abyssalcraft:evilchicken": {
+    "abilities": [
+      "fire_proof"
+    ],
+    "action": "ac_dread_charge",
+    "immunities": [],
+    "damageImmunities": []
+  },
+  "abyssalcraft.evilsheep": {
+    "abilities": [
+      "fire_proof"
+    ],
+    "action": "ac_dread_charge",
+    "immunities": [],
+    "damageImmunities": []
+  },
+  "abyssalcraft:evilsheep": {
+    "abilities": [
+      "fire_proof"
+    ],
+    "action": "ac_dread_charge",
+    "immunities": [],
+    "damageImmunities": []
+  },
+  "abyssalcraft.demonpig": {
+    "abilities": [
+      "fire_proof",
+      "natural_armor"
+    ],
+    "action": "ac_dread_charge",
+    "immunities": [],
+    "damageImmunities": []
+  },
+  "abyssalcraft:demonpig": {
+    "abilities": [
+      "fire_proof",
+      "natural_armor"
+    ],
+    "action": "ac_dread_charge",
+    "immunities": [],
+    "damageImmunities": []
+  },
+  "abyssalcraft.demoncow": {
+    "abilities": [
+      "fire_proof",
+      "natural_armor"
+    ],
+    "action": "ac_dread_charge",
+    "immunities": [],
+    "damageImmunities": []
+  },
+  "abyssalcraft:demoncow": {
+    "abilities": [
+      "fire_proof",
+      "natural_armor"
+    ],
+    "action": "ac_dread_charge",
+    "immunities": [],
+    "damageImmunities": []
+  },
+  "abyssalcraft.demonchicken": {
+    "abilities": [
+      "fire_proof",
+      "natural_armor"
+    ],
+    "action": "ac_dread_charge",
+    "immunities": [],
+    "damageImmunities": []
+  },
+  "abyssalcraft:demonchicken": {
+    "abilities": [
+      "fire_proof",
+      "natural_armor"
+    ],
+    "action": "ac_dread_charge",
+    "immunities": [],
+    "damageImmunities": []
+  },
+  "abyssalcraft.demonsheep": {
+    "abilities": [
+      "fire_proof",
+      "natural_armor"
+    ],
+    "action": "ac_dread_charge",
+    "immunities": [],
+    "damageImmunities": []
+  },
+  "abyssalcraft:demonsheep": {
+    "abilities": [
+      "fire_proof",
+      "natural_armor"
+    ],
+    "action": "ac_dread_charge",
+    "immunities": [],
+    "damageImmunities": []
+  }
+}
