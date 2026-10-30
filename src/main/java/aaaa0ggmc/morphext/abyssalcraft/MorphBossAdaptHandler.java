@@ -1,6 +1,8 @@
 package aaaa0ggmc.morphext.abyssalcraft;
 
 import aaaa0ggmc.morphext.abyssalcraft.action.BossNativeHelper;
+import com.shinoow.abyssalcraft.common.entity.EntityBlackHole;
+import com.shinoow.abyssalcraft.common.entity.EntityImplosion;
 import com.shinoow.abyssalcraft.lib.ACSounds;
 import com.shinoow.abyssalcraft.lib.util.SpecialTextUtil;
 import mchorse.metamorph.api.events.MorphEvent;
@@ -12,20 +14,27 @@ import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityCreature;
 import net.minecraft.entity.EntityLiving;
 import net.minecraft.entity.EntityLivingBase;
+import net.minecraft.entity.ai.EntityAIHurtByTarget;
 import net.minecraft.entity.ai.EntityAINearestAttackableTarget;
 import net.minecraft.entity.ai.EntityAITasks;
+import net.minecraft.entity.ai.EntityAIWatchClosest;
 import net.minecraft.entity.monster.IMob;
 import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.entity.player.EntityPlayerMP;
+import net.minecraft.entity.projectile.EntityWitherSkull;
 import net.minecraft.init.MobEffects;
 import net.minecraft.util.DamageSource;
 import net.minecraft.util.EnumParticleTypes;
 import net.minecraft.util.SoundCategory;
+import net.minecraft.world.World;
 import net.minecraft.world.WorldServer;
+import net.minecraftforge.event.entity.EntityJoinWorldEvent;
 import net.minecraftforge.event.entity.EntityTravelToDimensionEvent;
 import net.minecraftforge.event.entity.living.LivingAttackEvent;
 import net.minecraftforge.event.entity.living.LivingDeathEvent;
 import net.minecraftforge.event.entity.living.LivingEvent;
 import net.minecraftforge.event.entity.living.LivingHurtEvent;
+import net.minecraftforge.event.entity.living.LivingSetAttackTargetEvent;
 import net.minecraftforge.event.entity.living.PotionEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.eventhandler.Event;
@@ -33,15 +42,17 @@ import net.minecraftforge.fml.common.eventhandler.EventPriority;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 
 import java.util.Iterator;
+import java.util.List;
 
 /**
  * 深渊生物与 Boss 动态切面适配核心处理器 (Boss Dynamic Adaptation & Immunity Layer)：
  * 1. 净化变身实体的 AI 索敌机制，彻底消除锁定宿主自身的死穴；
- * 2. 宿主绝对免伤护盾（免疫自身弹幕、黑洞、坍缩、地震落石及咆哮撞墙自伤）；
- * 3. 萨克索斯/暗影生物绝对免疫失明光环（视野清晰无黑屏）；
- * 4. 扎哈尔变身死亡拦截：彻底阻断 19x19x19 地形蒸发与暗黑领域放逐，延续第四面墙人设发送幽默临死感言并自然重生；
- * 5. 阻止黑洞将宿主吸入随机异次元维度；
- * 6. 零侵入世界：对自然刷出的原生 Boss 100% 保持原有 AI 与数值，不产生任何副作用。
+ * 2. 拦截 LivingSetAttackTargetEvent，杜绝 Metamorph 强制将 dummy 实体目标重定向至宿主玩家；
+ * 3. 宿主绝对免伤护盾（免疫自身弹幕、黑洞引力与致死伤害、内爆、地震熔岩及咆哮撞墙自伤）；
+ * 4. 萨克索斯/暗影生物绝对免疫失明光环（视野清晰无黑屏）；
+ * 5. 扎哈尔变身死亡拦截：彻底阻断 19x19x19 地形蒸发与暗黑领域放逐，延续第四面墙人设发送幽默临死感言并自然重生；
+ * 6. 阻止黑洞将宿主吸入随机异次元维度与物理位移牵引；
+ * 7. 零侵入世界：对自然刷出的原生 Boss 100% 保持原有 AI 与数值，不产生任何副作用。
  */
 @Mod.EventBusSubscriber(modid = MorphExtAbyssalCraft.MODID)
 public final class MorphBossAdaptHandler {
@@ -54,6 +65,27 @@ public final class MorphBossAdaptHandler {
     };
 
     /**
+     * 核心切面拦截：切断变身 dummy 实体对宿主玩家或自身设为攻击目标的死穴！
+     * 彻底阻断 Metamorph 的 onLivingSetAttackTarget 强制把目标设为 player。
+     */
+    @SubscribeEvent(priority = EventPriority.HIGHEST)
+    public static void onLivingSetAttackTarget(LivingSetAttackTargetEvent event) {
+        EntityLivingBase source = event.getEntityLiving();
+        EntityLivingBase target = event.getTarget();
+        if (source == null || target == null || source.world.isRemote) return;
+
+        EntityPlayer owner = findMorphOwner(source);
+        if (owner != null) {
+            // 如果试图把目标设为宿主玩家、dummy 自身、或队友：立即置空切断！
+            if (target == owner || target == source || target.isOnSameTeam(owner)) {
+                if (source instanceof EntityLiving) {
+                    ((EntityLiving) source).setAttackTarget(null);
+                }
+            }
+        }
+    }
+
+    /**
      * 变身完成事件：立即净化内部实体的索敌 AI，防止锁定宿主
      */
     @SubscribeEvent
@@ -64,20 +96,24 @@ public final class MorphBossAdaptHandler {
     }
 
     /**
-     * 每 tick 更新：持续确保变身实体 AI 被净化，并抑制变身扎哈尔的地形破坏计数器
+     * 每 tick 更新：持续确保变身实体 AI 被净化，并抑制变身扎哈尔的地形破坏计数器与黑洞拉扯
      */
     @SubscribeEvent
     public static void onLivingUpdate(LivingEvent.LivingUpdateEvent event) {
         EntityLivingBase entity = event.getEntityLiving();
         if (entity.world.isRemote) return;
 
-        // 1. 如果是玩家，持续维护其内部变身实体的索敌 AI
+        // 1. 如果是玩家，持续维护其内部变身实体的索敌 AI 并免疫黑洞物理拉扯
         if (entity instanceof EntityPlayer) {
             EntityPlayer player = (EntityPlayer) entity;
-            if (player.ticksExisted % 20 == 0) {
-                IMorphing morphing = Morphing.get(player);
-                if (morphing != null && morphing.isMorphed()) {
-                    sanitizeMorphEntity(player, morphing.getCurrentMorph());
+            IMorphing morphing = Morphing.get(player);
+            if (morphing != null && morphing.isMorphed()) {
+                AbstractMorph currentMorph = morphing.getCurrentMorph();
+                sanitizeMorphEntity(player, currentMorph);
+
+                // 如果变身为扎哈尔或深渊古神，免疫周围野生黑洞与坍缩的物理引力拉扯
+                if (isMorphedAsEldritch(currentMorph)) {
+                    neutralizeBlackHolePull(player);
                 }
             }
         }
@@ -95,6 +131,25 @@ public final class MorphBossAdaptHandler {
     }
 
     /**
+     * 实体生成监听：凡是 dummy 实体发射的凋灵首、投射物，自动打上宿主属主标签
+     */
+    @SubscribeEvent
+    public static void onEntityJoinWorld(EntityJoinWorldEvent event) {
+        Entity entity = event.getEntity();
+        if (entity == null || entity.world.isRemote) return;
+
+        if (entity instanceof EntityWitherSkull) {
+            EntityWitherSkull skull = (EntityWitherSkull) entity;
+            if (skull.shootingEntity != null) {
+                EntityPlayer owner = findMorphOwner(skull.shootingEntity);
+                if (owner != null) {
+                    BossNativeHelper.tagOwner(skull, owner);
+                }
+            }
+        }
+    }
+
+    /**
      * 实体 AI 净化逻辑：将对 EntityPlayer 的仇恨任务清除，替换为安全的怪对怪索敌
      */
     private static void sanitizeMorphEntity(EntityPlayer player, AbstractMorph morph) {
@@ -105,15 +160,28 @@ public final class MorphBossAdaptHandler {
         EntityLiving living = (EntityLiving) dummy;
         BossNativeHelper.tagOwner(living, player);
 
-        // 清除任何硬编码锁定 EntityPlayer 的索敌任务
+        // 1. 清除任何以 EntityPlayer 为目标的索敌任务并重置执行中任务
         boolean cleaned = false;
-        Iterator<EntityAITasks.EntityAITaskEntry> it = living.targetTasks.taskEntries.iterator();
-        while (it.hasNext()) {
-            EntityAITasks.EntityAITaskEntry entry = it.next();
-            if (entry.action instanceof EntityAINearestAttackableTarget) {
-                it.remove();
+        List<net.minecraft.entity.ai.EntityAIBase> toRemoveTarget = new java.util.ArrayList<>();
+        for (EntityAITasks.EntityAITaskEntry entry : living.targetTasks.taskEntries) {
+            if (entry.action instanceof EntityAINearestAttackableTarget || entry.action instanceof EntityAIHurtByTarget) {
+                toRemoveTarget.add(entry.action);
                 cleaned = true;
             }
+        }
+        for (net.minecraft.entity.ai.EntityAIBase action : toRemoveTarget) {
+            living.targetTasks.removeTask(action);
+        }
+
+        // 2. 清除 tasks 中的 EntityAIWatchClosest(EntityPlayer.class)
+        List<net.minecraft.entity.ai.EntityAIBase> toRemoveTasks = new java.util.ArrayList<>();
+        for (EntityAITasks.EntityAITaskEntry entry : living.tasks.taskEntries) {
+            if (entry.action instanceof EntityAIWatchClosest) {
+                toRemoveTasks.add(entry.action);
+            }
+        }
+        for (net.minecraft.entity.ai.EntityAIBase action : toRemoveTasks) {
+            living.tasks.removeTask(action);
         }
 
         if (cleaned && living instanceof EntityCreature) {
@@ -122,10 +190,61 @@ public final class MorphBossAdaptHandler {
                     target -> target != player && !target.isOnSameTeam(player) && (target instanceof IMob || target instanceof EntityLiving)));
         }
 
-        // 若当前目标为宿主玩家，立刻解除
-        if (living.getAttackTarget() == player) {
+        // 3. 实时强制清除宿主与自身仇恨目标
+        if (living.getAttackTarget() == player || living.getAttackTarget() == living) {
             living.setAttackTarget(null);
         }
+        if (living.getRevengeTarget() == player || living.getRevengeTarget() == living) {
+            living.setRevengeTarget(null);
+        }
+    }
+
+    /**
+     * 免疫周围野生黑洞与坍缩的物理引力拉扯
+     */
+    private static void neutralizeBlackHolePull(EntityPlayer player) {
+        World world = player.world;
+        List<Entity> blackHoles = world.getEntitiesWithinAABB(Entity.class,
+                player.getEntityBoundingBox().grow(48.0D),
+                e -> e instanceof EntityBlackHole || e instanceof EntityImplosion);
+
+        if (!blackHoles.isEmpty()) {
+            if (player instanceof EntityPlayerMP) {
+                // 阻断服务端向客户端发送 SPacketEntityVelocity 造成的画面强行位移抖动
+                ((EntityPlayerMP) player).velocityChanged = false;
+            }
+        }
+    }
+
+    /**
+     * 反查某个实体是否为某个玩家变身的 dummy 实体
+     */
+    public static EntityPlayer findMorphOwner(EntityLivingBase entity) {
+        if (entity == null || entity.world == null) return null;
+        EntityPlayer owner = BossNativeHelper.getOwnerPlayer(entity);
+        if (owner != null) return owner;
+
+        for (EntityPlayer player : entity.world.playerEntities) {
+            IMorphing morphing = Morphing.get(player);
+            if (morphing != null && morphing.isMorphed()) {
+                AbstractMorph morph = morphing.getCurrentMorph();
+                if (morph instanceof EntityMorph) {
+                    EntityLivingBase dummy = ((EntityMorph) morph).getEntity(player.world);
+                    if (dummy == entity) {
+                        BossNativeHelper.tagOwner(entity, player);
+                        return player;
+                    }
+                }
+            }
+        }
+        return null;
+    }
+
+    public static boolean isMorphedAsEldritch(AbstractMorph morph) {
+        if (morph == null || morph.name == null) return false;
+        String n = morph.name.toLowerCase();
+        return n.contains("jzahar") || n.contains("sacthoth") || n.contains("omothol")
+                || n.contains("shoggoth") || n.contains("chagaroth") || n.contains("dragonboss");
     }
 
     /**

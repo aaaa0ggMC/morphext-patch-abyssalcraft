@@ -23,8 +23,18 @@ public class MorphExtAbyssalCraft {
 
     public static final Logger LOGGER = LogManager.getLogger(MODID);
 
+    @Mod.Instance(MorphExtAbyssalCraft.MODID)
+    public static MorphExtAbyssalCraft instance;
+
+    @net.minecraftforge.fml.common.SidedProxy(
+            clientSide = "aaaa0ggmc.morphext.abyssalcraft.proxy.ClientProxy",
+            serverSide = "aaaa0ggmc.morphext.abyssalcraft.proxy.CommonProxy"
+    )
+    public static aaaa0ggmc.morphext.abyssalcraft.proxy.CommonProxy proxy;
+
     @Mod.EventHandler
     public void preInit(FMLPreInitializationEvent event) {
+        proxy.preInit(event);
         registerActions();
         LOGGER.info("[morphext-abyssalcraft] Pre-initialized actions and abilities");
     }
@@ -32,10 +42,8 @@ public class MorphExtAbyssalCraft {
     @Mod.EventHandler
     public void init(FMLInitializationEvent event) {
         MinecraftForge.EVENT_BUS.register(MorphBossAdaptHandler.class);
-        if (event.getSide().isClient()) {
-            SafeCleansingRitualHandler.install();
-        }
-        LOGGER.info("[morphext-abyssalcraft] Initialized boss adapt handler and safe cleansing ritual");
+        proxy.init(event);
+        LOGGER.info("[morphext-abyssalcraft] Initialized boss adapt handler and proxies");
     }
 
     private void registerActions() {

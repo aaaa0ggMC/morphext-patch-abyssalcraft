@@ -108,11 +108,30 @@ public final class BossNativeHelper {
         }
     }
 
-    public static boolean isOwnedBy(Entity entity, EntityPlayer player) {
-        if (entity == null || player == null) return false;
+    public static boolean isOwnedBy(Entity entity, EntityLivingBase owner) {
+        if (entity == null || owner == null) return false;
         if (!entity.getEntityData().hasKey(TAG_MORPH_OWNER)) return false;
         String uuidStr = entity.getEntityData().getString(TAG_MORPH_OWNER);
-        return player.getUniqueID().toString().equals(uuidStr);
+        return owner.getUniqueID().toString().equals(uuidStr);
+    }
+
+    public static boolean isOwnedBy(Entity entity, EntityPlayer player) {
+        return isOwnedBy(entity, (EntityLivingBase) player);
+    }
+
+    public static EntityPlayer getOwnerPlayer(Entity entity) {
+        if (entity == null || entity.world == null) return null;
+        if (!entity.getEntityData().hasKey(TAG_MORPH_OWNER)) return null;
+        try {
+            java.util.UUID uuid = java.util.UUID.fromString(entity.getEntityData().getString(TAG_MORPH_OWNER));
+            return entity.world.getPlayerEntityByUUID(uuid);
+        } catch (Exception ignored) {
+            return null;
+        }
+    }
+
+    public static EntityLivingBase getOwner(Entity entity) {
+        return getOwnerPlayer(entity);
     }
 
     private BossNativeHelper() { }

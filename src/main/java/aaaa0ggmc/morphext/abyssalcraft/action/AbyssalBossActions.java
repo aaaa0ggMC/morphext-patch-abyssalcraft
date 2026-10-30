@@ -1,5 +1,7 @@
 package aaaa0ggmc.morphext.abyssalcraft.action;
 
+import aaaa0ggmc.morphext.abyssalcraft.entity.MorphEntityBlackHole;
+import aaaa0ggmc.morphext.abyssalcraft.entity.MorphEntityImplosion;
 import com.shinoow.abyssalcraft.api.AbyssalCraftAPI;
 import com.shinoow.abyssalcraft.api.entity.IOmotholEntity;
 import com.shinoow.abyssalcraft.common.entity.EntityBlackHole;
@@ -177,22 +179,22 @@ public final class AbyssalBossActions {
             }
 
             if (entity.isSneaking()) {
-                // 潜行：生成黑洞
+                // 潜行：生成安全黑洞（对宿主与古神绝对免吸免伤）
                 SpecialTextUtil.JzaharGroup(world, "Ph'nilgh'ri n'ghft!");
                 world.playSound(null, entity.posX, entity.posY, entity.posZ,
                         ACSounds.jzahar_black_hole, SoundCategory.HOSTILE, 5.0F, 1.0F);
 
-                EntityBlackHole blackHole = new EntityBlackHole(world);
+                MorphEntityBlackHole blackHole = new MorphEntityBlackHole(world, entity);
                 blackHole.setPosition(target.x, target.y + 1.2D, target.z);
                 BossNativeHelper.tagOwner(blackHole, entity);
                 world.spawnEntity(blackHole);
             } else {
-                // 普通：生成内爆
+                // 普通：生成安全奇点内爆（对宿主与古神绝对免吸免伤）
                 SpecialTextUtil.JzaharGroup(world, "Nilgh'ri mtli!");
                 world.playSound(null, entity.posX, entity.posY, entity.posZ,
                         ACSounds.jzahar_implosion, SoundCategory.HOSTILE, 5.0F, 1.0F);
 
-                EntityImplosion implosion = new EntityImplosion(world);
+                MorphEntityImplosion implosion = new MorphEntityImplosion(world, entity);
                 implosion.setPosition(target.x, target.y + 1.2D, target.z);
                 BossNativeHelper.tagOwner(implosion, entity);
                 world.spawnEntity(implosion);
