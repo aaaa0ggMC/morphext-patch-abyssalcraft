@@ -34,10 +34,15 @@ public class MorphExtAbyssalCraft {
 
     private void registerActions() {
         MorphManager.INSTANCE.actions.put("ac_acid_spit", new AbyssalActions.AcidSpit());
+        MorphManager.INSTANCE.actions.put("ac_shoggoth_ooze", new AbyssalActions.ShoggothOoze());
         MorphManager.INSTANCE.actions.put("ac_dread_charge", new AbyssalActions.DreadCharge());
+        MorphManager.INSTANCE.actions.put("ac_dread_slug", new AbyssalActions.DreadSlug());
         MorphManager.INSTANCE.actions.put("ac_dread_barrage", new AbyssalActions.DreadBarrage());
         MorphManager.INSTANCE.actions.put("ac_dread_slam", new AbyssalActions.DreadSlam());
+        MorphManager.INSTANCE.actions.put("ac_spectral_fireball", new AbyssalActions.SpectralFireball());
+        MorphManager.INSTANCE.actions.put("ac_ghoul_pounce", new AbyssalActions.GhoulPounce());
         MorphManager.INSTANCE.actions.put("ac_coralium_squirt", new AbyssalActions.CoraliumSquirt());
+        MorphManager.INSTANCE.actions.put("ac_remnant_screech", new AbyssalActions.RemnantScreech());
         MorphManager.INSTANCE.actions.put("ac_shadow_veil", new AbyssalActions.ShadowVeil());
         MorphManager.INSTANCE.actions.put("ac_shadow_collapse", new AbyssalActions.ShadowCollapse());
         MorphManager.INSTANCE.actions.put("ac_anti_implosion", new AbyssalActions.AntiImplosion());

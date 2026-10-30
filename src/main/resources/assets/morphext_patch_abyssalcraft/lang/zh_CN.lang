@@ -1,9 +1,14 @@
 # Morph Extension Patch: AbyssalCraft
 morphext.metamorph.desc.ac_acid_spit=修格斯酸液喷射：向前发射一枚高腐蚀性的修格斯酸液弹，命中目标后腐蚀其防具并造成持续酸蚀伤害。
+morphext.metamorph.desc.ac_shoggoth_ooze=修格斯粘液爆发：原地喷发大量强酸粘液，重创周围所有敌人并造成极度严重的粘滞迟缓与虚弱。
 morphext.metamorph.desc.ac_dread_charge=恐惧充能弹：向前发射一颗充斥着恐惧原质的爆炸火球，命中后剧烈爆炸并扩散恐惧瘟疫。
+morphext.metamorph.desc.ac_dread_slug=恐惧蛞蝓弹：极速向前射出一枚穿甲恐惧蛞蝓，速度极快，命中附加恐惧瘟疫。
 morphext.metamorph.desc.ac_dread_barrage=恐惧弹幕：向准星方向连续齐射三枚恐惧重弹，对扇形区域形成毁灭性压制。
 morphext.metamorph.desc.ac_dread_slam=恐惧震地：巨臂重砸大地，激荡出恐惧震荡波击飞并伤害周围全部生物，施加恐惧瘟疫。
+morphext.metamorph.desc.ac_spectral_fireball=幽灵龙息：喷吐出一枚充满凋灵原质的幽灵龙息火球，命中后剧烈爆炸并扩散凋灵诅咒。
+morphext.metamorph.desc.ac_ghoul_pounce=食尸鬼扑击：向前迅猛飞扑撕咬敌人，造成抓挠撕裂伤害并施加饥饿与迟缓。
 morphext.metamorph.desc.ac_coralium_squirt=珊瑚墨汁喷射：喷射出剧毒的珊瑚墨汁飞弹，使被命中目标致盲并感染珊瑚瘟疫。
+morphext.metamorph.desc.ac_remnant_screech=遗民尖啸：释放刺耳阿克洛秘语尖叫，令周围所有敌对实体陷入迟缓、虚弱与挖掘疲劳。
 morphext.metamorph.desc.ac_shadow_veil=暗影帷幕：与阴影融为一体，短时间内隐去身形并大幅提升潜行移动速度。
 morphext.metamorph.desc.ac_shadow_collapse=暗影坍缩：释放暗影引力场，将周围所有实体强行吸附至身旁并造成暗影重创与失明。
 morphext.metamorph.desc.ac_anti_implosion=反物质内爆：引发反物质坍缩微型反应，逆向引爆周围空间，造成大量湮灭伤害并附加强烈反物质效果。

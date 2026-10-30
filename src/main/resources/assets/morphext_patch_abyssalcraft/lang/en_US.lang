@@ -1,10 +1,15 @@
 # Morph Extension Patch: AbyssalCraft
-morphext.metamorph.desc.ac_acid_spit=Shoggoth Acid Spit: Launches a highly corrosive shoggoth acid projectile forward, melting armor and inflicting continuous acid damage upon impact.
-morphext.metamorph.desc.ac_dread_charge=Dread Charge: Fires an explosive fireball infused with primordial dread, detonating violently and spreading the Dread Plague on impact.
-morphext.metamorph.desc.ac_dread_barrage=Dread Barrage: Rapidly volleys three heavy dread charges forward, devastating enemies across a forward cone.
-morphext.metamorph.desc.ac_dread_slam=Dread Ground Slam: Slams the ground with monstrous force, releasing a shockwave that knocks airborne and infects all surrounding entities with Dread Plague.
-morphext.metamorph.desc.ac_coralium_squirt=Coralium Ink Squirt: Shoots a virulent coralium ink projectile forward, blinding the target and inflicting Coralium Plague.
-morphext.metamorph.desc.ac_shadow_veil=Shadow Veil: Merges seamlessly into the shadows, granting temporary invisibility and greatly enhanced movement speed.
-morphext.metamorph.desc.ac_shadow_collapse=Shadow Collapse: Generates a gravitational void that forcefully drags all nearby entities toward you, inflicting heavy shadow damage and blindness.
-morphext.metamorph.desc.ac_anti_implosion=Antimatter Implosion: Triggers a microscopic antimatter annihilation singularity, dealing immense damage and applying severe Antimatter effects to surrounding foes.
-morphext.metamorph.desc.ac_jzahar_oblivion=Oblivion Cataclysm: Conjures the destructive gravity of Omothol black holes to crush and obliterate all living beings within radius, inflicting Wither and Levitation curses.
+morphext.metamorph.desc.ac_acid_spit=Acid Spit: Launches a highly corrosive acid projectile forward that corrodes armor durability and inflicts continuous acid damage.
+morphext.metamorph.desc.ac_shoggoth_ooze=Shoggoth Ooze Burst: Erupts viscous corrosive slime around the caster, heavily damaging foes and inflicting severe slowness and weakness.
+morphext.metamorph.desc.ac_dread_charge=Dread Charge: Hurls a dread-infused explosive charge forward, dealing blast damage and spreading Dread Plague.
+morphext.metamorph.desc.ac_dread_slug=Dread Slug: Fires a rapid-traveling piercing dread slug forward, inflicting dread plague with high precision.
+morphext.metamorph.desc.ac_dread_barrage=Dread Barrage: Rapidly volleys 3 heavy dread charges across a frontal spread, saturating the area.
+morphext.metamorph.desc.ac_dread_slam=Dread Slam: Slams the ground with immense force, launching nearby foes into the air and inflicting Dread Plague.
+morphext.metamorph.desc.ac_spectral_fireball=Spectral Dragon Breath: Fires a wither-infused spectral dragon fireball forward, detonating and inflicting Wither.
+morphext.metamorph.desc.ac_ghoul_pounce=Ghoul Pounce: Leaps forward aggressively to rend foes, dealing slash damage, hunger, and slowness.
+morphext.metamorph.desc.ac_coralium_squirt=Coralium Ink Squirt: Shoots a stream of toxic coralium ink forward, blinding targets and inflicting Coralium Plague.
+morphext.metamorph.desc.ac_remnant_screech=Remnant Screech: Emits a piercing Eldritch screech that disorients and weakens all surrounding hostiles with slowness, weakness, and mining fatigue.
+morphext.metamorph.desc.ac_shadow_veil=Shadow Veil: Melts into darkness, gaining invisibility and elevated movement speed for a short duration.
+morphext.metamorph.desc.ac_shadow_collapse=Shadow Collapse: Triggers a localized gravitational singularity, violently pulling nearby entities inward and blinding them.
+morphext.metamorph.desc.ac_anti_implosion=Antimatter Implosion: Triggers a micro antimatter collapse that implodes the surrounding space with annihilation damage and antimatter effects.
+morphext.metamorph.desc.ac_jzahar_oblivion=Oblivion Singular: Manifests the dread void of Omothol, crushing and levitating surrounding foes with wither and void damage.
