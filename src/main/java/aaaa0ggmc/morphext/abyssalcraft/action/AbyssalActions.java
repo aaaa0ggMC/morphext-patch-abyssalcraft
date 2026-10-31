@@ -249,8 +249,8 @@ public final class AbyssalActions {
                 source = (entity instanceof EntityPlayer ? DamageSource.causePlayerDamage((EntityPlayer) entity)
                         : DamageSource.causeMobDamage(entity)).setDamageBypassesArmor();
             }
-            // 重斩：单体重创 + 破甲撕裂 + 恐惧瘟疫
-            target.attackEntityFrom(source, 16.0F);
+            // 重斩：单体重创 + 破甲撕裂 + 恐惧瘟疫（A13：16→15，对齐 morph 可玩性封顶线）
+            target.attackEntityFrom(source, 15.0F);
             if (AbyssalCraftAPI.dread_plague != null) {
                 target.addPotionEffect(new PotionEffect(AbyssalCraftAPI.dread_plague, 140, 0));
             }
@@ -812,7 +812,8 @@ public final class AbyssalActions {
                 if (dist <= 4.2D) {
                     double dot = toTarget.normalize().dotProduct(look);
                     if (dot > 0.25D || dist < 2.0D) {
-                        target.attackEntityFrom(shadowSrc, 16.0F);
+                        // A13：16→15，对齐 morph 可玩性封顶线
+                        target.attackEntityFrom(shadowSrc, 15.0F);
                         target.addPotionEffect(new PotionEffect(MobEffects.SLOWNESS, 60, 1));
                         target.knockBack(entity, 0.8F, -look.x, -look.z);
                     }
@@ -952,7 +953,8 @@ public final class AbyssalActions {
             DamageSource source = AbyssalCraftAPI.antimatter != null ? AbyssalCraftAPI.antimatter : (entity instanceof EntityPlayer ? DamageSource.causePlayerDamage((EntityPlayer) entity) : DamageSource.causeMobDamage(entity));
 
             for (EntityLivingBase e : list) {
-                e.attackEntityFrom(source, 26.0F);
+                // A13：单发 26 超 E2 红线（Boss 级 ≤15），收敛到 15
+                e.attackEntityFrom(source, 15.0F);
                 if (AbyssalCraftAPI.antimatter_potion != null) {
                     e.addPotionEffect(new PotionEffect(AbyssalCraftAPI.antimatter_potion, 200, 1));
                 }
@@ -1041,7 +1043,8 @@ public final class AbyssalActions {
                 if (dist <= 5.0D) {
                     double dot = toTarget.normalize().dotProduct(look);
                     if (dot > 0.2D || dist < 2.0D) {
-                        target.attackEntityFrom(source, 16.0F);
+                        // A13：16→15，对齐 morph 可玩性封顶线
+                        target.attackEntityFrom(source, 15.0F);
                         if (AbyssalCraftAPI.antimatter_potion != null) {
                             target.addPotionEffect(new PotionEffect(AbyssalCraftAPI.antimatter_potion, 120, 0));
                         }
@@ -1153,7 +1156,8 @@ public final class AbyssalActions {
             List<EntityLivingBase> list = findNearbyEntities(entity, 12.0D);
             DamageSource source = entity instanceof EntityPlayer ? DamageSource.causePlayerDamage((EntityPlayer) entity) : DamageSource.causeMobDamage(entity);
             for (EntityLivingBase e : list) {
-                e.attackEntityFrom(source, 22.0F);
+                // A13：湮灭直伤 22 超 E2 Boss 红线（≤15），收敛到 15；暗影追伤 8 保留（单发 ≤8）
+                e.attackEntityFrom(source, 15.0F);
                 if (AbyssalCraftAPI.shadow != null) {
                     e.attackEntityFrom(AbyssalCraftAPI.shadow, 8.0F);
                 }
@@ -1327,7 +1331,8 @@ public final class AbyssalActions {
                     DamageSource.causePlayerDamage((EntityPlayer) entity) : DamageSource.causeMobDamage(entity);
 
             for (EntityLivingBase e : list) {
-                e.attackEntityFrom(source, 16.0F);
+                // A13：16→15，对齐 morph 可玩性封顶线
+                e.attackEntityFrom(source, 15.0F);
                 e.motionY += 0.65D;
                 e.motionX += (e.posX - entity.posX) * 0.4D;
                 e.motionZ += (e.posZ - entity.posZ) * 0.4D;

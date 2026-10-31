@@ -90,19 +90,40 @@ public class ShadowPhotophobiaPassive extends AbstractPassiveAbility implements 
             // 1. 畏光判定：直接暴露在白天的阳光下或环境亮度极高 (>= 12)
             boolean inSunlight = world.isDaytime() && world.canSeeSky(pos) && world.getLightFor(EnumSkyBlock.SKY, pos) > 10;
             if (inSunlight || light >= 12) {
-                player.addPotionEffect(new PotionEffect(MobEffects.WEAKNESS, 60, 0, false, false));
-                player.addPotionEffect(new PotionEffect(MobEffects.SLOWNESS, 60, 0, false, false));
+                // 幂等：已存在同类效果时不重复 addPotionEffect，避免与其他清残留机制互相“加-撕”
+                if (!player.isPotionActive(MobEffects.WEAKNESS)) {
+                    player.addPotionEffect(new PotionEffect(MobEffects.WEAKNESS, 60, 0, false, false));
+                }
+                if (!player.isPotionActive(MobEffects.SLOWNESS)) {
+                    player.addPotionEffect(new PotionEffect(MobEffects.SLOWNESS, 60, 0, false, false));
+                }
 
                 if (world instanceof WorldServer) {
                     ((WorldServer) world).spawnParticle(EnumParticleTypes.SMOKE_NORMAL,
                             player.posX, player.posY + player.height * 0.5D, player.posZ,
                             3, 0.25D, 0.35D, 0.25D, 0.02D);
                 }
-            } else if (light <= 7) {
-                // 2. 暗影庇护判定：昏暗无光环境获得夜视与抗性
-                player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION, 260, 0, false, false));
-                player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 60, 0, false, false));
+            } else {
+                // 离开强光：主动清除畏光自加的 0 级虚弱/迟缓（只清 0 级，保留其他来源的高级同类效果）
+                clearPhotophobiaDebuffs(player);
+                if (light <= 7) {
+                    // 2. 暗影庇护判定：昏暗无光环境获得夜视与抗性
+                    player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION, 260, 0, false, false));
+                    player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 60, 0, false, false));
+                }
             }
+        }
+    }
+
+    /** 清除畏光机制自加的 0 级虚弱/迟缓（离开强光或解除变身时调用）。 */
+    private static void clearPhotophobiaDebuffs(EntityPlayer player) {
+        PotionEffect weakness = player.getActivePotionEffect(MobEffects.WEAKNESS);
+        if (weakness != null && weakness.getAmplifier() == 0) {
+            player.removePotionEffect(MobEffects.WEAKNESS);
+        }
+        PotionEffect slowness = player.getActivePotionEffect(MobEffects.SLOWNESS);
+        if (slowness != null && slowness.getAmplifier() == 0) {
+            player.removePotionEffect(MobEffects.SLOWNESS);
         }
     }
 

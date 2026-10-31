@@ -20,7 +20,8 @@ import net.minecraft.world.WorldServer;
 /**
  * 反物质生物专属被动：反物质湮灭反应与虚空免疫 (Antimatter Annihilation & Void Immunity)
  * 1. 物理接触湮灭反应 (Contact Annihilation)：反物质生物接触正物质实体时发生微型物质湮灭反应，造成真实反物质直伤与击退；
- * 2. 近战湮灭充能 (Melee Annihilation Proc)：近战攻击目标附带额外反物质直伤并施加反物质药水侵蚀；
+ * 2. 命中湮灭充能 (Hit Annihilation Proc)：攻击命中（含弹射物，trueSource 为玩家）附带额外反物质直伤并施加反物质药水侵蚀；
+ *    （原"近战限定"注释失真：被动分发按 trueSource 触发，弹射物命中同样生效；S2 后只走被动单通道，数值为单倍）
  * 3. 反物质绝对免疫 (Antimatter Immunity)：完全免疫反物质伤害 (DamageSource antimatter) 与反物质药水负面。
  *
  * 兼备 Metamorph 原生 IAbility 与 MorphExtension 现代 IPassiveAbility 双重接口。
@@ -44,6 +45,9 @@ public class AntimatterAnnihilationPassive extends AbstractPassiveAbility implem
 
     @Override
     public void onCollide(EntityPlayer player, EntityLivingBase target, MorphContext context) {
+        // 注（A7）：核心目前没有任何 IPassiveAbility.onCollide 分发点，此分支是死钩子；
+        // "接触湮灭"实际生效路径是 MorphBossAdaptHandler.onLivingUpdate 的名字匹配碰撞补偿。
+        // 保留实现等待核心补分发（补上后自动生效），勿删。
         handleCollisionAnnihilation(player, target);
     }
 

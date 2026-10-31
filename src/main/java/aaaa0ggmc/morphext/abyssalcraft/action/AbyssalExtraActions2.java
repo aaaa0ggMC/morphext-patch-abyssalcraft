@@ -109,8 +109,13 @@ public final class AbyssalExtraActions2 {
             Vec3d look = entity.getLook(1.0F);
             entity.swingArm(EnumHand.MAIN_HAND);
 
-            // 自身燃烧（深渊食尸鬼火焰形态表现；不伤自身，宿主自带火免时仅视觉）
+            // 自身燃烧（深渊食尸鬼火焰形态表现）。
+            // S3 修复：AC 源码（EntityDepthsGhoul/EntityAbyssalZombie）中这两个实体
+            // 并非火免（无 isImmuneToFire），源码行为只是"自身已燃烧且徒手时点燃目标"，
+            // 从不自烧；此处的自焚是纯外观演绎，配短时火焰抗性保证不掉血
+            //（顺带 8s 内豁免环境火伤与 sun_allergy 的日光灼烧，属可接受的自伤减免）。
             entity.setFire(8);
+            entity.addPotionEffect(new PotionEffect(MobEffects.FIRE_RESISTANCE, 200, 0, false, false));
 
             AxisAlignedBB grabBox = entity.getEntityBoundingBox().grow(2.2D, 1.1D, 2.2D)
                     .offset(look.x * 1.6D, 0.2D, look.z * 1.6D);
@@ -273,20 +278,23 @@ public final class AbyssalExtraActions2 {
             CrosshairTargetDirector.AimResult aim = CrosshairTargetDirector.resolveTarget(entity, 32.0D);
 
             // 1 名恐惧卫士 + 2 只恐惧幼体（还原分级出兵）
+            // S4：同类召唤物存量上限（同宿主同类型 ≤4，超出替换旧的）+ 召唤物免掉落/免经验
+            BossNativeHelper.capSummons(world, entity, EntityDreadguard.class, 1);
             EntityDreadguard guard = new EntityDreadguard(world);
             Vec3d safe = getSafeSpawnPosition(entity, 2.4D);
             guard.setPosition(safe.x, safe.y, safe.z);
-            BossNativeHelper.tagOwner(guard, entity);
+            BossNativeHelper.markSummon(guard, entity);
             if (aim.hasEntity()) {
                 guard.setAttackTarget(aim.entityTarget);
             }
             world.spawnEntity(guard);
 
+            BossNativeHelper.capSummons(world, entity, EntityDreadSpawn.class, 2);
             for (int i = 0; i < 2; i++) {
                 Vec3d pos = getSafeSpawnPosition(entity, 2.0D + i * 1.2D);
                 EntityDreadSpawn spawn = new EntityDreadSpawn(world);
                 spawn.setPosition(pos.x, pos.y, pos.z);
-                BossNativeHelper.tagOwner(spawn, entity);
+                BossNativeHelper.markSummon(spawn, entity);
                 if (aim.hasEntity()) {
                     spawn.setAttackTarget(aim.entityTarget);
                 }
@@ -382,11 +390,13 @@ public final class AbyssalExtraActions2 {
             World world = entity.world;
             CrosshairTargetDirector.AimResult aim = CrosshairTargetDirector.resolveTarget(entity, 24.0D);
 
+            // S4：同类召唤物存量上限 + 召唤物免掉落/免经验
+            BossNativeHelper.capSummons(world, entity, EntityAntiZombie.class, 2);
             for (int i = 0; i < 2; i++) {
                 Vec3d safe = getSafeSpawnPosition(entity, 1.8D + i * 0.9D);
                 EntityAntiZombie reinforcement = new EntityAntiZombie(world);
                 reinforcement.setPosition(safe.x, safe.y, safe.z);
-                BossNativeHelper.tagOwner(reinforcement, entity);
+                BossNativeHelper.markSummon(reinforcement, entity);
                 if (aim.hasEntity()) {
                     reinforcement.setAttackTarget(aim.entityTarget);
                 }

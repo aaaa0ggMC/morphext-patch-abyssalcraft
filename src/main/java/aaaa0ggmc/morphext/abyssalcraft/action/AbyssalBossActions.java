@@ -53,7 +53,7 @@ public final class AbyssalBossActions {
      * 3. 目标由 CrosshairTargetDirector 智能引导（有敌人打敌人，无敌人打准星视线交点，实现 100% 自由射击手感）。
      */
     public static class JzaharWitherSalvo extends AbyssalCraftAction {
-        public JzaharWitherSalvo() { super(35); } // 冷却 1.75s，手感轻快连贯
+        public JzaharWitherSalvo() { super(100); } // A13：冷却 1.75s→5s（2s 冷却档抬到 E2 红线下限 ≥5s）
 
         @Override
         protected boolean executeServer(EntityLivingBase entity, AbstractMorph morph) {
@@ -175,7 +175,8 @@ public final class AbyssalBossActions {
                     e.addVelocity(vector.x * velocity, 0.4D + (vector.y + 0.2D) * velocity * 0.3D, vector.z * velocity);
                     DamageSource dmg = entity instanceof EntityPlayer ?
                             DamageSource.causePlayerDamage((EntityPlayer) entity) : DamageSource.FLY_INTO_WALL;
-                    e.attackEntityFrom(dmg, (float) (16.0D + velocity * 2.0D));
+                    // A13：原 16+velocity*2（至 28）超 E2 红线，去速度加成并收敛到 Boss 封顶 15
+                    e.attackEntityFrom(dmg, 15.0F);
                 }
             }
             return true;
@@ -287,7 +288,7 @@ public final class AbyssalBossActions {
      * 3. 准星自由无锁敌喷吐，宿主绝对豁免自伤。
      */
     public static class SacthothShadowFlame extends AbyssalCraftAction {
-        public SacthothShadowFlame() { super(40); } // 冷却 2s
+        public SacthothShadowFlame() { super(100); } // A13：冷却 2s→5s（15 伤+致盲不支持 2s 连发）
 
         @Override
         protected boolean executeServer(EntityLivingBase entity, AbstractMorph morph) {
@@ -380,7 +381,7 @@ public final class AbyssalBossActions {
      * 3. 拥有智能方块碰撞检测，绝不卡入实心方块或掉入虚空。
      */
     public static class SacthothShadowStep extends AbyssalCraftAction {
-        public SacthothShadowStep() { super(50); } // 冷却 2.5s
+        public SacthothShadowStep() { super(100); } // A13：冷却 2.5s→5s（2s 冷却档抬到 E2 红线下限 ≥5s）
 
         @Override
         protected boolean executeServer(EntityLivingBase entity, AbstractMorph morph) {
@@ -444,7 +445,7 @@ public final class AbyssalBossActions {
      * 3. 注入属主标签，杜绝反噬。
      */
     public static class ChagarothDreadSalvo extends AbyssalCraftAction {
-        public ChagarothDreadSalvo() { super(40); } // 冷却 2s
+        public ChagarothDreadSalvo() { super(100); } // A13：冷却 2s→5s（2s 冷却档抬到 E2 红线下限 ≥5s）
 
         @Override
         protected boolean executeServer(EntityLivingBase entity, AbstractMorph morph) {
@@ -478,10 +479,13 @@ public final class AbyssalBossActions {
                 BossNativeHelper.tagOwner(slug, entity);
                 world.spawnEntity(slug);
 
-                EntityLiving minion = world.rand.nextBoolean() ?
-                        new EntityChagarothFist(world) : new EntityChagarothSpawn(world);
+                // S4：召唤物存量上限 + 免掉落/免经验
+                boolean fistVariant = world.rand.nextBoolean();
+                Class<? extends EntityLiving> minionType = fistVariant ? EntityChagarothFist.class : EntityChagarothSpawn.class;
+                BossNativeHelper.capSummons(world, entity, minionType, 1);
+                EntityLiving minion = fistVariant ? new EntityChagarothFist(world) : new EntityChagarothSpawn(world);
                 minion.copyLocationAndAnglesFrom(slug);
-                BossNativeHelper.tagOwner(minion, entity);
+                BossNativeHelper.markSummon(minion, entity);
                 world.spawnEntity(minion);
                 minion.startRiding(slug);
 
@@ -514,7 +518,8 @@ public final class AbyssalBossActions {
             DamageSource src = AbyssalCraftAPI.dread != null ? AbyssalCraftAPI.dread :
                     (entity instanceof EntityPlayer ? DamageSource.causePlayerDamage((EntityPlayer) entity) : DamageSource.causeMobDamage(entity));
             for (EntityLivingBase target : list) {
-                target.attackEntityFrom(src, 18.0F);
+                // A13：18→15（对齐 JzaharEarthquake NEW#8 的 morph 近战可玩性封顶线）
+                target.attackEntityFrom(src, 15.0F);
                 target.motionY += 0.7D;
                 target.velocityChanged = true;
                 if (AbyssalCraftAPI.dread_plague != null) {
@@ -537,7 +542,8 @@ public final class AbyssalBossActions {
 
             EntityChagarothFist fist = new EntityChagarothFist(world);
             fist.copyLocationAndAnglesFrom(slug);
-            BossNativeHelper.tagOwner(fist, entity);
+            BossNativeHelper.capSummons(world, entity, EntityChagarothFist.class, 1);
+            BossNativeHelper.markSummon(fist, entity);
             if (aim.hasEntity()) {
                 fist.setAttackTarget(aim.entityTarget);
             }
@@ -594,16 +600,19 @@ public final class AbyssalBossActions {
 
                 EntityLiving minion;
                 if (i == 1 && world.rand.nextBoolean()) {
+                    // S4：召唤物存量上限 + 免掉落/免经验
+                    BossNativeHelper.capSummons(world, entity, EntityChagarothFist.class, 1);
                     EntityChagarothFist fist = new EntityChagarothFist(world);
                     fist.copyLocationAndAnglesFrom(slug);
                     minion = fist;
                 } else {
+                    BossNativeHelper.capSummons(world, entity, EntityChagarothSpawn.class, 1);
                     EntityChagarothSpawn spawn = new EntityChagarothSpawn(world);
                     spawn.copyLocationAndAnglesFrom(slug);
                     minion = spawn;
                 }
 
-                BossNativeHelper.tagOwner(minion, entity);
+                BossNativeHelper.markSummon(minion, entity);
                 if (aim.hasEntity()) {
                     minion.setAttackTarget(aim.entityTarget);
                 }
@@ -714,7 +723,8 @@ public final class AbyssalBossActions {
                     (entity instanceof EntityPlayer ? DamageSource.causePlayerDamage((EntityPlayer) entity) : DamageSource.causeMobDamage(entity));
 
             for (EntityLivingBase target : list) {
-                target.attackEntityFrom(src, 18.0F);
+                // A13：18→15（对齐 JzaharEarthquake NEW#8 的 morph 近战可玩性封顶线）
+                target.attackEntityFrom(src, 15.0F);
                 target.motionX += look.x * 1.5D;
                 target.motionY += 0.65D;
                 target.motionZ += look.z * 1.5D;

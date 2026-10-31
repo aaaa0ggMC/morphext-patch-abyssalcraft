@@ -35,7 +35,7 @@
     "attackDamage": 6.0,
     "knockbackResistance": 0.2,
     "attributes": {
-      "maxHealth": 5
+      "maxHealth": 25
     },
     "hands": true,
     "rightHand": "rArm01a",
@@ -77,7 +77,7 @@
     "attackDamage": 6.0,
     "knockbackResistance": 0.2,
     "attributes": {
-      "maxHealth": 5
+      "maxHealth": 25
     },
     "hands": true,
     "rightHand": "rArm01a",
@@ -119,7 +119,7 @@
     "attackDamage": 8.0,
     "knockbackResistance": 0.2,
     "attributes": {
-      "maxHealth": 30
+      "maxHealth": 50
     },
     "hands": true,
     "rightHand": "rArm01a",
@@ -161,7 +161,7 @@
     "attackDamage": 8.0,
     "knockbackResistance": 0.2,
     "attributes": {
-      "maxHealth": 30
+      "maxHealth": 50
     },
     "hands": true,
     "rightHand": "rArm01a",
@@ -203,7 +203,7 @@
     "attackDamage": 10.0,
     "knockbackResistance": 0.2,
     "attributes": {
-      "maxHealth": 80
+      "maxHealth": 100
     },
     "hands": true,
     "rightHand": "rArm01a",
@@ -245,7 +245,7 @@
     "attackDamage": 10.0,
     "knockbackResistance": 0.2,
     "attributes": {
-      "maxHealth": 80
+      "maxHealth": 100
     },
     "hands": true,
     "rightHand": "rArm01a",
@@ -279,7 +279,7 @@
     "attackDamage": 6.0,
     "speed": 0.099,
     "attributes": {
-      "maxHealth": 15
+      "maxHealth": 35
     },
     "hands": true,
     "rightHand": "rarm1",
@@ -313,7 +313,7 @@
     "attackDamage": 6.0,
     "speed": 0.099,
     "attributes": {
-      "maxHealth": 15
+      "maxHealth": 35
     },
     "hands": true,
     "rightHand": "rarm1",
@@ -348,7 +348,7 @@
     "attackDamage": 6.0,
     "speed": 0.099,
     "attributes": {
-      "maxHealth": 5
+      "maxHealth": 25
     },
     "hands": true,
     "rightHand": "bipedRightArm",
@@ -383,7 +383,7 @@
     "attackDamage": 6.0,
     "speed": 0.099,
     "attributes": {
-      "maxHealth": 5
+      "maxHealth": 25
     },
     "hands": true,
     "rightHand": "bipedRightArm",
@@ -467,7 +467,7 @@
     "attackDamage": 10.0,
     "knockbackResistance": 1.0,
     "attributes": {
-      "maxHealth": 80
+      "maxHealth": 100
     },
     "hands": true,
     "rightHand": "frontLeg",
@@ -508,7 +508,7 @@
     "attackDamage": 10.0,
     "knockbackResistance": 1.0,
     "attributes": {
-      "maxHealth": 80
+      "maxHealth": 100
     },
     "hands": true,
     "rightHand": "frontLeg",
@@ -546,7 +546,7 @@
     ],
     "attackDamage": 1.0,
     "attributes": {
-      "maxHealth": 10
+      "maxHealth": 30
     },
     "hands": true,
     "rightHand": "frontLeg",
@@ -584,7 +584,7 @@
     ],
     "attackDamage": 1.0,
     "attributes": {
-      "maxHealth": 10
+      "maxHealth": 30
     },
     "hands": true,
     "rightHand": "frontLeg",
@@ -618,7 +618,7 @@
     "attackDamage": 6.0,
     "speed": 0.101,
     "attributes": {
-      "maxHealth": 10
+      "maxHealth": 30
     },
     "hands": true,
     "rightHand": "rightarm",
@@ -651,7 +651,7 @@
     "attackDamage": 6.0,
     "speed": 0.101,
     "attributes": {
-      "maxHealth": 10
+      "maxHealth": 30
     },
     "hands": true,
     "rightHand": "rightarm",
@@ -747,7 +747,7 @@
     "speed": 0.12,
     "knockbackResistance": 0.2,
     "attributes": {
-      "maxHealth": 30
+      "maxHealth": 50
     },
     "hands": true,
     "rightHand": "arm",
@@ -783,7 +783,7 @@
     "speed": 0.12,
     "knockbackResistance": 0.2,
     "attributes": {
-      "maxHealth": 30
+      "maxHealth": 50
     },
     "hands": true,
     "rightHand": "arm",
@@ -820,7 +820,7 @@
     "armor": 20.0,
     "armorToughness": 4.0,
     "attributes": {
-      "maxHealth": 40
+      "maxHealth": 60
     },
     "hands": true,
     "rightHand": "rightarm",
@@ -857,7 +857,7 @@
     "armor": 20.0,
     "armorToughness": 4.0,
     "attributes": {
-      "maxHealth": 40
+      "maxHealth": 60
     },
     "hands": true,
     "rightHand": "rightarm",
@@ -868,7 +868,6 @@
       "ac_dread_plague",
       "fire_proof",
       "night_vision",
-      "sun_allergy",
       "rotten",
       "faction_undead",
       "faction_dread"
@@ -895,7 +894,7 @@
     "attackDamage": 6.0,
     "speed": 0.099,
     "attributes": {
-      "maxHealth": 15
+      "maxHealth": 35
     },
     "hands": true,
     "rightHand": "rarm1",
@@ -906,7 +905,6 @@
       "ac_dread_plague",
       "fire_proof",
       "night_vision",
-      "sun_allergy",
       "rotten",
       "faction_undead",
       "faction_dread"
@@ -933,7 +931,7 @@
     "attackDamage": 6.0,
     "speed": 0.099,
     "attributes": {
-      "maxHealth": 15
+      "maxHealth": 35
     },
     "hands": true,
     "rightHand": "rarm1",
@@ -970,7 +968,7 @@
     "speed": 0.114,
     "knockbackResistance": 0.4,
     "attributes": {
-      "maxHealth": 80
+      "maxHealth": 100
     },
     "hands": true,
     "rightHand": "rightleg1",
@@ -1007,7 +1005,7 @@
     "speed": 0.114,
     "knockbackResistance": 0.4,
     "attributes": {
-      "maxHealth": 80
+      "maxHealth": 100
     },
     "hands": true,
     "rightHand": "rightleg1",
@@ -1176,7 +1174,7 @@
     "armor": 10.0,
     "knockbackResistance": 1.0,
     "attributes": {
-      "maxHealth": 80
+      "maxHealth": 100
     },
     "hands": true,
     "rightHand": "walltentacle5",
@@ -1221,7 +1219,7 @@
     "armor": 10.0,
     "knockbackResistance": 1.0,
     "attributes": {
-      "maxHealth": 80
+      "maxHealth": 100
     },
     "hands": true,
     "rightHand": "walltentacle5",
@@ -1252,7 +1250,7 @@
     "speed": 0.099,
     "knockbackResistance": 0.3,
     "attributes": {
-      "maxHealth": 20
+      "maxHealth": 40
     },
     "hands": true,
     "rightHand": "arm1",
@@ -1283,7 +1281,7 @@
     "speed": 0.099,
     "knockbackResistance": 0.3,
     "attributes": {
-      "maxHealth": 20
+      "maxHealth": 40
     },
     "hands": true,
     "rightHand": "arm1",
@@ -1317,7 +1315,7 @@
     "speed": 0.126,
     "knockbackResistance": 0.1,
     "attributes": {
-      "maxHealth": 10
+      "maxHealth": 30
     },
     "hands": true,
     "rightHand": "rightleg1",
@@ -1351,7 +1349,7 @@
     "speed": 0.126,
     "knockbackResistance": 0.1,
     "attributes": {
-      "maxHealth": 10
+      "maxHealth": 30
     },
     "hands": true,
     "rightHand": "rightleg1",
@@ -1361,7 +1359,6 @@
     "abilities": [
       "ac_photophobia",
       "night_vision",
-      "sun_allergy",
       "faction_shadow",
       "ac_shadow_phase"
     ],
@@ -1393,7 +1390,6 @@
     "abilities": [
       "ac_photophobia",
       "night_vision",
-      "sun_allergy",
       "faction_shadow",
       "ac_shadow_phase"
     ],
@@ -1425,7 +1421,6 @@
     "abilities": [
       "ac_photophobia",
       "night_vision",
-      "sun_allergy",
       "faction_shadow",
       "ac_shadow_phase"
     ],
@@ -1450,7 +1445,7 @@
     "attackDamage": 8.0,
     "speed": 0.101,
     "attributes": {
-      "maxHealth": 20
+      "maxHealth": 40
     },
     "hands": true,
     "rightHand": "Rarm1",
@@ -1460,7 +1455,6 @@
     "abilities": [
       "ac_photophobia",
       "night_vision",
-      "sun_allergy",
       "faction_shadow",
       "ac_shadow_phase"
     ],
@@ -1485,7 +1479,7 @@
     "attackDamage": 8.0,
     "speed": 0.101,
     "attributes": {
-      "maxHealth": 20
+      "maxHealth": 40
     },
     "hands": true,
     "rightHand": "Rarm1",
@@ -1495,7 +1489,6 @@
     "abilities": [
       "ac_photophobia",
       "night_vision",
-      "sun_allergy",
       "faction_shadow",
       "ac_shadow_phase",
       "faction_shadow_relative"
@@ -1523,7 +1516,7 @@
     "speed": 0.101,
     "knockbackResistance": 0.3,
     "attributes": {
-      "maxHealth": 40
+      "maxHealth": 60
     },
     "hands": true,
     "rightHand": "rarm1",
@@ -1533,7 +1526,6 @@
     "abilities": [
       "ac_photophobia",
       "night_vision",
-      "sun_allergy",
       "faction_shadow",
       "ac_shadow_phase",
       "faction_shadow_relative"
@@ -1561,7 +1553,7 @@
     "speed": 0.101,
     "knockbackResistance": 0.3,
     "attributes": {
-      "maxHealth": 40
+      "maxHealth": 60
     },
     "hands": true,
     "rightHand": "rarm1",
@@ -1572,7 +1564,6 @@
       "ac_photophobia",
       "climb",
       "night_vision",
-      "sun_allergy",
       "faction_shadow_lord",
       "ac_shadow_phase"
     ],
@@ -1592,8 +1583,6 @@
       "mining_fatigue",
       "nausea",
       "poison",
-      "slowness",
-      "weakness",
       "wither"
     ],
     "damageImmunities": [
@@ -1617,7 +1606,7 @@
     "armor": 20.0,
     "knockbackResistance": 0.4,
     "attributes": {
-      "maxHealth": 80
+      "maxHealth": 100
     },
     "hands": true,
     "rightHand": "leftarm1",
@@ -1628,7 +1617,6 @@
       "ac_photophobia",
       "climb",
       "night_vision",
-      "sun_allergy",
       "faction_shadow_lord",
       "ac_shadow_phase"
     ],
@@ -1648,8 +1636,6 @@
       "mining_fatigue",
       "nausea",
       "poison",
-      "slowness",
-      "weakness",
       "wither"
     ],
     "damageImmunities": [
@@ -1673,7 +1659,7 @@
     "armor": 20.0,
     "knockbackResistance": 0.4,
     "attributes": {
-      "maxHealth": 80
+      "maxHealth": 100
     },
     "hands": true,
     "rightHand": "leftarm1",
@@ -1705,7 +1691,7 @@
     "speed": 0.157,
     "knockbackResistance": 0.2,
     "attributes": {
-      "maxHealth": 80
+      "maxHealth": 100
     },
     "hands": true,
     "rightHand": "rarm1",
@@ -1737,7 +1723,7 @@
     "speed": 0.157,
     "knockbackResistance": 0.2,
     "attributes": {
-      "maxHealth": 80
+      "maxHealth": 100
     },
     "hands": true,
     "rightHand": "rarm1",
@@ -1771,7 +1757,7 @@
     "attackDamage": 6.0,
     "speed": 0.099,
     "attributes": {
-      "maxHealth": 15
+      "maxHealth": 35
     },
     "hands": true,
     "rightHand": "rarm1",
@@ -1805,7 +1791,7 @@
     "attackDamage": 6.0,
     "speed": 0.099,
     "attributes": {
-      "maxHealth": 15
+      "maxHealth": 35
     },
     "hands": true,
     "rightHand": "rarm1",
@@ -1894,7 +1880,7 @@
     "attackDamage": 2.0,
     "speed": 0.101,
     "attributes": {
-      "maxHealth": 10
+      "maxHealth": 30
     },
     "hands": true,
     "rightHand": "bipedRightArm",
@@ -1925,7 +1911,7 @@
     "attackDamage": 2.0,
     "speed": 0.101,
     "attributes": {
-      "maxHealth": 10
+      "maxHealth": 30
     },
     "hands": true,
     "rightHand": "bipedRightArm",
@@ -1954,7 +1940,7 @@
     "attackDamage": 2.0,
     "speed": 0.108,
     "attributes": {
-      "maxHealth": 4
+      "maxHealth": 24
     },
     "hands": true,
     "rightHand": "leg1",
@@ -1983,7 +1969,7 @@
     "attackDamage": 2.0,
     "speed": 0.108,
     "attributes": {
-      "maxHealth": 4
+      "maxHealth": 24
     },
     "hands": true,
     "rightHand": "leg1",
@@ -2010,7 +1996,7 @@
     "attackDamage": 1.0,
     "speed": 0.101,
     "attributes": {
-      "maxHealth": 10
+      "maxHealth": 30
     },
     "hands": true,
     "rightHand": "leg3",
@@ -2037,7 +2023,7 @@
     "attackDamage": 1.0,
     "speed": 0.101,
     "attributes": {
-      "maxHealth": 10
+      "maxHealth": 30
     },
     "hands": true,
     "rightHand": "leg3",
@@ -2685,7 +2671,7 @@
     "attackDamage": 5.0,
     "speed": 0.099,
     "attributes": {
-      "maxHealth": 10
+      "maxHealth": 30
     },
     "hands": true,
     "rightHand": "rarm1",
@@ -2709,7 +2695,7 @@
     "attackDamage": 5.0,
     "speed": 0.099,
     "attributes": {
-      "maxHealth": 10
+      "maxHealth": 30
     },
     "hands": true,
     "rightHand": "rarm1",
@@ -2743,7 +2729,7 @@
     "attackDamage": 10.0,
     "knockbackResistance": 0.2,
     "attributes": {
-      "maxHealth": 30
+      "maxHealth": 50
     },
     "hands": true,
     "rightHand": "rightarm",
@@ -2777,7 +2763,7 @@
     "attackDamage": 10.0,
     "knockbackResistance": 0.2,
     "attributes": {
-      "maxHealth": 30
+      "maxHealth": 50
     },
     "hands": true,
     "rightHand": "rightarm",
@@ -2819,7 +2805,7 @@
     "speed": 0.099,
     "knockbackResistance": 0.2,
     "attributes": {
-      "maxHealth": 40
+      "maxHealth": 60
     },
     "hands": true,
     "rightHand": "rarm1",
@@ -2861,7 +2847,7 @@
     "speed": 0.099,
     "knockbackResistance": 0.2,
     "attributes": {
-      "maxHealth": 40
+      "maxHealth": 60
     },
     "hands": true,
     "rightHand": "rarm1",
@@ -2920,7 +2906,7 @@
     "speed": 0.101,
     "armor": 10.0,
     "attributes": {
-      "maxHealth": 80
+      "maxHealth": 100
     },
     "hands": true,
     "rightHand": "staff1",
@@ -2979,7 +2965,7 @@
     "speed": 0.101,
     "armor": 10.0,
     "attributes": {
-      "maxHealth": 80
+      "maxHealth": 100
     },
     "hands": true,
     "rightHand": "staff1",
@@ -3006,7 +2992,7 @@
     "attackDamage": 2.0,
     "speed": 0.101,
     "attributes": {
-      "maxHealth": 10
+      "maxHealth": 30
     },
     "hands": true,
     "rightHand": "bipedRightArm",
@@ -3033,7 +3019,7 @@
     "attackDamage": 2.0,
     "speed": 0.101,
     "attributes": {
-      "maxHealth": 10
+      "maxHealth": 30
     },
     "hands": true,
     "rightHand": "bipedRightArm",
@@ -3062,7 +3048,7 @@
     "attackDamage": 5.0,
     "speed": 0.099,
     "attributes": {
-      "maxHealth": 25
+      "maxHealth": 45
     },
     "hands": true,
     "rightHand": "rarm1",
@@ -3091,7 +3077,7 @@
     "attackDamage": 5.0,
     "speed": 0.099,
     "attributes": {
-      "maxHealth": 25
+      "maxHealth": 45
     },
     "hands": true,
     "rightHand": "rarm1",
@@ -3121,7 +3107,7 @@
     "attackDamage": 6.0,
     "speed": 0.099,
     "attributes": {
-      "maxHealth": 20
+      "maxHealth": 40
     },
     "hands": true,
     "rightHand": "bipedRightArm",
@@ -3151,7 +3137,7 @@
     "attackDamage": 6.0,
     "speed": 0.099,
     "attributes": {
-      "maxHealth": 20
+      "maxHealth": 40
     },
     "hands": true,
     "rightHand": "bipedRightArm",
@@ -3178,7 +3164,7 @@
     "speed": 0.099,
     "knockbackResistance": 0.3,
     "attributes": {
-      "maxHealth": 40
+      "maxHealth": 60
     },
     "hands": true,
     "rightHand": "rightarm",
@@ -3205,7 +3191,7 @@
     "speed": 0.099,
     "knockbackResistance": 0.3,
     "attributes": {
-      "maxHealth": 40
+      "maxHealth": 60
     },
     "hands": true,
     "rightHand": "rightarm",
@@ -3232,7 +3218,7 @@
     "attackDamage": 4.0,
     "speed": 0.101,
     "attributes": {
-      "maxHealth": 20
+      "maxHealth": 40
     },
     "hands": true,
     "rightHand": "rLeg01a",
@@ -3259,7 +3245,7 @@
     "attackDamage": 4.0,
     "speed": 0.101,
     "attributes": {
-      "maxHealth": 20
+      "maxHealth": 40
     },
     "hands": true,
     "rightHand": "rLeg01a",
@@ -3286,7 +3272,7 @@
     "speed": 0.101,
     "knockbackResistance": 0.2,
     "attributes": {
-      "maxHealth": 80
+      "maxHealth": 100
     },
     "hands": true,
     "rightHand": "rightarm1",
@@ -3313,7 +3299,7 @@
     "speed": 0.101,
     "knockbackResistance": 0.2,
     "attributes": {
-      "maxHealth": 80
+      "maxHealth": 100
     },
     "hands": true,
     "rightHand": "rightarm1",

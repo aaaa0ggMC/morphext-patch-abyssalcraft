@@ -66,8 +66,14 @@ public class MorphEntityImplosion extends EntityImplosion {
 
                 if (entity.isEntityAlive()) {
                     if (ACConfig.hardcoreMode && entity.getDistanceSq(this) <= 25.0D) {
-                        entity.hurtResistantTime = 0;
-                        entity.attackEntityFrom(DamageSource.LIGHTNING_BOLT, 100.0F);
+                        if (entity instanceof EntityPlayer) {
+                            // A18：morph 释放的内爆对玩家走可玩性伤害档（≤15），
+                            // 不重置无敌帧、不做 100 秒杀；NPC 保留原生 hardcore 行为
+                            entity.attackEntityFrom(DamageSource.LIGHTNING_BOLT, 15.0F);
+                        } else {
+                            entity.hurtResistantTime = 0;
+                            entity.attackEntityFrom(DamageSource.LIGHTNING_BOLT, 100.0F);
+                        }
                     }
                     entity.addVelocity(dir.x * 2.5D * scale, 1.5D + rand.nextDouble(), dir.z * 2.5D * scale);
                 }

@@ -19,7 +19,8 @@ import net.minecraft.world.WorldServer;
 
 /**
  * 恐惧生物专属被动：恐惧瘟疫传染链与恐惧炽焰抗性 (Dread Plague & Dread Ember Immunity)
- * 1. 恐惧瘟疫传染链 (Dread Plague Transmission)：近战攻击目标必然施加恐惧瘟疫 (100 ticks / 5秒) 与真实恐惧直伤，非恐惧生物被攻击引发恐惧烈焰粒子；
+ * 1. 恐惧瘟疫传染链 (Dread Plague Transmission)：攻击命中（含弹射物，trueSource 为玩家）必然施加恐惧瘟疫 (100 ticks / 5秒) 与真实恐惧直伤，非恐惧生物被攻击引发恐惧烈焰粒子；
+ *    （原"近战限定"注释失真：被动分发按 trueSource 触发，弹射物命中同样生效；S2 后只走被动单通道，数值为单倍）
  * 2. 恐惧体质免疫 (Dread Immunity)：完全免疫恐惧伤害 (DamageSource dread)、火焰熔岩伤害与恐惧瘟疫负面状态；
  * 3. 恐惧微粒：周身间歇性散发恐惧熔火微粒与余烬。
  *

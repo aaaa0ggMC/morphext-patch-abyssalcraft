@@ -7,6 +7,8 @@ import com.shinoow.abyssalcraft.common.entity.EntityDreadSpawn;
 import com.shinoow.abyssalcraft.common.entity.EntityRemnant;
 import com.shinoow.abyssalcraft.lib.ACSounds;
 import mchorse.metamorph.api.morphs.AbstractMorph;
+import mchorse.metamorph.capabilities.morphing.IMorphing;
+import mchorse.metamorph.capabilities.morphing.Morphing;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
@@ -69,9 +71,19 @@ public final class AbyssalExtraActions {
 
             // 60t（3s）原地引导：零化水平移动（还原源码 motionX/Z *= 0），每 5t 干呕声与粒子
             ServerActionScheduler.scheduleTicker(60, remaining -> {
-                if (entity.isEntityAlive() && entity.world == world) {
-                    entity.motionX *= 0.0D;
-                    entity.motionZ *= 0.0D;
+                // A6：解除变身/切换形态后立即中止引导，不再对已解除变身的玩家定身
+                if (entity.isEntityAlive() && entity.world == world && isStillMorphedAs(entity, morph)) {
+                    // A6：击退/拉扯刚注入（velocityChanged）或水平速度超步行档的 tick 放过，
+                    // 不再附赠 3 秒击退免疫；其余 tick 照旧定身
+                    double hSpeedSq = entity.motionX * entity.motionX + entity.motionZ * entity.motionZ;
+                    if (!entity.velocityChanged && hSpeedSq <= 0.1024D) {
+                        entity.motionX *= 0.0D;
+                        entity.motionZ *= 0.0D;
+                    }
+                    // 定身即收起疾跑标志，消除"疾跑 FOV 保持而人不动"的观感错位
+                    if (entity.isSprinting()) {
+                        entity.setSprinting(false);
+                    }
                     if (remaining % 10 == 0) {
                         world.playSound(null, entity.posX, entity.posY + entity.getEyeHeight(), entity.posZ,
                                 ACSounds.dreadguard_barf != null ? ACSounds.dreadguard_barf : SoundEvents.ENTITY_WITHER_SHOOT,
@@ -84,7 +96,8 @@ public final class AbyssalExtraActions {
                     }
                 }
             }, () -> {
-                if (!entity.isEntityAlive() || entity.world != world) {
+                // A6：引导完成前已解除变身/死亡/换维度则取消喷吐
+                if (!entity.isEntityAlive() || entity.world != world || !isStillMorphedAs(entity, morph)) {
                     return;
                 }
                 // 引导完成：对瞄准点 2 格范围喷吐恐惧胆汁
@@ -122,6 +135,22 @@ public final class AbyssalExtraActions {
                 }
             });
             return true;
+        }
+
+        /**
+         * A6：引导是否仍应继续——玩家已解除变身或切换形态即终止
+         * （非玩家施法实体无变身概念，恒为真）。
+         */
+        private static boolean isStillMorphedAs(EntityLivingBase entity, AbstractMorph morph) {
+            if (!(entity instanceof EntityPlayer)) {
+                return true;
+            }
+            IMorphing morphing = Morphing.get((EntityPlayer) entity);
+            if (morphing == null || !morphing.isMorphed()) {
+                return false;
+            }
+            AbstractMorph current = morphing.getCurrentMorph();
+            return morph != null && current != null && morph.name != null && morph.name.equals(current.name);
         }
     }
 
@@ -188,19 +217,21 @@ public final class AbyssalExtraActions {
      *  源码依据：EntitySacthoth.java:405-429（30 格内玩家持续失明 40t，约 2s 刷新）
      * ===================================================================== */
 
-    /** 萨克索斯：暗夜失明黑幕 (ID: ac_sacthoth_dark_aura, 冷却 2s) */
+    /** 萨克索斯：暗夜失明黑幕 (ID: ac_sacthoth_dark_aura, 冷却 8s) */
     public static class SacthothDarkAuraAction extends AbyssalCraftAction {
         public SacthothDarkAuraAction() {
-            super(40); // 2s 一跳，贴合源码 ~2s 刷新节奏
+            // A12：原生"30 格持续光环"被改造成 2s 冷却主动后可按键连打全屏失明，
+            // 数值放大过头；收敛为 8s 冷却 / 16 格 / 失明 2s
+            super(160); // 冷却 8s
         }
 
         @Override
         protected boolean executeServer(EntityLivingBase entity, AbstractMorph morph) {
             World world = entity.world;
-            List<EntityLivingBase> list = findNearbyEntities(entity, 30.0D);
+            List<EntityLivingBase> list = findNearbyEntities(entity, 16.0D);
 
             for (EntityLivingBase target : list) {
-                target.addPotionEffect(new PotionEffect(MobEffects.BLINDNESS, 50, 0)); // 失明 2.5s，被下一跳续上
+                target.addPotionEffect(new PotionEffect(MobEffects.BLINDNESS, 40, 0)); // 失明 2s
             }
 
             if (world instanceof WorldServer) {
@@ -370,7 +401,9 @@ public final class AbyssalExtraActions {
     /** 邪恶动物：扭曲剪切 (ID: ac_evil_animal_shear, 冷却 12s/9s) */
     public static class EvilAnimalShearAction extends AbyssalCraftAction {
         public EvilAnimalShearAction() {
-            super(240); // 基准冷却 12s
+            // A10：基准取分支最低档 9s（空手分支）；剪刀分支 executeServer 内
+            // setCooldown(240) 抬到 12s。分支冷却互不串档（动态表读取即消费）。
+            super(180); // 基准冷却 9s
         }
 
         private static EnumHand findHeldShears(EntityLivingBase entity) {
@@ -470,6 +503,13 @@ public final class AbyssalExtraActions {
             super(80); // 冷却 4s
         }
 
+        /** S5：解除变身/登出时清零饱食层数，防 UUID 级静态 Map 泄漏与跨形态残留。 */
+        public static void clearFeastStacks(UUID id) {
+            if (id != null) {
+                FEAST_STACKS.remove(id);
+            }
+        }
+
         @Override
         protected boolean executeServer(EntityLivingBase entity, AbstractMorph morph) {
             World world = entity.world;
@@ -489,12 +529,15 @@ public final class AbyssalExtraActions {
             for (EntityLivingBase target : list) {
                 target.attackEntityFrom(source, 8.0F);
                 target.addPotionEffect(new PotionEffect(MobEffects.HUNGER, 100, 1));
-                entity.heal(6.0F);
                 hit = true;
             }
             if (!hit) {
                 return false;
             }
+
+            // S5：治疗按动作级一口价封顶 6 点，不再按命中目标数线性放大
+            //（多目标不再叠治疗，饱食层数仍按次积累，避免畜群旁近似不死）
+            entity.heal(6.0F);
 
             // 饱食积累
             UUID id = entity.getUniqueID();
@@ -553,11 +596,13 @@ public final class AbyssalExtraActions {
             Vec3d look = entity.getLook(1.0F);
             CrosshairTargetDirector.AimResult aim = CrosshairTargetDirector.resolveTarget(entity, 24.0D);
 
+            // S4：同类召唤物存量上限（同宿主同类型 ≤4，超出替换旧的）+ 召唤物免掉落/免经验
+            BossNativeHelper.capSummons(world, entity, EntityDreadSpawn.class, 2);
             for (int i = 0; i < 2; i++) {
                 Vec3d safe = getSafeSpawnPosition(entity, 1.8D + i * 0.6D);
                 EntityDreadSpawn spawn = new EntityDreadSpawn(world);
                 spawn.setPosition(safe.x, safe.y, safe.z);
-                BossNativeHelper.tagOwner(spawn, entity);
+                BossNativeHelper.markSummon(spawn, entity);
                 if (aim.hasEntity()) {
                     spawn.setAttackTarget(aim.entityTarget);
                 }
@@ -576,7 +621,7 @@ public final class AbyssalExtraActions {
         }
     }
 
-    /** 恐惧幼体：聚合同化 (ID: ac_dread_merge, 冷却 12s) —— 吞并周围野生恐惧幼体壮大自身 */
+    /** 恐惧幼体：聚合同化 (ID: ac_dread_merge, 冷却 12s) —— 吞并周围无主/己方召唤的恐惧幼体壮大自身 */
     public static class DreadMergeAction extends AbyssalCraftAction {
         public DreadMergeAction() {
             super(240); // 冷却 12s
@@ -586,9 +631,10 @@ public final class AbyssalExtraActions {
         protected boolean executeServer(EntityLivingBase entity, AbstractMorph morph) {
             World world = entity.world;
 
+            // A16：只吞无主野生或自己召唤的幼体，不拆其他玩家的召唤编队
             List<EntityDreadSpawn> candidates = world.getEntitiesWithinAABB(EntityDreadSpawn.class,
                     entity.getEntityBoundingBox().grow(8.0D),
-                    e -> e != entity && e.isEntityAlive() && !BossNativeHelper.isOwnedBy(e, entity));
+                    e -> e != entity && e.isEntityAlive() && !BossNativeHelper.isOwnedByOther(e, entity));
             if (candidates.isEmpty()) {
                 return false;
             }
@@ -661,11 +707,13 @@ public final class AbyssalExtraActions {
 
             // 2. 附近无残影时唤起 2 道残影仆从
             if (rallied == 0) {
+                // S4：同类召唤物存量上限 + 召唤物免掉落/免经验（只影响新唤起的仆从，不改野生残影）
+                BossNativeHelper.capSummons(world, entity, EntityRemnant.class, 2);
                 for (int i = 0; i < 2; i++) {
                     Vec3d safe = getSafeSpawnPosition(entity, 1.8D + i * 0.7D);
                     EntityRemnant echo = new EntityRemnant(world);
                     echo.setPosition(safe.x, safe.y, safe.z);
-                    BossNativeHelper.tagOwner(echo, entity);
+                    BossNativeHelper.markSummon(echo, entity);
                     if (foe != null) {
                         echo.setAttackTarget(foe);
                     }

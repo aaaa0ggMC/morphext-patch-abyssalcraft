@@ -18,7 +18,8 @@ import net.minecraft.world.WorldServer;
 
 /**
  * 珊瑚感染生物专属被动：珊瑚接触感染 (Coralium Contact Infection)
- * 1. 接触感染：与实体碰撞或被近战命中时，令接触者感染珊瑚瘟疫（100t）并受 1.5 点珊瑚直伤；
+ * 1. 还击感染：被近战命中时，令攻击者感染珊瑚瘟疫（100t）并受 1.5 点珊瑚直伤；
+ *    （"碰撞感染"分支因核心无 onCollide 分发点暂为死钩子，见方法内注 A7；文案已同步为还击感染）
  * 2. 珊瑚体质：完全免疫珊瑚瘟疫；
  * 3. 表现还原 EntityCoraliumSquid.collideWithEntity:42-47（碰撞即感染 cplague）
  *    与 EntityDragonMinion.attackEntitiesInList:475-486（接触使非珊瑚实体 cplague 200t）。
@@ -52,6 +53,8 @@ public class CoraliumContactPassive extends AbstractPassiveAbility implements IA
 
     @Override
     public void onCollide(EntityPlayer player, EntityLivingBase other, MorphContext context) {
+        // 注（A7）：核心目前没有任何 IPassiveAbility.onCollide 分发点，此分支是死钩子；
+        // "感染"实际生效路径是上方 onAttacked 还击感染。保留实现等待核心补分发，勿删。
         if (player == null || other == null || player.world.isRemote || other.isOnSameTeam(player)) return;
         infect(player, other);
     }

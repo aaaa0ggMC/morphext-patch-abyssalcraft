@@ -28,7 +28,17 @@ import java.util.concurrent.ConcurrentHashMap;
  * 4. 严禁无控世界破坏，保护玩家建筑与地形。
  */
 public abstract class AbyssalCraftAction implements IAction, ICooldownAction {
+    /** A15：空挥/未命中（executeServer 返回 false）时退还的短档冷却（1s 手感档）。 */
+    private static final int REFUND_COOLDOWN_TICKS = 20;
+
     private final int cooldownTicks;
+    /**
+     * 分支动态冷却（A10 语义修正）：executeServer 内 setCooldown 写入"本次执行的分支冷却档"，
+     * getCooldownTicks 读取即消费（读一次即移除），execute 开始时也会清空残留。
+     * 预留冷却查询（ServerAbilityService 在 execute 前调用）因此永远拿到基准值，
+     * 不再把上一次分支的档位带到下一次（旧实现只增不减、跨分支互相污染）。
+     * 实际冷却仍由 ServerAbilityStore 时间戳权威强制，最终生效档 = max(基准, 本次分支档)。
+     */
     protected final Map<UUID, Integer> dynamicCooldowns = new ConcurrentHashMap<>();
 
     public AbyssalCraftAction(int cooldownTicks) {
@@ -38,7 +48,7 @@ public abstract class AbyssalCraftAction implements IAction, ICooldownAction {
     @Override
     public int getCooldownTicks(EntityLivingBase entity) {
         if (entity != null) {
-            Integer cd = dynamicCooldowns.get(entity.getUniqueID());
+            Integer cd = dynamicCooldowns.remove(entity.getUniqueID());
             if (cd != null) {
                 return cd;
             }
@@ -89,12 +99,50 @@ public abstract class AbyssalCraftAction implements IAction, ICooldownAction {
         }
 
         if (!entity.world.isRemote) {
+            // A10：清掉上次执行可能残留的分支冷却档，防异常中断后串档
+            dynamicCooldowns.remove(entity.getUniqueID());
             entity.swingArm(net.minecraft.util.EnumHand.MAIN_HAND);
-            executeServer(entity, morph);
+            boolean success = executeServer(entity, morph);
+            if (!success) {
+                // A15：空挥/未命中不白吃完整冷却，按 1s 短档退还
+                refundCooldown(entity, morph);
+            }
         }
     }
 
     protected abstract boolean executeServer(EntityLivingBase entity, AbstractMorph morph);
+
+    /**
+     * A15 空挥冷却退还：executeServer 返回 false（无命中/无效果）时，把
+     * ServerAbilityService 已预留的完整冷却改写为 1s 短档。
+     * 冷却存档键为 "metamorph:granted:&lt;morph名&gt;:&lt;动作注册名&gt;"
+     * （与 MetamorphServerAbilities.activate 的键一致），动作注册名按注册表身份反查；
+     * 反查失败则放弃退还（保留完整冷却），绝不影响玩法。
+     */
+    private void refundCooldown(EntityLivingBase entity, AbstractMorph morph) {
+        if (!(entity instanceof net.minecraft.entity.player.EntityPlayerMP) || morph == null || morph.name == null) {
+            return;
+        }
+        try {
+            String actionName = null;
+            for (Map.Entry<String, IAction> entry : mchorse.metamorph.api.MorphManager.INSTANCE.actions.entrySet()) {
+                if (entry.getValue() == this) {
+                    actionName = entry.getKey();
+                    break;
+                }
+            }
+            if (actionName == null) {
+                return;
+            }
+            net.minecraft.entity.player.EntityPlayerMP mp = (net.minecraft.entity.player.EntityPlayerMP) entity;
+            String id = "metamorph:granted:" + morph.name + ":" + actionName;
+            long now = aaaa0ggmc.morphext.ability.PlayerAbilityStore.now(mp);
+            aaaa0ggmc.morphext.ability.PlayerAbilityStore.update(mp,
+                    data -> data.setCooldown(id, now, REFUND_COOLDOWN_TICKS));
+        } catch (Throwable ignored) {
+            // 退还失败不破坏玩法：保留完整冷却
+        }
+    }
 
     /**
      * 计算安全的弹射物生成坐标（朝视线方向前向偏移，避免与释放者 AABB 重叠碰撞导致自伤）

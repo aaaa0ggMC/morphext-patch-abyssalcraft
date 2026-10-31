@@ -15,7 +15,8 @@ import net.minecraft.world.WorldServer;
 /**
  * 修格斯家族专属被动：软泥拖曳 (Shoggoth Ooze Trail)
  * 1. 软泥拖曳：移动时周身不断渗出腐蚀性软泥微粒，2.5 格内贴身敌人被软泥缠滞（缓慢 I 2s，每秒刷新）；
- * 2. 软泥接触：与实体碰撞时同样缠滞对方；
+ * 2. 软泥接触（死分支，见方法内注 A7）：与实体碰撞时同样缠滞对方——核心暂无 onCollide 分发点，
+ *    实际由上方 2.5 格光环覆盖贴身缠滞；
  * 3. 表现还原 EntityShoggothBase.spawnOoze:206-230（修格斯脚下持续生成 shoggoth_ooze）的生态特性。
  *
  * 兼备 Metamorph 原生 IAbility 与 MorphExtension IPassiveAbility 双重接口。
@@ -39,6 +40,8 @@ public class ShoggothOozeTrailPassive extends AbstractPassiveAbility implements 
 
     @Override
     public void onCollide(EntityPlayer player, EntityLivingBase other, MorphContext context) {
+        // 注（A7）：核心目前没有任何 IPassiveAbility.onCollide 分发点，此分支是死钩子；
+        // "缠滞"实际生效路径是 onUpdate 的 2.5 格贴身光环。保留实现等待核心补分发，勿删。
         if (player == null || other == null || player.world.isRemote || other.isOnSameTeam(player)) return;
         other.addPotionEffect(new PotionEffect(MobEffects.SLOWNESS, 40, 0));
     }

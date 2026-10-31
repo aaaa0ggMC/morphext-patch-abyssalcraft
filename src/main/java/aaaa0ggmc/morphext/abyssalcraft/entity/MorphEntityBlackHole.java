@@ -177,13 +177,19 @@ public class MorphEntityBlackHole extends EntityBlackHole {
         }
 
         if (ACConfig.hardcoreMode) {
-            livingBase.setHealth(livingBase.getHealth() - 20.0F);
-            livingBase.attackEntityFrom(DamageSource.CRAMMING.setDamageAllowedInCreativeMode().setDamageBypassesArmor().setDamageIsAbsolute(), 50.0F);
-            if (!livingBase.isEntityAlive()) {
-                if (livingBase instanceof EntityLiving) {
-                    ((EntityLiving) livingBase).spawnExplosionParticle();
+            if (livingBase instanceof EntityPlayer) {
+                // A18：morph 释放的黑洞对玩家走可玩性伤害档（≤15），不做 20+50 秒杀
+                // 与 setDead 清场；NPC 保留原生 hardcore 行为
+                livingBase.attackEntityFrom(DamageSource.CRAMMING.setDamageAllowedInCreativeMode().setDamageBypassesArmor().setDamageIsAbsolute(), 15.0F);
+            } else {
+                livingBase.setHealth(livingBase.getHealth() - 20.0F);
+                livingBase.attackEntityFrom(DamageSource.CRAMMING.setDamageAllowedInCreativeMode().setDamageBypassesArmor().setDamageIsAbsolute(), 50.0F);
+                if (!livingBase.isEntityAlive()) {
+                    if (livingBase instanceof EntityLiving) {
+                        ((EntityLiving) livingBase).spawnExplosionParticle();
+                    }
+                    livingBase.setDead();
                 }
-                livingBase.setDead();
             }
         }
     }

@@ -112,16 +112,16 @@ morphext.metamorph.desc.ac_evil_charge=恶念冲顶：凶狠向前冲刺撞击�
 morphext.metamorph.desc.ac_jzahar_oblivion=终焉湮灭：以自身为中心引爆终焉湮灭力场，12格内敌人承受湮灭与暗影重创、凋零与浮空，并被引力拽向中心；不破坏任何方块（冷却11秒）。
 morphext.metamorph.desc.ac_dread_barf=恐惧呕吐引导：原地定身引导3秒持续干呕，随后向准星点喷吐恐惧胆汁，对2格内敌人造成恐惧伤害（4.5-距离）并感染恐惧瘟疫（冷却10秒）。
 morphext.metamorph.desc.ac_omothol_touch=奥穆索之触：向身前敌人挥出枯朽之触，造成伤害并施加缓慢III（5秒）与失明（1秒），伴随夜视幽蓝微粒（冷却3秒）。
-morphext.metamorph.desc.ac_sacthoth_dark_aura=暗夜失明黑幕：张开萨克索斯的30格黑暗天幕，每2秒令范围内敌人陷入失明，周身翻涌黑烟与龙息（冷却2秒）。
+morphext.metamorph.desc.ac_sacthoth_dark_aura=暗夜失明黑幕：张开萨克索斯的16格黑暗天幕，令范围内敌人陷入失明2秒，周身翻涌黑烟与龙息（冷却8秒）。
 morphext.metamorph.desc.ac_anti_door_break=反物质破门强袭：蓄力撞碎面前木门与木质方块（绝不伤石制建筑，受 mobGriefing 约束），并击退轰飞门后目标（冷却5秒）。
 morphext.metamorph.desc.ac_evil_demonize=恶念蜕变：拥抱濒死恶念蜕变为恶魔形态：回复生命、点燃周身并获得力量II、速度与伤害吸收，灼烧周围敌人（冷却10秒）。
 morphext.metamorph.desc.ac_evil_animal_shear=扭曲剪切：手持剪刀将扭曲血肉剪成生肉/羊毛掉落并引爆恶魔火环（冷却12秒）；空手释放恶魔火环并短暂获得力量（冷却9秒）。
 morphext.metamorph.desc.ac_shoggoth_feast=修格斯吞噬成长：吞噬猎物积累饱食，叠满3层后喷吐载崽酸液弹并获得短暂力量与伤害吸收（冷却4秒）。
 morphext.metamorph.desc.ac_dread_split=恐惧裂体：撕裂自身唤出2只追击准星目标的次级恐惧幼体（冷却15秒）。
-morphext.metamorph.desc.ac_dread_merge=恐惧聚合同化：吞并周围最多3只野生恐惧幼体壮大自身，回复生命并获得伤害吸收与力量（冷却12秒）。
+morphext.metamorph.desc.ac_dread_merge=恐惧聚合同化：吞并周围最多3只无主或自己召唤的恐惧幼体（不吞并他人召唤物）壮大自身，回复生命并获得伤害吸收与力量（冷却12秒）。
 morphext.metamorph.desc.ac_remnant_rally=残影唤起：号令16格内残影围攻你的敌人；若无残影应召，则唤起2道残影仆从作战（冷却15秒）。
 morphext.metamorph.desc.ac_ghoul_rake=食尸鬼双爪连击：双臂连环撕裂身前敌人，造成两段4点伤害并附加饥饿与虚弱（冷却8秒）。
-morphext.metamorph.desc.ac_ghoul_immolate=燃尸自焚抓：点燃自身并以灼热之爪撕咬身前敌人，造成火焰伤害并点燃目标（冷却9秒）。
+morphext.metamorph.desc.ac_ghoul_immolate=燃尸自焚抓：点燃自身并以灼热之爪撕咬身前敌人，造成火焰伤害并点燃目标（燃烧仅为外观表现，不伤自身）（冷却9秒）。
 morphext.metamorph.desc.ac_dread_contagion=恐惧瘟疫领域：在准星处布下持续8秒的恐惧瘴气，4格内敌人每秒受到恐惧伤害并感染恐惧瘟疫与迟缓（冷却15秒）。
 morphext.metamorph.desc.ac_dragon_gale=龙翼风暴：鼓动双翼掀起飓风，击伤并卷飞敌人，附加迟缓冲击（冷却10秒）。
 morphext.metamorph.desc.ac_chagaroth_legion=查伽洛斯军团：召唤1名恐惧卫士与2只恐惧幼体追猎准星目标（冷却30秒）。
@@ -174,16 +174,16 @@ morphext.ability.ac_shoggoth_acid.desc=修格斯高腐蚀强酸体质：完全�
 morphext.metamorph.desc.ac_shoggoth_acid=修格斯高腐蚀强酸体质：免疫强酸、弹射物、仙人掌、窒息与古神瘟疫，近战附带腐蚀减速。
 
 morphext.ability.ac_coralium_carapace.name=珊瑚结晶角质硬化
-morphext.ability.ac_coralium_carapace.desc=珊瑚结晶角质硬化：全身覆有坚硬珊瑚角质，常驻提供+4点护甲与+4点韧性护甲；受到物理打击时有25%几率反弹珊瑚刺刺伤攻击者并附带珊瑚瘟疫；免疫珊瑚瘟疫负面。
-morphext.metamorph.desc.ac_coralium_carapace=珊瑚结晶角质硬化：常驻提供+4点韧性护甲，受到物理打击有25%几率反弹珊瑚刺刺伤攻击者并施加珊瑚瘟疫。
+morphext.ability.ac_coralium_carapace.desc=珊瑚结晶角质硬化：全身覆有坚硬珊瑚角质，常驻提供+4点护甲与+4点韧性护甲（为叠加在实体原生护甲之外的设计增量，非双算）；受到物理打击时有25%几率反弹珊瑚刺刺伤攻击者并附带珊瑚瘟疫；免疫珊瑚瘟疫负面。
+morphext.metamorph.desc.ac_coralium_carapace=珊瑚结晶角质硬化：常驻提供+4点护甲与+4点韧性护甲（叠加在实体原生护甲之外的设计增量），受到物理打击有25%几率反弹珊瑚刺刺伤攻击者并施加珊瑚瘟疫。
 
 morphext.ability.ac_shoggoth_ooze_trail.name=修格斯软泥拖曳
-morphext.ability.ac_shoggoth_ooze_trail.desc=修格斯软泥拖曳：躯体不断渗出腐蚀性软泥，2.5格内敌人被软泥缠滞减速，接触你的实体同样被软泥拖拽。
-morphext.metamorph.desc.ac_shoggoth_ooze_trail=修格斯软泥拖曳：渗出的软泥使2.5格内敌人减速，接触者被软泥拖拽。
+morphext.ability.ac_shoggoth_ooze_trail.desc=修格斯软泥拖曳：躯体不断渗出腐蚀性软泥，2.5格内敌人被软泥缠滞减速。
+morphext.metamorph.desc.ac_shoggoth_ooze_trail=修格斯软泥拖曳：渗出的软泥使2.5格内敌人缠滞减速。
 
 morphext.ability.ac_coralium_contact.name=珊瑚接触感染
-morphext.ability.ac_coralium_contact.desc=珊瑚接触感染：碰撞或近战攻击你的敌人感染珊瑚瘟疫并受到轻微珊瑚伤害；自身免疫珊瑚瘟疫。
-morphext.metamorph.desc.ac_coralium_contact=珊瑚接触感染：接触与近战攻击者感染珊瑚瘟疫并受到轻微珊瑚伤害。
+morphext.ability.ac_coralium_contact.desc=珊瑚接触感染：近战攻击你的敌人命中时感染珊瑚瘟疫并受到轻微珊瑚伤害；自身免疫珊瑚瘟疫。
+morphext.metamorph.desc.ac_coralium_contact=珊瑚接触感染：近战攻击者命中你时感染珊瑚瘟疫并受到轻微珊瑚伤害。
 
 morphext.ability.ac_shadow_phase.name=暗影相位
 morphext.ability.ac_shadow_phase.desc=暗影相位：受到近战攻击时20%概率化影闪避完全免伤，暗影微粒四散并短暂加速。

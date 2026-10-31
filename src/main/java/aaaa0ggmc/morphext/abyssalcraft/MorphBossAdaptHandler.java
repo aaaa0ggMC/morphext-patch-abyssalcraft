@@ -92,6 +92,20 @@ public final class MorphBossAdaptHandler {
     public static void onMorphPost(MorphEvent.Post event) {
         if (event.player != null && !event.player.world.isRemote) {
             sanitizeMorphEntity(event.player, event.morph);
+            // S5：解除变身时清零 ac_shoggoth_feast 饱食层数，防止跨形态残留
+            if (event.isDemorphing()) {
+                aaaa0ggmc.morphext.abyssalcraft.action.AbyssalExtraActions.ShoggothFeastAction.clearFeastStacks(event.player.getUniqueID());
+            }
+        }
+    }
+
+    /**
+     * S5：登出时清零 ac_shoggoth_feast 饱食层数（UUID 级静态 Map 防泄漏）。
+     */
+    @SubscribeEvent
+    public static void onPlayerLoggedOut(net.minecraftforge.fml.common.gameevent.PlayerEvent.PlayerLoggedOutEvent event) {
+        if (event.player != null) {
+            aaaa0ggmc.morphext.abyssalcraft.action.AbyssalExtraActions.ShoggothFeastAction.clearFeastStacks(event.player.getUniqueID());
         }
     }
 
@@ -203,7 +217,10 @@ public final class MorphBossAdaptHandler {
                 if (!entity.world.isRemote) {
                     sanitizeMorphEntity(player, currentMorph);
 
-                    // 反物质形态实体碰撞湮灭检测
+                    // 反物质形态实体碰撞湮灭检测。
+                    // 注（A7）：IPassiveAbility.onCollide 目前核心无任何分发点（死钩子），
+                    // 这条按名字匹配的补偿路径是"接触湮灭"唯一实际生效的实现，
+                    // 命名改动会失效；若核心后续补上 onCollide 分发，可退役此段。
                     if (currentMorph != null && currentMorph.name != null && currentMorph.name.toLowerCase().contains("anti")) {
                         List<EntityLivingBase> colliding = player.world.getEntitiesWithinAABB(EntityLivingBase.class,
                                 player.getEntityBoundingBox().grow(0.15D),
@@ -402,6 +419,20 @@ public final class MorphBossAdaptHandler {
     }
 
     /**
+     * 形态基础名精确匹配：剥掉 "modid:" / "modid." 命名空间前缀后做全等比较，
+     * 避免 contains 子串误伤（A17：如 abygolem 不等于 dreadgolem，不得共享其免疫）。
+     */
+    private static boolean isMorphNamed(String lowerMorphName, String baseName) {
+        if (lowerMorphName == null) return false;
+        String base = lowerMorphName;
+        int cut = Math.max(base.lastIndexOf(':'), base.lastIndexOf('.'));
+        if (cut >= 0) {
+            base = base.substring(cut + 1);
+        }
+        return base.equals(baseName);
+    }
+
+    /**
      * 宿主绝对免伤与自伤免疫（HIGHEST 优先级最高防御）
      */
     @SubscribeEvent(priority = EventPriority.HIGHEST)
@@ -418,29 +449,12 @@ public final class MorphBossAdaptHandler {
             return;
         }
 
-        // 变身攻击被动触发 (暗影致盲、恐惧瘟疫、反物质湮灭、修格斯强酸)
-        if (event.getSource() != null && event.getSource().getTrueSource() instanceof EntityPlayer) {
-            EntityPlayer player = (EntityPlayer) event.getSource().getTrueSource();
-            IMorphing morphing = Morphing.get(player);
-            if (morphing != null && morphing.isMorphed()) {
-                AbstractMorph morph = morphing.getCurrentMorph();
-                if (morph != null && morph.name != null) {
-                    String name = morph.name.toLowerCase();
-                    if (name.contains("shadow")) {
-                        aaaa0ggmc.morphext.abyssalcraft.passive.ShadowPhotophobiaPassive.handleAttackProc(player, event.getEntityLiving());
-                    }
-                    if (name.contains("dread")) {
-                        aaaa0ggmc.morphext.abyssalcraft.passive.DreadPlaguePassive.handleAttackProc(player, event.getEntityLiving());
-                    }
-                    if (name.contains("anti")) {
-                        aaaa0ggmc.morphext.abyssalcraft.passive.AntimatterAnnihilationPassive.handleAttackProc(player, event.getEntityLiving());
-                    }
-                    if (name.contains("shoggoth")) {
-                        aaaa0ggmc.morphext.abyssalcraft.passive.ShoggothAcidPassive.handleAttackProc(player, event.getEntityLiving());
-                    }
-                }
-            }
-        }
+        // 注（S2 修复）：原先这里还有一套按 morph.name.contains("shadow"/"dread"/"anti"/"shoggoth")
+        // 的 handleAttackProc 手动分发，与 MorphAbilityManager.onLivingHurt → IPassiveAbility.onAttack
+        // 的被动分发（ac_photophobia / ac_dread_plague / ac_antimatter_annihilation / ac_shoggoth_acid）
+        // 对同一击双通道重复触发，导致 dread 2.5→5、anti 4→8、甲蚀 3→6 等数值翻倍。
+        // 现已删除名字分发，统一走被动注册表单通道（单倍数值）；名字匹配还会给
+        // 未挂载对应被动的形态（如 antighoul）强行附加伤害，属越权行为，一并消除。
     }
 
     private static boolean handleHostDamageImmunity(EntityLivingBase victim, DamageSource source) {
@@ -498,7 +512,9 @@ public final class MorphBossAdaptHandler {
                     if (source == com.shinoow.abyssalcraft.api.AbyssalCraftAPI.dread || "dread".equalsIgnoreCase(source.getDamageType()) || source.isFireDamage()) {
                         return true;
                     }
-                    if (mName.contains("dreadgolem") || mName.contains("golem")) {
+                    // A17：精确形态名匹配（原 contains("golem") 子串会把任何 *golem* 形态
+                    // 一并授予超额免疫；现只认 dreadgolem 本体，与 JSON damageImmunities 口径一致）
+                    if (isMorphNamed(mName, "dreadgolem")) {
                         if (source == DamageSource.DROWN || source == DamageSource.CACTUS || source == DamageSource.IN_WALL || source == DamageSource.FALL) {
                             return true;
                         }
