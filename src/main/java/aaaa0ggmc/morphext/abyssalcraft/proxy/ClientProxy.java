@@ -14,11 +14,21 @@ public class ClientProxy extends CommonProxy {
     @Override
     public void preInit(FMLPreInitializationEvent event) {
         super.preInit(event);
+        net.minecraftforge.fml.client.registry.RenderingRegistry.registerEntityRenderingHandler(
+                aaaa0ggmc.morphext.abyssalcraft.entity.MorphEntityBlackHole.class,
+                com.shinoow.abyssalcraft.client.render.entity.RenderBlackHole::new
+        );
+        net.minecraftforge.fml.client.registry.RenderingRegistry.registerEntityRenderingHandler(
+                aaaa0ggmc.morphext.abyssalcraft.entity.MorphEntityImplosion.class,
+                com.shinoow.abyssalcraft.client.render.entity.RenderImplosion::new
+        );
     }
 
     @Override
     public void init(FMLInitializationEvent event) {
         super.init(event);
+        aaaa0ggmc.morphext.ability.AbilityRegistry.register(
+                new aaaa0ggmc.morphext.abyssalcraft.ability.JzaharBanishAbility());
         SafeCleansingRitualHandler.install();
         aaaa0ggmc.morphext.variant.MorphCreativeInjector.registerProvider(new aaaa0ggmc.morphext.abyssalcraft.variant.AbyssalCraftVariantProvider());
         registerHandPresets();

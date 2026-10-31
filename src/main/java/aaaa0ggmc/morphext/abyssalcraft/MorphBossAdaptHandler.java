@@ -95,58 +95,199 @@ public final class MorphBossAdaptHandler {
         }
     }
 
+    public static final String ABILITY_ID_JZAHAR_BANISH = "morphext:jzahar_banish";
+    public static final String TAG_JZAHAR_BANISH = "morphext_jzahar_banish";
+
     /**
-     * 每 tick 更新：持续确保变身实体 AI 被净化，并抑制变身扎哈尔的地形破坏计数器与黑洞拉扯
+     * 判断扎哈尔古神遣返光环是否处于开启状态。
+     * 默认开启 (true)，完全忠实原版 AbyssalCraft 扎哈尔排他法则。
      */
-    @SubscribeEvent
-    public static void onLivingUpdate(LivingEvent.LivingUpdateEvent event) {
-        EntityLivingBase entity = event.getEntityLiving();
-        if (entity.world.isRemote) return;
-
-        // 1. 如果是玩家，持续维护其内部变身实体的索敌 AI 并免疫黑洞物理拉扯
-        if (entity instanceof EntityPlayer) {
-            EntityPlayer player = (EntityPlayer) entity;
-            IMorphing morphing = Morphing.get(player);
-            if (morphing != null && morphing.isMorphed()) {
-                AbstractMorph currentMorph = morphing.getCurrentMorph();
-                sanitizeMorphEntity(player, currentMorph);
-
-                // 如果变身为扎哈尔或深渊古神，免疫周围野生黑洞与坍缩的物理引力拉扯
-                if (isMorphedAsEldritch(currentMorph)) {
-                    neutralizeBlackHolePull(player);
-                }
-
-                // 反物质形态实体碰撞湮灭检测
-                if (currentMorph != null && currentMorph.name != null && currentMorph.name.toLowerCase().contains("anti")) {
-                    List<EntityLivingBase> colliding = player.world.getEntitiesWithinAABB(EntityLivingBase.class,
-                            player.getEntityBoundingBox().grow(0.15D),
-                            e -> e != player && e.isEntityAlive() && !e.isOnSameTeam(player));
-                    for (EntityLivingBase target : colliding) {
-                        aaaa0ggmc.morphext.abyssalcraft.passive.AntimatterAnnihilationPassive.handleCollisionAnnihilation(player, target);
-                    }
-                }
+    public static boolean isJzaharBanishAuraEnabled(EntityPlayer player) {
+        if (player == null) return true;
+        // 1. 优先读取 player.getEntityData()，快速且支持任意端
+        if (player.getEntityData().hasKey(TAG_JZAHAR_BANISH)) {
+            return player.getEntityData().getBoolean(TAG_JZAHAR_BANISH);
+        }
+        // 2. 服务端检查 PlayerAbilityStore
+        if (player instanceof EntityPlayerMP) {
+            com.google.gson.JsonObject state = aaaa0ggmc.morphext.ability.PlayerAbilityStore.get((EntityPlayerMP) player).getState(ABILITY_ID_JZAHAR_BANISH);
+            if (state.has("enabled") && state.get("enabled").isJsonPrimitive()) {
+                return state.get("enabled").getAsBoolean();
             }
         }
+        // 3. 客户端检查 AbilityStateStore
+        if (player.world.isRemote) {
+            com.google.gson.JsonObject state = aaaa0ggmc.morphext.ability.AbilityStateStore.get(ABILITY_ID_JZAHAR_BANISH);
+            if (state.has("enabled") && state.get("enabled").isJsonPrimitive()) {
+                return state.get("enabled").getAsBoolean();
+            }
+        }
+        // 4. 默认开启 (true)
+        return true;
+    }
 
-        // 2. 如果是扎哈尔实例：若是变身 dummy 实体或附带宿主标签，双重防御阻止 deathTicks 达到 790
-        if (BossNativeHelper.isJzahar(entity)) {
-            if (!entity.isAddedToWorld() || entity.getEntityData().hasKey(BossNativeHelper.TAG_MORPH_OWNER)) {
-                int dt = BossNativeHelper.getJzaharDeathTicks(entity);
-                if (dt >= 750) {
-                    // 重置计数器，绝对杜绝 790 tick 的 19x19x19 范围 setBlockToAir 蒸发
-                    BossNativeHelper.setJzaharDeathTicks(entity, 0);
+    /**
+     * 设置扎哈尔古神遣返光环的开启/关闭状态。
+     */
+    public static void setJzaharBanishAuraEnabled(EntityPlayer player, boolean enabled) {
+        if (player == null) return;
+        player.getEntityData().setBoolean(TAG_JZAHAR_BANISH, enabled);
+
+        if (player instanceof EntityPlayerMP) {
+            EntityPlayerMP mp = (EntityPlayerMP) player;
+            com.google.gson.JsonObject state = aaaa0ggmc.morphext.ability.PlayerAbilityStore.get(mp).getState(ABILITY_ID_JZAHAR_BANISH);
+            state.addProperty("enabled", enabled);
+            aaaa0ggmc.morphext.ability.PlayerAbilityStore.update(mp, data -> data.putState(ABILITY_ID_JZAHAR_BANISH, state));
+            aaaa0ggmc.morphext.network.AbilityNetwork.syncPlayerIfChanged(mp);
+        }
+
+        // 同步更新当前变身 dummy 实体上的 NBT，确保无论通过 owner 还是直接通过 entityData 均能读取
+        IMorphing morphing = Morphing.get(player);
+        if (morphing != null && morphing.isMorphed()) {
+            AbstractMorph morph = morphing.getCurrentMorph();
+            if (morph instanceof EntityMorph) {
+                EntityLivingBase dummy = ((EntityMorph) morph).getEntity(player.world);
+                if (dummy != null) {
+                    dummy.getEntityData().setBoolean(TAG_JZAHAR_BANISH, enabled);
                 }
             }
         }
     }
 
     /**
-     * 实体生成监听：凡是 dummy 实体发射的凋灵首、投射物，自动打上宿主属主标签
+     * 每 tick 更新：持续确保变身实体 AI 被净化，并抑制变身扎哈尔的地形破坏计数器与黑洞拉扯
      */
     @SubscribeEvent
+    public static void onLivingUpdate(LivingEvent.LivingUpdateEvent event) {
+        EntityLivingBase entity = event.getEntityLiving();
+        if (entity == null || entity.world == null) return;
+
+        // 0. 扎哈尔变身 dummy 实例的遣返拦截与粒子防御（双端通用）
+        if (BossNativeHelper.isJzahar(entity)) {
+            boolean isMorphDummy = !entity.isAddedToWorld() || entity.getEntityData().hasKey(BossNativeHelper.TAG_MORPH_OWNER);
+            if (isMorphDummy) {
+                int dt = BossNativeHelper.getJzaharDeathTicks(entity);
+                if (dt >= 750) {
+                    // 重置计数器，绝对杜绝 790 tick 的 19x19x19 范围 setBlockToAir 蒸发
+                    BossNativeHelper.setJzaharDeathTicks(entity, 0);
+                }
+
+                EntityPlayer owner = findMorphOwner(entity);
+                boolean banishEnabled = true;
+                if (owner != null) {
+                    banishEnabled = isJzaharBanishAuraEnabled(owner);
+                } else if (entity.getEntityData().hasKey(TAG_JZAHAR_BANISH)) {
+                    banishEnabled = entity.getEntityData().getBoolean(TAG_JZAHAR_BANISH);
+                }
+
+                if (!banishEnabled) {
+                    // 玩家主动关闭了遣返光环：阻断 dummy Jzahar 的 onLivingUpdate 执行，
+                    // 彻底跳过 64 格内全部 Boss 的扫描与 removeEntity(entity) 遣返逻辑！
+                    event.setCanceled(true);
+                    return;
+                }
+            }
+        }
+
+        // 1. 如果是玩家，免疫黑洞与坍缩的物理引力拉扯（双端执行，避免客户端被强行牵引！）
+        if (entity instanceof EntityPlayer) {
+            EntityPlayer player = (EntityPlayer) entity;
+            IMorphing morphing = Morphing.get(player);
+            if (morphing != null && morphing.isMorphed()) {
+                AbstractMorph currentMorph = morphing.getCurrentMorph();
+                // 扎哈尔或深渊古神形态：双端免疫一切黑洞引力拉扯
+                if (isMorphedAsEldritch(currentMorph)) {
+                    neutralizeBlackHolePull(player);
+                }
+
+                if (!entity.world.isRemote) {
+                    sanitizeMorphEntity(player, currentMorph);
+
+                    // 反物质形态实体碰撞湮灭检测
+                    if (currentMorph != null && currentMorph.name != null && currentMorph.name.toLowerCase().contains("anti")) {
+                        List<EntityLivingBase> colliding = player.world.getEntitiesWithinAABB(EntityLivingBase.class,
+                                player.getEntityBoundingBox().grow(0.15D),
+                                e -> e != player && e.isEntityAlive() && !e.isOnSameTeam(player));
+                        for (EntityLivingBase target : colliding) {
+                            aaaa0ggmc.morphext.abyssalcraft.passive.AntimatterAnnihilationPassive.handleCollisionAnnihilation(player, target);
+                        }
+                    }
+                }
+            }
+        }
+
+        if (entity.world.isRemote) return;
+    }
+
+    /**
+     * 实体生成监听：
+     * 1. 凡是 Jzahar AI 或变身释放的 EntityBlackHole，无缝替换为免疫宿主与队友的 MorphEntityBlackHole；
+     * 2. 凡是 EntityImplosion，无缝替换为安全的 MorphEntityImplosion；
+     * 3. 凡是 dummy 实体发射的凋灵首、投射物，自动打上宿主属主标签。
+     */
+    @SubscribeEvent(priority = EventPriority.HIGHEST)
     public static void onEntityJoinWorld(EntityJoinWorldEvent event) {
         Entity entity = event.getEntity();
         if (entity == null || entity.world.isRemote) return;
+
+        // 核心防御 1：变身扎哈尔 AI 释放的黑洞实体替换为安全黑洞
+        if (entity.getClass() == EntityBlackHole.class) {
+            EntityBlackHole blackHole = (EntityBlackHole) entity;
+            EntityPlayer owner = findMorphOwner(blackHole.shootingEntity);
+            if (owner == null) {
+                // 如果 shootingEntity 未打标签，检查周围是否有变身扎哈尔的玩家
+                for (EntityPlayer p : entity.world.playerEntities) {
+                    IMorphing morphing = Morphing.get(p);
+                    if (morphing != null && morphing.isMorphed()) {
+                        AbstractMorph m = morphing.getCurrentMorph();
+                        if (m != null && m.name != null && m.name.toLowerCase().contains("jzahar")) {
+                            owner = p;
+                            break;
+                        }
+                    }
+                }
+            }
+            if (owner != null) {
+                event.setCanceled(true);
+                aaaa0ggmc.morphext.abyssalcraft.entity.MorphEntityBlackHole safeHole =
+                        new aaaa0ggmc.morphext.abyssalcraft.entity.MorphEntityBlackHole(event.getWorld(), owner);
+                safeHole.copyLocationAndAnglesFrom(blackHole);
+                safeHole.motionX = blackHole.motionX;
+                safeHole.motionY = blackHole.motionY;
+                safeHole.motionZ = blackHole.motionZ;
+                event.getWorld().spawnEntity(safeHole);
+                return;
+            }
+        }
+
+        // 核心防御 2：变身扎哈尔 AI 释放的奇点内爆实体替换为安全内爆
+        if (entity.getClass() == EntityImplosion.class) {
+            EntityImplosion implosion = (EntityImplosion) entity;
+            EntityPlayer owner = findMorphOwner(implosion.shootingEntity);
+            if (owner == null) {
+                for (EntityPlayer p : entity.world.playerEntities) {
+                    IMorphing morphing = Morphing.get(p);
+                    if (morphing != null && morphing.isMorphed()) {
+                        AbstractMorph m = morphing.getCurrentMorph();
+                        if (m != null && m.name != null && m.name.toLowerCase().contains("jzahar")) {
+                            owner = p;
+                            break;
+                        }
+                    }
+                }
+            }
+            if (owner != null) {
+                event.setCanceled(true);
+                aaaa0ggmc.morphext.abyssalcraft.entity.MorphEntityImplosion safeImplosion =
+                        new aaaa0ggmc.morphext.abyssalcraft.entity.MorphEntityImplosion(event.getWorld(), owner);
+                safeImplosion.copyLocationAndAnglesFrom(implosion);
+                safeImplosion.motionX = implosion.motionX;
+                safeImplosion.motionY = implosion.motionY;
+                safeImplosion.motionZ = implosion.motionZ;
+                event.getWorld().spawnEntity(safeImplosion);
+                return;
+            }
+        }
 
         if (entity instanceof EntityWitherSkull) {
             EntityWitherSkull skull = (EntityWitherSkull) entity;
@@ -169,6 +310,9 @@ public final class MorphBossAdaptHandler {
 
         EntityLiving living = (EntityLiving) dummy;
         BossNativeHelper.tagOwner(living, player);
+        if (BossNativeHelper.isJzahar(living)) {
+            living.getEntityData().setBoolean(TAG_JZAHAR_BANISH, isJzaharBanishAuraEnabled(player));
+        }
 
         // 1. 清除任何以 EntityPlayer 为目标的索敌任务并重置执行中任务
         boolean cleaned = false;
@@ -210,16 +354,16 @@ public final class MorphBossAdaptHandler {
     }
 
     /**
-     * 免疫周围野生黑洞与坍缩的物理引力拉扯
+     * 免疫周围黑洞与坍缩的物理引力拉扯（安全黑洞 MorphEntityBlackHole 本身已豁免宿主，此处仅需阻断服务端发包抖动）
      */
     private static void neutralizeBlackHolePull(EntityPlayer player) {
-        World world = player.world;
-        List<Entity> blackHoles = world.getEntitiesWithinAABB(Entity.class,
-                player.getEntityBoundingBox().grow(48.0D),
-                e -> e instanceof EntityBlackHole || e instanceof EntityImplosion);
+        if (player instanceof EntityPlayerMP) {
+            World world = player.world;
+            List<Entity> blackHoles = world.getEntitiesWithinAABB(Entity.class,
+                    player.getEntityBoundingBox().grow(48.0D),
+                    e -> e instanceof EntityBlackHole || e instanceof EntityImplosion);
 
-        if (!blackHoles.isEmpty()) {
-            if (player instanceof EntityPlayerMP) {
+            if (!blackHoles.isEmpty()) {
                 // 阻断服务端向客户端发送 SPacketEntityVelocity 造成的画面强行位移抖动
                 ((EntityPlayerMP) player).velocityChanged = false;
             }
@@ -326,6 +470,10 @@ public final class MorphBossAdaptHandler {
                 // 3. 扎哈尔变身自身触发的大地震熔岩地热与终焉咆哮撞墙自伤，阻断
                 if (BossNativeHelper.isJzahar(dummy) || mName.contains("jzahar")) {
                     if (source == DamageSource.HOT_FLOOR || source == DamageSource.FLY_INTO_WALL || source == DamageSource.LIGHTNING_BOLT) {
+                        return true;
+                    }
+                    // 第四面墙秒杀（伤害绝对值 + 不可格挡）由 AbyssalCraft patch 负责拦截
+                    if (source.isDamageAbsolute() && source.isUnblockable()) {
                         return true;
                     }
                 }

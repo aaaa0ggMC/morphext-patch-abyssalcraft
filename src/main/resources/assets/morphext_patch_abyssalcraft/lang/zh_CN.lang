@@ -137,3 +137,14 @@ item.morphext_patch_abyssalcraft.cursed_milk.name=被深渊侵蚀的牛奶
 item.morphext_patch_abyssalcraft.cursed_milk.desc=清除药水状态，但深渊恶念将侵蚀心智...
 item.morphext_patch_abyssalcraft.demon_wool.name=恶魔羊毛
 item.morphext_patch_abyssalcraft.anti_egg.name=虚空反物质鸡蛋
+
+# 扎哈尔古神遣返光环状态
+morphext.jzahar.banish.enabled=§6[扎哈尔] §a古神遣返光环已开启 §7- 自动驱逐周围 64 格内全部 Boss
+morphext.jzahar.banish.disabled=§6[扎哈尔] §c古神遣返光环已关闭 §7- 允许与周围首领 Boss 共存
+morphext.jzahar.banish.require_morph=§c[扎哈尔] 只有在化身扎哈尔 (J'zahar) 形态下才能掌控古神遣返法则！
+
+# 扎哈尔古神遣返法则状态能力（AbyssalCraft patch）
+morphext.ability.jzahar_banish.name=古神遣返法则
+morphext.ability.jzahar_banish.desc=切换扎哈尔对周围 64 格内首领生物 (Boss) 的古神遣返法则状态 [开/关]：\n· [遣返: ON]（默认）：自动遣返并驱逐周围末影龙、凋灵、深渊古神等全部 Boss；\n· [遣返: OFF]：收敛光环，允许扎哈尔与其他首领 Boss 并存、同台决斗。
+gui.morphext.state.banish.on=遣返: ON
+gui.morphext.state.banish.off=遣返: OFF

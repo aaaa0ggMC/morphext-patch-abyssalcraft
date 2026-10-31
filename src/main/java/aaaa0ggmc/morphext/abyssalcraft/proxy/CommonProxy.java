@@ -34,5 +34,7 @@ public class CommonProxy {
     }
 
     public void init(FMLInitializationEvent event) {
+        aaaa0ggmc.morphext.ability.ServerAbilityService.register("morphext:jzahar",
+                new aaaa0ggmc.morphext.abyssalcraft.ability.JzaharBanishServerAbility());
     }
 }

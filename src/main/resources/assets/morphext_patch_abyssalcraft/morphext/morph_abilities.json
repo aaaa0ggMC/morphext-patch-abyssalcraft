@@ -2863,7 +2863,8 @@
       "night_vision",
       "prevent_fall",
       "faction_omothol_lord",
-      "faction_shadow_lord"
+      "faction_shadow_lord",
+      "morphext:jzahar_banish"
     ],
     "immunities": [
       "abyssalcraft:antimatter",
@@ -2915,7 +2916,8 @@
       "night_vision",
       "prevent_fall",
       "faction_omothol_lord",
-      "faction_shadow_lord"
+      "faction_shadow_lord",
+      "morphext:jzahar_banish"
     ],
     "immunities": [
       "abyssalcraft:antimatter",
@@ -3343,7 +3345,8 @@
       "night_vision",
       "prevent_fall",
       "faction_omothol_lord",
-      "faction_shadow_lord"
+      "faction_shadow_lord",
+      "morphext:jzahar_banish"
     ],
     "immunities": [
       "abyssalcraft:antimatter",
@@ -3395,7 +3398,8 @@
       "night_vision",
       "prevent_fall",
       "faction_omothol_lord",
-      "faction_shadow_lord"
+      "faction_shadow_lord",
+      "morphext:jzahar_banish"
     ],
     "immunities": [
       "abyssalcraft:antimatter",

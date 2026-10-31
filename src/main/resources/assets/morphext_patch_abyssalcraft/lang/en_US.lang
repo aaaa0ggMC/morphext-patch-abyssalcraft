@@ -137,3 +137,14 @@ item.morphext_patch_abyssalcraft.cursed_milk.name=Abyssal Cursed Milk
 item.morphext_patch_abyssalcraft.cursed_milk.desc=Clears potion effects, but the abyssal void afflicts the drinker with nausea and weakness...
 item.morphext_patch_abyssalcraft.demon_wool.name=Demon Wool
 item.morphext_patch_abyssalcraft.anti_egg.name=Antimatter Void Egg
+
+# J'zahar Boss Banishment State
+morphext.jzahar.banish.enabled=§6[J'zahar] §aBoss Banishment Aura Enabled §7- Automatically expelling all Bosses within 64m
+morphext.jzahar.banish.disabled=§6[J'zahar] §cBoss Banishment Aura Disabled §7- Boss coexistence permitted
+morphext.jzahar.banish.require_morph=§c[J'zahar] You can only govern the boss banishment law while morphed as J'zahar!
+
+# J'zahar Boss Banishment Ability (AbyssalCraft patch)
+morphext.ability.jzahar_banish.name=Boss Banishment Aura
+morphext.ability.jzahar_banish.desc=Toggles J'zahar's Great Old One aura that automatically banishes all Boss entities within 64 blocks [ON/OFF]:\n· [BANISH: ON] (Default): Automatically expels all bosses within 64m;\n· [BANISH: OFF]: Suppresses banishment, allowing J'zahar to coexist and fight alongside other bosses.
+gui.morphext.state.banish.on=BANISH: ON
+gui.morphext.state.banish.off=BANISH: OFF
