@@ -85,7 +85,13 @@ public class MorphExtAbyssalCraft {
         // 珊瑚感染生物核心动作
         MorphManager.INSTANCE.actions.put("ac_coralium_ink", new AbyssalActions.CoraliumInkAction());
         MorphManager.INSTANCE.actions.put("ac_coralium_squirt", new AbyssalActions.CoraliumSquirt());
+        MorphManager.INSTANCE.actions.put("ac_coralium_ink_storm", new AbyssalActions.CoraliumInkStormAction());
         MorphManager.INSTANCE.actions.put("ac_ghoul_pounce", new AbyssalActions.GhoulPounceAction());
+        MorphManager.INSTANCE.actions.put("ac_ghoul_underwater_ambush", new AbyssalActions.GhoulUnderwaterAmbushAction());
+        MorphManager.INSTANCE.actions.put("ac_coralium_claws", new AbyssalActions.CoraliumClawsAction());
+
+        // 恶魔动物地狱机制
+        MorphManager.INSTANCE.actions.put("ac_demon_fire_charge", new AbyssalActions.DemonFireChargeAction());
 
         // 修格斯与遗民动作
         MorphManager.INSTANCE.actions.put("ac_acid_spit", new AbyssalActions.AcidSpit());
@@ -133,5 +139,9 @@ public class MorphExtAbyssalCraft {
         aaaa0ggmc.morphext.abyssalcraft.passive.ShoggothAcidPassive shoggothAcid = new aaaa0ggmc.morphext.abyssalcraft.passive.ShoggothAcidPassive();
         aaaa0ggmc.morphext.ability.AbilityRegistry.register(shoggothAcid);
         MorphManager.INSTANCE.abilities.put("ac_shoggoth_acid", shoggothAcid);
+
+        aaaa0ggmc.morphext.abyssalcraft.passive.CoraliumCarapacePassive coraliumCarapace = new aaaa0ggmc.morphext.abyssalcraft.passive.CoraliumCarapacePassive();
+        aaaa0ggmc.morphext.ability.AbilityRegistry.register(coraliumCarapace);
+        MorphManager.INSTANCE.abilities.put("ac_coralium_carapace", coraliumCarapace);
     }
 }

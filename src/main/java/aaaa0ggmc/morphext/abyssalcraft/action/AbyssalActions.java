@@ -1,6 +1,7 @@
 package aaaa0ggmc.morphext.abyssalcraft.action;
 
 import com.shinoow.abyssalcraft.api.AbyssalCraftAPI;
+import com.shinoow.abyssalcraft.api.entity.EntityUtil;
 import com.shinoow.abyssalcraft.common.entity.EntityAcidProjectile;
 import com.shinoow.abyssalcraft.common.entity.EntityDreadSlug;
 import com.shinoow.abyssalcraft.common.entity.EntityDreadedCharge;
@@ -208,25 +209,175 @@ public final class AbyssalActions {
     public static class DreadSlam extends DreadSlamAction {}
     public static class DreadKatanaAction extends DreadSlamAction {}
 
-    /** 阿索拉 / 幽灵龙：喷吐幽灵龙息火球 */
+    /** 奥穆索遗民 / 阿索拉：喷吐幽魂虚空火球 (ID: ac_spectral_fireball) - 向准星安全发射一颗幽灵火球，命中引发幽冥爆炸 (冷却 5s) */
     public static class SpectralFireball extends AbyssalCraftAction {
-        public SpectralFireball() { super(120); }
+        public SpectralFireball() { super(100); } // 冷却 5s
 
         @Override
         protected boolean executeServer(EntityLivingBase entity, AbstractMorph morph) {
             World world = entity.world;
             Vec3d look = entity.getLook(1.0F);
             Vec3d safe = getSafeSpawnPosition(entity, 1.8D);
-            EntityWitherSkull skull = new EntityWitherSkull(world, entity, look.x * 0.15D, look.y * 0.15D, look.z * 0.15D);
+            EntityWitherSkull skull = new EntityWitherSkull(world, entity, look.x * 0.16D, look.y * 0.16D, look.z * 0.16D);
             skull.setPosition(safe.x, safe.y, safe.z);
             skull.setInvulnerable(false);
             BossNativeHelper.tagOwner(skull, entity);
             world.spawnEntity(skull);
+
+            if (world instanceof WorldServer) {
+                WorldServer ws = (WorldServer) world;
+                ws.spawnParticle(EnumParticleTypes.SMOKE_LARGE, safe.x, safe.y, safe.z, 8, 0.2D, 0.2D, 0.2D, 0.02D);
+                ws.spawnParticle(EnumParticleTypes.DRAGON_BREATH, safe.x, safe.y, safe.z, 12, 0.2D, 0.2D, 0.2D, 0.05D);
+            }
+
             world.playSound(null, entity.posX, entity.posY, entity.posZ,
                     SoundEvents.ENTITY_WITHER_SHOOT, SoundCategory.PLAYERS, 1.2F, 0.7F);
+            world.playSound(null, entity.posX, entity.posY, entity.posZ,
+                    SoundEvents.ENTITY_BLAZE_SHOOT, SoundCategory.PLAYERS, 1.0F, 0.8F);
             return true;
         }
     }
+
+    /**
+     * 深渊食尸鬼：水下高速伏击 (ID: ac_ghoul_underwater_ambush, 冷却 8s)
+     * 在水中释放时爆发 2.5D 水流推进力高速冲刺并隐匿，出水扑袭身前 3.5 格目标造成 12 点物理破甲重创。
+     */
+    public static class GhoulUnderwaterAmbushAction extends AbyssalCraftAction {
+        public GhoulUnderwaterAmbushAction() { super(160); } // 冷却 8s
+
+        @Override
+        protected boolean executeServer(EntityLivingBase entity, AbstractMorph morph) {
+            World world = entity.world;
+            Vec3d look = entity.getLook(1.0F);
+            boolean inWater = entity.isInWater();
+
+            if (inWater) {
+                // 水中爆发 2.5D 水流推进力高速冲刺与水下隐匿
+                double propel = 2.5D;
+                entity.motionX = look.x * propel;
+                entity.motionY = look.y * (propel * 0.75D);
+                entity.motionZ = look.z * propel;
+                entity.velocityChanged = true;
+
+                entity.addPotionEffect(new PotionEffect(MobEffects.INVISIBILITY, 100, 0, false, false));
+                entity.addPotionEffect(new PotionEffect(MobEffects.SPEED, 100, 1, false, false));
+
+                if (world instanceof WorldServer) {
+                    WorldServer ws = (WorldServer) world;
+                    ws.spawnParticle(EnumParticleTypes.WATER_BUBBLE, entity.posX, entity.posY + 0.5D, entity.posZ, 50, 0.8D, 0.4D, 0.8D, 0.2D);
+                    ws.spawnParticle(EnumParticleTypes.WATER_SPLASH, entity.posX, entity.posY + 0.5D, entity.posZ, 40, 0.8D, 0.4D, 0.8D, 0.15D);
+                    ws.spawnParticle(EnumParticleTypes.WATER_WAKE, entity.posX, entity.posY + 0.5D, entity.posZ, 30, 0.5D, 0.2D, 0.5D, 0.1D);
+                }
+
+                world.playSound(null, entity.posX, entity.posY, entity.posZ,
+                        SoundEvents.ENTITY_PLAYER_SWIM, SoundCategory.PLAYERS, 1.5F, 0.6F);
+                world.playSound(null, entity.posX, entity.posY, entity.posZ,
+                        SoundEvents.ENTITY_GENERIC_SPLASH, SoundCategory.PLAYERS, 1.2F, 0.8F);
+            } else {
+                // 陆地突进
+                entity.motionX += look.x * 1.5D;
+                entity.motionY += 0.42D;
+                entity.motionZ += look.z * 1.5D;
+                entity.velocityChanged = true;
+
+                if (world instanceof WorldServer) {
+                    ((WorldServer) world).spawnParticle(EnumParticleTypes.CLOUD, entity.posX, entity.posY + 0.2D, entity.posZ, 15, 0.4D, 0.1D, 0.4D, 0.05D);
+                }
+
+                world.playSound(null, entity.posX, entity.posY, entity.posZ,
+                        SoundEvents.ENTITY_PLAYER_ATTACK_SWEEP, SoundCategory.PLAYERS, 1.2F, 0.7F);
+            }
+
+            // 扑袭身前 3.5 格目标造成 12 点物理破甲重创
+            AxisAlignedBB strikeBox = entity.getEntityBoundingBox().grow(2.5D, 1.6D, 2.5D).offset(look.x * 2.2D, look.y * 0.8D, look.z * 2.2D);
+            List<EntityLivingBase> list = world.getEntitiesWithinAABB(EntityLivingBase.class, strikeBox,
+                    e -> e != entity && e.isEntityAlive() && !e.isOnSameTeam(entity));
+
+            DamageSource armorPierce = (entity instanceof EntityPlayer ?
+                    DamageSource.causePlayerDamage((EntityPlayer) entity) :
+                    DamageSource.causeMobDamage(entity)).setDamageBypassesArmor();
+
+            boolean hit = false;
+            for (EntityLivingBase target : list) {
+                target.attackEntityFrom(armorPierce, 12.0F);
+                target.addPotionEffect(new PotionEffect(MobEffects.SLOWNESS, 80, 1));
+                if (AbyssalCraftAPI.coralium_plague != null && !EntityUtil.isEntityCoralium(target)) {
+                    target.addPotionEffect(new PotionEffect(AbyssalCraftAPI.coralium_plague, 100, 0));
+                }
+                hit = true;
+            }
+
+            world.playSound(null, entity.posX, entity.posY, entity.posZ,
+                    ACSounds.ghoul_normal_ambient, SoundCategory.HOSTILE, 1.4F, 0.8F);
+            if (hit) {
+                world.playSound(null, entity.posX, entity.posY, entity.posZ,
+                        SoundEvents.ENTITY_PLAYER_ATTACK_CRIT, SoundCategory.PLAYERS, 1.5F, 0.7F);
+                world.playSound(null, entity.posX, entity.posY, entity.posZ,
+                        SoundEvents.ENTITY_ZOMBIE_ATTACK_IRON_DOOR, SoundCategory.PLAYERS, 1.2F, 1.5F);
+            }
+
+            return true;
+        }
+    }
+    public static class GhoulUnderwaterAmbush extends GhoulUnderwaterAmbushAction {}
+
+    /**
+     * 深渊食尸鬼：珊瑚利爪感染 (ID: ac_coralium_claws, 冷却 4s)
+     * 挥舞带珊瑚侵蚀的腐爪，命中敌人施加 120 ticks 珊瑚瘟疫 (cplague) 与虚弱。
+     */
+    public static class CoraliumClawsAction extends AbyssalCraftAction {
+        public CoraliumClawsAction() { super(80); } // 冷却 4s
+
+        @Override
+        protected boolean executeServer(EntityLivingBase entity, AbstractMorph morph) {
+            World world = entity.world;
+            Vec3d look = entity.getLook(1.0F);
+
+            entity.swingArm(EnumHand.MAIN_HAND);
+
+            // 身前 3.5 格扇形抓击
+            AxisAlignedBB strikeBox = entity.getEntityBoundingBox().grow(2.5D, 1.2D, 2.5D).offset(look.x * 1.8D, 0.2D, look.z * 1.8D);
+            List<EntityLivingBase> list = world.getEntitiesWithinAABB(EntityLivingBase.class, strikeBox,
+                    e -> e != entity && e.isEntityAlive() && !e.isOnSameTeam(entity));
+
+            DamageSource source = AbyssalCraftAPI.coralium != null ?
+                    AbyssalCraftAPI.coralium :
+                    (entity instanceof EntityPlayer ? DamageSource.causePlayerDamage((EntityPlayer) entity) : DamageSource.causeMobDamage(entity));
+
+            boolean hit = false;
+            for (EntityLivingBase target : list) {
+                target.attackEntityFrom(source, 9.0F);
+                if (AbyssalCraftAPI.coralium_plague != null && !EntityUtil.isEntityCoralium(target)) {
+                    target.addPotionEffect(new PotionEffect(AbyssalCraftAPI.coralium_plague, 120, 0)); // 120 ticks 珊瑚瘟疫
+                }
+                target.addPotionEffect(new PotionEffect(MobEffects.WEAKNESS, 120, 0)); // 120 ticks 虚弱
+                target.knockBack(entity, 0.6F, -look.x, -look.z);
+                hit = true;
+            }
+
+            if (world instanceof WorldServer) {
+                WorldServer ws = (WorldServer) world;
+                double px = entity.posX + look.x * 1.8D;
+                double py = entity.posY + entity.getEyeHeight() * 0.7D;
+                double pz = entity.posZ + look.z * 1.8D;
+                ws.spawnParticle(EnumParticleTypes.SWEEP_ATTACK, px, py, pz, 1, 0.0, 0.0, 0.0, 0.0);
+                ws.spawnParticle(EnumParticleTypes.CRIT_MAGIC, px, py, pz, 15, 0.4D, 0.3D, 0.4D, 0.1D);
+                ws.spawnParticle(EnumParticleTypes.WATER_SPLASH, px, py, pz, 15, 0.4D, 0.2D, 0.4D, 0.1D);
+            }
+
+            world.playSound(null, entity.posX, entity.posY, entity.posZ,
+                    SoundEvents.ENTITY_PLAYER_ATTACK_SWEEP, SoundCategory.PLAYERS, 1.2F, 0.8F);
+            world.playSound(null, entity.posX, entity.posY, entity.posZ,
+                    SoundEvents.BLOCK_GLASS_BREAK, SoundCategory.PLAYERS, 1.0F, 1.6F);
+            if (hit) {
+                world.playSound(null, entity.posX, entity.posY, entity.posZ,
+                        ACSounds.ghoul_normal_ambient, SoundCategory.HOSTILE, 1.2F, 1.0F);
+            }
+
+            return true;
+        }
+    }
+    public static class CoraliumClaws extends CoraliumClawsAction {}
 
     /** 食尸鬼家族：飞扑撕咬 (ID: ac_ghoul_pounce) - 扑向目标，造成撕咬撕裂伤害并附带珊瑚瘟疫 */
     public static class GhoulPounceAction extends AbyssalCraftAction {
@@ -272,6 +423,73 @@ public final class AbyssalActions {
         }
     }
     public static class GhoulPounce extends GhoulPounceAction {}
+
+    /**
+     * 珊瑚鱿鱼：珊瑚瘟疫风暴喷射 (ID: ac_coralium_ink_storm, 冷却 12s)
+     * 喷射大范围致命深蓝珊瑚墨汁迷雾（半径 7 格），沿途敌人失明 6 秒并染上珊瑚瘟疫，自身喷气反冲后撤加速。
+     */
+    public static class CoraliumInkStormAction extends AbyssalCraftAction {
+        public CoraliumInkStormAction() { super(240); } // 冷却 12s
+
+        @Override
+        protected boolean executeServer(EntityLivingBase entity, AbstractMorph morph) {
+            World world = entity.world;
+            Vec3d look = entity.getLook(1.0F);
+
+            // 1. 周围 7 格大范围深蓝珊瑚墨汁风暴
+            List<EntityLivingBase> list = findNearbyEntities(entity, 7.0D);
+            DamageSource source = AbyssalCraftAPI.coralium != null ?
+                    AbyssalCraftAPI.coralium :
+                    (entity instanceof EntityPlayer ? DamageSource.causePlayerDamage((EntityPlayer) entity) : DamageSource.causeMobDamage(entity));
+
+            for (EntityLivingBase target : list) {
+                target.attackEntityFrom(source, 10.0F);
+                if (AbyssalCraftAPI.coralium_plague != null && !EntityUtil.isEntityCoralium(target)) {
+                    target.addPotionEffect(new PotionEffect(AbyssalCraftAPI.coralium_plague, 160, 0)); // 珊瑚瘟疫
+                }
+                target.addPotionEffect(new PotionEffect(MobEffects.BLINDNESS, 120, 0)); // 失明 6 秒 (120 ticks)
+                target.addPotionEffect(new PotionEffect(MobEffects.SLOWNESS, 120, 1));  // 缓慢 II 6 秒
+            }
+
+            // 2. 前向齐射 3 枚扩散墨汁飞弹
+            for (int i = -1; i <= 1; i++) {
+                Vec3d safe = getSafeSpawnPosition(entity, 1.8D);
+                EntityInkProjectile ink = new EntityInkProjectile(world, entity);
+                ink.setPosition(safe.x, safe.y + (i == 0 ? 0.0D : 0.15D), safe.z);
+                double spreadX = look.x + (i * -look.z * 0.22D);
+                double spreadZ = look.z + (i * look.x * 0.22D);
+                ink.shoot(spreadX, look.y + 0.08D, spreadZ, 1.4F, 2.0F);
+                BossNativeHelper.tagOwner(ink, entity);
+                world.spawnEntity(ink);
+            }
+
+            // 3. 喷气反冲后撤加速
+            entity.motionX -= look.x * 1.35D;
+            entity.motionZ -= look.z * 1.35D;
+            entity.motionY += 0.35D;
+            entity.velocityChanged = true;
+            entity.addPotionEffect(new PotionEffect(MobEffects.SPEED, 80, 1, false, false));
+
+            // 4. 深蓝墨汁迷雾粒子
+            if (world instanceof WorldServer) {
+                WorldServer ws = (WorldServer) world;
+                ws.spawnParticle(EnumParticleTypes.SMOKE_LARGE, entity.posX, entity.posY + 0.5D, entity.posZ, 80, 3.5D, 1.2D, 3.5D, 0.05D);
+                ws.spawnParticle(EnumParticleTypes.WATER_SPLASH, entity.posX, entity.posY + 0.5D, entity.posZ, 100, 3.0D, 1.0D, 3.0D, 0.1D);
+                ws.spawnParticle(EnumParticleTypes.WATER_BUBBLE, entity.posX, entity.posY + 0.5D, entity.posZ, 60, 2.5D, 1.0D, 2.5D, 0.1D);
+                ws.spawnParticle(EnumParticleTypes.SPELL_MOB, entity.posX, entity.posY + 0.5D, entity.posZ, 50, 3.0D, 1.0D, 3.0D, 0.0D);
+            }
+
+            world.playSound(null, entity.posX, entity.posY, entity.posZ,
+                    SoundEvents.ENTITY_SQUID_AMBIENT, SoundCategory.PLAYERS, 2.0F, 0.7F);
+            world.playSound(null, entity.posX, entity.posY, entity.posZ,
+                    SoundEvents.ENTITY_SPLASH_POTION_BREAK, SoundCategory.PLAYERS, 1.5F, 0.6F);
+            world.playSound(null, entity.posX, entity.posY, entity.posZ,
+                    SoundEvents.ENTITY_GENERIC_SWIM, SoundCategory.PLAYERS, 1.2F, 0.8F);
+
+            return true;
+        }
+    }
+    public static class CoraliumInkStorm extends CoraliumInkStormAction {}
 
     /** 珊瑚鱿鱼：致命珊瑚感染墨汁雾 (ID: ac_coralium_ink) - 喷射墨汁雾与飞弹，周围敌人染上珊瑚瘟疫与致盲迟缓 */
     public static class CoraliumInkAction extends AbyssalCraftAction {
@@ -344,31 +562,117 @@ public final class AbyssalActions {
         }
     }
 
-    /** 遗民：尖啸战吼（范围声波震慑与群体弱化） */
+    /** 奥穆索遗民：奥穆索穿脑尖叫 (ID: ac_remnant_screech, 冷却 10s) - 发出异界穿脑尖啸，使周围 12 格敌人陷入严重反胃与缓慢 III，并伴随异界空间粒子 */
     public static class RemnantScreech extends AbyssalCraftAction {
-        public RemnantScreech() { super(160); }
+        public RemnantScreech() { super(200); } // 冷却 10s
 
         @Override
         protected boolean executeServer(EntityLivingBase entity, AbstractMorph morph) {
             World world = entity.world;
-            List<EntityLivingBase> list = findNearbyEntities(entity, 9.0D);
-            DamageSource source = entity instanceof EntityPlayer ? DamageSource.causePlayerDamage((EntityPlayer) entity) : DamageSource.causeMobDamage(entity);
+            List<EntityLivingBase> list = findNearbyEntities(entity, 12.0D);
+            DamageSource source = entity instanceof EntityPlayer ?
+                    DamageSource.causePlayerDamage((EntityPlayer) entity).setMagicDamage() :
+                    DamageSource.causeMobDamage(entity).setMagicDamage();
+
             for (EntityLivingBase target : list) {
-                target.attackEntityFrom(source, 5.0F);
-                target.addPotionEffect(new PotionEffect(MobEffects.WEAKNESS, 120, 1));
-                target.addPotionEffect(new PotionEffect(MobEffects.SLOWNESS, 100, 1));
-                target.addPotionEffect(new PotionEffect(MobEffects.MINING_FATIGUE, 140, 1));
+                target.attackEntityFrom(source, 8.0F);
+                target.addPotionEffect(new PotionEffect(MobEffects.NAUSEA, 160, 0)); // 严重反胃 8秒
+                target.addPotionEffect(new PotionEffect(MobEffects.SLOWNESS, 120, 2)); // 缓慢 III (amplifier 2) 6秒
+                target.addPotionEffect(new PotionEffect(MobEffects.WEAKNESS, 160, 1)); // 虚弱 II 8秒
+                target.addPotionEffect(new PotionEffect(MobEffects.MINING_FATIGUE, 160, 1));
             }
+
             if (world instanceof WorldServer) {
-                ((WorldServer) world).spawnParticle(EnumParticleTypes.NOTE,
+                WorldServer ws = (WorldServer) world;
+                ws.spawnParticle(EnumParticleTypes.PORTAL,
+                        entity.posX, entity.posY + entity.getEyeHeight() * 0.5D, entity.posZ,
+                        80, 2.5D, 1.2D, 2.5D, 0.2D);
+                ws.spawnParticle(EnumParticleTypes.DRAGON_BREATH,
+                        entity.posX, entity.posY + entity.getEyeHeight() * 0.5D, entity.posZ,
+                        40, 2.0D, 1.0D, 2.0D, 0.05D);
+                ws.spawnParticle(EnumParticleTypes.SPELL_WITCH,
                         entity.posX, entity.posY + entity.getEyeHeight(), entity.posZ,
-                        30, 1.5D, 0.8D, 1.5D, 0.05D);
+                        30, 1.8D, 0.8D, 1.8D, 0.05D);
+                ws.spawnParticle(EnumParticleTypes.NOTE,
+                        entity.posX, entity.posY + entity.getEyeHeight(), entity.posZ,
+                        20, 1.5D, 0.8D, 1.5D, 0.05D);
             }
+
             world.playSound(null, entity.posX, entity.posY, entity.posZ,
-                    SoundEvents.ENTITY_GHAST_SCREAM, SoundCategory.PLAYERS, 1.5F, 1.2F);
+                    ACSounds.remnant_scream != null ? ACSounds.remnant_scream : SoundEvents.ENTITY_GHAST_SCREAM, SoundCategory.HOSTILE, 3.0F, 1.0F);
+            world.playSound(null, entity.posX, entity.posY, entity.posZ,
+                    SoundEvents.ENTITY_ELDER_GUARDIAN_CURSE, SoundCategory.PLAYERS, 1.2F, 1.2F);
             return true;
         }
     }
+
+    /**
+     * 恶魔动物：地狱火环冲撞 (ID: ac_demon_fire_charge, 冷却 8s)
+     * 浑身燃起地狱火冲锋 8 格，点燃沿途敌人并留下火径。
+     */
+    public static class DemonFireChargeAction extends AbyssalCraftAction {
+        public DemonFireChargeAction() { super(160); } // 冷却 8s
+
+        @Override
+        protected boolean executeServer(EntityLivingBase entity, AbstractMorph morph) {
+            World world = entity.world;
+            Vec3d look = entity.getLook(1.0F);
+
+            // 浑身燃起地狱火
+            entity.setFire(3);
+
+            // 冲锋推进
+            entity.motionX += look.x * 1.6D;
+            entity.motionZ += look.z * 1.6D;
+            entity.motionY += 0.22D;
+            entity.velocityChanged = true;
+
+            // 冲锋前方 8 格判定盒
+            AxisAlignedBB chargeBox = entity.getEntityBoundingBox().expand(look.x * 8.0D, 1.0D, look.z * 8.0D).grow(1.5D);
+            List<EntityLivingBase> list = world.getEntitiesWithinAABB(EntityLivingBase.class, chargeBox,
+                    e -> e != entity && e.isEntityAlive() && !e.isOnSameTeam(entity));
+
+            DamageSource fireSrc = (entity instanceof EntityPlayer ?
+                    DamageSource.causePlayerDamage((EntityPlayer) entity) :
+                    DamageSource.causeMobDamage(entity)).setFireDamage();
+
+            for (EntityLivingBase target : list) {
+                target.attackEntityFrom(fireSrc, 10.0F);
+                target.setFire(6); // 点燃沿途敌人 6 秒
+                target.knockBack(entity, 1.3F, -look.x, -look.z);
+            }
+
+            // 留下地狱火径与火环粒子
+            if (world instanceof WorldServer) {
+                WorldServer ws = (WorldServer) world;
+                for (int i = 0; i < 16; i++) {
+                    double dist = (i / 16.0D) * 8.0D;
+                    double px = entity.posX + look.x * dist;
+                    double py = entity.posY + 0.1D;
+                    double pz = entity.posZ + look.z * dist;
+                    ws.spawnParticle(EnumParticleTypes.FLAME, px, py, pz, 4, 0.3D, 0.2D, 0.3D, 0.05D);
+                    ws.spawnParticle(EnumParticleTypes.LAVA, px, py, pz, 1, 0.2D, 0.1D, 0.2D, 0.0D);
+                    ws.spawnParticle(EnumParticleTypes.SMOKE_LARGE, px, py, pz, 2, 0.2D, 0.2D, 0.2D, 0.02D);
+                }
+                for (int angle = 0; angle < 360; angle += 30) {
+                    double rad = Math.toRadians(angle);
+                    double px = entity.posX + Math.cos(rad) * 2.0D;
+                    double pz = entity.posZ + Math.sin(rad) * 2.0D;
+                    ws.spawnParticle(EnumParticleTypes.FLAME, px, entity.posY + 0.3D, pz, 2, 0.1D, 0.1D, 0.1D, 0.02D);
+                }
+            }
+
+            world.playSound(null, entity.posX, entity.posY, entity.posZ,
+                    SoundEvents.ITEM_FLINTANDSTEEL_USE, SoundCategory.PLAYERS, 1.2F, 0.8F);
+            world.playSound(null, entity.posX, entity.posY, entity.posZ,
+                    SoundEvents.ENTITY_BLAZE_SHOOT, SoundCategory.PLAYERS, 1.4F, 0.7F);
+            world.playSound(null, entity.posX, entity.posY, entity.posZ,
+                    SoundEvents.ENTITY_ENDERDRAGON_FIREBALL_EPLD, SoundCategory.PLAYERS, 1.0F, 1.4F);
+
+            return true;
+        }
+    }
+    public static class DemonFireCharge extends DemonFireChargeAction {}
 
     /** 暗影生物：潜行暗影披风与隐匿 (ID: ac_shadow_veil) - 隐入阴影帷幕，潜行时获得强化匿踪与暗影护甲 */
     public static class ShadowVeil extends AbyssalCraftAction {

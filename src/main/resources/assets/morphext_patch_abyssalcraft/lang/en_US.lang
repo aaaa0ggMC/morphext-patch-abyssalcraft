@@ -9,11 +9,14 @@ morphext.metamorph.action.ac_dread_barrage=Dread Barrage
 morphext.metamorph.action.ac_dread_slam=Dread Slam
 morphext.metamorph.action.ac_dread_katana=Dread Katana Slam
 morphext.metamorph.action.ac_dread_roar=Dread Roar
-morphext.metamorph.action.ac_spectral_fireball=Spectral Fireball
+morphext.metamorph.action.ac_spectral_fireball=Spectral Void Fireball
 morphext.metamorph.action.ac_ghoul_pounce=Ghoul Pounce
+morphext.metamorph.action.ac_ghoul_underwater_ambush=Underwater Ambush
+morphext.metamorph.action.ac_coralium_claws=Coralium Claws
 morphext.metamorph.action.ac_coralium_squirt=Coralium Ink Squirt
 morphext.metamorph.action.ac_coralium_ink=Coralium Ink Mist
-morphext.metamorph.action.ac_remnant_screech=Remnant Screech
+morphext.metamorph.action.ac_coralium_ink_storm=Coralium Ink Storm
+morphext.metamorph.action.ac_remnant_screech=Omothol Screech
 morphext.metamorph.action.ac_shadow_veil=Shadow Veil
 morphext.metamorph.action.ac_shadow_step=Shadow Step
 morphext.metamorph.action.ac_shadow_slash=Shadow Slash
@@ -42,6 +45,7 @@ morphext.metamorph.action.ac_demon_cow_milk=Lava Milking & Hellfire Charge
 morphext.metamorph.action.ac_evil_cow_milk=Cursed Milking & Evil Ram
 morphext.metamorph.action.ac_anti_chicken_egg=Antimatter Egg Laying
 morphext.metamorph.action.ac_demon_sheep_shear=Demon Shearing & Fire Ring
+morphext.metamorph.action.ac_demon_fire_charge=Hellfire Charge
 
 # Action Descriptions
 morphext.metamorph.desc.ac_acid_spit=Acid Spit: Launches a highly corrosive shoggoth acid projectile, damaging armor and applying lingering acid damage.
@@ -53,11 +57,15 @@ morphext.metamorph.desc.ac_dread_barrage=Dread Barrage: Discharges a concentrate
 morphext.metamorph.desc.ac_dread_slam=Dread Slam: Slams the ground with a heavy warblade, cracking the earth with red lava shockwaves, knocking enemies into the air and spreading Dread Plague (6s CD).
 morphext.metamorph.desc.ac_dread_katana=Dread Katana Slam: The Dreadguard brandishes a heavy warblade to slam the ground with full force, erupting red lava shockwaves, launching enemies in front into the air, and spreading Dread Plague (6s CD).
 morphext.metamorph.desc.ac_dread_roar=Dread Roar: Unleashes a terrifying dread roar that rattles surrounding enemies with fear, weakness, and plague.
-morphext.metamorph.desc.ac_spectral_fireball=Spectral Fireball: Unleashes an eldritch wither breath fireball, creating an explosion that inflicts wither curse.
+morphext.metamorph.desc.ac_spectral_fireball=Spectral Void Fireball: Safely launches a spectral fireball towards your crosshairs, triggering an eldritch explosion with wither curse upon impact (5s CD).
 morphext.metamorph.desc.ac_ghoul_pounce=Ghoul Pounce: Lunges aggressively forward to tear into the prey, inflicting bite damage, hunger, slowness, and coralium plague (3.5s CD).
+morphext.metamorph.desc.ac_ghoul_underwater_ambush=Underwater Ambush: Unleashes 2.5D hydrodynamic thrust when cast underwater to sprint and cloak in invisibility, lunging at targets within 3.5 blocks to deal 12 armor-bypassing physical damage (8s CD).
+morphext.metamorph.desc.ac_coralium_claws=Coralium Claws: Swipes with coralium-corroded claws, dealing damage and inflicting 120 ticks of Coralium Plague and Weakness (4s CD).
 morphext.metamorph.desc.ac_coralium_squirt=Coralium Ink Squirt: Blasts venomous coralium ink, blinding targets and infecting them with coralium plague.
 morphext.metamorph.desc.ac_coralium_ink=Coralium Ink Mist: Sprays a lethal cloud of coralium plague ink mist and fires an ink projectile, infecting surrounding enemies with coralium plague, blindness, and slowness while recoiling backward (15s CD).
-morphext.metamorph.desc.ac_remnant_screech=Remnant Screech: Shrieks an ancient aklo incantation, afflicting surrounding hostiles with slowness and weakness.
+morphext.metamorph.desc.ac_coralium_ink_storm=Coralium Ink Storm: Blasts a massive cloud of lethal deep-blue coralium ink mist (7-block radius), afflicting enemies with 6s Blindness, Slowness, and Coralium Plague while recoiling backward with jet propulsion and ink barrage (12s CD).
+morphext.metamorph.desc.ac_remnant_screech=Omothol Screech: Shrieks an otherworldly piercing scream that afflicts enemies within 12 blocks with severe Nausea, Weakness, and Slowness III amidst eldritch void particles (10s CD).
+morphext.metamorph.desc.ac_demon_fire_charge=Hellfire Charge: Ignites in hellfire and violently charges forward 8 blocks, igniting and knocking back enemies along the path while leaving a blazing fire trail and fire ring (8s CD).
 morphext.metamorph.desc.ac_shadow_veil=Shadow Veil: Merges seamlessly with the darkness, granting brief invisibility and enhanced speed.
 morphext.metamorph.desc.ac_shadow_step=Shadow Step: Melts into the shadows and blinks up to 16 blocks forward or directly behind crosshair enemies, erupting with dark smoke and roar, dealing shadow damage and inflicting 4s blindness and wither to enemies within 4 blocks (10s CD).
 morphext.metamorph.desc.ac_shadow_slash=Shadow Slash: Sweeps massive shadow claws in a 4-block arc in front, dealing heavy shadow tear damage, slowness, and knockback to all enemies (6s CD).
@@ -104,6 +112,10 @@ morphext.metamorph.desc.ac_antimatter_annihilation=Antimatter Annihilation React
 morphext.ability.ac_shoggoth_acid.name=Shoggoth Caustic Slime Form
 morphext.ability.ac_shoggoth_acid.desc=Shoggoth Caustic Slime Form: Complete immunity to shoggoth acid, cactus, suffocation, and drowning; soft gelatinous body bounces projectiles away; immune to coralium plague, dread plague, antimatter, and poison; grants underwater breathing; melee attacks cripple foes with slowness and corrode armor.
 morphext.metamorph.desc.ac_shoggoth_acid=Shoggoth Caustic Slime Form: Complete immunity to acid, projectiles, cactus, suffocation, and abyssal plagues; melee strikes inflict corrosion and slowness.
+
+morphext.ability.ac_coralium_carapace.name=Coralium Carapace Hardening
+morphext.ability.ac_coralium_carapace.desc=Coralium Carapace Hardening: Covered in rigid coralium carapace, permanently providing +4 Armor and +4 Armor Toughness. Physical attacks taken have a 25% chance to reflect sharp coralium spikes to harm the attacker and inflict Coralium Plague; immune to Coralium Plague.
+morphext.metamorph.desc.ac_coralium_carapace=Coralium Carapace Hardening: Permanently grants +4 Armor Toughness. Taking physical attacks has a 25% chance to reflect coralium spikes and inflict Coralium Plague.
 
 # Abyssal Special Animal Interaction Actions
 morphext.metamorph.desc.ac_anti_cow_milk=Antimatter Milking & Pulse: Holding an empty bucket extracts a hazardous Liquid Antimatter Bucket (10s CD). When empty-handed, emits an antimatter recoil pulse knocking back entities within 4 blocks with void annihilation (15s CD).

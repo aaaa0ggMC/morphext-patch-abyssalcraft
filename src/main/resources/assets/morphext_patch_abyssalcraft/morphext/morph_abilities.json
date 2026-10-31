@@ -224,9 +224,9 @@
       "drown"
     ],
     "actions": [
-      "ac_ghoul_pounce",
-      "ac_coralium_ink",
-      "ac_remnant_screech"
+      "ac_ghoul_underwater_ambush",
+      "ac_coralium_claws",
+      "ac_ghoul_pounce"
     ]
   },
   "abyssalcraft.depthsghoul": {
@@ -250,13 +250,14 @@
       "drown"
     ],
     "actions": [
-      "ac_ghoul_pounce",
-      "ac_coralium_ink",
-      "ac_remnant_screech"
+      "ac_ghoul_underwater_ambush",
+      "ac_coralium_claws",
+      "ac_ghoul_pounce"
     ]
   },
   "abyssalcraft:abyssalzombie": {
     "abilities": [
+      "ac_coralium_carapace",
       "water_breath",
       "swim",
       "sun_allergy",
@@ -275,13 +276,14 @@
       "drown"
     ],
     "actions": [
+      "ac_coralium_claws",
       "ac_ghoul_pounce",
-      "ac_coralium_ink",
-      "ac_remnant_screech"
+      "ac_ghoul_underwater_ambush"
     ]
   },
   "abyssalcraft.abyssalzombie": {
     "abilities": [
+      "ac_coralium_carapace",
       "water_breath",
       "swim",
       "sun_allergy",
@@ -300,9 +302,9 @@
       "drown"
     ],
     "actions": [
+      "ac_coralium_claws",
       "ac_ghoul_pounce",
-      "ac_coralium_ink",
-      "ac_remnant_screech"
+      "ac_ghoul_underwater_ambush"
     ]
   },
   "abyssalcraft:coralsquid": {
@@ -311,15 +313,21 @@
       "swim"
     ],
     "immunities": [
+      "abyssalcraft:cplague",
+      "cplague",
+      "minecraft:blindness",
+      "potion.Cplague",
+      "potion.blindness",
       "potion.cplague"
     ],
     "damageImmunities": [
+      "coralium",
       "drown"
     ],
     "actions": [
+      "ac_coralium_ink_storm",
       "ac_coralium_ink",
-      "ac_coralium_squirt",
-      "ac_ghoul_pounce"
+      "ac_coralium_squirt"
     ]
   },
   "abyssalcraft.coralsquid": {
@@ -328,15 +336,21 @@
       "swim"
     ],
     "immunities": [
+      "abyssalcraft:cplague",
+      "cplague",
+      "minecraft:blindness",
+      "potion.Cplague",
+      "potion.blindness",
       "potion.cplague"
     ],
     "damageImmunities": [
+      "coralium",
       "drown"
     ],
     "actions": [
+      "ac_coralium_ink_storm",
       "ac_coralium_ink",
-      "ac_coralium_squirt",
-      "ac_ghoul_pounce"
+      "ac_coralium_squirt"
     ]
   },
   "abyssalcraft:coraliumsquid": {
@@ -357,9 +371,9 @@
       "drown"
     ],
     "actions": [
+      "ac_coralium_ink_storm",
       "ac_coralium_ink",
-      "ac_coralium_squirt",
-      "ac_ghoul_pounce"
+      "ac_coralium_squirt"
     ]
   },
   "abyssalcraft.coraliumsquid": {
@@ -380,9 +394,9 @@
       "drown"
     ],
     "actions": [
+      "ac_coralium_ink_storm",
       "ac_coralium_ink",
-      "ac_coralium_squirt",
-      "ac_ghoul_pounce"
+      "ac_coralium_squirt"
     ]
   },
   "abyssalcraft:dragonboss": {
@@ -1961,6 +1975,7 @@
       "onFire"
     ],
     "actions": [
+      "ac_demon_fire_charge",
       "ac_dread_charge"
     ]
   },
@@ -1984,6 +1999,7 @@
       "onFire"
     ],
     "actions": [
+      "ac_demon_fire_charge",
       "ac_dread_charge"
     ]
   },
@@ -2006,7 +2022,9 @@
       "onFire"
     ],
     "actions": [
-      "ac_demon_cow_milk"
+      "ac_demon_fire_charge",
+      "ac_demon_cow_milk",
+      "ac_dread_charge"
     ]
   },
   "abyssalcraft.demoncow": {
@@ -2028,7 +2046,9 @@
       "onFire"
     ],
     "actions": [
-      "ac_demon_cow_milk"
+      "ac_demon_fire_charge",
+      "ac_demon_cow_milk",
+      "ac_dread_charge"
     ]
   },
   "abyssalcraft:demonpig": {
@@ -2050,6 +2070,7 @@
       "onFire"
     ],
     "actions": [
+      "ac_demon_fire_charge",
       "ac_dread_charge"
     ]
   },
@@ -2072,6 +2093,7 @@
       "onFire"
     ],
     "actions": [
+      "ac_demon_fire_charge",
       "ac_dread_charge"
     ]
   },
@@ -2094,7 +2116,9 @@
       "onFire"
     ],
     "actions": [
-      "ac_demon_sheep_shear"
+      "ac_demon_fire_charge",
+      "ac_demon_sheep_shear",
+      "ac_dread_charge"
     ]
   },
   "abyssalcraft.demonsheep": {
@@ -2116,7 +2140,9 @@
       "onFire"
     ],
     "actions": [
-      "ac_demon_sheep_shear"
+      "ac_demon_fire_charge",
+      "ac_demon_sheep_shear",
+      "ac_dread_charge"
     ]
   },
   "abyssalcraft:ghoul": {
@@ -2182,8 +2208,9 @@
       "wither"
     ],
     "actions": [
-      "ac_ghoul_pounce",
-      "ac_remnant_screech"
+      "ac_remnant_screech",
+      "ac_spectral_fireball",
+      "ac_ghoul_pounce"
     ]
   },
   "abyssalcraft.remnant": {
@@ -2219,8 +2246,9 @@
       "wither"
     ],
     "actions": [
-      "ac_ghoul_pounce",
-      "ac_remnant_screech"
+      "ac_remnant_screech",
+      "ac_spectral_fireball",
+      "ac_ghoul_pounce"
     ]
   },
   "abyssalcraft:omotholghoul": {
