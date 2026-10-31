@@ -23,6 +23,7 @@ import net.minecraft.util.DamageSource;
 import net.minecraft.util.EnumHand;
 import net.minecraft.util.EnumParticleTypes;
 import net.minecraft.util.SoundCategory;
+import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.World;
@@ -417,6 +418,110 @@ public final class AbyssalBossActions {
                 world.playSound(null, entity.posX, entity.posY, entity.posZ,
                         SoundEvents.ENTITY_ZOMBIE_VILLAGER_CURE, SoundCategory.HOSTILE, 1.2F, 0.6F);
             }
+            return true;
+        }
+    }
+
+    /**
+     * 查伽洛斯巨拳重击 (ID: ac_chagaroth_fist)：
+     * 1. 撼地重碾身前范围敌人造成大额伤害与恐惧瘟疫；
+     * 2. 召唤/发射查伽洛斯之拳 (EntityChagarothFist) 突袭撕裂目标；
+     * 3. 属主标签注入，绝不反噬宿主。
+     */
+    public static class ChagarothFist extends AbyssalCraftAction {
+        public ChagarothFist() { super(140); } // 冷却 7s
+
+        @Override
+        protected boolean executeServer(EntityLivingBase entity, AbstractMorph morph) {
+            World world = entity.world;
+            Vec3d look = entity.getLook(1.0F);
+            entity.swingArm(EnumHand.MAIN_HAND);
+
+            // 1. 身前重砸
+            AxisAlignedBB box = entity.getEntityBoundingBox().grow(4.0D).offset(look.x * 3.0D, 0.2D, look.z * 3.0D);
+            List<EntityLivingBase> list = world.getEntitiesWithinAABB(EntityLivingBase.class, box,
+                    e -> e != entity && e.isEntityAlive() && !e.isOnSameTeam(entity));
+            DamageSource src = AbyssalCraftAPI.dread != null ? AbyssalCraftAPI.dread : DamageSource.causeMobDamage(entity);
+            for (EntityLivingBase target : list) {
+                target.attackEntityFrom(src, 16.0F);
+                target.motionY += 0.6D;
+                target.velocityChanged = true;
+                if (AbyssalCraftAPI.dread_plague != null) {
+                    target.addPotionEffect(new PotionEffect(AbyssalCraftAPI.dread_plague, 160, 0));
+                }
+            }
+
+            // 2. 发射恐惧巨拳投射
+            Vec3d safe = getSafeSpawnPosition(entity, 2.0D);
+            EntityDreadSlug slug = new EntityDreadSlug(world, entity);
+            slug.setPosition(safe.x, safe.y, safe.z);
+            slug.shoot(look.x, look.y, look.z, 1.5F, 1.0F);
+            BossNativeHelper.tagOwner(slug, entity);
+            world.spawnEntity(slug);
+
+            EntityChagarothFist fist = new EntityChagarothFist(world);
+            fist.copyLocationAndAnglesFrom(slug);
+            BossNativeHelper.tagOwner(fist, entity);
+            world.spawnEntity(fist);
+            fist.startRiding(slug);
+
+            if (world instanceof WorldServer) {
+                WorldServer ws = (WorldServer) world;
+                ws.spawnParticle(EnumParticleTypes.EXPLOSION_LARGE, entity.posX + look.x * 2.5D, entity.posY + 0.5D, entity.posZ + look.z * 2.5D, 3, 0.5, 0.2, 0.5, 0.0);
+                ws.spawnParticle(EnumParticleTypes.SMOKE_LARGE, entity.posX + look.x * 2.5D, entity.posY + 0.5D, entity.posZ + look.z * 2.5D, 20, 1.0, 0.5, 1.0, 0.05);
+            }
+
+            world.playSound(null, entity.posX, entity.posY, entity.posZ,
+                    SoundEvents.ENTITY_IRONGOLEM_ATTACK, SoundCategory.HOSTILE, 1.8F, 0.5F);
+            world.playSound(null, entity.posX, entity.posY, entity.posZ,
+                    SoundEvents.BLOCK_ANVIL_LAND, SoundCategory.PLAYERS, 1.0F, 0.6F);
+            return true;
+        }
+    }
+
+    /**
+     * 查伽洛斯幼体召唤 (ID: ac_chagaroth_spawn)：
+     * 1. 向准星发射两枚搭载恐惧幼体的恐惧蛞蝓；
+     * 2. 幼体自动扑咬敌对目标并施加恐惧瘟疫；
+     * 3. 属主标签注入，绝不反噬宿主。
+     */
+    public static class ChagarothSpawn extends AbyssalCraftAction {
+        public ChagarothSpawn() { super(160); } // 冷却 8s
+
+        @Override
+        protected boolean executeServer(EntityLivingBase entity, AbstractMorph morph) {
+            World world = entity.world;
+            Vec3d look = entity.getLook(1.0F);
+            entity.swingArm(EnumHand.MAIN_HAND);
+
+            double[] spreadAngles = new double[] { -0.15D, 0.15D };
+            for (double angle : spreadAngles) {
+                double vx = look.x * Math.cos(angle) - look.z * Math.sin(angle);
+                double vz = look.x * Math.sin(angle) + look.z * Math.cos(angle);
+                Vec3d safe = getSafeSpawnPosition(entity, 2.0D);
+
+                EntityDreadSlug slug = new EntityDreadSlug(world, entity);
+                slug.setPosition(safe.x, safe.y, safe.z);
+                slug.shoot(vx, look.y, vz, 1.4F, 1.0F);
+                BossNativeHelper.tagOwner(slug, entity);
+                world.spawnEntity(slug);
+
+                EntityChagarothSpawn spawn = new EntityChagarothSpawn(world);
+                spawn.copyLocationAndAnglesFrom(slug);
+                BossNativeHelper.tagOwner(spawn, entity);
+                world.spawnEntity(spawn);
+                spawn.startRiding(slug);
+            }
+
+            if (world instanceof WorldServer) {
+                WorldServer ws = (WorldServer) world;
+                ws.spawnParticle(EnumParticleTypes.SLIME, entity.posX + look.x * 2.0D, entity.posY + 1.0D, entity.posZ + look.z * 2.0D, 25, 0.5, 0.5, 0.5, 0.1);
+            }
+
+            world.playSound(null, entity.posX, entity.posY, entity.posZ,
+                    ACSounds.dread_spawn_ambient, SoundCategory.HOSTILE, 1.4F, 0.8F);
+            world.playSound(null, entity.posX, entity.posY, entity.posZ,
+                    SoundEvents.ENTITY_SLIME_SQUISH, SoundCategory.HOSTILE, 1.2F, 0.6F);
             return true;
         }
     }

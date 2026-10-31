@@ -61,38 +61,52 @@ public class MorphExtAbyssalCraft {
         MorphManager.INSTANCE.actions.put("ac_anti_chicken_egg", new AntiChickenEggAction());
         MorphManager.INSTANCE.actions.put("ac_demon_sheep_shear", new DemonSheepShearAction());
 
-        // 深渊普通生物核心动作
-        MorphManager.INSTANCE.actions.put("ac_acid_spit", new AbyssalActions.AcidSpit());
-        MorphManager.INSTANCE.actions.put("ac_shoggoth_ooze", new AbyssalActions.ShoggothOoze());
+        // 暗影生物核心动作
+        MorphManager.INSTANCE.actions.put("ac_shadow_step", new AbyssalActions.ShadowStepAction());
+        MorphManager.INSTANCE.actions.put("ac_shadow_slash", new AbyssalActions.ShadowSlashAction());
+        MorphManager.INSTANCE.actions.put("ac_shadow_veil", new AbyssalActions.ShadowVeil());
+        MorphManager.INSTANCE.actions.put("ac_shadow_collapse", new AbyssalActions.ShadowCollapse());
+
+        // 恐惧生物核心动作
+        MorphManager.INSTANCE.actions.put("ac_dread_slam", new AbyssalActions.DreadSlamAction());
         MorphManager.INSTANCE.actions.put("ac_dread_charge", new AbyssalActions.DreadCharge());
         MorphManager.INSTANCE.actions.put("ac_dread_slug", new AbyssalActions.DreadSlug());
-        MorphManager.INSTANCE.actions.put("ac_dread_slam", new AbyssalActions.DreadSlam());
-        MorphManager.INSTANCE.actions.put("ac_spectral_fireball", new AbyssalActions.SpectralFireball());
-        MorphManager.INSTANCE.actions.put("ac_ghoul_pounce", new AbyssalActions.GhoulPounce());
-        MorphManager.INSTANCE.actions.put("ac_coralium_squirt", new AbyssalActions.CoraliumSquirt());
-        MorphManager.INSTANCE.actions.put("ac_remnant_screech", new AbyssalActions.RemnantScreech());
-        MorphManager.INSTANCE.actions.put("ac_shadow_veil", new AbyssalActions.ShadowVeil());
-        MorphManager.INSTANCE.actions.put("ac_anti_implosion", new AbyssalActions.AntiImplosion());
+        MorphManager.INSTANCE.actions.put("ac_dread_barrage", new AbyssalActions.DreadBarrage());
         MorphManager.INSTANCE.actions.put("ac_dread_roar", new AbyssalActions.DreadRoar());
-        MorphManager.INSTANCE.actions.put("ac_acid_melt", new AbyssalActions.AcidMelt());
+
+        // 反物质生物核心动作
+        MorphManager.INSTANCE.actions.put("ac_antimatter_burst", new AbyssalActions.AntimatterBurstAction());
+        MorphManager.INSTANCE.actions.put("ac_anti_creeper_fuse", new AbyssalActions.AntiCreeperAnnihilationAction());
+        MorphManager.INSTANCE.actions.put("ac_anti_implosion", new AbyssalActions.AntiImplosion());
         MorphManager.INSTANCE.actions.put("ac_anti_matter_blast", new AbyssalActions.AntimatterBlast());
 
-        // 深渊 Boss 原生机制复用动作 (直接调用原生代码与骨骼动画)
+        // 珊瑚感染生物核心动作
+        MorphManager.INSTANCE.actions.put("ac_coralium_ink", new AbyssalActions.CoraliumInkAction());
+        MorphManager.INSTANCE.actions.put("ac_coralium_squirt", new AbyssalActions.CoraliumSquirt());
+        MorphManager.INSTANCE.actions.put("ac_ghoul_pounce", new AbyssalActions.GhoulPounceAction());
+
+        // 修格斯与遗民动作
+        MorphManager.INSTANCE.actions.put("ac_acid_spit", new AbyssalActions.AcidSpit());
+        MorphManager.INSTANCE.actions.put("ac_shoggoth_ooze", new AbyssalActions.ShoggothOoze());
+        MorphManager.INSTANCE.actions.put("ac_acid_melt", new AbyssalActions.AcidMelt());
+        MorphManager.INSTANCE.actions.put("ac_remnant_screech", new AbyssalActions.RemnantScreech());
+        MorphManager.INSTANCE.actions.put("ac_spectral_fireball", new AbyssalActions.SpectralFireball());
+
+        // 深渊 Boss 原生机制复用动作
         MorphManager.INSTANCE.actions.put("ac_jzahar_wither_salvo", new AbyssalBossActions.JzaharWitherSalvo());
         MorphManager.INSTANCE.actions.put("ac_jzahar_shout_blast", new AbyssalBossActions.JzaharShoutBlast());
         MorphManager.INSTANCE.actions.put("ac_jzahar_singularity", new AbyssalBossActions.JzaharSingularity());
         MorphManager.INSTANCE.actions.put("ac_jzahar_earthquake", new AbyssalBossActions.JzaharEarthquake());
+        MorphManager.INSTANCE.actions.put("ac_jzahar_oblivion", new AbyssalBossActions.JzaharSingularity());
 
         MorphManager.INSTANCE.actions.put("ac_sacthoth_shadow_flame", new AbyssalBossActions.SacthothShadowFlame());
         MorphManager.INSTANCE.actions.put("ac_sacthoth_shadow_step", new AbyssalBossActions.SacthothShadowStep());
 
         MorphManager.INSTANCE.actions.put("ac_chagaroth_dread_salvo", new AbyssalBossActions.ChagarothDreadSalvo());
-        MorphManager.INSTANCE.actions.put("ac_dragon_boss_breath", new AbyssalBossActions.DragonBossBreath());
+        MorphManager.INSTANCE.actions.put("ac_chagaroth_fist", new AbyssalBossActions.ChagarothFist());
+        MorphManager.INSTANCE.actions.put("ac_chagaroth_spawn", new AbyssalBossActions.ChagarothSpawn());
 
-        // 兼容旧标识映射（指向全新原生实现）
-        MorphManager.INSTANCE.actions.put("ac_jzahar_oblivion", new AbyssalBossActions.JzaharSingularity());
-        MorphManager.INSTANCE.actions.put("ac_shadow_collapse", new AbyssalBossActions.SacthothShadowFlame());
-        MorphManager.INSTANCE.actions.put("ac_shadow_step", new AbyssalBossActions.SacthothShadowStep());
-        MorphManager.INSTANCE.actions.put("ac_dread_barrage", new AbyssalBossActions.ChagarothDreadSalvo());
+        MorphManager.INSTANCE.actions.put("ac_dragon_breath", new AbyssalBossActions.DragonBossBreath());
+        MorphManager.INSTANCE.actions.put("ac_dragon_boss_breath", new AbyssalBossActions.DragonBossBreath());
     }
 }

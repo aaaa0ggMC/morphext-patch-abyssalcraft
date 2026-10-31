@@ -1,22 +1,66 @@
 # Morph Extension Patch: AbyssalCraft
+# Action Names
+morphext.metamorph.action.ac_acid_spit=Acid Spit
+morphext.metamorph.action.ac_shoggoth_ooze=Ooze Burst
+morphext.metamorph.action.ac_acid_melt=Acid Melt
+morphext.metamorph.action.ac_dread_charge=Dread Charge
+morphext.metamorph.action.ac_dread_slug=Dread Slug
+morphext.metamorph.action.ac_dread_barrage=Dread Barrage
+morphext.metamorph.action.ac_dread_slam=Dread Slam
+morphext.metamorph.action.ac_dread_roar=Dread Roar
+morphext.metamorph.action.ac_spectral_fireball=Spectral Fireball
+morphext.metamorph.action.ac_ghoul_pounce=Ghoul Pounce
+morphext.metamorph.action.ac_coralium_squirt=Coralium Ink Squirt
+morphext.metamorph.action.ac_coralium_ink=Coralium Ink Mist
+morphext.metamorph.action.ac_remnant_screech=Remnant Screech
+morphext.metamorph.action.ac_shadow_veil=Shadow Veil
+morphext.metamorph.action.ac_shadow_step=Shadow Step
+morphext.metamorph.action.ac_shadow_slash=Shadow Slash
+morphext.metamorph.action.ac_shadow_collapse=Shadow Collapse
+morphext.metamorph.action.ac_anti_implosion=Anti Implosion
+morphext.metamorph.action.ac_antimatter_burst=Antimatter Burst
+morphext.metamorph.action.ac_anti_creeper_fuse=Antimatter Annihilation Pulse
+morphext.metamorph.action.ac_anti_matter_blast=Antimatter Blast
+morphext.metamorph.action.ac_jzahar_wither_salvo=Ancient Wither Salvo
+morphext.metamorph.action.ac_jzahar_shout_blast=The Shout Blast
+morphext.metamorph.action.ac_jzahar_singularity=Void Oblivion
+morphext.metamorph.action.ac_jzahar_earthquake=Omothol Earthquake
+morphext.metamorph.action.ac_sacthoth_shadow_flame=Shadow Flame Breath
+morphext.metamorph.action.ac_sacthoth_shadow_step=Tactical Shadow Step
+morphext.metamorph.action.ac_chagaroth_dread_salvo=Dread Mother Salvo
+morphext.metamorph.action.ac_chagaroth_fist=Fist of Cha'garoth
+morphext.metamorph.action.ac_chagaroth_spawn=Summon Cha'garoth Spawn
+morphext.metamorph.action.ac_dragon_breath=Dread Dragon Breath
+morphext.metamorph.action.ac_dragon_boss_breath=Dread Dragon Breath
+morphext.metamorph.action.ac_anti_cow_milk=Antimatter Milking & Pulse
+morphext.metamorph.action.ac_demon_cow_milk=Lava Milking & Hellfire Charge
+morphext.metamorph.action.ac_evil_cow_milk=Cursed Milking & Evil Ram
+morphext.metamorph.action.ac_anti_chicken_egg=Antimatter Egg Laying
+morphext.metamorph.action.ac_demon_sheep_shear=Demon Shearing & Fire Ring
+
+# Action Descriptions
 morphext.metamorph.desc.ac_acid_spit=Acid Spit: Launches a highly corrosive shoggoth acid projectile, damaging armor and applying lingering acid damage.
 morphext.metamorph.desc.ac_shoggoth_ooze=Ooze Burst: Discharges a massive wave of strong acid slime, crippling nearby foes with severe slowness and weakness.
+morphext.metamorph.desc.ac_acid_melt=Acid Melt: Sprays caustic acid mist in a forward cone, dissolving enemy armor and reducing mobility.
 morphext.metamorph.desc.ac_dread_charge=Dread Charge: Hurls an explosive dread energy charge that explodes violently and spreads the Dread Plague.
 morphext.metamorph.desc.ac_dread_slug=Dread Slug: Fires a rapid armor-piercing dread slug projectile, inflicting Dread Plague upon impact.
 morphext.metamorph.desc.ac_dread_barrage=Dread Barrage: Discharges a concentrated salvo of three dread charges towards your crosshairs.
-morphext.metamorph.desc.ac_dread_slam=Dread Slam: Slams the ground with devastating dread shockwaves, launching and damaging surrounding entities.
+morphext.metamorph.desc.ac_dread_slam=Dread Slam: Slams the ground with a heavy warblade, cracking the earth with shockwaves and dread particles, launching enemies in front 5 blocks and spreading Dread Plague (12s CD).
+morphext.metamorph.desc.ac_dread_roar=Dread Roar: Unleashes a terrifying dread roar that rattles surrounding enemies with fear, weakness, and plague.
 morphext.metamorph.desc.ac_spectral_fireball=Spectral Fireball: Unleashes an eldritch wither breath fireball, creating an explosion that inflicts wither curse.
-morphext.metamorph.desc.ac_ghoul_pounce=Ghoul Pounce: Lunges aggressively forward to tear into the prey, inflicting bleeding, hunger, and slowness.
+morphext.metamorph.desc.ac_ghoul_pounce=Ghoul Pounce: Lunges aggressively forward to tear into the prey, inflicting bite damage, hunger, slowness, and coralium plague (3.5s CD).
 morphext.metamorph.desc.ac_coralium_squirt=Coralium Ink Squirt: Blasts venomous coralium ink, blinding targets and infecting them with coralium plague.
+morphext.metamorph.desc.ac_coralium_ink=Coralium Ink Mist: Sprays a lethal cloud of coralium plague ink mist and fires an ink projectile, infecting surrounding enemies with coralium plague, blindness, and slowness while recoiling backward (15s CD).
 morphext.metamorph.desc.ac_remnant_screech=Remnant Screech: Shrieks an ancient aklo incantation, afflicting surrounding hostiles with slowness and weakness.
 morphext.metamorph.desc.ac_shadow_veil=Shadow Veil: Merges seamlessly with the darkness, granting brief invisibility and enhanced speed.
+morphext.metamorph.desc.ac_shadow_step=Shadow Step: Melts into the shadows and blinks up to 16 blocks forward or directly behind crosshair enemies, erupting with dark smoke and roar, dealing shadow damage and inflicting 4s blindness and wither to enemies within 4 blocks (10s CD).
+morphext.metamorph.desc.ac_shadow_slash=Shadow Slash: Sweeps massive shadow claws in a 4-block arc in front, dealing heavy shadow tear damage, slowness, and knockback to all enemies (6s CD).
 morphext.metamorph.desc.ac_shadow_collapse=Shadow Collapse: Generates a shadow gravity field, dragging nearby entities toward you with shadow damage.
 morphext.metamorph.desc.ac_anti_implosion=Anti Implosion: Triggers a localized antimatter collapse, detonating the surroundings with void annihilation.
-morphext.metamorph.desc.ac_jzahar_oblivion=Oblivion Singularity: Manifests an Omothol void singularity, crushing foes with wither and void damage.
-morphext.metamorph.desc.ac_dread_roar=Dread Roar: Unleashes a terrifying dread roar that rattles surrounding enemies with fear, weakness, and plague.
-morphext.metamorph.desc.ac_shadow_step=Shadow Step: Steps through shadows to blink several blocks forward, bypassing obstacles.
-morphext.metamorph.desc.ac_acid_melt=Acid Melt: Sprays caustic acid mist in a forward cone, dissolving enemy armor and reducing mobility.
+morphext.metamorph.desc.ac_antimatter_burst=Antimatter Burst: Condenses and unleashes high-density antimatter particles, inflicting antimatter state and an annihilation repelling shockwave on entities within 7 blocks (15s CD).
+morphext.metamorph.desc.ac_anti_creeper_fuse=Antimatter Annihilation Pulse: Detonates the internal antimatter core without block griefing, exempting the host, releasing a massive 10-block annihilation energy wave that devastates enemies with antimatter damage (20s CD).
 morphext.metamorph.desc.ac_anti_matter_blast=Antimatter Blast: Unleashes a piercing beam of pure antimatter energy, annihilating all entities in its path.
+morphext.metamorph.desc.ac_jzahar_oblivion=Oblivion Singularity: Manifests an Omothol void singularity, crushing foes with wither and void damage.
 
 # Native Boss Mechanism Adapter Actions
 morphext.metamorph.desc.ac_jzahar_wither_salvo=Ancient Wither Salvo: Swings the floating staff and fires a three-headed volley of wither skulls (middle head has a chance to shoot a blue invulnerable skull) guided by crosshair targeting.
@@ -26,6 +70,9 @@ morphext.metamorph.desc.ac_jzahar_earthquake=Omothol Earthquake: Chants "Shugnah
 morphext.metamorph.desc.ac_sacthoth_shadow_flame=Shadow Flame Breath: Spews thick dark shadow flames from the mouth, inflicting pure shadow damage, blindness, and slowness.
 morphext.metamorph.desc.ac_sacthoth_shadow_step=Tactical Shadow Step: Disintegrates into 128 large smoke particles and teleports instantly to the crosshair destination safely.
 morphext.metamorph.desc.ac_chagaroth_dread_salvo=Dread Mother Salvo: Three heads unleash a barrage of high-speed dread slugs, explosive dread charges, and summoned dread beasts riding slugs!
+morphext.metamorph.desc.ac_chagaroth_fist=Fist of Cha'garoth: Smashes the ground creating a seismic dread shockwave and launches a high-speed dread slug carrying a Fist of Cha'garoth to attack targets, fully exempting the host (7s CD).
+morphext.metamorph.desc.ac_chagaroth_spawn=Summon Cha'garoth Spawn: Fires a spread of two dread slugs carrying Cha'garoth Spawns that seek out enemies and inflict Dread Plague, fully exempting the host (8s CD).
+morphext.metamorph.desc.ac_dragon_breath=Dread Dragon Breath: Roars and launches a spread of 3 dread fireballs engulfing the forward area in dread flames.
 morphext.metamorph.desc.ac_dragon_boss_breath=Dread Dragon Breath: Roars and launches a spread of 3 dread fireballs engulfing the forward area in dread flames.
 
 # Abyssal Special Animal Interaction Actions

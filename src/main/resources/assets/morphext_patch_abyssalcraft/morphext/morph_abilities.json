@@ -217,6 +217,7 @@
     ],
     "actions": [
       "ac_ghoul_pounce",
+      "ac_coralium_ink",
       "ac_remnant_screech"
     ]
   },
@@ -242,6 +243,7 @@
     ],
     "actions": [
       "ac_ghoul_pounce",
+      "ac_coralium_ink",
       "ac_remnant_screech"
     ]
   },
@@ -266,6 +268,7 @@
     ],
     "actions": [
       "ac_ghoul_pounce",
+      "ac_coralium_ink",
       "ac_remnant_screech"
     ]
   },
@@ -290,6 +293,7 @@
     ],
     "actions": [
       "ac_ghoul_pounce",
+      "ac_coralium_ink",
       "ac_remnant_screech"
     ]
   },
@@ -305,6 +309,7 @@
       "drown"
     ],
     "actions": [
+      "ac_coralium_ink",
       "ac_coralium_squirt",
       "ac_ghoul_pounce"
     ]
@@ -321,6 +326,7 @@
       "drown"
     ],
     "actions": [
+      "ac_coralium_ink",
       "ac_coralium_squirt",
       "ac_ghoul_pounce"
     ]
@@ -343,6 +349,7 @@
       "drown"
     ],
     "actions": [
+      "ac_coralium_ink",
       "ac_coralium_squirt",
       "ac_ghoul_pounce"
     ]
@@ -365,6 +372,7 @@
       "drown"
     ],
     "actions": [
+      "ac_coralium_ink",
       "ac_coralium_squirt",
       "ac_ghoul_pounce"
     ]
@@ -388,6 +396,7 @@
       "onFire"
     ],
     "actions": [
+      "ac_dragon_breath",
       "ac_dragon_boss_breath",
       "ac_spectral_fireball",
       "ac_remnant_screech"
@@ -412,6 +421,7 @@
       "onFire"
     ],
     "actions": [
+      "ac_dragon_breath",
       "ac_dragon_boss_breath",
       "ac_spectral_fireball",
       "ac_remnant_screech"
@@ -582,9 +592,11 @@
       "onFire"
     ],
     "actions": [
+      "ac_dread_slam",
+      "ac_ghoul_pounce",
       "ac_dread_slug",
       "ac_dread_charge",
-      "ac_ghoul_pounce"
+      "ac_dread_roar"
     ]
   },
   "abyssalcraft.greaterdreadspawn": {
@@ -606,9 +618,11 @@
       "onFire"
     ],
     "actions": [
+      "ac_dread_slam",
+      "ac_ghoul_pounce",
       "ac_dread_slug",
       "ac_dread_charge",
-      "ac_ghoul_pounce"
+      "ac_dread_roar"
     ]
   },
   "abyssalcraft:dreadguard": {
@@ -618,6 +632,7 @@
       "rotten"
     ],
     "actions": [
+      "ac_dread_slam",
       "ac_dread_barrage",
       "ac_dread_slug",
       "ac_dread_charge"
@@ -643,6 +658,7 @@
       "rotten"
     ],
     "actions": [
+      "ac_dread_slam",
       "ac_dread_barrage",
       "ac_dread_slug",
       "ac_dread_charge"
@@ -685,7 +701,8 @@
     ],
     "actions": [
       "ac_ghoul_pounce",
-      "ac_remnant_screech"
+      "ac_dread_slam",
+      "ac_dread_charge"
     ]
   },
   "abyssalcraft.dreadedghoul": {
@@ -712,7 +729,8 @@
     ],
     "actions": [
       "ac_ghoul_pounce",
-      "ac_remnant_screech"
+      "ac_dread_slam",
+      "ac_dread_charge"
     ]
   },
   "abyssalcraft:lesserdreadbeast": {
@@ -734,9 +752,10 @@
       "onFire"
     ],
     "actions": [
+      "ac_dread_roar",
+      "ac_dread_slam",
       "ac_dread_slug",
-      "ac_dread_charge",
-      "ac_ghoul_pounce"
+      "ac_dread_charge"
     ]
   },
   "abyssalcraft.lesserdreadbeast": {
@@ -758,9 +777,10 @@
       "onFire"
     ],
     "actions": [
+      "ac_dread_roar",
+      "ac_dread_slam",
       "ac_dread_slug",
-      "ac_dread_charge",
-      "ac_ghoul_pounce"
+      "ac_dread_charge"
     ]
   },
   "abyssalcraft:dreadgolem": {
@@ -866,6 +886,8 @@
     ],
     "actions": [
       "ac_chagaroth_dread_salvo",
+      "ac_chagaroth_fist",
+      "ac_chagaroth_spawn",
       "ac_dread_slam",
       "ac_dread_charge",
       "ac_dread_roar"
@@ -890,6 +912,8 @@
     ],
     "actions": [
       "ac_chagaroth_dread_salvo",
+      "ac_chagaroth_fist",
+      "ac_chagaroth_spawn",
       "ac_dread_slam",
       "ac_dread_charge",
       "ac_dread_roar"
@@ -913,9 +937,9 @@
       "onFire"
     ],
     "actions": [
+      "ac_chagaroth_fist",
       "ac_dread_slam",
-      "ac_dread_charge",
-      "ac_dread_roar"
+      "ac_dread_slug"
     ]
   },
   "abyssalcraft.chagarothfist": {
@@ -936,9 +960,9 @@
       "onFire"
     ],
     "actions": [
+      "ac_chagaroth_fist",
       "ac_dread_slam",
-      "ac_dread_charge",
-      "ac_dread_roar"
+      "ac_dread_slug"
     ]
   },
   "abyssalcraft:chagarothspawn": {
@@ -959,9 +983,9 @@
       "onFire"
     ],
     "actions": [
-      "ac_dread_slam",
-      "ac_dread_charge",
-      "ac_dread_roar"
+      "ac_chagaroth_spawn",
+      "ac_ghoul_pounce",
+      "ac_dread_slug"
     ]
   },
   "abyssalcraft.chagarothspawn": {
@@ -982,9 +1006,9 @@
       "onFire"
     ],
     "actions": [
-      "ac_dread_slam",
-      "ac_dread_charge",
-      "ac_dread_roar"
+      "ac_chagaroth_spawn",
+      "ac_ghoul_pounce",
+      "ac_dread_slug"
     ]
   },
   "abyssalcraft:shadowcreature": {
@@ -1014,8 +1038,9 @@
       "shoggoth_acid"
     ],
     "actions": [
-      "ac_shadow_veil",
-      "ac_shadow_step"
+      "ac_shadow_step",
+      "ac_shadow_slash",
+      "ac_shadow_veil"
     ]
   },
   "abyssalcraft.shadowcreature": {
@@ -1045,8 +1070,9 @@
       "shoggoth_acid"
     ],
     "actions": [
-      "ac_shadow_veil",
-      "ac_shadow_step"
+      "ac_shadow_step",
+      "ac_shadow_slash",
+      "ac_shadow_veil"
     ]
   },
   "abyssalcraft:shadowmonster": {
@@ -1076,8 +1102,9 @@
       "shoggoth_acid"
     ],
     "actions": [
-      "ac_shadow_veil",
-      "ac_shadow_step"
+      "ac_shadow_step",
+      "ac_shadow_slash",
+      "ac_shadow_veil"
     ]
   },
   "abyssalcraft.shadowmonster": {
@@ -1107,8 +1134,9 @@
       "shoggoth_acid"
     ],
     "actions": [
-      "ac_shadow_veil",
-      "ac_shadow_step"
+      "ac_shadow_step",
+      "ac_shadow_slash",
+      "ac_shadow_veil"
     ]
   },
   "abyssalcraft:shadowbeast": {
@@ -1138,9 +1166,10 @@
       "shoggoth_acid"
     ],
     "actions": [
-      "ac_shadow_veil",
+      "ac_shadow_step",
+      "ac_shadow_slash",
       "ac_shadow_collapse",
-      "ac_shadow_step"
+      "ac_shadow_veil"
     ]
   },
   "abyssalcraft.shadowbeast": {
@@ -1170,9 +1199,10 @@
       "shoggoth_acid"
     ],
     "actions": [
-      "ac_shadow_veil",
+      "ac_shadow_step",
+      "ac_shadow_slash",
       "ac_shadow_collapse",
-      "ac_shadow_step"
+      "ac_shadow_veil"
     ]
   },
   "abyssalcraft:shadowboss": {
@@ -1205,7 +1235,9 @@
     "actions": [
       "ac_sacthoth_shadow_flame",
       "ac_sacthoth_shadow_step",
-      "ac_shadow_veil"
+      "ac_shadow_step",
+      "ac_shadow_slash",
+      "ac_shadow_collapse"
     ]
   },
   "abyssalcraft.shadowboss": {
@@ -1238,7 +1270,9 @@
     "actions": [
       "ac_sacthoth_shadow_flame",
       "ac_sacthoth_shadow_step",
-      "ac_shadow_veil"
+      "ac_shadow_step",
+      "ac_shadow_slash",
+      "ac_shadow_collapse"
     ]
   },
   "abyssalcraft:shadowtitan": {
@@ -1267,9 +1301,9 @@
       "shoggoth_acid"
     ],
     "actions": [
-      "ac_shadow_veil",
-      "ac_shadow_collapse",
-      "ac_shadow_step"
+      "ac_shadow_step",
+      "ac_shadow_slash",
+      "ac_shadow_collapse"
     ]
   },
   "abyssalcraft.shadowtitan": {
@@ -1298,9 +1332,9 @@
       "shoggoth_acid"
     ],
     "actions": [
-      "ac_shadow_veil",
-      "ac_shadow_collapse",
-      "ac_shadow_step"
+      "ac_shadow_step",
+      "ac_shadow_slash",
+      "ac_shadow_collapse"
     ]
   },
   "abyssalcraft:shadowghoul": {
@@ -1331,8 +1365,9 @@
       "shoggoth_acid"
     ],
     "actions": [
-      "ac_shadow_veil",
-      "ac_shadow_step"
+      "ac_shadow_step",
+      "ac_shadow_slash",
+      "ac_ghoul_pounce"
     ]
   },
   "abyssalcraft.shadowghoul": {
@@ -1363,8 +1398,9 @@
       "shoggoth_acid"
     ],
     "actions": [
-      "ac_shadow_veil",
-      "ac_shadow_step"
+      "ac_shadow_step",
+      "ac_shadow_slash",
+      "ac_ghoul_pounce"
     ]
   },
   "abyssalcraft:antizombie": {
@@ -1383,8 +1419,9 @@
       "antimatter"
     ],
     "actions": [
-      "ac_anti_implosion",
-      "ac_anti_matter_blast"
+      "ac_antimatter_burst",
+      "ac_anti_matter_blast",
+      "ac_anti_implosion"
     ]
   },
   "abyssalcraft.antizombie": {
@@ -1403,8 +1440,9 @@
       "antimatter"
     ],
     "actions": [
-      "ac_anti_implosion",
-      "ac_anti_matter_blast"
+      "ac_antimatter_burst",
+      "ac_anti_matter_blast",
+      "ac_anti_implosion"
     ]
   },
   "abyssalcraft:antiskeleton": {
@@ -1424,8 +1462,9 @@
       "antimatter"
     ],
     "actions": [
-      "ac_anti_implosion",
-      "ac_anti_matter_blast"
+      "ac_antimatter_burst",
+      "ac_anti_matter_blast",
+      "ac_anti_implosion"
     ]
   },
   "abyssalcraft.antiskeleton": {
@@ -1445,8 +1484,9 @@
       "antimatter"
     ],
     "actions": [
-      "ac_anti_implosion",
-      "ac_anti_matter_blast"
+      "ac_antimatter_burst",
+      "ac_anti_matter_blast",
+      "ac_anti_implosion"
     ]
   },
   "abyssalcraft:antispider": {
@@ -1465,7 +1505,8 @@
       "antimatter"
     ],
     "actions": [
-      "ac_anti_implosion",
+      "ac_antimatter_burst",
+      "ac_ghoul_pounce",
       "ac_anti_matter_blast"
     ]
   },
@@ -1485,7 +1526,8 @@
       "antimatter"
     ],
     "actions": [
-      "ac_anti_implosion",
+      "ac_antimatter_burst",
+      "ac_ghoul_pounce",
       "ac_anti_matter_blast"
     ]
   },
@@ -1501,8 +1543,9 @@
       "antimatter"
     ],
     "actions": [
-      "ac_anti_implosion",
-      "ac_anti_matter_blast"
+      "ac_anti_creeper_fuse",
+      "ac_antimatter_burst",
+      "ac_anti_implosion"
     ]
   },
   "abyssalcraft.anticreeper": {
@@ -1517,8 +1560,9 @@
       "antimatter"
     ],
     "actions": [
-      "ac_anti_implosion",
-      "ac_anti_matter_blast"
+      "ac_anti_creeper_fuse",
+      "ac_antimatter_burst",
+      "ac_anti_implosion"
     ]
   },
   "abyssalcraft:antibat": {
@@ -1537,8 +1581,8 @@
       "fall"
     ],
     "actions": [
-      "ac_anti_implosion",
-      "ac_anti_matter_blast"
+      "ac_antimatter_burst",
+      "ac_anti_implosion"
     ]
   },
   "abyssalcraft.antibat": {
@@ -1557,8 +1601,8 @@
       "fall"
     ],
     "actions": [
-      "ac_anti_implosion",
-      "ac_anti_matter_blast"
+      "ac_antimatter_burst",
+      "ac_anti_implosion"
     ]
   },
   "abyssalcraft:antichicken": {
@@ -1576,7 +1620,8 @@
       "fall"
     ],
     "actions": [
-      "ac_anti_chicken_egg"
+      "ac_anti_chicken_egg",
+      "ac_antimatter_burst"
     ]
   },
   "abyssalcraft.antichicken": {
@@ -1594,7 +1639,8 @@
       "fall"
     ],
     "actions": [
-      "ac_anti_chicken_egg"
+      "ac_anti_chicken_egg",
+      "ac_antimatter_burst"
     ]
   },
   "abyssalcraft:anticow": {
@@ -1609,7 +1655,8 @@
       "antimatter"
     ],
     "actions": [
-      "ac_anti_cow_milk"
+      "ac_anti_cow_milk",
+      "ac_antimatter_burst"
     ]
   },
   "abyssalcraft.anticow": {
@@ -1624,7 +1671,8 @@
       "antimatter"
     ],
     "actions": [
-      "ac_anti_cow_milk"
+      "ac_anti_cow_milk",
+      "ac_antimatter_burst"
     ]
   },
   "abyssalcraft:antipig": {
@@ -1639,8 +1687,8 @@
       "antimatter"
     ],
     "actions": [
-      "ac_anti_implosion",
-      "ac_anti_matter_blast"
+      "ac_antimatter_burst",
+      "ac_anti_implosion"
     ]
   },
   "abyssalcraft.antipig": {
@@ -1655,8 +1703,8 @@
       "antimatter"
     ],
     "actions": [
-      "ac_anti_implosion",
-      "ac_anti_matter_blast"
+      "ac_antimatter_burst",
+      "ac_anti_implosion"
     ]
   },
   "abyssalcraft:evilchicken": {
@@ -2289,6 +2337,228 @@
       "ac_jzahar_shout_blast",
       "ac_jzahar_singularity",
       "ac_jzahar_earthquake"
+    ]
+  },
+  "abyssalcraft:antiplayer": {
+    "abilities": [],
+    "immunities": [
+      "abyssalcraft:antimatter",
+      "antimatter",
+      "potion.Antimatter",
+      "potion.antimatter"
+    ],
+    "damageImmunities": [
+      "antimatter"
+    ],
+    "actions": [
+      "ac_antimatter_burst",
+      "ac_anti_matter_blast",
+      "ac_anti_implosion"
+    ]
+  },
+  "abyssalcraft.antiplayer": {
+    "abilities": [],
+    "immunities": [
+      "abyssalcraft:antimatter",
+      "antimatter",
+      "potion.Antimatter",
+      "potion.antimatter"
+    ],
+    "damageImmunities": [
+      "antimatter"
+    ],
+    "actions": [
+      "ac_antimatter_burst",
+      "ac_anti_matter_blast",
+      "ac_anti_implosion"
+    ]
+  },
+  "abyssalcraft:antighoul": {
+    "abilities": [
+      "sun_allergy",
+      "rotten"
+    ],
+    "immunities": [
+      "abyssalcraft:antimatter",
+      "antimatter",
+      "potion.Antimatter",
+      "potion.antimatter"
+    ],
+    "damageImmunities": [
+      "antimatter"
+    ],
+    "actions": [
+      "ac_antimatter_burst",
+      "ac_ghoul_pounce",
+      "ac_anti_matter_blast"
+    ]
+  },
+  "abyssalcraft.antighoul": {
+    "abilities": [
+      "sun_allergy",
+      "rotten"
+    ],
+    "immunities": [
+      "abyssalcraft:antimatter",
+      "antimatter",
+      "potion.Antimatter",
+      "potion.antimatter"
+    ],
+    "damageImmunities": [
+      "antimatter"
+    ],
+    "actions": [
+      "ac_antimatter_burst",
+      "ac_ghoul_pounce",
+      "ac_anti_matter_blast"
+    ]
+  },
+  "abyssalcraft:antiabyssalzombie": {
+    "abilities": [
+      "water_breath",
+      "swim",
+      "sun_allergy",
+      "rotten"
+    ],
+    "immunities": [
+      "abyssalcraft:antimatter",
+      "antimatter",
+      "potion.Antimatter",
+      "potion.antimatter"
+    ],
+    "damageImmunities": [
+      "antimatter",
+      "drown"
+    ],
+    "actions": [
+      "ac_antimatter_burst",
+      "ac_ghoul_pounce",
+      "ac_anti_matter_blast"
+    ]
+  },
+  "abyssalcraft.antiabyssalzombie": {
+    "abilities": [
+      "water_breath",
+      "swim",
+      "sun_allergy",
+      "rotten"
+    ],
+    "immunities": [
+      "abyssalcraft:antimatter",
+      "antimatter",
+      "potion.Antimatter",
+      "potion.antimatter"
+    ],
+    "damageImmunities": [
+      "antimatter",
+      "drown"
+    ],
+    "actions": [
+      "ac_antimatter_burst",
+      "ac_ghoul_pounce",
+      "ac_anti_matter_blast"
+    ]
+  },
+  "abyssalcraft:gskeleton": {
+    "abilities": [
+      "sun_allergy",
+      "rotten"
+    ],
+    "immunities": [
+      "abyssalcraft:cplague",
+      "potion.Cplague"
+    ],
+    "damageImmunities": [
+      "coralium"
+    ],
+    "actions": [
+      "ac_spectral_fireball",
+      "ac_remnant_screech"
+    ]
+  },
+  "abyssalcraft.gskeleton": {
+    "abilities": [
+      "sun_allergy",
+      "rotten"
+    ],
+    "immunities": [
+      "abyssalcraft:cplague",
+      "potion.Cplague"
+    ],
+    "damageImmunities": [
+      "coralium"
+    ],
+    "actions": [
+      "ac_spectral_fireball",
+      "ac_remnant_screech"
+    ]
+  },
+  "abyssalcraft:shuboffspring": {
+    "abilities": [
+      "night_vision"
+    ],
+    "immunities": [
+      "abyssalcraft:antimatter",
+      "potion.Antimatter"
+    ],
+    "damageImmunities": [
+      "antimatter"
+    ],
+    "actions": [
+      "ac_remnant_screech",
+      "ac_ghoul_pounce"
+    ]
+  },
+  "abyssalcraft.shuboffspring": {
+    "abilities": [
+      "night_vision"
+    ],
+    "immunities": [
+      "abyssalcraft:antimatter",
+      "potion.Antimatter"
+    ],
+    "damageImmunities": [
+      "antimatter"
+    ],
+    "actions": [
+      "ac_remnant_screech",
+      "ac_ghoul_pounce"
+    ]
+  },
+  "abyssalcraft:jzaharminion": {
+    "abilities": [
+      "fire_proof"
+    ],
+    "immunities": [
+      "abyssalcraft:antimatter",
+      "potion.Antimatter"
+    ],
+    "damageImmunities": [
+      "antimatter",
+      "fire",
+      "lava"
+    ],
+    "actions": [
+      "ac_jzahar_wither_salvo",
+      "ac_remnant_screech"
+    ]
+  },
+  "abyssalcraft.jzaharminion": {
+    "abilities": [
+      "fire_proof"
+    ],
+    "immunities": [
+      "abyssalcraft:antimatter",
+      "potion.Antimatter"
+    ],
+    "damageImmunities": [
+      "antimatter",
+      "fire",
+      "lava"
+    ],
+    "actions": [
+      "ac_jzahar_wither_salvo",
+      "ac_remnant_screech"
     ]
   }
 }
