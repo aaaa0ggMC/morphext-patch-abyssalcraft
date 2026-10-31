@@ -22,5 +22,6 @@ public class ClientProxy extends CommonProxy {
     public void init(FMLInitializationEvent event) {
         super.init(event);
         SafeCleansingRitualHandler.install();
+        aaaa0ggmc.morphext.variant.MorphCreativeInjector.registerProvider(new aaaa0ggmc.morphext.abyssalcraft.variant.AbyssalCraftVariantProvider());
     }
 }
