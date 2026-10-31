@@ -4,7 +4,8 @@
       "ac_shoggoth_acid",
       "climb",
       "water_breath",
-      "swim"
+      "swim",
+      "faction_shoggoth"
     ],
     "immunities": [
       "abyssalcraft:antimatter",
@@ -38,7 +39,8 @@
       "ac_shoggoth_acid",
       "climb",
       "water_breath",
-      "swim"
+      "swim",
+      "faction_shoggoth"
     ],
     "immunities": [
       "abyssalcraft:antimatter",
@@ -72,7 +74,8 @@
       "ac_shoggoth_acid",
       "climb",
       "water_breath",
-      "swim"
+      "swim",
+      "faction_shoggoth"
     ],
     "actions": [
       "ac_acid_spit",
@@ -106,7 +109,8 @@
       "ac_shoggoth_acid",
       "climb",
       "water_breath",
-      "swim"
+      "swim",
+      "faction_shoggoth"
     ],
     "actions": [
       "ac_acid_spit",
@@ -140,7 +144,8 @@
       "ac_shoggoth_acid",
       "climb",
       "water_breath",
-      "swim"
+      "swim",
+      "faction_shoggoth_lord"
     ],
     "actions": [
       "ac_acid_spit",
@@ -174,7 +179,8 @@
       "ac_shoggoth_acid",
       "climb",
       "water_breath",
-      "swim"
+      "swim",
+      "faction_shoggoth_lord"
     ],
     "actions": [
       "ac_acid_spit",
@@ -209,7 +215,9 @@
       "swim",
       "night_vision",
       "sun_allergy",
-      "rotten"
+      "rotten",
+      "faction_undead",
+      "faction_abyssal"
     ],
     "immunities": [
       "abyssalcraft:cplague",
@@ -235,7 +243,9 @@
       "swim",
       "night_vision",
       "sun_allergy",
-      "rotten"
+      "rotten",
+      "faction_undead",
+      "faction_abyssal"
     ],
     "immunities": [
       "abyssalcraft:cplague",
@@ -261,7 +271,9 @@
       "water_breath",
       "swim",
       "sun_allergy",
-      "rotten"
+      "rotten",
+      "faction_undead",
+      "faction_abyssal"
     ],
     "immunities": [
       "abyssalcraft:cplague",
@@ -287,7 +299,9 @@
       "water_breath",
       "swim",
       "sun_allergy",
-      "rotten"
+      "rotten",
+      "faction_undead",
+      "faction_abyssal"
     ],
     "immunities": [
       "abyssalcraft:cplague",
@@ -310,7 +324,9 @@
   "abyssalcraft:coralsquid": {
     "abilities": [
       "water_breath",
-      "swim"
+      "swim",
+      "faction_abyssal",
+      "faction_aquatic"
     ],
     "immunities": [
       "abyssalcraft:cplague",
@@ -333,7 +349,9 @@
   "abyssalcraft.coralsquid": {
     "abilities": [
       "water_breath",
-      "swim"
+      "swim",
+      "faction_abyssal",
+      "faction_aquatic"
     ],
     "immunities": [
       "abyssalcraft:cplague",
@@ -356,7 +374,9 @@
   "abyssalcraft:coraliumsquid": {
     "abilities": [
       "water_breath",
-      "swim"
+      "swim",
+      "faction_abyssal",
+      "faction_aquatic"
     ],
     "immunities": [
       "abyssalcraft:cplague",
@@ -379,7 +399,9 @@
   "abyssalcraft.coraliumsquid": {
     "abilities": [
       "water_breath",
-      "swim"
+      "swim",
+      "faction_abyssal",
+      "faction_aquatic"
     ],
     "immunities": [
       "abyssalcraft:cplague",
@@ -402,7 +424,8 @@
   "abyssalcraft:dragonboss": {
     "abilities": [
       "fly",
-      "fire_proof"
+      "fire_proof",
+      "faction_dread_lord"
     ],
     "immunities": [
       "abyssalcraft:cplague",
@@ -435,7 +458,8 @@
   "abyssalcraft.dragonboss": {
     "abilities": [
       "fly",
-      "fire_proof"
+      "fire_proof",
+      "faction_dread_lord"
     ],
     "immunities": [
       "abyssalcraft:cplague",
@@ -468,7 +492,8 @@
   "abyssalcraft:dragonminion": {
     "abilities": [
       "fly",
-      "fire_proof"
+      "fire_proof",
+      "faction_dread"
     ],
     "immunities": [
       "abyssalcraft:cplague",
@@ -491,7 +516,8 @@
   "abyssalcraft.dragonminion": {
     "abilities": [
       "fly",
-      "fire_proof"
+      "fire_proof",
+      "faction_dread"
     ],
     "immunities": [
       "abyssalcraft:cplague",
@@ -517,7 +543,8 @@
       "climb",
       "night_vision",
       "sun_allergy",
-      "rotten"
+      "rotten",
+      "faction_dread"
     ],
     "immunities": [
       "abyssalcraft:dplague",
@@ -544,7 +571,8 @@
       "climb",
       "night_vision",
       "sun_allergy",
-      "rotten"
+      "rotten",
+      "faction_dread"
     ],
     "immunities": [
       "abyssalcraft:dplague",
@@ -569,7 +597,8 @@
     "abilities": [
       "ac_dread_plague",
       "night_vision",
-      "sun_allergy"
+      "sun_allergy",
+      "faction_dread"
     ],
     "immunities": [
       "abyssalcraft:dplague",
@@ -594,7 +623,8 @@
     "abilities": [
       "ac_dread_plague",
       "night_vision",
-      "sun_allergy"
+      "sun_allergy",
+      "faction_dread"
     ],
     "immunities": [
       "abyssalcraft:dplague",
@@ -619,7 +649,8 @@
     "abilities": [
       "ac_dread_plague",
       "night_vision",
-      "sun_allergy"
+      "sun_allergy",
+      "faction_dread"
     ],
     "immunities": [
       "abyssalcraft:dplague",
@@ -646,7 +677,8 @@
     "abilities": [
       "ac_dread_plague",
       "night_vision",
-      "sun_allergy"
+      "sun_allergy",
+      "faction_dread"
     ],
     "immunities": [
       "abyssalcraft:dplague",
@@ -673,7 +705,8 @@
     "abilities": [
       "ac_dread_plague",
       "night_vision",
-      "rotten"
+      "rotten",
+      "faction_dread_relative"
     ],
     "actions": [
       "ac_dread_katana",
@@ -701,7 +734,8 @@
     "abilities": [
       "ac_dread_plague",
       "night_vision",
-      "rotten"
+      "rotten",
+      "faction_dread_relative"
     ],
     "actions": [
       "ac_dread_katana",
@@ -730,7 +764,9 @@
       "fire_proof",
       "night_vision",
       "sun_allergy",
-      "rotten"
+      "rotten",
+      "faction_undead",
+      "faction_dread"
     ],
     "immunities": [
       "abyssalcraft:dplague",
@@ -758,7 +794,9 @@
       "fire_proof",
       "night_vision",
       "sun_allergy",
-      "rotten"
+      "rotten",
+      "faction_undead",
+      "faction_dread"
     ],
     "immunities": [
       "abyssalcraft:dplague",
@@ -784,7 +822,9 @@
   "abyssalcraft:lesserdreadbeast": {
     "abilities": [
       "night_vision",
-      "sun_allergy"
+      "sun_allergy",
+      "faction_dread",
+      "faction_beast"
     ],
     "immunities": [
       "abyssalcraft:dplague",
@@ -809,7 +849,9 @@
   "abyssalcraft.lesserdreadbeast": {
     "abilities": [
       "night_vision",
-      "sun_allergy"
+      "sun_allergy",
+      "faction_dread",
+      "faction_beast"
     ],
     "immunities": [
       "abyssalcraft:dplague",
@@ -836,7 +878,9 @@
       "ac_dreadgolem_toughness",
       "ac_dread_plague",
       "prevent_fall",
-      "step_up"
+      "step_up",
+      "faction_dread",
+      "faction_golem"
     ],
     "immunities": [
       "abyssalcraft:dplague",
@@ -866,7 +910,9 @@
       "ac_dreadgolem_toughness",
       "ac_dread_plague",
       "prevent_fall",
-      "step_up"
+      "step_up",
+      "faction_dread",
+      "faction_golem"
     ],
     "immunities": [
       "abyssalcraft:dplague",
@@ -894,7 +940,9 @@
   "abyssalcraft:abygolem": {
     "abilities": [
       "prevent_fall",
-      "step_up"
+      "step_up",
+      "faction_golem",
+      "faction_abyssal"
     ],
     "immunities": [
       "potion.cplague"
@@ -911,7 +959,9 @@
   "abyssalcraft.abygolem": {
     "abilities": [
       "prevent_fall",
-      "step_up"
+      "step_up",
+      "faction_golem",
+      "faction_abyssal"
     ],
     "immunities": [
       "potion.cplague"
@@ -928,7 +978,8 @@
   "abyssalcraft:chagaroth": {
     "abilities": [
       "fire_proof",
-      "prevent_fall"
+      "prevent_fall",
+      "faction_dread_lord"
     ],
     "immunities": [
       "abyssalcraft:cplague",
@@ -966,7 +1017,8 @@
   "abyssalcraft.chagaroth": {
     "abilities": [
       "fire_proof",
-      "prevent_fall"
+      "prevent_fall",
+      "faction_dread_lord"
     ],
     "immunities": [
       "abyssalcraft:cplague",
@@ -1003,7 +1055,8 @@
   },
   "abyssalcraft:chagarothfist": {
     "abilities": [
-      "prevent_fall"
+      "prevent_fall",
+      "faction_dread"
     ],
     "immunities": [
       "abyssalcraft:dplague",
@@ -1026,7 +1079,8 @@
   },
   "abyssalcraft.chagarothfist": {
     "abilities": [
-      "prevent_fall"
+      "prevent_fall",
+      "faction_dread"
     ],
     "immunities": [
       "abyssalcraft:dplague",
@@ -1049,7 +1103,8 @@
   },
   "abyssalcraft:chagarothspawn": {
     "abilities": [
-      "fire_proof"
+      "fire_proof",
+      "faction_dread"
     ],
     "immunities": [
       "abyssalcraft:dplague",
@@ -1072,7 +1127,8 @@
   },
   "abyssalcraft.chagarothspawn": {
     "abilities": [
-      "fire_proof"
+      "fire_proof",
+      "faction_dread"
     ],
     "immunities": [
       "abyssalcraft:dplague",
@@ -1097,7 +1153,8 @@
     "abilities": [
       "ac_photophobia",
       "night_vision",
-      "sun_allergy"
+      "sun_allergy",
+      "faction_shadow"
     ],
     "immunities": [
       "abyssalcraft:antimatter",
@@ -1130,7 +1187,8 @@
     "abilities": [
       "ac_photophobia",
       "night_vision",
-      "sun_allergy"
+      "sun_allergy",
+      "faction_shadow"
     ],
     "immunities": [
       "abyssalcraft:antimatter",
@@ -1163,7 +1221,8 @@
     "abilities": [
       "ac_photophobia",
       "night_vision",
-      "sun_allergy"
+      "sun_allergy",
+      "faction_shadow"
     ],
     "immunities": [
       "abyssalcraft:antimatter",
@@ -1196,7 +1255,8 @@
     "abilities": [
       "ac_photophobia",
       "night_vision",
-      "sun_allergy"
+      "sun_allergy",
+      "faction_shadow"
     ],
     "immunities": [
       "abyssalcraft:antimatter",
@@ -1229,7 +1289,8 @@
     "abilities": [
       "ac_photophobia",
       "night_vision",
-      "sun_allergy"
+      "sun_allergy",
+      "faction_shadow"
     ],
     "immunities": [
       "abyssalcraft:antimatter",
@@ -1264,7 +1325,8 @@
     "abilities": [
       "ac_photophobia",
       "night_vision",
-      "sun_allergy"
+      "sun_allergy",
+      "faction_shadow"
     ],
     "immunities": [
       "abyssalcraft:antimatter",
@@ -1300,7 +1362,8 @@
       "ac_photophobia",
       "fly",
       "night_vision",
-      "sun_allergy"
+      "sun_allergy",
+      "faction_shadow_lord"
     ],
     "immunities": [
       "abyssalcraft:antimatter",
@@ -1337,7 +1400,8 @@
       "ac_photophobia",
       "fly",
       "night_vision",
-      "sun_allergy"
+      "sun_allergy",
+      "faction_shadow_lord"
     ],
     "immunities": [
       "abyssalcraft:antimatter",
@@ -1373,7 +1437,8 @@
     "abilities": [
       "ac_photophobia",
       "night_vision",
-      "sun_allergy"
+      "sun_allergy",
+      "faction_shadow_lord"
     ],
     "immunities": [
       "abyssalcraft:antimatter",
@@ -1406,7 +1471,8 @@
     "abilities": [
       "ac_photophobia",
       "night_vision",
-      "sun_allergy"
+      "sun_allergy",
+      "faction_shadow_lord"
     ],
     "immunities": [
       "abyssalcraft:antimatter",
@@ -1441,7 +1507,9 @@
       "climb",
       "night_vision",
       "sun_allergy",
-      "rotten"
+      "rotten",
+      "faction_undead",
+      "faction_shadow"
     ],
     "immunities": [
       "abyssalcraft:antimatter",
@@ -1476,7 +1544,9 @@
       "climb",
       "night_vision",
       "sun_allergy",
-      "rotten"
+      "rotten",
+      "faction_undead",
+      "faction_shadow"
     ],
     "immunities": [
       "abyssalcraft:antimatter",
@@ -1508,7 +1578,9 @@
   "abyssalcraft:antizombie": {
     "abilities": [
       "ac_antimatter_annihilation",
-      "rotten"
+      "rotten",
+      "faction_antimatter",
+      "faction_undead"
     ],
     "immunities": [
       "abyssalcraft:antimatter",
@@ -1531,7 +1603,9 @@
   "abyssalcraft.antizombie": {
     "abilities": [
       "ac_antimatter_annihilation",
-      "rotten"
+      "rotten",
+      "faction_antimatter",
+      "faction_undead"
     ],
     "immunities": [
       "abyssalcraft:antimatter",
@@ -1555,7 +1629,9 @@
     "abilities": [
       "ac_antimatter_annihilation",
       "sun_allergy",
-      "rotten"
+      "rotten",
+      "faction_antimatter",
+      "faction_undead"
     ],
     "immunities": [
       "abyssalcraft:antimatter",
@@ -1579,7 +1655,9 @@
     "abilities": [
       "ac_antimatter_annihilation",
       "sun_allergy",
-      "rotten"
+      "rotten",
+      "faction_antimatter",
+      "faction_undead"
     ],
     "immunities": [
       "abyssalcraft:antimatter",
@@ -1602,7 +1680,9 @@
   "abyssalcraft:antispider": {
     "abilities": [
       "ac_antimatter_annihilation",
-      "climb"
+      "climb",
+      "faction_antimatter",
+      "faction_arthropod"
     ],
     "immunities": [
       "abyssalcraft:antimatter",
@@ -1624,7 +1704,9 @@
   "abyssalcraft.antispider": {
     "abilities": [
       "ac_antimatter_annihilation",
-      "climb"
+      "climb",
+      "faction_antimatter",
+      "faction_arthropod"
     ],
     "immunities": [
       "abyssalcraft:antimatter",
@@ -1645,7 +1727,9 @@
   },
   "abyssalcraft:anticreeper": {
     "abilities": [
-      "ac_antimatter_annihilation"
+      "ac_antimatter_annihilation",
+      "faction_antimatter",
+      "faction_creeper"
     ],
     "immunities": [
       "abyssalcraft:antimatter",
@@ -1664,7 +1748,9 @@
   },
   "abyssalcraft.anticreeper": {
     "abilities": [
-      "ac_antimatter_annihilation"
+      "ac_antimatter_annihilation",
+      "faction_antimatter",
+      "faction_creeper"
     ],
     "immunities": [
       "abyssalcraft:antimatter",
@@ -1685,7 +1771,9 @@
     "abilities": [
       "ac_antimatter_annihilation",
       "fly",
-      "prevent_fall"
+      "prevent_fall",
+      "faction_antimatter",
+      "faction_animal"
     ],
     "immunities": [
       "abyssalcraft:antimatter",
@@ -1706,7 +1794,9 @@
     "abilities": [
       "ac_antimatter_annihilation",
       "fly",
-      "prevent_fall"
+      "prevent_fall",
+      "faction_antimatter",
+      "faction_animal"
     ],
     "immunities": [
       "abyssalcraft:antimatter",
@@ -1726,7 +1816,9 @@
   "abyssalcraft:antichicken": {
     "abilities": [
       "ac_antimatter_annihilation",
-      "prevent_fall"
+      "prevent_fall",
+      "faction_antimatter",
+      "faction_animal"
     ],
     "immunities": [
       "abyssalcraft:antimatter",
@@ -1746,7 +1838,9 @@
   "abyssalcraft.antichicken": {
     "abilities": [
       "ac_antimatter_annihilation",
-      "prevent_fall"
+      "prevent_fall",
+      "faction_antimatter",
+      "faction_animal"
     ],
     "immunities": [
       "abyssalcraft:antimatter",
@@ -1765,7 +1859,9 @@
   },
   "abyssalcraft:anticow": {
     "abilities": [
-      "ac_antimatter_annihilation"
+      "ac_antimatter_annihilation",
+      "faction_antimatter",
+      "faction_animal"
     ],
     "immunities": [
       "abyssalcraft:antimatter",
@@ -1783,7 +1879,9 @@
   },
   "abyssalcraft.anticow": {
     "abilities": [
-      "ac_antimatter_annihilation"
+      "ac_antimatter_annihilation",
+      "faction_antimatter",
+      "faction_animal"
     ],
     "immunities": [
       "abyssalcraft:antimatter",
@@ -1801,7 +1899,9 @@
   },
   "abyssalcraft:antipig": {
     "abilities": [
-      "ac_antimatter_annihilation"
+      "ac_antimatter_annihilation",
+      "faction_antimatter",
+      "faction_animal"
     ],
     "immunities": [
       "abyssalcraft:antimatter",
@@ -1819,7 +1919,9 @@
   },
   "abyssalcraft.antipig": {
     "abilities": [
-      "ac_antimatter_annihilation"
+      "ac_antimatter_annihilation",
+      "faction_antimatter",
+      "faction_animal"
     ],
     "immunities": [
       "abyssalcraft:antimatter",
@@ -1838,7 +1940,9 @@
   "abyssalcraft:evilchicken": {
     "abilities": [
       "fire_proof",
-      "glide"
+      "glide",
+      "faction_demon",
+      "faction_animal"
     ],
     "immunities": [],
     "damageImmunities": [
@@ -1854,7 +1958,9 @@
   "abyssalcraft.evilchicken": {
     "abilities": [
       "fire_proof",
-      "glide"
+      "glide",
+      "faction_demon",
+      "faction_animal"
     ],
     "immunities": [],
     "damageImmunities": [
@@ -1869,7 +1975,9 @@
   },
   "abyssalcraft:evilcow": {
     "abilities": [
-      "fire_proof"
+      "fire_proof",
+      "faction_demon",
+      "faction_animal"
     ],
     "immunities": [],
     "damageImmunities": [
@@ -1883,7 +1991,9 @@
   },
   "abyssalcraft.evilcow": {
     "abilities": [
-      "fire_proof"
+      "fire_proof",
+      "faction_demon",
+      "faction_animal"
     ],
     "immunities": [],
     "damageImmunities": [
@@ -1897,7 +2007,9 @@
   },
   "abyssalcraft:evilpig": {
     "abilities": [
-      "fire_proof"
+      "fire_proof",
+      "faction_demon",
+      "faction_animal"
     ],
     "immunities": [],
     "damageImmunities": [
@@ -1912,7 +2024,9 @@
   },
   "abyssalcraft.evilpig": {
     "abilities": [
-      "fire_proof"
+      "fire_proof",
+      "faction_demon",
+      "faction_animal"
     ],
     "immunities": [],
     "damageImmunities": [
@@ -1927,7 +2041,9 @@
   },
   "abyssalcraft:evilsheep": {
     "abilities": [
-      "fire_proof"
+      "fire_proof",
+      "faction_demon",
+      "faction_animal"
     ],
     "immunities": [],
     "damageImmunities": [
@@ -1942,7 +2058,9 @@
   },
   "abyssalcraft.evilsheep": {
     "abilities": [
-      "fire_proof"
+      "fire_proof",
+      "faction_demon",
+      "faction_animal"
     ],
     "immunities": [],
     "damageImmunities": [
@@ -1958,7 +2076,9 @@
   "abyssalcraft:demonchicken": {
     "abilities": [
       "fire_proof",
-      "glide"
+      "glide",
+      "faction_demon",
+      "faction_animal"
     ],
     "immunities": [
       "abyssalcraft:dplague",
@@ -1982,7 +2102,9 @@
   "abyssalcraft.demonchicken": {
     "abilities": [
       "fire_proof",
-      "glide"
+      "glide",
+      "faction_demon",
+      "faction_animal"
     ],
     "immunities": [
       "abyssalcraft:dplague",
@@ -2005,7 +2127,9 @@
   },
   "abyssalcraft:demoncow": {
     "abilities": [
-      "fire_proof"
+      "fire_proof",
+      "faction_demon",
+      "faction_animal"
     ],
     "immunities": [
       "abyssalcraft:dplague",
@@ -2029,7 +2153,9 @@
   },
   "abyssalcraft.demoncow": {
     "abilities": [
-      "fire_proof"
+      "fire_proof",
+      "faction_demon",
+      "faction_animal"
     ],
     "immunities": [
       "abyssalcraft:dplague",
@@ -2053,7 +2179,9 @@
   },
   "abyssalcraft:demonpig": {
     "abilities": [
-      "fire_proof"
+      "fire_proof",
+      "faction_demon",
+      "faction_animal"
     ],
     "immunities": [
       "abyssalcraft:dplague",
@@ -2076,7 +2204,9 @@
   },
   "abyssalcraft.demonpig": {
     "abilities": [
-      "fire_proof"
+      "fire_proof",
+      "faction_demon",
+      "faction_animal"
     ],
     "immunities": [
       "abyssalcraft:dplague",
@@ -2099,7 +2229,9 @@
   },
   "abyssalcraft:demonsheep": {
     "abilities": [
-      "fire_proof"
+      "fire_proof",
+      "faction_demon",
+      "faction_animal"
     ],
     "immunities": [
       "abyssalcraft:dplague",
@@ -2123,7 +2255,9 @@
   },
   "abyssalcraft.demonsheep": {
     "abilities": [
-      "fire_proof"
+      "fire_proof",
+      "faction_demon",
+      "faction_animal"
     ],
     "immunities": [
       "abyssalcraft:dplague",
@@ -2149,7 +2283,8 @@
     "abilities": [
       "night_vision",
       "sun_allergy",
-      "rotten"
+      "rotten",
+      "faction_undead"
     ],
     "immunities": [
       "potion.poison"
@@ -2164,7 +2299,8 @@
     "abilities": [
       "night_vision",
       "sun_allergy",
-      "rotten"
+      "rotten",
+      "faction_undead"
     ],
     "immunities": [
       "potion.poison"
@@ -2177,7 +2313,8 @@
   },
   "abyssalcraft:remnant": {
     "abilities": [
-      "hungerless"
+      "hungerless",
+      "faction_omothol"
     ],
     "immunities": [
       "abyssalcraft:antimatter",
@@ -2215,7 +2352,8 @@
   },
   "abyssalcraft.remnant": {
     "abilities": [
-      "hungerless"
+      "hungerless",
+      "faction_omothol"
     ],
     "immunities": [
       "abyssalcraft:antimatter",
@@ -2255,7 +2393,9 @@
     "abilities": [
       "night_vision",
       "hungerless",
-      "rotten"
+      "rotten",
+      "faction_undead",
+      "faction_omothol"
     ],
     "immunities": [
       "abyssalcraft:antimatter",
@@ -2293,7 +2433,9 @@
     "abilities": [
       "night_vision",
       "hungerless",
-      "rotten"
+      "rotten",
+      "faction_undead",
+      "faction_omothol"
     ],
     "immunities": [
       "abyssalcraft:antimatter",
@@ -2330,7 +2472,8 @@
   "abyssalcraft:omotholwarden": {
     "abilities": [
       "night_vision",
-      "prevent_fall"
+      "prevent_fall",
+      "faction_omothol_relative"
     ],
     "immunities": [
       "abyssalcraft:antimatter",
@@ -2365,7 +2508,8 @@
   "abyssalcraft.omotholwarden": {
     "abilities": [
       "night_vision",
-      "prevent_fall"
+      "prevent_fall",
+      "faction_omothol_relative"
     ],
     "immunities": [
       "abyssalcraft:antimatter",
@@ -2403,7 +2547,9 @@
       "fire_proof",
       "hungerless",
       "night_vision",
-      "prevent_fall"
+      "prevent_fall",
+      "faction_omothol_lord",
+      "faction_shadow_lord"
     ],
     "immunities": [
       "abyssalcraft:antimatter",
@@ -2450,7 +2596,9 @@
       "fire_proof",
       "hungerless",
       "night_vision",
-      "prevent_fall"
+      "prevent_fall",
+      "faction_omothol_lord",
+      "faction_shadow_lord"
     ],
     "immunities": [
       "abyssalcraft:antimatter",
@@ -2493,7 +2641,8 @@
   },
   "abyssalcraft:antiplayer": {
     "abilities": [
-      "ac_antimatter_annihilation"
+      "ac_antimatter_annihilation",
+      "faction_antimatter"
     ],
     "immunities": [
       "abyssalcraft:antimatter",
@@ -2513,7 +2662,8 @@
   },
   "abyssalcraft.antiplayer": {
     "abilities": [
-      "ac_antimatter_annihilation"
+      "ac_antimatter_annihilation",
+      "faction_antimatter"
     ],
     "immunities": [
       "abyssalcraft:antimatter",
@@ -2534,7 +2684,9 @@
   "abyssalcraft:antighoul": {
     "abilities": [
       "sun_allergy",
-      "rotten"
+      "rotten",
+      "faction_antimatter",
+      "faction_undead"
     ],
     "immunities": [
       "abyssalcraft:antimatter",
@@ -2554,7 +2706,9 @@
   "abyssalcraft.antighoul": {
     "abilities": [
       "sun_allergy",
-      "rotten"
+      "rotten",
+      "faction_antimatter",
+      "faction_undead"
     ],
     "immunities": [
       "abyssalcraft:antimatter",
@@ -2576,7 +2730,10 @@
       "water_breath",
       "swim",
       "sun_allergy",
-      "rotten"
+      "rotten",
+      "faction_antimatter",
+      "faction_undead",
+      "faction_abyssal"
     ],
     "immunities": [
       "abyssalcraft:antimatter",
@@ -2599,7 +2756,10 @@
       "water_breath",
       "swim",
       "sun_allergy",
-      "rotten"
+      "rotten",
+      "faction_antimatter",
+      "faction_undead",
+      "faction_abyssal"
     ],
     "immunities": [
       "abyssalcraft:antimatter",
@@ -2620,7 +2780,9 @@
   "abyssalcraft:gskeleton": {
     "abilities": [
       "sun_allergy",
-      "rotten"
+      "rotten",
+      "faction_undead",
+      "faction_wither"
     ],
     "immunities": [
       "abyssalcraft:cplague",
@@ -2637,7 +2799,9 @@
   "abyssalcraft.gskeleton": {
     "abilities": [
       "sun_allergy",
-      "rotten"
+      "rotten",
+      "faction_undead",
+      "faction_wither"
     ],
     "immunities": [
       "abyssalcraft:cplague",
@@ -2653,7 +2817,8 @@
   },
   "abyssalcraft:shuboffspring": {
     "abilities": [
-      "night_vision"
+      "night_vision",
+      "faction_omothol"
     ],
     "immunities": [
       "abyssalcraft:antimatter",
@@ -2669,7 +2834,8 @@
   },
   "abyssalcraft.shuboffspring": {
     "abilities": [
-      "night_vision"
+      "night_vision",
+      "faction_omothol"
     ],
     "immunities": [
       "abyssalcraft:antimatter",
@@ -2685,7 +2851,8 @@
   },
   "abyssalcraft:jzaharminion": {
     "abilities": [
-      "fire_proof"
+      "fire_proof",
+      "faction_omothol"
     ],
     "immunities": [
       "abyssalcraft:antimatter",
@@ -2703,7 +2870,8 @@
   },
   "abyssalcraft.jzaharminion": {
     "abilities": [
-      "fire_proof"
+      "fire_proof",
+      "faction_omothol"
     ],
     "immunities": [
       "abyssalcraft:antimatter",
