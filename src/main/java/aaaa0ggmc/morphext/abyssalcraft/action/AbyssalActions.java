@@ -153,7 +153,7 @@ public final class AbyssalActions {
         }
     }
 
-    /** 恐惧守卫：重型战刃撼地猛击 (ID: ac_dread_slam / ac_dread_katana) - 震碎地面激起冲击波与恐惧粒子，击飞身前 5 格敌人 */
+    /** 恐惧守卫：重型战刃撼地猛击 (ID: ac_dread_slam) - 震碎地面激起冲击波与恐惧粒子，击飞身前 5 格敌人 */
     public static class DreadSlamAction extends AbyssalCraftAction {
         public DreadSlamAction() { super(120); } // 冷却 6s
 
@@ -207,7 +207,75 @@ public final class AbyssalActions {
         }
     }
     public static class DreadSlam extends DreadSlamAction {}
-    public static class DreadKatanaAction extends DreadSlamAction {}
+
+    /**
+     * 恐惧守卫：战刃单体重斩 (ID: ac_dread_katana, 冷却 4s)。
+     * 与 DreadSlamAction（AoE 撼地）分化（NEW#2）：聚焦单体的沉重纵斩，
+     * 对准星/近身单一目标造成高额恐惧直伤、重击退与恐惧瘟疫，附带护甲撕裂表现。
+     */
+    public static class DreadKatanaAction extends AbyssalCraftAction {
+        public DreadKatanaAction() { super(80); } // 冷却 4s
+
+        @Override
+        protected boolean executeServer(EntityLivingBase entity, AbstractMorph morph) {
+            World world = entity.world;
+            Vec3d look = entity.getLook(1.0F);
+
+            // 单体选取：准星直击优先，其次近身 3.5 格最近敌人
+            EntityLivingBase target = findTargetInCrosshairs(entity, 4.5D);
+            if (target == null) {
+                AxisAlignedBB near = entity.getEntityBoundingBox().grow(3.5D).offset(look.x * 1.2D, 0.0D, look.z * 1.2D);
+                List<EntityLivingBase> list = world.getEntitiesWithinAABB(EntityLivingBase.class, near,
+                        e -> e != entity && e.isEntityAlive() && !e.isOnSameTeam(entity));
+                double best = 3.5D * 3.5D;
+                for (EntityLivingBase candidate : list) {
+                    double distSq = candidate.getDistanceSq(entity);
+                    if (distSq < best) {
+                        best = distSq;
+                        target = candidate;
+                    }
+                }
+            }
+            if (target == null) {
+                return false;
+            }
+
+            entity.swingArm(EnumHand.MAIN_HAND);
+
+            DamageSource source;
+            if (AbyssalCraftAPI.dread != null) {
+                source = AbyssalCraftAPI.dread; // AC 恐惧伤害源自带破甲
+            } else {
+                source = (entity instanceof EntityPlayer ? DamageSource.causePlayerDamage((EntityPlayer) entity)
+                        : DamageSource.causeMobDamage(entity)).setDamageBypassesArmor();
+            }
+            // 重斩：单体重创 + 破甲撕裂 + 恐惧瘟疫
+            target.attackEntityFrom(source, 16.0F);
+            if (AbyssalCraftAPI.dread_plague != null) {
+                target.addPotionEffect(new PotionEffect(AbyssalCraftAPI.dread_plague, 140, 0));
+            }
+            target.addPotionEffect(new PotionEffect(MobEffects.SLOWNESS, 60, 1));
+            target.knockBack(entity, 1.2F, -look.x, -look.z);
+            target.velocityChanged = true;
+
+            // 纵斩刀光与骨屑
+            if (world instanceof WorldServer) {
+                WorldServer ws = (WorldServer) world;
+                double px = target.posX;
+                double py = target.posY + target.height * 0.6D;
+                double pz = target.posZ;
+                ws.spawnParticle(EnumParticleTypes.CRIT_MAGIC, px, py, pz, 30, 0.35D, 0.6D, 0.35D, 0.12D);
+                ws.spawnParticle(EnumParticleTypes.SWEEP_ATTACK, px, py, pz, 2, 0.1D, 0.1D, 0.1D, 0.0D);
+                ws.spawnParticle(EnumParticleTypes.LAVA, px, target.posY + 0.1D, pz, 8, 0.3D, 0.1D, 0.3D, 0.0D);
+            }
+
+            world.playSound(null, entity.posX, entity.posY, entity.posZ,
+                    SoundEvents.ENTITY_PLAYER_ATTACK_CRIT, SoundCategory.PLAYERS, 1.5F, 0.6F);
+            world.playSound(null, entity.posX, entity.posY, entity.posZ,
+                    SoundEvents.BLOCK_ANVIL_LAND, SoundCategory.PLAYERS, 1.0F, 1.2F);
+            return true;
+        }
+    }
 
     /** 奥穆索遗民 / 阿索拉：喷吐幽魂虚空火球 (ID: ac_spectral_fireball) - 向准星安全发射一颗幽灵火球，命中引发幽冥爆炸 (冷却 5s) */
     public static class SpectralFireball extends AbyssalCraftAction {
@@ -379,7 +447,11 @@ public final class AbyssalActions {
     }
     public static class CoraliumClaws extends CoraliumClawsAction {}
 
-    /** 食尸鬼家族：飞扑撕咬 (ID: ac_ghoul_pounce) - 扑向目标，造成撕咬撕裂伤害并附带珊瑚瘟疫 */
+    /**
+     * 食尸鬼家族：飞扑撕咬 (ID: ac_ghoul_pounce) - 扑向目标，造成撕咬撕裂伤害。
+     * 疫种按宿主分流（NEW#9）：珊瑚感染型（深渊食尸鬼/深渊僵尸）施加珊瑚瘟疫，
+     * 恐惧军团型（dread/chagaroth 系）施加恐惧瘟疫，其余宿主只留撕咬（不再串味播疫）。
+     */
     public static class GhoulPounceAction extends AbyssalCraftAction {
         public GhoulPounceAction() { super(70); }
 
@@ -387,6 +459,7 @@ public final class AbyssalActions {
         protected boolean executeServer(EntityLivingBase entity, AbstractMorph morph) {
             World world = entity.world;
             Vec3d look = entity.getLook(1.0F);
+            String morphName = morph != null && morph.name != null ? morph.name.toLowerCase(java.util.Locale.ROOT) : "";
 
             // 扑跃突进
             entity.motionX += look.x * 1.35D;
@@ -400,13 +473,18 @@ public final class AbyssalActions {
                     e -> e != entity && e.isEntityAlive() && !e.isOnSameTeam(entity));
 
             DamageSource source = entity instanceof EntityPlayer ? DamageSource.causePlayerDamage((EntityPlayer) entity) : DamageSource.causeMobDamage(entity);
+            boolean dreadPlague = morphName.contains("dread") || morphName.contains("chagaroth");
+            boolean coraliumPlague = !dreadPlague
+                    && (morphName.contains("depths") || (morphName.contains("abyssalzombie") && !morphName.contains("anti")));
             boolean hit = false;
             for (EntityLivingBase target : list) {
                 target.attackEntityFrom(source, 10.0F);
                 target.addPotionEffect(new PotionEffect(MobEffects.HUNGER, 140, 1));
                 target.addPotionEffect(new PotionEffect(MobEffects.SLOWNESS, 80, 1));
-                if (AbyssalCraftAPI.coralium_plague != null) {
+                if (coraliumPlague && AbyssalCraftAPI.coralium_plague != null) {
                     target.addPotionEffect(new PotionEffect(AbyssalCraftAPI.coralium_plague, 140, 0));
+                } else if (dreadPlague && AbyssalCraftAPI.dread_plague != null) {
+                    target.addPotionEffect(new PotionEffect(AbyssalCraftAPI.dread_plague, 140, 0));
                 }
                 hit = true;
             }
@@ -1058,13 +1136,20 @@ public final class AbyssalActions {
         }
     }
 
-    /** 扎哈尔：终焉湮灭（奥穆索尔黑洞奇点冲击，不破坏方块） */
+    /**
+     * 扎哈尔：终焉湮灭 (ID: ac_jzahar_oblivion)。
+     * 真·终焉 AOE（NEW#4 绑定修复的目标类）：与 ac_jzahar_singularity（召唤内爆/黑洞实体）分化，
+     * 以自身为中心引爆终焉湮灭力场——12 格内敌对生物承受湮灭直伤 + 暗影追伤 + 凋零 + 浮空，
+     * 并被引力拽向中心；不破坏任何方块。
+     */
     public static class JzaharOblivion extends AbyssalCraftAction {
         public JzaharOblivion() { super(220); }
 
         @Override
         protected boolean executeServer(EntityLivingBase entity, AbstractMorph morph) {
             World world = entity.world;
+            entity.swingArm(EnumHand.MAIN_HAND);
+
             List<EntityLivingBase> list = findNearbyEntities(entity, 12.0D);
             DamageSource source = entity instanceof EntityPlayer ? DamageSource.causePlayerDamage((EntityPlayer) entity) : DamageSource.causeMobDamage(entity);
             for (EntityLivingBase e : list) {
@@ -1074,9 +1159,39 @@ public final class AbyssalActions {
                 }
                 e.addPotionEffect(new PotionEffect(MobEffects.WITHER, 160, 1));
                 e.addPotionEffect(new PotionEffect(MobEffects.LEVITATION, 50, 0));
+                // 终焉引力：向湮灭中心拖拽
+                Vec3d pull = entity.getPositionVector().subtract(e.getPositionVector()).normalize();
+                e.motionX += pull.x * 0.8D;
+                e.motionY += 0.3D;
+                e.motionZ += pull.z * 0.8D;
+                e.velocityChanged = true;
             }
+
+            // 终焉湮灭力场视觉：中心奇点坍缩 + 扩散湮灭环
+            if (world instanceof WorldServer) {
+                WorldServer ws = (WorldServer) world;
+                ws.spawnParticle(EnumParticleTypes.EXPLOSION_HUGE,
+                        entity.posX, entity.posY + 1.2D, entity.posZ,
+                        3, 1.5D, 0.8D, 1.5D, 0.0D);
+                ws.spawnParticle(EnumParticleTypes.DRAGON_BREATH,
+                        entity.posX, entity.posY + 0.8D, entity.posZ,
+                        120, 5.5D, 1.6D, 5.5D, 0.04D);
+                ws.spawnParticle(EnumParticleTypes.PORTAL,
+                        entity.posX, entity.posY + 1.0D, entity.posZ,
+                        200, 5.0D, 2.0D, 5.0D, 0.2D);
+                for (int angle = 0; angle < 360; angle += 12) {
+                    double rad = Math.toRadians(angle);
+                    double px = entity.posX + Math.cos(rad) * 6.0D;
+                    double pz = entity.posZ + Math.sin(rad) * 6.0D;
+                    ws.spawnParticle(EnumParticleTypes.SMOKE_LARGE, px, entity.posY + 0.3D, pz,
+                            2, 0.1D, 0.3D, 0.1D, 0.02D);
+                }
+            }
+
             world.playSound(null, entity.posX, entity.posY, entity.posZ,
                     SoundEvents.ENTITY_ENDERDRAGON_GROWL, SoundCategory.PLAYERS, 2.0F, 0.4F);
+            world.playSound(null, entity.posX, entity.posY, entity.posZ,
+                    ACSounds.jzahar_black_hole, SoundCategory.HOSTILE, 3.0F, 1.0F);
             return true;
         }
     }

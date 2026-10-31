@@ -2,6 +2,8 @@ package aaaa0ggmc.morphext.abyssalcraft;
 
 import aaaa0ggmc.morphext.abyssalcraft.action.AbyssalActions;
 import aaaa0ggmc.morphext.abyssalcraft.action.AbyssalBossActions;
+import aaaa0ggmc.morphext.abyssalcraft.action.AbyssalExtraActions;
+import aaaa0ggmc.morphext.abyssalcraft.action.AbyssalExtraActions2;
 import aaaa0ggmc.morphext.abyssalcraft.action.AntiChickenEggAction;
 import aaaa0ggmc.morphext.abyssalcraft.action.AntiCowMilkAction;
 import aaaa0ggmc.morphext.abyssalcraft.action.DemonCowMilkAction;
@@ -40,6 +42,8 @@ public class MorphExtAbyssalCraft {
     @Mod.EventHandler
     public void preInit(FMLPreInitializationEvent event) {
         proxy.preInit(event);
+        // 确保核心动作调度器已挂载（ac_dread_barf 等引导技依赖；幂等，重复调用无副作用）
+        aaaa0ggmc.morphext.integration.metamorph.vanilla.ServerActionScheduler.init();
         registerActions();
         LOGGER.info("[morphext-abyssalcraft] Pre-initialized actions and abilities");
     }
@@ -170,7 +174,8 @@ public class MorphExtAbyssalCraft {
         MorphManager.INSTANCE.actions.put("ac_jzahar_shout_blast", new AbyssalBossActions.JzaharShoutBlast());
         MorphManager.INSTANCE.actions.put("ac_jzahar_singularity", new AbyssalBossActions.JzaharSingularity());
         MorphManager.INSTANCE.actions.put("ac_jzahar_earthquake", new AbyssalBossActions.JzaharEarthquake());
-        MorphManager.INSTANCE.actions.put("ac_jzahar_oblivion", new AbyssalBossActions.JzaharSingularity());
+        // NEW#4 绑定修复：ac_jzahar_oblivion 改绑真·终焉 AOE（原与 singularity 同类属重复注册）
+        MorphManager.INSTANCE.actions.put("ac_jzahar_oblivion", new AbyssalActions.JzaharOblivion());
 
         MorphManager.INSTANCE.actions.put("ac_sacthoth_shadow_flame", new AbyssalBossActions.SacthothShadowFlame());
         MorphManager.INSTANCE.actions.put("ac_sacthoth_shadow_step", new AbyssalBossActions.SacthothShadowStep());
@@ -183,6 +188,18 @@ public class MorphExtAbyssalCraft {
         MorphManager.INSTANCE.actions.put("ac_dragon_boss_breath", new AbyssalBossActions.DragonBossBreath());
         MorphManager.INSTANCE.actions.put("ac_dragon_dive", new AbyssalBossActions.DragonBossDiveRush());
         MorphManager.INSTANCE.actions.put("ac_asorah_dive", new AbyssalBossActions.DragonBossDiveRush());
+
+        // morph-abilities-audit NEW 需求扩展动作
+        MorphManager.INSTANCE.actions.put("ac_dread_barf", new AbyssalExtraActions.DreadBarfAction());
+        MorphManager.INSTANCE.actions.put("ac_omothol_touch", new AbyssalExtraActions.OmotholTouchAction());
+        MorphManager.INSTANCE.actions.put("ac_sacthoth_dark_aura", new AbyssalExtraActions.SacthothDarkAuraAction());
+        MorphManager.INSTANCE.actions.put("ac_anti_door_break", new AbyssalExtraActions.AntiDoorBreakAction());
+        MorphManager.INSTANCE.actions.put("ac_evil_demonize", new AbyssalExtraActions.EvilDemonizeAction());
+        MorphManager.INSTANCE.actions.put("ac_evil_animal_shear", new AbyssalExtraActions.EvilAnimalShearAction());
+        MorphManager.INSTANCE.actions.put("ac_shoggoth_feast", new AbyssalExtraActions.ShoggothFeastAction());
+        MorphManager.INSTANCE.actions.put("ac_dread_split", new AbyssalExtraActions.DreadSplitAction());
+        MorphManager.INSTANCE.actions.put("ac_dread_merge", new AbyssalExtraActions.DreadMergeAction());
+        MorphManager.INSTANCE.actions.put("ac_remnant_rally", new AbyssalExtraActions.RemnantRallyAction());
 
         // 被动能力注册 (兼容 MorphExtension 与 Metamorph)
         aaaa0ggmc.morphext.abyssalcraft.passive.ShadowPhotophobiaPassive photophobia = new aaaa0ggmc.morphext.abyssalcraft.passive.ShadowPhotophobiaPassive();
@@ -208,5 +225,40 @@ public class MorphExtAbyssalCraft {
         aaaa0ggmc.morphext.abyssalcraft.passive.CoraliumCarapacePassive coraliumCarapace = new aaaa0ggmc.morphext.abyssalcraft.passive.CoraliumCarapacePassive();
         aaaa0ggmc.morphext.ability.AbilityRegistry.register(coraliumCarapace);
         MorphManager.INSTANCE.abilities.put("ac_coralium_carapace", coraliumCarapace);
+
+        // morph-abilities-audit E2 生物能力增补动作（AbyssalExtraActions2）
+        MorphManager.INSTANCE.actions.put("ac_ghoul_rake", new AbyssalExtraActions2.GhoulRakeAction());
+        MorphManager.INSTANCE.actions.put("ac_ghoul_immolate", new AbyssalExtraActions2.GhoulImmolateAction());
+        MorphManager.INSTANCE.actions.put("ac_dread_contagion", new AbyssalExtraActions2.DreadContagionAction());
+        MorphManager.INSTANCE.actions.put("ac_dragon_gale", new AbyssalExtraActions2.DragonGaleAction());
+        MorphManager.INSTANCE.actions.put("ac_chagaroth_legion", new AbyssalExtraActions2.ChagarothLegionAction());
+        MorphManager.INSTANCE.actions.put("ac_shadow_crush", new AbyssalExtraActions2.ShadowCrushAction());
+        MorphManager.INSTANCE.actions.put("ac_anti_reinforce", new AbyssalExtraActions2.AntiReinforceAction());
+        MorphManager.INSTANCE.actions.put("ac_anti_flame_arrow", new AbyssalExtraActions2.AntiFlameArrowAction());
+        MorphManager.INSTANCE.actions.put("ac_anti_overcharge", new AbyssalExtraActions2.AntiOverchargeAction());
+        MorphManager.INSTANCE.actions.put("ac_anti_matter_rage", new AbyssalExtraActions2.AntimatterRageAction());
+        MorphManager.INSTANCE.actions.put("ac_demon_frenzy", new AbyssalExtraActions2.DemonFrenzyAction());
+        MorphManager.INSTANCE.actions.put("ac_remnant_blink", new AbyssalExtraActions2.RemnantBlinkAction());
+        MorphManager.INSTANCE.actions.put("ac_jzahar_tremor_field", new AbyssalExtraActions2.JzaharTremorFieldAction());
+        MorphManager.INSTANCE.actions.put("ac_shub_bleat", new AbyssalExtraActions2.ShubBleatAction());
+        MorphManager.INSTANCE.actions.put("ac_gatekeeper_crush", new AbyssalExtraActions2.GatekeeperCrushAction());
+        MorphManager.INSTANCE.actions.put("ac_shoggoth_crush", new AbyssalExtraActions2.ShoggothCrushAction());
+
+        // morph-abilities-audit E2 生物能力增补被动
+        aaaa0ggmc.morphext.abyssalcraft.passive.ShoggothOozeTrailPassive oozeTrail = new aaaa0ggmc.morphext.abyssalcraft.passive.ShoggothOozeTrailPassive();
+        aaaa0ggmc.morphext.ability.AbilityRegistry.register(oozeTrail);
+        MorphManager.INSTANCE.abilities.put("ac_shoggoth_ooze_trail", oozeTrail);
+
+        aaaa0ggmc.morphext.abyssalcraft.passive.CoraliumContactPassive coraliumContact = new aaaa0ggmc.morphext.abyssalcraft.passive.CoraliumContactPassive();
+        aaaa0ggmc.morphext.ability.AbilityRegistry.register(coraliumContact);
+        MorphManager.INSTANCE.abilities.put("ac_coralium_contact", coraliumContact);
+
+        aaaa0ggmc.morphext.abyssalcraft.passive.ShadowPhasePassive shadowPhase = new aaaa0ggmc.morphext.abyssalcraft.passive.ShadowPhasePassive();
+        aaaa0ggmc.morphext.ability.AbilityRegistry.register(shadowPhase);
+        MorphManager.INSTANCE.abilities.put("ac_shadow_phase", shadowPhase);
+
+        aaaa0ggmc.morphext.abyssalcraft.passive.AntiPredatorPassive antiPredator = new aaaa0ggmc.morphext.abyssalcraft.passive.AntiPredatorPassive();
+        aaaa0ggmc.morphext.ability.AbilityRegistry.register(antiPredator);
+        MorphManager.INSTANCE.abilities.put("ac_anti_predator", antiPredator);
     }
 }

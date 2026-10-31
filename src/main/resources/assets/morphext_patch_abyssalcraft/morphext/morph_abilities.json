@@ -5,17 +5,21 @@
       "climb",
       "water_breath",
       "swim",
-      "faction_shoggoth"
+      "faction_shoggoth",
+      "ac_shoggoth_ooze_trail"
+    ],
+    "actions": [
+      "ac_acid_spit",
+      "ac_shoggoth_ooze",
+      "ac_acid_melt",
+      "ac_shoggoth_feast",
+      "ac_shoggoth_crush"
     ],
     "immunities": [
       "abyssalcraft:antimatter",
       "abyssalcraft:cplague",
       "abyssalcraft:dplague",
-      "minecraft:poison",
-      "potion.Antimatter",
-      "potion.Cplague",
-      "potion.Dplague",
-      "potion.dplague"
+      "minecraft:poison"
     ],
     "damageImmunities": [
       "acid",
@@ -28,11 +32,11 @@
       "magic",
       "shoggoth_acid"
     ],
-    "actions": [
-      "ac_acid_spit",
-      "ac_shoggoth_ooze",
-      "ac_acid_melt"
-    ],
+    "attackDamage": 6.0,
+    "knockbackResistance": 0.2,
+    "attributes": {
+      "maxHealth": 5
+    },
     "hands": true,
     "rightHand": "rArm01a",
     "leftHand": "lArm01a"
@@ -43,17 +47,21 @@
       "climb",
       "water_breath",
       "swim",
-      "faction_shoggoth"
+      "faction_shoggoth",
+      "ac_shoggoth_ooze_trail"
+    ],
+    "actions": [
+      "ac_acid_spit",
+      "ac_shoggoth_ooze",
+      "ac_acid_melt",
+      "ac_shoggoth_feast",
+      "ac_shoggoth_crush"
     ],
     "immunities": [
       "abyssalcraft:antimatter",
       "abyssalcraft:cplague",
       "abyssalcraft:dplague",
-      "minecraft:poison",
-      "potion.Antimatter",
-      "potion.Cplague",
-      "potion.Dplague",
-      "potion.dplague"
+      "minecraft:poison"
     ],
     "damageImmunities": [
       "acid",
@@ -66,11 +74,11 @@
       "magic",
       "shoggoth_acid"
     ],
-    "actions": [
-      "ac_acid_spit",
-      "ac_shoggoth_ooze",
-      "ac_acid_melt"
-    ],
+    "attackDamage": 6.0,
+    "knockbackResistance": 0.2,
+    "attributes": {
+      "maxHealth": 5
+    },
     "hands": true,
     "rightHand": "rArm01a",
     "leftHand": "lArm01a"
@@ -81,22 +89,21 @@
       "climb",
       "water_breath",
       "swim",
-      "faction_shoggoth"
+      "faction_shoggoth",
+      "ac_shoggoth_ooze_trail"
     ],
     "actions": [
       "ac_acid_spit",
       "ac_shoggoth_ooze",
-      "ac_acid_melt"
+      "ac_acid_melt",
+      "ac_shoggoth_feast",
+      "ac_shoggoth_crush"
     ],
     "immunities": [
       "abyssalcraft:antimatter",
       "abyssalcraft:cplague",
       "abyssalcraft:dplague",
-      "minecraft:poison",
-      "potion.Antimatter",
-      "potion.Cplague",
-      "potion.Dplague",
-      "potion.dplague"
+      "minecraft:poison"
     ],
     "damageImmunities": [
       "acid",
@@ -109,6 +116,11 @@
       "magic",
       "shoggoth_acid"
     ],
+    "attackDamage": 8.0,
+    "knockbackResistance": 0.2,
+    "attributes": {
+      "maxHealth": 30
+    },
     "hands": true,
     "rightHand": "rArm01a",
     "leftHand": "lArm01a"
@@ -119,22 +131,21 @@
       "climb",
       "water_breath",
       "swim",
-      "faction_shoggoth"
+      "faction_shoggoth",
+      "ac_shoggoth_ooze_trail"
     ],
     "actions": [
       "ac_acid_spit",
       "ac_shoggoth_ooze",
-      "ac_acid_melt"
+      "ac_acid_melt",
+      "ac_shoggoth_feast",
+      "ac_shoggoth_crush"
     ],
     "immunities": [
       "abyssalcraft:antimatter",
       "abyssalcraft:cplague",
       "abyssalcraft:dplague",
-      "minecraft:poison",
-      "potion.Antimatter",
-      "potion.Cplague",
-      "potion.Dplague",
-      "potion.dplague"
+      "minecraft:poison"
     ],
     "damageImmunities": [
       "acid",
@@ -147,6 +158,11 @@
       "magic",
       "shoggoth_acid"
     ],
+    "attackDamage": 8.0,
+    "knockbackResistance": 0.2,
+    "attributes": {
+      "maxHealth": 30
+    },
     "hands": true,
     "rightHand": "rArm01a",
     "leftHand": "lArm01a"
@@ -157,22 +173,21 @@
       "climb",
       "water_breath",
       "swim",
-      "faction_shoggoth_lord"
+      "faction_shoggoth_lord",
+      "ac_shoggoth_ooze_trail"
     ],
     "actions": [
       "ac_acid_spit",
       "ac_shoggoth_ooze",
-      "ac_acid_melt"
+      "ac_acid_melt",
+      "ac_shoggoth_feast",
+      "ac_shoggoth_crush"
     ],
     "immunities": [
       "abyssalcraft:antimatter",
       "abyssalcraft:cplague",
       "abyssalcraft:dplague",
-      "minecraft:poison",
-      "potion.Antimatter",
-      "potion.Cplague",
-      "potion.Dplague",
-      "potion.dplague"
+      "minecraft:poison"
     ],
     "damageImmunities": [
       "acid",
@@ -185,6 +200,11 @@
       "magic",
       "shoggoth_acid"
     ],
+    "attackDamage": 10.0,
+    "knockbackResistance": 0.2,
+    "attributes": {
+      "maxHealth": 80
+    },
     "hands": true,
     "rightHand": "rArm01a",
     "leftHand": "lArm01a"
@@ -195,22 +215,21 @@
       "climb",
       "water_breath",
       "swim",
-      "faction_shoggoth_lord"
+      "faction_shoggoth_lord",
+      "ac_shoggoth_ooze_trail"
     ],
     "actions": [
       "ac_acid_spit",
       "ac_shoggoth_ooze",
-      "ac_acid_melt"
+      "ac_acid_melt",
+      "ac_shoggoth_feast",
+      "ac_shoggoth_crush"
     ],
     "immunities": [
       "abyssalcraft:antimatter",
       "abyssalcraft:cplague",
       "abyssalcraft:dplague",
-      "minecraft:poison",
-      "potion.Antimatter",
-      "potion.Cplague",
-      "potion.Dplague",
-      "potion.dplague"
+      "minecraft:poison"
     ],
     "damageImmunities": [
       "acid",
@@ -223,6 +242,11 @@
       "magic",
       "shoggoth_acid"
     ],
+    "attackDamage": 10.0,
+    "knockbackResistance": 0.2,
+    "attributes": {
+      "maxHealth": 80
+    },
     "hands": true,
     "rightHand": "rArm01a",
     "leftHand": "lArm01a"
@@ -232,28 +256,31 @@
       "water_breath",
       "swim",
       "night_vision",
-      "sun_allergy",
       "rotten",
       "faction_undead",
       "faction_abyssal"
     ],
+    "actions": [
+      "ac_ghoul_underwater_ambush",
+      "ac_coralium_claws",
+      "ac_ghoul_pounce",
+      "ac_ghoul_rake",
+      "ac_ghoul_immolate"
+    ],
     "immunities": [
       "abyssalcraft:cplague",
-      "cplague",
       "minecraft:poison",
-      "potion.Cplague",
-      "potion.cplague",
-      "potion.poison"
+      "minecraft:regeneration"
     ],
     "damageImmunities": [
       "coralium",
       "drown"
     ],
-    "actions": [
-      "ac_ghoul_underwater_ambush",
-      "ac_coralium_claws",
-      "ac_ghoul_pounce"
-    ],
+    "attackDamage": 6.0,
+    "speed": 0.099,
+    "attributes": {
+      "maxHealth": 15
+    },
     "hands": true,
     "rightHand": "rarm1",
     "leftHand": "larm1"
@@ -263,28 +290,31 @@
       "water_breath",
       "swim",
       "night_vision",
-      "sun_allergy",
       "rotten",
       "faction_undead",
       "faction_abyssal"
     ],
+    "actions": [
+      "ac_ghoul_underwater_ambush",
+      "ac_coralium_claws",
+      "ac_ghoul_pounce",
+      "ac_ghoul_rake",
+      "ac_ghoul_immolate"
+    ],
     "immunities": [
       "abyssalcraft:cplague",
-      "cplague",
       "minecraft:poison",
-      "potion.Cplague",
-      "potion.cplague",
-      "potion.poison"
+      "minecraft:regeneration"
     ],
     "damageImmunities": [
       "coralium",
       "drown"
     ],
-    "actions": [
-      "ac_ghoul_underwater_ambush",
-      "ac_coralium_claws",
-      "ac_ghoul_pounce"
-    ],
+    "attackDamage": 6.0,
+    "speed": 0.099,
+    "attributes": {
+      "maxHealth": 15
+    },
     "hands": true,
     "rightHand": "rarm1",
     "leftHand": "larm1"
@@ -299,23 +329,27 @@
       "faction_undead",
       "faction_abyssal"
     ],
+    "actions": [
+      "ac_coralium_claws",
+      "ac_ghoul_pounce",
+      "ac_ghoul_underwater_ambush",
+      "ac_ghoul_rake",
+      "ac_ghoul_immolate"
+    ],
     "immunities": [
       "abyssalcraft:cplague",
-      "cplague",
       "minecraft:poison",
-      "potion.Cplague",
-      "potion.cplague",
-      "potion.poison"
+      "minecraft:regeneration"
     ],
     "damageImmunities": [
       "coralium",
       "drown"
     ],
-    "actions": [
-      "ac_coralium_claws",
-      "ac_ghoul_pounce",
-      "ac_ghoul_underwater_ambush"
-    ],
+    "attackDamage": 6.0,
+    "speed": 0.099,
+    "attributes": {
+      "maxHealth": 5
+    },
     "hands": true,
     "rightHand": "bipedRightArm",
     "leftHand": "bipedLeftArm"
@@ -330,289 +364,249 @@
       "faction_undead",
       "faction_abyssal"
     ],
-    "immunities": [
-      "abyssalcraft:cplague",
-      "cplague",
-      "minecraft:poison",
-      "potion.Cplague",
-      "potion.cplague",
-      "potion.poison"
-    ],
-    "damageImmunities": [
-      "coralium",
-      "drown"
-    ],
     "actions": [
       "ac_coralium_claws",
       "ac_ghoul_pounce",
-      "ac_ghoul_underwater_ambush"
+      "ac_ghoul_underwater_ambush",
+      "ac_ghoul_rake",
+      "ac_ghoul_immolate"
     ],
+    "immunities": [
+      "abyssalcraft:cplague",
+      "minecraft:poison",
+      "minecraft:regeneration"
+    ],
+    "damageImmunities": [
+      "coralium",
+      "drown"
+    ],
+    "attackDamage": 6.0,
+    "speed": 0.099,
+    "attributes": {
+      "maxHealth": 5
+    },
     "hands": true,
     "rightHand": "bipedRightArm",
     "leftHand": "bipedLeftArm"
-  },
-  "abyssalcraft:coralsquid": {
-    "abilities": [
-      "water_breath",
-      "swim",
-      "faction_abyssal",
-      "faction_aquatic"
-    ],
-    "immunities": [
-      "abyssalcraft:cplague",
-      "cplague",
-      "minecraft:blindness",
-      "potion.Cplague",
-      "potion.blindness",
-      "potion.cplague"
-    ],
-    "damageImmunities": [
-      "coralium",
-      "drown"
-    ],
-    "actions": [
-      "ac_coralium_ink_storm",
-      "ac_coralium_ink",
-      "ac_coralium_squirt"
-    ],
-    "hands": true,
-    "rightHand": "squidTentacles[0]",
-    "leftHand": "squidTentacles[1]"
-  },
-  "abyssalcraft.coralsquid": {
-    "abilities": [
-      "water_breath",
-      "swim",
-      "faction_abyssal",
-      "faction_aquatic"
-    ],
-    "immunities": [
-      "abyssalcraft:cplague",
-      "cplague",
-      "minecraft:blindness",
-      "potion.Cplague",
-      "potion.blindness",
-      "potion.cplague"
-    ],
-    "damageImmunities": [
-      "coralium",
-      "drown"
-    ],
-    "actions": [
-      "ac_coralium_ink_storm",
-      "ac_coralium_ink",
-      "ac_coralium_squirt"
-    ],
-    "hands": true,
-    "rightHand": "squidTentacles[0]",
-    "leftHand": "squidTentacles[1]"
   },
   "abyssalcraft:coraliumsquid": {
     "abilities": [
       "water_breath",
       "swim",
       "faction_abyssal",
-      "faction_aquatic"
-    ],
-    "immunities": [
-      "abyssalcraft:cplague",
-      "cplague",
-      "minecraft:blindness",
-      "potion.Cplague",
-      "potion.blindness",
-      "potion.cplague"
-    ],
-    "damageImmunities": [
-      "coralium",
-      "drown"
+      "faction_aquatic",
+      "ac_coralium_contact"
     ],
     "actions": [
       "ac_coralium_ink_storm",
       "ac_coralium_ink",
-      "ac_coralium_squirt"
+      "ac_coralium_squirt",
+      "ink_jet"
     ],
-    "hands": true,
-    "rightHand": "squidTentacles[0]",
-    "leftHand": "squidTentacles[1]"
+    "immunities": [
+      "abyssalcraft:cplague"
+    ],
+    "damageImmunities": [
+      "coralium",
+      "drown"
+    ]
   },
   "abyssalcraft.coraliumsquid": {
     "abilities": [
       "water_breath",
       "swim",
       "faction_abyssal",
-      "faction_aquatic"
-    ],
-    "immunities": [
-      "abyssalcraft:cplague",
-      "cplague",
-      "minecraft:blindness",
-      "potion.Cplague",
-      "potion.blindness",
-      "potion.cplague"
-    ],
-    "damageImmunities": [
-      "coralium",
-      "drown"
+      "faction_aquatic",
+      "ac_coralium_contact"
     ],
     "actions": [
       "ac_coralium_ink_storm",
       "ac_coralium_ink",
-      "ac_coralium_squirt"
+      "ac_coralium_squirt",
+      "ink_jet"
     ],
-    "hands": true,
-    "rightHand": "squidTentacles[0]",
-    "leftHand": "squidTentacles[1]"
+    "immunities": [
+      "abyssalcraft:cplague"
+    ],
+    "damageImmunities": [
+      "coralium",
+      "drown"
+    ]
   },
   "abyssalcraft:dragonboss": {
     "abilities": [
       "fly",
       "fire_proof",
-      "faction_dread_lord"
+      "faction_abyssal_lord",
+      "faction_undead",
+      "ac_coralium_contact"
+    ],
+    "actions": [
+      "ac_dragon_breath",
+      "ac_dragon_dive",
+      "ac_spectral_fireball",
+      "ac_remnant_screech",
+      "ac_dragon_gale"
     ],
     "immunities": [
+      "abyssalcraft:antimatter",
       "abyssalcraft:cplague",
       "abyssalcraft:dplague",
-      "cplague",
-      "dplague",
-      "potion.Cplague",
-      "potion.Dplague",
-      "potion.cplague",
-      "potion.dplague"
+      "minecraft:poison",
+      "minecraft:regeneration"
     ],
     "damageImmunities": [
       "coralium",
-      "dread",
       "fall",
       "flyIntoWall",
+      "hotFloor",
       "inFire",
       "lava",
       "onFire"
     ],
-    "actions": [
-      "ac_dragon_dive",
-      "ac_asorah_dive",
-      "ac_dragon_breath",
-      "ac_dragon_boss_breath",
-      "ac_spectral_fireball",
-      "ac_remnant_screech"
-    ],
+    "attackDamage": 10.0,
+    "knockbackResistance": 1.0,
+    "attributes": {
+      "maxHealth": 80
+    },
     "hands": true,
-    "rotate180": true,
     "rightHand": "frontLeg",
-    "leftHand": "frontLeg"
+    "leftHand": "frontLeg",
+    "rotate180": true
   },
   "abyssalcraft.dragonboss": {
     "abilities": [
       "fly",
       "fire_proof",
-      "faction_dread_lord"
+      "faction_abyssal_lord",
+      "faction_undead",
+      "ac_coralium_contact"
+    ],
+    "actions": [
+      "ac_dragon_breath",
+      "ac_dragon_dive",
+      "ac_spectral_fireball",
+      "ac_remnant_screech",
+      "ac_dragon_gale"
     ],
     "immunities": [
+      "abyssalcraft:antimatter",
       "abyssalcraft:cplague",
       "abyssalcraft:dplague",
-      "cplague",
-      "dplague",
-      "potion.Cplague",
-      "potion.Dplague",
-      "potion.cplague",
-      "potion.dplague"
+      "minecraft:poison",
+      "minecraft:regeneration"
     ],
     "damageImmunities": [
       "coralium",
-      "dread",
       "fall",
       "flyIntoWall",
+      "hotFloor",
       "inFire",
       "lava",
       "onFire"
     ],
-    "actions": [
-      "ac_dragon_dive",
-      "ac_asorah_dive",
-      "ac_dragon_breath",
-      "ac_dragon_boss_breath",
-      "ac_spectral_fireball",
-      "ac_remnant_screech"
-    ],
+    "attackDamage": 10.0,
+    "knockbackResistance": 1.0,
+    "attributes": {
+      "maxHealth": 80
+    },
     "hands": true,
-    "rotate180": true,
     "rightHand": "frontLeg",
-    "leftHand": "frontLeg"
+    "leftHand": "frontLeg",
+    "rotate180": true
   },
   "abyssalcraft:dragonminion": {
     "abilities": [
       "fly",
       "fire_proof",
-      "faction_dread"
+      "faction_abyssal",
+      "faction_undead",
+      "ac_coralium_contact",
+      "faction_abyssal_relative"
+    ],
+    "actions": [
+      "ac_dragon_breath",
+      "ac_dragon_dive",
+      "ac_spectral_fireball",
+      "ac_dragon_gale"
     ],
     "immunities": [
       "abyssalcraft:cplague",
-      "cplague",
-      "potion.Cplague",
-      "potion.cplague"
+      "minecraft:poison",
+      "minecraft:regeneration"
     ],
     "damageImmunities": [
       "coralium",
       "fall",
+      "flyIntoWall",
+      "hotFloor",
       "inFire",
       "lava",
       "onFire"
     ],
-    "actions": [
-      "ac_dragon_dive",
-      "ac_dragon_breath",
-      "ac_spectral_fireball",
-      "ac_remnant_screech"
-    ],
+    "attackDamage": 1.0,
+    "attributes": {
+      "maxHealth": 10
+    },
     "hands": true,
-    "rotate180": true,
     "rightHand": "frontLeg",
-    "leftHand": "frontLeg"
+    "leftHand": "frontLeg",
+    "rotate180": true
   },
   "abyssalcraft.dragonminion": {
     "abilities": [
       "fly",
       "fire_proof",
-      "faction_dread"
+      "faction_abyssal",
+      "faction_undead",
+      "ac_coralium_contact",
+      "faction_abyssal_relative"
+    ],
+    "actions": [
+      "ac_dragon_breath",
+      "ac_dragon_dive",
+      "ac_spectral_fireball",
+      "ac_dragon_gale"
     ],
     "immunities": [
       "abyssalcraft:cplague",
-      "cplague",
-      "potion.Cplague",
-      "potion.cplague"
+      "minecraft:poison",
+      "minecraft:regeneration"
     ],
     "damageImmunities": [
       "coralium",
       "fall",
+      "flyIntoWall",
+      "hotFloor",
       "inFire",
       "lava",
       "onFire"
     ],
-    "actions": [
-      "ac_dragon_dive",
-      "ac_dragon_breath",
-      "ac_spectral_fireball",
-      "ac_remnant_screech"
-    ],
+    "attackDamage": 1.0,
+    "attributes": {
+      "maxHealth": 10
+    },
     "hands": true,
-    "rotate180": true,
     "rightHand": "frontLeg",
-    "leftHand": "frontLeg"
+    "leftHand": "frontLeg",
+    "rotate180": true
   },
   "abyssalcraft:dreadling": {
     "abilities": [
       "ac_dread_plague",
-      "climb",
       "night_vision",
-      "sun_allergy",
       "rotten",
       "faction_dread"
     ],
+    "actions": [
+      "ac_dread_slug",
+      "ac_dread_charge",
+      "ac_ghoul_pounce",
+      "ac_dread_contagion"
+    ],
     "immunities": [
       "abyssalcraft:dplague",
-      "dplague",
-      "potion.Dplague",
-      "potion.dplague"
+      "regeneration"
     ],
     "damageImmunities": [
       "dread",
@@ -621,11 +615,11 @@
       "lava",
       "onFire"
     ],
-    "actions": [
-      "ac_dread_slug",
-      "ac_dread_charge",
-      "ac_ghoul_pounce"
-    ],
+    "attackDamage": 6.0,
+    "speed": 0.101,
+    "attributes": {
+      "maxHealth": 10
+    },
     "hands": true,
     "rightHand": "rightarm",
     "leftHand": "leftarm"
@@ -633,17 +627,19 @@
   "abyssalcraft.dreadling": {
     "abilities": [
       "ac_dread_plague",
-      "climb",
       "night_vision",
-      "sun_allergy",
       "rotten",
       "faction_dread"
     ],
+    "actions": [
+      "ac_dread_slug",
+      "ac_dread_charge",
+      "ac_ghoul_pounce",
+      "ac_dread_contagion"
+    ],
     "immunities": [
       "abyssalcraft:dplague",
-      "dplague",
-      "potion.Dplague",
-      "potion.dplague"
+      "regeneration"
     ],
     "damageImmunities": [
       "dread",
@@ -652,11 +648,11 @@
       "lava",
       "onFire"
     ],
-    "actions": [
-      "ac_dread_slug",
-      "ac_dread_charge",
-      "ac_ghoul_pounce"
-    ],
+    "attackDamage": 6.0,
+    "speed": 0.101,
+    "attributes": {
+      "maxHealth": 10
+    },
     "hands": true,
     "rightHand": "rightarm",
     "leftHand": "leftarm"
@@ -664,15 +660,19 @@
   "abyssalcraft:dreadspawn": {
     "abilities": [
       "ac_dread_plague",
+      "climb",
       "night_vision",
-      "sun_allergy",
       "faction_dread"
     ],
+    "actions": [
+      "ac_dread_slug",
+      "ac_dread_charge",
+      "ac_ghoul_pounce",
+      "ac_dread_merge",
+      "ac_dread_contagion"
+    ],
     "immunities": [
-      "abyssalcraft:dplague",
-      "dplague",
-      "potion.Dplague",
-      "potion.dplague"
+      "abyssalcraft:dplague"
     ],
     "damageImmunities": [
       "dread",
@@ -681,11 +681,8 @@
       "lava",
       "onFire"
     ],
-    "actions": [
-      "ac_dread_slug",
-      "ac_dread_charge",
-      "ac_ghoul_pounce"
-    ],
+    "attackDamage": 6.0,
+    "speed": 0.108,
     "hands": true,
     "rightHand": "arm",
     "leftHand": "thing"
@@ -693,15 +690,19 @@
   "abyssalcraft.dreadspawn": {
     "abilities": [
       "ac_dread_plague",
+      "climb",
       "night_vision",
-      "sun_allergy",
       "faction_dread"
     ],
+    "actions": [
+      "ac_dread_slug",
+      "ac_dread_charge",
+      "ac_ghoul_pounce",
+      "ac_dread_merge",
+      "ac_dread_contagion"
+    ],
     "immunities": [
-      "abyssalcraft:dplague",
-      "dplague",
-      "potion.Dplague",
-      "potion.dplague"
+      "abyssalcraft:dplague"
     ],
     "damageImmunities": [
       "dread",
@@ -710,11 +711,8 @@
       "lava",
       "onFire"
     ],
-    "actions": [
-      "ac_dread_slug",
-      "ac_dread_charge",
-      "ac_ghoul_pounce"
-    ],
+    "attackDamage": 6.0,
+    "speed": 0.108,
     "hands": true,
     "rightHand": "arm",
     "leftHand": "thing"
@@ -722,15 +720,21 @@
   "abyssalcraft:greaterdreadspawn": {
     "abilities": [
       "ac_dread_plague",
+      "climb",
       "night_vision",
-      "sun_allergy",
-      "faction_dread"
+      "faction_dread",
+      "faction_dread_relative"
+    ],
+    "actions": [
+      "ac_dread_slug",
+      "ac_dread_barrage",
+      "ac_dread_slam",
+      "ac_dread_roar",
+      "ac_dread_split",
+      "ac_dread_contagion"
     ],
     "immunities": [
-      "abyssalcraft:dplague",
-      "dplague",
-      "potion.Dplague",
-      "potion.dplague"
+      "abyssalcraft:dplague"
     ],
     "damageImmunities": [
       "dread",
@@ -739,13 +743,12 @@
       "lava",
       "onFire"
     ],
-    "actions": [
-      "ac_dread_slam",
-      "ac_ghoul_pounce",
-      "ac_dread_slug",
-      "ac_dread_charge",
-      "ac_dread_roar"
-    ],
+    "attackDamage": 12.0,
+    "speed": 0.12,
+    "knockbackResistance": 0.2,
+    "attributes": {
+      "maxHealth": 30
+    },
     "hands": true,
     "rightHand": "arm",
     "leftHand": "thing"
@@ -753,15 +756,21 @@
   "abyssalcraft.greaterdreadspawn": {
     "abilities": [
       "ac_dread_plague",
+      "climb",
       "night_vision",
-      "sun_allergy",
-      "faction_dread"
+      "faction_dread",
+      "faction_dread_relative"
+    ],
+    "actions": [
+      "ac_dread_slug",
+      "ac_dread_barrage",
+      "ac_dread_slam",
+      "ac_dread_roar",
+      "ac_dread_split",
+      "ac_dread_contagion"
     ],
     "immunities": [
-      "abyssalcraft:dplague",
-      "dplague",
-      "potion.Dplague",
-      "potion.dplague"
+      "abyssalcraft:dplague"
     ],
     "damageImmunities": [
       "dread",
@@ -770,13 +779,12 @@
       "lava",
       "onFire"
     ],
-    "actions": [
-      "ac_dread_slam",
-      "ac_ghoul_pounce",
-      "ac_dread_slug",
-      "ac_dread_charge",
-      "ac_dread_roar"
-    ],
+    "attackDamage": 12.0,
+    "speed": 0.12,
+    "knockbackResistance": 0.2,
+    "attributes": {
+      "maxHealth": 30
+    },
     "hands": true,
     "rightHand": "arm",
     "leftHand": "thing"
@@ -791,16 +799,14 @@
     "actions": [
       "ac_dread_katana",
       "ac_dread_slam",
-      "ac_dread_barrage",
-      "ac_dread_slug",
       "ac_dread_charge",
-      "ac_dread_roar"
+      "ac_dread_roar",
+      "ac_dread_barf",
+      "ac_dread_contagion"
     ],
     "immunities": [
       "abyssalcraft:dplague",
-      "dplague",
-      "potion.Dplague",
-      "potion.dplague"
+      "regeneration"
     ],
     "damageImmunities": [
       "dread",
@@ -809,6 +815,13 @@
       "lava",
       "onFire"
     ],
+    "attackDamage": 10.0,
+    "speed": 0.099,
+    "armor": 20.0,
+    "armorToughness": 4.0,
+    "attributes": {
+      "maxHealth": 40
+    },
     "hands": true,
     "rightHand": "rightarm",
     "leftHand": "leftarm"
@@ -823,16 +836,14 @@
     "actions": [
       "ac_dread_katana",
       "ac_dread_slam",
-      "ac_dread_barrage",
-      "ac_dread_slug",
       "ac_dread_charge",
-      "ac_dread_roar"
+      "ac_dread_roar",
+      "ac_dread_barf",
+      "ac_dread_contagion"
     ],
     "immunities": [
       "abyssalcraft:dplague",
-      "dplague",
-      "potion.Dplague",
-      "potion.dplague"
+      "regeneration"
     ],
     "damageImmunities": [
       "dread",
@@ -841,12 +852,20 @@
       "lava",
       "onFire"
     ],
+    "attackDamage": 10.0,
+    "speed": 0.099,
+    "armor": 20.0,
+    "armorToughness": 4.0,
+    "attributes": {
+      "maxHealth": 40
+    },
     "hands": true,
     "rightHand": "rightarm",
     "leftHand": "leftarm"
   },
   "abyssalcraft:dreadedghoul": {
     "abilities": [
+      "ac_dread_plague",
       "fire_proof",
       "night_vision",
       "sun_allergy",
@@ -854,13 +873,17 @@
       "faction_undead",
       "faction_dread"
     ],
+    "actions": [
+      "ac_ghoul_pounce",
+      "ac_dread_slam",
+      "ac_dread_charge",
+      "ac_ghoul_rake",
+      "ac_dread_contagion"
+    ],
     "immunities": [
       "abyssalcraft:dplague",
-      "dplague",
-      "minecraft:poison",
-      "potion.Dplague",
-      "potion.dplague",
-      "potion.poison"
+      "poison",
+      "regeneration"
     ],
     "damageImmunities": [
       "dread",
@@ -869,17 +892,18 @@
       "lava",
       "onFire"
     ],
-    "actions": [
-      "ac_ghoul_pounce",
-      "ac_dread_slam",
-      "ac_dread_charge"
-    ],
+    "attackDamage": 6.0,
+    "speed": 0.099,
+    "attributes": {
+      "maxHealth": 15
+    },
     "hands": true,
     "rightHand": "rarm1",
     "leftHand": "larm1"
   },
   "abyssalcraft.dreadedghoul": {
     "abilities": [
+      "ac_dread_plague",
       "fire_proof",
       "night_vision",
       "sun_allergy",
@@ -887,13 +911,17 @@
       "faction_undead",
       "faction_dread"
     ],
+    "actions": [
+      "ac_ghoul_pounce",
+      "ac_dread_slam",
+      "ac_dread_charge",
+      "ac_ghoul_rake",
+      "ac_dread_contagion"
+    ],
     "immunities": [
       "abyssalcraft:dplague",
-      "dplague",
-      "minecraft:poison",
-      "potion.Dplague",
-      "potion.dplague",
-      "potion.poison"
+      "poison",
+      "regeneration"
     ],
     "damageImmunities": [
       "dread",
@@ -902,27 +930,34 @@
       "lava",
       "onFire"
     ],
-    "actions": [
-      "ac_ghoul_pounce",
-      "ac_dread_slam",
-      "ac_dread_charge"
-    ],
+    "attackDamage": 6.0,
+    "speed": 0.099,
+    "attributes": {
+      "maxHealth": 15
+    },
     "hands": true,
     "rightHand": "rarm1",
     "leftHand": "larm1"
   },
   "abyssalcraft:lesserdreadbeast": {
     "abilities": [
+      "ac_dread_plague",
+      "climb",
       "night_vision",
-      "sun_allergy",
       "faction_dread",
-      "faction_beast"
+      "faction_arthropod",
+      "faction_dread_relative"
+    ],
+    "actions": [
+      "ac_dread_slug",
+      "ac_dread_charge",
+      "ac_dread_slam",
+      "ac_dread_roar",
+      "ac_dread_split",
+      "ac_dread_contagion"
     ],
     "immunities": [
-      "abyssalcraft:dplague",
-      "dplague",
-      "potion.Dplague",
-      "potion.dplague"
+      "abyssalcraft:dplague"
     ],
     "damageImmunities": [
       "dread",
@@ -931,28 +966,35 @@
       "lava",
       "onFire"
     ],
-    "actions": [
-      "ac_dread_roar",
-      "ac_dread_slam",
-      "ac_dread_slug",
-      "ac_dread_charge"
-    ],
+    "attackDamage": 15.0,
+    "speed": 0.114,
+    "knockbackResistance": 0.4,
+    "attributes": {
+      "maxHealth": 80
+    },
     "hands": true,
     "rightHand": "rightleg1",
     "leftHand": "leftleg1"
   },
   "abyssalcraft.lesserdreadbeast": {
     "abilities": [
+      "ac_dread_plague",
+      "climb",
       "night_vision",
-      "sun_allergy",
       "faction_dread",
-      "faction_beast"
+      "faction_arthropod",
+      "faction_dread_relative"
+    ],
+    "actions": [
+      "ac_dread_slug",
+      "ac_dread_charge",
+      "ac_dread_slam",
+      "ac_dread_roar",
+      "ac_dread_split",
+      "ac_dread_contagion"
     ],
     "immunities": [
-      "abyssalcraft:dplague",
-      "dplague",
-      "potion.Dplague",
-      "potion.dplague"
+      "abyssalcraft:dplague"
     ],
     "damageImmunities": [
       "dread",
@@ -961,12 +1003,12 @@
       "lava",
       "onFire"
     ],
-    "actions": [
-      "ac_dread_roar",
-      "ac_dread_slam",
-      "ac_dread_slug",
-      "ac_dread_charge"
-    ],
+    "attackDamage": 15.0,
+    "speed": 0.114,
+    "knockbackResistance": 0.4,
+    "attributes": {
+      "maxHealth": 80
+    },
     "hands": true,
     "rightHand": "rightleg1",
     "leftHand": "leftleg1"
@@ -980,11 +1022,15 @@
       "faction_dread",
       "faction_golem"
     ],
+    "actions": [
+      "ac_dread_slam",
+      "ac_dread_charge",
+      "ac_dread_roar",
+      "heavy_toss",
+      "iron_fortitude"
+    ],
     "immunities": [
-      "abyssalcraft:dplague",
-      "dplague",
-      "potion.Dplague",
-      "potion.dplague"
+      "abyssalcraft:dplague"
     ],
     "damageImmunities": [
       "cactus",
@@ -997,11 +1043,8 @@
       "lava",
       "onFire"
     ],
-    "actions": [
-      "ac_dread_slam",
-      "ac_dread_charge",
-      "ac_dread_roar"
-    ],
+    "attackDamage": 4.0,
+    "speed": 0.101,
     "hands": true,
     "rightHand": "ironGolemRightArm",
     "leftHand": "ironGolemLeftArm"
@@ -1015,11 +1058,15 @@
       "faction_dread",
       "faction_golem"
     ],
+    "actions": [
+      "ac_dread_slam",
+      "ac_dread_charge",
+      "ac_dread_roar",
+      "heavy_toss",
+      "iron_fortitude"
+    ],
     "immunities": [
-      "abyssalcraft:dplague",
-      "dplague",
-      "potion.Dplague",
-      "potion.dplague"
+      "abyssalcraft:dplague"
     ],
     "damageImmunities": [
       "cactus",
@@ -1032,11 +1079,8 @@
       "lava",
       "onFire"
     ],
-    "actions": [
-      "ac_dread_slam",
-      "ac_dread_charge",
-      "ac_dread_roar"
-    ],
+    "attackDamage": 4.0,
+    "speed": 0.101,
     "hands": true,
     "rightHand": "ironGolemRightArm",
     "leftHand": "ironGolemLeftArm"
@@ -1048,17 +1092,21 @@
       "faction_golem",
       "faction_abyssal"
     ],
+    "actions": [
+      "ac_goliath_smash",
+      "ac_coralium_claws",
+      "heavy_toss",
+      "iron_fortitude",
+      "golem_taunt_roar"
+    ],
     "immunities": [
-      "potion.cplague"
+      "abyssalcraft:cplague"
     ],
     "damageImmunities": [
       "fall"
     ],
-    "actions": [
-      "ac_goliath_smash",
-      "ac_dread_slam",
-      "ac_coralium_claws"
-    ],
+    "attackDamage": 4.0,
+    "speed": 0.101,
     "hands": true,
     "rightHand": "ironGolemRightArm",
     "leftHand": "ironGolemLeftArm"
@@ -1070,38 +1118,46 @@
       "faction_golem",
       "faction_abyssal"
     ],
+    "actions": [
+      "ac_goliath_smash",
+      "ac_coralium_claws",
+      "heavy_toss",
+      "iron_fortitude",
+      "golem_taunt_roar"
+    ],
     "immunities": [
-      "potion.cplague"
+      "abyssalcraft:cplague"
     ],
     "damageImmunities": [
       "fall"
     ],
-    "actions": [
-      "ac_goliath_smash",
-      "ac_dread_slam",
-      "ac_coralium_claws"
-    ],
+    "attackDamage": 4.0,
+    "speed": 0.101,
     "hands": true,
     "rightHand": "ironGolemRightArm",
     "leftHand": "ironGolemLeftArm"
   },
   "abyssalcraft:chagaroth": {
     "abilities": [
+      "ac_dread_plague",
       "fire_proof",
       "prevent_fall",
       "faction_dread_lord"
     ],
+    "actions": [
+      "ac_chagaroth_dread_salvo",
+      "ac_chagaroth_fist",
+      "ac_chagaroth_spawn",
+      "ac_dread_slam",
+      "ac_dread_roar",
+      "ac_dread_barf",
+      "ac_chagaroth_legion",
+      "ac_dread_contagion"
+    ],
     "immunities": [
       "abyssalcraft:cplague",
       "abyssalcraft:dplague",
-      "cplague",
-      "dplague",
-      "minecraft:slowness",
-      "potion.Cplague",
-      "potion.Dplague",
-      "potion.cplague",
-      "potion.dplague",
-      "potion.slowness"
+      "slowness"
     ],
     "damageImmunities": [
       "acid",
@@ -1115,35 +1171,38 @@
       "onFire",
       "shoggoth_acid"
     ],
-    "actions": [
-      "ac_chagaroth_dread_salvo",
-      "ac_chagaroth_fist",
-      "ac_chagaroth_spawn",
-      "ac_dread_slam",
-      "ac_dread_charge",
-      "ac_dread_roar"
-    ],
+    "attackDamage": 15.0,
+    "speed": 0.07,
+    "armor": 10.0,
+    "knockbackResistance": 1.0,
+    "attributes": {
+      "maxHealth": 80
+    },
     "hands": true,
     "rightHand": "walltentacle5",
     "leftHand": "walltentacle1"
   },
   "abyssalcraft.chagaroth": {
     "abilities": [
+      "ac_dread_plague",
       "fire_proof",
       "prevent_fall",
       "faction_dread_lord"
     ],
+    "actions": [
+      "ac_chagaroth_dread_salvo",
+      "ac_chagaroth_fist",
+      "ac_chagaroth_spawn",
+      "ac_dread_slam",
+      "ac_dread_roar",
+      "ac_dread_barf",
+      "ac_chagaroth_legion",
+      "ac_dread_contagion"
+    ],
     "immunities": [
       "abyssalcraft:cplague",
       "abyssalcraft:dplague",
-      "cplague",
-      "dplague",
-      "minecraft:slowness",
-      "potion.Cplague",
-      "potion.Dplague",
-      "potion.cplague",
-      "potion.dplague",
-      "potion.slowness"
+      "slowness"
     ],
     "damageImmunities": [
       "acid",
@@ -1157,14 +1216,13 @@
       "onFire",
       "shoggoth_acid"
     ],
-    "actions": [
-      "ac_chagaroth_dread_salvo",
-      "ac_chagaroth_fist",
-      "ac_chagaroth_spawn",
-      "ac_dread_slam",
-      "ac_dread_charge",
-      "ac_dread_roar"
-    ],
+    "attackDamage": 15.0,
+    "speed": 0.07,
+    "armor": 10.0,
+    "knockbackResistance": 1.0,
+    "attributes": {
+      "maxHealth": 80
+    },
     "hands": true,
     "rightHand": "walltentacle5",
     "leftHand": "walltentacle1"
@@ -1174,24 +1232,28 @@
       "prevent_fall",
       "faction_dread"
     ],
+    "actions": [
+      "ac_chagaroth_fist",
+      "ac_dread_slam",
+      "giant_colossal_sweep",
+      "heavy_toss"
+    ],
     "immunities": [
-      "abyssalcraft:dplague",
-      "dplague",
-      "potion.Dplague"
+      "abyssalcraft:dplague"
     ],
     "damageImmunities": [
-      "arrow",
       "dread",
       "hotFloor",
       "inFire",
       "lava",
       "onFire"
     ],
-    "actions": [
-      "ac_chagaroth_fist",
-      "ac_dread_slam",
-      "ac_dread_slug"
-    ],
+    "attackDamage": 7.5,
+    "speed": 0.099,
+    "knockbackResistance": 0.3,
+    "attributes": {
+      "maxHealth": 20
+    },
     "hands": true,
     "rightHand": "arm1",
     "leftHand": "arm1"
@@ -1201,38 +1263,48 @@
       "prevent_fall",
       "faction_dread"
     ],
+    "actions": [
+      "ac_chagaroth_fist",
+      "ac_dread_slam",
+      "giant_colossal_sweep",
+      "heavy_toss"
+    ],
     "immunities": [
-      "abyssalcraft:dplague",
-      "dplague",
-      "potion.Dplague"
+      "abyssalcraft:dplague"
     ],
     "damageImmunities": [
-      "arrow",
       "dread",
       "hotFloor",
       "inFire",
       "lava",
       "onFire"
     ],
-    "actions": [
-      "ac_chagaroth_fist",
-      "ac_dread_slam",
-      "ac_dread_slug"
-    ],
+    "attackDamage": 7.5,
+    "speed": 0.099,
+    "knockbackResistance": 0.3,
+    "attributes": {
+      "maxHealth": 20
+    },
     "hands": true,
     "rightHand": "arm1",
     "leftHand": "arm1"
   },
   "abyssalcraft:chagarothspawn": {
     "abilities": [
+      "ac_dread_plague",
+      "climb",
+      "water_breath",
       "fire_proof",
-      "faction_dread"
+      "faction_dread",
+      "faction_arthropod"
+    ],
+    "actions": [
+      "ac_chagaroth_spawn",
+      "ac_ghoul_pounce",
+      "ac_dread_contagion"
     ],
     "immunities": [
-      "abyssalcraft:dplague",
-      "dplague",
-      "potion.Dplague",
-      "potion.dplague"
+      "abyssalcraft:dplague"
     ],
     "damageImmunities": [
       "dread",
@@ -1241,25 +1313,32 @@
       "lava",
       "onFire"
     ],
-    "actions": [
-      "ac_chagaroth_spawn",
-      "ac_ghoul_pounce",
-      "ac_dread_slug"
-    ],
+    "attackDamage": 8.0,
+    "speed": 0.126,
+    "knockbackResistance": 0.1,
+    "attributes": {
+      "maxHealth": 10
+    },
     "hands": true,
     "rightHand": "rightleg1",
     "leftHand": "leftleg1"
   },
   "abyssalcraft.chagarothspawn": {
     "abilities": [
+      "ac_dread_plague",
+      "climb",
+      "water_breath",
       "fire_proof",
-      "faction_dread"
+      "faction_dread",
+      "faction_arthropod"
+    ],
+    "actions": [
+      "ac_chagaroth_spawn",
+      "ac_ghoul_pounce",
+      "ac_dread_contagion"
     ],
     "immunities": [
-      "abyssalcraft:dplague",
-      "dplague",
-      "potion.Dplague",
-      "potion.dplague"
+      "abyssalcraft:dplague"
     ],
     "damageImmunities": [
       "dread",
@@ -1268,11 +1347,12 @@
       "lava",
       "onFire"
     ],
-    "actions": [
-      "ac_chagaroth_spawn",
-      "ac_ghoul_pounce",
-      "ac_dread_slug"
-    ],
+    "attackDamage": 8.0,
+    "speed": 0.126,
+    "knockbackResistance": 0.1,
+    "attributes": {
+      "maxHealth": 10
+    },
     "hands": true,
     "rightHand": "rightleg1",
     "leftHand": "leftleg1"
@@ -1282,34 +1362,29 @@
       "ac_photophobia",
       "night_vision",
       "sun_allergy",
-      "faction_shadow"
-    ],
-    "immunities": [
-      "abyssalcraft:antimatter",
-      "abyssalcraft:dplague",
-      "minecraft:blindness",
-      "minecraft:poison",
-      "potion.Dplague",
-      "potion.antimatter",
-      "potion.blindness"
-    ],
-    "damageImmunities": [
-      "acid",
-      "antimatter",
-      "coralium",
-      "dread",
-      "fall",
-      "hotFloor",
-      "inFire",
-      "lava",
-      "shadow",
-      "shoggoth_acid"
+      "faction_shadow",
+      "ac_shadow_phase"
     ],
     "actions": [
       "ac_shadow_step",
       "ac_shadow_slash",
-      "ac_shadow_veil"
+      "ac_shadow_veil",
+      "spectral_daze"
     ],
+    "immunities": [
+      "blindness",
+      "poison"
+    ],
+    "damageImmunities": [
+      "hotFloor",
+      "inFire",
+      "inWall",
+      "lava",
+      "onFire",
+      "shadow"
+    ],
+    "attackDamage": 6.0,
+    "speed": 0.101,
     "hands": true,
     "rightHand": "RightArm2",
     "leftHand": "LeftArm2"
@@ -1319,34 +1394,29 @@
       "ac_photophobia",
       "night_vision",
       "sun_allergy",
-      "faction_shadow"
-    ],
-    "immunities": [
-      "abyssalcraft:antimatter",
-      "abyssalcraft:dplague",
-      "minecraft:blindness",
-      "minecraft:poison",
-      "potion.Dplague",
-      "potion.antimatter",
-      "potion.blindness"
-    ],
-    "damageImmunities": [
-      "acid",
-      "antimatter",
-      "coralium",
-      "dread",
-      "fall",
-      "hotFloor",
-      "inFire",
-      "lava",
-      "shadow",
-      "shoggoth_acid"
+      "faction_shadow",
+      "ac_shadow_phase"
     ],
     "actions": [
       "ac_shadow_step",
       "ac_shadow_slash",
-      "ac_shadow_veil"
+      "ac_shadow_veil",
+      "spectral_daze"
     ],
+    "immunities": [
+      "blindness",
+      "poison"
+    ],
+    "damageImmunities": [
+      "hotFloor",
+      "inFire",
+      "inWall",
+      "lava",
+      "onFire",
+      "shadow"
+    ],
+    "attackDamage": 6.0,
+    "speed": 0.101,
     "hands": true,
     "rightHand": "RightArm2",
     "leftHand": "LeftArm2"
@@ -1356,34 +1426,32 @@
       "ac_photophobia",
       "night_vision",
       "sun_allergy",
-      "faction_shadow"
-    ],
-    "immunities": [
-      "abyssalcraft:antimatter",
-      "abyssalcraft:dplague",
-      "minecraft:blindness",
-      "minecraft:poison",
-      "potion.Dplague",
-      "potion.antimatter",
-      "potion.blindness"
-    ],
-    "damageImmunities": [
-      "acid",
-      "antimatter",
-      "coralium",
-      "dread",
-      "fall",
-      "hotFloor",
-      "inFire",
-      "lava",
-      "shadow",
-      "shoggoth_acid"
+      "faction_shadow",
+      "ac_shadow_phase"
     ],
     "actions": [
       "ac_shadow_step",
       "ac_shadow_slash",
-      "ac_shadow_veil"
+      "ac_shadow_veil",
+      "spectral_daze"
     ],
+    "immunities": [
+      "blindness",
+      "poison"
+    ],
+    "damageImmunities": [
+      "hotFloor",
+      "inFire",
+      "inWall",
+      "lava",
+      "onFire",
+      "shadow"
+    ],
+    "attackDamage": 8.0,
+    "speed": 0.101,
+    "attributes": {
+      "maxHealth": 20
+    },
     "hands": true,
     "rightHand": "Rarm1",
     "leftHand": "Larm1"
@@ -1393,34 +1461,32 @@
       "ac_photophobia",
       "night_vision",
       "sun_allergy",
-      "faction_shadow"
-    ],
-    "immunities": [
-      "abyssalcraft:antimatter",
-      "abyssalcraft:dplague",
-      "minecraft:blindness",
-      "minecraft:poison",
-      "potion.Dplague",
-      "potion.antimatter",
-      "potion.blindness"
-    ],
-    "damageImmunities": [
-      "acid",
-      "antimatter",
-      "coralium",
-      "dread",
-      "fall",
-      "hotFloor",
-      "inFire",
-      "lava",
-      "shadow",
-      "shoggoth_acid"
+      "faction_shadow",
+      "ac_shadow_phase"
     ],
     "actions": [
       "ac_shadow_step",
       "ac_shadow_slash",
-      "ac_shadow_veil"
+      "ac_shadow_veil",
+      "spectral_daze"
     ],
+    "immunities": [
+      "blindness",
+      "poison"
+    ],
+    "damageImmunities": [
+      "hotFloor",
+      "inFire",
+      "inWall",
+      "lava",
+      "onFire",
+      "shadow"
+    ],
+    "attackDamage": 8.0,
+    "speed": 0.101,
+    "attributes": {
+      "maxHealth": 20
+    },
     "hands": true,
     "rightHand": "Rarm1",
     "leftHand": "Larm1"
@@ -1430,28 +1496,9 @@
       "ac_photophobia",
       "night_vision",
       "sun_allergy",
-      "faction_shadow"
-    ],
-    "immunities": [
-      "abyssalcraft:antimatter",
-      "abyssalcraft:dplague",
-      "minecraft:blindness",
-      "minecraft:poison",
-      "potion.Dplague",
-      "potion.antimatter",
-      "potion.blindness"
-    ],
-    "damageImmunities": [
-      "acid",
-      "antimatter",
-      "coralium",
-      "dread",
-      "fall",
-      "hotFloor",
-      "inFire",
-      "lava",
-      "shadow",
-      "shoggoth_acid"
+      "faction_shadow",
+      "ac_shadow_phase",
+      "faction_shadow_relative"
     ],
     "actions": [
       "ac_sacthoth_shadow_flame",
@@ -1460,6 +1507,24 @@
       "ac_shadow_collapse",
       "ac_shadow_veil"
     ],
+    "immunities": [
+      "blindness",
+      "poison"
+    ],
+    "damageImmunities": [
+      "hotFloor",
+      "inFire",
+      "inWall",
+      "lava",
+      "onFire",
+      "shadow"
+    ],
+    "attackDamage": 10.0,
+    "speed": 0.101,
+    "knockbackResistance": 0.3,
+    "attributes": {
+      "maxHealth": 40
+    },
     "hands": true,
     "rightHand": "rarm1",
     "leftHand": "larm1"
@@ -1469,28 +1534,9 @@
       "ac_photophobia",
       "night_vision",
       "sun_allergy",
-      "faction_shadow"
-    ],
-    "immunities": [
-      "abyssalcraft:antimatter",
-      "abyssalcraft:dplague",
-      "minecraft:blindness",
-      "minecraft:poison",
-      "potion.Dplague",
-      "potion.antimatter",
-      "potion.blindness"
-    ],
-    "damageImmunities": [
-      "acid",
-      "antimatter",
-      "coralium",
-      "dread",
-      "fall",
-      "hotFloor",
-      "inFire",
-      "lava",
-      "shadow",
-      "shoggoth_acid"
+      "faction_shadow",
+      "ac_shadow_phase",
+      "faction_shadow_relative"
     ],
     "actions": [
       "ac_sacthoth_shadow_flame",
@@ -1499,6 +1545,24 @@
       "ac_shadow_collapse",
       "ac_shadow_veil"
     ],
+    "immunities": [
+      "blindness",
+      "poison"
+    ],
+    "damageImmunities": [
+      "hotFloor",
+      "inFire",
+      "inWall",
+      "lava",
+      "onFire",
+      "shadow"
+    ],
+    "attackDamage": 10.0,
+    "speed": 0.101,
+    "knockbackResistance": 0.3,
+    "attributes": {
+      "maxHealth": 40
+    },
     "hands": true,
     "rightHand": "rarm1",
     "leftHand": "larm1"
@@ -1506,40 +1570,55 @@
   "abyssalcraft:shadowboss": {
     "abilities": [
       "ac_photophobia",
-      "fly",
+      "climb",
       "night_vision",
       "sun_allergy",
-      "faction_shadow_lord"
+      "faction_shadow_lord",
+      "ac_shadow_phase"
+    ],
+    "actions": [
+      "ac_sacthoth_shadow_flame",
+      "ac_sacthoth_shadow_step",
+      "ac_shadow_slash",
+      "ac_shadow_collapse",
+      "ac_shadow_veil",
+      "ac_sacthoth_dark_aura",
+      "ac_shadow_crush"
     ],
     "immunities": [
       "abyssalcraft:antimatter",
       "abyssalcraft:dplague",
-      "minecraft:blindness",
-      "minecraft:poison",
-      "potion.Dplague",
-      "potion.antimatter",
-      "potion.blindness"
+      "blindness",
+      "mining_fatigue",
+      "nausea",
+      "poison",
+      "slowness",
+      "weakness",
+      "wither"
     ],
     "damageImmunities": [
       "acid",
       "antimatter",
       "coralium",
       "dread",
+      "explosion",
       "fall",
       "hotFloor",
       "inFire",
+      "inWall",
       "lava",
+      "onFire",
+      "projectile",
       "shadow",
       "shoggoth_acid"
     ],
-    "actions": [
-      "ac_sacthoth_shadow_flame",
-      "ac_sacthoth_shadow_step",
-      "ac_shadow_step",
-      "ac_shadow_slash",
-      "ac_shadow_collapse",
-      "ac_shadow_veil"
-    ],
+    "attackDamage": 15.0,
+    "speed": 0.17,
+    "armor": 20.0,
+    "knockbackResistance": 0.4,
+    "attributes": {
+      "maxHealth": 80
+    },
     "hands": true,
     "rightHand": "leftarm1",
     "leftHand": "rightarm1"
@@ -1547,40 +1626,55 @@
   "abyssalcraft.shadowboss": {
     "abilities": [
       "ac_photophobia",
-      "fly",
+      "climb",
       "night_vision",
       "sun_allergy",
-      "faction_shadow_lord"
+      "faction_shadow_lord",
+      "ac_shadow_phase"
+    ],
+    "actions": [
+      "ac_sacthoth_shadow_flame",
+      "ac_sacthoth_shadow_step",
+      "ac_shadow_slash",
+      "ac_shadow_collapse",
+      "ac_shadow_veil",
+      "ac_sacthoth_dark_aura",
+      "ac_shadow_crush"
     ],
     "immunities": [
       "abyssalcraft:antimatter",
       "abyssalcraft:dplague",
-      "minecraft:blindness",
-      "minecraft:poison",
-      "potion.Dplague",
-      "potion.antimatter",
-      "potion.blindness"
+      "blindness",
+      "mining_fatigue",
+      "nausea",
+      "poison",
+      "slowness",
+      "weakness",
+      "wither"
     ],
     "damageImmunities": [
       "acid",
       "antimatter",
       "coralium",
       "dread",
+      "explosion",
       "fall",
       "hotFloor",
       "inFire",
+      "inWall",
       "lava",
+      "onFire",
+      "projectile",
       "shadow",
       "shoggoth_acid"
     ],
-    "actions": [
-      "ac_sacthoth_shadow_flame",
-      "ac_sacthoth_shadow_step",
-      "ac_shadow_step",
-      "ac_shadow_slash",
-      "ac_shadow_collapse",
-      "ac_shadow_veil"
-    ],
+    "attackDamage": 15.0,
+    "speed": 0.17,
+    "armor": 20.0,
+    "knockbackResistance": 0.4,
+    "attributes": {
+      "maxHealth": 80
+    },
     "hands": true,
     "rightHand": "leftarm1",
     "leftHand": "rightarm1"
@@ -1590,34 +1684,29 @@
       "ac_photophobia",
       "night_vision",
       "sun_allergy",
-      "faction_shadow_lord"
-    ],
-    "immunities": [
-      "abyssalcraft:antimatter",
-      "abyssalcraft:dplague",
-      "minecraft:blindness",
-      "minecraft:poison",
-      "potion.Dplague",
-      "potion.blindness"
-    ],
-    "damageImmunities": [
-      "acid",
-      "antimatter",
-      "coralium",
-      "dread",
-      "fall",
-      "hotFloor",
-      "inFire",
-      "lava",
-      "shadow",
-      "shoggoth_acid"
+      "faction_shadow_lord",
+      "ac_shadow_phase"
     ],
     "actions": [
       "ac_shadow_step",
       "ac_shadow_slash",
       "ac_shadow_collapse",
-      "ac_shadow_veil"
+      "ac_shadow_crush"
     ],
+    "immunities": [
+      "blindness",
+      "poison"
+    ],
+    "damageImmunities": [
+      "inWall",
+      "shadow"
+    ],
+    "attackDamage": 15.0,
+    "speed": 0.157,
+    "knockbackResistance": 0.2,
+    "attributes": {
+      "maxHealth": 80
+    },
     "hands": true,
     "rightHand": "rarm1",
     "leftHand": "larm1"
@@ -1627,34 +1716,29 @@
       "ac_photophobia",
       "night_vision",
       "sun_allergy",
-      "faction_shadow_lord"
-    ],
-    "immunities": [
-      "abyssalcraft:antimatter",
-      "abyssalcraft:dplague",
-      "minecraft:blindness",
-      "minecraft:poison",
-      "potion.Dplague",
-      "potion.blindness"
-    ],
-    "damageImmunities": [
-      "acid",
-      "antimatter",
-      "coralium",
-      "dread",
-      "fall",
-      "hotFloor",
-      "inFire",
-      "lava",
-      "shadow",
-      "shoggoth_acid"
+      "faction_shadow_lord",
+      "ac_shadow_phase"
     ],
     "actions": [
       "ac_shadow_step",
       "ac_shadow_slash",
       "ac_shadow_collapse",
-      "ac_shadow_veil"
+      "ac_shadow_crush"
     ],
+    "immunities": [
+      "blindness",
+      "poison"
+    ],
+    "damageImmunities": [
+      "inWall",
+      "shadow"
+    ],
+    "attackDamage": 15.0,
+    "speed": 0.157,
+    "knockbackResistance": 0.2,
+    "attributes": {
+      "maxHealth": 80
+    },
     "hands": true,
     "rightHand": "rarm1",
     "leftHand": "larm1"
@@ -1662,39 +1746,33 @@
   "abyssalcraft:shadowghoul": {
     "abilities": [
       "ac_photophobia",
-      "climb",
       "night_vision",
       "sun_allergy",
       "rotten",
       "faction_undead",
-      "faction_shadow"
-    ],
-    "immunities": [
-      "abyssalcraft:antimatter",
-      "abyssalcraft:dplague",
-      "minecraft:blindness",
-      "minecraft:poison",
-      "potion.Dplague",
-      "potion.blindness"
-    ],
-    "damageImmunities": [
-      "acid",
-      "antimatter",
-      "coralium",
-      "dread",
-      "fall",
-      "hotFloor",
-      "inFire",
-      "lava",
-      "shadow",
-      "shoggoth_acid"
+      "faction_shadow",
+      "ac_shadow_phase"
     ],
     "actions": [
       "ac_shadow_step",
       "ac_shadow_slash",
       "ac_ghoul_pounce",
-      "ac_shadow_veil"
+      "ac_shadow_veil",
+      "ac_ghoul_rake"
     ],
+    "immunities": [
+      "blindness",
+      "poison"
+    ],
+    "damageImmunities": [
+      "inWall",
+      "shadow"
+    ],
+    "attackDamage": 6.0,
+    "speed": 0.099,
+    "attributes": {
+      "maxHealth": 15
+    },
     "hands": true,
     "rightHand": "rarm1",
     "leftHand": "larm1"
@@ -1702,39 +1780,33 @@
   "abyssalcraft.shadowghoul": {
     "abilities": [
       "ac_photophobia",
-      "climb",
       "night_vision",
       "sun_allergy",
       "rotten",
       "faction_undead",
-      "faction_shadow"
-    ],
-    "immunities": [
-      "abyssalcraft:antimatter",
-      "abyssalcraft:dplague",
-      "minecraft:blindness",
-      "minecraft:poison",
-      "potion.Dplague",
-      "potion.blindness"
-    ],
-    "damageImmunities": [
-      "acid",
-      "antimatter",
-      "coralium",
-      "dread",
-      "fall",
-      "hotFloor",
-      "inFire",
-      "lava",
-      "shadow",
-      "shoggoth_acid"
+      "faction_shadow",
+      "ac_shadow_phase"
     ],
     "actions": [
       "ac_shadow_step",
       "ac_shadow_slash",
       "ac_ghoul_pounce",
-      "ac_shadow_veil"
+      "ac_shadow_veil",
+      "ac_ghoul_rake"
     ],
+    "immunities": [
+      "blindness",
+      "poison"
+    ],
+    "damageImmunities": [
+      "inWall",
+      "shadow"
+    ],
+    "attackDamage": 6.0,
+    "speed": 0.099,
+    "attributes": {
+      "maxHealth": 15
+    },
     "hands": true,
     "rightHand": "rarm1",
     "leftHand": "larm1"
@@ -1744,25 +1816,26 @@
       "ac_antimatter_annihilation",
       "rotten",
       "faction_antimatter",
-      "faction_undead"
+      "faction_undead",
+      "ac_anti_predator"
+    ],
+    "actions": [
+      "ac_antimatter_burst",
+      "ac_anti_matter_blast",
+      "ac_anti_implosion",
+      "ac_anti_door_break",
+      "ac_anti_reinforce"
     ],
     "immunities": [
       "abyssalcraft:antimatter",
-      "antimatter",
       "minecraft:poison",
-      "potion.Antimatter",
-      "potion.antimatter",
-      "potion.poison"
+      "minecraft:regeneration"
     ],
     "damageImmunities": [
       "antimatter"
     ],
-    "actions": [
-      "ac_anti_player_slash",
-      "ac_antimatter_burst",
-      "ac_anti_matter_blast",
-      "ac_anti_implosion"
-    ],
+    "attackDamage": 3.0,
+    "speed": 0.099,
     "hands": true,
     "rightHand": "bipedRightArm",
     "leftHand": "bipedLeftArm"
@@ -1772,25 +1845,26 @@
       "ac_antimatter_annihilation",
       "rotten",
       "faction_antimatter",
-      "faction_undead"
+      "faction_undead",
+      "ac_anti_predator"
+    ],
+    "actions": [
+      "ac_antimatter_burst",
+      "ac_anti_matter_blast",
+      "ac_anti_implosion",
+      "ac_anti_door_break",
+      "ac_anti_reinforce"
     ],
     "immunities": [
       "abyssalcraft:antimatter",
-      "antimatter",
       "minecraft:poison",
-      "potion.Antimatter",
-      "potion.antimatter",
-      "potion.poison"
+      "minecraft:regeneration"
     ],
     "damageImmunities": [
       "antimatter"
     ],
-    "actions": [
-      "ac_anti_player_slash",
-      "ac_antimatter_burst",
-      "ac_anti_matter_blast",
-      "ac_anti_implosion"
-    ],
+    "attackDamage": 3.0,
+    "speed": 0.099,
     "hands": true,
     "rightHand": "bipedRightArm",
     "leftHand": "bipedLeftArm"
@@ -1798,28 +1872,30 @@
   "abyssalcraft:antiskeleton": {
     "abilities": [
       "ac_antimatter_annihilation",
-      "sun_allergy",
       "rotten",
       "faction_antimatter",
       "faction_undead"
     ],
+    "actions": [
+      "ac_anti_skeleton_arrow",
+      "ac_antimatter_burst",
+      "ac_anti_matter_blast",
+      "ac_anti_implosion",
+      "ac_anti_flame_arrow"
+    ],
     "immunities": [
       "abyssalcraft:antimatter",
-      "antimatter",
       "minecraft:poison",
-      "potion.Antimatter",
-      "potion.antimatter",
-      "potion.poison"
+      "minecraft:regeneration"
     ],
     "damageImmunities": [
       "antimatter"
     ],
-    "actions": [
-      "ac_anti_skeleton_arrow",
-      "ac_anti_matter_blast",
-      "ac_antimatter_burst",
-      "ac_anti_implosion"
-    ],
+    "attackDamage": 2.0,
+    "speed": 0.101,
+    "attributes": {
+      "maxHealth": 10
+    },
     "hands": true,
     "rightHand": "bipedRightArm",
     "leftHand": "bipedLeftArm"
@@ -1827,28 +1903,30 @@
   "abyssalcraft.antiskeleton": {
     "abilities": [
       "ac_antimatter_annihilation",
-      "sun_allergy",
       "rotten",
       "faction_antimatter",
       "faction_undead"
     ],
+    "actions": [
+      "ac_anti_skeleton_arrow",
+      "ac_antimatter_burst",
+      "ac_anti_matter_blast",
+      "ac_anti_implosion",
+      "ac_anti_flame_arrow"
+    ],
     "immunities": [
       "abyssalcraft:antimatter",
-      "antimatter",
       "minecraft:poison",
-      "potion.Antimatter",
-      "potion.antimatter",
-      "potion.poison"
+      "minecraft:regeneration"
     ],
     "damageImmunities": [
       "antimatter"
     ],
-    "actions": [
-      "ac_anti_skeleton_arrow",
-      "ac_anti_matter_blast",
-      "ac_antimatter_burst",
-      "ac_anti_implosion"
-    ],
+    "attackDamage": 2.0,
+    "speed": 0.101,
+    "attributes": {
+      "maxHealth": 10
+    },
     "hands": true,
     "rightHand": "bipedRightArm",
     "leftHand": "bipedLeftArm"
@@ -1858,24 +1936,26 @@
       "ac_antimatter_annihilation",
       "climb",
       "faction_antimatter",
-      "faction_arthropod"
-    ],
-    "immunities": [
-      "abyssalcraft:antimatter",
-      "antimatter",
-      "minecraft:poison",
-      "potion.Antimatter",
-      "potion.antimatter",
-      "potion.poison"
-    ],
-    "damageImmunities": [
-      "antimatter"
+      "faction_arthropod",
+      "web_immunity"
     ],
     "actions": [
       "ac_anti_spider_leap",
       "ac_antimatter_burst",
       "ac_anti_matter_blast"
     ],
+    "immunities": [
+      "abyssalcraft:antimatter",
+      "minecraft:poison"
+    ],
+    "damageImmunities": [
+      "antimatter"
+    ],
+    "attackDamage": 2.0,
+    "speed": 0.108,
+    "attributes": {
+      "maxHealth": 4
+    },
     "hands": true,
     "rightHand": "leg1",
     "leftHand": "leg2"
@@ -1885,24 +1965,26 @@
       "ac_antimatter_annihilation",
       "climb",
       "faction_antimatter",
-      "faction_arthropod"
-    ],
-    "immunities": [
-      "abyssalcraft:antimatter",
-      "antimatter",
-      "minecraft:poison",
-      "potion.Antimatter",
-      "potion.antimatter",
-      "potion.poison"
-    ],
-    "damageImmunities": [
-      "antimatter"
+      "faction_arthropod",
+      "web_immunity"
     ],
     "actions": [
       "ac_anti_spider_leap",
       "ac_antimatter_burst",
       "ac_anti_matter_blast"
     ],
+    "immunities": [
+      "abyssalcraft:antimatter",
+      "minecraft:poison"
+    ],
+    "damageImmunities": [
+      "antimatter"
+    ],
+    "attackDamage": 2.0,
+    "speed": 0.108,
+    "attributes": {
+      "maxHealth": 4
+    },
     "hands": true,
     "rightHand": "leg1",
     "leftHand": "leg2"
@@ -1913,20 +1995,23 @@
       "faction_antimatter",
       "faction_creeper"
     ],
+    "actions": [
+      "ac_anti_creeper_fuse",
+      "ac_antimatter_burst",
+      "ac_anti_implosion",
+      "ac_anti_overcharge"
+    ],
     "immunities": [
-      "abyssalcraft:antimatter",
-      "antimatter",
-      "potion.Antimatter",
-      "potion.antimatter"
+      "abyssalcraft:antimatter"
     ],
     "damageImmunities": [
       "antimatter"
     ],
-    "actions": [
-      "ac_anti_creeper_fuse",
-      "ac_antimatter_burst",
-      "ac_anti_implosion"
-    ],
+    "attackDamage": 1.0,
+    "speed": 0.101,
+    "attributes": {
+      "maxHealth": 10
+    },
     "hands": true,
     "rightHand": "leg3",
     "leftHand": "leg4"
@@ -1937,20 +2022,23 @@
       "faction_antimatter",
       "faction_creeper"
     ],
+    "actions": [
+      "ac_anti_creeper_fuse",
+      "ac_antimatter_burst",
+      "ac_anti_implosion",
+      "ac_anti_overcharge"
+    ],
     "immunities": [
-      "abyssalcraft:antimatter",
-      "antimatter",
-      "potion.Antimatter",
-      "potion.antimatter"
+      "abyssalcraft:antimatter"
     ],
     "damageImmunities": [
       "antimatter"
     ],
-    "actions": [
-      "ac_anti_creeper_fuse",
-      "ac_antimatter_burst",
-      "ac_anti_implosion"
-    ],
+    "attackDamage": 1.0,
+    "speed": 0.101,
+    "attributes": {
+      "maxHealth": 10
+    },
     "hands": true,
     "rightHand": "leg3",
     "leftHand": "leg4"
@@ -1963,20 +2051,19 @@
       "faction_antimatter",
       "faction_animal"
     ],
+    "actions": [
+      "ac_antimatter_burst",
+      "ac_anti_implosion",
+      "ac_anti_matter_blast",
+      "echolocation",
+      "bat_roost"
+    ],
     "immunities": [
-      "abyssalcraft:antimatter",
-      "antimatter",
-      "potion.Antimatter",
-      "potion.antimatter"
+      "abyssalcraft:antimatter"
     ],
     "damageImmunities": [
       "antimatter",
       "fall"
-    ],
-    "actions": [
-      "ac_antimatter_burst",
-      "ac_anti_implosion",
-      "ac_anti_matter_blast"
     ],
     "hands": true,
     "rightHand": "batRightWing",
@@ -1990,20 +2077,19 @@
       "faction_antimatter",
       "faction_animal"
     ],
+    "actions": [
+      "ac_antimatter_burst",
+      "ac_anti_implosion",
+      "ac_anti_matter_blast",
+      "echolocation",
+      "bat_roost"
+    ],
     "immunities": [
-      "abyssalcraft:antimatter",
-      "antimatter",
-      "potion.Antimatter",
-      "potion.antimatter"
+      "abyssalcraft:antimatter"
     ],
     "damageImmunities": [
       "antimatter",
       "fall"
-    ],
-    "actions": [
-      "ac_antimatter_burst",
-      "ac_anti_implosion",
-      "ac_anti_matter_blast"
     ],
     "hands": true,
     "rightHand": "batRightWing",
@@ -2014,22 +2100,21 @@
       "ac_antimatter_annihilation",
       "prevent_fall",
       "faction_antimatter",
-      "faction_animal"
-    ],
-    "immunities": [
-      "abyssalcraft:antimatter",
-      "antimatter",
-      "potion.Antimatter",
-      "potion.antimatter"
-    ],
-    "damageImmunities": [
-      "antimatter",
-      "fall"
+      "faction_animal",
+      "glide"
     ],
     "actions": [
       "ac_anti_chicken_egg",
       "ac_antimatter_burst"
     ],
+    "immunities": [
+      "abyssalcraft:antimatter"
+    ],
+    "damageImmunities": [
+      "antimatter",
+      "fall"
+    ],
+    "speed": 0.101,
     "hands": true,
     "rightHand": "rightWing",
     "leftHand": "leftWing"
@@ -2039,22 +2124,21 @@
       "ac_antimatter_annihilation",
       "prevent_fall",
       "faction_antimatter",
-      "faction_animal"
-    ],
-    "immunities": [
-      "abyssalcraft:antimatter",
-      "antimatter",
-      "potion.Antimatter",
-      "potion.antimatter"
-    ],
-    "damageImmunities": [
-      "antimatter",
-      "fall"
+      "faction_animal",
+      "glide"
     ],
     "actions": [
       "ac_anti_chicken_egg",
       "ac_antimatter_burst"
     ],
+    "immunities": [
+      "abyssalcraft:antimatter"
+    ],
+    "damageImmunities": [
+      "antimatter",
+      "fall"
+    ],
+    "speed": 0.101,
     "hands": true,
     "rightHand": "rightWing",
     "leftHand": "leftWing"
@@ -2065,20 +2149,19 @@
       "faction_antimatter",
       "faction_animal"
     ],
+    "actions": [
+      "ac_anti_cow_milk",
+      "ac_antimatter_burst",
+      "ac_anti_matter_blast",
+      "ac_anti_matter_rage"
+    ],
     "immunities": [
-      "abyssalcraft:antimatter",
-      "antimatter",
-      "potion.Antimatter",
-      "potion.antimatter"
+      "abyssalcraft:antimatter"
     ],
     "damageImmunities": [
       "antimatter"
     ],
-    "actions": [
-      "ac_anti_cow_milk",
-      "ac_antimatter_burst",
-      "ac_anti_matter_blast"
-    ],
+    "speed": 0.095,
     "hands": true,
     "rightHand": "leg3",
     "leftHand": "leg4"
@@ -2089,20 +2172,19 @@
       "faction_antimatter",
       "faction_animal"
     ],
+    "actions": [
+      "ac_anti_cow_milk",
+      "ac_antimatter_burst",
+      "ac_anti_matter_blast",
+      "ac_anti_matter_rage"
+    ],
     "immunities": [
-      "abyssalcraft:antimatter",
-      "antimatter",
-      "potion.Antimatter",
-      "potion.antimatter"
+      "abyssalcraft:antimatter"
     ],
     "damageImmunities": [
       "antimatter"
     ],
-    "actions": [
-      "ac_anti_cow_milk",
-      "ac_antimatter_burst",
-      "ac_anti_matter_blast"
-    ],
+    "speed": 0.095,
     "hands": true,
     "rightHand": "leg3",
     "leftHand": "leg4"
@@ -2113,20 +2195,20 @@
       "faction_antimatter",
       "faction_animal"
     ],
+    "actions": [
+      "ac_antimatter_burst",
+      "ac_anti_implosion",
+      "ac_anti_matter_blast",
+      "ac_anti_matter_rage",
+      "pig_rooting"
+    ],
     "immunities": [
-      "abyssalcraft:antimatter",
-      "antimatter",
-      "potion.Antimatter",
-      "potion.antimatter"
+      "abyssalcraft:antimatter"
     ],
     "damageImmunities": [
       "antimatter"
     ],
-    "actions": [
-      "ac_antimatter_burst",
-      "ac_anti_implosion",
-      "ac_anti_matter_blast"
-    ],
+    "speed": 0.101,
     "hands": true,
     "rightHand": "leg3",
     "leftHand": "leg4"
@@ -2137,20 +2219,20 @@
       "faction_antimatter",
       "faction_animal"
     ],
+    "actions": [
+      "ac_antimatter_burst",
+      "ac_anti_implosion",
+      "ac_anti_matter_blast",
+      "ac_anti_matter_rage",
+      "pig_rooting"
+    ],
     "immunities": [
-      "abyssalcraft:antimatter",
-      "antimatter",
-      "potion.Antimatter",
-      "potion.antimatter"
+      "abyssalcraft:antimatter"
     ],
     "damageImmunities": [
       "antimatter"
     ],
-    "actions": [
-      "ac_antimatter_burst",
-      "ac_anti_implosion",
-      "ac_anti_matter_blast"
-    ],
+    "speed": 0.101,
     "hands": true,
     "rightHand": "leg3",
     "leftHand": "leg4"
@@ -2159,20 +2241,25 @@
     "abilities": [
       "fire_proof",
       "glide",
+      "prevent_fall",
       "faction_demon",
       "faction_animal"
-    ],
-    "immunities": [],
-    "damageImmunities": [
-      "inFire",
-      "lava",
-      "onFire"
     ],
     "actions": [
       "ac_evil_charge",
       "ac_demon_fire_charge",
-      "ac_ghoul_pounce"
+      "ac_evil_demonize",
+      "ac_evil_animal_shear",
+      "ac_demon_frenzy"
     ],
+    "immunities": [],
+    "damageImmunities": [
+      "hotFloor",
+      "inFire",
+      "lava",
+      "onFire"
+    ],
+    "attackDamage": 2.0,
     "hands": true,
     "rightHand": "rightWing",
     "leftHand": "leftWing"
@@ -2181,20 +2268,25 @@
     "abilities": [
       "fire_proof",
       "glide",
+      "prevent_fall",
       "faction_demon",
       "faction_animal"
-    ],
-    "immunities": [],
-    "damageImmunities": [
-      "inFire",
-      "lava",
-      "onFire"
     ],
     "actions": [
       "ac_evil_charge",
       "ac_demon_fire_charge",
-      "ac_ghoul_pounce"
+      "ac_evil_demonize",
+      "ac_evil_animal_shear",
+      "ac_demon_frenzy"
     ],
+    "immunities": [],
+    "damageImmunities": [
+      "hotFloor",
+      "inFire",
+      "lava",
+      "onFire"
+    ],
+    "attackDamage": 2.0,
     "hands": true,
     "rightHand": "rightWing",
     "leftHand": "leftWing"
@@ -2205,17 +2297,22 @@
       "faction_demon",
       "faction_animal"
     ],
+    "actions": [
+      "ac_evil_cow_milk",
+      "ac_evil_charge",
+      "ac_demon_fire_charge",
+      "ac_evil_demonize",
+      "ac_evil_animal_shear",
+      "ac_demon_frenzy"
+    ],
     "immunities": [],
     "damageImmunities": [
+      "hotFloor",
       "inFire",
       "lava",
       "onFire"
     ],
-    "actions": [
-      "ac_evil_cow_milk",
-      "ac_evil_charge",
-      "ac_demon_fire_charge"
-    ],
+    "attackDamage": 2.0,
     "hands": true,
     "rightHand": "leg3",
     "leftHand": "leg4"
@@ -2226,17 +2323,22 @@
       "faction_demon",
       "faction_animal"
     ],
+    "actions": [
+      "ac_evil_cow_milk",
+      "ac_evil_charge",
+      "ac_demon_fire_charge",
+      "ac_evil_demonize",
+      "ac_evil_animal_shear",
+      "ac_demon_frenzy"
+    ],
     "immunities": [],
     "damageImmunities": [
+      "hotFloor",
       "inFire",
       "lava",
       "onFire"
     ],
-    "actions": [
-      "ac_evil_cow_milk",
-      "ac_evil_charge",
-      "ac_demon_fire_charge"
-    ],
+    "attackDamage": 2.0,
     "hands": true,
     "rightHand": "leg3",
     "leftHand": "leg4"
@@ -2247,17 +2349,21 @@
       "faction_demon",
       "faction_animal"
     ],
+    "actions": [
+      "ac_evil_charge",
+      "ac_demon_fire_charge",
+      "ac_evil_demonize",
+      "ac_evil_animal_shear",
+      "ac_demon_frenzy"
+    ],
     "immunities": [],
     "damageImmunities": [
+      "hotFloor",
       "inFire",
       "lava",
       "onFire"
     ],
-    "actions": [
-      "ac_evil_charge",
-      "ac_demon_fire_charge",
-      "ac_ghoul_pounce"
-    ],
+    "attackDamage": 2.0,
     "hands": true,
     "rightHand": "leg3",
     "leftHand": "leg4"
@@ -2268,17 +2374,21 @@
       "faction_demon",
       "faction_animal"
     ],
+    "actions": [
+      "ac_evil_charge",
+      "ac_demon_fire_charge",
+      "ac_evil_demonize",
+      "ac_evil_animal_shear",
+      "ac_demon_frenzy"
+    ],
     "immunities": [],
     "damageImmunities": [
+      "hotFloor",
       "inFire",
       "lava",
       "onFire"
     ],
-    "actions": [
-      "ac_evil_charge",
-      "ac_demon_fire_charge",
-      "ac_ghoul_pounce"
-    ],
+    "attackDamage": 2.0,
     "hands": true,
     "rightHand": "leg3",
     "leftHand": "leg4"
@@ -2289,17 +2399,21 @@
       "faction_demon",
       "faction_animal"
     ],
+    "actions": [
+      "ac_evil_charge",
+      "ac_demon_fire_charge",
+      "ac_evil_demonize",
+      "ac_evil_animal_shear",
+      "ac_demon_frenzy"
+    ],
     "immunities": [],
     "damageImmunities": [
+      "hotFloor",
       "inFire",
       "lava",
       "onFire"
     ],
-    "actions": [
-      "ac_evil_charge",
-      "ac_demon_fire_charge",
-      "ac_ghoul_pounce"
-    ],
+    "attackDamage": 2.0,
     "hands": true,
     "rightHand": "leg3",
     "leftHand": "leg4"
@@ -2310,17 +2424,21 @@
       "faction_demon",
       "faction_animal"
     ],
+    "actions": [
+      "ac_evil_charge",
+      "ac_demon_fire_charge",
+      "ac_evil_demonize",
+      "ac_evil_animal_shear",
+      "ac_demon_frenzy"
+    ],
     "immunities": [],
     "damageImmunities": [
+      "hotFloor",
       "inFire",
       "lava",
       "onFire"
     ],
-    "actions": [
-      "ac_evil_charge",
-      "ac_demon_fire_charge",
-      "ac_ghoul_pounce"
-    ],
+    "attackDamage": 2.0,
     "hands": true,
     "rightHand": "leg3",
     "leftHand": "leg4"
@@ -2329,15 +2447,18 @@
     "abilities": [
       "fire_proof",
       "glide",
+      "prevent_fall",
       "faction_demon",
+      "faction_dread",
       "faction_animal"
     ],
+    "actions": [
+      "ac_demon_fire_charge",
+      "ac_dread_charge",
+      "ac_demon_frenzy"
+    ],
     "immunities": [
-      "abyssalcraft:dplague",
-      "dplague",
-      "minecraft:poison",
-      "potion.Dplague",
-      "potion.poison"
+      "abyssalcraft:dplague"
     ],
     "damageImmunities": [
       "dread",
@@ -2346,11 +2467,7 @@
       "lava",
       "onFire"
     ],
-    "actions": [
-      "ac_demon_fire_charge",
-      "ac_dread_charge",
-      "ac_ghoul_pounce"
-    ],
+    "attackDamage": 2.0,
     "hands": true,
     "rightHand": "rightWing",
     "leftHand": "leftWing"
@@ -2359,15 +2476,18 @@
     "abilities": [
       "fire_proof",
       "glide",
+      "prevent_fall",
       "faction_demon",
+      "faction_dread",
       "faction_animal"
     ],
+    "actions": [
+      "ac_demon_fire_charge",
+      "ac_dread_charge",
+      "ac_demon_frenzy"
+    ],
     "immunities": [
-      "abyssalcraft:dplague",
-      "dplague",
-      "minecraft:poison",
-      "potion.Dplague",
-      "potion.poison"
+      "abyssalcraft:dplague"
     ],
     "damageImmunities": [
       "dread",
@@ -2376,11 +2496,7 @@
       "lava",
       "onFire"
     ],
-    "actions": [
-      "ac_demon_fire_charge",
-      "ac_dread_charge",
-      "ac_ghoul_pounce"
-    ],
+    "attackDamage": 2.0,
     "hands": true,
     "rightHand": "rightWing",
     "leftHand": "leftWing"
@@ -2389,14 +2505,17 @@
     "abilities": [
       "fire_proof",
       "faction_demon",
+      "faction_dread",
       "faction_animal"
     ],
+    "actions": [
+      "ac_demon_fire_charge",
+      "ac_demon_cow_milk",
+      "ac_dread_charge",
+      "ac_demon_frenzy"
+    ],
     "immunities": [
-      "abyssalcraft:dplague",
-      "dplague",
-      "minecraft:poison",
-      "potion.Dplague",
-      "potion.poison"
+      "abyssalcraft:dplague"
     ],
     "damageImmunities": [
       "dread",
@@ -2405,11 +2524,7 @@
       "lava",
       "onFire"
     ],
-    "actions": [
-      "ac_demon_fire_charge",
-      "ac_demon_cow_milk",
-      "ac_dread_charge"
-    ],
+    "attackDamage": 2.0,
     "hands": true,
     "rightHand": "leg3",
     "leftHand": "leg4"
@@ -2418,14 +2533,17 @@
     "abilities": [
       "fire_proof",
       "faction_demon",
+      "faction_dread",
       "faction_animal"
     ],
+    "actions": [
+      "ac_demon_fire_charge",
+      "ac_demon_cow_milk",
+      "ac_dread_charge",
+      "ac_demon_frenzy"
+    ],
     "immunities": [
-      "abyssalcraft:dplague",
-      "dplague",
-      "minecraft:poison",
-      "potion.Dplague",
-      "potion.poison"
+      "abyssalcraft:dplague"
     ],
     "damageImmunities": [
       "dread",
@@ -2434,11 +2552,7 @@
       "lava",
       "onFire"
     ],
-    "actions": [
-      "ac_demon_fire_charge",
-      "ac_demon_cow_milk",
-      "ac_dread_charge"
-    ],
+    "attackDamage": 2.0,
     "hands": true,
     "rightHand": "leg3",
     "leftHand": "leg4"
@@ -2447,14 +2561,16 @@
     "abilities": [
       "fire_proof",
       "faction_demon",
+      "faction_dread",
       "faction_animal"
     ],
+    "actions": [
+      "ac_demon_fire_charge",
+      "ac_dread_charge",
+      "ac_demon_frenzy"
+    ],
     "immunities": [
-      "abyssalcraft:dplague",
-      "dplague",
-      "minecraft:poison",
-      "potion.Dplague",
-      "potion.poison"
+      "abyssalcraft:dplague"
     ],
     "damageImmunities": [
       "dread",
@@ -2463,11 +2579,7 @@
       "lava",
       "onFire"
     ],
-    "actions": [
-      "ac_demon_fire_charge",
-      "ac_dread_charge",
-      "ac_ghoul_pounce"
-    ],
+    "attackDamage": 2.0,
     "hands": true,
     "rightHand": "leg3",
     "leftHand": "leg4"
@@ -2476,14 +2588,16 @@
     "abilities": [
       "fire_proof",
       "faction_demon",
+      "faction_dread",
       "faction_animal"
     ],
+    "actions": [
+      "ac_demon_fire_charge",
+      "ac_dread_charge",
+      "ac_demon_frenzy"
+    ],
     "immunities": [
-      "abyssalcraft:dplague",
-      "dplague",
-      "minecraft:poison",
-      "potion.Dplague",
-      "potion.poison"
+      "abyssalcraft:dplague"
     ],
     "damageImmunities": [
       "dread",
@@ -2492,11 +2606,7 @@
       "lava",
       "onFire"
     ],
-    "actions": [
-      "ac_demon_fire_charge",
-      "ac_dread_charge",
-      "ac_ghoul_pounce"
-    ],
+    "attackDamage": 2.0,
     "hands": true,
     "rightHand": "leg3",
     "leftHand": "leg4"
@@ -2505,14 +2615,17 @@
     "abilities": [
       "fire_proof",
       "faction_demon",
+      "faction_dread",
       "faction_animal"
     ],
+    "actions": [
+      "ac_demon_fire_charge",
+      "ac_dread_charge",
+      "ac_demon_sheep_shear",
+      "ac_demon_frenzy"
+    ],
     "immunities": [
-      "abyssalcraft:dplague",
-      "dplague",
-      "minecraft:poison",
-      "potion.Dplague",
-      "potion.poison"
+      "abyssalcraft:dplague"
     ],
     "damageImmunities": [
       "dread",
@@ -2521,11 +2634,7 @@
       "lava",
       "onFire"
     ],
-    "actions": [
-      "ac_demon_fire_charge",
-      "ac_demon_sheep_shear",
-      "ac_dread_charge"
-    ],
+    "attackDamage": 2.0,
     "hands": true,
     "rightHand": "leg3",
     "leftHand": "leg4"
@@ -2534,14 +2643,17 @@
     "abilities": [
       "fire_proof",
       "faction_demon",
+      "faction_dread",
       "faction_animal"
     ],
+    "actions": [
+      "ac_demon_fire_charge",
+      "ac_dread_charge",
+      "ac_demon_sheep_shear",
+      "ac_demon_frenzy"
+    ],
     "immunities": [
-      "abyssalcraft:dplague",
-      "dplague",
-      "minecraft:poison",
-      "potion.Dplague",
-      "potion.poison"
+      "abyssalcraft:dplague"
     ],
     "damageImmunities": [
       "dread",
@@ -2550,11 +2662,7 @@
       "lava",
       "onFire"
     ],
-    "actions": [
-      "ac_demon_fire_charge",
-      "ac_demon_sheep_shear",
-      "ac_dread_charge"
-    ],
+    "attackDamage": 2.0,
     "hands": true,
     "rightHand": "leg3",
     "leftHand": "leg4"
@@ -2562,19 +2670,23 @@
   "abyssalcraft:ghoul": {
     "abilities": [
       "night_vision",
-      "sun_allergy",
       "rotten",
       "faction_undead"
     ],
-    "immunities": [
-      "potion.poison"
-    ],
-    "damageImmunities": [],
     "actions": [
       "ac_ghoul_pounce",
-      "ac_coralium_claws",
-      "ac_remnant_screech"
+      "ac_ghoul_rake"
     ],
+    "immunities": [
+      "minecraft:poison",
+      "minecraft:regeneration"
+    ],
+    "damageImmunities": [],
+    "attackDamage": 5.0,
+    "speed": 0.099,
+    "attributes": {
+      "maxHealth": 10
+    },
     "hands": true,
     "rightHand": "rarm1",
     "leftHand": "larm1"
@@ -2582,19 +2694,23 @@
   "abyssalcraft.ghoul": {
     "abilities": [
       "night_vision",
-      "sun_allergy",
       "rotten",
       "faction_undead"
     ],
-    "immunities": [
-      "potion.poison"
-    ],
-    "damageImmunities": [],
     "actions": [
       "ac_ghoul_pounce",
-      "ac_coralium_claws",
-      "ac_remnant_screech"
+      "ac_ghoul_rake"
     ],
+    "immunities": [
+      "minecraft:poison",
+      "minecraft:regeneration"
+    ],
+    "damageImmunities": [],
+    "attackDamage": 5.0,
+    "speed": 0.099,
+    "attributes": {
+      "maxHealth": 10
+    },
     "hands": true,
     "rightHand": "rarm1",
     "leftHand": "larm1"
@@ -2602,41 +2718,33 @@
   "abyssalcraft:remnant": {
     "abilities": [
       "hungerless",
-      "faction_omothol"
+      "faction_omothol",
+      "water_breath"
+    ],
+    "actions": [
+      "ac_remnant_screech",
+      "ac_spectral_fireball",
+      "ac_remnant_blink"
     ],
     "immunities": [
       "abyssalcraft:antimatter",
       "abyssalcraft:cplague",
       "abyssalcraft:dplague",
-      "minecraft:blindness",
-      "minecraft:poison",
-      "minecraft:wither",
-      "potion.Antimatter",
-      "potion.Cplague",
-      "potion.Dplague",
-      "potion.antimatter",
-      "potion.poison"
+      "minecraft:poison"
     ],
     "damageImmunities": [
       "acid",
       "antimatter",
       "coralium",
       "dread",
-      "explosion",
-      "fall",
-      "hotFloor",
-      "inFire",
-      "lava",
       "magic",
-      "shadow",
-      "shoggoth_acid",
-      "wither"
+      "shoggoth_acid"
     ],
-    "actions": [
-      "ac_remnant_screech",
-      "ac_spectral_fireball",
-      "ac_ghoul_pounce"
-    ],
+    "attackDamage": 10.0,
+    "knockbackResistance": 0.2,
+    "attributes": {
+      "maxHealth": 30
+    },
     "hands": true,
     "rightHand": "rightarm",
     "leftHand": "leftarm"
@@ -2644,41 +2752,33 @@
   "abyssalcraft.remnant": {
     "abilities": [
       "hungerless",
-      "faction_omothol"
+      "faction_omothol",
+      "water_breath"
+    ],
+    "actions": [
+      "ac_remnant_screech",
+      "ac_spectral_fireball",
+      "ac_remnant_blink"
     ],
     "immunities": [
       "abyssalcraft:antimatter",
       "abyssalcraft:cplague",
       "abyssalcraft:dplague",
-      "minecraft:blindness",
-      "minecraft:poison",
-      "minecraft:wither",
-      "potion.Antimatter",
-      "potion.Cplague",
-      "potion.Dplague",
-      "potion.antimatter",
-      "potion.poison"
+      "minecraft:poison"
     ],
     "damageImmunities": [
       "acid",
       "antimatter",
       "coralium",
       "dread",
-      "explosion",
-      "fall",
-      "hotFloor",
-      "inFire",
-      "lava",
       "magic",
-      "shadow",
-      "shoggoth_acid",
-      "wither"
+      "shoggoth_acid"
     ],
-    "actions": [
-      "ac_remnant_screech",
-      "ac_spectral_fireball",
-      "ac_ghoul_pounce"
-    ],
+    "attackDamage": 10.0,
+    "knockbackResistance": 0.2,
+    "attributes": {
+      "maxHealth": 30
+    },
     "hands": true,
     "rightHand": "rightarm",
     "leftHand": "leftarm"
@@ -2691,38 +2791,36 @@
       "faction_undead",
       "faction_omothol"
     ],
+    "actions": [
+      "ac_ghoul_pounce",
+      "ac_omothol_touch",
+      "ac_ghoul_rake"
+    ],
     "immunities": [
       "abyssalcraft:antimatter",
       "abyssalcraft:cplague",
       "abyssalcraft:dplague",
-      "minecraft:blindness",
       "minecraft:poison",
-      "minecraft:wither",
-      "potion.Antimatter",
-      "potion.Cplague",
-      "potion.Dplague",
-      "potion.antimatter"
+      "minecraft:regeneration"
     ],
     "damageImmunities": [
       "acid",
       "antimatter",
       "coralium",
       "dread",
-      "explosion",
-      "fall",
+      "magic",
+      "shoggoth_acid",
       "hotFloor",
       "inFire",
       "lava",
-      "magic",
-      "shadow",
-      "shoggoth_acid",
-      "wither"
+      "onFire"
     ],
-    "actions": [
-      "ac_ghoul_pounce",
-      "ac_remnant_screech",
-      "ac_spectral_fireball"
-    ],
+    "attackDamage": 15.0,
+    "speed": 0.099,
+    "knockbackResistance": 0.2,
+    "attributes": {
+      "maxHealth": 40
+    },
     "hands": true,
     "rightHand": "rarm1",
     "leftHand": "larm1"
@@ -2735,125 +2833,39 @@
       "faction_undead",
       "faction_omothol"
     ],
+    "actions": [
+      "ac_ghoul_pounce",
+      "ac_omothol_touch",
+      "ac_ghoul_rake"
+    ],
     "immunities": [
       "abyssalcraft:antimatter",
       "abyssalcraft:cplague",
       "abyssalcraft:dplague",
-      "minecraft:blindness",
       "minecraft:poison",
-      "minecraft:wither",
-      "potion.Antimatter",
-      "potion.Cplague",
-      "potion.Dplague",
-      "potion.antimatter"
+      "minecraft:regeneration"
     ],
     "damageImmunities": [
       "acid",
       "antimatter",
       "coralium",
       "dread",
-      "explosion",
-      "fall",
+      "magic",
+      "shoggoth_acid",
       "hotFloor",
       "inFire",
       "lava",
-      "magic",
-      "shadow",
-      "shoggoth_acid",
-      "wither"
+      "onFire"
     ],
-    "actions": [
-      "ac_ghoul_pounce",
-      "ac_remnant_screech",
-      "ac_spectral_fireball"
-    ],
+    "attackDamage": 15.0,
+    "speed": 0.099,
+    "knockbackResistance": 0.2,
+    "attributes": {
+      "maxHealth": 40
+    },
     "hands": true,
     "rightHand": "rarm1",
     "leftHand": "larm1"
-  },
-  "abyssalcraft:omotholwarden": {
-    "abilities": [
-      "night_vision",
-      "prevent_fall",
-      "faction_omothol_relative"
-    ],
-    "immunities": [
-      "abyssalcraft:antimatter",
-      "abyssalcraft:cplague",
-      "abyssalcraft:dplague",
-      "minecraft:blindness",
-      "minecraft:poison",
-      "minecraft:wither",
-      "potion.Antimatter",
-      "potion.Cplague",
-      "potion.Dplague"
-    ],
-    "damageImmunities": [
-      "acid",
-      "antimatter",
-      "coralium",
-      "dread",
-      "explosion",
-      "fall",
-      "hotFloor",
-      "inFire",
-      "lava",
-      "magic",
-      "shadow",
-      "shoggoth_acid",
-      "wither"
-    ],
-    "actions": [
-      "ac_shadow_collapse",
-      "ac_remnant_screech",
-      "ac_spectral_fireball",
-      "ac_shadow_slash"
-    ],
-    "hands": true,
-    "rightHand": "bipedRightArm",
-    "leftHand": "bipedLeftArm"
-  },
-  "abyssalcraft.omotholwarden": {
-    "abilities": [
-      "night_vision",
-      "prevent_fall",
-      "faction_omothol_relative"
-    ],
-    "immunities": [
-      "abyssalcraft:antimatter",
-      "abyssalcraft:cplague",
-      "abyssalcraft:dplague",
-      "minecraft:blindness",
-      "minecraft:poison",
-      "minecraft:wither",
-      "potion.Antimatter",
-      "potion.Cplague",
-      "potion.Dplague"
-    ],
-    "damageImmunities": [
-      "acid",
-      "antimatter",
-      "coralium",
-      "dread",
-      "explosion",
-      "fall",
-      "hotFloor",
-      "inFire",
-      "lava",
-      "magic",
-      "shadow",
-      "shoggoth_acid",
-      "wither"
-    ],
-    "actions": [
-      "ac_shadow_collapse",
-      "ac_remnant_screech",
-      "ac_spectral_fireball",
-      "ac_shadow_slash"
-    ],
-    "hands": true,
-    "rightHand": "bipedRightArm",
-    "leftHand": "bipedLeftArm"
   },
   "abyssalcraft:jzahar": {
     "abilities": [
@@ -2866,18 +2878,25 @@
       "faction_shadow_lord",
       "morphext:jzahar_banish"
     ],
+    "actions": [
+      "ac_jzahar_wither_salvo",
+      "ac_jzahar_shout_blast",
+      "ac_jzahar_singularity",
+      "ac_jzahar_earthquake",
+      "ac_jzahar_oblivion",
+      "ac_jzahar_tremor_field"
+    ],
     "immunities": [
       "abyssalcraft:antimatter",
       "abyssalcraft:cplague",
       "abyssalcraft:dplague",
-      "minecraft:blindness",
-      "minecraft:nausea",
-      "minecraft:poison",
-      "minecraft:slowness",
-      "minecraft:wither",
-      "potion.Antimatter",
-      "potion.Cplague",
-      "potion.Dplague"
+      "blindness",
+      "mining_fatigue",
+      "nausea",
+      "poison",
+      "slowness",
+      "weakness",
+      "wither"
     ],
     "damageImmunities": [
       "acid",
@@ -2897,13 +2916,12 @@
       "shoggoth_acid",
       "wither"
     ],
-    "actions": [
-      "ac_jzahar_wither_salvo",
-      "ac_jzahar_shout_blast",
-      "ac_jzahar_singularity",
-      "ac_jzahar_earthquake",
-      "ac_jzahar_oblivion"
-    ],
+    "attackDamage": 15.0,
+    "speed": 0.101,
+    "armor": 10.0,
+    "attributes": {
+      "maxHealth": 80
+    },
     "hands": true,
     "rightHand": "staff1",
     "leftHand": "abyssalnomicon"
@@ -2919,18 +2937,25 @@
       "faction_shadow_lord",
       "morphext:jzahar_banish"
     ],
+    "actions": [
+      "ac_jzahar_wither_salvo",
+      "ac_jzahar_shout_blast",
+      "ac_jzahar_singularity",
+      "ac_jzahar_earthquake",
+      "ac_jzahar_oblivion",
+      "ac_jzahar_tremor_field"
+    ],
     "immunities": [
       "abyssalcraft:antimatter",
       "abyssalcraft:cplague",
       "abyssalcraft:dplague",
-      "minecraft:blindness",
-      "minecraft:nausea",
-      "minecraft:poison",
-      "minecraft:slowness",
-      "minecraft:wither",
-      "potion.Antimatter",
-      "potion.Cplague",
-      "potion.Dplague"
+      "blindness",
+      "mining_fatigue",
+      "nausea",
+      "poison",
+      "slowness",
+      "weakness",
+      "wither"
     ],
     "damageImmunities": [
       "acid",
@@ -2950,13 +2975,12 @@
       "shoggoth_acid",
       "wither"
     ],
-    "actions": [
-      "ac_jzahar_wither_salvo",
-      "ac_jzahar_shout_blast",
-      "ac_jzahar_singularity",
-      "ac_jzahar_earthquake",
-      "ac_jzahar_oblivion"
-    ],
+    "attackDamage": 15.0,
+    "speed": 0.101,
+    "armor": 10.0,
+    "attributes": {
+      "maxHealth": 80
+    },
     "hands": true,
     "rightHand": "staff1",
     "leftHand": "abyssalnomicon"
@@ -2964,16 +2988,8 @@
   "abyssalcraft:antiplayer": {
     "abilities": [
       "ac_antimatter_annihilation",
-      "faction_antimatter"
-    ],
-    "immunities": [
-      "abyssalcraft:antimatter",
-      "antimatter",
-      "potion.Antimatter",
-      "potion.antimatter"
-    ],
-    "damageImmunities": [
-      "antimatter"
+      "faction_antimatter",
+      "ac_anti_predator"
     ],
     "actions": [
       "ac_anti_player_slash",
@@ -2981,6 +2997,17 @@
       "ac_anti_matter_blast",
       "ac_anti_implosion"
     ],
+    "immunities": [
+      "abyssalcraft:antimatter"
+    ],
+    "damageImmunities": [
+      "antimatter"
+    ],
+    "attackDamage": 2.0,
+    "speed": 0.101,
+    "attributes": {
+      "maxHealth": 10
+    },
     "hands": true,
     "rightHand": "bipedRightArm",
     "leftHand": "bipedLeftArm"
@@ -2988,16 +3015,8 @@
   "abyssalcraft.antiplayer": {
     "abilities": [
       "ac_antimatter_annihilation",
-      "faction_antimatter"
-    ],
-    "immunities": [
-      "abyssalcraft:antimatter",
-      "antimatter",
-      "potion.Antimatter",
-      "potion.antimatter"
-    ],
-    "damageImmunities": [
-      "antimatter"
+      "faction_antimatter",
+      "ac_anti_predator"
     ],
     "actions": [
       "ac_anti_player_slash",
@@ -3005,114 +3024,135 @@
       "ac_anti_matter_blast",
       "ac_anti_implosion"
     ],
+    "immunities": [
+      "abyssalcraft:antimatter"
+    ],
+    "damageImmunities": [
+      "antimatter"
+    ],
+    "attackDamage": 2.0,
+    "speed": 0.101,
+    "attributes": {
+      "maxHealth": 10
+    },
     "hands": true,
     "rightHand": "bipedRightArm",
     "leftHand": "bipedLeftArm"
   },
   "abyssalcraft:antighoul": {
     "abilities": [
-      "sun_allergy",
       "rotten",
       "faction_antimatter",
-      "faction_undead"
-    ],
-    "immunities": [
-      "abyssalcraft:antimatter",
-      "antimatter",
-      "potion.Antimatter",
-      "potion.antimatter"
-    ],
-    "damageImmunities": [
-      "antimatter"
+      "faction_undead",
+      "ac_anti_predator"
     ],
     "actions": [
       "ac_antimatter_burst",
       "ac_ghoul_pounce",
-      "ac_anti_matter_blast"
+      "ac_anti_matter_blast",
+      "ac_ghoul_rake"
     ],
+    "immunities": [
+      "abyssalcraft:antimatter",
+      "regeneration"
+    ],
+    "damageImmunities": [
+      "antimatter"
+    ],
+    "attackDamage": 5.0,
+    "speed": 0.099,
+    "attributes": {
+      "maxHealth": 25
+    },
     "hands": true,
     "rightHand": "rarm1",
     "leftHand": "larm1"
   },
   "abyssalcraft.antighoul": {
     "abilities": [
-      "sun_allergy",
       "rotten",
       "faction_antimatter",
-      "faction_undead"
-    ],
-    "immunities": [
-      "abyssalcraft:antimatter",
-      "antimatter",
-      "potion.Antimatter",
-      "potion.antimatter"
-    ],
-    "damageImmunities": [
-      "antimatter"
+      "faction_undead",
+      "ac_anti_predator"
     ],
     "actions": [
       "ac_antimatter_burst",
       "ac_ghoul_pounce",
-      "ac_anti_matter_blast"
+      "ac_anti_matter_blast",
+      "ac_ghoul_rake"
     ],
+    "immunities": [
+      "abyssalcraft:antimatter",
+      "regeneration"
+    ],
+    "damageImmunities": [
+      "antimatter"
+    ],
+    "attackDamage": 5.0,
+    "speed": 0.099,
+    "attributes": {
+      "maxHealth": 25
+    },
     "hands": true,
     "rightHand": "rarm1",
     "leftHand": "larm1"
   },
   "abyssalcraft:antiabyssalzombie": {
     "abilities": [
-      "water_breath",
       "swim",
-      "sun_allergy",
       "rotten",
       "faction_antimatter",
       "faction_undead",
-      "faction_abyssal"
-    ],
-    "immunities": [
-      "abyssalcraft:antimatter",
-      "antimatter",
-      "potion.Antimatter",
-      "potion.antimatter"
-    ],
-    "damageImmunities": [
-      "antimatter",
-      "drown"
+      "ac_anti_predator"
     ],
     "actions": [
       "ac_antimatter_burst",
       "ac_ghoul_pounce",
-      "ac_anti_matter_blast"
+      "ac_anti_matter_blast",
+      "ac_anti_matter_rage"
     ],
+    "immunities": [
+      "abyssalcraft:antimatter",
+      "regeneration"
+    ],
+    "damageImmunities": [
+      "antimatter"
+    ],
+    "attackDamage": 6.0,
+    "speed": 0.099,
+    "attributes": {
+      "maxHealth": 20
+    },
     "hands": true,
     "rightHand": "bipedRightArm",
     "leftHand": "bipedLeftArm"
   },
   "abyssalcraft.antiabyssalzombie": {
     "abilities": [
-      "water_breath",
       "swim",
-      "sun_allergy",
       "rotten",
       "faction_antimatter",
       "faction_undead",
-      "faction_abyssal"
-    ],
-    "immunities": [
-      "abyssalcraft:antimatter",
-      "antimatter",
-      "potion.Antimatter",
-      "potion.antimatter"
-    ],
-    "damageImmunities": [
-      "antimatter",
-      "drown"
+      "ac_anti_predator"
     ],
     "actions": [
       "ac_antimatter_burst",
       "ac_ghoul_pounce",
-      "ac_anti_matter_blast"
+      "ac_anti_matter_blast",
+      "ac_anti_matter_rage"
     ],
+    "immunities": [
+      "abyssalcraft:antimatter",
+      "regeneration"
+    ],
+    "damageImmunities": [
+      "antimatter"
+    ],
+    "attackDamage": 6.0,
+    "speed": 0.099,
+    "attributes": {
+      "maxHealth": 20
+    },
     "hands": true,
     "rightHand": "bipedRightArm",
     "leftHand": "bipedLeftArm"
@@ -3121,21 +3161,25 @@
     "abilities": [
       "sun_allergy",
       "rotten",
-      "faction_undead",
-      "faction_wither"
-    ],
-    "immunities": [
-      "abyssalcraft:cplague",
-      "potion.Cplague"
-    ],
-    "damageImmunities": [
-      "coralium"
+      "faction_undead"
     ],
     "actions": [
       "ac_goliath_smash",
-      "ac_spectral_fireball",
-      "ac_dread_slam"
+      "giant_colossal_sweep",
+      "heavy_toss",
+      "wolf_battle_howl",
+      "skeleton_melee_jab"
     ],
+    "immunities": [
+      "regeneration"
+    ],
+    "damageImmunities": [],
+    "attackDamage": 10.0,
+    "speed": 0.099,
+    "knockbackResistance": 0.3,
+    "attributes": {
+      "maxHealth": 40
+    },
     "hands": true,
     "rightHand": "rightarm",
     "leftHand": "leftarm"
@@ -3144,21 +3188,25 @@
     "abilities": [
       "sun_allergy",
       "rotten",
-      "faction_undead",
-      "faction_wither"
-    ],
-    "immunities": [
-      "abyssalcraft:cplague",
-      "potion.Cplague"
-    ],
-    "damageImmunities": [
-      "coralium"
+      "faction_undead"
     ],
     "actions": [
       "ac_goliath_smash",
-      "ac_spectral_fireball",
-      "ac_dread_slam"
+      "giant_colossal_sweep",
+      "heavy_toss",
+      "wolf_battle_howl",
+      "skeleton_melee_jab"
     ],
+    "immunities": [
+      "regeneration"
+    ],
+    "damageImmunities": [],
+    "attackDamage": 10.0,
+    "speed": 0.099,
+    "knockbackResistance": 0.3,
+    "attributes": {
+      "maxHealth": 40
+    },
     "hands": true,
     "rightHand": "rightarm",
     "leftHand": "leftarm"
@@ -3166,20 +3214,26 @@
   "abyssalcraft:shuboffspring": {
     "abilities": [
       "night_vision",
-      "faction_omothol"
+      "faction_omothol",
+      "faction_abyssal"
+    ],
+    "actions": [
+      "ac_ghoul_pounce",
+      "ac_remnant_screech",
+      "ac_goliath_smash",
+      "ac_shub_bleat"
     ],
     "immunities": [
-      "abyssalcraft:antimatter",
-      "potion.Antimatter"
+      "abyssalcraft:antimatter"
     ],
     "damageImmunities": [
       "antimatter"
     ],
-    "actions": [
-      "ac_goliath_smash",
-      "ac_ghoul_pounce",
-      "ac_remnant_screech"
-    ],
+    "attackDamage": 4.0,
+    "speed": 0.101,
+    "attributes": {
+      "maxHealth": 20
+    },
     "hands": true,
     "rightHand": "rLeg01a",
     "leftHand": "lLeg01a"
@@ -3187,260 +3241,82 @@
   "abyssalcraft.shuboffspring": {
     "abilities": [
       "night_vision",
-      "faction_omothol"
+      "faction_omothol",
+      "faction_abyssal"
+    ],
+    "actions": [
+      "ac_ghoul_pounce",
+      "ac_remnant_screech",
+      "ac_goliath_smash",
+      "ac_shub_bleat"
     ],
     "immunities": [
-      "abyssalcraft:antimatter",
-      "potion.Antimatter"
+      "abyssalcraft:antimatter"
     ],
     "damageImmunities": [
       "antimatter"
     ],
-    "actions": [
-      "ac_goliath_smash",
-      "ac_ghoul_pounce",
-      "ac_remnant_screech"
-    ],
+    "attackDamage": 4.0,
+    "speed": 0.101,
+    "attributes": {
+      "maxHealth": 20
+    },
     "hands": true,
     "rightHand": "rLeg01a",
     "leftHand": "lLeg01a"
   },
   "abyssalcraft:jzaharminion": {
     "abilities": [
-      "fire_proof",
-      "faction_omothol"
-    ],
-    "immunities": [
-      "abyssalcraft:antimatter",
-      "potion.Antimatter"
-    ],
-    "damageImmunities": [
-      "antimatter",
-      "fire",
-      "lava"
+      "water_breath",
+      "faction_omothol",
+      "faction_omothol_relative"
     ],
     "actions": [
-      "ac_jzahar_wither_salvo",
-      "ac_remnant_screech",
       "ac_shadow_slash",
-      "ac_shadow_step"
+      "ac_shadow_step",
+      "ac_remnant_screech",
+      "ac_remnant_rally",
+      "ac_gatekeeper_crush"
     ],
+    "immunities": [
+      "poison"
+    ],
+    "damageImmunities": [],
+    "attackDamage": 15.0,
+    "speed": 0.101,
+    "knockbackResistance": 0.2,
+    "attributes": {
+      "maxHealth": 80
+    },
     "hands": true,
     "rightHand": "rightarm1",
     "leftHand": "leftarm1"
   },
   "abyssalcraft.jzaharminion": {
     "abilities": [
-      "fire_proof",
-      "faction_omothol"
-    ],
-    "immunities": [
-      "abyssalcraft:antimatter",
-      "potion.Antimatter"
-    ],
-    "damageImmunities": [
-      "antimatter",
-      "fire",
-      "lava"
+      "water_breath",
+      "faction_omothol",
+      "faction_omothol_relative"
     ],
     "actions": [
-      "ac_jzahar_wither_salvo",
-      "ac_remnant_screech",
       "ac_shadow_slash",
-      "ac_shadow_step"
+      "ac_shadow_step",
+      "ac_remnant_screech",
+      "ac_remnant_rally",
+      "ac_gatekeeper_crush"
     ],
+    "immunities": [
+      "poison"
+    ],
+    "damageImmunities": [],
+    "attackDamage": 15.0,
+    "speed": 0.101,
+    "knockbackResistance": 0.2,
+    "attributes": {
+      "maxHealth": 80
+    },
     "hands": true,
     "rightHand": "rightarm1",
     "leftHand": "leftarm1"
-  },
-  "abyssalcraft:remnanttrader": {
-    "abilities": [
-      "hungerless",
-      "faction_omothol"
-    ],
-    "immunities": [
-      "abyssalcraft:antimatter",
-      "abyssalcraft:cplague",
-      "abyssalcraft:dplague",
-      "minecraft:blindness",
-      "minecraft:poison",
-      "minecraft:wither",
-      "potion.Antimatter",
-      "potion.Cplague",
-      "potion.Dplague",
-      "potion.antimatter",
-      "potion.poison"
-    ],
-    "damageImmunities": [
-      "acid",
-      "antimatter",
-      "coralium",
-      "dread",
-      "explosion",
-      "fall",
-      "hotFloor",
-      "inFire",
-      "lava",
-      "magic",
-      "shadow",
-      "shoggoth_acid",
-      "wither"
-    ],
-    "actions": [
-      "ac_remnant_screech",
-      "ac_spectral_fireball",
-      "ac_ghoul_pounce"
-    ],
-    "hands": true,
-    "rightHand": "rightarm",
-    "leftHand": "leftarm"
-  },
-  "abyssalcraft.remnanttrader": {
-    "abilities": [
-      "hungerless",
-      "faction_omothol"
-    ],
-    "immunities": [
-      "abyssalcraft:antimatter",
-      "abyssalcraft:cplague",
-      "abyssalcraft:dplague",
-      "minecraft:blindness",
-      "minecraft:poison",
-      "minecraft:wither",
-      "potion.Antimatter",
-      "potion.Cplague",
-      "potion.Dplague",
-      "potion.antimatter",
-      "potion.poison"
-    ],
-    "damageImmunities": [
-      "acid",
-      "antimatter",
-      "coralium",
-      "dread",
-      "explosion",
-      "fall",
-      "hotFloor",
-      "inFire",
-      "lava",
-      "magic",
-      "shadow",
-      "shoggoth_acid",
-      "wither"
-    ],
-    "actions": [
-      "ac_remnant_screech",
-      "ac_spectral_fireball",
-      "ac_ghoul_pounce"
-    ],
-    "hands": true,
-    "rightHand": "rightarm",
-    "leftHand": "leftarm"
-  },
-  "abyssalcraft:Jzahar": {
-    "abilities": [
-      "fly",
-      "fire_proof",
-      "hungerless",
-      "night_vision",
-      "prevent_fall",
-      "faction_omothol_lord",
-      "faction_shadow_lord",
-      "morphext:jzahar_banish"
-    ],
-    "immunities": [
-      "abyssalcraft:antimatter",
-      "abyssalcraft:cplague",
-      "abyssalcraft:dplague",
-      "minecraft:blindness",
-      "minecraft:nausea",
-      "minecraft:poison",
-      "minecraft:slowness",
-      "minecraft:wither",
-      "potion.Antimatter",
-      "potion.Cplague",
-      "potion.Dplague"
-    ],
-    "damageImmunities": [
-      "acid",
-      "antimatter",
-      "coralium",
-      "dread",
-      "explosion",
-      "fall",
-      "flyIntoWall",
-      "hotFloor",
-      "inFire",
-      "inWall",
-      "lava",
-      "magic",
-      "onFire",
-      "shadow",
-      "shoggoth_acid",
-      "wither"
-    ],
-    "actions": [
-      "ac_jzahar_wither_salvo",
-      "ac_jzahar_shout_blast",
-      "ac_jzahar_singularity",
-      "ac_jzahar_earthquake",
-      "ac_jzahar_oblivion"
-    ],
-    "hands": true,
-    "rightHand": "staff1",
-    "leftHand": "abyssalnomicon"
-  },
-  "abyssalcraft.Jzahar": {
-    "abilities": [
-      "fly",
-      "fire_proof",
-      "hungerless",
-      "night_vision",
-      "prevent_fall",
-      "faction_omothol_lord",
-      "faction_shadow_lord",
-      "morphext:jzahar_banish"
-    ],
-    "immunities": [
-      "abyssalcraft:antimatter",
-      "abyssalcraft:cplague",
-      "abyssalcraft:dplague",
-      "minecraft:blindness",
-      "minecraft:nausea",
-      "minecraft:poison",
-      "minecraft:slowness",
-      "minecraft:wither",
-      "potion.Antimatter",
-      "potion.Cplague",
-      "potion.Dplague"
-    ],
-    "damageImmunities": [
-      "acid",
-      "antimatter",
-      "coralium",
-      "dread",
-      "explosion",
-      "fall",
-      "flyIntoWall",
-      "hotFloor",
-      "inFire",
-      "inWall",
-      "lava",
-      "magic",
-      "onFire",
-      "shadow",
-      "shoggoth_acid",
-      "wither"
-    ],
-    "actions": [
-      "ac_jzahar_wither_salvo",
-      "ac_jzahar_shout_blast",
-      "ac_jzahar_singularity",
-      "ac_jzahar_earthquake",
-      "ac_jzahar_oblivion"
-    ],
-    "hands": true,
-    "rightHand": "staff1",
-    "leftHand": "abyssalnomicon"
   }
 }

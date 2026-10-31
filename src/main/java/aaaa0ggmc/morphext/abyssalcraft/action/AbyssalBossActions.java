@@ -260,7 +260,8 @@ public final class AbyssalBossActions {
                     DamageSource.causePlayerDamage((EntityPlayer) entity) : DamageSource.HOT_FLOOR;
 
             for (EntityLivingBase target : list) {
-                target.attackEntityFrom(dmg, 18.0F);
+                // 调参（NEW#8）：单跳伤害从 18 收敛到 15，对齐 morph 近战可玩性封顶线；保留 64 格震颤场爽感
+                target.attackEntityFrom(dmg, 15.0F);
                 target.addPotionEffect(new PotionEffect(MobEffects.SLOWNESS, 140, 2));
                 target.addPotionEffect(new PotionEffect(MobEffects.NAUSEA, 100, 1));
                 target.motionY += 0.35D;
