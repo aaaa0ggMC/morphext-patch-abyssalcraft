@@ -4,24 +4,32 @@ import aaaa0ggmc.morphext.integration.metamorph.ICooldownAction;
 import mchorse.metamorph.api.abilities.IAction;
 import mchorse.metamorph.api.morphs.AbstractMorph;
 import net.minecraft.entity.EntityLivingBase;
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
 import net.minecraft.potion.Potion;
 import net.minecraft.potion.PotionEffect;
+import net.minecraft.util.EnumHand;
 import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.math.RayTraceResult;
 import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.World;
 
 import java.util.List;
+import java.util.Map;
+import java.util.UUID;
+import java.util.concurrent.ConcurrentHashMap;
 
 /**
  * 深渊国度主动能力通用基类。
  * 1. 彻底解耦硬编码面向 EntityPlayer 的缺陷，全面面向通用存活实体 EntityLivingBase；
- * 2. 实现 ICooldownAction，支持原生精准冷却；
+ * 2. 实现 ICooldownAction，支持原生精准动态冷却；
  * 3. 安全距离与实体过滤，防止任何 self-hit 或友军误伤；
  * 4. 严禁无控世界破坏，保护玩家建筑与地形。
  */
 public abstract class AbyssalCraftAction implements IAction, ICooldownAction {
     private final int cooldownTicks;
+    protected final Map<UUID, Integer> dynamicCooldowns = new ConcurrentHashMap<>();
 
     public AbyssalCraftAction(int cooldownTicks) {
         this.cooldownTicks = cooldownTicks;
@@ -29,7 +37,49 @@ public abstract class AbyssalCraftAction implements IAction, ICooldownAction {
 
     @Override
     public int getCooldownTicks(EntityLivingBase entity) {
+        if (entity != null) {
+            Integer cd = dynamicCooldowns.get(entity.getUniqueID());
+            if (cd != null) {
+                return cd;
+            }
+        }
         return this.cooldownTicks;
+    }
+
+    protected void setCooldown(EntityLivingBase entity, int ticks) {
+        if (entity != null) {
+            dynamicCooldowns.put(entity.getUniqueID(), ticks);
+        }
+    }
+
+    /**
+     * 辅助方法：检查实体主手或副手是否持有指定物品
+     */
+    public static EnumHand findHeldItem(EntityLivingBase entity, Item item) {
+        if (entity == null || item == null) return null;
+        if (entity.getHeldItemMainhand().getItem() == item) {
+            return EnumHand.MAIN_HAND;
+        }
+        if (entity.getHeldItemOffhand().getItem() == item) {
+            return EnumHand.OFF_HAND;
+        }
+        return null;
+    }
+
+    /**
+     * 辅助方法：消耗手持容器并给予产物（如挤奶、盛装熔岩）
+     */
+    protected boolean consumeAndGive(EntityPlayer player, EnumHand hand, ItemStack resultStack) {
+        ItemStack held = player.getHeldItem(hand);
+        if (!player.capabilities.isCreativeMode) {
+            held.shrink(1);
+        }
+        if (held.isEmpty()) {
+            player.setHeldItem(hand, resultStack.copy());
+        } else if (!player.inventory.addItemStackToInventory(resultStack.copy())) {
+            player.dropItem(resultStack.copy(), false);
+        }
+        return true;
     }
 
     @Override

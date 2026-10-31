@@ -27,3 +27,16 @@ morphext.metamorph.desc.ac_sacthoth_shadow_flame=Shadow Flame Breath: Spews thic
 morphext.metamorph.desc.ac_sacthoth_shadow_step=Tactical Shadow Step: Disintegrates into 128 large smoke particles and teleports instantly to the crosshair destination safely.
 morphext.metamorph.desc.ac_chagaroth_dread_salvo=Dread Mother Salvo: Three heads unleash a barrage of high-speed dread slugs, explosive dread charges, and summoned dread beasts riding slugs!
 morphext.metamorph.desc.ac_dragon_boss_breath=Dread Dragon Breath: Roars and launches a spread of 3 dread fireballs engulfing the forward area in dread flames.
+
+# Abyssal Special Animal Interaction Actions
+morphext.metamorph.desc.ac_anti_cow_milk=Antimatter Milking & Pulse: Holding an empty bucket extracts a hazardous Liquid Antimatter Bucket (10s CD). When empty-handed, emits an antimatter recoil pulse knocking back entities within 4 blocks with void annihilation (15s CD).
+morphext.metamorph.desc.ac_demon_cow_milk=Lava Milking & Hellfire Charge: Holding an empty bucket yields a scorching Lava Bucket (10s CD). Holding flint and steel enters an ignited demon hellfire charge stance, igniting self and surrounding enemies (20s CD). Otherwise unleashes a hellfire eruption thrust launching enemies upward (15s CD).
+morphext.metamorph.desc.ac_evil_cow_milk=Cursed Milking & Evil Ram: Holding an empty bucket yields Cursed Milk that purges effects but afflicts the drinker with severe nausea and weakness (10s CD). When empty-handed, performs a violent evil ram rushing forward and crippling foes (15s CD).
+morphext.metamorph.desc.ac_anti_chicken_egg=Antimatter Egg Laying: Lays an antimatter void egg accompanied by void particles and a micro gravity repulsion pulse (10s CD). Passively immune to all fall damage.
+morphext.metamorph.desc.ac_demon_sheep_shear=Demon Shearing & Fire Ring: Holding shears consumes durability to shear demon wool, netherrack, and blaze powder while detonating a fiery burst (12s CD). When empty-handed, unleashes an expanding ring of raging hellfire incinerating nearby enemies (15s CD).
+
+# Items and Custom Stack Names
+item.morphext_patch_abyssalcraft.cursed_milk.name=Abyssal Cursed Milk
+item.morphext_patch_abyssalcraft.cursed_milk.desc=Clears potion effects, but the abyssal void afflicts the drinker with nausea and weakness...
+item.morphext_patch_abyssalcraft.demon_wool.name=Demon Wool
+item.morphext_patch_abyssalcraft.anti_egg.name=Antimatter Void Egg

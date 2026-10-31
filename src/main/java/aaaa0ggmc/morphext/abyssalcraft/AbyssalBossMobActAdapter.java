@@ -82,7 +82,63 @@ public class AbyssalBossMobActAdapter implements SafeMobActAction.IMobActAdapter
             }
         }
 
-        // 5. 修格斯系列 (Shoggoth) 原生强酸喷吐
+        // === 5. 深渊特殊动物联动动作 (Abyssal Special Animal Native Actions) ===
+        // 5.1 反物质牛 (Anti-Cow) 挤奶与反冲脉冲
+        if (name.contains("anticow") || (name.contains("anti") && name.contains("cow"))) {
+            player.swingArm(EnumHand.MAIN_HAND);
+            if (dummy != null) dummy.swingArm(EnumHand.MAIN_HAND);
+            mchorse.metamorph.api.abilities.IAction act = mchorse.metamorph.api.MorphManager.INSTANCE.actions.get("ac_anti_cow_milk");
+            if (act != null) {
+                act.execute(player, morph);
+                return true;
+            }
+        }
+
+        // 5.2 恶魔牛 (Demon Cow) 熔岩挤奶与地狱之火
+        if (name.contains("demoncow") || (name.contains("demon") && name.contains("cow"))) {
+            player.swingArm(EnumHand.MAIN_HAND);
+            if (dummy != null) dummy.swingArm(EnumHand.MAIN_HAND);
+            mchorse.metamorph.api.abilities.IAction act = mchorse.metamorph.api.MorphManager.INSTANCE.actions.get("ac_demon_cow_milk");
+            if (act != null) {
+                act.execute(player, morph);
+                return true;
+            }
+        }
+
+        // 5.3 邪恶牛 (Evil Cow) 诅咒挤奶与恶念冲撞
+        if (name.contains("evilcow") || (name.contains("evil") && name.contains("cow"))) {
+            player.swingArm(EnumHand.MAIN_HAND);
+            if (dummy != null) dummy.swingArm(EnumHand.MAIN_HAND);
+            mchorse.metamorph.api.abilities.IAction act = mchorse.metamorph.api.MorphManager.INSTANCE.actions.get("ac_evil_cow_milk");
+            if (act != null) {
+                act.execute(player, morph);
+                return true;
+            }
+        }
+
+        // 5.4 反物质鸡 (Anti-Chicken) 虚空下蛋
+        if (name.contains("antichicken") || (name.contains("anti") && name.contains("chicken"))) {
+            player.swingArm(EnumHand.MAIN_HAND);
+            if (dummy != null) dummy.swingArm(EnumHand.MAIN_HAND);
+            mchorse.metamorph.api.abilities.IAction act = mchorse.metamorph.api.MorphManager.INSTANCE.actions.get("ac_anti_chicken_egg");
+            if (act != null) {
+                act.execute(player, morph);
+                return true;
+            }
+        }
+
+        // 5.5 恶魔羊 (Demon Sheep) 恶魔修剪与地狱火环
+        if (name.contains("demonsheep") || (name.contains("demon") && name.contains("sheep"))) {
+            player.swingArm(EnumHand.MAIN_HAND);
+            if (dummy != null) dummy.swingArm(EnumHand.MAIN_HAND);
+            mchorse.metamorph.api.abilities.IAction act = mchorse.metamorph.api.MorphManager.INSTANCE.actions.get("ac_demon_sheep_shear");
+            if (act != null) {
+                act.execute(player, morph);
+                return true;
+            }
+        }
+
+        // 6. 修格斯系列 (Shoggoth) 原生强酸喷吐
         if (name.contains("shoggoth")) {
             player.swingArm(EnumHand.MAIN_HAND);
             dummy.swingArm(EnumHand.MAIN_HAND);

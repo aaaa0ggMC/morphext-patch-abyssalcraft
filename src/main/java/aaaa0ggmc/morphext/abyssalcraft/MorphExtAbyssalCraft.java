@@ -2,6 +2,11 @@ package aaaa0ggmc.morphext.abyssalcraft;
 
 import aaaa0ggmc.morphext.abyssalcraft.action.AbyssalActions;
 import aaaa0ggmc.morphext.abyssalcraft.action.AbyssalBossActions;
+import aaaa0ggmc.morphext.abyssalcraft.action.AntiChickenEggAction;
+import aaaa0ggmc.morphext.abyssalcraft.action.AntiCowMilkAction;
+import aaaa0ggmc.morphext.abyssalcraft.action.DemonCowMilkAction;
+import aaaa0ggmc.morphext.abyssalcraft.action.DemonSheepShearAction;
+import aaaa0ggmc.morphext.abyssalcraft.action.EvilCowMilkAction;
 import mchorse.metamorph.api.MorphManager;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.Mod;
@@ -42,12 +47,20 @@ public class MorphExtAbyssalCraft {
     @Mod.EventHandler
     public void init(FMLInitializationEvent event) {
         MinecraftForge.EVENT_BUS.register(MorphBossAdaptHandler.class);
+        MinecraftForge.EVENT_BUS.register(EvilCowMilkAction.class);
         aaaa0ggmc.morphext.integration.metamorph.SafeMobActAction.registerAdapter(new AbyssalBossMobActAdapter());
         proxy.init(event);
         LOGGER.info("[morphext-abyssalcraft] Initialized boss adapt handler, mob act adapter, and proxies");
     }
 
     private void registerActions() {
+        // 深渊特殊动物联动动作
+        MorphManager.INSTANCE.actions.put("ac_anti_cow_milk", new AntiCowMilkAction());
+        MorphManager.INSTANCE.actions.put("ac_demon_cow_milk", new DemonCowMilkAction());
+        MorphManager.INSTANCE.actions.put("ac_evil_cow_milk", new EvilCowMilkAction());
+        MorphManager.INSTANCE.actions.put("ac_anti_chicken_egg", new AntiChickenEggAction());
+        MorphManager.INSTANCE.actions.put("ac_demon_sheep_shear", new DemonSheepShearAction());
+
         // 深渊普通生物核心动作
         MorphManager.INSTANCE.actions.put("ac_acid_spit", new AbyssalActions.AcidSpit());
         MorphManager.INSTANCE.actions.put("ac_shoggoth_ooze", new AbyssalActions.ShoggothOoze());

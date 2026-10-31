@@ -1563,7 +1563,7 @@
   },
   "abyssalcraft:antichicken": {
     "abilities": [
-      "glide"
+      "prevent_fall"
     ],
     "immunities": [
       "abyssalcraft:antimatter",
@@ -1572,16 +1572,16 @@
       "potion.antimatter"
     ],
     "damageImmunities": [
-      "antimatter"
+      "antimatter",
+      "fall"
     ],
     "actions": [
-      "ac_anti_implosion",
-      "ac_anti_matter_blast"
+      "ac_anti_chicken_egg"
     ]
   },
   "abyssalcraft.antichicken": {
     "abilities": [
-      "glide"
+      "prevent_fall"
     ],
     "immunities": [
       "abyssalcraft:antimatter",
@@ -1590,11 +1590,11 @@
       "potion.antimatter"
     ],
     "damageImmunities": [
-      "antimatter"
+      "antimatter",
+      "fall"
     ],
     "actions": [
-      "ac_anti_implosion",
-      "ac_anti_matter_blast"
+      "ac_anti_chicken_egg"
     ]
   },
   "abyssalcraft:anticow": {
@@ -1609,8 +1609,7 @@
       "antimatter"
     ],
     "actions": [
-      "ac_anti_implosion",
-      "ac_anti_matter_blast"
+      "ac_anti_cow_milk"
     ]
   },
   "abyssalcraft.anticow": {
@@ -1625,8 +1624,7 @@
       "antimatter"
     ],
     "actions": [
-      "ac_anti_implosion",
-      "ac_anti_matter_blast"
+      "ac_anti_cow_milk"
     ]
   },
   "abyssalcraft:antipig": {
@@ -1704,8 +1702,7 @@
       "onFire"
     ],
     "actions": [
-      "ac_ghoul_pounce",
-      "ac_remnant_screech"
+      "ac_evil_cow_milk"
     ]
   },
   "abyssalcraft.evilcow": {
@@ -1719,8 +1716,7 @@
       "onFire"
     ],
     "actions": [
-      "ac_ghoul_pounce",
-      "ac_remnant_screech"
+      "ac_evil_cow_milk"
     ]
   },
   "abyssalcraft:evilpig": {
@@ -1848,7 +1844,7 @@
       "onFire"
     ],
     "actions": [
-      "ac_dread_charge"
+      "ac_demon_cow_milk"
     ]
   },
   "abyssalcraft.demoncow": {
@@ -1870,7 +1866,7 @@
       "onFire"
     ],
     "actions": [
-      "ac_dread_charge"
+      "ac_demon_cow_milk"
     ]
   },
   "abyssalcraft:demonpig": {
@@ -1936,7 +1932,7 @@
       "onFire"
     ],
     "actions": [
-      "ac_dread_charge"
+      "ac_demon_sheep_shear"
     ]
   },
   "abyssalcraft.demonsheep": {
@@ -1958,7 +1954,7 @@
       "onFire"
     ],
     "actions": [
-      "ac_dread_charge"
+      "ac_demon_sheep_shear"
     ]
   },
   "abyssalcraft:ghoul": {
