@@ -1,6 +1,7 @@
 {
   "abyssalcraft:lessershoggoth": {
     "abilities": [
+      "ac_shoggoth_acid",
       "climb",
       "water_breath",
       "swim"
@@ -28,11 +29,13 @@
     ],
     "actions": [
       "ac_acid_spit",
+      "ac_shoggoth_ooze",
       "ac_acid_melt"
     ]
   },
   "abyssalcraft.lessershoggoth": {
     "abilities": [
+      "ac_shoggoth_acid",
       "climb",
       "water_breath",
       "swim"
@@ -60,11 +63,13 @@
     ],
     "actions": [
       "ac_acid_spit",
+      "ac_shoggoth_ooze",
       "ac_acid_melt"
     ]
   },
   "abyssalcraft:shoggoth": {
     "abilities": [
+      "ac_shoggoth_acid",
       "climb",
       "water_breath",
       "swim"
@@ -98,6 +103,7 @@
   },
   "abyssalcraft.shoggoth": {
     "abilities": [
+      "ac_shoggoth_acid",
       "climb",
       "water_breath",
       "swim"
@@ -131,6 +137,7 @@
   },
   "abyssalcraft:greatershoggoth": {
     "abilities": [
+      "ac_shoggoth_acid",
       "climb",
       "water_breath",
       "swim"
@@ -164,6 +171,7 @@
   },
   "abyssalcraft.greatershoggoth": {
     "abilities": [
+      "ac_shoggoth_acid",
       "climb",
       "water_breath",
       "swim"
@@ -491,6 +499,7 @@
   },
   "abyssalcraft:dreadling": {
     "abilities": [
+      "ac_dread_plague",
       "climb",
       "night_vision",
       "sun_allergy",
@@ -517,6 +526,7 @@
   },
   "abyssalcraft.dreadling": {
     "abilities": [
+      "ac_dread_plague",
       "climb",
       "night_vision",
       "sun_allergy",
@@ -543,6 +553,7 @@
   },
   "abyssalcraft:dreadspawn": {
     "abilities": [
+      "ac_dread_plague",
       "night_vision",
       "sun_allergy"
     ],
@@ -567,6 +578,7 @@
   },
   "abyssalcraft.dreadspawn": {
     "abilities": [
+      "ac_dread_plague",
       "night_vision",
       "sun_allergy"
     ],
@@ -591,6 +603,7 @@
   },
   "abyssalcraft:greaterdreadspawn": {
     "abilities": [
+      "ac_dread_plague",
       "night_vision",
       "sun_allergy"
     ],
@@ -617,6 +630,7 @@
   },
   "abyssalcraft.greaterdreadspawn": {
     "abilities": [
+      "ac_dread_plague",
       "night_vision",
       "sun_allergy"
     ],
@@ -643,15 +657,17 @@
   },
   "abyssalcraft:dreadguard": {
     "abilities": [
+      "ac_dread_plague",
       "night_vision",
-      "sun_allergy",
       "rotten"
     ],
     "actions": [
+      "ac_dread_katana",
       "ac_dread_slam",
       "ac_dread_barrage",
       "ac_dread_slug",
-      "ac_dread_charge"
+      "ac_dread_charge",
+      "ac_dread_roar"
     ],
     "immunities": [
       "abyssalcraft:dplague",
@@ -669,15 +685,17 @@
   },
   "abyssalcraft.dreadguard": {
     "abilities": [
+      "ac_dread_plague",
       "night_vision",
-      "sun_allergy",
       "rotten"
     ],
     "actions": [
+      "ac_dread_katana",
       "ac_dread_slam",
       "ac_dread_barrage",
       "ac_dread_slug",
-      "ac_dread_charge"
+      "ac_dread_charge",
+      "ac_dread_roar"
     ],
     "immunities": [
       "abyssalcraft:dplague",
@@ -801,6 +819,8 @@
   },
   "abyssalcraft:dreadgolem": {
     "abilities": [
+      "ac_dreadgolem_toughness",
+      "ac_dread_plague",
       "prevent_fall",
       "step_up"
     ],
@@ -811,10 +831,13 @@
       "potion.dplague"
     ],
     "damageImmunities": [
+      "cactus",
       "dread",
+      "drown",
       "fall",
       "hotFloor",
       "inFire",
+      "inWall",
       "lava",
       "onFire"
     ],
@@ -826,6 +849,8 @@
   },
   "abyssalcraft.dreadgolem": {
     "abilities": [
+      "ac_dreadgolem_toughness",
+      "ac_dread_plague",
       "prevent_fall",
       "step_up"
     ],
@@ -836,10 +861,13 @@
       "potion.dplague"
     ],
     "damageImmunities": [
+      "cactus",
       "dread",
+      "drown",
       "fall",
       "hotFloor",
       "inFire",
+      "inWall",
       "lava",
       "onFire"
     ],
@@ -1465,6 +1493,7 @@
   },
   "abyssalcraft:antizombie": {
     "abilities": [
+      "ac_antimatter_annihilation",
       "rotten"
     ],
     "immunities": [
@@ -1479,6 +1508,7 @@
       "antimatter"
     ],
     "actions": [
+      "ac_anti_player_slash",
       "ac_antimatter_burst",
       "ac_anti_matter_blast",
       "ac_anti_implosion"
@@ -1486,6 +1516,7 @@
   },
   "abyssalcraft.antizombie": {
     "abilities": [
+      "ac_antimatter_annihilation",
       "rotten"
     ],
     "immunities": [
@@ -1500,6 +1531,7 @@
       "antimatter"
     ],
     "actions": [
+      "ac_anti_player_slash",
       "ac_antimatter_burst",
       "ac_anti_matter_blast",
       "ac_anti_implosion"
@@ -1507,6 +1539,7 @@
   },
   "abyssalcraft:antiskeleton": {
     "abilities": [
+      "ac_antimatter_annihilation",
       "sun_allergy",
       "rotten"
     ],
@@ -1522,6 +1555,7 @@
       "antimatter"
     ],
     "actions": [
+      "ac_anti_player_slash",
       "ac_antimatter_burst",
       "ac_anti_matter_blast",
       "ac_anti_implosion"
@@ -1529,6 +1563,7 @@
   },
   "abyssalcraft.antiskeleton": {
     "abilities": [
+      "ac_antimatter_annihilation",
       "sun_allergy",
       "rotten"
     ],
@@ -1544,6 +1579,7 @@
       "antimatter"
     ],
     "actions": [
+      "ac_anti_player_slash",
       "ac_antimatter_burst",
       "ac_anti_matter_blast",
       "ac_anti_implosion"
@@ -1551,6 +1587,7 @@
   },
   "abyssalcraft:antispider": {
     "abilities": [
+      "ac_antimatter_annihilation",
       "climb"
     ],
     "immunities": [
@@ -1572,6 +1609,7 @@
   },
   "abyssalcraft.antispider": {
     "abilities": [
+      "ac_antimatter_annihilation",
       "climb"
     ],
     "immunities": [
@@ -1592,7 +1630,9 @@
     ]
   },
   "abyssalcraft:anticreeper": {
-    "abilities": [],
+    "abilities": [
+      "ac_antimatter_annihilation"
+    ],
     "immunities": [
       "abyssalcraft:antimatter",
       "antimatter",
@@ -1609,7 +1649,9 @@
     ]
   },
   "abyssalcraft.anticreeper": {
-    "abilities": [],
+    "abilities": [
+      "ac_antimatter_annihilation"
+    ],
     "immunities": [
       "abyssalcraft:antimatter",
       "antimatter",
@@ -1627,6 +1669,7 @@
   },
   "abyssalcraft:antibat": {
     "abilities": [
+      "ac_antimatter_annihilation",
       "fly",
       "prevent_fall"
     ],
@@ -1647,6 +1690,7 @@
   },
   "abyssalcraft.antibat": {
     "abilities": [
+      "ac_antimatter_annihilation",
       "fly",
       "prevent_fall"
     ],
@@ -1667,6 +1711,7 @@
   },
   "abyssalcraft:antichicken": {
     "abilities": [
+      "ac_antimatter_annihilation",
       "prevent_fall"
     ],
     "immunities": [
@@ -1686,6 +1731,7 @@
   },
   "abyssalcraft.antichicken": {
     "abilities": [
+      "ac_antimatter_annihilation",
       "prevent_fall"
     ],
     "immunities": [
@@ -1704,7 +1750,9 @@
     ]
   },
   "abyssalcraft:anticow": {
-    "abilities": [],
+    "abilities": [
+      "ac_antimatter_annihilation"
+    ],
     "immunities": [
       "abyssalcraft:antimatter",
       "antimatter",
@@ -1720,7 +1768,9 @@
     ]
   },
   "abyssalcraft.anticow": {
-    "abilities": [],
+    "abilities": [
+      "ac_antimatter_annihilation"
+    ],
     "immunities": [
       "abyssalcraft:antimatter",
       "antimatter",
@@ -1736,7 +1786,9 @@
     ]
   },
   "abyssalcraft:antipig": {
-    "abilities": [],
+    "abilities": [
+      "ac_antimatter_annihilation"
+    ],
     "immunities": [
       "abyssalcraft:antimatter",
       "antimatter",
@@ -1752,7 +1804,9 @@
     ]
   },
   "abyssalcraft.antipig": {
-    "abilities": [],
+    "abilities": [
+      "ac_antimatter_annihilation"
+    ],
     "immunities": [
       "abyssalcraft:antimatter",
       "antimatter",
@@ -2410,7 +2464,9 @@
     ]
   },
   "abyssalcraft:antiplayer": {
-    "abilities": [],
+    "abilities": [
+      "ac_antimatter_annihilation"
+    ],
     "immunities": [
       "abyssalcraft:antimatter",
       "antimatter",
@@ -2421,13 +2477,16 @@
       "antimatter"
     ],
     "actions": [
+      "ac_anti_player_slash",
       "ac_antimatter_burst",
       "ac_anti_matter_blast",
       "ac_anti_implosion"
     ]
   },
   "abyssalcraft.antiplayer": {
-    "abilities": [],
+    "abilities": [
+      "ac_antimatter_annihilation"
+    ],
     "immunities": [
       "abyssalcraft:antimatter",
       "antimatter",
@@ -2438,6 +2497,7 @@
       "antimatter"
     ],
     "actions": [
+      "ac_anti_player_slash",
       "ac_antimatter_burst",
       "ac_anti_matter_blast",
       "ac_anti_implosion"

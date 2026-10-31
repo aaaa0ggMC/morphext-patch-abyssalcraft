@@ -7,6 +7,7 @@ morphext.metamorph.action.ac_dread_charge=恐惧充能弹
 morphext.metamorph.action.ac_dread_slug=恐惧蛞蝓弹
 morphext.metamorph.action.ac_dread_barrage=恐惧弹幕
 morphext.metamorph.action.ac_dread_slam=战刃撼地猛击
+morphext.metamorph.action.ac_dread_katana=重型战刃撼地猛击
 morphext.metamorph.action.ac_dread_roar=恐惧战吼
 morphext.metamorph.action.ac_spectral_fireball=幽灵龙息
 morphext.metamorph.action.ac_ghoul_pounce=食尸鬼飞扑撕咬
@@ -20,6 +21,7 @@ morphext.metamorph.action.ac_shadow_collapse=暗影坍缩
 morphext.metamorph.action.ac_anti_implosion=反物质内爆
 morphext.metamorph.action.ac_antimatter_burst=反物质微粒爆发
 morphext.metamorph.action.ac_anti_creeper_fuse=反物质湮灭脉冲
+morphext.metamorph.action.ac_anti_player_slash=反物质次元斩击
 morphext.metamorph.action.ac_anti_matter_blast=反物质脉冲
 morphext.metamorph.action.ac_jzahar_wither_salvo=古神凋灵齐射
 morphext.metamorph.action.ac_jzahar_shout_blast=终焉咆哮
@@ -48,7 +50,8 @@ morphext.metamorph.desc.ac_acid_melt=酸雾腐蚀：向身前扇形区域喷射�
 morphext.metamorph.desc.ac_dread_charge=恐惧充能弹：向前发射一颗充斥着恐惧原质的爆炸火球，命中后剧烈爆炸并扩散恐惧瘟疫。
 morphext.metamorph.desc.ac_dread_slug=恐惧蛞蝓弹：极速向前射出一枚穿甲恐惧蛞蝓，速度极快，命中附加恐惧瘟疫。
 morphext.metamorph.desc.ac_dread_barrage=恐惧弹幕：向准星方向连续齐射三枚恐惧重弹，对扇形区域形成毁灭性压制。
-morphext.metamorph.desc.ac_dread_slam=恐惧撼地猛击：重型战刃全力撼击地面，震碎地面激起冲击波与恐惧烈焰粒子，将身前5格内敌人高高击飞并扩散恐惧瘟疫（冷却12秒）。
+morphext.metamorph.desc.ac_dread_slam=恐惧撼地猛击：重型战刃全力撼击地面，震碎地面激起红色恐惧熔岩冲击波并震飞身前敌人，造成真实恐惧直伤并扩散恐惧瘟疫（冷却6秒）。
+morphext.metamorph.desc.ac_dread_katana=重型战刃撼地猛击：恐惧守卫挥舞重型战刃全力撼击地面，激起红色恐惧熔岩冲击波并震飞身前敌人，造成真实恐惧直伤并扩散恐惧瘟疫（冷却6秒）。
 morphext.metamorph.desc.ac_dread_roar=恐惧战吼：仰天发出令人战栗的恐惧怒吼，震慑并虚弱周围敌人，施加迟缓与恐惧瘟疫。
 morphext.metamorph.desc.ac_spectral_fireball=幽灵龙息：喷吐出一枚充满凋灵原质的幽灵龙息火球，命中后剧烈爆炸并扩散凋灵诅咒。
 morphext.metamorph.desc.ac_ghoul_pounce=食尸鬼飞扑撕咬：向前迅猛飞扑撕咬敌人，造成抓挠撕裂伤害并施加珊瑚瘟疫、饥饿与迟缓（冷却3.5秒）。
@@ -61,7 +64,8 @@ morphext.metamorph.desc.ac_shadow_slash=暗影巨爪挥击：挥舞暗影巨爪�
 morphext.metamorph.desc.ac_shadow_collapse=暗影坍缩：释放暗影引力场，将周围所有实体强行吸附至身旁并造成暗影重创与失明。
 morphext.metamorph.desc.ac_anti_implosion=反物质内爆：引发反物质坍缩微型反应，逆向引爆周围空间，造成大量湮灭伤害并附加强烈反物质效果。
 morphext.metamorph.desc.ac_antimatter_burst=反物质微粒爆发：凝聚并引爆高浓度反物质微粒，对周围7格内实体施加反物质状态，接触正物质产生湮灭冲击波与强力击退（冷却15秒）。
-morphext.metamorph.desc.ac_anti_creeper_fuse=反物质苦力怕湮灭脉冲：引爆体内极度危险的反物质内核，激荡出大范围高能湮灭能量波，豁免宿主自身，对周围10格敌人造成毁灭性反物质重创与湮灭效果，不破坏方块（冷却20秒）。
+morphext.metamorph.desc.ac_anti_creeper_fuse=反物质苦力怕湮灭脉冲：高能反物质聚变脉冲，全域10格无方块破坏且宿主100%免伤，对周围所有敌人造成毁灭性反物质重创与湮灭效果（冷却10秒）。
+morphext.metamorph.desc.ac_anti_player_slash=反物质次元斩击：正常释放向前突进横扫反物质剑气，造成高额反物质伤害、反物质侵蚀与迟缓；潜行释放向后反冲规避，引爆反物质闪光击退周围敌人并赋予自身移速提升（冷却3秒）。
 morphext.metamorph.desc.ac_anti_matter_blast=反物质脉冲：引爆前方空间的反物质能量，对大范围敌人造成湮灭冲击。
 morphext.metamorph.desc.ac_jzahar_oblivion=终焉湮灭：召唤奥穆托尔黑洞降临，碾碎并湮灭范围内一切生物，附加凋灵与浮空诅咒。
 
@@ -84,6 +88,22 @@ morphext.metamorph.desc.ac_asorah_dive=阿索拉俯冲强袭：拍打双翼并�
 morphext.ability.ac_photophobia.name=暗影畏光与暗夜亲和
 morphext.ability.ac_photophobia.desc=暗影畏光与暗夜亲和：暴露在日光直射或强光下（亮度≥12）将浑身冒烟并陷入虚弱与迟缓；身处黑暗（亮度≤7）则觉醒暗影亲和，获得夜视与抗性提升。近战攻击命中附带致盲与暗影凋零。
 morphext.metamorph.desc.ac_photophobia=暗影畏光与暗夜亲和：暴露在强光下（亮度≥12）陷入虚弱与迟缓；身处黑暗（亮度≤7）获得夜视与抗性提升，近战攻击附带致盲与凋零。
+
+morphext.ability.ac_dread_plague.name=恐惧瘟疫传染链
+morphext.ability.ac_dread_plague.desc=恐惧瘟疫传染链：近战攻击与弹射物命中施加恐惧瘟疫（5秒）与真实恐惧直伤；完全免疫恐惧伤害、火焰与恐惧瘟疫负面状态。
+morphext.metamorph.desc.ac_dread_plague=恐惧瘟疫传染链：近战攻击施加恐惧瘟疫与恐惧直伤，完全免疫恐惧伤害、火焰与恐惧瘟疫。
+
+morphext.ability.ac_dreadgolem_toughness.name=恐惧巨像铁躯
+morphext.ability.ac_dreadgolem_toughness.desc=恐惧巨像铁躯：高额护甲韧性与击退抗性，免疫溺水、仙人掌、窒息与摔落伤害，受到物理伤害激荡沉重金属钝响并大幅减免伤害。
+morphext.metamorph.desc.ac_dreadgolem_toughness=恐惧巨像铁躯：免疫溺水、仙人掌、窒息与摔落，高额护甲韧性与击退抗性。
+
+morphext.ability.ac_antimatter_annihilation.name=反物质湮灭反应
+morphext.ability.ac_antimatter_annihilation.desc=反物质湮灭反应：接触正物质实体时发生微型物质湮灭反应，造成真实反物质直伤与击退；近战攻击附带反物质侵蚀；完全免疫反物质伤害与反物质药水负面。
+morphext.metamorph.desc.ac_antimatter_annihilation=反物质湮灭反应：接触正物质产生湮灭直伤与击退，攻击附带反物质侵蚀，完全免疫反物质伤害。
+
+morphext.ability.ac_shoggoth_acid.name=修格斯高腐蚀强酸体质
+morphext.ability.ac_shoggoth_acid.desc=修格斯高腐蚀强酸体质：完全免疫修格斯酸液、仙人掌、窒息与溺水；弹射物软体跳弹免伤；免疫珊瑚瘟疫、恐惧瘟疫、反物质与中毒；水下两栖呼吸；近战命中造成严重迟缓并腐蚀防具。
+morphext.metamorph.desc.ac_shoggoth_acid=修格斯高腐蚀强酸体质：免疫强酸、弹射物、仙人掌、窒息与古神瘟疫，近战附带腐蚀减速。
 
 # 深渊特殊动物联动动作
 morphext.metamorph.desc.ac_anti_cow_milk=反物质挤奶与脉冲：手持空桶可挤出高危的液态反物质桶（冷却10秒）；未手持空桶时则释放反物质反冲脉冲，震退击飞周围4格内生物并造成反物质湮灭（冷却15秒）。

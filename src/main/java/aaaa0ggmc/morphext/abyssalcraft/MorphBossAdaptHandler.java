@@ -115,6 +115,16 @@ public final class MorphBossAdaptHandler {
                 if (isMorphedAsEldritch(currentMorph)) {
                     neutralizeBlackHolePull(player);
                 }
+
+                // 反物质形态实体碰撞湮灭检测
+                if (currentMorph != null && currentMorph.name != null && currentMorph.name.toLowerCase().contains("anti")) {
+                    List<EntityLivingBase> colliding = player.world.getEntitiesWithinAABB(EntityLivingBase.class,
+                            player.getEntityBoundingBox().grow(0.15D),
+                            e -> e != player && e.isEntityAlive() && !e.isOnSameTeam(player));
+                    for (EntityLivingBase target : colliding) {
+                        aaaa0ggmc.morphext.abyssalcraft.passive.AntimatterAnnihilationPassive.handleCollisionAnnihilation(player, target);
+                    }
+                }
             }
         }
 
@@ -264,14 +274,26 @@ public final class MorphBossAdaptHandler {
             return;
         }
 
-        // 暗影形态近战攻击被动触发：对被攻击目标施加致盲与暗影凋零
+        // 变身攻击被动触发 (暗影致盲、恐惧瘟疫、反物质湮灭、修格斯强酸)
         if (event.getSource() != null && event.getSource().getTrueSource() instanceof EntityPlayer) {
             EntityPlayer player = (EntityPlayer) event.getSource().getTrueSource();
             IMorphing morphing = Morphing.get(player);
             if (morphing != null && morphing.isMorphed()) {
                 AbstractMorph morph = morphing.getCurrentMorph();
-                if (morph != null && morph.name != null && morph.name.toLowerCase().contains("shadow")) {
-                    aaaa0ggmc.morphext.abyssalcraft.passive.ShadowPhotophobiaPassive.handleAttackProc(player, event.getEntityLiving());
+                if (morph != null && morph.name != null) {
+                    String name = morph.name.toLowerCase();
+                    if (name.contains("shadow")) {
+                        aaaa0ggmc.morphext.abyssalcraft.passive.ShadowPhotophobiaPassive.handleAttackProc(player, event.getEntityLiving());
+                    }
+                    if (name.contains("dread")) {
+                        aaaa0ggmc.morphext.abyssalcraft.passive.DreadPlaguePassive.handleAttackProc(player, event.getEntityLiving());
+                    }
+                    if (name.contains("anti")) {
+                        aaaa0ggmc.morphext.abyssalcraft.passive.AntimatterAnnihilationPassive.handleAttackProc(player, event.getEntityLiving());
+                    }
+                    if (name.contains("shoggoth")) {
+                        aaaa0ggmc.morphext.abyssalcraft.passive.ShoggothAcidPassive.handleAttackProc(player, event.getEntityLiving());
+                    }
                 }
             }
         }
@@ -323,9 +345,35 @@ public final class MorphBossAdaptHandler {
                     }
                 }
 
-                // 6. 查伽洛斯恐惧免伤
-                if (mName.contains("chagaroth")) {
-                    if (source == com.shinoow.abyssalcraft.api.AbyssalCraftAPI.dread) {
+                // 6. 查伽洛斯与恐惧生物免伤 (Dread & Fire & Golem)
+                if (mName.contains("dread") || mName.contains("chagaroth")) {
+                    if (source == com.shinoow.abyssalcraft.api.AbyssalCraftAPI.dread || "dread".equalsIgnoreCase(source.getDamageType()) || source.isFireDamage()) {
+                        return true;
+                    }
+                    if (mName.contains("dreadgolem") || mName.contains("golem")) {
+                        if (source == DamageSource.DROWN || source == DamageSource.CACTUS || source == DamageSource.IN_WALL || source == DamageSource.FALL) {
+                            return true;
+                        }
+                    }
+                }
+
+                // 7. 反物质生物绝对免疫反物质伤害
+                if (mName.contains("anti")) {
+                    if (source == com.shinoow.abyssalcraft.api.AbyssalCraftAPI.antimatter || "antimatter".equalsIgnoreCase(source.getDamageType())) {
+                        return true;
+                    }
+                }
+
+                // 8. 修格斯弹射物跳弹抗性、强酸、仙人掌、窒息、溺水免伤
+                if (mName.contains("shoggoth")) {
+                    if (source.isProjectile()) {
+                        player.world.playSound(null, player.posX, player.posY, player.posZ,
+                                net.minecraft.init.SoundEvents.ENTITY_SLIME_JUMP, SoundCategory.PLAYERS, 1.0F, 1.0F);
+                        return true;
+                    }
+                    if (source == com.shinoow.abyssalcraft.api.AbyssalCraftAPI.acid || "acid".equalsIgnoreCase(source.getDamageType())
+                            || "shoggoth_acid".equalsIgnoreCase(source.getDamageType())
+                            || source == DamageSource.CACTUS || source == DamageSource.IN_WALL || source == DamageSource.DROWN) {
                         return true;
                     }
                 }
@@ -335,20 +383,47 @@ public final class MorphBossAdaptHandler {
     }
 
     /**
-     * 药水负面免疫：萨克索斯/暗影形态免疫失明光环
+     * 药水负面免疫：暗影失明、恐惧瘟疫、反物质药水、修格斯古神瘟疫免疫
      */
     @SubscribeEvent(priority = EventPriority.HIGHEST)
     public static void onPotionApplicable(PotionEvent.PotionApplicableEvent event) {
         if (event.getEntityLiving() instanceof EntityPlayer) {
             EntityPlayer player = (EntityPlayer) event.getEntityLiving();
-            if (event.getPotionEffect().getPotion() == MobEffects.BLINDNESS) {
-                IMorphing morphing = Morphing.get(player);
-                if (morphing != null && morphing.isMorphed()) {
-                    AbstractMorph morph = morphing.getCurrentMorph();
-                    if (morph != null && morph.name != null) {
-                        String name = morph.name.toLowerCase();
-                        if (name.contains("sacthoth") || name.contains("shadow") || name.contains("jzahar")) {
+            IMorphing morphing = Morphing.get(player);
+            if (morphing != null && morphing.isMorphed()) {
+                AbstractMorph morph = morphing.getCurrentMorph();
+                if (morph != null && morph.name != null) {
+                    String name = morph.name.toLowerCase();
+                    net.minecraft.potion.Potion pot = event.getPotionEffect().getPotion();
+
+                    // 暗影形态免疫失明
+                    if (pot == MobEffects.BLINDNESS && (name.contains("sacthoth") || name.contains("shadow") || name.contains("jzahar"))) {
+                        event.setResult(Event.Result.DENY);
+                        return;
+                    }
+
+                    // 恐惧形态免疫恐惧瘟疫
+                    if (name.contains("dread") && com.shinoow.abyssalcraft.api.AbyssalCraftAPI.dread_plague != null
+                            && pot == com.shinoow.abyssalcraft.api.AbyssalCraftAPI.dread_plague) {
+                        event.setResult(Event.Result.DENY);
+                        return;
+                    }
+
+                    // 反物质形态免疫反物质药水
+                    if (name.contains("anti") && com.shinoow.abyssalcraft.api.AbyssalCraftAPI.antimatter_potion != null
+                            && pot == com.shinoow.abyssalcraft.api.AbyssalCraftAPI.antimatter_potion) {
+                        event.setResult(Event.Result.DENY);
+                        return;
+                    }
+
+                    // 修格斯形态免疫珊瑚瘟疫、恐惧瘟疫、反物质药水与中毒
+                    if (name.contains("shoggoth")) {
+                        if (pot == MobEffects.POISON
+                                || (com.shinoow.abyssalcraft.api.AbyssalCraftAPI.coralium_plague != null && pot == com.shinoow.abyssalcraft.api.AbyssalCraftAPI.coralium_plague)
+                                || (com.shinoow.abyssalcraft.api.AbyssalCraftAPI.dread_plague != null && pot == com.shinoow.abyssalcraft.api.AbyssalCraftAPI.dread_plague)
+                                || (com.shinoow.abyssalcraft.api.AbyssalCraftAPI.antimatter_potion != null && pot == com.shinoow.abyssalcraft.api.AbyssalCraftAPI.antimatter_potion)) {
                             event.setResult(Event.Result.DENY);
+                            return;
                         }
                     }
                 }

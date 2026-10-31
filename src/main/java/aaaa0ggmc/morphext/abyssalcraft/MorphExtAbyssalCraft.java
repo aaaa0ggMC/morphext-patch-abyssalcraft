@@ -69,12 +69,14 @@ public class MorphExtAbyssalCraft {
 
         // 恐惧生物核心动作
         MorphManager.INSTANCE.actions.put("ac_dread_slam", new AbyssalActions.DreadSlamAction());
+        MorphManager.INSTANCE.actions.put("ac_dread_katana", new AbyssalActions.DreadKatanaAction());
         MorphManager.INSTANCE.actions.put("ac_dread_charge", new AbyssalActions.DreadCharge());
         MorphManager.INSTANCE.actions.put("ac_dread_slug", new AbyssalActions.DreadSlug());
         MorphManager.INSTANCE.actions.put("ac_dread_barrage", new AbyssalActions.DreadBarrage());
         MorphManager.INSTANCE.actions.put("ac_dread_roar", new AbyssalActions.DreadRoar());
 
         // 反物质生物核心动作
+        MorphManager.INSTANCE.actions.put("ac_anti_player_slash", new AbyssalActions.AntiPlayerSlashAction());
         MorphManager.INSTANCE.actions.put("ac_antimatter_burst", new AbyssalActions.AntimatterBurstAction());
         MorphManager.INSTANCE.actions.put("ac_anti_creeper_fuse", new AbyssalActions.AntiCreeperAnnihilationAction());
         MorphManager.INSTANCE.actions.put("ac_anti_implosion", new AbyssalActions.AntiImplosion());
@@ -111,9 +113,25 @@ public class MorphExtAbyssalCraft {
         MorphManager.INSTANCE.actions.put("ac_dragon_dive", new AbyssalBossActions.DragonBossDiveRush());
         MorphManager.INSTANCE.actions.put("ac_asorah_dive", new AbyssalBossActions.DragonBossDiveRush());
 
-        // 暗影被动能力注册 (兼容 MorphExtension 与 Metamorph)
+        // 被动能力注册 (兼容 MorphExtension 与 Metamorph)
         aaaa0ggmc.morphext.abyssalcraft.passive.ShadowPhotophobiaPassive photophobia = new aaaa0ggmc.morphext.abyssalcraft.passive.ShadowPhotophobiaPassive();
         aaaa0ggmc.morphext.ability.AbilityRegistry.register(photophobia);
         MorphManager.INSTANCE.abilities.put("ac_photophobia", photophobia);
+
+        aaaa0ggmc.morphext.abyssalcraft.passive.DreadPlaguePassive dreadPlague = new aaaa0ggmc.morphext.abyssalcraft.passive.DreadPlaguePassive();
+        aaaa0ggmc.morphext.ability.AbilityRegistry.register(dreadPlague);
+        MorphManager.INSTANCE.abilities.put("ac_dread_plague", dreadPlague);
+
+        aaaa0ggmc.morphext.abyssalcraft.passive.DreadgolemToughnessPassive dreadgolem = new aaaa0ggmc.morphext.abyssalcraft.passive.DreadgolemToughnessPassive();
+        aaaa0ggmc.morphext.ability.AbilityRegistry.register(dreadgolem);
+        MorphManager.INSTANCE.abilities.put("ac_dreadgolem_toughness", dreadgolem);
+
+        aaaa0ggmc.morphext.abyssalcraft.passive.AntimatterAnnihilationPassive antimatter = new aaaa0ggmc.morphext.abyssalcraft.passive.AntimatterAnnihilationPassive();
+        aaaa0ggmc.morphext.ability.AbilityRegistry.register(antimatter);
+        MorphManager.INSTANCE.abilities.put("ac_antimatter_annihilation", antimatter);
+
+        aaaa0ggmc.morphext.abyssalcraft.passive.ShoggothAcidPassive shoggothAcid = new aaaa0ggmc.morphext.abyssalcraft.passive.ShoggothAcidPassive();
+        aaaa0ggmc.morphext.ability.AbilityRegistry.register(shoggothAcid);
+        MorphManager.INSTANCE.abilities.put("ac_shoggoth_acid", shoggothAcid);
     }
 }

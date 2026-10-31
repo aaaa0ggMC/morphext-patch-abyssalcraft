@@ -7,6 +7,7 @@ morphext.metamorph.action.ac_dread_charge=Dread Charge
 morphext.metamorph.action.ac_dread_slug=Dread Slug
 morphext.metamorph.action.ac_dread_barrage=Dread Barrage
 morphext.metamorph.action.ac_dread_slam=Dread Slam
+morphext.metamorph.action.ac_dread_katana=Dread Katana Slam
 morphext.metamorph.action.ac_dread_roar=Dread Roar
 morphext.metamorph.action.ac_spectral_fireball=Spectral Fireball
 morphext.metamorph.action.ac_ghoul_pounce=Ghoul Pounce
@@ -20,6 +21,7 @@ morphext.metamorph.action.ac_shadow_collapse=Shadow Collapse
 morphext.metamorph.action.ac_anti_implosion=Anti Implosion
 morphext.metamorph.action.ac_antimatter_burst=Antimatter Burst
 morphext.metamorph.action.ac_anti_creeper_fuse=Antimatter Annihilation Pulse
+morphext.metamorph.action.ac_anti_player_slash=Antimatter Slash & Dash
 morphext.metamorph.action.ac_anti_matter_blast=Antimatter Blast
 morphext.metamorph.action.ac_jzahar_wither_salvo=Ancient Wither Salvo
 morphext.metamorph.action.ac_jzahar_shout_blast=The Shout Blast
@@ -48,7 +50,8 @@ morphext.metamorph.desc.ac_acid_melt=Acid Melt: Sprays caustic acid mist in a fo
 morphext.metamorph.desc.ac_dread_charge=Dread Charge: Hurls an explosive dread energy charge that explodes violently and spreads the Dread Plague.
 morphext.metamorph.desc.ac_dread_slug=Dread Slug: Fires a rapid armor-piercing dread slug projectile, inflicting Dread Plague upon impact.
 morphext.metamorph.desc.ac_dread_barrage=Dread Barrage: Discharges a concentrated salvo of three dread charges towards your crosshairs.
-morphext.metamorph.desc.ac_dread_slam=Dread Slam: Slams the ground with a heavy warblade, cracking the earth with shockwaves and dread particles, launching enemies in front 5 blocks and spreading Dread Plague (12s CD).
+morphext.metamorph.desc.ac_dread_slam=Dread Slam: Slams the ground with a heavy warblade, cracking the earth with red lava shockwaves, knocking enemies into the air and spreading Dread Plague (6s CD).
+morphext.metamorph.desc.ac_dread_katana=Dread Katana Slam: The Dreadguard brandishes a heavy warblade to slam the ground with full force, erupting red lava shockwaves, launching enemies in front into the air, and spreading Dread Plague (6s CD).
 morphext.metamorph.desc.ac_dread_roar=Dread Roar: Unleashes a terrifying dread roar that rattles surrounding enemies with fear, weakness, and plague.
 morphext.metamorph.desc.ac_spectral_fireball=Spectral Fireball: Unleashes an eldritch wither breath fireball, creating an explosion that inflicts wither curse.
 morphext.metamorph.desc.ac_ghoul_pounce=Ghoul Pounce: Lunges aggressively forward to tear into the prey, inflicting bite damage, hunger, slowness, and coralium plague (3.5s CD).
@@ -61,7 +64,8 @@ morphext.metamorph.desc.ac_shadow_slash=Shadow Slash: Sweeps massive shadow claw
 morphext.metamorph.desc.ac_shadow_collapse=Shadow Collapse: Generates a shadow gravity field, dragging nearby entities toward you with shadow damage.
 morphext.metamorph.desc.ac_anti_implosion=Anti Implosion: Triggers a localized antimatter collapse, detonating the surroundings with void annihilation.
 morphext.metamorph.desc.ac_antimatter_burst=Antimatter Burst: Condenses and unleashes high-density antimatter particles, inflicting antimatter state and an annihilation repelling shockwave on entities within 7 blocks (15s CD).
-morphext.metamorph.desc.ac_anti_creeper_fuse=Antimatter Annihilation Pulse: Detonates the internal antimatter core without block griefing, exempting the host, releasing a massive 10-block annihilation energy wave that devastates enemies with antimatter damage (20s CD).
+morphext.metamorph.desc.ac_anti_creeper_fuse=Antimatter Annihilation Pulse: High-energy antimatter fusion pulse in a 10-block radius without block destruction and 100% host immunity, devastating surrounding enemies with massive antimatter damage and annihilation (10s CD).
+morphext.metamorph.desc.ac_anti_player_slash=Antimatter Slash & Dash: Regular cast executes a forward dash sweep with antimatter blade aura, dealing heavy antimatter damage, antimatter corrosion, and slowness; sneak cast performs an evasive recoil disengage with a blinding flash, knocking enemies back and boosting movement speed (3s CD).
 morphext.metamorph.desc.ac_anti_matter_blast=Antimatter Blast: Unleashes a piercing beam of pure antimatter energy, annihilating all entities in its path.
 morphext.metamorph.desc.ac_jzahar_oblivion=Oblivion Singularity: Manifests an Omothol void singularity, crushing foes with wither and void damage.
 
@@ -84,6 +88,22 @@ morphext.metamorph.desc.ac_asorah_dive=Asorah Dive Rush: Flaps wings with a deaf
 morphext.ability.ac_photophobia.name=Shadow Photophobia & Dark Affinity
 morphext.ability.ac_photophobia.desc=Shadow Photophobia & Dark Affinity: Direct exposure to bright daylight (light >= 12) emits smoke and afflicts the host with Weakness and Slowness. Cloaked in darkness (light <= 7), awakens shadow affinity granting Night Vision and Resistance. Melee strikes inflict Blindness and Wither.
 morphext.metamorph.desc.ac_photophobia=Shadow Photophobia & Dark Affinity: Exposure to bright light (>=12) causes Weakness and Slowness. In darkness (<=7), grants Night Vision and Resistance. Melee strikes inflict Blindness and Wither.
+
+morphext.ability.ac_dread_plague.name=Dread Plague Chain
+morphext.ability.ac_dread_plague.desc=Dread Plague Chain: Melee attacks and projectiles inflict Dread Plague (5s) and true dread direct damage; provides complete immunity to dread damage, fire, and dread plague negative status.
+morphext.metamorph.desc.ac_dread_plague=Dread Plague Chain: Melee attacks inflict Dread Plague and dread damage, completely immune to dread damage, fire, and dread plague.
+
+morphext.ability.ac_dreadgolem_toughness.name=Dread Golem Iron Plating
+morphext.ability.ac_dreadgolem_toughness.desc=Dread Golem Iron Plating: High armor toughness and knockback resistance, immunity to drowning, cactus, suffocation, and fall damage; physical damage triggers heavy metallic resonance and massive damage mitigation.
+morphext.metamorph.desc.ac_dreadgolem_toughness=Dread Golem Iron Plating: Immunity to drowning, cactus, suffocation, and fall damage; high armor toughness and knockback resistance.
+
+morphext.ability.ac_antimatter_annihilation.name=Antimatter Annihilation Reaction
+morphext.ability.ac_antimatter_annihilation.desc=Antimatter Annihilation Reaction: Contact with regular matter entities triggers micro matter annihilation, dealing true antimatter direct damage and knockback; melee attacks inflict antimatter corrosion; provides complete immunity to antimatter damage and potion effects.
+morphext.metamorph.desc.ac_antimatter_annihilation=Antimatter Annihilation Reaction: Touching regular matter inflicts annihilation damage and knockback; melee attacks inflict antimatter corrosion; immune to antimatter damage.
+
+morphext.ability.ac_shoggoth_acid.name=Shoggoth Caustic Slime Form
+morphext.ability.ac_shoggoth_acid.desc=Shoggoth Caustic Slime Form: Complete immunity to shoggoth acid, cactus, suffocation, and drowning; soft gelatinous body bounces projectiles away; immune to coralium plague, dread plague, antimatter, and poison; grants underwater breathing; melee attacks cripple foes with slowness and corrode armor.
+morphext.metamorph.desc.ac_shoggoth_acid=Shoggoth Caustic Slime Form: Complete immunity to acid, projectiles, cactus, suffocation, and abyssal plagues; melee strikes inflict corrosion and slowness.
 
 # Abyssal Special Animal Interaction Actions
 morphext.metamorph.desc.ac_anti_cow_milk=Antimatter Milking & Pulse: Holding an empty bucket extracts a hazardous Liquid Antimatter Bucket (10s CD). When empty-handed, emits an antimatter recoil pulse knocking back entities within 4 blocks with void annihilation (15s CD).

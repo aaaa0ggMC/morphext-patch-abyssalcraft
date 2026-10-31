@@ -51,32 +51,39 @@ public final class AbyssalActions {
             BossNativeHelper.tagOwner(projectile, entity);
             world.spawnEntity(projectile);
             world.playSound(null, entity.posX, entity.posY, entity.posZ,
-                    SoundEvents.ENTITY_SLIME_SQUISH, SoundCategory.PLAYERS, 1.0F, 0.8F);
+                    ACSounds.shoggoth_shoot != null ? ACSounds.shoggoth_shoot : SoundEvents.ENTITY_SLIME_SQUISH,
+                    SoundCategory.PLAYERS, 1.0F, 0.8F);
             return true;
         }
     }
 
     /** 修格斯：粘液爆发（大范围减速与强酸压制） */
     public static class ShoggothOoze extends AbyssalCraftAction {
-        public ShoggothOoze() { super(120); }
+        public ShoggothOoze() { super(100); }
 
         @Override
         protected boolean executeServer(EntityLivingBase entity, AbstractMorph morph) {
             World world = entity.world;
             List<EntityLivingBase> list = findNearbyEntities(entity, 6.0D);
-            DamageSource source = entity instanceof EntityPlayer ? DamageSource.causePlayerDamage((EntityPlayer) entity) : DamageSource.causeMobDamage(entity);
+            DamageSource source = AbyssalCraftAPI.acid != null ? AbyssalCraftAPI.acid : (entity instanceof EntityPlayer ? DamageSource.causePlayerDamage((EntityPlayer) entity) : DamageSource.causeMobDamage(entity));
             for (EntityLivingBase target : list) {
                 target.attackEntityFrom(source, 7.0F);
-                target.addPotionEffect(new PotionEffect(MobEffects.SLOWNESS, 100, 3));
-                target.addPotionEffect(new PotionEffect(MobEffects.WEAKNESS, 100, 1));
+                target.addPotionEffect(new PotionEffect(MobEffects.SLOWNESS, 100, 2)); // 5秒 缓慢 III
+                target.addPotionEffect(new PotionEffect(MobEffects.WEAKNESS, 100, 0)); // 5秒 虚弱 I
             }
             if (world instanceof WorldServer) {
                 ((WorldServer) world).spawnParticle(EnumParticleTypes.SLIME,
                         entity.posX, entity.posY + 0.2D, entity.posZ,
-                        80, 2.5D, 0.3D, 2.5D, 0.1D);
+                        100, 2.8D, 0.4D, 2.8D, 0.1D);
+                ((WorldServer) world).spawnParticle(EnumParticleTypes.SPELL_MOB,
+                        entity.posX, entity.posY + 0.5D, entity.posZ,
+                        30, 2.0D, 0.3D, 2.0D, 0.0D);
             }
             world.playSound(null, entity.posX, entity.posY, entity.posZ,
-                    SoundEvents.ENTITY_SLIME_ATTACK, SoundCategory.PLAYERS, 1.5F, 0.5F);
+                    ACSounds.shoggoth_consume != null ? ACSounds.shoggoth_consume : SoundEvents.ENTITY_SLIME_ATTACK,
+                    SoundCategory.PLAYERS, 1.5F, 0.8F);
+            world.playSound(null, entity.posX, entity.posY, entity.posZ,
+                    SoundEvents.ENTITY_SLIME_ATTACK, SoundCategory.PLAYERS, 1.2F, 0.6F);
             return true;
         }
     }
@@ -145,9 +152,9 @@ public final class AbyssalActions {
         }
     }
 
-    /** 恐惧守卫：重型战刃撼地猛击 (ID: ac_dread_slam) - 震碎地面激起冲击波与恐惧粒子，击飞身前 5 格敌人 */
+    /** 恐惧守卫：重型战刃撼地猛击 (ID: ac_dread_slam / ac_dread_katana) - 震碎地面激起冲击波与恐惧粒子，击飞身前 5 格敌人 */
     public static class DreadSlamAction extends AbyssalCraftAction {
-        public DreadSlamAction() { super(240); } // 冷却 12s
+        public DreadSlamAction() { super(120); } // 冷却 6s
 
         @Override
         protected boolean executeServer(EntityLivingBase entity, AbstractMorph morph) {
@@ -164,7 +171,7 @@ public final class AbyssalActions {
             DamageSource source = AbyssalCraftAPI.dread != null ? AbyssalCraftAPI.dread : (entity instanceof EntityPlayer ? DamageSource.causePlayerDamage((EntityPlayer) entity) : DamageSource.causeMobDamage(entity));
             for (EntityLivingBase e : list) {
                 e.attackEntityFrom(source, 14.0F);
-                e.motionY += 0.65D;
+                e.motionY += 0.75D;
                 e.motionX += look.x * 0.85D;
                 e.motionZ += look.z * 0.85D;
                 e.velocityChanged = true;
@@ -183,13 +190,14 @@ public final class AbyssalActions {
                     double px = cx + Math.cos(rad) * 4.5D;
                     double pz = cz + Math.sin(rad) * 4.5D;
                     ws.spawnParticle(EnumParticleTypes.SMOKE_LARGE, px, entity.posY + 0.2D, pz, 2, 0.1, 0.2, 0.1, 0.05);
-                    ws.spawnParticle(EnumParticleTypes.LAVA, px, entity.posY + 0.2D, pz, 1, 0.0, 0.0, 0.0, 0.0);
+                    ws.spawnParticle(EnumParticleTypes.LAVA, px, entity.posY + 0.2D, pz, 2, 0.0, 0.0, 0.0, 0.0);
+                    ws.spawnParticle(EnumParticleTypes.FLAME, px, entity.posY + 0.2D, pz, 1, 0.02, 0.05, 0.02, 0.02);
                 }
                 ws.spawnParticle(EnumParticleTypes.EXPLOSION_LARGE, cx, entity.posY + 0.2D, cz, 4, 0.8, 0.2, 0.8, 0.0);
             }
 
             world.playSound(null, entity.posX, entity.posY, entity.posZ,
-                    ACSounds.dreadguard_barf, SoundCategory.HOSTILE, 1.5F, 0.8F);
+                    ACSounds.dreadguard_barf != null ? ACSounds.dreadguard_barf : SoundEvents.ENTITY_WITHER_SHOOT, SoundCategory.HOSTILE, 1.5F, 0.8F);
             world.playSound(null, entity.posX, entity.posY, entity.posZ,
                     SoundEvents.ENTITY_IRONGOLEM_ATTACK, SoundCategory.PLAYERS, 1.8F, 0.5F);
             world.playSound(null, entity.posX, entity.posY, entity.posZ,
@@ -198,6 +206,7 @@ public final class AbyssalActions {
         }
     }
     public static class DreadSlam extends DreadSlamAction {}
+    public static class DreadKatanaAction extends DreadSlamAction {}
 
     /** 阿索拉 / 幽灵龙：喷吐幽灵龙息火球 */
     public static class SpectralFireball extends AbyssalCraftAction {
@@ -548,9 +557,9 @@ public final class AbyssalActions {
         }
     }
 
-    /** 反物质苦力怕：反物质湮灭脉冲 (ID: ac_anti_creeper_fuse) - 不产生方块破坏但产生强烈的反物质能量波，豁免宿主 */
+    /** 反物质苦力怕：反物质湮灭脉冲 (ID: ac_anti_creeper_fuse) - 高能反物质聚变脉冲，全域 10 格无方块破坏且宿主 100% 免伤 */
     public static class AntiCreeperAnnihilationAction extends AbyssalCraftAction {
-        public AntiCreeperAnnihilationAction() { super(400); } // 冷却 20s
+        public AntiCreeperAnnihilationAction() { super(200); } // 冷却 10s
 
         @Override
         protected boolean executeServer(EntityLivingBase entity, AbstractMorph morph) {
@@ -561,28 +570,122 @@ public final class AbyssalActions {
             DamageSource source = AbyssalCraftAPI.antimatter != null ? AbyssalCraftAPI.antimatter : (entity instanceof EntityPlayer ? DamageSource.causePlayerDamage((EntityPlayer) entity) : DamageSource.causeMobDamage(entity));
 
             for (EntityLivingBase e : list) {
-                e.attackEntityFrom(source, 24.0F);
+                e.attackEntityFrom(source, 26.0F);
                 if (AbyssalCraftAPI.antimatter_potion != null) {
                     e.addPotionEffect(new PotionEffect(AbyssalCraftAPI.antimatter_potion, 200, 1));
                 }
                 Vec3d diff = e.getPositionVector().subtract(entity.getPositionVector()).normalize();
-                e.motionX += diff.x * 1.2D;
-                e.motionY += 0.5D;
-                e.motionZ += diff.z * 1.2D;
+                e.motionX += diff.x * 1.4D;
+                e.motionY += 0.55D;
+                e.motionZ += diff.z * 1.4D;
                 e.velocityChanged = true;
             }
 
             if (world instanceof WorldServer) {
                 WorldServer ws = (WorldServer) world;
                 ws.spawnParticle(EnumParticleTypes.EXPLOSION_HUGE, entity.posX, entity.posY + 1.0D, entity.posZ, 4, 1.0D, 0.5D, 1.0D, 0.0D);
-                ws.spawnParticle(EnumParticleTypes.PORTAL, entity.posX, entity.posY + 1.0D, entity.posZ, 180, 4.0D, 2.0D, 4.0D, 0.2D);
-                ws.spawnParticle(EnumParticleTypes.SMOKE_LARGE, entity.posX, entity.posY + 0.5D, entity.posZ, 60, 3.0D, 1.0D, 3.0D, 0.08D);
+                ws.spawnParticle(EnumParticleTypes.PORTAL, entity.posX, entity.posY + 1.0D, entity.posZ, 200, 4.5D, 2.5D, 4.5D, 0.25D);
+                ws.spawnParticle(EnumParticleTypes.SMOKE_LARGE, entity.posX, entity.posY + 0.5D, entity.posZ, 80, 3.5D, 1.0D, 3.5D, 0.08D);
             }
 
             world.playSound(null, entity.posX, entity.posY, entity.posZ,
                     SoundEvents.ENTITY_GENERIC_EXPLODE, SoundCategory.PLAYERS, 2.0F, 0.5F);
             world.playSound(null, entity.posX, entity.posY, entity.posZ,
                     SoundEvents.ENTITY_LIGHTNING_THUNDER, SoundCategory.PLAYERS, 1.8F, 1.6F);
+            world.playSound(null, entity.posX, entity.posY, entity.posZ,
+                    ACSounds.antiplayer_hurt != null ? ACSounds.antiplayer_hurt : SoundEvents.ENTITY_GENERIC_EXPLODE, SoundCategory.PLAYERS, 1.4F, 0.7F);
+            return true;
+        }
+    }
+
+    /** 反物质玩家：全能型反物质武器挥砍与反冲位移 (ID: ac_anti_player_slash) */
+    public static class AntiPlayerSlashAction extends AbyssalCraftAction {
+        public AntiPlayerSlashAction() { super(60); } // 冷却 3s
+
+        @Override
+        protected boolean executeServer(EntityLivingBase entity, AbstractMorph morph) {
+            World world = entity.world;
+            Vec3d look = entity.getLook(1.0F);
+
+            if (entity.isSneaking()) {
+                // === 潜行模式：反物质反冲规避 (Antimatter Recoil Disengage) ===
+                entity.motionX -= look.x * 1.4D;
+                entity.motionZ -= look.z * 1.4D;
+                entity.motionY += 0.25D;
+                entity.velocityChanged = true;
+
+                entity.addPotionEffect(new PotionEffect(MobEffects.SPEED, 60, 1, false, false));
+                entity.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 60, 0, false, false));
+
+                // 驱退近身目标
+                List<EntityLivingBase> list = findNearbyEntities(entity, 3.5D);
+                DamageSource source = AbyssalCraftAPI.antimatter != null ? AbyssalCraftAPI.antimatter : (entity instanceof EntityPlayer ? DamageSource.causePlayerDamage((EntityPlayer) entity) : DamageSource.causeMobDamage(entity));
+                for (EntityLivingBase e : list) {
+                    e.attackEntityFrom(source, 8.0F);
+                    if (AbyssalCraftAPI.antimatter_potion != null) {
+                        e.addPotionEffect(new PotionEffect(AbyssalCraftAPI.antimatter_potion, 60, 0));
+                    }
+                    e.knockBack(entity, 1.2F, look.x, look.z);
+                }
+
+                if (world instanceof WorldServer) {
+                    WorldServer ws = (WorldServer) world;
+                    ws.spawnParticle(EnumParticleTypes.PORTAL, entity.posX, entity.posY + 0.5D, entity.posZ, 40, 0.5D, 0.5D, 0.5D, 0.1D);
+                    ws.spawnParticle(EnumParticleTypes.EXPLOSION_NORMAL, entity.posX, entity.posY + 0.5D, entity.posZ, 4, 0.2D, 0.2D, 0.2D, 0.05D);
+                }
+
+                world.playSound(null, entity.posX, entity.posY, entity.posZ,
+                        SoundEvents.ENTITY_ENDERMEN_TELEPORT, SoundCategory.PLAYERS, 1.2F, 1.2F);
+                world.playSound(null, entity.posX, entity.posY, entity.posZ,
+                        ACSounds.antiplayer_hurt != null ? ACSounds.antiplayer_hurt : SoundEvents.ENTITY_PLAYER_HURT, SoundCategory.PLAYERS, 1.2F, 1.5F);
+                return true;
+            }
+
+            // === 正常模式：反物质次元斩击 (Antimatter Dimensional Slash) ===
+            entity.swingArm(EnumHand.MAIN_HAND);
+            entity.motionX += look.x * 1.2D;
+            entity.motionZ += look.z * 1.2D;
+            entity.velocityChanged = true;
+
+            Vec3d eye = entity.getPositionEyes(1.0F);
+            AxisAlignedBB sweepBox = entity.getEntityBoundingBox().grow(3.5D).offset(look.x * 2.0D, look.y * 0.5D, look.z * 2.0D);
+            List<EntityLivingBase> list = world.getEntitiesWithinAABB(EntityLivingBase.class, sweepBox,
+                    e -> e != entity && e.isEntityAlive() && !e.isOnSameTeam(entity));
+
+            DamageSource source = AbyssalCraftAPI.antimatter != null ? AbyssalCraftAPI.antimatter : (entity instanceof EntityPlayer ? DamageSource.causePlayerDamage((EntityPlayer) entity) : DamageSource.causeMobDamage(entity));
+            for (EntityLivingBase target : list) {
+                Vec3d toTarget = target.getPositionVector().add(0, target.height * 0.5D, 0).subtract(eye);
+                double dist = toTarget.length();
+                if (dist <= 5.0D) {
+                    double dot = toTarget.normalize().dotProduct(look);
+                    if (dot > 0.2D || dist < 2.0D) {
+                        target.attackEntityFrom(source, 16.0F);
+                        if (AbyssalCraftAPI.antimatter_potion != null) {
+                            target.addPotionEffect(new PotionEffect(AbyssalCraftAPI.antimatter_potion, 120, 0));
+                        }
+                        target.addPotionEffect(new PotionEffect(MobEffects.SLOWNESS, 60, 1));
+                        target.knockBack(entity, 1.0F, -look.x, -look.z);
+                    }
+                }
+            }
+
+            if (world instanceof WorldServer) {
+                WorldServer ws = (WorldServer) world;
+                for (int angle = -45; angle <= 45; angle += 15) {
+                    double rad = Math.toRadians(entity.rotationYaw + 90 + angle);
+                    double px = entity.posX + Math.cos(rad) * 2.5D;
+                    double pz = entity.posZ + Math.sin(rad) * 2.5D;
+                    double py = entity.posY + entity.getEyeHeight() - 0.2D;
+                    ws.spawnParticle(EnumParticleTypes.SWEEP_ATTACK, px, py, pz, 1, 0.0, 0.0, 0.0, 0.0);
+                    ws.spawnParticle(EnumParticleTypes.PORTAL, px, py, pz, 3, 0.1, 0.1, 0.1, 0.05);
+                    ws.spawnParticle(EnumParticleTypes.DRAGON_BREATH, px, py, pz, 2, 0.05, 0.05, 0.05, 0.02);
+                }
+            }
+
+            world.playSound(null, entity.posX, entity.posY, entity.posZ,
+                    SoundEvents.ENTITY_PLAYER_ATTACK_SWEEP, SoundCategory.PLAYERS, 1.2F, 0.8F);
+            world.playSound(null, entity.posX, entity.posY, entity.posZ,
+                    ACSounds.antiplayer_hurt != null ? ACSounds.antiplayer_hurt : SoundEvents.ENTITY_PLAYER_HURT, SoundCategory.PLAYERS, 1.3F, 1.0F);
             return true;
         }
     }
