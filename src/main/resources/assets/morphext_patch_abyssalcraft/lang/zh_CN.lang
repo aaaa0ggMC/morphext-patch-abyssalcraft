@@ -46,6 +46,10 @@ morphext.metamorph.action.ac_evil_cow_milk=诅咒挤奶与恶念冲撞
 morphext.metamorph.action.ac_anti_chicken_egg=反物质下蛋
 morphext.metamorph.action.ac_demon_sheep_shear=恶魔修剪与地狱火环
 morphext.metamorph.action.ac_demon_fire_charge=地狱火环冲撞
+morphext.metamorph.action.ac_goliath_smash=巨灵撼地重踏
+morphext.metamorph.action.ac_anti_spider_leap=反物质蜘蛛跃击
+morphext.metamorph.action.ac_anti_skeleton_arrow=反物质虚空箭雨
+morphext.metamorph.action.ac_evil_charge=恶念冲顶
 
 # 动作详细说明 (Action Descriptions)
 morphext.metamorph.desc.ac_acid_spit=修格斯酸液喷射：向前发射一枚高腐蚀性的修格斯酸液弹，命中目标后腐蚀其防具并造成持续酸蚀伤害。
@@ -75,6 +79,10 @@ morphext.metamorph.desc.ac_antimatter_burst=反物质微粒爆发：凝聚并引
 morphext.metamorph.desc.ac_anti_creeper_fuse=反物质苦力怕湮灭脉冲：高能反物质聚变脉冲，全域10格无方块破坏且宿主100%免伤，对周围所有敌人造成毁灭性反物质重创与湮灭效果（冷却10秒）。
 morphext.metamorph.desc.ac_anti_player_slash=反物质次元斩击：正常释放向前突进横扫反物质剑气，造成高额反物质伤害、反物质侵蚀与迟缓；潜行释放向后反冲规避，引爆反物质闪光击退周围敌人并赋予自身移速提升（冷却3秒）。
 morphext.metamorph.desc.ac_anti_matter_blast=反物质脉冲：引爆前方空间的反物质能量，对大范围敌人造成湮灭冲击。
+morphext.metamorph.desc.ac_anti_spider_leap=反物质蜘蛛跃击：极速向准星腾空飞扑，落地在周围激荡反物质丝网微粒，使目标深陷强力迟缓与反物质虚弱（冷却3.5秒）。
+morphext.metamorph.desc.ac_anti_skeleton_arrow=反物质虚空箭雨：拉开虚空骨弓，向准星高速射出反物质侵蚀箭矢，命中引发虚空湮灭冲击（冷却2秒）。
+morphext.metamorph.desc.ac_goliath_smash=巨灵撼地重踏：4.5米远古巨像全力践踏大地，撼碎地面引发6格冲击波，震飞并重创周围所有敌人（冷却5秒）。
+morphext.metamorph.desc.ac_evil_charge=恶念冲顶：凶狠向前冲刺撞击前方敌人，造成强力击退并发出恶念尖啸，附加虚弱与反胃（冷却4秒）。
 morphext.metamorph.desc.ac_jzahar_oblivion=终焉湮灭：召唤奥穆托尔黑洞降临，碾碎并湮灭范围内一切生物，附加凋灵与浮空诅咒。
 
 # 原生 Boss 机制复用动作

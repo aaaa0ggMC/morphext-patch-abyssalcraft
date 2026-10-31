@@ -32,7 +32,10 @@
       "ac_acid_spit",
       "ac_shoggoth_ooze",
       "ac_acid_melt"
-    ]
+    ],
+    "hands": true,
+    "rightHand": "rArm01a",
+    "leftHand": "lArm01a"
   },
   "abyssalcraft.lessershoggoth": {
     "abilities": [
@@ -67,7 +70,10 @@
       "ac_acid_spit",
       "ac_shoggoth_ooze",
       "ac_acid_melt"
-    ]
+    ],
+    "hands": true,
+    "rightHand": "rArm01a",
+    "leftHand": "lArm01a"
   },
   "abyssalcraft:shoggoth": {
     "abilities": [
@@ -102,7 +108,10 @@
       "inWall",
       "magic",
       "shoggoth_acid"
-    ]
+    ],
+    "hands": true,
+    "rightHand": "rArm01a",
+    "leftHand": "lArm01a"
   },
   "abyssalcraft.shoggoth": {
     "abilities": [
@@ -137,7 +146,10 @@
       "inWall",
       "magic",
       "shoggoth_acid"
-    ]
+    ],
+    "hands": true,
+    "rightHand": "rArm01a",
+    "leftHand": "lArm01a"
   },
   "abyssalcraft:greatershoggoth": {
     "abilities": [
@@ -172,7 +184,10 @@
       "inWall",
       "magic",
       "shoggoth_acid"
-    ]
+    ],
+    "hands": true,
+    "rightHand": "rArm01a",
+    "leftHand": "lArm01a"
   },
   "abyssalcraft.greatershoggoth": {
     "abilities": [
@@ -207,7 +222,10 @@
       "inWall",
       "magic",
       "shoggoth_acid"
-    ]
+    ],
+    "hands": true,
+    "rightHand": "rArm01a",
+    "leftHand": "lArm01a"
   },
   "abyssalcraft:depthsghoul": {
     "abilities": [
@@ -235,7 +253,10 @@
       "ac_ghoul_underwater_ambush",
       "ac_coralium_claws",
       "ac_ghoul_pounce"
-    ]
+    ],
+    "hands": true,
+    "rightHand": "rarm1",
+    "leftHand": "larm1"
   },
   "abyssalcraft.depthsghoul": {
     "abilities": [
@@ -263,7 +284,10 @@
       "ac_ghoul_underwater_ambush",
       "ac_coralium_claws",
       "ac_ghoul_pounce"
-    ]
+    ],
+    "hands": true,
+    "rightHand": "rarm1",
+    "leftHand": "larm1"
   },
   "abyssalcraft:abyssalzombie": {
     "abilities": [
@@ -291,7 +315,10 @@
       "ac_coralium_claws",
       "ac_ghoul_pounce",
       "ac_ghoul_underwater_ambush"
-    ]
+    ],
+    "hands": true,
+    "rightHand": "bipedRightArm",
+    "leftHand": "bipedLeftArm"
   },
   "abyssalcraft.abyssalzombie": {
     "abilities": [
@@ -319,7 +346,10 @@
       "ac_coralium_claws",
       "ac_ghoul_pounce",
       "ac_ghoul_underwater_ambush"
-    ]
+    ],
+    "hands": true,
+    "rightHand": "bipedRightArm",
+    "leftHand": "bipedLeftArm"
   },
   "abyssalcraft:coralsquid": {
     "abilities": [
@@ -344,7 +374,10 @@
       "ac_coralium_ink_storm",
       "ac_coralium_ink",
       "ac_coralium_squirt"
-    ]
+    ],
+    "hands": true,
+    "rightHand": "squidTentacles[0]",
+    "leftHand": "squidTentacles[1]"
   },
   "abyssalcraft.coralsquid": {
     "abilities": [
@@ -369,7 +402,10 @@
       "ac_coralium_ink_storm",
       "ac_coralium_ink",
       "ac_coralium_squirt"
-    ]
+    ],
+    "hands": true,
+    "rightHand": "squidTentacles[0]",
+    "leftHand": "squidTentacles[1]"
   },
   "abyssalcraft:coraliumsquid": {
     "abilities": [
@@ -394,7 +430,10 @@
       "ac_coralium_ink_storm",
       "ac_coralium_ink",
       "ac_coralium_squirt"
-    ]
+    ],
+    "hands": true,
+    "rightHand": "squidTentacles[0]",
+    "leftHand": "squidTentacles[1]"
   },
   "abyssalcraft.coraliumsquid": {
     "abilities": [
@@ -419,7 +458,10 @@
       "ac_coralium_ink_storm",
       "ac_coralium_ink",
       "ac_coralium_squirt"
-    ]
+    ],
+    "hands": true,
+    "rightHand": "squidTentacles[0]",
+    "leftHand": "squidTentacles[1]"
   },
   "abyssalcraft:dragonboss": {
     "abilities": [
@@ -453,7 +495,11 @@
       "ac_dragon_boss_breath",
       "ac_spectral_fireball",
       "ac_remnant_screech"
-    ]
+    ],
+    "hands": true,
+    "rotate180": true,
+    "rightHand": "frontLeg",
+    "leftHand": "frontLeg"
   },
   "abyssalcraft.dragonboss": {
     "abilities": [
@@ -487,7 +533,11 @@
       "ac_dragon_boss_breath",
       "ac_spectral_fireball",
       "ac_remnant_screech"
-    ]
+    ],
+    "hands": true,
+    "rotate180": true,
+    "rightHand": "frontLeg",
+    "leftHand": "frontLeg"
   },
   "abyssalcraft:dragonminion": {
     "abilities": [
@@ -509,9 +559,15 @@
       "onFire"
     ],
     "actions": [
+      "ac_dragon_dive",
+      "ac_dragon_breath",
       "ac_spectral_fireball",
       "ac_remnant_screech"
-    ]
+    ],
+    "hands": true,
+    "rotate180": true,
+    "rightHand": "frontLeg",
+    "leftHand": "frontLeg"
   },
   "abyssalcraft.dragonminion": {
     "abilities": [
@@ -533,9 +589,15 @@
       "onFire"
     ],
     "actions": [
+      "ac_dragon_dive",
+      "ac_dragon_breath",
       "ac_spectral_fireball",
       "ac_remnant_screech"
-    ]
+    ],
+    "hands": true,
+    "rotate180": true,
+    "rightHand": "frontLeg",
+    "leftHand": "frontLeg"
   },
   "abyssalcraft:dreadling": {
     "abilities": [
@@ -563,7 +625,10 @@
       "ac_dread_slug",
       "ac_dread_charge",
       "ac_ghoul_pounce"
-    ]
+    ],
+    "hands": true,
+    "rightHand": "rightarm",
+    "leftHand": "leftarm"
   },
   "abyssalcraft.dreadling": {
     "abilities": [
@@ -591,7 +656,10 @@
       "ac_dread_slug",
       "ac_dread_charge",
       "ac_ghoul_pounce"
-    ]
+    ],
+    "hands": true,
+    "rightHand": "rightarm",
+    "leftHand": "leftarm"
   },
   "abyssalcraft:dreadspawn": {
     "abilities": [
@@ -617,7 +685,10 @@
       "ac_dread_slug",
       "ac_dread_charge",
       "ac_ghoul_pounce"
-    ]
+    ],
+    "hands": true,
+    "rightHand": "arm",
+    "leftHand": "thing"
   },
   "abyssalcraft.dreadspawn": {
     "abilities": [
@@ -643,7 +714,10 @@
       "ac_dread_slug",
       "ac_dread_charge",
       "ac_ghoul_pounce"
-    ]
+    ],
+    "hands": true,
+    "rightHand": "arm",
+    "leftHand": "thing"
   },
   "abyssalcraft:greaterdreadspawn": {
     "abilities": [
@@ -671,7 +745,10 @@
       "ac_dread_slug",
       "ac_dread_charge",
       "ac_dread_roar"
-    ]
+    ],
+    "hands": true,
+    "rightHand": "arm",
+    "leftHand": "thing"
   },
   "abyssalcraft.greaterdreadspawn": {
     "abilities": [
@@ -699,7 +776,10 @@
       "ac_dread_slug",
       "ac_dread_charge",
       "ac_dread_roar"
-    ]
+    ],
+    "hands": true,
+    "rightHand": "arm",
+    "leftHand": "thing"
   },
   "abyssalcraft:dreadguard": {
     "abilities": [
@@ -728,7 +808,10 @@
       "inFire",
       "lava",
       "onFire"
-    ]
+    ],
+    "hands": true,
+    "rightHand": "rightarm",
+    "leftHand": "leftarm"
   },
   "abyssalcraft.dreadguard": {
     "abilities": [
@@ -757,7 +840,10 @@
       "inFire",
       "lava",
       "onFire"
-    ]
+    ],
+    "hands": true,
+    "rightHand": "rightarm",
+    "leftHand": "leftarm"
   },
   "abyssalcraft:dreadedghoul": {
     "abilities": [
@@ -787,7 +873,10 @@
       "ac_ghoul_pounce",
       "ac_dread_slam",
       "ac_dread_charge"
-    ]
+    ],
+    "hands": true,
+    "rightHand": "rarm1",
+    "leftHand": "larm1"
   },
   "abyssalcraft.dreadedghoul": {
     "abilities": [
@@ -817,7 +906,10 @@
       "ac_ghoul_pounce",
       "ac_dread_slam",
       "ac_dread_charge"
-    ]
+    ],
+    "hands": true,
+    "rightHand": "rarm1",
+    "leftHand": "larm1"
   },
   "abyssalcraft:lesserdreadbeast": {
     "abilities": [
@@ -844,7 +936,10 @@
       "ac_dread_slam",
       "ac_dread_slug",
       "ac_dread_charge"
-    ]
+    ],
+    "hands": true,
+    "rightHand": "rightleg1",
+    "leftHand": "leftleg1"
   },
   "abyssalcraft.lesserdreadbeast": {
     "abilities": [
@@ -871,7 +966,10 @@
       "ac_dread_slam",
       "ac_dread_slug",
       "ac_dread_charge"
-    ]
+    ],
+    "hands": true,
+    "rightHand": "rightleg1",
+    "leftHand": "leftleg1"
   },
   "abyssalcraft:dreadgolem": {
     "abilities": [
@@ -903,7 +1001,10 @@
       "ac_dread_slam",
       "ac_dread_charge",
       "ac_dread_roar"
-    ]
+    ],
+    "hands": true,
+    "rightHand": "ironGolemRightArm",
+    "leftHand": "ironGolemLeftArm"
   },
   "abyssalcraft.dreadgolem": {
     "abilities": [
@@ -935,7 +1036,10 @@
       "ac_dread_slam",
       "ac_dread_charge",
       "ac_dread_roar"
-    ]
+    ],
+    "hands": true,
+    "rightHand": "ironGolemRightArm",
+    "leftHand": "ironGolemLeftArm"
   },
   "abyssalcraft:abygolem": {
     "abilities": [
@@ -951,10 +1055,13 @@
       "fall"
     ],
     "actions": [
+      "ac_goliath_smash",
       "ac_dread_slam",
-      "ac_dread_charge",
-      "ac_dread_roar"
-    ]
+      "ac_coralium_claws"
+    ],
+    "hands": true,
+    "rightHand": "ironGolemRightArm",
+    "leftHand": "ironGolemLeftArm"
   },
   "abyssalcraft.abygolem": {
     "abilities": [
@@ -970,10 +1077,13 @@
       "fall"
     ],
     "actions": [
+      "ac_goliath_smash",
       "ac_dread_slam",
-      "ac_dread_charge",
-      "ac_dread_roar"
-    ]
+      "ac_coralium_claws"
+    ],
+    "hands": true,
+    "rightHand": "ironGolemRightArm",
+    "leftHand": "ironGolemLeftArm"
   },
   "abyssalcraft:chagaroth": {
     "abilities": [
@@ -1012,7 +1122,10 @@
       "ac_dread_slam",
       "ac_dread_charge",
       "ac_dread_roar"
-    ]
+    ],
+    "hands": true,
+    "rightHand": "walltentacle5",
+    "leftHand": "walltentacle1"
   },
   "abyssalcraft.chagaroth": {
     "abilities": [
@@ -1051,7 +1164,10 @@
       "ac_dread_slam",
       "ac_dread_charge",
       "ac_dread_roar"
-    ]
+    ],
+    "hands": true,
+    "rightHand": "walltentacle5",
+    "leftHand": "walltentacle1"
   },
   "abyssalcraft:chagarothfist": {
     "abilities": [
@@ -1075,7 +1191,10 @@
       "ac_chagaroth_fist",
       "ac_dread_slam",
       "ac_dread_slug"
-    ]
+    ],
+    "hands": true,
+    "rightHand": "arm1",
+    "leftHand": "arm1"
   },
   "abyssalcraft.chagarothfist": {
     "abilities": [
@@ -1099,7 +1218,10 @@
       "ac_chagaroth_fist",
       "ac_dread_slam",
       "ac_dread_slug"
-    ]
+    ],
+    "hands": true,
+    "rightHand": "arm1",
+    "leftHand": "arm1"
   },
   "abyssalcraft:chagarothspawn": {
     "abilities": [
@@ -1123,7 +1245,10 @@
       "ac_chagaroth_spawn",
       "ac_ghoul_pounce",
       "ac_dread_slug"
-    ]
+    ],
+    "hands": true,
+    "rightHand": "rightleg1",
+    "leftHand": "leftleg1"
   },
   "abyssalcraft.chagarothspawn": {
     "abilities": [
@@ -1147,7 +1272,10 @@
       "ac_chagaroth_spawn",
       "ac_ghoul_pounce",
       "ac_dread_slug"
-    ]
+    ],
+    "hands": true,
+    "rightHand": "rightleg1",
+    "leftHand": "leftleg1"
   },
   "abyssalcraft:shadowcreature": {
     "abilities": [
@@ -1181,7 +1309,10 @@
       "ac_shadow_step",
       "ac_shadow_slash",
       "ac_shadow_veil"
-    ]
+    ],
+    "hands": true,
+    "rightHand": "RightArm2",
+    "leftHand": "LeftArm2"
   },
   "abyssalcraft.shadowcreature": {
     "abilities": [
@@ -1215,7 +1346,10 @@
       "ac_shadow_step",
       "ac_shadow_slash",
       "ac_shadow_veil"
-    ]
+    ],
+    "hands": true,
+    "rightHand": "RightArm2",
+    "leftHand": "LeftArm2"
   },
   "abyssalcraft:shadowmonster": {
     "abilities": [
@@ -1249,7 +1383,10 @@
       "ac_shadow_step",
       "ac_shadow_slash",
       "ac_shadow_veil"
-    ]
+    ],
+    "hands": true,
+    "rightHand": "Rarm1",
+    "leftHand": "Larm1"
   },
   "abyssalcraft.shadowmonster": {
     "abilities": [
@@ -1283,7 +1420,10 @@
       "ac_shadow_step",
       "ac_shadow_slash",
       "ac_shadow_veil"
-    ]
+    ],
+    "hands": true,
+    "rightHand": "Rarm1",
+    "leftHand": "Larm1"
   },
   "abyssalcraft:shadowbeast": {
     "abilities": [
@@ -1319,7 +1459,10 @@
       "ac_shadow_slash",
       "ac_shadow_collapse",
       "ac_shadow_veil"
-    ]
+    ],
+    "hands": true,
+    "rightHand": "rarm1",
+    "leftHand": "larm1"
   },
   "abyssalcraft.shadowbeast": {
     "abilities": [
@@ -1355,7 +1498,10 @@
       "ac_shadow_slash",
       "ac_shadow_collapse",
       "ac_shadow_veil"
-    ]
+    ],
+    "hands": true,
+    "rightHand": "rarm1",
+    "leftHand": "larm1"
   },
   "abyssalcraft:shadowboss": {
     "abilities": [
@@ -1393,7 +1539,10 @@
       "ac_shadow_slash",
       "ac_shadow_collapse",
       "ac_shadow_veil"
-    ]
+    ],
+    "hands": true,
+    "rightHand": "leftarm1",
+    "leftHand": "rightarm1"
   },
   "abyssalcraft.shadowboss": {
     "abilities": [
@@ -1431,7 +1580,10 @@
       "ac_shadow_slash",
       "ac_shadow_collapse",
       "ac_shadow_veil"
-    ]
+    ],
+    "hands": true,
+    "rightHand": "leftarm1",
+    "leftHand": "rightarm1"
   },
   "abyssalcraft:shadowtitan": {
     "abilities": [
@@ -1465,7 +1617,10 @@
       "ac_shadow_slash",
       "ac_shadow_collapse",
       "ac_shadow_veil"
-    ]
+    ],
+    "hands": true,
+    "rightHand": "rarm1",
+    "leftHand": "larm1"
   },
   "abyssalcraft.shadowtitan": {
     "abilities": [
@@ -1499,7 +1654,10 @@
       "ac_shadow_slash",
       "ac_shadow_collapse",
       "ac_shadow_veil"
-    ]
+    ],
+    "hands": true,
+    "rightHand": "rarm1",
+    "leftHand": "larm1"
   },
   "abyssalcraft:shadowghoul": {
     "abilities": [
@@ -1536,7 +1694,10 @@
       "ac_shadow_slash",
       "ac_ghoul_pounce",
       "ac_shadow_veil"
-    ]
+    ],
+    "hands": true,
+    "rightHand": "rarm1",
+    "leftHand": "larm1"
   },
   "abyssalcraft.shadowghoul": {
     "abilities": [
@@ -1573,7 +1734,10 @@
       "ac_shadow_slash",
       "ac_ghoul_pounce",
       "ac_shadow_veil"
-    ]
+    ],
+    "hands": true,
+    "rightHand": "rarm1",
+    "leftHand": "larm1"
   },
   "abyssalcraft:antizombie": {
     "abilities": [
@@ -1598,7 +1762,10 @@
       "ac_antimatter_burst",
       "ac_anti_matter_blast",
       "ac_anti_implosion"
-    ]
+    ],
+    "hands": true,
+    "rightHand": "bipedRightArm",
+    "leftHand": "bipedLeftArm"
   },
   "abyssalcraft.antizombie": {
     "abilities": [
@@ -1623,7 +1790,10 @@
       "ac_antimatter_burst",
       "ac_anti_matter_blast",
       "ac_anti_implosion"
-    ]
+    ],
+    "hands": true,
+    "rightHand": "bipedRightArm",
+    "leftHand": "bipedLeftArm"
   },
   "abyssalcraft:antiskeleton": {
     "abilities": [
@@ -1645,11 +1815,14 @@
       "antimatter"
     ],
     "actions": [
-      "ac_anti_player_slash",
-      "ac_antimatter_burst",
+      "ac_anti_skeleton_arrow",
       "ac_anti_matter_blast",
+      "ac_antimatter_burst",
       "ac_anti_implosion"
-    ]
+    ],
+    "hands": true,
+    "rightHand": "bipedRightArm",
+    "leftHand": "bipedLeftArm"
   },
   "abyssalcraft.antiskeleton": {
     "abilities": [
@@ -1671,11 +1844,14 @@
       "antimatter"
     ],
     "actions": [
-      "ac_anti_player_slash",
-      "ac_antimatter_burst",
+      "ac_anti_skeleton_arrow",
       "ac_anti_matter_blast",
+      "ac_antimatter_burst",
       "ac_anti_implosion"
-    ]
+    ],
+    "hands": true,
+    "rightHand": "bipedRightArm",
+    "leftHand": "bipedLeftArm"
   },
   "abyssalcraft:antispider": {
     "abilities": [
@@ -1696,10 +1872,13 @@
       "antimatter"
     ],
     "actions": [
+      "ac_anti_spider_leap",
       "ac_antimatter_burst",
-      "ac_ghoul_pounce",
       "ac_anti_matter_blast"
-    ]
+    ],
+    "hands": true,
+    "rightHand": "leg1",
+    "leftHand": "leg2"
   },
   "abyssalcraft.antispider": {
     "abilities": [
@@ -1720,10 +1899,13 @@
       "antimatter"
     ],
     "actions": [
+      "ac_anti_spider_leap",
       "ac_antimatter_burst",
-      "ac_ghoul_pounce",
       "ac_anti_matter_blast"
-    ]
+    ],
+    "hands": true,
+    "rightHand": "leg1",
+    "leftHand": "leg2"
   },
   "abyssalcraft:anticreeper": {
     "abilities": [
@@ -1744,7 +1926,10 @@
       "ac_anti_creeper_fuse",
       "ac_antimatter_burst",
       "ac_anti_implosion"
-    ]
+    ],
+    "hands": true,
+    "rightHand": "leg3",
+    "leftHand": "leg4"
   },
   "abyssalcraft.anticreeper": {
     "abilities": [
@@ -1765,7 +1950,10 @@
       "ac_anti_creeper_fuse",
       "ac_antimatter_burst",
       "ac_anti_implosion"
-    ]
+    ],
+    "hands": true,
+    "rightHand": "leg3",
+    "leftHand": "leg4"
   },
   "abyssalcraft:antibat": {
     "abilities": [
@@ -1787,8 +1975,12 @@
     ],
     "actions": [
       "ac_antimatter_burst",
-      "ac_anti_implosion"
-    ]
+      "ac_anti_implosion",
+      "ac_anti_matter_blast"
+    ],
+    "hands": true,
+    "rightHand": "batRightWing",
+    "leftHand": "batLeftWing"
   },
   "abyssalcraft.antibat": {
     "abilities": [
@@ -1810,8 +2002,12 @@
     ],
     "actions": [
       "ac_antimatter_burst",
-      "ac_anti_implosion"
-    ]
+      "ac_anti_implosion",
+      "ac_anti_matter_blast"
+    ],
+    "hands": true,
+    "rightHand": "batRightWing",
+    "leftHand": "batLeftWing"
   },
   "abyssalcraft:antichicken": {
     "abilities": [
@@ -1833,7 +2029,10 @@
     "actions": [
       "ac_anti_chicken_egg",
       "ac_antimatter_burst"
-    ]
+    ],
+    "hands": true,
+    "rightHand": "rightWing",
+    "leftHand": "leftWing"
   },
   "abyssalcraft.antichicken": {
     "abilities": [
@@ -1855,7 +2054,10 @@
     "actions": [
       "ac_anti_chicken_egg",
       "ac_antimatter_burst"
-    ]
+    ],
+    "hands": true,
+    "rightHand": "rightWing",
+    "leftHand": "leftWing"
   },
   "abyssalcraft:anticow": {
     "abilities": [
@@ -1874,8 +2076,12 @@
     ],
     "actions": [
       "ac_anti_cow_milk",
-      "ac_antimatter_burst"
-    ]
+      "ac_antimatter_burst",
+      "ac_anti_matter_blast"
+    ],
+    "hands": true,
+    "rightHand": "leg3",
+    "leftHand": "leg4"
   },
   "abyssalcraft.anticow": {
     "abilities": [
@@ -1894,8 +2100,12 @@
     ],
     "actions": [
       "ac_anti_cow_milk",
-      "ac_antimatter_burst"
-    ]
+      "ac_antimatter_burst",
+      "ac_anti_matter_blast"
+    ],
+    "hands": true,
+    "rightHand": "leg3",
+    "leftHand": "leg4"
   },
   "abyssalcraft:antipig": {
     "abilities": [
@@ -1914,8 +2124,12 @@
     ],
     "actions": [
       "ac_antimatter_burst",
-      "ac_anti_implosion"
-    ]
+      "ac_anti_implosion",
+      "ac_anti_matter_blast"
+    ],
+    "hands": true,
+    "rightHand": "leg3",
+    "leftHand": "leg4"
   },
   "abyssalcraft.antipig": {
     "abilities": [
@@ -1934,8 +2148,12 @@
     ],
     "actions": [
       "ac_antimatter_burst",
-      "ac_anti_implosion"
-    ]
+      "ac_anti_implosion",
+      "ac_anti_matter_blast"
+    ],
+    "hands": true,
+    "rightHand": "leg3",
+    "leftHand": "leg4"
   },
   "abyssalcraft:evilchicken": {
     "abilities": [
@@ -1951,9 +2169,13 @@
       "onFire"
     ],
     "actions": [
-      "ac_ghoul_pounce",
-      "ac_remnant_screech"
-    ]
+      "ac_evil_charge",
+      "ac_demon_fire_charge",
+      "ac_ghoul_pounce"
+    ],
+    "hands": true,
+    "rightHand": "rightWing",
+    "leftHand": "leftWing"
   },
   "abyssalcraft.evilchicken": {
     "abilities": [
@@ -1969,9 +2191,13 @@
       "onFire"
     ],
     "actions": [
-      "ac_ghoul_pounce",
-      "ac_remnant_screech"
-    ]
+      "ac_evil_charge",
+      "ac_demon_fire_charge",
+      "ac_ghoul_pounce"
+    ],
+    "hands": true,
+    "rightHand": "rightWing",
+    "leftHand": "leftWing"
   },
   "abyssalcraft:evilcow": {
     "abilities": [
@@ -1986,8 +2212,13 @@
       "onFire"
     ],
     "actions": [
-      "ac_evil_cow_milk"
-    ]
+      "ac_evil_cow_milk",
+      "ac_evil_charge",
+      "ac_demon_fire_charge"
+    ],
+    "hands": true,
+    "rightHand": "leg3",
+    "leftHand": "leg4"
   },
   "abyssalcraft.evilcow": {
     "abilities": [
@@ -2002,8 +2233,13 @@
       "onFire"
     ],
     "actions": [
-      "ac_evil_cow_milk"
-    ]
+      "ac_evil_cow_milk",
+      "ac_evil_charge",
+      "ac_demon_fire_charge"
+    ],
+    "hands": true,
+    "rightHand": "leg3",
+    "leftHand": "leg4"
   },
   "abyssalcraft:evilpig": {
     "abilities": [
@@ -2018,9 +2254,13 @@
       "onFire"
     ],
     "actions": [
-      "ac_ghoul_pounce",
-      "ac_remnant_screech"
-    ]
+      "ac_evil_charge",
+      "ac_demon_fire_charge",
+      "ac_ghoul_pounce"
+    ],
+    "hands": true,
+    "rightHand": "leg3",
+    "leftHand": "leg4"
   },
   "abyssalcraft.evilpig": {
     "abilities": [
@@ -2035,9 +2275,13 @@
       "onFire"
     ],
     "actions": [
-      "ac_ghoul_pounce",
-      "ac_remnant_screech"
-    ]
+      "ac_evil_charge",
+      "ac_demon_fire_charge",
+      "ac_ghoul_pounce"
+    ],
+    "hands": true,
+    "rightHand": "leg3",
+    "leftHand": "leg4"
   },
   "abyssalcraft:evilsheep": {
     "abilities": [
@@ -2052,9 +2296,13 @@
       "onFire"
     ],
     "actions": [
-      "ac_ghoul_pounce",
-      "ac_remnant_screech"
-    ]
+      "ac_evil_charge",
+      "ac_demon_fire_charge",
+      "ac_ghoul_pounce"
+    ],
+    "hands": true,
+    "rightHand": "leg3",
+    "leftHand": "leg4"
   },
   "abyssalcraft.evilsheep": {
     "abilities": [
@@ -2069,9 +2317,13 @@
       "onFire"
     ],
     "actions": [
-      "ac_ghoul_pounce",
-      "ac_remnant_screech"
-    ]
+      "ac_evil_charge",
+      "ac_demon_fire_charge",
+      "ac_ghoul_pounce"
+    ],
+    "hands": true,
+    "rightHand": "leg3",
+    "leftHand": "leg4"
   },
   "abyssalcraft:demonchicken": {
     "abilities": [
@@ -2096,8 +2348,12 @@
     ],
     "actions": [
       "ac_demon_fire_charge",
-      "ac_dread_charge"
-    ]
+      "ac_dread_charge",
+      "ac_ghoul_pounce"
+    ],
+    "hands": true,
+    "rightHand": "rightWing",
+    "leftHand": "leftWing"
   },
   "abyssalcraft.demonchicken": {
     "abilities": [
@@ -2122,8 +2378,12 @@
     ],
     "actions": [
       "ac_demon_fire_charge",
-      "ac_dread_charge"
-    ]
+      "ac_dread_charge",
+      "ac_ghoul_pounce"
+    ],
+    "hands": true,
+    "rightHand": "rightWing",
+    "leftHand": "leftWing"
   },
   "abyssalcraft:demoncow": {
     "abilities": [
@@ -2149,7 +2409,10 @@
       "ac_demon_fire_charge",
       "ac_demon_cow_milk",
       "ac_dread_charge"
-    ]
+    ],
+    "hands": true,
+    "rightHand": "leg3",
+    "leftHand": "leg4"
   },
   "abyssalcraft.demoncow": {
     "abilities": [
@@ -2175,7 +2438,10 @@
       "ac_demon_fire_charge",
       "ac_demon_cow_milk",
       "ac_dread_charge"
-    ]
+    ],
+    "hands": true,
+    "rightHand": "leg3",
+    "leftHand": "leg4"
   },
   "abyssalcraft:demonpig": {
     "abilities": [
@@ -2199,8 +2465,12 @@
     ],
     "actions": [
       "ac_demon_fire_charge",
-      "ac_dread_charge"
-    ]
+      "ac_dread_charge",
+      "ac_ghoul_pounce"
+    ],
+    "hands": true,
+    "rightHand": "leg3",
+    "leftHand": "leg4"
   },
   "abyssalcraft.demonpig": {
     "abilities": [
@@ -2224,8 +2494,12 @@
     ],
     "actions": [
       "ac_demon_fire_charge",
-      "ac_dread_charge"
-    ]
+      "ac_dread_charge",
+      "ac_ghoul_pounce"
+    ],
+    "hands": true,
+    "rightHand": "leg3",
+    "leftHand": "leg4"
   },
   "abyssalcraft:demonsheep": {
     "abilities": [
@@ -2251,7 +2525,10 @@
       "ac_demon_fire_charge",
       "ac_demon_sheep_shear",
       "ac_dread_charge"
-    ]
+    ],
+    "hands": true,
+    "rightHand": "leg3",
+    "leftHand": "leg4"
   },
   "abyssalcraft.demonsheep": {
     "abilities": [
@@ -2277,7 +2554,10 @@
       "ac_demon_fire_charge",
       "ac_demon_sheep_shear",
       "ac_dread_charge"
-    ]
+    ],
+    "hands": true,
+    "rightHand": "leg3",
+    "leftHand": "leg4"
   },
   "abyssalcraft:ghoul": {
     "abilities": [
@@ -2292,8 +2572,12 @@
     "damageImmunities": [],
     "actions": [
       "ac_ghoul_pounce",
+      "ac_coralium_claws",
       "ac_remnant_screech"
-    ]
+    ],
+    "hands": true,
+    "rightHand": "rarm1",
+    "leftHand": "larm1"
   },
   "abyssalcraft.ghoul": {
     "abilities": [
@@ -2308,8 +2592,12 @@
     "damageImmunities": [],
     "actions": [
       "ac_ghoul_pounce",
+      "ac_coralium_claws",
       "ac_remnant_screech"
-    ]
+    ],
+    "hands": true,
+    "rightHand": "rarm1",
+    "leftHand": "larm1"
   },
   "abyssalcraft:remnant": {
     "abilities": [
@@ -2348,7 +2636,10 @@
       "ac_remnant_screech",
       "ac_spectral_fireball",
       "ac_ghoul_pounce"
-    ]
+    ],
+    "hands": true,
+    "rightHand": "rightarm",
+    "leftHand": "leftarm"
   },
   "abyssalcraft.remnant": {
     "abilities": [
@@ -2387,7 +2678,10 @@
       "ac_remnant_screech",
       "ac_spectral_fireball",
       "ac_ghoul_pounce"
-    ]
+    ],
+    "hands": true,
+    "rightHand": "rightarm",
+    "leftHand": "leftarm"
   },
   "abyssalcraft:omotholghoul": {
     "abilities": [
@@ -2426,8 +2720,12 @@
     ],
     "actions": [
       "ac_ghoul_pounce",
-      "ac_remnant_screech"
-    ]
+      "ac_remnant_screech",
+      "ac_spectral_fireball"
+    ],
+    "hands": true,
+    "rightHand": "rarm1",
+    "leftHand": "larm1"
   },
   "abyssalcraft.omotholghoul": {
     "abilities": [
@@ -2466,8 +2764,12 @@
     ],
     "actions": [
       "ac_ghoul_pounce",
-      "ac_remnant_screech"
-    ]
+      "ac_remnant_screech",
+      "ac_spectral_fireball"
+    ],
+    "hands": true,
+    "rightHand": "rarm1",
+    "leftHand": "larm1"
   },
   "abyssalcraft:omotholwarden": {
     "abilities": [
@@ -2502,8 +2804,14 @@
       "wither"
     ],
     "actions": [
-      "ac_shadow_collapse"
-    ]
+      "ac_shadow_collapse",
+      "ac_remnant_screech",
+      "ac_spectral_fireball",
+      "ac_shadow_slash"
+    ],
+    "hands": true,
+    "rightHand": "bipedRightArm",
+    "leftHand": "bipedLeftArm"
   },
   "abyssalcraft.omotholwarden": {
     "abilities": [
@@ -2538,8 +2846,14 @@
       "wither"
     ],
     "actions": [
-      "ac_shadow_collapse"
-    ]
+      "ac_shadow_collapse",
+      "ac_remnant_screech",
+      "ac_spectral_fireball",
+      "ac_shadow_slash"
+    ],
+    "hands": true,
+    "rightHand": "bipedRightArm",
+    "leftHand": "bipedLeftArm"
   },
   "abyssalcraft:jzahar": {
     "abilities": [
@@ -2588,7 +2902,10 @@
       "ac_jzahar_singularity",
       "ac_jzahar_earthquake",
       "ac_jzahar_oblivion"
-    ]
+    ],
+    "hands": true,
+    "rightHand": "staff1",
+    "leftHand": "abyssalnomicon"
   },
   "abyssalcraft.jzahar": {
     "abilities": [
@@ -2637,7 +2954,10 @@
       "ac_jzahar_singularity",
       "ac_jzahar_earthquake",
       "ac_jzahar_oblivion"
-    ]
+    ],
+    "hands": true,
+    "rightHand": "staff1",
+    "leftHand": "abyssalnomicon"
   },
   "abyssalcraft:antiplayer": {
     "abilities": [
@@ -2658,7 +2978,10 @@
       "ac_antimatter_burst",
       "ac_anti_matter_blast",
       "ac_anti_implosion"
-    ]
+    ],
+    "hands": true,
+    "rightHand": "bipedRightArm",
+    "leftHand": "bipedLeftArm"
   },
   "abyssalcraft.antiplayer": {
     "abilities": [
@@ -2679,7 +3002,10 @@
       "ac_antimatter_burst",
       "ac_anti_matter_blast",
       "ac_anti_implosion"
-    ]
+    ],
+    "hands": true,
+    "rightHand": "bipedRightArm",
+    "leftHand": "bipedLeftArm"
   },
   "abyssalcraft:antighoul": {
     "abilities": [
@@ -2701,7 +3027,10 @@
       "ac_antimatter_burst",
       "ac_ghoul_pounce",
       "ac_anti_matter_blast"
-    ]
+    ],
+    "hands": true,
+    "rightHand": "rarm1",
+    "leftHand": "larm1"
   },
   "abyssalcraft.antighoul": {
     "abilities": [
@@ -2723,7 +3052,10 @@
       "ac_antimatter_burst",
       "ac_ghoul_pounce",
       "ac_anti_matter_blast"
-    ]
+    ],
+    "hands": true,
+    "rightHand": "rarm1",
+    "leftHand": "larm1"
   },
   "abyssalcraft:antiabyssalzombie": {
     "abilities": [
@@ -2749,7 +3081,10 @@
       "ac_antimatter_burst",
       "ac_ghoul_pounce",
       "ac_anti_matter_blast"
-    ]
+    ],
+    "hands": true,
+    "rightHand": "bipedRightArm",
+    "leftHand": "bipedLeftArm"
   },
   "abyssalcraft.antiabyssalzombie": {
     "abilities": [
@@ -2775,7 +3110,10 @@
       "ac_antimatter_burst",
       "ac_ghoul_pounce",
       "ac_anti_matter_blast"
-    ]
+    ],
+    "hands": true,
+    "rightHand": "bipedRightArm",
+    "leftHand": "bipedLeftArm"
   },
   "abyssalcraft:gskeleton": {
     "abilities": [
@@ -2792,9 +3130,13 @@
       "coralium"
     ],
     "actions": [
+      "ac_goliath_smash",
       "ac_spectral_fireball",
-      "ac_remnant_screech"
-    ]
+      "ac_dread_slam"
+    ],
+    "hands": true,
+    "rightHand": "rightarm",
+    "leftHand": "leftarm"
   },
   "abyssalcraft.gskeleton": {
     "abilities": [
@@ -2811,9 +3153,13 @@
       "coralium"
     ],
     "actions": [
+      "ac_goliath_smash",
       "ac_spectral_fireball",
-      "ac_remnant_screech"
-    ]
+      "ac_dread_slam"
+    ],
+    "hands": true,
+    "rightHand": "rightarm",
+    "leftHand": "leftarm"
   },
   "abyssalcraft:shuboffspring": {
     "abilities": [
@@ -2828,9 +3174,13 @@
       "antimatter"
     ],
     "actions": [
-      "ac_remnant_screech",
-      "ac_ghoul_pounce"
-    ]
+      "ac_goliath_smash",
+      "ac_ghoul_pounce",
+      "ac_remnant_screech"
+    ],
+    "hands": true,
+    "rightHand": "rLeg01a",
+    "leftHand": "lLeg01a"
   },
   "abyssalcraft.shuboffspring": {
     "abilities": [
@@ -2845,9 +3195,13 @@
       "antimatter"
     ],
     "actions": [
-      "ac_remnant_screech",
-      "ac_ghoul_pounce"
-    ]
+      "ac_goliath_smash",
+      "ac_ghoul_pounce",
+      "ac_remnant_screech"
+    ],
+    "hands": true,
+    "rightHand": "rLeg01a",
+    "leftHand": "lLeg01a"
   },
   "abyssalcraft:jzaharminion": {
     "abilities": [
@@ -2865,8 +3219,13 @@
     ],
     "actions": [
       "ac_jzahar_wither_salvo",
-      "ac_remnant_screech"
-    ]
+      "ac_remnant_screech",
+      "ac_shadow_slash",
+      "ac_shadow_step"
+    ],
+    "hands": true,
+    "rightHand": "rightarm1",
+    "leftHand": "leftarm1"
   },
   "abyssalcraft.jzaharminion": {
     "abilities": [
@@ -2884,7 +3243,200 @@
     ],
     "actions": [
       "ac_jzahar_wither_salvo",
-      "ac_remnant_screech"
-    ]
+      "ac_remnant_screech",
+      "ac_shadow_slash",
+      "ac_shadow_step"
+    ],
+    "hands": true,
+    "rightHand": "rightarm1",
+    "leftHand": "leftarm1"
+  },
+  "abyssalcraft:remnanttrader": {
+    "abilities": [
+      "hungerless",
+      "faction_omothol"
+    ],
+    "immunities": [
+      "abyssalcraft:antimatter",
+      "abyssalcraft:cplague",
+      "abyssalcraft:dplague",
+      "minecraft:blindness",
+      "minecraft:poison",
+      "minecraft:wither",
+      "potion.Antimatter",
+      "potion.Cplague",
+      "potion.Dplague",
+      "potion.antimatter",
+      "potion.poison"
+    ],
+    "damageImmunities": [
+      "acid",
+      "antimatter",
+      "coralium",
+      "dread",
+      "explosion",
+      "fall",
+      "hotFloor",
+      "inFire",
+      "lava",
+      "magic",
+      "shadow",
+      "shoggoth_acid",
+      "wither"
+    ],
+    "actions": [
+      "ac_remnant_screech",
+      "ac_spectral_fireball",
+      "ac_ghoul_pounce"
+    ],
+    "hands": true,
+    "rightHand": "rightarm",
+    "leftHand": "leftarm"
+  },
+  "abyssalcraft.remnanttrader": {
+    "abilities": [
+      "hungerless",
+      "faction_omothol"
+    ],
+    "immunities": [
+      "abyssalcraft:antimatter",
+      "abyssalcraft:cplague",
+      "abyssalcraft:dplague",
+      "minecraft:blindness",
+      "minecraft:poison",
+      "minecraft:wither",
+      "potion.Antimatter",
+      "potion.Cplague",
+      "potion.Dplague",
+      "potion.antimatter",
+      "potion.poison"
+    ],
+    "damageImmunities": [
+      "acid",
+      "antimatter",
+      "coralium",
+      "dread",
+      "explosion",
+      "fall",
+      "hotFloor",
+      "inFire",
+      "lava",
+      "magic",
+      "shadow",
+      "shoggoth_acid",
+      "wither"
+    ],
+    "actions": [
+      "ac_remnant_screech",
+      "ac_spectral_fireball",
+      "ac_ghoul_pounce"
+    ],
+    "hands": true,
+    "rightHand": "rightarm",
+    "leftHand": "leftarm"
+  },
+  "abyssalcraft:Jzahar": {
+    "abilities": [
+      "fly",
+      "fire_proof",
+      "hungerless",
+      "night_vision",
+      "prevent_fall",
+      "faction_omothol_lord",
+      "faction_shadow_lord"
+    ],
+    "immunities": [
+      "abyssalcraft:antimatter",
+      "abyssalcraft:cplague",
+      "abyssalcraft:dplague",
+      "minecraft:blindness",
+      "minecraft:nausea",
+      "minecraft:poison",
+      "minecraft:slowness",
+      "minecraft:wither",
+      "potion.Antimatter",
+      "potion.Cplague",
+      "potion.Dplague"
+    ],
+    "damageImmunities": [
+      "acid",
+      "antimatter",
+      "coralium",
+      "dread",
+      "explosion",
+      "fall",
+      "flyIntoWall",
+      "hotFloor",
+      "inFire",
+      "inWall",
+      "lava",
+      "magic",
+      "onFire",
+      "shadow",
+      "shoggoth_acid",
+      "wither"
+    ],
+    "actions": [
+      "ac_jzahar_wither_salvo",
+      "ac_jzahar_shout_blast",
+      "ac_jzahar_singularity",
+      "ac_jzahar_earthquake",
+      "ac_jzahar_oblivion"
+    ],
+    "hands": true,
+    "rightHand": "staff1",
+    "leftHand": "abyssalnomicon"
+  },
+  "abyssalcraft.Jzahar": {
+    "abilities": [
+      "fly",
+      "fire_proof",
+      "hungerless",
+      "night_vision",
+      "prevent_fall",
+      "faction_omothol_lord",
+      "faction_shadow_lord"
+    ],
+    "immunities": [
+      "abyssalcraft:antimatter",
+      "abyssalcraft:cplague",
+      "abyssalcraft:dplague",
+      "minecraft:blindness",
+      "minecraft:nausea",
+      "minecraft:poison",
+      "minecraft:slowness",
+      "minecraft:wither",
+      "potion.Antimatter",
+      "potion.Cplague",
+      "potion.Dplague"
+    ],
+    "damageImmunities": [
+      "acid",
+      "antimatter",
+      "coralium",
+      "dread",
+      "explosion",
+      "fall",
+      "flyIntoWall",
+      "hotFloor",
+      "inFire",
+      "inWall",
+      "lava",
+      "magic",
+      "onFire",
+      "shadow",
+      "shoggoth_acid",
+      "wither"
+    ],
+    "actions": [
+      "ac_jzahar_wither_salvo",
+      "ac_jzahar_shout_blast",
+      "ac_jzahar_singularity",
+      "ac_jzahar_earthquake",
+      "ac_jzahar_oblivion"
+    ],
+    "hands": true,
+    "rightHand": "staff1",
+    "leftHand": "abyssalnomicon"
   }
 }

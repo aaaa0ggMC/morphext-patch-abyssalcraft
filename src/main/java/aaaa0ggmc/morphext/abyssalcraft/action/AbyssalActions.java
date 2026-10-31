@@ -1189,5 +1189,210 @@ public final class AbyssalActions {
         }
     }
 
+    /**
+     * 远古骷髅歌利亚 / 渊素傀儡：巨灵撼地重踏 (ID: ac_goliath_smash, 冷却 5s)
+     * 4.5米远古巨像践踏大地，撼碎地面引发 6 格冲击波，震飞并重创周围所有敌人。
+     */
+    public static class GoliathSmashAction extends AbyssalCraftAction {
+        public GoliathSmashAction() { super(100); }
+
+        @Override
+        protected boolean executeServer(EntityLivingBase entity, AbstractMorph morph) {
+            World world = entity.world;
+            Vec3d look = entity.getLook(1.0F);
+
+            entity.swingArm(EnumHand.MAIN_HAND);
+
+            // 6 格地面震波判定盒
+            AxisAlignedBB slamBox = entity.getEntityBoundingBox().grow(5.5D, 2.0D, 5.5D).offset(look.x * 1.5D, 0.0D, look.z * 1.5D);
+            List<EntityLivingBase> list = world.getEntitiesWithinAABB(EntityLivingBase.class, slamBox,
+                    e -> e != entity && e.isEntityAlive() && !e.isOnSameTeam(entity));
+
+            DamageSource source = entity instanceof EntityPlayer ?
+                    DamageSource.causePlayerDamage((EntityPlayer) entity) : DamageSource.causeMobDamage(entity);
+
+            for (EntityLivingBase e : list) {
+                e.attackEntityFrom(source, 16.0F);
+                e.motionY += 0.65D;
+                e.motionX += (e.posX - entity.posX) * 0.4D;
+                e.motionZ += (e.posZ - entity.posZ) * 0.4D;
+                e.velocityChanged = true;
+                e.addPotionEffect(new PotionEffect(MobEffects.SLOWNESS, 80, 2));
+            }
+
+            // 震地冲击波骨屑与巨石粒子
+            if (world instanceof WorldServer) {
+                WorldServer ws = (WorldServer) world;
+                double cx = entity.posX + look.x * 1.2D;
+                double cz = entity.posZ + look.z * 1.2D;
+                for (int angle = 0; angle < 360; angle += 20) {
+                    double rad = Math.toRadians(angle);
+                    double px = cx + Math.cos(rad) * 4.0D;
+                    double pz = cz + Math.sin(rad) * 4.0D;
+                    ws.spawnParticle(EnumParticleTypes.SMOKE_LARGE, px, entity.posY + 0.2D, pz, 3, 0.1, 0.2, 0.1, 0.04);
+                    ws.spawnParticle(EnumParticleTypes.CRIT, px, entity.posY + 0.3D, pz, 4, 0.1, 0.1, 0.1, 0.05);
+                }
+                ws.spawnParticle(EnumParticleTypes.EXPLOSION_LARGE, cx, entity.posY + 0.3D, cz, 3, 0.6, 0.2, 0.6, 0.0);
+            }
+
+            world.playSound(null, entity.posX, entity.posY, entity.posZ,
+                    SoundEvents.ENTITY_IRONGOLEM_ATTACK, SoundCategory.HOSTILE, 1.8F, 0.6F);
+            world.playSound(null, entity.posX, entity.posY, entity.posZ,
+                    SoundEvents.BLOCK_ANVIL_LAND, SoundCategory.PLAYERS, 1.2F, 0.5F);
+            world.playSound(null, entity.posX, entity.posY, entity.posZ,
+                    SoundEvents.ENTITY_SKELETON_HURT, SoundCategory.HOSTILE, 1.5F, 0.5F);
+
+            return true;
+        }
+    }
+
+    /**
+     * 反物质蜘蛛：反物质跃击与虚空织网 (ID: ac_anti_spider_leap, 冷却 3.5s)
+     * 极速向准星腾空飞扑，落地在周围激荡反物质丝网微粒，使目标深陷强力迟缓与反物质虚弱。
+     */
+    public static class AntiSpiderLeapAction extends AbyssalCraftAction {
+        public AntiSpiderLeapAction() { super(70); }
+
+        @Override
+        protected boolean executeServer(EntityLivingBase entity, AbstractMorph morph) {
+            World world = entity.world;
+            Vec3d look = entity.getLook(1.0F);
+
+            // 跃起突进
+            entity.motionX += look.x * 1.5D;
+            entity.motionY += 0.45D;
+            entity.motionZ += look.z * 1.5D;
+            entity.velocityChanged = true;
+
+            // 身前判定盒
+            AxisAlignedBB box = entity.getEntityBoundingBox().grow(3.0D, 1.5D, 3.0D).offset(look.x * 2.2D, 0.2D, look.z * 2.2D);
+            List<EntityLivingBase> list = world.getEntitiesWithinAABB(EntityLivingBase.class, box,
+                    e -> e != entity && e.isEntityAlive() && !e.isOnSameTeam(entity));
+
+            DamageSource source = AbyssalCraftAPI.antimatter != null ?
+                    AbyssalCraftAPI.antimatter :
+                    (entity instanceof EntityPlayer ? DamageSource.causePlayerDamage((EntityPlayer) entity) : DamageSource.causeMobDamage(entity));
+
+            boolean hit = false;
+            for (EntityLivingBase target : list) {
+                target.attackEntityFrom(source, 10.0F);
+                if (AbyssalCraftAPI.antimatter_potion != null) {
+                    target.addPotionEffect(new PotionEffect(AbyssalCraftAPI.antimatter_potion, 100, 0));
+                }
+                target.addPotionEffect(new PotionEffect(MobEffects.SLOWNESS, 80, 2));
+                target.addPotionEffect(new PotionEffect(MobEffects.WEAKNESS, 80, 1));
+                target.knockBack(entity, 0.8F, -look.x, -look.z);
+                hit = true;
+            }
+
+            if (world instanceof WorldServer) {
+                WorldServer ws = (WorldServer) world;
+                double px = entity.posX + look.x * 2.0D;
+                double py = entity.posY + 0.3D;
+                double pz = entity.posZ + look.z * 2.0D;
+                ws.spawnParticle(EnumParticleTypes.PORTAL, px, py, pz, 40, 1.2D, 0.5D, 1.2D, 0.1D);
+                ws.spawnParticle(EnumParticleTypes.END_ROD, px, py, pz, 15, 0.8D, 0.3D, 0.8D, 0.05D);
+            }
+
+            world.playSound(null, entity.posX, entity.posY, entity.posZ,
+                    SoundEvents.ENTITY_SPIDER_AMBIENT, SoundCategory.HOSTILE, 1.3F, 1.2F);
+            world.playSound(null, entity.posX, entity.posY, entity.posZ,
+                    SoundEvents.BLOCK_PORTAL_TRIGGER, SoundCategory.PLAYERS, 0.8F, 1.8F);
+            if (hit) {
+                world.playSound(null, entity.posX, entity.posY, entity.posZ,
+                        SoundEvents.ENTITY_SPIDER_HURT, SoundCategory.HOSTILE, 1.2F, 1.4F);
+            }
+
+            return true;
+        }
+    }
+
+    /**
+     * 反物质骷髅：反物质虚空箭雨 (ID: ac_anti_skeleton_arrow, 冷却 2s)
+     * 拉开虚空骨弓，向准星高速射出反物质侵蚀箭矢，命中引发虚空湮灭冲击。
+     */
+    public static class AntiSkeletonArrowAction extends AbyssalCraftAction {
+        public AntiSkeletonArrowAction() { super(40); }
+
+        @Override
+        protected boolean executeServer(EntityLivingBase entity, AbstractMorph morph) {
+            World world = entity.world;
+            Vec3d look = entity.getLook(1.0F);
+            Vec3d safe = getSafeSpawnPosition(entity, 1.8D);
+
+            net.minecraft.entity.projectile.EntityTippedArrow arrow = new net.minecraft.entity.projectile.EntityTippedArrow(world, entity);
+            arrow.setPosition(safe.x, safe.y, safe.z);
+            arrow.shoot(look.x, look.y + 0.05D, look.z, 2.2F, 1.0F);
+            arrow.setDamage(8.0D);
+            if (AbyssalCraftAPI.antimatter_potion != null) {
+                arrow.addEffect(new PotionEffect(AbyssalCraftAPI.antimatter_potion, 100, 0));
+            } else {
+                arrow.addEffect(new PotionEffect(MobEffects.WITHER, 80, 1));
+            }
+            BossNativeHelper.tagOwner(arrow, entity);
+            world.spawnEntity(arrow);
+
+            if (world instanceof WorldServer) {
+                WorldServer ws = (WorldServer) world;
+                ws.spawnParticle(EnumParticleTypes.PORTAL, safe.x, safe.y, safe.z, 15, 0.2D, 0.2D, 0.2D, 0.05D);
+            }
+
+            world.playSound(null, entity.posX, entity.posY, entity.posZ,
+                    SoundEvents.ENTITY_SKELETON_SHOOT, SoundCategory.PLAYERS, 1.0F, 1.2F);
+            world.playSound(null, entity.posX, entity.posY, entity.posZ,
+                    SoundEvents.BLOCK_PORTAL_TRIGGER, SoundCategory.PLAYERS, 0.6F, 2.0F);
+
+            return true;
+        }
+    }
+
+    /**
+     * 邪恶动物：恶念冲顶与凶暴突进 (ID: ac_evil_charge, 冷却 4s)
+     * 凶狠向前冲刺撞击前方敌人，造成强力击退并发出恶念尖啸。
+     */
+    public static class EvilChargeAction extends AbyssalCraftAction {
+        public EvilChargeAction() { super(80); }
+
+        @Override
+        protected boolean executeServer(EntityLivingBase entity, AbstractMorph morph) {
+            World world = entity.world;
+            Vec3d look = entity.getLook(1.0F);
+
+            entity.motionX += look.x * 1.4D;
+            entity.motionZ += look.z * 1.4D;
+            entity.motionY += 0.22D;
+            entity.velocityChanged = true;
+
+            AxisAlignedBB box = entity.getEntityBoundingBox().grow(2.5D, 1.2D, 2.5D).offset(look.x * 1.8D, 0.2D, look.z * 1.8D);
+            List<EntityLivingBase> list = world.getEntitiesWithinAABB(EntityLivingBase.class, box,
+                    e -> e != entity && e.isEntityAlive() && !e.isOnSameTeam(entity));
+
+            DamageSource source = entity instanceof EntityPlayer ?
+                    DamageSource.causePlayerDamage((EntityPlayer) entity) : DamageSource.causeMobDamage(entity);
+
+            for (EntityLivingBase target : list) {
+                target.attackEntityFrom(source, 10.0F);
+                target.knockBack(entity, 1.4F, -look.x, -look.z);
+                target.addPotionEffect(new PotionEffect(MobEffects.WEAKNESS, 80, 0));
+                target.addPotionEffect(new PotionEffect(MobEffects.NAUSEA, 60, 0));
+            }
+
+            if (world instanceof WorldServer) {
+                WorldServer ws = (WorldServer) world;
+                double px = entity.posX + look.x * 1.5D;
+                double pz = entity.posZ + look.z * 1.5D;
+                ws.spawnParticle(EnumParticleTypes.SMOKE_LARGE, px, entity.posY + 0.3D, pz, 15, 0.4D, 0.2D, 0.4D, 0.05D);
+                ws.spawnParticle(EnumParticleTypes.VILLAGER_ANGRY, px, entity.posY + 0.5D, pz, 5, 0.3D, 0.2D, 0.3D, 0.0D);
+            }
+
+            world.playSound(null, entity.posX, entity.posY, entity.posZ,
+                    SoundEvents.ENTITY_GHAST_HURT, SoundCategory.HOSTILE, 1.0F, 0.6F);
+            world.playSound(null, entity.posX, entity.posY, entity.posZ,
+                    SoundEvents.ENTITY_IRONGOLEM_ATTACK, SoundCategory.PLAYERS, 1.2F, 0.7F);
+
+            return true;
+        }
+    }
+
     private AbyssalActions() { }
 }

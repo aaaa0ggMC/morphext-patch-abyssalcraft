@@ -46,6 +46,10 @@ morphext.metamorph.action.ac_evil_cow_milk=Cursed Milking & Evil Ram
 morphext.metamorph.action.ac_anti_chicken_egg=Antimatter Egg Laying
 morphext.metamorph.action.ac_demon_sheep_shear=Demon Shearing & Fire Ring
 morphext.metamorph.action.ac_demon_fire_charge=Hellfire Charge
+morphext.metamorph.action.ac_goliath_smash=Goliath Stomp
+morphext.metamorph.action.ac_anti_spider_leap=Antimatter Spider Leap
+morphext.metamorph.action.ac_anti_skeleton_arrow=Antimatter Void Arrow
+morphext.metamorph.action.ac_evil_charge=Evil Ram
 
 # Action Descriptions
 morphext.metamorph.desc.ac_acid_spit=Acid Spit: Launches a highly corrosive shoggoth acid projectile, damaging armor and applying lingering acid damage.
@@ -75,6 +79,10 @@ morphext.metamorph.desc.ac_antimatter_burst=Antimatter Burst: Condenses and unle
 morphext.metamorph.desc.ac_anti_creeper_fuse=Antimatter Annihilation Pulse: High-energy antimatter fusion pulse in a 10-block radius without block destruction and 100% host immunity, devastating surrounding enemies with massive antimatter damage and annihilation (10s CD).
 morphext.metamorph.desc.ac_anti_player_slash=Antimatter Slash & Dash: Regular cast executes a forward dash sweep with antimatter blade aura, dealing heavy antimatter damage, antimatter corrosion, and slowness; sneak cast performs an evasive recoil disengage with a blinding flash, knocking enemies back and boosting movement speed (3s CD).
 morphext.metamorph.desc.ac_anti_matter_blast=Antimatter Blast: Unleashes a piercing beam of pure antimatter energy, annihilating all entities in its path.
+morphext.metamorph.desc.ac_anti_spider_leap=Antimatter Spider Leap: Lunges aggressively toward the crosshair, unleashing an antimatter web burst that slows and weakens targets (3.5s CD).
+morphext.metamorph.desc.ac_anti_skeleton_arrow=Antimatter Void Arrow: Draws a void bone bow to shoot high-velocity antimatter-infused arrows, triggering annihilation impacts (2s CD).
+morphext.metamorph.desc.ac_goliath_smash=Goliath Stomp: Smashes the earth with colossal force, erupting a 6-block shockwave that launches and devastates all nearby foes (5s CD).
+morphext.metamorph.desc.ac_evil_charge=Evil Ram: Violently charges forward to ram enemies with a malevolent shriek, knocking them back with weakness and nausea (4s CD).
 morphext.metamorph.desc.ac_jzahar_oblivion=Oblivion Singularity: Manifests an Omothol void singularity, crushing foes with wither and void damage.
 
 # Native Boss Mechanism Adapter Actions

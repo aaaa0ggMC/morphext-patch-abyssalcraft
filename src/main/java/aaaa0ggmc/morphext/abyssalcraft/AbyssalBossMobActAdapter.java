@@ -1,6 +1,7 @@
 package aaaa0ggmc.morphext.abyssalcraft;
 
 import aaaa0ggmc.morphext.abyssalcraft.action.BossNativeHelper;
+import aaaa0ggmc.morphext.abyssalcraft.profiler.ProfilerBridge;
 import aaaa0ggmc.morphext.integration.metamorph.SafeMobActAction;
 import mchorse.metamorph.api.morphs.AbstractMorph;
 import net.minecraft.entity.EntityLiving;
@@ -29,6 +30,15 @@ public class AbyssalBossMobActAdapter implements SafeMobActAction.IMobActAdapter
 
     @Override
     public boolean handleMobAct(EntityLivingBase player, AbstractMorph morph, EntityLiving dummy, @Nullable EntityLivingBase targetEnemy, Vec3d lookTarget) {
+        long start = ProfilerBridge.begin();
+        try {
+            return doHandleMobAct(player, morph, dummy, targetEnemy, lookTarget);
+        } finally {
+            ProfilerBridge.end("abyssal:boss_mobact", start);
+        }
+    }
+
+    private boolean doHandleMobAct(EntityLivingBase player, AbstractMorph morph, EntityLiving dummy, @Nullable EntityLivingBase targetEnemy, Vec3d lookTarget) {
         if (morph == null || morph.name == null) return false;
         String name = morph.name.toLowerCase();
         World world = player.world;
@@ -159,7 +169,7 @@ public class AbyssalBossMobActAdapter implements SafeMobActAction.IMobActAdapter
         // 6. 修格斯系列 (Shoggoth) 原生强酸喷吐
         if (name.contains("shoggoth")) {
             player.swingArm(EnumHand.MAIN_HAND);
-            dummy.swingArm(EnumHand.MAIN_HAND);
+            if (dummy != null) dummy.swingArm(EnumHand.MAIN_HAND);
             mchorse.metamorph.api.abilities.IAction spit = mchorse.metamorph.api.MorphManager.INSTANCE.actions.get("ac_acid_spit");
             if (spit != null) {
                 spit.execute(player, morph);
@@ -167,10 +177,22 @@ public class AbyssalBossMobActAdapter implements SafeMobActAction.IMobActAdapter
             }
         }
 
-        // 6. 恐惧生物 (Dread) 原生恐惧充能弹
+        // 6.1 远古骷髅歌利亚 (Skeleton Goliath / gskeleton)
+        if (name.contains("gskeleton") || name.contains("goliath")) {
+            player.swingArm(EnumHand.MAIN_HAND);
+            if (dummy != null) dummy.swingArm(EnumHand.MAIN_HAND);
+            String actId = player.isSneaking() ? "ac_spectral_fireball" : "ac_goliath_smash";
+            mchorse.metamorph.api.abilities.IAction act = mchorse.metamorph.api.MorphManager.INSTANCE.actions.get(actId);
+            if (act != null) {
+                act.execute(player, morph);
+                return true;
+            }
+        }
+
+        // 6.2 恐惧生物 (Dread) 原生恐惧充能弹
         if (name.contains("dread")) {
             player.swingArm(EnumHand.MAIN_HAND);
-            dummy.swingArm(EnumHand.MAIN_HAND);
+            if (dummy != null) dummy.swingArm(EnumHand.MAIN_HAND);
             mchorse.metamorph.api.abilities.IAction charge = mchorse.metamorph.api.MorphManager.INSTANCE.actions.get("ac_dread_charge");
             if (charge != null) {
                 charge.execute(player, morph);
@@ -178,13 +200,14 @@ public class AbyssalBossMobActAdapter implements SafeMobActAction.IMobActAdapter
             }
         }
 
-        // 7. 珊瑚生物 (Coralium) 原生珊瑚墨汁
-        if (name.contains("coralium")) {
+        // 7. 珊瑚生物 (Coralium) 原生珊瑚墨汁与利爪
+        if (name.contains("coralium") || name.contains("depthsghoul") || name.contains("abyssalzombie")) {
             player.swingArm(EnumHand.MAIN_HAND);
-            dummy.swingArm(EnumHand.MAIN_HAND);
-            mchorse.metamorph.api.abilities.IAction squirt = mchorse.metamorph.api.MorphManager.INSTANCE.actions.get("ac_coralium_squirt");
-            if (squirt != null) {
-                squirt.execute(player, morph);
+            if (dummy != null) dummy.swingArm(EnumHand.MAIN_HAND);
+            String actId = player.isSneaking() ? "ac_ghoul_pounce" : "ac_coralium_claws";
+            mchorse.metamorph.api.abilities.IAction act = mchorse.metamorph.api.MorphManager.INSTANCE.actions.get(actId);
+            if (act != null) {
+                act.execute(player, morph);
                 return true;
             }
         }
@@ -192,10 +215,33 @@ public class AbyssalBossMobActAdapter implements SafeMobActAction.IMobActAdapter
         // 8. 反物质生物 (Antimatter) 原生反物质脉冲
         if (name.contains("antimatter") || name.contains("anti")) {
             player.swingArm(EnumHand.MAIN_HAND);
-            dummy.swingArm(EnumHand.MAIN_HAND);
+            if (dummy != null) dummy.swingArm(EnumHand.MAIN_HAND);
             mchorse.metamorph.api.abilities.IAction pulse = mchorse.metamorph.api.MorphManager.INSTANCE.actions.get("ac_anti_matter_blast");
             if (pulse != null) {
                 pulse.execute(player, morph);
+                return true;
+            }
+        }
+
+        // 9. 邪恶动物 (Evil Animals)
+        if (name.contains("evil")) {
+            player.swingArm(EnumHand.MAIN_HAND);
+            if (dummy != null) dummy.swingArm(EnumHand.MAIN_HAND);
+            mchorse.metamorph.api.abilities.IAction act = mchorse.metamorph.api.MorphManager.INSTANCE.actions.get("ac_evil_charge");
+            if (act != null) {
+                act.execute(player, morph);
+                return true;
+            }
+        }
+
+        // 10. 奥穆索生物 (Omothol Remnant / Warden / Ghoul)
+        if (name.contains("remnant") || name.contains("omothol")) {
+            player.swingArm(EnumHand.MAIN_HAND);
+            if (dummy != null) dummy.swingArm(EnumHand.MAIN_HAND);
+            String actId = player.isSneaking() ? "ac_spectral_fireball" : "ac_remnant_screech";
+            mchorse.metamorph.api.abilities.IAction act = mchorse.metamorph.api.MorphManager.INSTANCE.actions.get(actId);
+            if (act != null) {
+                act.execute(player, morph);
                 return true;
             }
         }

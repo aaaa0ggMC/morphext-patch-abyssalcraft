@@ -1,5 +1,6 @@
 package aaaa0ggmc.morphext.abyssalcraft;
 
+import aaaa0ggmc.morphext.abyssalcraft.profiler.ProfilerBridge;
 import com.shinoow.abyssalcraft.common.network.PacketDispatcher;
 import com.shinoow.abyssalcraft.common.network.client.CleansingRitualMessage;
 import com.shinoow.abyssalcraft.common.util.BiomeUtil;
@@ -101,6 +102,7 @@ public class SafeCleansingRitualHandler implements IMessageHandler<CleansingRitu
                 }
 
                 // 安全更新群系与渲染缓存
+                long start = ProfilerBridge.begin();
                 try {
                     BiomeUtil.updateBiome(mc.world, pos, biomeID, false);
                     if (x % 14 == 0 || z % 14 == 0 || !batched) {
@@ -108,6 +110,8 @@ public class SafeCleansingRitualHandler implements IMessageHandler<CleansingRitu
                     }
                 } catch (Throwable t) {
                     MorphExtAbyssalCraft.LOGGER.debug("[morphext-abyssalcraft] Safely caught biome update anomaly at " + pos, t);
+                } finally {
+                    ProfilerBridge.end("abyssal:cleansing_ritual", start);
                 }
             });
         } catch (Exception e) {

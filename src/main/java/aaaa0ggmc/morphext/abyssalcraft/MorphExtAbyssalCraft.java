@@ -138,6 +138,14 @@ public class MorphExtAbyssalCraft {
         MorphManager.INSTANCE.actions.put("ac_anti_creeper_fuse", new AbyssalActions.AntiCreeperAnnihilationAction());
         MorphManager.INSTANCE.actions.put("ac_anti_implosion", new AbyssalActions.AntiImplosion());
         MorphManager.INSTANCE.actions.put("ac_anti_matter_blast", new AbyssalActions.AntimatterBlast());
+        MorphManager.INSTANCE.actions.put("ac_anti_spider_leap", new AbyssalActions.AntiSpiderLeapAction());
+        MorphManager.INSTANCE.actions.put("ac_anti_skeleton_arrow", new AbyssalActions.AntiSkeletonArrowAction());
+
+        // 远古歌利亚与傀儡
+        MorphManager.INSTANCE.actions.put("ac_goliath_smash", new AbyssalActions.GoliathSmashAction());
+
+        // 邪恶动物突进
+        MorphManager.INSTANCE.actions.put("ac_evil_charge", new AbyssalActions.EvilChargeAction());
 
         // 珊瑚感染生物核心动作
         MorphManager.INSTANCE.actions.put("ac_coralium_ink", new AbyssalActions.CoraliumInkAction());
