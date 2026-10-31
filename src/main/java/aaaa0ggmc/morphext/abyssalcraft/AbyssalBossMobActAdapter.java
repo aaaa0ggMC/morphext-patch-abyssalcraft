@@ -39,11 +39,15 @@ public class AbyssalBossMobActAdapter implements SafeMobActAction.IMobActAdapter
         // 1. 扎哈尔 (J'zahar) 原生三头凋灵首齐射
         if (name.contains("jzahar") || BossNativeHelper.isJzahar(dummy)) {
             player.swingArm(EnumHand.MAIN_HAND);
-            dummy.swingArm(EnumHand.MAIN_HAND);
-            boolean blueSkull = world.rand.nextFloat() < 0.25F;
-            BossNativeHelper.launchJzaharSkull(dummy, 0, aimCoord.x, aimCoord.y, aimCoord.z, blueSkull);
-            BossNativeHelper.launchJzaharSkull(dummy, 1, aimCoord.x, aimCoord.y, aimCoord.z, false);
-            BossNativeHelper.launchJzaharSkull(dummy, 2, aimCoord.x, aimCoord.y, aimCoord.z, false);
+            if (dummy != null) {
+                dummy.copyLocationAndAnglesFrom(player);
+                dummy.renderYawOffset = player.renderYawOffset;
+                dummy.rotationYawHead = player.getRotationYawHead();
+                dummy.swingArm(EnumHand.MAIN_HAND);
+                BossNativeHelper.launchJzaharSkull(dummy, 0, aimCoord.x, aimCoord.y, aimCoord.z, true);
+                BossNativeHelper.launchJzaharSkull(dummy, 1, aimCoord.x, aimCoord.y, aimCoord.z, false);
+                BossNativeHelper.launchJzaharSkull(dummy, 2, aimCoord.x, aimCoord.y, aimCoord.z, false);
+            }
             world.playSound(null, player.posX, player.posY, player.posZ,
                     SoundEvents.ENTITY_WITHER_SHOOT, SoundCategory.HOSTILE, 1.5F, 0.7F);
             return true;
@@ -52,7 +56,7 @@ public class AbyssalBossMobActAdapter implements SafeMobActAction.IMobActAdapter
         // 2. 萨克索斯 (Sacthoth) 原生口部暗影烈焰
         if (name.contains("sacthoth") || BossNativeHelper.isSacthoth(dummy)) {
             player.swingArm(EnumHand.MAIN_HAND);
-            dummy.swingArm(EnumHand.MAIN_HAND);
+            if (dummy != null) dummy.swingArm(EnumHand.MAIN_HAND);
             mchorse.metamorph.api.abilities.IAction flame = mchorse.metamorph.api.MorphManager.INSTANCE.actions.get("ac_sacthoth_shadow_flame");
             if (flame != null) {
                 flame.execute(player, morph);
@@ -60,24 +64,38 @@ public class AbyssalBossMobActAdapter implements SafeMobActAction.IMobActAdapter
             }
         }
 
-        // 3. 查伽洛斯 (Cha'garoth) 原生恐惧弹幕
+        // 3. 查伽洛斯 (Cha'garoth) 原生巨拳重击与恐惧弹幕
         if (name.contains("chagaroth")) {
             player.swingArm(EnumHand.MAIN_HAND);
-            dummy.swingArm(EnumHand.MAIN_HAND);
-            mchorse.metamorph.api.abilities.IAction salvo = mchorse.metamorph.api.MorphManager.INSTANCE.actions.get("ac_chagaroth_dread_salvo");
+            if (dummy != null) dummy.swingArm(EnumHand.MAIN_HAND);
+            String actId = player.isSneaking() ? "ac_chagaroth_fist" : "ac_chagaroth_dread_salvo";
+            mchorse.metamorph.api.abilities.IAction salvo = mchorse.metamorph.api.MorphManager.INSTANCE.actions.get(actId);
             if (salvo != null) {
                 salvo.execute(player, morph);
                 return true;
             }
         }
 
-        // 4. 阿萨托斯之龙 (DragonBoss) 原生恐惧龙息
-        if (name.contains("dragonboss")) {
+        // 4. 阿索拉 / 恐惧巨龙 (Asorah / Dragon Boss) 原生龙息与俯冲强袭
+        if (name.contains("dragonboss") || name.contains("asorah")) {
             player.swingArm(EnumHand.MAIN_HAND);
-            dummy.swingArm(EnumHand.MAIN_HAND);
-            mchorse.metamorph.api.abilities.IAction breath = mchorse.metamorph.api.MorphManager.INSTANCE.actions.get("ac_dragon_boss_breath");
+            if (dummy != null) dummy.swingArm(EnumHand.MAIN_HAND);
+            String actId = player.isSneaking() ? "ac_dragon_dive" : "ac_dragon_boss_breath";
+            mchorse.metamorph.api.abilities.IAction breath = mchorse.metamorph.api.MorphManager.INSTANCE.actions.get(actId);
             if (breath != null) {
                 breath.execute(player, morph);
+                return true;
+            }
+        }
+
+        // 4.1 暗影巨兽系列 (Shadow Creature / Monster / Beast / Titan)
+        if (name.contains("shadow")) {
+            player.swingArm(EnumHand.MAIN_HAND);
+            if (dummy != null) dummy.swingArm(EnumHand.MAIN_HAND);
+            String actId = player.isSneaking() ? "ac_shadow_veil" : "ac_shadow_slash";
+            mchorse.metamorph.api.abilities.IAction act = mchorse.metamorph.api.MorphManager.INSTANCE.actions.get(actId);
+            if (act != null) {
+                act.execute(player, morph);
                 return true;
             }
         }

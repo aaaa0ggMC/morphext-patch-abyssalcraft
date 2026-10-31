@@ -4,18 +4,19 @@ import aaaa0ggmc.morphext.abyssalcraft.entity.MorphEntityBlackHole;
 import aaaa0ggmc.morphext.abyssalcraft.entity.MorphEntityImplosion;
 import com.shinoow.abyssalcraft.api.AbyssalCraftAPI;
 import com.shinoow.abyssalcraft.api.entity.IOmotholEntity;
-import com.shinoow.abyssalcraft.common.entity.EntityBlackHole;
 import com.shinoow.abyssalcraft.common.entity.EntityChagarothFist;
 import com.shinoow.abyssalcraft.common.entity.EntityChagarothSpawn;
+import com.shinoow.abyssalcraft.common.entity.EntityDreadSpawn;
 import com.shinoow.abyssalcraft.common.entity.EntityDreadSlug;
 import com.shinoow.abyssalcraft.common.entity.EntityDreadedCharge;
-import com.shinoow.abyssalcraft.common.entity.EntityImplosion;
 import com.shinoow.abyssalcraft.lib.ACSounds;
 import com.shinoow.abyssalcraft.lib.util.SpecialTextUtil;
 import mchorse.metamorph.api.morphs.AbstractMorph;
 import net.minecraft.entity.Entity;
+import net.minecraft.entity.EntityLiving;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.entity.projectile.EntityWitherSkull;
 import net.minecraft.init.MobEffects;
 import net.minecraft.init.SoundEvents;
 import net.minecraft.potion.PotionEffect;
@@ -32,12 +33,12 @@ import net.minecraft.world.WorldServer;
 import java.util.List;
 
 /**
- * 深渊国度全部核心 Boss 原生机制与渲染复用动作集 (Native Boss Mechanism Adapter Actions)：
- * 1. 扎哈尔 (J'zahar)：原生三头凋灵齐射、终焉咆哮 (1000爆炸粒子)、黑洞/引力坍缩、大地震颤；
- * 2. 萨克索斯 (Sacthoth)：原生口部暗影烈焰喷涌、战术暗影瞬移 (128浓烟粒子)；
- * 3. 查伽洛斯 (Cha'garoth)：原生三头恐惧弹幕与恐惧巨拳/幼体召唤；
- * 4. 阿萨托斯之龙 (DragonBoss)：原生恐惧龙息与连环爆裂弹；
- * 5. 全面启用智能定向与宿主安全标签，杜绝自伤自锁。
+ * 深渊国度核心 Boss 原生机制与动作重构体系 (Native Boss Mechanism Adapter Actions)：
+ * 1. 扎哈尔 (J'zahar)：原生法杖 3D 挥动骨骼动画、三头凋灵首齐射 (中头蓝无敌、左头、右头)、终焉 1000 爆炸粒子古神咆哮、黑洞/引力坍缩、大地震颤；
+ * 2. 萨克索斯 (Sacthoth)：口部暗影烈焰喷涌 (45高斯暗影烟雾粒子)、战术 128 烟雾粒子暗影瞬移；
+ * 3. 阿索拉 / 恐惧巨龙 (Asorah / Dragon Boss)：恐惧龙息三向齐射、俯冲强袭 (高速飞掠碾压冲击波)；
+ * 4. 查伽洛斯 (Cha'garoth)：巨拳重击撼地 (范围撕裂击飞与巨拳投射)、眷族幼体孵化召唤 (散射搭载幼体与仆从的蛞蝓)；
+ * 5. 全面启用智能准星无死角定向与属主标签注入，绝不强制锁定敌人，彻底杜绝自伤自锁。
  */
 public final class AbyssalBossActions {
 
@@ -46,13 +47,13 @@ public final class AbyssalBossActions {
      * ========================================================================= */
 
     /**
-     * 扎哈尔原生三头凋灵首齐射 (Wither Salvo)：
+     * 扎哈尔原生三头凋灵首齐射 (Ancient Wither Salvo)：
      * 1. 驱动扎哈尔法杖挥砍 3D 骨骼动画 (swingArm)；
-     * 2. 调用原生 launchWitherSkullToCoords，分别从中头（蓝无敌）、左头、右头精确轰向准星；
-     * 3. 目标由 CrosshairTargetDirector 智能引导（有敌人打敌人，无敌人打准星视线交点）。
+     * 2. 调用原生 launchWitherSkullToCoords，分别从中头（蓝色无敌头）、左头、右头轰向准星；
+     * 3. 目标由 CrosshairTargetDirector 智能引导（有敌人打敌人，无敌人打准星视线交点，实现 100% 自由射击手感）。
      */
     public static class JzaharWitherSalvo extends AbyssalCraftAction {
-        public JzaharWitherSalvo() { super(35); }
+        public JzaharWitherSalvo() { super(35); } // 冷却 1.75s，手感轻快连贯
 
         @Override
         protected boolean executeServer(EntityLivingBase entity, AbstractMorph morph) {
@@ -62,31 +63,53 @@ public final class AbyssalBossActions {
             CrosshairTargetDirector.AimResult aim = CrosshairTargetDirector.resolveTarget(entity, 64.0D);
             Vec3d target = aim.coordTarget;
 
-            // 驱动法杖浮空 3D 挥击正弦动画
+            // 1. 驱动法杖浮空 3D 挥击骨骼动画
             entity.swingArm(EnumHand.MAIN_HAND);
             if (morphMob != null) {
+                morphMob.copyLocationAndAnglesFrom(entity);
+                morphMob.renderYawOffset = entity.renderYawOffset;
+                morphMob.rotationYawHead = entity.getRotationYawHead();
                 morphMob.swingArm(EnumHand.MAIN_HAND);
             }
 
             if (morphMob != null && BossNativeHelper.isJzahar(morphMob)) {
-                // 原生三头齐射：0 = 中头 (25% 无敌蓝头)，1 = 右头，2 = 左头
-                boolean blueSkull = world.rand.nextFloat() < 0.25F;
-                BossNativeHelper.launchJzaharSkull(morphMob, 0, target.x, target.y, target.z, blueSkull);
+                // 原生三头齐射：0 = 中头 (蓝色无敌凋灵首)，1 = 右头，2 = 左头
+                BossNativeHelper.launchJzaharSkull(morphMob, 0, target.x, target.y, target.z, true);
                 BossNativeHelper.launchJzaharSkull(morphMob, 1, target.x, target.y, target.z, false);
                 BossNativeHelper.launchJzaharSkull(morphMob, 2, target.x, target.y, target.z, false);
             } else {
-                // 降级兜底方案（若未能提取到 dummy 实例）
+                // 降级兜底方案（分别从中头、右头、左头三路齐发）
                 Vec3d look = entity.getLook(1.0F);
-                Vec3d safe = getSafeSpawnPosition(entity, 1.8D);
-                net.minecraft.entity.projectile.EntityWitherSkull skull =
-                        new net.minecraft.entity.projectile.EntityWitherSkull(world, entity, look.x * 0.1D, look.y * 0.1D, look.z * 0.1D);
-                skull.setPosition(safe.x, safe.y, safe.z);
-                BossNativeHelper.tagOwner(skull, entity);
-                world.spawnEntity(skull);
+                Vec3d right = look.crossProduct(new Vec3d(0, 1, 0)).normalize();
+                Vec3d centerPos = getSafeSpawnPosition(entity, 2.0D).add(0, 1.2D, 0);
+
+                // 中头：蓝色无敌首
+                Vec3d dirCenter = target.subtract(centerPos).normalize();
+                EntityWitherSkull skullCenter = new EntityWitherSkull(world, entity, dirCenter.x * 0.15D, dirCenter.y * 0.15D, dirCenter.z * 0.15D);
+                skullCenter.setPosition(centerPos.x, centerPos.y, centerPos.z);
+                skullCenter.setInvulnerable(true);
+                BossNativeHelper.tagOwner(skullCenter, entity);
+                world.spawnEntity(skullCenter);
+
+                // 右头
+                Vec3d rightPos = centerPos.add(right.scale(1.3D));
+                Vec3d dirRight = target.subtract(rightPos).normalize();
+                EntityWitherSkull skullRight = new EntityWitherSkull(world, entity, dirRight.x * 0.15D, dirRight.y * 0.15D, dirRight.z * 0.15D);
+                skullRight.setPosition(rightPos.x, rightPos.y, rightPos.z);
+                BossNativeHelper.tagOwner(skullRight, entity);
+                world.spawnEntity(skullRight);
+
+                // 左头
+                Vec3d leftPos = centerPos.subtract(right.scale(1.3D));
+                Vec3d dirLeft = target.subtract(leftPos).normalize();
+                EntityWitherSkull skullLeft = new EntityWitherSkull(world, entity, dirLeft.x * 0.15D, dirLeft.y * 0.15D, dirLeft.z * 0.15D);
+                skullLeft.setPosition(leftPos.x, leftPos.y, leftPos.z);
+                BossNativeHelper.tagOwner(skullLeft, entity);
+                world.spawnEntity(skullLeft);
             }
 
             world.playSound(null, entity.posX, entity.posY, entity.posZ,
-                    SoundEvents.ENTITY_WITHER_SHOOT, SoundCategory.HOSTILE, 1.5F, 0.7F);
+                    SoundEvents.ENTITY_WITHER_SHOOT, SoundCategory.HOSTILE, 1.6F, 0.7F);
             return true;
         }
     }
@@ -94,16 +117,20 @@ public final class AbyssalBossActions {
     /**
      * 扎哈尔终焉古神咆哮 (Shout Blast)：
      * 1. 广播深渊语台词 "...mglagln!" 与专属音效 ACSounds.jzahar_blast；
-     * 2. 完美还原原生 1000 颗高斯喷涌爆炸粒子；
-     * 3. 前方 48 格大扇形力场强力击飞与撞墙伤害（排除宿主自身）。
+     * 2. 严格还原源码中 1000 颗高斯喷涌爆炸粒子；
+     * 3. 前方 48 格大扇形力场强力击飞与撞墙伤害（排除宿主自身与奥穆索尔生物）。
      */
     public static class JzaharShoutBlast extends AbyssalCraftAction {
-        public JzaharShoutBlast() { super(160); }
+        public JzaharShoutBlast() { super(160); } // 冷却 8s
 
         @Override
         protected boolean executeServer(EntityLivingBase entity, AbstractMorph morph) {
             World world = entity.world;
             entity.swingArm(EnumHand.MAIN_HAND);
+            EntityLivingBase morphMob = BossNativeHelper.getMorphEntity(entity, morph);
+            if (morphMob != null) {
+                morphMob.swingArm(EnumHand.MAIN_HAND);
+            }
 
             // 1. 原生古神台词与咆哮音效
             SpecialTextUtil.JzaharGroup(world, "...mglagln!");
@@ -112,21 +139,21 @@ public final class AbyssalBossActions {
 
             Vec3d vector = entity.getLookVec();
 
-            // 2. 原生 1000 颗爆炸粒子喷射渲染
+            // 2. 完美还原原生 1000 颗爆炸粒子喷射渲染
             if (world instanceof WorldServer) {
                 WorldServer ws = (WorldServer) world;
-                double px = entity.posX;
-                double py = entity.posY + entity.getEyeHeight() - 0.2D;
-                double pz = entity.posZ;
+                double px = entity.posX + vector.x * 2.0D;
+                double py = entity.posY + entity.getEyeHeight() - 0.2D + vector.y * 2.0D;
+                double pz = entity.posZ + vector.z * 2.0D;
                 double spread = 10.0D;
-                for (int i = 0; i < 600; i++) {
+                for (int i = 0; i < 1000; i++) {
                     double dx = vector.x;
                     double dy = vector.y;
                     double dz = vector.z;
-                    double velocity = 2.0D + entity.getRNG().nextDouble() * 16.0D;
-                    dx += entity.getRNG().nextGaussian() * 0.0075D * spread;
-                    dy += entity.getRNG().nextGaussian() * 0.0075D * spread;
-                    dz += entity.getRNG().nextGaussian() * 0.0075D * spread;
+                    double velocity = 2.0D + entity.getRNG().nextDouble() * 18.0D;
+                    dx += entity.getRNG().nextGaussian() * 0.007499999832361937D * spread;
+                    dy += entity.getRNG().nextGaussian() * 0.007499999832361937D * spread;
+                    dz += entity.getRNG().nextGaussian() * 0.007499999832361937D * spread;
                     dx *= velocity;
                     dy *= velocity;
                     dz *= velocity;
@@ -138,17 +165,17 @@ public final class AbyssalBossActions {
                 }
             }
 
-            // 3. 48 格扇形强力击退与撞墙致死打击（排除自身与奥穆索尔生物）
+            // 3. 48 格大扇形力场强力击飞与撞墙伤害（排除宿主自身与奥穆索尔生物）
             double size = 48.0D;
             List<Entity> list = world.getEntitiesWithinAABB(Entity.class,
                     entity.getEntityBoundingBox().grow(size).offset(vector.x * 24.0D, vector.y * 24.0D, vector.z * 24.0D));
             for (Entity e : list) {
-                if (e != entity && e instanceof EntityLivingBase && !(e instanceof IOmotholEntity)) {
+                if (e != entity && e instanceof EntityLivingBase && !(e instanceof IOmotholEntity) && !e.isOnSameTeam(entity)) {
                     double velocity = 3.0D + entity.getRNG().nextDouble() * 6.0D;
                     e.addVelocity(vector.x * velocity, 0.4D + (vector.y + 0.2D) * velocity * 0.3D, vector.z * velocity);
                     DamageSource dmg = entity instanceof EntityPlayer ?
                             DamageSource.causePlayerDamage((EntityPlayer) entity) : DamageSource.FLY_INTO_WALL;
-                    e.attackEntityFrom(dmg, (float) (14.0D + velocity * 2.0D));
+                    e.attackEntityFrom(dmg, (float) (16.0D + velocity * 2.0D));
                 }
             }
             return true;
@@ -163,7 +190,7 @@ public final class AbyssalBossActions {
      * 4. 注入属主标签，宿主享有绝对免伤免被吸入。
      */
     public static class JzaharSingularity extends AbyssalCraftAction {
-        public JzaharSingularity() { super(160); }
+        public JzaharSingularity() { super(160); } // 冷却 8s
 
         @Override
         protected boolean executeServer(EntityLivingBase entity, AbstractMorph morph) {
@@ -214,7 +241,7 @@ public final class AbyssalBossActions {
      * 3. 宿主完全豁免自残。
      */
     public static class JzaharEarthquake extends AbyssalCraftAction {
-        public JzaharEarthquake() { super(220); }
+        public JzaharEarthquake() { super(200); } // 冷却 10s
 
         @Override
         protected boolean executeServer(EntityLivingBase entity, AbstractMorph morph) {
@@ -253,13 +280,13 @@ public final class AbyssalBossActions {
      * ========================================================================= */
 
     /**
-     * 萨克索斯原生暗影烈焰喷涌 (Shadow Flame)：
-     * 1. 沿准星视线喷出大量紫黑暗影粒子与 ACSounds / Ghast Shoot 音效；
+     * 萨克索斯原生口部暗影烈焰喷涌 (Shadow Flame)：
+     * 1. 还原原生口部 45 颗高斯暗影烟雾粒子喷射与 Ghast Shoot 音效；
      * 2. 造成纯正 AbyssalCraftAPI.shadow 伤害与强力失明/减速；
-     * 3. 宿主玩家绝对豁免自伤。
+     * 3. 准星自由无锁敌喷吐，宿主绝对豁免自伤。
      */
     public static class SacthothShadowFlame extends AbyssalCraftAction {
-        public SacthothShadowFlame() { super(45); }
+        public SacthothShadowFlame() { super(40); } // 冷却 2s
 
         @Override
         protected boolean executeServer(EntityLivingBase entity, AbstractMorph morph) {
@@ -267,40 +294,78 @@ public final class AbyssalBossActions {
             Vec3d look = entity.getLook(1.0F);
             Vec3d eye = entity.getPositionEyes(1.0F);
 
-            world.playSound(null, entity.posX, entity.posY + entity.getEyeHeight(), entity.posZ,
-                    SoundEvents.ENTITY_GHAST_SHOOT, SoundCategory.HOSTILE, 1.2F, 0.5F);
+            entity.swingArm(EnumHand.MAIN_HAND);
+            EntityLivingBase morphMob = BossNativeHelper.getMorphEntity(entity, morph);
+            if (morphMob != null) {
+                morphMob.swingArm(EnumHand.MAIN_HAND);
+            }
 
-            // 服务端口部暗影浓烟喷射
+            world.playSound(null, entity.posX, entity.posY + entity.getEyeHeight(), entity.posZ,
+                    SoundEvents.ENTITY_GHAST_SHOOT, SoundCategory.HOSTILE, 1.5F, 0.5F + world.rand.nextFloat() * 0.5F);
+            world.playSound(null, entity.posX, entity.posY + entity.getEyeHeight(), entity.posZ,
+                    ACSounds.shadow_hurt, SoundCategory.HOSTILE, 1.2F, 0.8F);
+
+            // 还原原生口部 45 颗高斯暗影烟雾粒子喷射
             if (world instanceof WorldServer) {
                 WorldServer ws = (WorldServer) world;
-                for (int i = 1; i <= 15; i++) {
-                    double dist = i * 0.9D;
+                double px = entity.posX + look.x * 0.8D;
+                double py = entity.posY + entity.getEyeHeight();
+                double pz = entity.posZ + look.z * 0.8D;
+
+                for (int i = 0; i < 45; i++) {
+                    double dx = look.x;
+                    double dy = look.y;
+                    double dz = look.z;
+                    double spread = 5.0D + entity.getRNG().nextDouble() * 2.5D;
+                    double velocity = 0.6D + entity.getRNG().nextDouble() * 0.8D;
+
+                    dx += entity.getRNG().nextGaussian() * 0.0075D * spread;
+                    dy += entity.getRNG().nextGaussian() * 0.0075D * spread;
+                    dz += entity.getRNG().nextGaussian() * 0.0075D * spread;
+                    dx *= velocity;
+                    dy *= velocity;
+                    dz *= velocity;
+
                     ws.spawnParticle(EnumParticleTypes.SMOKE_LARGE,
-                            eye.x + look.x * dist, eye.y + look.y * dist, eye.z + look.z * dist,
-                            4, 0.3D, 0.3D, 0.3D, 0.02D);
+                            px + entity.getRNG().nextDouble() - 0.5D,
+                            py + entity.getRNG().nextDouble() - 0.5D,
+                            pz + entity.getRNG().nextDouble() - 0.5D,
+                            0, dx, dy, dz, 1.0D);
                     ws.spawnParticle(EnumParticleTypes.PORTAL,
-                            eye.x + look.x * dist, eye.y + look.y * dist, eye.z + look.z * dist,
-                            3, 0.2D, 0.2D, 0.2D, 0.05D);
+                            px + entity.getRNG().nextDouble() - 0.5D,
+                            py + entity.getRNG().nextDouble() - 0.5D,
+                            pz + entity.getRNG().nextDouble() - 0.5D,
+                            1, dx * 0.3D, dy * 0.3D, dz * 0.3D, 0.1D);
                 }
             }
 
+            // 自由定向与锥形杀伤
             CrosshairTargetDirector.AimResult aim = CrosshairTargetDirector.resolveTarget(entity, 18.0D);
+            DamageSource shadowSrc = AbyssalCraftAPI.shadow != null ? AbyssalCraftAPI.shadow :
+                    (entity instanceof EntityPlayer ? DamageSource.causePlayerDamage((EntityPlayer) entity) : DamageSource.causeMobDamage(entity));
+
+            // 准星锁中的核心目标承受重创
             if (aim.hasEntity()) {
                 EntityLivingBase target = aim.entityTarget;
-                DamageSource shadowSrc = AbyssalCraftAPI.shadow != null ? AbyssalCraftAPI.shadow : DamageSource.causeMobDamage(entity);
-                target.attackEntityFrom(shadowSrc, 12.0F);
-                target.addPotionEffect(new PotionEffect(MobEffects.BLINDNESS, 120, 0));
-                target.addPotionEffect(new PotionEffect(MobEffects.SLOWNESS, 100, 1));
-            } else {
-                // 锥形范围扫射
-                List<EntityLivingBase> list = entity.world.getEntitiesWithinAABB(EntityLivingBase.class,
-                        entity.getEntityBoundingBox().grow(12.0D).offset(look.x * 6.0D, look.y * 6.0D, look.z * 6.0D),
-                        e -> e != entity && e.isEntityAlive() && !e.isOnSameTeam(entity));
-                for (EntityLivingBase e : list) {
-                    DamageSource shadowSrc = AbyssalCraftAPI.shadow != null ? AbyssalCraftAPI.shadow : DamageSource.causeMobDamage(entity);
-                    e.attackEntityFrom(shadowSrc, 8.0F);
-                    e.addPotionEffect(new PotionEffect(MobEffects.BLINDNESS, 80, 0));
-                    e.addPotionEffect(new PotionEffect(MobEffects.SLOWNESS, 80, 1));
+                target.attackEntityFrom(shadowSrc, 15.0F);
+                target.addPotionEffect(new PotionEffect(MobEffects.BLINDNESS, 140, 0));
+                target.addPotionEffect(new PotionEffect(MobEffects.SLOWNESS, 120, 1));
+            }
+
+            // 锥形范围内所有其他敌人受到范围暗影侵蚀
+            List<EntityLivingBase> list = entity.world.getEntitiesWithinAABB(EntityLivingBase.class,
+                    entity.getEntityBoundingBox().grow(12.0D).offset(look.x * 6.0D, look.y * 6.0D, look.z * 6.0D),
+                    e -> e != entity && e != aim.entityTarget && e.isEntityAlive() && !e.isOnSameTeam(entity));
+            for (EntityLivingBase e : list) {
+                Vec3d toTarget = e.getPositionVector().add(0, e.height * 0.5D, 0).subtract(eye);
+                double dist = toTarget.length();
+                if (dist <= 14.0D) {
+                    double dot = toTarget.normalize().dotProduct(look);
+                    if (dot > 0.4D) {
+                        e.attackEntityFrom(shadowSrc, (float) Math.max(6.0D, 14.0D - dist * 0.6D));
+                        e.addPotionEffect(new PotionEffect(MobEffects.BLINDNESS, 100, 0));
+                        e.addPotionEffect(new PotionEffect(MobEffects.SLOWNESS, 100, 1));
+                    }
                 }
             }
             return true;
@@ -308,23 +373,22 @@ public final class AbyssalBossActions {
     }
 
     /**
-     * 萨克索斯战术暗影瞬移 (Shadow Step)：
-     * 1. 沿瞬移路径喷发 128 颗末影浓烟粒子；
+     * 萨克索斯战术暗影瞬移 (Tactical Shadow Step)：
+     * 1. 沿瞬移路径喷发原生 128 颗末影浓烟粒子轨迹；
      * 2. 精确落地并播放末影人瞬移原声；
-     * 3. 拥有智能方块碰撞检测，绝不卡入实心方块。
+     * 3. 拥有智能方块碰撞检测，绝不卡入实心方块或掉入虚空。
      */
     public static class SacthothShadowStep extends AbyssalCraftAction {
-        public SacthothShadowStep() { super(60); }
+        public SacthothShadowStep() { super(50); } // 冷却 2.5s
 
         @Override
         protected boolean executeServer(EntityLivingBase entity, AbstractMorph morph) {
             World world = entity.world;
-            Vec3d look = entity.getLook(1.0F);
             double startX = entity.posX;
             double startY = entity.posY;
             double startZ = entity.posZ;
 
-            CrosshairTargetDirector.AimResult aim = CrosshairTargetDirector.resolveTarget(entity, 24.0D);
+            CrosshairTargetDirector.AimResult aim = CrosshairTargetDirector.resolveTarget(entity, 28.0D);
             double targetX = aim.coordTarget.x;
             double targetY = aim.coordTarget.y;
             double targetZ = aim.coordTarget.z;
@@ -333,25 +397,37 @@ public final class AbyssalBossActions {
             BlockPos targetPos = new BlockPos(targetX, targetY, targetZ);
             if (world.getBlockState(targetPos).getMaterial().blocksMovement()) {
                 targetY = targetPos.getY() + 1.0D;
+            } else {
+                BlockPos ground = targetPos.down();
+                for (int i = 0; i < 8 && !world.getBlockState(ground).getMaterial().blocksMovement() && ground.getY() > 0; i++) {
+                    ground = ground.down();
+                }
+                if (world.getBlockState(ground).getMaterial().blocksMovement()) {
+                    targetY = ground.getY() + 1.0D;
+                }
             }
 
             entity.setPositionAndUpdate(targetX, targetY, targetZ);
+            entity.fallDistance = 0.0F;
 
-            // 还原原生 128 颗浓烟粒子轨迹
+            // 完美还原原生 128 颗浓烟粒子轨迹
             if (world instanceof WorldServer) {
                 WorldServer ws = (WorldServer) world;
                 short count = 128;
                 for (int l = 0; l < count; ++l) {
                     double d6 = l / (count - 1.0D);
+                    float f = (world.rand.nextFloat() - 0.5F) * 0.2F;
+                    float f1 = (world.rand.nextFloat() - 0.5F) * 0.2F;
+                    float f2 = (world.rand.nextFloat() - 0.5F) * 0.2F;
                     double d7 = startX + (targetX - startX) * d6 + (world.rand.nextDouble() - 0.5D) * 1.5D;
                     double d8 = startY + (targetY - startY) * d6 + world.rand.nextDouble() * 3.0D;
                     double d9 = startZ + (targetZ - startZ) * d6 + (world.rand.nextDouble() - 0.5D) * 1.5D;
-                    ws.spawnParticle(EnumParticleTypes.SMOKE_LARGE, d7, d8, d9, 1, 0.05, 0.05, 0.05, 0.02);
+                    ws.spawnParticle(EnumParticleTypes.SMOKE_LARGE, d7, d8, d9, 0, f, f1, f2, 1.0D);
                 }
             }
 
-            world.playSound(null, startX, startY, startZ, SoundEvents.ENTITY_ENDERMEN_TELEPORT, SoundCategory.PLAYERS, 1.0F, 1.0F);
-            world.playSound(null, targetX, targetY, targetZ, SoundEvents.ENTITY_ENDERMEN_TELEPORT, SoundCategory.PLAYERS, 1.0F, 1.0F);
+            world.playSound(null, startX, startY, startZ, SoundEvents.ENTITY_ENDERMEN_TELEPORT, SoundCategory.PLAYERS, 1.2F, 1.0F);
+            world.playSound(null, targetX, targetY, targetZ, SoundEvents.ENTITY_ENDERMEN_TELEPORT, SoundCategory.PLAYERS, 1.2F, 1.0F);
             return true;
         }
     }
@@ -361,13 +437,13 @@ public final class AbyssalBossActions {
      * ========================================================================= */
 
     /**
-     * 查伽洛斯多头恐惧弹幕与仆从骑乘 (Chagaroth Dread Salvo)：
-     * 1. 随机发射恐惧火球 EntityDreadedCharge 或高速恐惧蛞蝓 EntityDreadSlug；
-     * 2. 概率召唤骑乘蛞蝓的恐惧巨拳 EntityChagarothFist 或恐惧幼体 EntityChagarothSpawn；
+     * 查伽洛斯多头恐惧弹幕 (Chagaroth Dread Salvo)：
+     * 1. 轮流发射恐惧火球 EntityDreadedCharge、高速穿甲恐惧蛞蝓 EntityDreadSlug；
+     * 2. 概率发射载有巨拳或幼体的弹幕突击敌阵；
      * 3. 注入属主标签，杜绝反噬。
      */
     public static class ChagarothDreadSalvo extends AbyssalCraftAction {
-        public ChagarothDreadSalvo() { super(45); }
+        public ChagarothDreadSalvo() { super(40); } // 冷却 2s
 
         @Override
         protected boolean executeServer(EntityLivingBase entity, AbstractMorph morph) {
@@ -385,7 +461,7 @@ public final class AbyssalBossActions {
                 world.playSound(null, entity.posX, entity.posY, entity.posZ,
                         SoundEvents.ENTITY_GHAST_SHOOT, SoundCategory.HOSTILE, 1.2F, 0.4F);
             } else if (choice == 1) {
-                // 高速恐惧蛞蝓
+                // 高速穿甲恐惧蛞蝓
                 EntityDreadSlug slug = new EntityDreadSlug(world, entity);
                 slug.setPosition(safe.x, safe.y, safe.z);
                 slug.shoot(look.x, look.y, look.z, 1.8F, 1.0F);
@@ -401,20 +477,13 @@ public final class AbyssalBossActions {
                 BossNativeHelper.tagOwner(slug, entity);
                 world.spawnEntity(slug);
 
-                EntityLivingBase rider;
-                if (world.rand.nextBoolean()) {
-                    EntityChagarothFist fist = new EntityChagarothFist(world);
-                    fist.copyLocationAndAnglesFrom(slug);
-                    BossNativeHelper.tagOwner(fist, entity);
-                    world.spawnEntity(fist);
-                    fist.startRiding(slug);
-                } else {
-                    EntityChagarothSpawn spawn = new EntityChagarothSpawn(world);
-                    spawn.copyLocationAndAnglesFrom(slug);
-                    BossNativeHelper.tagOwner(spawn, entity);
-                    world.spawnEntity(spawn);
-                    spawn.startRiding(slug);
-                }
+                EntityLiving minion = world.rand.nextBoolean() ?
+                        new EntityChagarothFist(world) : new EntityChagarothSpawn(world);
+                minion.copyLocationAndAnglesFrom(slug);
+                BossNativeHelper.tagOwner(minion, entity);
+                world.spawnEntity(minion);
+                minion.startRiding(slug);
+
                 world.playSound(null, entity.posX, entity.posY, entity.posZ,
                         SoundEvents.ENTITY_ZOMBIE_VILLAGER_CURE, SoundCategory.HOSTILE, 1.2F, 0.6F);
             }
@@ -423,13 +492,13 @@ public final class AbyssalBossActions {
     }
 
     /**
-     * 查伽洛斯巨拳重击 (ID: ac_chagaroth_fist)：
-     * 1. 撼地重碾身前范围敌人造成大额伤害与恐惧瘟疫；
-     * 2. 召唤/发射查伽洛斯之拳 (EntityChagarothFist) 突袭撕裂目标；
-     * 3. 属主标签注入，绝不反噬宿主。
+     * 查伽洛斯巨拳重击撼地 (Fist of Cha'garoth - ac_chagaroth_fist)：
+     * 1. 撼地重碾身前 6 格范围敌人造成大额恐惧重创、击飞并扩散恐惧瘟疫；
+     * 2. 发射高速恐惧巨拳 (EntityChagarothFist) 突袭撕裂目标；
+     * 3. 伴随剧烈地震与铁砧坠落声，属主标签注入，绝不反噬宿主。
      */
     public static class ChagarothFist extends AbyssalCraftAction {
-        public ChagarothFist() { super(140); } // 冷却 7s
+        public ChagarothFist() { super(100); } // 冷却 5s
 
         @Override
         protected boolean executeServer(EntityLivingBase entity, AbstractMorph morph) {
@@ -437,56 +506,69 @@ public final class AbyssalBossActions {
             Vec3d look = entity.getLook(1.0F);
             entity.swingArm(EnumHand.MAIN_HAND);
 
-            // 1. 身前重砸
-            AxisAlignedBB box = entity.getEntityBoundingBox().grow(4.0D).offset(look.x * 3.0D, 0.2D, look.z * 3.0D);
+            // 1. 身前撼地重砸
+            AxisAlignedBB box = entity.getEntityBoundingBox().grow(5.0D).offset(look.x * 3.0D, 0.2D, look.z * 3.0D);
             List<EntityLivingBase> list = world.getEntitiesWithinAABB(EntityLivingBase.class, box,
                     e -> e != entity && e.isEntityAlive() && !e.isOnSameTeam(entity));
-            DamageSource src = AbyssalCraftAPI.dread != null ? AbyssalCraftAPI.dread : DamageSource.causeMobDamage(entity);
+            DamageSource src = AbyssalCraftAPI.dread != null ? AbyssalCraftAPI.dread :
+                    (entity instanceof EntityPlayer ? DamageSource.causePlayerDamage((EntityPlayer) entity) : DamageSource.causeMobDamage(entity));
             for (EntityLivingBase target : list) {
-                target.attackEntityFrom(src, 16.0F);
-                target.motionY += 0.6D;
+                target.attackEntityFrom(src, 18.0F);
+                target.motionY += 0.7D;
                 target.velocityChanged = true;
                 if (AbyssalCraftAPI.dread_plague != null) {
-                    target.addPotionEffect(new PotionEffect(AbyssalCraftAPI.dread_plague, 160, 0));
+                    target.addPotionEffect(new PotionEffect(AbyssalCraftAPI.dread_plague, 180, 0));
                 }
+                target.addPotionEffect(new PotionEffect(MobEffects.SLOWNESS, 100, 2));
             }
 
-            // 2. 发射恐惧巨拳投射
-            Vec3d safe = getSafeSpawnPosition(entity, 2.0D);
+            // 2. 发射恐惧巨拳投射物（跨准星自由指向）
+            CrosshairTargetDirector.AimResult aim = CrosshairTargetDirector.resolveTarget(entity, 32.0D);
+            Vec3d targetCoord = aim.coordTarget;
+            Vec3d safe = getSafeSpawnPosition(entity, 2.2D);
+            Vec3d shootDir = targetCoord.subtract(safe).normalize();
+
             EntityDreadSlug slug = new EntityDreadSlug(world, entity);
             slug.setPosition(safe.x, safe.y, safe.z);
-            slug.shoot(look.x, look.y, look.z, 1.5F, 1.0F);
+            slug.shoot(shootDir.x, shootDir.y, shootDir.z, 1.6F, 1.0F);
             BossNativeHelper.tagOwner(slug, entity);
             world.spawnEntity(slug);
 
             EntityChagarothFist fist = new EntityChagarothFist(world);
             fist.copyLocationAndAnglesFrom(slug);
             BossNativeHelper.tagOwner(fist, entity);
+            if (aim.hasEntity()) {
+                fist.setAttackTarget(aim.entityTarget);
+            }
             world.spawnEntity(fist);
             fist.startRiding(slug);
 
+            // 特效与震撼音画
             if (world instanceof WorldServer) {
                 WorldServer ws = (WorldServer) world;
-                ws.spawnParticle(EnumParticleTypes.EXPLOSION_LARGE, entity.posX + look.x * 2.5D, entity.posY + 0.5D, entity.posZ + look.z * 2.5D, 3, 0.5, 0.2, 0.5, 0.0);
-                ws.spawnParticle(EnumParticleTypes.SMOKE_LARGE, entity.posX + look.x * 2.5D, entity.posY + 0.5D, entity.posZ + look.z * 2.5D, 20, 1.0, 0.5, 1.0, 0.05);
+                ws.spawnParticle(EnumParticleTypes.EXPLOSION_LARGE, entity.posX + look.x * 2.5D, entity.posY + 0.5D, entity.posZ + look.z * 2.5D, 4, 0.5, 0.2, 0.5, 0.0);
+                ws.spawnParticle(EnumParticleTypes.SMOKE_LARGE, entity.posX + look.x * 2.5D, entity.posY + 0.5D, entity.posZ + look.z * 2.5D, 25, 1.0, 0.5, 1.0, 0.05);
+                ws.spawnParticle(EnumParticleTypes.LAVA, entity.posX + look.x * 2.5D, entity.posY + 0.2D, entity.posZ + look.z * 2.5D, 15, 1.0, 0.2, 1.0, 0.0);
             }
 
             world.playSound(null, entity.posX, entity.posY, entity.posZ,
+                    ACSounds.dreadguard_barf, SoundCategory.HOSTILE, 1.6F, 0.7F);
+            world.playSound(null, entity.posX, entity.posY, entity.posZ,
                     SoundEvents.ENTITY_IRONGOLEM_ATTACK, SoundCategory.HOSTILE, 1.8F, 0.5F);
             world.playSound(null, entity.posX, entity.posY, entity.posZ,
-                    SoundEvents.BLOCK_ANVIL_LAND, SoundCategory.PLAYERS, 1.0F, 0.6F);
+                    SoundEvents.BLOCK_ANVIL_LAND, SoundCategory.PLAYERS, 1.2F, 0.6F);
             return true;
         }
     }
 
     /**
-     * 查伽洛斯幼体召唤 (ID: ac_chagaroth_spawn)：
-     * 1. 向准星发射两枚搭载恐惧幼体的恐惧蛞蝓；
+     * 查伽洛斯眷族幼体孵化召唤 (ac_chagaroth_spawn)：
+     * 1. 向准星散射多枚搭载恐惧幼体与仆从的恐惧蛞蝓；
      * 2. 幼体自动扑咬敌对目标并施加恐惧瘟疫；
      * 3. 属主标签注入，绝不反噬宿主。
      */
     public static class ChagarothSpawn extends AbyssalCraftAction {
-        public ChagarothSpawn() { super(160); } // 冷却 8s
+        public ChagarothSpawn() { super(140); } // 冷却 7s
 
         @Override
         protected boolean executeServer(EntityLivingBase entity, AbstractMorph morph) {
@@ -494,69 +576,154 @@ public final class AbyssalBossActions {
             Vec3d look = entity.getLook(1.0F);
             entity.swingArm(EnumHand.MAIN_HAND);
 
-            double[] spreadAngles = new double[] { -0.15D, 0.15D };
-            for (double angle : spreadAngles) {
+            CrosshairTargetDirector.AimResult aim = CrosshairTargetDirector.resolveTarget(entity, 32.0D);
+
+            double[] spreadAngles = new double[] { -0.2D, 0.0D, 0.2D };
+            for (int i = 0; i < spreadAngles.length; i++) {
+                double angle = spreadAngles[i];
                 double vx = look.x * Math.cos(angle) - look.z * Math.sin(angle);
                 double vz = look.x * Math.sin(angle) + look.z * Math.cos(angle);
-                Vec3d safe = getSafeSpawnPosition(entity, 2.0D);
+                Vec3d safe = getSafeSpawnPosition(entity, 2.2D);
 
                 EntityDreadSlug slug = new EntityDreadSlug(world, entity);
                 slug.setPosition(safe.x, safe.y, safe.z);
-                slug.shoot(vx, look.y, vz, 1.4F, 1.0F);
+                slug.shoot(vx, look.y + 0.1D, vz, 1.4F, 1.0F);
                 BossNativeHelper.tagOwner(slug, entity);
                 world.spawnEntity(slug);
 
-                EntityChagarothSpawn spawn = new EntityChagarothSpawn(world);
-                spawn.copyLocationAndAnglesFrom(slug);
-                BossNativeHelper.tagOwner(spawn, entity);
-                world.spawnEntity(spawn);
-                spawn.startRiding(slug);
+                EntityLiving minion;
+                if (i == 1 && world.rand.nextBoolean()) {
+                    EntityChagarothFist fist = new EntityChagarothFist(world);
+                    fist.copyLocationAndAnglesFrom(slug);
+                    minion = fist;
+                } else {
+                    EntityChagarothSpawn spawn = new EntityChagarothSpawn(world);
+                    spawn.copyLocationAndAnglesFrom(slug);
+                    minion = spawn;
+                }
+
+                BossNativeHelper.tagOwner(minion, entity);
+                if (aim.hasEntity()) {
+                    minion.setAttackTarget(aim.entityTarget);
+                }
+                world.spawnEntity(minion);
+                minion.startRiding(slug);
             }
 
             if (world instanceof WorldServer) {
                 WorldServer ws = (WorldServer) world;
-                ws.spawnParticle(EnumParticleTypes.SLIME, entity.posX + look.x * 2.0D, entity.posY + 1.0D, entity.posZ + look.z * 2.0D, 25, 0.5, 0.5, 0.5, 0.1);
+                ws.spawnParticle(EnumParticleTypes.SLIME, entity.posX + look.x * 2.0D, entity.posY + 1.0D, entity.posZ + look.z * 2.0D, 30, 0.6, 0.6, 0.6, 0.1);
             }
 
             world.playSound(null, entity.posX, entity.posY, entity.posZ,
-                    ACSounds.dread_spawn_ambient, SoundCategory.HOSTILE, 1.4F, 0.8F);
+                    ACSounds.dread_spawn_ambient, SoundCategory.HOSTILE, 1.5F, 0.8F);
             world.playSound(null, entity.posX, entity.posY, entity.posZ,
-                    SoundEvents.ENTITY_SLIME_SQUISH, SoundCategory.HOSTILE, 1.2F, 0.6F);
+                    SoundEvents.ENTITY_SLIME_SQUISH, SoundCategory.HOSTILE, 1.3F, 0.6F);
             return true;
         }
     }
 
     /* =========================================================================
-     *                         阿萨托斯之龙 (DragonBoss) 原生动作
+     *                         阿索拉 / 恐惧巨龙 (Asorah / Dragon Boss) 原生动作
      * ========================================================================= */
 
     /**
-     * 阿萨托斯之龙恐惧龙息连环轰击 (Dragon Boss Breath)：
-     * 1. 扇形齐射 3 枚扩散型恐惧火球；
-     * 2. 伴随剧烈龙吼与前向冲击波。
+     * 阿索拉 / 恐惧巨龙恐惧龙息三向齐射 (Dragon Boss Breath)：
+     * 1. 扇形齐射 3 枚扩散型恐惧爆裂火球；
+     * 2. 安全距离偏移发射，彻底杜绝自伤；
+     * 3. 伴随剧烈龙吼与前向冲击波。
      */
     public static class DragonBossBreath extends AbyssalCraftAction {
-        public DragonBossBreath() { super(70); }
+        public DragonBossBreath() { super(60); } // 冷却 3s
 
         @Override
         protected boolean executeServer(EntityLivingBase entity, AbstractMorph morph) {
             World world = entity.world;
             Vec3d look = entity.getLook(1.0F);
-            Vec3d safe = getSafeSpawnPosition(entity, 2.5D);
+            Vec3d safe = getSafeSpawnPosition(entity, 2.8D);
 
             world.playSound(null, entity.posX, entity.posY, entity.posZ,
-                    SoundEvents.ENTITY_ENDERDRAGON_GROWL, SoundCategory.HOSTILE, 2.0F, 0.7F);
+                    SoundEvents.ENTITY_ENDERDRAGON_GROWL, SoundCategory.HOSTILE, 2.2F, 0.7F);
+            world.playSound(null, entity.posX, entity.posY, entity.posZ,
+                    SoundEvents.ENTITY_GHAST_SHOOT, SoundCategory.HOSTILE, 1.5F, 0.5F);
 
-            // 连射 3 枚扇形恐惧爆裂弹
-            double[] angles = new double[] { -0.15D, 0.0D, 0.15D };
+            // 扇形齐射 3 枚恐惧爆裂火球
+            double[] angles = new double[] { -0.18D, 0.0D, 0.18D };
             for (double angle : angles) {
                 double vx = look.x * Math.cos(angle) - look.z * Math.sin(angle);
                 double vz = look.x * Math.sin(angle) + look.z * Math.cos(angle);
-                EntityDreadedCharge charge = new EntityDreadedCharge(world, entity, vx * 0.12D, look.y * 0.12D, vz * 0.12D);
+                EntityDreadedCharge charge = new EntityDreadedCharge(world, entity, vx * 0.14D, look.y * 0.14D, vz * 0.14D);
                 charge.setPosition(safe.x, safe.y, safe.z);
                 BossNativeHelper.tagOwner(charge, entity);
                 world.spawnEntity(charge);
             }
+            return true;
+        }
+    }
+
+    /**
+     * 阿索拉 / 恐惧巨龙原生俯冲强袭 (Dragon Boss Dive / Swoop Rush - ac_dragon_dive):
+     * 1. 沿视线方向极速俯冲飞掠冲刺 (强力爆发动能位移)；
+     * 2. 播放巨龙振翅 SoundEvents.ENTITY_ENDERDRAGON_FLAP 与咆哮 SoundEvents.ENTITY_ENDERDRAGON_GROWL；
+     * 3. 沿突进路径喷射龙息粒子 (DRAGON_BREATH) 与大爆炸特效 (EXPLOSION_LARGE)；
+     * 4. 沿途碾压判定：对前方 5 格内所有敌对实体造成 18.0F 动能+恐惧重创，强烈击飞并施加恐惧瘟疫与迟缓；
+     * 5. 冲刺期间及冲刺后赋予宿主短暂免摔落保护与速度加成。
+     */
+    public static class DragonBossDiveRush extends AbyssalCraftAction {
+        public DragonBossDiveRush() { super(120); } // 冷却 6s
+
+        @Override
+        protected boolean executeServer(EntityLivingBase entity, AbstractMorph morph) {
+            World world = entity.world;
+            Vec3d look = entity.getLook(1.0F);
+
+            // 1. 爆发性前向俯冲冲击
+            entity.motionX += look.x * 2.2D;
+            entity.motionY += Math.max(look.y * 1.5D, -0.6D) + 0.1D;
+            entity.motionZ += look.z * 2.2D;
+            entity.fallDistance = 0.0F;
+            entity.velocityChanged = true;
+
+            // 2. 音效：振翅狂风 + 恶龙咆哮
+            world.playSound(null, entity.posX, entity.posY, entity.posZ,
+                    SoundEvents.ENTITY_ENDERDRAGON_FLAP, SoundCategory.HOSTILE, 2.5F, 0.8F);
+            world.playSound(null, entity.posX, entity.posY, entity.posZ,
+                    SoundEvents.ENTITY_ENDERDRAGON_GROWL, SoundCategory.HOSTILE, 2.0F, 0.9F);
+
+            // 3. 沿冲刺路径激荡龙息与爆炸冲击波粒子
+            if (world instanceof WorldServer) {
+                WorldServer ws = (WorldServer) world;
+                for (int i = 1; i <= 8; i++) {
+                    double dist = i * 1.2D;
+                    ws.spawnParticle(EnumParticleTypes.DRAGON_BREATH,
+                            entity.posX + look.x * dist, entity.posY + entity.getEyeHeight() * 0.5D + look.y * dist, entity.posZ + look.z * dist,
+                            6, 0.4D, 0.4D, 0.4D, 0.05D);
+                    ws.spawnParticle(EnumParticleTypes.EXPLOSION_LARGE,
+                            entity.posX + look.x * dist, entity.posY + 0.5D + look.y * dist, entity.posZ + look.z * dist,
+                            1, 0.0D, 0.0D, 0.0D, 0.0D);
+                }
+            }
+
+            // 4. 前方路径碾压与冲击击飞
+            AxisAlignedBB pathBox = entity.getEntityBoundingBox().grow(3.5D).offset(look.x * 3.0D, look.y * 1.5D, look.z * 3.0D);
+            List<EntityLivingBase> list = world.getEntitiesWithinAABB(EntityLivingBase.class, pathBox,
+                    e -> e != entity && e.isEntityAlive() && !e.isOnSameTeam(entity));
+
+            DamageSource src = AbyssalCraftAPI.dread != null ? AbyssalCraftAPI.dread :
+                    (entity instanceof EntityPlayer ? DamageSource.causePlayerDamage((EntityPlayer) entity) : DamageSource.causeMobDamage(entity));
+
+            for (EntityLivingBase target : list) {
+                target.attackEntityFrom(src, 18.0F);
+                target.motionX += look.x * 1.5D;
+                target.motionY += 0.65D;
+                target.motionZ += look.z * 1.5D;
+                target.velocityChanged = true;
+                if (AbyssalCraftAPI.dread_plague != null) {
+                    target.addPotionEffect(new PotionEffect(AbyssalCraftAPI.dread_plague, 160, 0));
+                }
+                target.addPotionEffect(new PotionEffect(MobEffects.SLOWNESS, 100, 1));
+            }
+
             return true;
         }
     }

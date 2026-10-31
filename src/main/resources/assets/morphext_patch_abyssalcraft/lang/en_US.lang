@@ -32,6 +32,9 @@ morphext.metamorph.action.ac_chagaroth_fist=Fist of Cha'garoth
 morphext.metamorph.action.ac_chagaroth_spawn=Summon Cha'garoth Spawn
 morphext.metamorph.action.ac_dragon_breath=Dread Dragon Breath
 morphext.metamorph.action.ac_dragon_boss_breath=Dread Dragon Breath
+morphext.metamorph.action.ac_dragon_dive=Dread Dragon Dive Rush
+morphext.metamorph.action.ac_asorah_dive=Asorah Dive Rush
+morphext.metamorph.action.ac_jzahar_oblivion=Oblivion Singularity
 morphext.metamorph.action.ac_anti_cow_milk=Antimatter Milking & Pulse
 morphext.metamorph.action.ac_demon_cow_milk=Lava Milking & Hellfire Charge
 morphext.metamorph.action.ac_evil_cow_milk=Cursed Milking & Evil Ram
@@ -74,6 +77,13 @@ morphext.metamorph.desc.ac_chagaroth_fist=Fist of Cha'garoth: Smashes the ground
 morphext.metamorph.desc.ac_chagaroth_spawn=Summon Cha'garoth Spawn: Fires a spread of two dread slugs carrying Cha'garoth Spawns that seek out enemies and inflict Dread Plague, fully exempting the host (8s CD).
 morphext.metamorph.desc.ac_dragon_breath=Dread Dragon Breath: Roars and launches a spread of 3 dread fireballs engulfing the forward area in dread flames.
 morphext.metamorph.desc.ac_dragon_boss_breath=Dread Dragon Breath: Roars and launches a spread of 3 dread fireballs engulfing the forward area in dread flames.
+morphext.metamorph.desc.ac_dragon_dive=Dread Dragon Dive Rush: Flaps wings with a deafening roar and dives at supersonic speed toward the crosshair target, leaving a trail of dragon breath and shockwaves. Deals massive kinetic and dread damage on impact, inflicting Dread Plague and granting immunity to fall damage (8s CD).
+morphext.metamorph.desc.ac_asorah_dive=Asorah Dive Rush: Flaps wings with a deafening roar and dives at supersonic speed toward the crosshair target, leaving a trail of dragon breath and shockwaves. Deals massive kinetic and dread damage on impact, inflicting Dread Plague and granting immunity to fall damage (8s CD).
+
+# Passive Abilities
+morphext.ability.ac_photophobia.name=Shadow Photophobia & Dark Affinity
+morphext.ability.ac_photophobia.desc=Shadow Photophobia & Dark Affinity: Direct exposure to bright daylight (light >= 12) emits smoke and afflicts the host with Weakness and Slowness. Cloaked in darkness (light <= 7), awakens shadow affinity granting Night Vision and Resistance. Melee strikes inflict Blindness and Wither.
+morphext.metamorph.desc.ac_photophobia=Shadow Photophobia & Dark Affinity: Exposure to bright light (>=12) causes Weakness and Slowness. In darkness (<=7), grants Night Vision and Resistance. Melee strikes inflict Blindness and Wither.
 
 # Abyssal Special Animal Interaction Actions
 morphext.metamorph.desc.ac_anti_cow_milk=Antimatter Milking & Pulse: Holding an empty bucket extracts a hazardous Liquid Antimatter Bucket (10s CD). When empty-handed, emits an antimatter recoil pulse knocking back entities within 4 blocks with void annihilation (15s CD).

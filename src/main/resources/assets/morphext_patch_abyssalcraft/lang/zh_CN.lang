@@ -32,6 +32,9 @@ morphext.metamorph.action.ac_chagaroth_fist=查伽洛斯巨拳
 morphext.metamorph.action.ac_chagaroth_spawn=召唤恐惧幼体
 morphext.metamorph.action.ac_dragon_breath=恐惧龙息
 morphext.metamorph.action.ac_dragon_boss_breath=阿萨托斯恐惧龙息
+morphext.metamorph.action.ac_dragon_dive=巨龙俯冲强袭
+morphext.metamorph.action.ac_asorah_dive=阿索拉俯冲强袭
+morphext.metamorph.action.ac_jzahar_oblivion=终焉湮灭
 morphext.metamorph.action.ac_anti_cow_milk=反物质挤奶与脉冲
 morphext.metamorph.action.ac_demon_cow_milk=熔岩挤奶与地狱之火
 morphext.metamorph.action.ac_evil_cow_milk=诅咒挤奶与恶念冲撞
@@ -74,6 +77,13 @@ morphext.metamorph.desc.ac_chagaroth_fist=查伽洛斯巨拳重击：巨臂轰�
 morphext.metamorph.desc.ac_chagaroth_spawn=查伽洛斯幼体召唤：向准星散射两枚恐惧蛞蝓并搭载恐惧幼体突击敌阵，幼体自动追击敌对目标并附带恐惧瘟疫，完全豁免宿主（冷却8秒）。
 morphext.metamorph.desc.ac_dragon_breath=阿萨托斯恐惧龙息：仰天怒吼并发射扇形恐惧爆裂弹幕，前方区域陷入火海与剧毒恐惧。
 morphext.metamorph.desc.ac_dragon_boss_breath=阿萨托斯恐惧龙息：仰天怒吼并发射扇形恐惧爆裂弹幕，前方区域陷入火海与剧毒恐惧。
+morphext.metamorph.desc.ac_dragon_dive=巨龙俯冲强袭：拍打双翼并发出震天龙啸，超音速向下俯冲突袭准星目标，沿途留下龙息烈焰与冲击波，命中产生剧烈爆炸、击退与极高物理/恐惧伤害，施加恐惧瘟疫并免疫坠落伤害（冷却8秒）。
+morphext.metamorph.desc.ac_asorah_dive=阿索拉俯冲强袭：拍打双翼并发出震天龙啸，超音速向下俯冲突袭准星目标，沿途留下龙息烈焰与冲击波，命中产生剧烈爆炸、击退与极高物理/恐惧伤害，施加恐惧瘟疫并免疫坠落伤害（冷却8秒）。
+
+# 被动能力 (Passive Abilities)
+morphext.ability.ac_photophobia.name=暗影畏光与暗夜亲和
+morphext.ability.ac_photophobia.desc=暗影畏光与暗夜亲和：暴露在日光直射或强光下（亮度≥12）将浑身冒烟并陷入虚弱与迟缓；身处黑暗（亮度≤7）则觉醒暗影亲和，获得夜视与抗性提升。近战攻击命中附带致盲与暗影凋零。
+morphext.metamorph.desc.ac_photophobia=暗影畏光与暗夜亲和：暴露在强光下（亮度≥12）陷入虚弱与迟缓；身处黑暗（亮度≤7）获得夜视与抗性提升，近战攻击附带致盲与凋零。
 
 # 深渊特殊动物联动动作
 morphext.metamorph.desc.ac_anti_cow_milk=反物质挤奶与脉冲：手持空桶可挤出高危的液态反物质桶（冷却10秒）；未手持空桶时则释放反物质反冲脉冲，震退击飞周围4格内生物并造成反物质湮灭（冷却15秒）。

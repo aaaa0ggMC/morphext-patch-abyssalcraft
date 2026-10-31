@@ -108,5 +108,12 @@ public class MorphExtAbyssalCraft {
 
         MorphManager.INSTANCE.actions.put("ac_dragon_breath", new AbyssalBossActions.DragonBossBreath());
         MorphManager.INSTANCE.actions.put("ac_dragon_boss_breath", new AbyssalBossActions.DragonBossBreath());
+        MorphManager.INSTANCE.actions.put("ac_dragon_dive", new AbyssalBossActions.DragonBossDiveRush());
+        MorphManager.INSTANCE.actions.put("ac_asorah_dive", new AbyssalBossActions.DragonBossDiveRush());
+
+        // 暗影被动能力注册 (兼容 MorphExtension 与 Metamorph)
+        aaaa0ggmc.morphext.abyssalcraft.passive.ShadowPhotophobiaPassive photophobia = new aaaa0ggmc.morphext.abyssalcraft.passive.ShadowPhotophobiaPassive();
+        aaaa0ggmc.morphext.ability.AbilityRegistry.register(photophobia);
+        MorphManager.INSTANCE.abilities.put("ac_photophobia", photophobia);
     }
 }

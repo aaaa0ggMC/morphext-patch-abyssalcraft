@@ -361,23 +361,40 @@ public final class AbyssalActions {
         }
     }
 
-    /** 暗影生物：遁入阴影帷幕（隐匿与疾跑） */
+    /** 暗影生物：潜行暗影披风与隐匿 (ID: ac_shadow_veil) - 隐入阴影帷幕，潜行时获得强化匿踪与暗影护甲 */
     public static class ShadowVeil extends AbyssalCraftAction {
-        public ShadowVeil() { super(120); }
+        public ShadowVeil() { super(100); } // 冷却 5s
 
         @Override
         protected boolean executeServer(EntityLivingBase entity, AbstractMorph morph) {
-            entity.addPotionEffect(new PotionEffect(MobEffects.INVISIBILITY, 160, 0, false, false));
-            entity.addPotionEffect(new PotionEffect(MobEffects.SPEED, 160, 1, false, false));
-            entity.world.playSound(null, entity.posX, entity.posY, entity.posZ,
-                    SoundEvents.ENTITY_ENDERMEN_TELEPORT, SoundCategory.PLAYERS, 1.0F, 0.5F);
+            World world = entity.world;
+            boolean sneaking = entity.isSneaking();
+            int duration = sneaking ? 240 : 160;
+
+            entity.addPotionEffect(new PotionEffect(MobEffects.INVISIBILITY, duration, 0, false, false));
+            entity.addPotionEffect(new PotionEffect(MobEffects.SPEED, duration, sneaking ? 2 : 1, false, false));
+            entity.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, duration, 0, false, false));
+            if (sneaking) {
+                entity.addPotionEffect(new PotionEffect(MobEffects.ABSORPTION, 240, 1, false, false));
+            }
+
+            if (world instanceof WorldServer) {
+                WorldServer ws = (WorldServer) world;
+                ws.spawnParticle(EnumParticleTypes.SMOKE_LARGE, entity.posX, entity.posY + entity.height * 0.5D, entity.posZ, 25, 0.5D, 0.5D, 0.5D, 0.05D);
+                ws.spawnParticle(EnumParticleTypes.PORTAL, entity.posX, entity.posY + entity.height * 0.5D, entity.posZ, 40, 0.6D, 0.6D, 0.6D, 0.1D);
+            }
+
+            world.playSound(null, entity.posX, entity.posY, entity.posZ,
+                    SoundEvents.ENTITY_ENDERMEN_TELEPORT, SoundCategory.PLAYERS, 1.2F, 0.6F);
+            world.playSound(null, entity.posX, entity.posY, entity.posZ,
+                    ACSounds.shadow_death, SoundCategory.HOSTILE, 1.0F, 0.9F);
             return true;
         }
     }
 
     /** 暗影生物：暗影巨爪挥击 (ID: ac_shadow_slash) - 横扫身前 4 格敌人造成高额暗影撕裂伤害 */
     public static class ShadowSlashAction extends AbyssalCraftAction {
-        public ShadowSlashAction() { super(120); } // 冷却 6s
+        public ShadowSlashAction() { super(60); } // 冷却 3s，手感轻快犀利
 
         @Override
         protected boolean executeServer(EntityLivingBase entity, AbstractMorph morph) {
@@ -431,7 +448,7 @@ public final class AbyssalActions {
 
     /** 暗影生物：融入暗影瞬步 (ID: ac_shadow_step) - 融入暗影并向前或准星敌人背后瞬步 16 格，播放暗影粒子与咆哮，命中施加致盲 4 秒与暗影凋零 */
     public static class ShadowStepAction extends AbyssalCraftAction {
-        public ShadowStepAction() { super(200); } // 冷却 10s
+        public ShadowStepAction() { super(80); } // 冷却 4s
 
         @Override
         protected boolean executeServer(EntityLivingBase entity, AbstractMorph morph) {

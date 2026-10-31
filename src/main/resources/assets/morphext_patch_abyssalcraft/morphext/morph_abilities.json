@@ -384,18 +384,26 @@
     ],
     "immunities": [
       "abyssalcraft:cplague",
+      "abyssalcraft:dplague",
       "cplague",
+      "dplague",
       "potion.Cplague",
-      "potion.cplague"
+      "potion.Dplague",
+      "potion.cplague",
+      "potion.dplague"
     ],
     "damageImmunities": [
       "coralium",
+      "dread",
       "fall",
+      "flyIntoWall",
       "inFire",
       "lava",
       "onFire"
     ],
     "actions": [
+      "ac_dragon_dive",
+      "ac_asorah_dive",
       "ac_dragon_breath",
       "ac_dragon_boss_breath",
       "ac_spectral_fireball",
@@ -409,18 +417,26 @@
     ],
     "immunities": [
       "abyssalcraft:cplague",
+      "abyssalcraft:dplague",
       "cplague",
+      "dplague",
       "potion.Cplague",
-      "potion.cplague"
+      "potion.Dplague",
+      "potion.cplague",
+      "potion.dplague"
     ],
     "damageImmunities": [
       "coralium",
+      "dread",
       "fall",
+      "flyIntoWall",
       "inFire",
       "lava",
       "onFire"
     ],
     "actions": [
+      "ac_dragon_dive",
+      "ac_asorah_dive",
       "ac_dragon_breath",
       "ac_dragon_boss_breath",
       "ac_spectral_fireball",
@@ -869,20 +885,32 @@
   },
   "abyssalcraft:chagaroth": {
     "abilities": [
-      "fire_proof"
+      "fire_proof",
+      "prevent_fall"
     ],
     "immunities": [
+      "abyssalcraft:cplague",
       "abyssalcraft:dplague",
+      "cplague",
       "dplague",
+      "minecraft:slowness",
+      "potion.Cplague",
       "potion.Dplague",
-      "potion.dplague"
+      "potion.cplague",
+      "potion.dplague",
+      "potion.slowness"
     ],
     "damageImmunities": [
+      "acid",
+      "coralium",
       "dread",
+      "fall",
       "hotFloor",
       "inFire",
+      "inWall",
       "lava",
-      "onFire"
+      "onFire",
+      "shoggoth_acid"
     ],
     "actions": [
       "ac_chagaroth_dread_salvo",
@@ -895,20 +923,32 @@
   },
   "abyssalcraft.chagaroth": {
     "abilities": [
-      "fire_proof"
+      "fire_proof",
+      "prevent_fall"
     ],
     "immunities": [
+      "abyssalcraft:cplague",
       "abyssalcraft:dplague",
+      "cplague",
       "dplague",
+      "minecraft:slowness",
+      "potion.Cplague",
       "potion.Dplague",
-      "potion.dplague"
+      "potion.cplague",
+      "potion.dplague",
+      "potion.slowness"
     ],
     "damageImmunities": [
+      "acid",
+      "coralium",
       "dread",
+      "fall",
       "hotFloor",
       "inFire",
+      "inWall",
       "lava",
-      "onFire"
+      "onFire",
+      "shoggoth_acid"
     ],
     "actions": [
       "ac_chagaroth_dread_salvo",
@@ -1013,6 +1053,7 @@
   },
   "abyssalcraft:shadowcreature": {
     "abilities": [
+      "ac_photophobia",
       "night_vision",
       "sun_allergy"
     ],
@@ -1045,6 +1086,7 @@
   },
   "abyssalcraft.shadowcreature": {
     "abilities": [
+      "ac_photophobia",
       "night_vision",
       "sun_allergy"
     ],
@@ -1077,6 +1119,7 @@
   },
   "abyssalcraft:shadowmonster": {
     "abilities": [
+      "ac_photophobia",
       "night_vision",
       "sun_allergy"
     ],
@@ -1109,6 +1152,7 @@
   },
   "abyssalcraft.shadowmonster": {
     "abilities": [
+      "ac_photophobia",
       "night_vision",
       "sun_allergy"
     ],
@@ -1141,6 +1185,7 @@
   },
   "abyssalcraft:shadowbeast": {
     "abilities": [
+      "ac_photophobia",
       "night_vision",
       "sun_allergy"
     ],
@@ -1166,6 +1211,7 @@
       "shoggoth_acid"
     ],
     "actions": [
+      "ac_sacthoth_shadow_flame",
       "ac_shadow_step",
       "ac_shadow_slash",
       "ac_shadow_collapse",
@@ -1174,6 +1220,7 @@
   },
   "abyssalcraft.shadowbeast": {
     "abilities": [
+      "ac_photophobia",
       "night_vision",
       "sun_allergy"
     ],
@@ -1184,6 +1231,114 @@
       "minecraft:poison",
       "potion.Dplague",
       "potion.antimatter",
+      "potion.blindness"
+    ],
+    "damageImmunities": [
+      "acid",
+      "antimatter",
+      "coralium",
+      "dread",
+      "fall",
+      "hotFloor",
+      "inFire",
+      "lava",
+      "shadow",
+      "shoggoth_acid"
+    ],
+    "actions": [
+      "ac_sacthoth_shadow_flame",
+      "ac_shadow_step",
+      "ac_shadow_slash",
+      "ac_shadow_collapse",
+      "ac_shadow_veil"
+    ]
+  },
+  "abyssalcraft:shadowboss": {
+    "abilities": [
+      "ac_photophobia",
+      "fly",
+      "night_vision",
+      "sun_allergy"
+    ],
+    "immunities": [
+      "abyssalcraft:antimatter",
+      "abyssalcraft:dplague",
+      "minecraft:blindness",
+      "minecraft:poison",
+      "potion.Dplague",
+      "potion.antimatter",
+      "potion.blindness"
+    ],
+    "damageImmunities": [
+      "acid",
+      "antimatter",
+      "coralium",
+      "dread",
+      "fall",
+      "hotFloor",
+      "inFire",
+      "lava",
+      "shadow",
+      "shoggoth_acid"
+    ],
+    "actions": [
+      "ac_sacthoth_shadow_flame",
+      "ac_sacthoth_shadow_step",
+      "ac_shadow_step",
+      "ac_shadow_slash",
+      "ac_shadow_collapse",
+      "ac_shadow_veil"
+    ]
+  },
+  "abyssalcraft.shadowboss": {
+    "abilities": [
+      "ac_photophobia",
+      "fly",
+      "night_vision",
+      "sun_allergy"
+    ],
+    "immunities": [
+      "abyssalcraft:antimatter",
+      "abyssalcraft:dplague",
+      "minecraft:blindness",
+      "minecraft:poison",
+      "potion.Dplague",
+      "potion.antimatter",
+      "potion.blindness"
+    ],
+    "damageImmunities": [
+      "acid",
+      "antimatter",
+      "coralium",
+      "dread",
+      "fall",
+      "hotFloor",
+      "inFire",
+      "lava",
+      "shadow",
+      "shoggoth_acid"
+    ],
+    "actions": [
+      "ac_sacthoth_shadow_flame",
+      "ac_sacthoth_shadow_step",
+      "ac_shadow_step",
+      "ac_shadow_slash",
+      "ac_shadow_collapse",
+      "ac_shadow_veil"
+    ]
+  },
+  "abyssalcraft:shadowtitan": {
+    "abilities": [
+      "ac_photophobia",
+      "night_vision",
+      "sun_allergy"
+    ],
+    "immunities": [
+      "abyssalcraft:antimatter",
+      "abyssalcraft:dplague",
+      "minecraft:blindness",
+      "minecraft:poison",
+      "potion.Dplague",
       "potion.blindness"
     ],
     "damageImmunities": [
@@ -1205,109 +1360,9 @@
       "ac_shadow_veil"
     ]
   },
-  "abyssalcraft:shadowboss": {
-    "abilities": [
-      "fly",
-      "night_vision",
-      "sun_allergy"
-    ],
-    "immunities": [
-      "abyssalcraft:antimatter",
-      "abyssalcraft:dplague",
-      "minecraft:blindness",
-      "minecraft:poison",
-      "potion.Dplague",
-      "potion.antimatter",
-      "potion.blindness"
-    ],
-    "damageImmunities": [
-      "acid",
-      "antimatter",
-      "coralium",
-      "dread",
-      "fall",
-      "hotFloor",
-      "inFire",
-      "lava",
-      "shadow",
-      "shoggoth_acid"
-    ],
-    "actions": [
-      "ac_sacthoth_shadow_flame",
-      "ac_sacthoth_shadow_step",
-      "ac_shadow_step",
-      "ac_shadow_slash",
-      "ac_shadow_collapse"
-    ]
-  },
-  "abyssalcraft.shadowboss": {
-    "abilities": [
-      "fly",
-      "night_vision",
-      "sun_allergy"
-    ],
-    "immunities": [
-      "abyssalcraft:antimatter",
-      "abyssalcraft:dplague",
-      "minecraft:blindness",
-      "minecraft:poison",
-      "potion.Dplague",
-      "potion.antimatter",
-      "potion.blindness"
-    ],
-    "damageImmunities": [
-      "acid",
-      "antimatter",
-      "coralium",
-      "dread",
-      "fall",
-      "hotFloor",
-      "inFire",
-      "lava",
-      "shadow",
-      "shoggoth_acid"
-    ],
-    "actions": [
-      "ac_sacthoth_shadow_flame",
-      "ac_sacthoth_shadow_step",
-      "ac_shadow_step",
-      "ac_shadow_slash",
-      "ac_shadow_collapse"
-    ]
-  },
-  "abyssalcraft:shadowtitan": {
-    "abilities": [
-      "night_vision",
-      "sun_allergy"
-    ],
-    "immunities": [
-      "abyssalcraft:antimatter",
-      "abyssalcraft:dplague",
-      "minecraft:blindness",
-      "minecraft:poison",
-      "potion.Dplague",
-      "potion.blindness"
-    ],
-    "damageImmunities": [
-      "acid",
-      "antimatter",
-      "coralium",
-      "dread",
-      "fall",
-      "hotFloor",
-      "inFire",
-      "lava",
-      "shadow",
-      "shoggoth_acid"
-    ],
-    "actions": [
-      "ac_shadow_step",
-      "ac_shadow_slash",
-      "ac_shadow_collapse"
-    ]
-  },
   "abyssalcraft.shadowtitan": {
     "abilities": [
+      "ac_photophobia",
       "night_vision",
       "sun_allergy"
     ],
@@ -1334,11 +1389,13 @@
     "actions": [
       "ac_shadow_step",
       "ac_shadow_slash",
-      "ac_shadow_collapse"
+      "ac_shadow_collapse",
+      "ac_shadow_veil"
     ]
   },
   "abyssalcraft:shadowghoul": {
     "abilities": [
+      "ac_photophobia",
       "climb",
       "night_vision",
       "sun_allergy",
@@ -1367,11 +1424,13 @@
     "actions": [
       "ac_shadow_step",
       "ac_shadow_slash",
-      "ac_ghoul_pounce"
+      "ac_ghoul_pounce",
+      "ac_shadow_veil"
     ]
   },
   "abyssalcraft.shadowghoul": {
     "abilities": [
+      "ac_photophobia",
       "climb",
       "night_vision",
       "sun_allergy",
@@ -1400,7 +1459,8 @@
     "actions": [
       "ac_shadow_step",
       "ac_shadow_slash",
-      "ac_ghoul_pounce"
+      "ac_ghoul_pounce",
+      "ac_shadow_veil"
     ]
   },
   "abyssalcraft:antizombie": {
@@ -2268,7 +2328,9 @@
       "abyssalcraft:cplague",
       "abyssalcraft:dplague",
       "minecraft:blindness",
+      "minecraft:nausea",
       "minecraft:poison",
+      "minecraft:slowness",
       "minecraft:wither",
       "potion.Antimatter",
       "potion.Cplague",
@@ -2281,8 +2343,10 @@
       "dread",
       "explosion",
       "fall",
+      "flyIntoWall",
       "hotFloor",
       "inFire",
+      "inWall",
       "lava",
       "magic",
       "onFire",
@@ -2294,7 +2358,8 @@
       "ac_jzahar_wither_salvo",
       "ac_jzahar_shout_blast",
       "ac_jzahar_singularity",
-      "ac_jzahar_earthquake"
+      "ac_jzahar_earthquake",
+      "ac_jzahar_oblivion"
     ]
   },
   "abyssalcraft.jzahar": {
@@ -2310,7 +2375,9 @@
       "abyssalcraft:cplague",
       "abyssalcraft:dplague",
       "minecraft:blindness",
+      "minecraft:nausea",
       "minecraft:poison",
+      "minecraft:slowness",
       "minecraft:wither",
       "potion.Antimatter",
       "potion.Cplague",
@@ -2323,8 +2390,10 @@
       "dread",
       "explosion",
       "fall",
+      "flyIntoWall",
       "hotFloor",
       "inFire",
+      "inWall",
       "lava",
       "magic",
       "onFire",
@@ -2336,7 +2405,8 @@
       "ac_jzahar_wither_salvo",
       "ac_jzahar_shout_blast",
       "ac_jzahar_singularity",
-      "ac_jzahar_earthquake"
+      "ac_jzahar_earthquake",
+      "ac_jzahar_oblivion"
     ]
   },
   "abyssalcraft:antiplayer": {

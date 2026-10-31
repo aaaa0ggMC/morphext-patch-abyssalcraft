@@ -261,6 +261,19 @@ public final class MorphBossAdaptHandler {
     public static void onLivingAttack(LivingAttackEvent event) {
         if (handleHostDamageImmunity(event.getEntityLiving(), event.getSource())) {
             event.setCanceled(true);
+            return;
+        }
+
+        // 暗影形态近战攻击被动触发：对被攻击目标施加致盲与暗影凋零
+        if (event.getSource() != null && event.getSource().getTrueSource() instanceof EntityPlayer) {
+            EntityPlayer player = (EntityPlayer) event.getSource().getTrueSource();
+            IMorphing morphing = Morphing.get(player);
+            if (morphing != null && morphing.isMorphed()) {
+                AbstractMorph morph = morphing.getCurrentMorph();
+                if (morph != null && morph.name != null && morph.name.toLowerCase().contains("shadow")) {
+                    aaaa0ggmc.morphext.abyssalcraft.passive.ShadowPhotophobiaPassive.handleAttackProc(player, event.getEntityLiving());
+                }
+            }
         }
     }
 
@@ -286,9 +299,33 @@ public final class MorphBossAdaptHandler {
                     return true;
                 }
 
+                String mName = morph.name != null ? morph.name.toLowerCase() : "";
+
                 // 3. 扎哈尔变身自身触发的大地震熔岩地热与终焉咆哮撞墙自伤，阻断
-                if (BossNativeHelper.isJzahar(dummy) || (morph.name != null && morph.name.contains("jzahar"))) {
+                if (BossNativeHelper.isJzahar(dummy) || mName.contains("jzahar")) {
                     if (source == DamageSource.HOT_FLOOR || source == DamageSource.FLY_INTO_WALL || source == DamageSource.LIGHTNING_BOLT) {
+                        return true;
+                    }
+                }
+
+                // 4. 阿索拉 / 恐惧巨龙俯冲强袭防摔落自伤与恐惧/珊瑚瘟疫伤害阻断
+                if (mName.contains("dragonboss") || mName.contains("asorah")) {
+                    if (source == DamageSource.FALL || source == com.shinoow.abyssalcraft.api.AbyssalCraftAPI.dread
+                            || source == com.shinoow.abyssalcraft.api.AbyssalCraftAPI.coralium) {
+                        return true;
+                    }
+                }
+
+                // 5. 萨克索斯/暗影生物自身暗影与窒息免伤
+                if (mName.contains("shadow") || mName.contains("sacthoth")) {
+                    if (source == com.shinoow.abyssalcraft.api.AbyssalCraftAPI.shadow || source == DamageSource.IN_WALL) {
+                        return true;
+                    }
+                }
+
+                // 6. 查伽洛斯恐惧免伤
+                if (mName.contains("chagaroth")) {
+                    if (source == com.shinoow.abyssalcraft.api.AbyssalCraftAPI.dread) {
                         return true;
                     }
                 }
