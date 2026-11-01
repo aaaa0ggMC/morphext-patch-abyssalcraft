@@ -1564,7 +1564,8 @@
       "ac_photophobia",
       "night_vision",
       "faction_shadow_lord",
-      "ac_shadow_phase"
+      "ac_shadow_phase",
+      "climb"
     ],
     "actions": [
       "ac_sacthoth_shadow_flame",
@@ -1608,14 +1609,16 @@
     },
     "hands": true,
     "rightHand": "leftarm1",
-    "leftHand": "rightarm1"
+    "leftHand": "rightarm1",
+    "speed": 0.17
   },
   "abyssalcraft.shadowboss": {
     "abilities": [
       "ac_photophobia",
       "night_vision",
       "faction_shadow_lord",
-      "ac_shadow_phase"
+      "ac_shadow_phase",
+      "climb"
     ],
     "actions": [
       "ac_sacthoth_shadow_flame",
@@ -1659,7 +1662,8 @@
     },
     "hands": true,
     "rightHand": "leftarm1",
-    "leftHand": "rightarm1"
+    "leftHand": "rightarm1",
+    "speed": 0.17
   },
   "abyssalcraft:shadowtitan": {
     "abilities": [
@@ -1690,7 +1694,8 @@
     },
     "hands": true,
     "rightHand": "rarm1",
-    "leftHand": "larm1"
+    "leftHand": "larm1",
+    "speed": 0.157
   },
   "abyssalcraft.shadowtitan": {
     "abilities": [
@@ -1721,7 +1726,8 @@
     },
     "hands": true,
     "rightHand": "rarm1",
-    "leftHand": "larm1"
+    "leftHand": "larm1",
+    "speed": 0.157
   },
   "abyssalcraft:shadowghoul": {
     "abilities": [
