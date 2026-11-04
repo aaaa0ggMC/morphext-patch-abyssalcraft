@@ -1,6 +1,7 @@
 package aaaa0ggmc.morphext.abyssalcraft;
 
 import aaaa0ggmc.morphext.abyssalcraft.action.BossNativeHelper;
+import aaaa0ggmc.morphext.faction.FactionManager;
 import com.shinoow.abyssalcraft.common.entity.EntityBlackHole;
 import com.shinoow.abyssalcraft.common.entity.EntityImplosion;
 import com.shinoow.abyssalcraft.lib.ACSounds;
@@ -464,9 +465,14 @@ public final class MorphBossAdaptHandler {
         Entity trueSource = source.getTrueSource();
         Entity immediateSource = source.getImmediateSource();
 
-        // 1. 来自带有属主标签的弹幕/实体伤害，直接阻断
+        // 1. 来自带有属主标签的弹幕/实体伤害：只拦定向打击（近战/弹幕直击主人）。
+        //    波及不豁免（2026-11-04 拍板）：召唤物自爆/爆炸与范围效果溅射到主人照常结算——
+        //    爆炸就是爆炸，波及谁谁掉血；判据与阵营门同一真值（FactionManager.isProtectionApplicable）。
         if (BossNativeHelper.isOwnedBy(trueSource, player) || BossNativeHelper.isOwnedBy(immediateSource, player)) {
-            return true;
+            Entity actor = trueSource != null ? trueSource : immediateSource;
+            if (FactionManager.isProtectionApplicable(actor, player, source)) {
+                return true;
+            }
         }
 
         IMorphing morphing = Morphing.get(player);
