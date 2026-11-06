@@ -54,6 +54,9 @@ public class MorphEntityBlackHole extends EntityBlackHole {
             this.ownerUUID = caster.getUniqueID();
             BossNativeHelper.tagOwner(this, caster);
         }
+        // M5：寿命 300t=15s 保持现值，改走 TimedSummons 同口径持久时效
+        //（ulSummonUntil 世界总 tick，随存档持久，重载后寿命不重计）
+        BossNativeHelper.markSummonExpiry(this, 300);
     }
 
     @Override
@@ -62,7 +65,9 @@ public class MorphEntityBlackHole extends EntityBlackHole {
         prevPosY = posY;
         prevPosZ = posZ;
 
-        if (ticksExisted > 300) {
+        // M5：优先按持久时效到期自毁（服务端权威，重登/重载不延寿）；
+        // ticksExisted > 300 保留为无害兜底（不持久，仅连续加载时生效）
+        if (BossNativeHelper.isSummonExpired(this) || ticksExisted > 300) {
             setDead();
             return;
         }
@@ -224,7 +229,9 @@ public class MorphEntityBlackHole extends EntityBlackHole {
 
     public EntityLivingBase getOwner() {
         if (ownerUUID != null) {
-            return world.getPlayerEntityByUUID(ownerUUID);
+            // M5：跨维解析——world.getPlayerEntityByUUID 只查本维度玩家列表，
+            // 主人换维度后解析为 null、豁免失效（根因修复）；见 BossNativeHelper.findPlayerAcrossDims
+            return BossNativeHelper.findPlayerAcrossDims(world, ownerUUID);
         }
         return BossNativeHelper.getOwner(this);
     }

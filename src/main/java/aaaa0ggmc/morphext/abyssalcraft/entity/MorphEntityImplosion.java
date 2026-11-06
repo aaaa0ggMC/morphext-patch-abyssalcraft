@@ -41,6 +41,9 @@ public class MorphEntityImplosion extends EntityImplosion {
             this.ownerUUID = caster.getUniqueID();
             BossNativeHelper.tagOwner(this, caster);
         }
+        // M5：寿命 360t=18s 保持现值，改走 TimedSummons 同口径持久时效
+        //（ulSummonUntil 世界总 tick，随存档持久，重载后寿命不重计）
+        BossNativeHelper.markSummonExpiry(this, 360);
     }
 
     @Override
@@ -54,7 +57,9 @@ public class MorphEntityImplosion extends EntityImplosion {
 
         int multiplier = ACConfig.hardcoreMode ? 2 : 1;
 
-        if (ticksExisted > 360) {
+        // M5：引爆时机优先按持久时效到期触发（服务端权威，重登/重载不延后引爆）；
+        // ticksExisted > 360 保留为无害兜底（不持久，仅连续加载时生效）
+        if (BossNativeHelper.isSummonExpired(this) || ticksExisted > 360) {
             world.playEvent(3000, getPosition(), 0);
             playSound(ACSounds.jzahar_blast, 5.0F, 1.0F);
 
@@ -134,7 +139,9 @@ public class MorphEntityImplosion extends EntityImplosion {
 
     public EntityLivingBase getOwner() {
         if (ownerUUID != null) {
-            return world.getPlayerEntityByUUID(ownerUUID);
+            // M5：跨维解析——world.getPlayerEntityByUUID 只查本维度玩家列表，
+            // 主人换维度后解析为 null、豁免失效（根因修复）；见 BossNativeHelper.findPlayerAcrossDims
+            return BossNativeHelper.findPlayerAcrossDims(world, ownerUUID);
         }
         return BossNativeHelper.getOwner(this);
     }
