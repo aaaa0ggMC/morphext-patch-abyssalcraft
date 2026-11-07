@@ -8,3 +8,6 @@ bin/
 .vscode/
 .DS_Store
 *.log
+
+# —— 本机 agent 状态目录，非项目文件 ——
+/.dsh/
