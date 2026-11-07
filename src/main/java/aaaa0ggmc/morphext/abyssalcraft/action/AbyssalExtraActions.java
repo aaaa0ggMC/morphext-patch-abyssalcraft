@@ -118,7 +118,7 @@ public final class AbyssalExtraActions {
                         aimPoint.x - 2.0D, aimPoint.y - 2.0D, aimPoint.z - 2.0D,
                         aimPoint.x + 2.0D, aimPoint.y + 2.0D, aimPoint.z + 2.0D);
                 List<EntityLivingBase> list = world.getEntitiesWithinAABB(EntityLivingBase.class, splash,
-                        e -> e != entity && e.isEntityAlive() && !e.isOnSameTeam(entity));
+                        e -> isHostileTarget(entity, e));
 
                 DamageSource source = AbyssalCraftAPI.dread != null ? AbyssalCraftAPI.dread :
                         (entity instanceof EntityPlayer ? DamageSource.causePlayerDamage((EntityPlayer) entity)
@@ -175,7 +175,7 @@ public final class AbyssalExtraActions {
             AxisAlignedBB touchBox = entity.getEntityBoundingBox().grow(2.5D, 1.2D, 2.5D)
                     .offset(look.x * 1.8D, 0.2D, look.z * 1.8D);
             List<EntityLivingBase> list = world.getEntitiesWithinAABB(EntityLivingBase.class, touchBox,
-                    e -> e != entity && e.isEntityAlive() && !e.isOnSameTeam(entity));
+                    e -> isHostileTarget(entity, e));
 
             DamageSource source = entity instanceof EntityPlayer ?
                     DamageSource.causePlayerDamage((EntityPlayer) entity) : DamageSource.causeMobDamage(entity);
@@ -310,7 +310,7 @@ public final class AbyssalExtraActions {
             // 击退门后目标
             AxisAlignedBB box = entity.getEntityBoundingBox().grow(3.5D, 1.5D, 3.5D).offset(look.x * 2.0D, 0.2D, look.z * 2.0D);
             List<EntityLivingBase> list = world.getEntitiesWithinAABB(EntityLivingBase.class, box,
-                    e -> e != entity && e.isEntityAlive() && !e.isOnSameTeam(entity));
+                    e -> isHostileTarget(entity, e));
             DamageSource source = AbyssalCraftAPI.antimatter != null ? AbyssalCraftAPI.antimatter :
                     (entity instanceof EntityPlayer ? DamageSource.causePlayerDamage((EntityPlayer) entity)
                             : DamageSource.causeMobDamage(entity));
@@ -520,7 +520,7 @@ public final class AbyssalExtraActions {
             AxisAlignedBB biteBox = entity.getEntityBoundingBox().grow(2.5D, 1.2D, 2.5D)
                     .offset(look.x * 1.8D, 0.2D, look.z * 1.8D);
             List<EntityLivingBase> list = world.getEntitiesWithinAABB(EntityLivingBase.class, biteBox,
-                    e -> e != entity && e.isEntityAlive() && !e.isOnSameTeam(entity));
+                    e -> isHostileTarget(entity, e));
 
             DamageSource source = entity instanceof EntityPlayer ?
                     DamageSource.causePlayerDamage((EntityPlayer) entity) : DamageSource.causeMobDamage(entity);

@@ -3,7 +3,6 @@ package aaaa0ggmc.morphext.abyssalcraft.action;
 import aaaa0ggmc.morphext.abyssalcraft.entity.MorphEntityBlackHole;
 import aaaa0ggmc.morphext.abyssalcraft.entity.MorphEntityImplosion;
 import com.shinoow.abyssalcraft.api.AbyssalCraftAPI;
-import com.shinoow.abyssalcraft.api.entity.IOmotholEntity;
 import com.shinoow.abyssalcraft.common.entity.EntityChagarothFist;
 import com.shinoow.abyssalcraft.common.entity.EntityChagarothSpawn;
 import com.shinoow.abyssalcraft.common.entity.EntityDreadSpawn;
@@ -165,12 +164,16 @@ public final class AbyssalBossActions {
                 }
             }
 
-            // 3. 48 格大扇形力场强力击飞与撞墙伤害（排除宿主自身与奥穆索尔生物）
+            // 3. 48 格大扇形力场强力击飞与撞墙伤害（排除宿主自身、友军与同阵营生物）
             double size = 48.0D;
             List<Entity> list = world.getEntitiesWithinAABB(Entity.class,
                     entity.getEntityBoundingBox().grow(size).offset(vector.x * 24.0D, vector.y * 24.0D, vector.z * 24.0D));
             for (Entity e : list) {
-                if (e != entity && e instanceof EntityLivingBase && !(e instanceof IOmotholEntity) && !e.isOnSameTeam(entity)) {
+                // FVP-28：原 `!(e instanceof IOmotholEntity)` 只豁免奥穆索尔族，同阵营的
+                // shadow/shoggoth/dread/abyssal 生物照打（图已声明各族自交 RELATIVE 与
+                // omothol↔abyssal LORD/RELATIVE，属「图说 RELATIVE、代码照打」的反向冲突）。
+                // 改问阵营图：isHostileTarget = 存活 + 非同队 + FactionEnmity.isEnemy。
+                if (e instanceof EntityLivingBase && isHostileTarget(entity, (EntityLivingBase) e)) {
                     double velocity = 3.0D + entity.getRNG().nextDouble() * 6.0D;
                     e.addVelocity(vector.x * velocity, 0.4D + (vector.y + 0.2D) * velocity * 0.3D, vector.z * velocity);
                     DamageSource dmg = entity instanceof EntityPlayer ?
@@ -253,9 +256,12 @@ public final class AbyssalBossActions {
             world.playSound(null, entity.posX, entity.posY, entity.posZ,
                     ACSounds.jzahar_earthquake, SoundCategory.HOSTILE, 5.0F, 1.0F);
 
+            // FVP-28：原 `!(e instanceof IOmotholEntity)` 只豁免奥穆索尔族 → 同阵营
+            // shadow/shoggoth/dread/abyssal 生物照打（图已声明各族自交 RELATIVE）。
+            // 改问阵营图；omothol↔abyssal LORD/RELATIVE 由图承担，行为不退化。
             List<EntityLivingBase> list = entity.world.getEntitiesWithinAABB(EntityLivingBase.class,
                     entity.getEntityBoundingBox().grow(48.0D),
-                    e -> e != entity && e.isEntityAlive() && !e.isOnSameTeam(entity) && !(e instanceof IOmotholEntity));
+                    e -> isHostileTarget(entity, e));
 
             DamageSource dmg = entity instanceof EntityPlayer ?
                     DamageSource.causePlayerDamage((EntityPlayer) entity) : DamageSource.HOT_FLOOR;
@@ -355,9 +361,10 @@ public final class AbyssalBossActions {
             }
 
             // 锥形范围内所有其他敌人受到范围暗影侵蚀
+            // FVP-27：敌我判定改问阵营图（准星主目标已由 CrosshairTargetDirector 过滤为敌人）
             List<EntityLivingBase> list = entity.world.getEntitiesWithinAABB(EntityLivingBase.class,
                     entity.getEntityBoundingBox().grow(12.0D).offset(look.x * 6.0D, look.y * 6.0D, look.z * 6.0D),
-                    e -> e != entity && e != aim.entityTarget && e.isEntityAlive() && !e.isOnSameTeam(entity));
+                    e -> isHostileTarget(entity, e) && e != aim.entityTarget);
             for (EntityLivingBase e : list) {
                 Vec3d toTarget = e.getPositionVector().add(0, e.height * 0.5D, 0).subtract(eye);
                 double dist = toTarget.length();
@@ -514,7 +521,7 @@ public final class AbyssalBossActions {
             // 1. 身前撼地重砸
             AxisAlignedBB box = entity.getEntityBoundingBox().grow(5.0D).offset(look.x * 3.0D, 0.2D, look.z * 3.0D);
             List<EntityLivingBase> list = world.getEntitiesWithinAABB(EntityLivingBase.class, box,
-                    e -> e != entity && e.isEntityAlive() && !e.isOnSameTeam(entity));
+                    e -> isHostileTarget(entity, e));
             DamageSource src = AbyssalCraftAPI.dread != null ? AbyssalCraftAPI.dread :
                     (entity instanceof EntityPlayer ? DamageSource.causePlayerDamage((EntityPlayer) entity) : DamageSource.causeMobDamage(entity));
             for (EntityLivingBase target : list) {
@@ -717,7 +724,7 @@ public final class AbyssalBossActions {
             // 4. 前方路径碾压与冲击击飞
             AxisAlignedBB pathBox = entity.getEntityBoundingBox().grow(3.5D).offset(look.x * 3.0D, look.y * 1.5D, look.z * 3.0D);
             List<EntityLivingBase> list = world.getEntitiesWithinAABB(EntityLivingBase.class, pathBox,
-                    e -> e != entity && e.isEntityAlive() && !e.isOnSameTeam(entity));
+                    e -> isHostileTarget(entity, e));
 
             DamageSource src = AbyssalCraftAPI.dread != null ? AbyssalCraftAPI.dread :
                     (entity instanceof EntityPlayer ? DamageSource.causePlayerDamage((EntityPlayer) entity) : DamageSource.causeMobDamage(entity));

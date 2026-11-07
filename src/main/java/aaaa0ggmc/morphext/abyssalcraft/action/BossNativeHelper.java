@@ -1,5 +1,6 @@
 package aaaa0ggmc.morphext.abyssalcraft.action;
 
+import aaaa0ggmc.morphext.faction.FactionEnmity;
 import aaaa0ggmc.morphext.follower.TimedSummons;
 import mchorse.metamorph.api.morphs.AbstractMorph;
 import mchorse.metamorph.api.morphs.EntityMorph;
@@ -131,6 +132,43 @@ public final class BossNativeHelper {
 
     public static boolean isOwnedBy(Entity entity, EntityPlayer player) {
         return isOwnedBy(entity, (EntityLivingBase) player);
+    }
+
+    /**
+     * FVP-28：Boss 召唤物（安全黑洞 / 安全内爆）的「不吸附、不放逐、不伤害」豁免判定，
+     * 由原先散落在 {@code MorphEntityBlackHole#isExempt} 与
+     * {@code MorphEntityImplosion#isExempt} 的两份重复实现合并到此单一真值。
+     *
+     * <p><b>改前</b>（两份复制，硬判三件套）：</p>
+     * <ul>
+     *   <li>{@code morph.name} 含 jzahar/sacthoth/omothol/shoggoth/chagaroth/dragonboss 六子串；</li>
+     *   <li>{@code entity instanceof IOmotholEntity}；</li>
+     *   <li>{@code entity.getClass().getName().contains("Shoggoth")}。</li>
+     * </ul>
+     * 后果：{@code faction_relations.json} 已声明 shadow→shadow / shoggoth→shoggoth /
+     * abyssal→abyssal RELATIVE 与 omothol→abyssal LORD / abyssal→omothol RELATIVE，
+     * 代码却照吸照放逐同阵营生物——「图说 RELATIVE，代码照打」的反向冲突。
+     *
+     * <p><b>改后</b>：豁免与否问阵营图——施法宿主（{@code owner}）此刻不把 target 当作敌人时
+     * 即豁免（{@code !FactionEnmity.isEnemy}）。各族自交 RELATIVE 与 omothol↔abyssal
+     * LORD/RELATIVE 全部由图承担；{@code MODERATE} 回退（未适配生物）仍照吸，行为不退化为
+     * 「谁都不吸」。类名 / morph.name 硬判全部删除。</p>
+     *
+     * <p>保留的既有语义：宿主自身、宿主标记的召唤物（{@link #isOwnedBy}）、
+     * 与宿主同 scoreboard 队伍者依旧豁免。</p>
+     *
+     * @param owner 施法宿主（变身玩家）；{@code null} 表示无主弹幕，此时不做阵营豁免
+     *              （MorphEntityBlackHole/Implosion 只会由带宿主的动作生成，实际不可达）
+     */
+    public static boolean isFactionExempt(Entity entity, EntityLivingBase owner) {
+        if (entity == null) return true;
+        if (entity == owner) return true;
+        if (owner != null && isOwnedBy(entity, owner)) return true;
+        if (owner == null || !(entity instanceof EntityLivingBase)) return false;
+
+        EntityLivingBase target = (EntityLivingBase) entity;
+        if (target.isOnSameTeam(owner)) return true;
+        return !FactionEnmity.isEnemy(owner, target);
     }
 
     /** A16：实体是否被"别人"召唤/标记（有属主标签但属主不是 owner）。无主实体返回 false。 */

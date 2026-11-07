@@ -49,4 +49,7 @@ processResources {
     from(sourceSets.main.resources.srcDirs) {
         exclude "mcmod.info"
     }
+
+    // 注意：lang 文件名必须小写（en_us/zh_cn）——MC 1.12.2 的 ResourceLocation 会把 lang 路径
+    // 强制转小写，大写名在 Linux（大小写敏感）下永远匹配不上，玩家会看到原始 key。
 }

@@ -1,6 +1,9 @@
 package aaaa0ggmc.morphext.abyssalcraft;
 
+import aaaa0ggmc.morphext.abyssalcraft.action.AbyssalCraftAction;
 import aaaa0ggmc.morphext.abyssalcraft.action.BossNativeHelper;
+import aaaa0ggmc.morphext.faction.FactionEnmity;
+import aaaa0ggmc.morphext.faction.FactionGraphEngine;
 import aaaa0ggmc.morphext.faction.FactionManager;
 import com.shinoow.abyssalcraft.common.entity.EntityBlackHole;
 import com.shinoow.abyssalcraft.common.entity.EntityImplosion;
@@ -19,7 +22,6 @@ import net.minecraft.entity.ai.EntityAIHurtByTarget;
 import net.minecraft.entity.ai.EntityAINearestAttackableTarget;
 import net.minecraft.entity.ai.EntityAITasks;
 import net.minecraft.entity.ai.EntityAIWatchClosest;
-import net.minecraft.entity.monster.IMob;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.EntityPlayerMP;
 import net.minecraft.entity.projectile.EntityWitherSkull;
@@ -44,6 +46,7 @@ import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 
 import java.util.Iterator;
 import java.util.List;
+import java.util.Set;
 
 /**
  * 深渊生物与 Boss 动态切面适配核心处理器 (Boss Dynamic Adaptation & Immunity Layer)：
@@ -211,7 +214,7 @@ public final class MorphBossAdaptHandler {
             if (morphing != null && morphing.isMorphed()) {
                 AbstractMorph currentMorph = morphing.getCurrentMorph();
                 // 扎哈尔或深渊古神形态：双端免疫一切黑洞引力拉扯
-                if (isMorphedAsEldritch(currentMorph)) {
+                if (isMorphedAsEldritch(player)) {
                     neutralizeBlackHolePull(player);
                 }
 
@@ -220,12 +223,15 @@ public final class MorphBossAdaptHandler {
 
                     // 反物质形态实体碰撞湮灭检测。
                     // 注（A7）：IPassiveAbility.onCollide 目前核心无任何分发点（死钩子），
-                    // 这条按名字匹配的补偿路径是"接触湮灭"唯一实际生效的实现，
-                    // 命名改动会失效；若核心后续补上 onCollide 分发，可退役此段。
-                    if (currentMorph != null && currentMorph.name != null && currentMorph.name.toLowerCase().contains("anti")) {
+                    // 这条按阵营解析的补偿路径是"接触湮灭"唯一实际生效的实现，
+                    // 阵营解析口径改动会失效；若核心后续补上 onCollide 分发，可退役此段。
+                    // FVP-28：原 morph.name.contains("anti") 子串选形态 → 改问形态阵营
+                    // （resolveEntityFactions = 已激活 faction_* 被动 ∪ morph.name 映射），
+                    // 覆盖 anti* 全家族且不误伤其它形态。
+                    if (isMorphedInFaction(player, "antimatter")) {
                         List<EntityLivingBase> colliding = player.world.getEntitiesWithinAABB(EntityLivingBase.class,
                                 player.getEntityBoundingBox().grow(0.15D),
-                                e -> e != player && e.isEntityAlive() && !e.isOnSameTeam(player));
+                                e -> AbyssalCraftAction.isHostileTarget(player, e));
                         for (EntityLivingBase target : colliding) {
                             aaaa0ggmc.morphext.abyssalcraft.passive.AntimatterAnnihilationPassive.handleCollisionAnnihilation(player, target);
                         }
@@ -357,9 +363,13 @@ public final class MorphBossAdaptHandler {
         }
 
         if (cleaned && living instanceof EntityCreature) {
-            // 注入安全索敌：只攻击怪，绝不攻击宿主玩家与队友
+            // 注入安全索敌：只攻击敌人，绝不攻击宿主玩家、队友与同阵营生物
+            // FVP-29：原谓词 `target instanceof IMob || target instanceof EntityLiving`
+            // （IMob ⊂ EntityLiving）等价于「任何非同队 EntityLiving」→ 打盟友与主人的宠物。
+            // 改问阵营图：FactionEnmity.isEnemy 内建主人/同主豁免 + MEMBER/RELATIVE/LORD 层级，
+            // 未适配生物回退 MODERATE → true，行为不退化为「谁都不打」。
             living.targetTasks.addTask(2, new EntityAINearestAttackableTarget<>((EntityCreature) living, EntityLivingBase.class, 10, true, false,
-                    target -> target != player && !target.isOnSameTeam(player) && (target instanceof IMob || target instanceof EntityLiving)));
+                    target -> target != player && !target.isOnSameTeam(player) && FactionEnmity.isEnemy(living, target)));
         }
 
         // 3. 实时强制清除宿主与自身仇恨目标
@@ -412,11 +422,39 @@ public final class MorphBossAdaptHandler {
         return null;
     }
 
-    public static boolean isMorphedAsEldritch(AbstractMorph morph) {
-        if (morph == null || morph.name == null) return false;
-        String n = morph.name.toLowerCase();
-        return n.contains("jzahar") || n.contains("sacthoth") || n.contains("omothol")
-                || n.contains("shoggoth") || n.contains("chagaroth") || n.contains("dragonboss");
+    /**
+     * FVP-28：古神形态名单改问阵营图，删掉 morph.name 六子串硬判
+     * （jzahar/sacthoth/omothol/shoggoth/chagaroth/dragonboss）。
+     *
+     * <p>口径 = 玩家当前阵营集合（已激活 {@code faction_*} 被动 ∪ morph.name 的
+     * {@code entity_mappings}）是否落在 omothol / shadow / shoggoth / dread 四族。
+     * 覆盖面对照：jzahar(omothol,shadow)、jzaharminion/remnant/omotholghoul(omothol)、
+     * shoggoth 全族(shoggoth)、chagaroth 全族与 dragonboss(dread，经
+     * {@code abyssalcraft:dragonboss → [dread, abyssal]} 映射)、
+     * shadow 全族(shadow)——与旧六子串等价；新增 demon* 恶魔动物（本包数据里带
+     * {@code faction_dread}）也会被计入，属数据自身的归属，不是漏判。</p>
+     */
+    public static boolean isMorphedAsEldritch(EntityPlayer player) {
+        return isMorphedInFaction(player, "omothol", "shadow", "shoggoth", "dread");
+    }
+
+    /**
+     * FVP-28：玩家当前形态是否属于给定阵营（单一真值 = 阵营图解析，不看 morph.name 子串）。
+     */
+    public static boolean isMorphedInFaction(EntityPlayer player, String... factionIds) {
+        if (player == null || factionIds == null || factionIds.length == 0) return false;
+        try {
+            Set<String> factions = FactionGraphEngine.getInstance().resolveEntityFactions(player);
+            if (factions == null || factions.isEmpty()) return false;
+            for (String id : factionIds) {
+                if (id != null && factions.contains(id.toLowerCase(java.util.Locale.ROOT))) {
+                    return true;
+                }
+            }
+        } catch (Throwable ignored) {
+            // 解析失败按「不是该阵营」处理，不影响其它切面
+        }
+        return false;
     }
 
     /**

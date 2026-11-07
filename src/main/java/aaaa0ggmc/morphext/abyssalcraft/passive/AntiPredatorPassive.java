@@ -2,8 +2,8 @@ package aaaa0ggmc.morphext.abyssalcraft.passive;
 
 import aaaa0ggmc.morphext.ability.AbstractPassiveAbility;
 import aaaa0ggmc.morphext.ability.MorphContext;
+import aaaa0ggmc.morphext.faction.FactionEnmity;
 import com.shinoow.abyssalcraft.api.AbyssalCraftAPI;
-import com.shinoow.abyssalcraft.api.entity.EntityUtil;
 import mchorse.metamorph.api.abilities.IAbility;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
@@ -40,7 +40,10 @@ public class AntiPredatorPassive extends AbstractPassiveAbility implements IAbil
     @Override
     public void onAttack(EntityPlayer player, EntityLivingBase target, DamageSource source, float amount, MorphContext context) {
         if (player == null || target == null || player.world.isRemote || target.isOnSameTeam(player)) return;
-        if (EntityUtil.isEntityAnti(target)) return; // 反物质同族互不猎杀
+        // FVP-28：原 EntityUtil.isEntityAnti(target) 类判「反物质同族互不猎杀」，而
+        // antimatter→antimatter RELATIVE 已在 faction_relations.json 声明（双真相）。
+        // 改问阵营图：isAlly 内含同队 + 主人/同主 + MEMBER/RELATIVE/LORD。
+        if (FactionEnmity.isAlly(player, target)) return;
 
         if (AbyssalCraftAPI.antimatter != null) {
             target.attackEntityFrom(AbyssalCraftAPI.antimatter, 2.0F);

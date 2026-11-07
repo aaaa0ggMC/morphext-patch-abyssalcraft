@@ -13,6 +13,11 @@ import java.util.List;
  * 1. 准星对准敌对生物时：定向至该目标生物；
  * 2. 准星对准方块或空气时：定向至视线延伸的光线交点坐标；
  * 3. 彻底杜绝锁定宿主自身或友军。
+ *
+ * <p><b>FVP-27</b>：实体候选过滤由 {@code !isOnSameTeam}（scoreboard 队伍）改为
+ * {@link AbyssalCraftAction#isHostileTarget}（= 存活 + 非同队 + {@code FactionEnmity.isEnemy}）。
+ * 几何引导逻辑（射线/AABB 拦截/最近命中）完全不变；未锁到敌人时仍旧退化为方块交点
+ * 与视线末端，自由射击手感不受影响。</p>
  */
 public final class CrosshairTargetDirector {
 
@@ -36,10 +41,10 @@ public final class CrosshairTargetDirector {
         Vec3d look = entity.getLook(1.0F);
         Vec3d reach = eye.add(look.x * maxDist, look.y * maxDist, look.z * maxDist);
 
-        // 1. 射线检测周围存活实体（排除施法者自身和队友）
+        // 1. 射线检测周围存活实体（排除施法者自身、友军与同阵营生物）
         AxisAlignedBB box = entity.getEntityBoundingBox().expand(look.x * maxDist, look.y * maxDist, look.z * maxDist).grow(1.5D);
         List<EntityLivingBase> list = world.getEntitiesWithinAABB(EntityLivingBase.class, box,
-                e -> e != entity && e.isEntityAlive() && !e.isOnSameTeam(entity));
+                e -> AbyssalCraftAction.isHostileTarget(entity, e));
 
         EntityLivingBase closestEntity = null;
         double minDistance = maxDist;

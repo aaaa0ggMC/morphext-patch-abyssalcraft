@@ -58,7 +58,7 @@ public final class AbyssalExtraActions2 {
             AxisAlignedBB rakeBox = entity.getEntityBoundingBox().grow(2.2D, 1.1D, 2.2D)
                     .offset(look.x * 1.6D, 0.2D, look.z * 1.6D);
             List<EntityLivingBase> list = world.getEntitiesWithinAABB(EntityLivingBase.class, rakeBox,
-                    e -> e != entity && e.isEntityAlive() && !e.isOnSameTeam(entity));
+                    e -> isHostileTarget(entity, e));
             if (list.isEmpty()) {
                 return false;
             }
@@ -120,7 +120,7 @@ public final class AbyssalExtraActions2 {
             AxisAlignedBB grabBox = entity.getEntityBoundingBox().grow(2.2D, 1.1D, 2.2D)
                     .offset(look.x * 1.6D, 0.2D, look.z * 1.6D);
             List<EntityLivingBase> list = world.getEntitiesWithinAABB(EntityLivingBase.class, grabBox,
-                    e -> e != entity && e.isEntityAlive() && !e.isOnSameTeam(entity));
+                    e -> isHostileTarget(entity, e));
 
             DamageSource source = (entity instanceof EntityPlayer ?
                     DamageSource.causePlayerDamage((EntityPlayer) entity) : DamageSource.causeMobDamage(entity)).setFireDamage();
@@ -188,7 +188,7 @@ public final class AbyssalExtraActions2 {
                         anchor.x - 4.0D, anchor.y - 3.0D, anchor.z - 4.0D,
                         anchor.x + 4.0D, anchor.y + 3.0D, anchor.z + 4.0D);
                 List<EntityLivingBase> victims = world.getEntitiesWithinAABB(EntityLivingBase.class, zone,
-                        e -> e != entity && e.isEntityAlive() && !e.isOnSameTeam(entity));
+                        e -> isHostileTarget(entity, e));
                 DamageSource source = AbyssalCraftAPI.dread != null ? AbyssalCraftAPI.dread :
                         (entity instanceof EntityPlayer ? DamageSource.causePlayerDamage((EntityPlayer) entity)
                                 : DamageSource.causeMobDamage(entity));
@@ -225,7 +225,7 @@ public final class AbyssalExtraActions2 {
             AxisAlignedBB galeBox = entity.getEntityBoundingBox().grow(6.0D, 2.5D, 6.0D)
                     .offset(look.x * 5.0D, 0.5D, look.z * 5.0D);
             List<EntityLivingBase> list = world.getEntitiesWithinAABB(EntityLivingBase.class, galeBox,
-                    e -> e != entity && e.isEntityAlive() && !e.isOnSameTeam(entity));
+                    e -> isHostileTarget(entity, e));
             if (list.isEmpty()) {
                 return false;
             }
@@ -527,7 +527,7 @@ public final class AbyssalExtraActions2 {
             AxisAlignedBB chargeBox = entity.getEntityBoundingBox().grow(3.2D, 1.2D, 3.2D)
                     .offset(look.x * 2.0D, 0.2D, look.z * 2.0D);
             List<EntityLivingBase> list = world.getEntitiesWithinAABB(EntityLivingBase.class, chargeBox,
-                    e -> e != entity && e.isEntityAlive() && !e.isOnSameTeam(entity));
+                    e -> isHostileTarget(entity, e));
 
             DamageSource source = AbyssalCraftAPI.antimatter != null ? AbyssalCraftAPI.antimatter :
                     (entity instanceof EntityPlayer ? DamageSource.causePlayerDamage((EntityPlayer) entity)
@@ -713,7 +713,7 @@ public final class AbyssalExtraActions2 {
                         anchor.x - 8.0D, anchor.y - 3.0D, anchor.z - 8.0D,
                         anchor.x + 8.0D, anchor.y + 4.0D, anchor.z + 8.0D);
                 List<EntityLivingBase> victims = world.getEntitiesWithinAABB(EntityLivingBase.class, zone,
-                        e -> e != entity && e.isEntityAlive() && !e.isOnSameTeam(entity) && e.onGround);
+                        e -> isHostileTarget(entity, e) && e.onGround);
                 for (EntityLivingBase victim : victims) {
                     // 随机扰动（源码 motionX/Y/Z += rand）
                     victim.motionX += world.rand.nextFloat() * 0.1D - 0.05D;
@@ -801,7 +801,7 @@ public final class AbyssalExtraActions2 {
             AxisAlignedBB crushBox = entity.getEntityBoundingBox().grow(2.4D, 1.2D, 2.4D)
                     .offset(look.x * 1.7D, 0.2D, look.z * 1.7D);
             List<EntityLivingBase> list = world.getEntitiesWithinAABB(EntityLivingBase.class, crushBox,
-                    e -> e != entity && e.isEntityAlive() && !e.isOnSameTeam(entity));
+                    e -> isHostileTarget(entity, e));
             if (list.isEmpty()) {
                 return false;
             }

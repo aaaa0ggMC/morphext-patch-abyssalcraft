@@ -2,8 +2,8 @@ package aaaa0ggmc.morphext.abyssalcraft.passive;
 
 import aaaa0ggmc.morphext.ability.AbstractPassiveAbility;
 import aaaa0ggmc.morphext.ability.MorphContext;
+import aaaa0ggmc.morphext.faction.FactionEnmity;
 import com.shinoow.abyssalcraft.api.AbyssalCraftAPI;
-import com.shinoow.abyssalcraft.api.entity.EntityUtil;
 import mchorse.metamorph.api.abilities.IAbility;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
@@ -164,8 +164,9 @@ public class CoraliumCarapacePassive extends AbstractPassiveAbility implements I
 
             attacker.attackEntityFrom(thornSrc, thornDamage);
 
-            // 施加珊瑚瘟疫
-            if (AbyssalCraftAPI.coralium_plague != null && !EntityUtil.isEntityCoralium(attacker)) {
+            // FVP-28：coralium 未单独声明为阵营（折叠进 abyssal 谓词），
+            // 同族不传染改问阵营图，不再用 EntityUtil.isEntityCoralium 类名/接口硬判。
+            if (AbyssalCraftAPI.coralium_plague != null && !FactionEnmity.isAlly(player, attacker)) {
                 attacker.addPotionEffect(new PotionEffect(AbyssalCraftAPI.coralium_plague, 100, 0));
             }
 

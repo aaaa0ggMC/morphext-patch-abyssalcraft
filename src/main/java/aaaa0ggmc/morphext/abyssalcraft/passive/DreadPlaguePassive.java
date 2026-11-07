@@ -2,8 +2,8 @@ package aaaa0ggmc.morphext.abyssalcraft.passive;
 
 import aaaa0ggmc.morphext.ability.AbstractPassiveAbility;
 import aaaa0ggmc.morphext.ability.MorphContext;
+import aaaa0ggmc.morphext.faction.FactionEnmity;
 import com.shinoow.abyssalcraft.api.AbyssalCraftAPI;
-import com.shinoow.abyssalcraft.api.entity.EntityUtil;
 import com.shinoow.abyssalcraft.lib.ACSounds;
 import mchorse.metamorph.api.abilities.IAbility;
 import net.minecraft.entity.EntityLivingBase;
@@ -116,8 +116,9 @@ public class DreadPlaguePassive extends AbstractPassiveAbility implements IAbili
     public static void handleAttackProc(EntityPlayer player, EntityLivingBase target) {
         if (player == null || target == null || target.world.isRemote || target.isOnSameTeam(player)) return;
 
-        // 若目标非恐惧生物，施加恐惧瘟疫与恐惧灼伤
-        if (!EntityUtil.isEntityDread(target)) {
+        // FVP-28：原 EntityUtil.isEntityDread 类判同族，dread→dread RELATIVE 已由图声明。
+        // 若目标不是盟友（含恐惧同族 RELATIVE），施加恐惧瘟疫与恐惧灼伤
+        if (!FactionEnmity.isAlly(player, target)) {
             if (AbyssalCraftAPI.dread_plague != null) {
                 target.addPotionEffect(new PotionEffect(AbyssalCraftAPI.dread_plague, 100, 0));
             }

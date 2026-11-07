@@ -1,7 +1,7 @@
 package aaaa0ggmc.morphext.abyssalcraft.action;
 
+import aaaa0ggmc.morphext.faction.FactionEnmity;
 import com.shinoow.abyssalcraft.api.AbyssalCraftAPI;
-import com.shinoow.abyssalcraft.api.entity.EntityUtil;
 import com.shinoow.abyssalcraft.common.entity.EntityAcidProjectile;
 import com.shinoow.abyssalcraft.common.entity.EntityDreadSlug;
 import com.shinoow.abyssalcraft.common.entity.EntityDreadedCharge;
@@ -167,7 +167,7 @@ public final class AbyssalActions {
             // 身前 5 格判定盒
             AxisAlignedBB slamBox = entity.getEntityBoundingBox().grow(4.0D).offset(look.x * 2.5D, 0.2D, look.z * 2.5D);
             List<EntityLivingBase> list = world.getEntitiesWithinAABB(EntityLivingBase.class, slamBox,
-                    e -> e != entity && e.isEntityAlive() && !e.isOnSameTeam(entity));
+                    e -> isHostileTarget(entity, e));
 
             DamageSource source = AbyssalCraftAPI.dread != null ? AbyssalCraftAPI.dread : (entity instanceof EntityPlayer ? DamageSource.causePlayerDamage((EntityPlayer) entity) : DamageSource.causeMobDamage(entity));
             for (EntityLivingBase e : list) {
@@ -226,7 +226,7 @@ public final class AbyssalActions {
             if (target == null) {
                 AxisAlignedBB near = entity.getEntityBoundingBox().grow(3.5D).offset(look.x * 1.2D, 0.0D, look.z * 1.2D);
                 List<EntityLivingBase> list = world.getEntitiesWithinAABB(EntityLivingBase.class, near,
-                        e -> e != entity && e.isEntityAlive() && !e.isOnSameTeam(entity));
+                        e -> isHostileTarget(entity, e));
                 double best = 3.5D * 3.5D;
                 for (EntityLivingBase candidate : list) {
                     double distSq = candidate.getDistanceSq(entity);
@@ -359,7 +359,7 @@ public final class AbyssalActions {
             // 扑袭身前 3.5 格目标造成 12 点物理破甲重创
             AxisAlignedBB strikeBox = entity.getEntityBoundingBox().grow(2.5D, 1.6D, 2.5D).offset(look.x * 2.2D, look.y * 0.8D, look.z * 2.2D);
             List<EntityLivingBase> list = world.getEntitiesWithinAABB(EntityLivingBase.class, strikeBox,
-                    e -> e != entity && e.isEntityAlive() && !e.isOnSameTeam(entity));
+                    e -> isHostileTarget(entity, e));
 
             DamageSource armorPierce = (entity instanceof EntityPlayer ?
                     DamageSource.causePlayerDamage((EntityPlayer) entity) :
@@ -369,7 +369,9 @@ public final class AbyssalActions {
             for (EntityLivingBase target : list) {
                 target.attackEntityFrom(armorPierce, 12.0F);
                 target.addPotionEffect(new PotionEffect(MobEffects.SLOWNESS, 80, 1));
-                if (AbyssalCraftAPI.coralium_plague != null && !EntityUtil.isEntityCoralium(target)) {
+                // FVP-28：coralium 未单独声明为阵营（已折叠进 abyssal 谓词），
+                // 同族豁免改问阵营图，不再用 EntityUtil.isEntityCoralium 类名/接口硬判。
+                if (AbyssalCraftAPI.coralium_plague != null && !FactionEnmity.isAlly(entity, target)) {
                     target.addPotionEffect(new PotionEffect(AbyssalCraftAPI.coralium_plague, 100, 0));
                 }
                 hit = true;
@@ -406,7 +408,7 @@ public final class AbyssalActions {
             // 身前 3.5 格扇形抓击
             AxisAlignedBB strikeBox = entity.getEntityBoundingBox().grow(2.5D, 1.2D, 2.5D).offset(look.x * 1.8D, 0.2D, look.z * 1.8D);
             List<EntityLivingBase> list = world.getEntitiesWithinAABB(EntityLivingBase.class, strikeBox,
-                    e -> e != entity && e.isEntityAlive() && !e.isOnSameTeam(entity));
+                    e -> isHostileTarget(entity, e));
 
             DamageSource source = AbyssalCraftAPI.coralium != null ?
                     AbyssalCraftAPI.coralium :
@@ -415,7 +417,9 @@ public final class AbyssalActions {
             boolean hit = false;
             for (EntityLivingBase target : list) {
                 target.attackEntityFrom(source, 9.0F);
-                if (AbyssalCraftAPI.coralium_plague != null && !EntityUtil.isEntityCoralium(target)) {
+                // FVP-28：coralium 未单独声明为阵营（已折叠进 abyssal 谓词），
+                // 同族豁免改问阵营图，不再用 EntityUtil.isEntityCoralium 类名/接口硬判。
+                if (AbyssalCraftAPI.coralium_plague != null && !FactionEnmity.isAlly(entity, target)) {
                     target.addPotionEffect(new PotionEffect(AbyssalCraftAPI.coralium_plague, 120, 0)); // 120 ticks 珊瑚瘟疫
                 }
                 target.addPotionEffect(new PotionEffect(MobEffects.WEAKNESS, 120, 0)); // 120 ticks 虚弱
@@ -470,7 +474,7 @@ public final class AbyssalActions {
             // 判定盒沿着位移向量向前延伸平移至落点中心，防止扑中却判定失效
             AxisAlignedBB hitBox = entity.getEntityBoundingBox().offset(look.x * 1.6D, 0.2D, look.z * 1.6D).grow(2.5D, 1.5D, 2.5D);
             List<EntityLivingBase> list = world.getEntitiesWithinAABB(EntityLivingBase.class, hitBox,
-                    e -> e != entity && e.isEntityAlive() && !e.isOnSameTeam(entity));
+                    e -> isHostileTarget(entity, e));
 
             DamageSource source = entity instanceof EntityPlayer ? DamageSource.causePlayerDamage((EntityPlayer) entity) : DamageSource.causeMobDamage(entity);
             boolean dreadPlague = morphName.contains("dread") || morphName.contains("chagaroth");
@@ -522,7 +526,9 @@ public final class AbyssalActions {
 
             for (EntityLivingBase target : list) {
                 target.attackEntityFrom(source, 10.0F);
-                if (AbyssalCraftAPI.coralium_plague != null && !EntityUtil.isEntityCoralium(target)) {
+                // FVP-28：coralium 未单独声明为阵营（已折叠进 abyssal 谓词），
+                // 同族豁免改问阵营图，不再用 EntityUtil.isEntityCoralium 类名/接口硬判。
+                if (AbyssalCraftAPI.coralium_plague != null && !FactionEnmity.isAlly(entity, target)) {
                     target.addPotionEffect(new PotionEffect(AbyssalCraftAPI.coralium_plague, 160, 0)); // 珊瑚瘟疫
                 }
                 target.addPotionEffect(new PotionEffect(MobEffects.BLINDNESS, 120, 0)); // 失明 6 秒 (120 ticks)
@@ -708,7 +714,7 @@ public final class AbyssalActions {
             // 冲锋前方 8 格判定盒
             AxisAlignedBB chargeBox = entity.getEntityBoundingBox().expand(look.x * 8.0D, 1.0D, look.z * 8.0D).grow(1.5D);
             List<EntityLivingBase> list = world.getEntitiesWithinAABB(EntityLivingBase.class, chargeBox,
-                    e -> e != entity && e.isEntityAlive() && !e.isOnSameTeam(entity));
+                    e -> isHostileTarget(entity, e));
 
             DamageSource fireSrc = (entity instanceof EntityPlayer ?
                     DamageSource.causePlayerDamage((EntityPlayer) entity) :
@@ -802,7 +808,7 @@ public final class AbyssalActions {
             // 身前 4 格横扫判定盒
             AxisAlignedBB sweepBox = entity.getEntityBoundingBox().grow(3.0D).offset(look.x * 2.0D, look.y * 1.0D, look.z * 2.0D);
             List<EntityLivingBase> list = world.getEntitiesWithinAABB(EntityLivingBase.class, sweepBox,
-                    e -> e != entity && e.isEntityAlive() && !e.isOnSameTeam(entity));
+                    e -> isHostileTarget(entity, e));
 
             DamageSource shadowSrc = AbyssalCraftAPI.shadow != null ? AbyssalCraftAPI.shadow : (entity instanceof EntityPlayer ? DamageSource.causePlayerDamage((EntityPlayer) entity) : DamageSource.causeMobDamage(entity));
 
@@ -902,7 +908,7 @@ public final class AbyssalActions {
             // 命中判定与负面效果：对落点 4 格内敌人造成暗影伤害并施加致盲 4 秒与暗影凋零 4 秒
             AxisAlignedBB area = entity.getEntityBoundingBox().grow(3.5D);
             List<EntityLivingBase> list = world.getEntitiesWithinAABB(EntityLivingBase.class, area,
-                    e -> e != entity && e.isEntityAlive() && !e.isOnSameTeam(entity));
+                    e -> isHostileTarget(entity, e));
             DamageSource shadowSrc = AbyssalCraftAPI.shadow != null ? AbyssalCraftAPI.shadow : (entity instanceof EntityPlayer ? DamageSource.causePlayerDamage((EntityPlayer) entity) : DamageSource.causeMobDamage(entity));
             for (EntityLivingBase target : list) {
                 target.attackEntityFrom(shadowSrc, 12.0F);
@@ -1034,7 +1040,7 @@ public final class AbyssalActions {
             Vec3d eye = entity.getPositionEyes(1.0F);
             AxisAlignedBB sweepBox = entity.getEntityBoundingBox().grow(3.5D).offset(look.x * 2.0D, look.y * 0.5D, look.z * 2.0D);
             List<EntityLivingBase> list = world.getEntitiesWithinAABB(EntityLivingBase.class, sweepBox,
-                    e -> e != entity && e.isEntityAlive() && !e.isOnSameTeam(entity));
+                    e -> isHostileTarget(entity, e));
 
             DamageSource source = AbyssalCraftAPI.antimatter != null ? AbyssalCraftAPI.antimatter : (entity instanceof EntityPlayer ? DamageSource.causePlayerDamage((EntityPlayer) entity) : DamageSource.causeMobDamage(entity));
             for (EntityLivingBase target : list) {
@@ -1272,7 +1278,7 @@ public final class AbyssalActions {
             // 沿光束检测所有贯穿的实体
             AxisAlignedBB beamBox = new AxisAlignedBB(eyes.x, eyes.y, eyes.z, impactPoint.x, impactPoint.y, impactPoint.z).grow(1.2D);
             List<EntityLivingBase> list = world.getEntitiesWithinAABB(EntityLivingBase.class, beamBox,
-                    e -> e != entity && e.isEntityAlive() && !e.isOnSameTeam(entity));
+                    e -> isHostileTarget(entity, e));
 
             DamageSource source = entity instanceof EntityPlayer ? DamageSource.causePlayerDamage((EntityPlayer) entity) : DamageSource.causeMobDamage(entity);
             for (EntityLivingBase e : list) {
@@ -1325,7 +1331,7 @@ public final class AbyssalActions {
             // 6 格地面震波判定盒
             AxisAlignedBB slamBox = entity.getEntityBoundingBox().grow(5.5D, 2.0D, 5.5D).offset(look.x * 1.5D, 0.0D, look.z * 1.5D);
             List<EntityLivingBase> list = world.getEntitiesWithinAABB(EntityLivingBase.class, slamBox,
-                    e -> e != entity && e.isEntityAlive() && !e.isOnSameTeam(entity));
+                    e -> isHostileTarget(entity, e));
 
             DamageSource source = entity instanceof EntityPlayer ?
                     DamageSource.causePlayerDamage((EntityPlayer) entity) : DamageSource.causeMobDamage(entity);
@@ -1387,7 +1393,7 @@ public final class AbyssalActions {
             // 身前判定盒
             AxisAlignedBB box = entity.getEntityBoundingBox().grow(3.0D, 1.5D, 3.0D).offset(look.x * 2.2D, 0.2D, look.z * 2.2D);
             List<EntityLivingBase> list = world.getEntitiesWithinAABB(EntityLivingBase.class, box,
-                    e -> e != entity && e.isEntityAlive() && !e.isOnSameTeam(entity));
+                    e -> isHostileTarget(entity, e));
 
             DamageSource source = AbyssalCraftAPI.antimatter != null ?
                     AbyssalCraftAPI.antimatter :
@@ -1485,7 +1491,7 @@ public final class AbyssalActions {
 
             AxisAlignedBB box = entity.getEntityBoundingBox().grow(2.5D, 1.2D, 2.5D).offset(look.x * 1.8D, 0.2D, look.z * 1.8D);
             List<EntityLivingBase> list = world.getEntitiesWithinAABB(EntityLivingBase.class, box,
-                    e -> e != entity && e.isEntityAlive() && !e.isOnSameTeam(entity));
+                    e -> isHostileTarget(entity, e));
 
             DamageSource source = entity instanceof EntityPlayer ?
                     DamageSource.causePlayerDamage((EntityPlayer) entity) : DamageSource.causeMobDamage(entity);

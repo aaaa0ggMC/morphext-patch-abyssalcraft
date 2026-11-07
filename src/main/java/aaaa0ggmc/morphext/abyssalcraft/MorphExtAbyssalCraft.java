@@ -44,6 +44,14 @@ public class MorphExtAbyssalCraft {
         proxy.preInit(event);
         // 确保核心动作调度器已挂载（ac_dread_barf 等引导技依赖；幂等，重复调用无副作用）
         aaaa0ggmc.morphext.integration.metamorph.vanilla.ServerActionScheduler.init();
+        /*
+         * AGENTS.md §1.2 迁移承接：原先写在 morphext 核心里的 AbyssalCraft 专属逻辑，
+         * 现在由 patch 在最早的初始化阶段经核心 SPI 注册进来（阵营 / 免疫别名）。
+         * 放在 preInit（而非原先的 init）是为了让阵营在任何实体关系解析之前就位——
+         * registerPatchFaction 内部会失效图的解析缓存，但早注册更稳。
+         */
+        AbyssalCoreIntegration.registerFactions();
+        AbyssalCoreIntegration.registerImmunityAliases();
         registerActions();
         LOGGER.info("[morphext-abyssalcraft] Pre-initialized actions and abilities");
     }
@@ -52,66 +60,15 @@ public class MorphExtAbyssalCraft {
     public void init(FMLInitializationEvent event) {
         MinecraftForge.EVENT_BUS.register(MorphBossAdaptHandler.class);
         MinecraftForge.EVENT_BUS.register(EvilCowMilkAction.class);
+        /*
+         * Metamorph 形态重映射（原核心 MetamorphEventHandler.onRegisterRemap 的 5 条
+         * AbyssalCraft 硬编码）：patch 直接订阅 Metamorph 自己的 RegisterRemapEvent，
+         * 往同一张 event.map 里注入，不经过核心中转。
+         */
+        MinecraftForge.EVENT_BUS.register(AbyssalCoreIntegration.class);
         aaaa0ggmc.morphext.integration.metamorph.SafeMobActAction.registerAdapter(new AbyssalBossMobActAdapter());
-        registerAbyssalFactions();
         proxy.init(event);
-        LOGGER.info("[morphext-abyssalcraft] Initialized boss adapt handler, mob act adapter, factions, and proxies");
-    }
-
-    private void registerAbyssalFactions() {
-        try {
-            aaaa0ggmc.morphext.faction.Faction abyssal = aaaa0ggmc.morphext.faction.FactionRegistry.get("abyssal");
-            if (abyssal != null) {
-                abyssal.addPredicate(e -> com.shinoow.abyssalcraft.api.entity.EntityUtil.isEntityCoralium(e)
-                        || e instanceof com.shinoow.abyssalcraft.common.entity.EntityAbyssalZombie
-                        || e instanceof com.shinoow.abyssalcraft.common.entity.EntityDepthsGhoul
-                        || e instanceof com.shinoow.abyssalcraft.common.entity.EntityCoraliumSquid);
-            }
-
-            aaaa0ggmc.morphext.faction.Faction dread = aaaa0ggmc.morphext.faction.FactionRegistry.get("dread");
-            if (dread != null) {
-                dread.addPredicate(e -> com.shinoow.abyssalcraft.api.entity.EntityUtil.isEntityDread(e)
-                        || e instanceof com.shinoow.abyssalcraft.common.entity.EntityDreadguard
-                        || e instanceof com.shinoow.abyssalcraft.common.entity.EntityDreadling
-                        || e instanceof com.shinoow.abyssalcraft.common.entity.EntityDreadSpawn
-                        || e instanceof com.shinoow.abyssalcraft.common.entity.EntityChagaroth);
-            }
-
-            aaaa0ggmc.morphext.faction.Faction omothol = aaaa0ggmc.morphext.faction.FactionRegistry.get("omothol");
-            if (omothol != null) {
-                omothol.addPredicate(e -> e instanceof com.shinoow.abyssalcraft.api.entity.IOmotholEntity
-                        || e instanceof com.shinoow.abyssalcraft.common.entity.EntityRemnant
-                        || e instanceof com.shinoow.abyssalcraft.common.entity.EntityJzahar
-                        || e instanceof com.shinoow.abyssalcraft.common.entity.EntitySacthoth);
-            }
-
-            aaaa0ggmc.morphext.faction.Faction shadow = aaaa0ggmc.morphext.faction.FactionRegistry.get("shadow");
-            if (shadow != null) {
-                shadow.addPredicate(e -> e instanceof com.shinoow.abyssalcraft.common.entity.EntityShadowMonster
-                        || e instanceof com.shinoow.abyssalcraft.common.entity.EntityShadowCreature
-                        || e instanceof com.shinoow.abyssalcraft.common.entity.EntityShadowBeast
-                        || e instanceof com.shinoow.abyssalcraft.common.entity.EntityShadowTitan);
-            }
-
-            aaaa0ggmc.morphext.faction.Faction shoggoth = aaaa0ggmc.morphext.faction.FactionRegistry.get("shoggoth");
-            if (shoggoth != null) {
-                shoggoth.addPredicate(e -> e instanceof com.shinoow.abyssalcraft.common.entity.EntityLesserShoggoth
-                        || (e != null && e.getClass().getName().toLowerCase().contains("shoggoth")));
-            }
-
-            aaaa0ggmc.morphext.faction.Faction antimatter = aaaa0ggmc.morphext.faction.FactionRegistry.get("antimatter");
-            if (antimatter != null) {
-                antimatter.addPredicate(e -> com.shinoow.abyssalcraft.api.entity.EntityUtil.isEntityAnti(e));
-            }
-
-            aaaa0ggmc.morphext.faction.Faction demon = aaaa0ggmc.morphext.faction.FactionRegistry.get("demon");
-            if (demon != null) {
-                demon.addPredicate(e -> e instanceof com.shinoow.abyssalcraft.common.entity.demon.EntityDemonAnimal
-                        || e instanceof com.shinoow.abyssalcraft.common.entity.demon.EntityEvilAnimal);
-            }
-        } catch (Throwable t) {
-            LOGGER.error("[morphext-abyssalcraft] Error registering abyssal faction predicates", t);
-        }
+        LOGGER.info("[morphext-abyssalcraft] Initialized boss adapt handler, mob act adapter, remap, and proxies");
     }
 
     private void registerActions() {

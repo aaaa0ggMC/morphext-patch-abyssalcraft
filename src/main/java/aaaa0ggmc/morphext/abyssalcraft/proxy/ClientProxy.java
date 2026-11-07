@@ -1,9 +1,10 @@
 package aaaa0ggmc.morphext.abyssalcraft.proxy;
 
+import aaaa0ggmc.morphext.abyssalcraft.AbyssalCoreIntegration;
+import aaaa0ggmc.morphext.abyssalcraft.SafeCleansingRitualHandler;
 import aaaa0ggmc.morphext.client.hand.GenericHandRegistry;
 import aaaa0ggmc.morphext.client.hand.HandPreset;
 import aaaa0ggmc.morphext.client.render.GenericMorphRenderRegistry;
-import aaaa0ggmc.morphext.abyssalcraft.SafeCleansingRitualHandler;
 import com.shinoow.abyssalcraft.common.entity.EntityDragonBoss;
 import com.shinoow.abyssalcraft.common.entity.EntityDragonMinion;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
@@ -31,6 +32,14 @@ public class ClientProxy extends CommonProxy {
                 new aaaa0ggmc.morphext.abyssalcraft.ability.JzaharBanishAbility());
         SafeCleansingRitualHandler.install();
         aaaa0ggmc.morphext.variant.MorphCreativeInjector.registerProvider(new aaaa0ggmc.morphext.abyssalcraft.variant.AbyssalCraftVariantProvider());
+        /*
+         * AGENTS.md §1.2 迁移承接（客户端侧）：
+         *  - 创造选单「虚拟变种 → 宿主基础实体」回退表（原核心 KNOWN_FALLBACKS 静态块）；
+         *  - 模型骨名关键词兜底（原核心 ModelBoneScanner 词典里的 staff1 / abyssalnomicon）。
+         * 两者都是纯补数据，与迁移前的硬编码逐条等价。
+         */
+        AbyssalCoreIntegration.registerCreativeFallbacks();
+        AbyssalCoreIntegration.registerBoneKeywords();
         registerHandPresets();
         registerRenderAdjustments();
     }

@@ -2,8 +2,8 @@ package aaaa0ggmc.morphext.abyssalcraft.passive;
 
 import aaaa0ggmc.morphext.ability.AbstractPassiveAbility;
 import aaaa0ggmc.morphext.ability.MorphContext;
+import aaaa0ggmc.morphext.faction.FactionEnmity;
 import com.shinoow.abyssalcraft.api.AbyssalCraftAPI;
-import com.shinoow.abyssalcraft.api.entity.EntityUtil;
 import com.shinoow.abyssalcraft.lib.ACSounds;
 import mchorse.metamorph.api.abilities.IAbility;
 import net.minecraft.entity.EntityLivingBase;
@@ -123,8 +123,9 @@ public class AntimatterAnnihilationPassive extends AbstractPassiveAbility implem
     public static void handleCollisionAnnihilation(EntityPlayer player, EntityLivingBase target) {
         if (player == null || target == null || target.world.isRemote || target == player || target.isOnSameTeam(player)) return;
 
-        // 若目标非反物质生物，接触瞬间触发微型物质湮灭反应！
-        if (!EntityUtil.isEntityAnti(target) && target.hurtResistantTime <= 5) {
+        // FVP-28：原 EntityUtil.isEntityAnti 类判同族，antimatter→antimatter RELATIVE 已由图声明。
+        // 若目标不是盟友（含反物质同族 RELATIVE），接触瞬间触发微型物质湮灭反应！
+        if (!FactionEnmity.isAlly(player, target) && target.hurtResistantTime <= 5) {
             DamageSource antiSrc = AbyssalCraftAPI.antimatter != null ? AbyssalCraftAPI.antimatter : DamageSource.causePlayerDamage(player);
             target.attackEntityFrom(antiSrc, 6.0F);
 
@@ -168,7 +169,8 @@ public class AntimatterAnnihilationPassive extends AbstractPassiveAbility implem
     public static void handleAttackProc(EntityPlayer player, EntityLivingBase target) {
         if (player == null || target == null || target.world.isRemote || target.isOnSameTeam(player)) return;
 
-        if (!EntityUtil.isEntityAnti(target)) {
+        // FVP-28：同族互不猎杀改问阵营图（antimatter→antimatter RELATIVE）
+        if (!FactionEnmity.isAlly(player, target)) {
             DamageSource antiSrc = AbyssalCraftAPI.antimatter != null ? AbyssalCraftAPI.antimatter : DamageSource.causePlayerDamage(player);
             target.attackEntityFrom(antiSrc, 4.0F);
 

@@ -1,14 +1,10 @@
 package aaaa0ggmc.morphext.abyssalcraft.entity;
 
 import aaaa0ggmc.morphext.abyssalcraft.action.BossNativeHelper;
-import com.shinoow.abyssalcraft.api.entity.IOmotholEntity;
 import com.shinoow.abyssalcraft.common.entity.EntityBlackHole;
 import com.shinoow.abyssalcraft.common.entity.EntityImplosion;
 import com.shinoow.abyssalcraft.lib.ACConfig;
 import com.shinoow.abyssalcraft.lib.ACSounds;
-import mchorse.metamorph.api.morphs.AbstractMorph;
-import mchorse.metamorph.capabilities.morphing.IMorphing;
-import mchorse.metamorph.capabilities.morphing.Morphing;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
@@ -109,32 +105,15 @@ public class MorphEntityImplosion extends EntityImplosion {
         pullSpeed += 0.0001D;
     }
 
+    /**
+     * FVP-28：豁免判定改问阵营图（见 {@link BossNativeHelper#isFactionExempt}）。
+     *
+     * <p>改前：与 {@link MorphEntityBlackHole#isExempt} 完全重复的
+     * morph.name 六子串 + {@code IOmotholEntity} + {@code contains("Shoggoth")} 硬判。
+     * 现已合并为 BossNativeHelper 的单一真值，两份复制删除。</p>
+     */
     public boolean isExempt(Entity entity, EntityLivingBase owner) {
-        if (entity == null) return true;
-        if (entity == owner || (owner != null && BossNativeHelper.isOwnedBy(entity, owner))) return true;
-
-        if (entity instanceof EntityPlayer) {
-            EntityPlayer player = (EntityPlayer) entity;
-            if (player == owner || (owner != null && player.isOnSameTeam(owner))) return true;
-
-            IMorphing morphing = Morphing.get(player);
-            if (morphing != null && morphing.isMorphed()) {
-                AbstractMorph morph = morphing.getCurrentMorph();
-                if (morph != null && morph.name != null) {
-                    String n = morph.name.toLowerCase();
-                    if (n.contains("jzahar") || n.contains("sacthoth") || n.contains("omothol")
-                            || n.contains("shoggoth") || n.contains("chagaroth") || n.contains("dragonboss")) {
-                        return true;
-                    }
-                }
-            }
-        }
-
-        if (entity instanceof IOmotholEntity || entity.getClass().getName().contains("Shoggoth")) {
-            return true;
-        }
-
-        return false;
+        return BossNativeHelper.isFactionExempt(entity, owner);
     }
 
     public EntityLivingBase getOwner() {

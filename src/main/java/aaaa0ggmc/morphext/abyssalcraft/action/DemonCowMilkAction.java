@@ -103,7 +103,7 @@ public class DemonCowMilkAction extends AbyssalCraftAction {
                 front.x + 2.5D, front.y + 2.0D, front.z + 2.5D
         );
         List<EntityLivingBase> list = world.getEntitiesWithinAABB(EntityLivingBase.class, box,
-                e -> e != entity && e.isEntityAlive() && !e.isOnSameTeam(entity));
+                e -> isHostileTarget(entity, e));
 
         DamageSource ds = player != null ? DamageSource.causePlayerDamage(player) : DamageSource.causeMobDamage(entity);
         for (EntityLivingBase target : list) {

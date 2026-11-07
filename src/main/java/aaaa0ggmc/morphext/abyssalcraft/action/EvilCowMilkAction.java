@@ -113,7 +113,7 @@ public class EvilCowMilkAction extends AbyssalCraftAction {
 
         AxisAlignedBB rushBox = entity.getEntityBoundingBox().grow(2.5D, 1.0D, 2.5D);
         List<EntityLivingBase> list = world.getEntitiesWithinAABB(EntityLivingBase.class, rushBox,
-                e -> e != entity && e.isEntityAlive() && !e.isOnSameTeam(entity));
+                e -> isHostileTarget(entity, e));
 
         DamageSource ds = player != null ? DamageSource.causePlayerDamage(player) : DamageSource.causeMobDamage(entity);
         for (EntityLivingBase target : list) {

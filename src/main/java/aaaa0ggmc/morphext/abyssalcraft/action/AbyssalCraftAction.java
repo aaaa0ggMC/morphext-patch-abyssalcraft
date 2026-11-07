@@ -1,5 +1,6 @@
 package aaaa0ggmc.morphext.abyssalcraft.action;
 
+import aaaa0ggmc.morphext.faction.FactionEnmity;
 import aaaa0ggmc.morphext.integration.metamorph.ICooldownAction;
 import mchorse.metamorph.api.abilities.IAction;
 import mchorse.metamorph.api.morphs.AbstractMorph;
@@ -26,6 +27,13 @@ import java.util.concurrent.ConcurrentHashMap;
  * 2. 实现 ICooldownAction，支持原生精准动态冷却；
  * 3. 安全距离与实体过滤，防止任何 self-hit 或友军误伤；
  * 4. 严禁无控世界破坏，保护玩家建筑与地形。
+ *
+ * <p><b>FVP-27（敌我判定收口）</b>：本类与 {@link CrosshairTargetDirector} 是全 patch
+ * 约 40–60 个动作共用的目标选取公共入口。原先唯一过滤是 {@code !isOnSameTeam}（scoreboard
+ * 队伍），与阵营图完全不通：没进队的生物（玩家的驯服宠物、随从、同阵营深渊生物）恒
+ * {@code false} 互伤。现在统一改为问阵营图 {@link FactionEnmity#isEnemy}，
+ * {@code isOnSameTeam} 降级为附加条件（isEnemy 本身不含队伍判定，故显式保留）。
+ * 视线/距离/锥角等几何判定一律不动，只换「谁算敌人」这一问。</p>
  */
 public abstract class AbyssalCraftAction implements IAction, ICooldownAction {
     /** A15：空挥/未命中（executeServer 返回 false）时退还的短档冷却（1s 手感档）。 */
@@ -157,7 +165,34 @@ public abstract class AbyssalCraftAction implements IAction, ICooldownAction {
     }
 
     /**
-     * 通用射线实体检测（面向所有存活的敌对/非同队 EntityLivingBase，不仅针对 Player）
+     * FVP-27：全 patch 统一的「敌对目标」谓词（几何条件由调用侧另行叠加）。
+     *
+     * <p>改前：{@code e != entity && e.isEntityAlive() && !e.isOnSameTeam(entity)}——
+     * 只认 scoreboard 队伍，与阵营图脱节，于是同阵营深渊生物（shadow/shoggoth/dread/abyssal
+     * 自交 RELATIVE 已在 {@code faction_relations.json} 声明）、玩家自己的驯服宠物与随从
+     * 全部照打。</p>
+     *
+     * <p>改后：几何/存活条件不变，「是否敌人」改问 {@link FactionEnmity#isEnemy}：</p>
+     * <ul>
+     *   <li>无阵营映射 → 回退 {@code MODERATE} → {@code true}，未适配生物不变傻；</li>
+     *   <li>{@code MEMBER}/{@code RELATIVE}/{@code LORD}（含各族自交 RELATIVE）→ 非敌人；</li>
+     *   <li>内建 {@code IEntityOwnable} 主人/同主豁免 → 玩家自己的狼/随从不再被命中；</li>
+     *   <li>{@code ENEMY}（如 abyssal↔dread、*→villager、antimatter→monster）→ 仍为敌人。</li>
+     * </ul>
+     * {@code isOnSameTeam} 作为附加条件保留（isEnemy 不含队伍语义）。
+     */
+    public static boolean isHostileTarget(EntityLivingBase self, EntityLivingBase target) {
+        if (self == null || target == null || target == self) {
+            return false;
+        }
+        if (!target.isEntityAlive() || target.isOnSameTeam(self)) {
+            return false;
+        }
+        return FactionEnmity.isEnemy(self, target);
+    }
+
+    /**
+     * 通用射线实体检测（面向所有存活的敌对 EntityLivingBase，不仅针对 Player）
      */
     protected EntityLivingBase findTargetInCrosshairs(EntityLivingBase entity, double maxDistance) {
         World world = entity.world;
@@ -167,7 +202,7 @@ public abstract class AbyssalCraftAction implements IAction, ICooldownAction {
 
         AxisAlignedBB box = entity.getEntityBoundingBox().expand(look.x * maxDistance, look.y * maxDistance, look.z * maxDistance).grow(1.0D);
         List<EntityLivingBase> list = world.getEntitiesWithinAABB(EntityLivingBase.class, box,
-                e -> e != entity && e.isEntityAlive() && !e.isOnSameTeam(entity));
+                e -> isHostileTarget(entity, e));
 
         EntityLivingBase closest = null;
         double minDistance = maxDistance;
@@ -188,11 +223,11 @@ public abstract class AbyssalCraftAction implements IAction, ICooldownAction {
     }
 
     /**
-     * 获取施放者周围范围内的所有存活敌对目标（排除施法者自身和友军）
+     * 获取施放者周围范围内的所有存活敌对目标（排除施法者自身、友军与同阵营生物）
      */
     protected List<EntityLivingBase> findNearbyEntities(EntityLivingBase entity, double radius) {
         AxisAlignedBB box = entity.getEntityBoundingBox().grow(radius);
         return entity.world.getEntitiesWithinAABB(EntityLivingBase.class, box,
-                e -> e != entity && e.isEntityAlive() && !e.isOnSameTeam(entity));
+                e -> isHostileTarget(entity, e));
     }
 }

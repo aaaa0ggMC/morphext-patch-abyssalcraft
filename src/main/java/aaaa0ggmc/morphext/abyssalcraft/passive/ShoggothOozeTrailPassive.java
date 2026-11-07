@@ -2,6 +2,7 @@ package aaaa0ggmc.morphext.abyssalcraft.passive;
 
 import aaaa0ggmc.morphext.ability.AbstractPassiveAbility;
 import aaaa0ggmc.morphext.ability.MorphContext;
+import aaaa0ggmc.morphext.faction.FactionEnmity;
 import mchorse.metamorph.api.abilities.IAbility;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
@@ -43,6 +44,8 @@ public class ShoggothOozeTrailPassive extends AbstractPassiveAbility implements 
         // 注（A7）：核心目前没有任何 IPassiveAbility.onCollide 分发点，此分支是死钩子；
         // "缠滞"实际生效路径是 onUpdate 的 2.5 格贴身光环。保留实现等待核心补分发，勿删。
         if (player == null || other == null || player.world.isRemote || other.isOnSameTeam(player)) return;
+        // FVP-27：缠滞只对敌人生效（原 `!isOnSameTeam` 与阵营图脱节）
+        if (!FactionEnmity.isEnemy(player, other)) return;
         other.addPotionEffect(new PotionEffect(MobEffects.SLOWNESS, 40, 0));
     }
 
@@ -82,10 +85,10 @@ public class ShoggothOozeTrailPassive extends AbstractPassiveAbility implements 
                     4, 0.45D, 0.15D, 0.45D, 0.0D);
         }
 
-        // 贴身缠滞
+        // 贴身缠滞（FVP-27：只缠敌人；原 `!isOnSameTeam` 会把村民/玩家的驯服宠物/同阵营生物一并缠上）
         for (EntityLivingBase other : world.getEntitiesWithinAABB(EntityLivingBase.class,
                 player.getEntityBoundingBox().grow(2.5D, 1.0D, 2.5D),
-                e -> e != player && e.isEntityAlive() && !e.isOnSameTeam(player))) {
+                e -> e != player && e.isEntityAlive() && !e.isOnSameTeam(player) && FactionEnmity.isEnemy(player, e))) {
             other.addPotionEffect(new PotionEffect(MobEffects.SLOWNESS, 40, 0));
             if (world instanceof WorldServer) {
                 ((WorldServer) world).spawnParticle(EnumParticleTypes.SLIME,
