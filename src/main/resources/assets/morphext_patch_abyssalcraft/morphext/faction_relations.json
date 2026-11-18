@@ -11,7 +11,8 @@
       "parent": "abyssal"
     },
     "shoggoth": {},
-    "antimatter": {}
+    "antimatter": {},
+    "demon": {}
   },
   "entity_mappings": {
     "abyssalcraft:depths_ghoul": ["abyssal", "undead"],
@@ -80,6 +81,13 @@
     { "from": "dread", "to": "villager", "relation": "ENEMY", "symmetric": true },
     { "from": "abyssal", "to": "villager", "relation": "ENEMY", "symmetric": true },
     { "from": "shoggoth", "to": "villager", "relation": "ENEMY", "symmetric": true },
+    { "from": "demon", "to": "demon", "relation": "RELATIVE", "symmetric": true },
+    { "from": "demon", "to": "villager", "relation": "ENEMY", "symmetric": true },
+    { "from": "abyssal", "to": "golem", "relation": "ENEMY", "symmetric": true },
+    { "from": "dread", "to": "golem", "relation": "ENEMY", "symmetric": true },
+    { "from": "shoggoth", "to": "golem", "relation": "ENEMY", "symmetric": true },
+    { "from": "demon", "to": "golem", "relation": "ENEMY", "symmetric": true },
+    { "from": "antimatter", "to": "golem", "relation": "ENEMY", "symmetric": true },
     { "from": "antimatter", "to": "antimatter", "relation": "RELATIVE", "symmetric": true },
     { "from": "antimatter", "to": "monster", "relation": "ENEMY", "symmetric": true }
   ]
