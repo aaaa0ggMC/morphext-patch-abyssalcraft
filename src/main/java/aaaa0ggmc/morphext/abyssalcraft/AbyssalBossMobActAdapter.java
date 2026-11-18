@@ -1,7 +1,7 @@
 package aaaa0ggmc.morphext.abyssalcraft;
 
 import aaaa0ggmc.morphext.abyssalcraft.action.BossNativeHelper;
-import aaaa0ggmc.morphext.abyssalcraft.profiler.ProfilerBridge;
+import aaaa0ggmc.morphext.profiler.ProfilerBridge;
 import aaaa0ggmc.morphext.integration.metamorph.SafeMobActAction;
 import mchorse.metamorph.api.morphs.AbstractMorph;
 import net.minecraft.entity.EntityLiving;
@@ -212,8 +212,10 @@ public class AbyssalBossMobActAdapter implements SafeMobActAction.IMobActAdapter
             }
         }
 
+        boolean isAbyssal = name.startsWith("abyssalcraft.") || name.startsWith("abyssalcraft:");
+
         // 8. 反物质生物 (Antimatter) 原生反物质脉冲
-        if (name.contains("antimatter") || name.contains("anti")) {
+        if (isAbyssal && (name.contains("antimatter") || name.contains("anti"))) {
             player.swingArm(EnumHand.MAIN_HAND);
             if (dummy != null) dummy.swingArm(EnumHand.MAIN_HAND);
             mchorse.metamorph.api.abilities.IAction pulse = mchorse.metamorph.api.MorphManager.INSTANCE.actions.get("ac_anti_matter_blast");
@@ -224,7 +226,7 @@ public class AbyssalBossMobActAdapter implements SafeMobActAction.IMobActAdapter
         }
 
         // 9. 邪恶动物 (Evil Animals)
-        if (name.contains("evil")) {
+        if (isAbyssal && name.contains("evil")) {
             player.swingArm(EnumHand.MAIN_HAND);
             if (dummy != null) dummy.swingArm(EnumHand.MAIN_HAND);
             mchorse.metamorph.api.abilities.IAction act = mchorse.metamorph.api.MorphManager.INSTANCE.actions.get("ac_evil_charge");

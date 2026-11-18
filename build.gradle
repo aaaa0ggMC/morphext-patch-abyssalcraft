@@ -28,7 +28,8 @@ repositories {
 }
 
 dependencies {
-    compile files("libs/morph-extension-1.0.0.jar")
+    def morphExtDev = file("../morph-extension/build/libs/morph-extension-1.0.0-dev.jar")
+    compile files(morphExtDev.exists() ? morphExtDev : "libs/morph-extension-1.0.0.jar")
     compile files("libs/AbyssalCraft-1.12.2-1.10.3.jar")
     compile files("libs/metamorph-1.4-1.12.2.jar")
     compile files("libs/mclib-2.4.3-1.12.2.jar")
@@ -49,7 +50,4 @@ processResources {
     from(sourceSets.main.resources.srcDirs) {
         exclude "mcmod.info"
     }
-
-    // 注意：lang 文件名必须小写（en_us/zh_cn）——MC 1.12.2 的 ResourceLocation 会把 lang 路径
-    // 强制转小写，大写名在 Linux（大小写敏感）下永远匹配不上，玩家会看到原始 key。
 }

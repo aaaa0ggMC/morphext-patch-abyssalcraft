@@ -216,3 +216,20 @@ morphext.ability.jzahar_banish.name=Boss Banishment Aura
 morphext.ability.jzahar_banish.desc=Toggles J'zahar's Great Old One aura that automatically banishes all Boss entities within 64 blocks [ON/OFF]:\n· [BANISH: ON] (Default): Automatically expels all bosses within 64m;\n· [BANISH: OFF]: Suppresses banishment, allowing J'zahar to coexist and fight alongside other bosses.
 gui.morphext.state.banish.on=BANISH: ON
 gui.morphext.state.banish.off=BANISH: OFF
+
+# Categories & Factions
+morph.category.abyssalcraft=AbyssalCraft
+morphext.faction.abyssal.name=Abyssal Wasteland
+morphext.faction.abyssal.desc=Includes abyssal zombies, depths ghouls and coralium horrors.
+morphext.faction.dread.name=Dreadlands
+morphext.faction.dread.desc=Includes dreadguards, dreadlings, dread golems and Cha'garoth.
+morphext.faction.omothol.name=Omothol
+morphext.faction.omothol.desc=Includes remnants, J'zahar, Sacthoth and great old ones.
+morphext.faction.shadow.name=Shadow
+morphext.faction.shadow.desc=Includes shadow creatures, monsters and beasts.
+morphext.faction.shoggoth.name=Shoggoth
+morphext.faction.shoggoth.desc=Includes lesser, regular and greater shoggoths.
+morphext.faction.antimatter.name=Antimatter
+morphext.faction.antimatter.desc=Includes all antimatter organisms.
+morphext.faction.demon.name=Demon
+morphext.faction.demon.desc=Includes demon animals and evil beasts.

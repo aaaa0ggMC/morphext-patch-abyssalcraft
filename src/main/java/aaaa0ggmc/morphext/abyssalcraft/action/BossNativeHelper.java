@@ -60,7 +60,7 @@ public final class BossNativeHelper {
             mTeleport.setAccessible(true);
             sacthothTeleportMH = lookup.unreflect(mTeleport);
         } catch (Throwable t) {
-            t.printStackTrace();
+            aaaa0ggmc.morphext.abyssalcraft.MorphExtAbyssalCraft.LOGGER.warn("[morphext-abyssalcraft] BossNativeHelper init failed", t);
         }
     }
 
@@ -85,7 +85,7 @@ public final class BossNativeHelper {
             jzaharLaunchSkullMH.invoke(jzahar, head, x, y, z, invulnerable);
             return true;
         } catch (Throwable t) {
-            t.printStackTrace();
+            aaaa0ggmc.morphext.abyssalcraft.MorphExtAbyssalCraft.LOGGER.warn("[morphext-abyssalcraft] launchJzaharSkull failed", t);
             return false;
         }
     }
@@ -95,7 +95,7 @@ public final class BossNativeHelper {
         try {
             return (boolean) sacthothTeleportMH.invoke(sacthoth, x, y, z);
         } catch (Throwable t) {
-            t.printStackTrace();
+            aaaa0ggmc.morphext.abyssalcraft.MorphExtAbyssalCraft.LOGGER.warn("[morphext-abyssalcraft] launchJzaharSkull failed", t);
             return false;
         }
     }
@@ -120,11 +120,18 @@ public final class BossNativeHelper {
     public static void tagOwner(Entity entity, EntityLivingBase owner) {
         if (entity != null && owner != null) {
             entity.getEntityData().setString(TAG_MORPH_OWNER, owner.getUniqueID().toString());
+            if (entity instanceof EntityLivingBase && !aaaa0ggmc.morphext.follower.Followers.isFollowerOf(entity, owner.getUniqueID())) {
+                long time = entity.world != null ? entity.world.getTotalWorldTime() : 0L;
+                aaaa0ggmc.morphext.follower.Followers.setOwner((EntityLivingBase) entity, owner.getUniqueID(), time);
+            }
         }
     }
 
     public static boolean isOwnedBy(Entity entity, EntityLivingBase owner) {
         if (entity == null || owner == null) return false;
+        if (aaaa0ggmc.morphext.follower.Followers.isFollowerOf(entity, owner.getUniqueID())) {
+            return true;
+        }
         if (!entity.getEntityData().hasKey(TAG_MORPH_OWNER)) return false;
         String uuidStr = entity.getEntityData().getString(TAG_MORPH_OWNER);
         return owner.getUniqueID().toString().equals(uuidStr);

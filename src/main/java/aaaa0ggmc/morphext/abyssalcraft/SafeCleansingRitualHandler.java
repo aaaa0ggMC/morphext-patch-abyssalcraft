@@ -1,6 +1,6 @@
 package aaaa0ggmc.morphext.abyssalcraft;
 
-import aaaa0ggmc.morphext.abyssalcraft.profiler.ProfilerBridge;
+import aaaa0ggmc.morphext.profiler.ProfilerBridge;
 import com.shinoow.abyssalcraft.common.network.PacketDispatcher;
 import com.shinoow.abyssalcraft.common.network.client.CleansingRitualMessage;
 import com.shinoow.abyssalcraft.common.util.BiomeUtil;

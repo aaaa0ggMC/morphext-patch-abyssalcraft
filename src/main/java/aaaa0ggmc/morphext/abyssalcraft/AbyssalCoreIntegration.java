@@ -53,41 +53,41 @@ public final class AbyssalCoreIntegration {
      * <p>lang 键（{@code morphext.faction.<id>.name/.desc}）仍在核心 lang：
      * 那是翻译键而非 modid/类名/形态 id 硬编码，按 AGENTS.md 的 lang 迁移清单另行处理。</p>
      */
-    public static void registerFactions() {
+    public static void registerFactions(aaaa0ggmc.morphext.spi.MorphextPluginContext ctx) {
         try {
-            registerFaction("abyssal", new ItemStack(Blocks.OBSIDIAN),
+            registerFaction(ctx, "abyssal", new ItemStack(Blocks.OBSIDIAN),
                     e -> com.shinoow.abyssalcraft.api.entity.EntityUtil.isEntityCoralium(e)
                             || e instanceof com.shinoow.abyssalcraft.common.entity.EntityAbyssalZombie
                             || e instanceof com.shinoow.abyssalcraft.common.entity.EntityDepthsGhoul
                             || e instanceof com.shinoow.abyssalcraft.common.entity.EntityCoraliumSquid);
 
-            registerFaction("dread", new ItemStack(Items.REDSTONE),
+            registerFaction(ctx, "dread", new ItemStack(Items.REDSTONE),
                     e -> com.shinoow.abyssalcraft.api.entity.EntityUtil.isEntityDread(e)
                             || e instanceof com.shinoow.abyssalcraft.common.entity.EntityDreadguard
                             || e instanceof com.shinoow.abyssalcraft.common.entity.EntityDreadling
                             || e instanceof com.shinoow.abyssalcraft.common.entity.EntityDreadSpawn
                             || e instanceof com.shinoow.abyssalcraft.common.entity.EntityChagaroth);
 
-            registerFaction("omothol", new ItemStack(Items.NETHER_STAR),
+            registerFaction(ctx, "omothol", new ItemStack(Items.NETHER_STAR),
                     e -> e instanceof com.shinoow.abyssalcraft.api.entity.IOmotholEntity
                             || e instanceof com.shinoow.abyssalcraft.common.entity.EntityRemnant
                             || e instanceof com.shinoow.abyssalcraft.common.entity.EntityJzahar
                             || e instanceof com.shinoow.abyssalcraft.common.entity.EntitySacthoth);
 
-            registerFaction("shadow", new ItemStack(Items.COAL),
+            registerFaction(ctx, "shadow", new ItemStack(Items.COAL),
                     e -> e instanceof com.shinoow.abyssalcraft.common.entity.EntityShadowMonster
                             || e instanceof com.shinoow.abyssalcraft.common.entity.EntityShadowCreature
                             || e instanceof com.shinoow.abyssalcraft.common.entity.EntityShadowBeast
                             || e instanceof com.shinoow.abyssalcraft.common.entity.EntityShadowTitan);
 
-            registerFaction("shoggoth", new ItemStack(Items.SLIME_BALL),
+            registerFaction(ctx, "shoggoth", new ItemStack(Items.SLIME_BALL),
                     e -> e instanceof com.shinoow.abyssalcraft.common.entity.EntityLesserShoggoth
                             || (e != null && e.getClass().getName().toLowerCase().contains("shoggoth")));
 
-            registerFaction("antimatter", new ItemStack(Items.NETHERBRICK),
+            registerFaction(ctx, "antimatter", new ItemStack(Items.NETHERBRICK),
                     e -> com.shinoow.abyssalcraft.api.entity.EntityUtil.isEntityAnti(e));
 
-            registerFaction("demon", new ItemStack(Items.MAGMA_CREAM),
+            registerFaction(ctx, "demon", new ItemStack(Items.MAGMA_CREAM),
                     e -> e instanceof com.shinoow.abyssalcraft.common.entity.demon.EntityDemonAnimal
                             || e instanceof com.shinoow.abyssalcraft.common.entity.demon.EntityEvilAnimal);
         } catch (Throwable t) {
@@ -95,14 +95,15 @@ public final class AbyssalCoreIntegration {
         }
     }
 
-    private static void registerFaction(String id, ItemStack icon,
+    private static void registerFaction(aaaa0ggmc.morphext.spi.MorphextPluginContext ctx,
+                                        String id, ItemStack icon,
                                         java.util.function.Predicate<net.minecraft.entity.EntityLivingBase> predicate) {
         Faction faction = new Faction(id,
                 "morphext.faction." + id + ".name",
                 "morphext.faction." + id + ".desc",
                 icon);
         faction.addPredicate(predicate);
-        FactionRegistry.registerPatchFaction(faction);
+        ctx.registerFaction(faction);
     }
 
     /* ==================== 2. 免疫别名（原 MorphImmunityHandler 硬编码） ==================== */
@@ -145,8 +146,10 @@ public final class AbyssalCoreIntegration {
             ImmunityAliasRegistry.registerAliasGroup("antimatter");
             ImmunityAliasRegistry.registerAliasGroup("shadow");
 
-            // 形态名特权药水免疫（原「暗影形态免疫失明」硬编码）
+            // 形态名特权药水免疫（原「暗影/萨克索斯/扎哈尔形态免疫失明」硬编码）
             ImmunityAliasRegistry.registerMorphNamePotionGuard("shadow", net.minecraft.init.MobEffects.BLINDNESS);
+            ImmunityAliasRegistry.registerMorphNamePotionGuard("sacthoth", net.minecraft.init.MobEffects.BLINDNESS);
+            ImmunityAliasRegistry.registerMorphNamePotionGuard("jzahar", net.minecraft.init.MobEffects.BLINDNESS);
 
             // 自伤豁免伤害类型（原 isImmuneToDamage 自伤分支的五个子串）
             for (String type : new String[]{"dread", "acid", "coralium", "antimatter", "shadow"}) {

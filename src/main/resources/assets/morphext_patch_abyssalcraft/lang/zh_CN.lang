@@ -216,3 +216,20 @@ morphext.ability.jzahar_banish.name=古神遣返法则
 morphext.ability.jzahar_banish.desc=切换扎哈尔对周围 64 格内首领生物 (Boss) 的古神遣返法则状态 [开/关]：\n· [遣返: ON]（默认）：自动遣返并驱逐周围末影龙、凋灵、深渊古神等全部 Boss；\n· [遣返: OFF]：收敛光环，允许扎哈尔与其他首领 Boss 并存、同台决斗。
 gui.morphext.state.banish.on=遣返: ON
 gui.morphext.state.banish.off=遣返: OFF
+
+# 分类与阵营
+morph.category.abyssalcraft=深渊国度
+morphext.faction.abyssal.name=深渊荒原
+morphext.faction.abyssal.desc=包含深渊僵尸、深渊食尸鬼与珊瑚鱿鱼等深渊荒原感染生物。
+morphext.faction.dread.name=恐惧之地
+morphext.faction.dread.desc=包含恐惧守卫、恐惧仆从、恐惧巨像、恐惧野兽与查伽洛斯等恐惧生灵。
+morphext.faction.omothol.name=奥穆索
+morphext.faction.omothol.desc=包含奥穆索遗民、扎哈尔、萨克索斯与旧日高维支配者。
+morphext.faction.shadow.name=暗影
+morphext.faction.shadow.desc=包含暗影生物、暗影怪物与暗影巨兽等黑曜虚无阴影。
+morphext.faction.shoggoth.name=修格斯
+morphext.faction.shoggoth.desc=包含次级修格斯、普通修格斯与巨型修格斯等高腐蚀软体不定形生物。
+morphext.faction.antimatter.name=反物质
+morphext.faction.antimatter.desc=包含反物质全家桶生物族裔。
+morphext.faction.demon.name=恶魔
+morphext.faction.demon.desc=包含深渊恶魔动物与地狱火邪恶生物。

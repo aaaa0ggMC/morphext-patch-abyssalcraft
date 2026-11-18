@@ -28,8 +28,6 @@ public class ClientProxy extends CommonProxy {
     @Override
     public void init(FMLInitializationEvent event) {
         super.init(event);
-        aaaa0ggmc.morphext.ability.AbilityRegistry.register(
-                new aaaa0ggmc.morphext.abyssalcraft.ability.JzaharBanishAbility());
         SafeCleansingRitualHandler.install();
         aaaa0ggmc.morphext.variant.MorphCreativeInjector.registerProvider(new aaaa0ggmc.morphext.abyssalcraft.variant.AbyssalCraftVariantProvider());
         /*
@@ -39,20 +37,13 @@ public class ClientProxy extends CommonProxy {
          * 两者都是纯补数据，与迁移前的硬编码逐条等价。
          */
         AbyssalCoreIntegration.registerCreativeFallbacks();
-        AbyssalCoreIntegration.registerBoneKeywords();
         registerHandPresets();
         registerRenderAdjustments();
     }
 
     private void registerRenderAdjustments() {
         try {
-            // 深渊巨龙 (Asorah / DragonBoss) 与巨龙仆从 (DragonMinion) 模型几何朝向与原版巨龙一致，
-            // 但未被 Metamorph 识别为 EntityDragon，变身状态下刚好反转 180°。
-            // 正常打 Boss 完全正常，仅变身时反向。在此通过 GenericMorphRenderRegistry DI 接口注册变身 180° 翻转修复：
-            GenericMorphRenderRegistry.registerRotate180("abyssalcraft:dragonboss");
-            GenericMorphRenderRegistry.registerRotate180("abyssalcraft.dragonboss");
-            GenericMorphRenderRegistry.registerRotate180("abyssalcraft:dragonminion");
-            GenericMorphRenderRegistry.registerRotate180("abyssalcraft.dragonminion");
+            // 实体类 180° 翻转注册保留在 ClientProxy，前缀字符串与骨名关键词已迁至 AbyssalMorphextPlugin
             GenericMorphRenderRegistry.registerRotate180(EntityDragonBoss.class);
             GenericMorphRenderRegistry.registerRotate180(EntityDragonMinion.class);
         } catch (Throwable t) {

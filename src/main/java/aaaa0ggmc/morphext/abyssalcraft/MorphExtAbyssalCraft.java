@@ -50,15 +50,13 @@ public class MorphExtAbyssalCraft {
          * 放在 preInit（而非原先的 init）是为了让阵营在任何实体关系解析之前就位——
          * registerPatchFaction 内部会失效图的解析缓存，但早注册更稳。
          */
-        AbyssalCoreIntegration.registerFactions();
         AbyssalCoreIntegration.registerImmunityAliases();
         registerActions();
-        LOGGER.info("[morphext-abyssalcraft] Pre-initialized actions and abilities");
+        LOGGER.info("[morphext-abyssalcraft] Pre-initialized actions and immunity aliases");
     }
 
     @Mod.EventHandler
     public void init(FMLInitializationEvent event) {
-        MinecraftForge.EVENT_BUS.register(MorphBossAdaptHandler.class);
         MinecraftForge.EVENT_BUS.register(EvilCowMilkAction.class);
         /*
          * Metamorph 形态重映射（原核心 MetamorphEventHandler.onRegisterRemap 的 5 条
@@ -66,9 +64,8 @@ public class MorphExtAbyssalCraft {
          * 往同一张 event.map 里注入，不经过核心中转。
          */
         MinecraftForge.EVENT_BUS.register(AbyssalCoreIntegration.class);
-        aaaa0ggmc.morphext.integration.metamorph.SafeMobActAction.registerAdapter(new AbyssalBossMobActAdapter());
         proxy.init(event);
-        LOGGER.info("[morphext-abyssalcraft] Initialized boss adapt handler, mob act adapter, remap, and proxies");
+        LOGGER.info("[morphext-abyssalcraft] Initialized boss adapt handler, remap, and proxies");
     }
 
     private void registerActions() {
@@ -158,31 +155,6 @@ public class MorphExtAbyssalCraft {
         MorphManager.INSTANCE.actions.put("ac_dread_merge", new AbyssalExtraActions.DreadMergeAction());
         MorphManager.INSTANCE.actions.put("ac_remnant_rally", new AbyssalExtraActions.RemnantRallyAction());
 
-        // 被动能力注册 (兼容 MorphExtension 与 Metamorph)
-        aaaa0ggmc.morphext.abyssalcraft.passive.ShadowPhotophobiaPassive photophobia = new aaaa0ggmc.morphext.abyssalcraft.passive.ShadowPhotophobiaPassive();
-        aaaa0ggmc.morphext.ability.AbilityRegistry.register(photophobia);
-        MorphManager.INSTANCE.abilities.put("ac_photophobia", photophobia);
-
-        aaaa0ggmc.morphext.abyssalcraft.passive.DreadPlaguePassive dreadPlague = new aaaa0ggmc.morphext.abyssalcraft.passive.DreadPlaguePassive();
-        aaaa0ggmc.morphext.ability.AbilityRegistry.register(dreadPlague);
-        MorphManager.INSTANCE.abilities.put("ac_dread_plague", dreadPlague);
-
-        aaaa0ggmc.morphext.abyssalcraft.passive.DreadgolemToughnessPassive dreadgolem = new aaaa0ggmc.morphext.abyssalcraft.passive.DreadgolemToughnessPassive();
-        aaaa0ggmc.morphext.ability.AbilityRegistry.register(dreadgolem);
-        MorphManager.INSTANCE.abilities.put("ac_dreadgolem_toughness", dreadgolem);
-
-        aaaa0ggmc.morphext.abyssalcraft.passive.AntimatterAnnihilationPassive antimatter = new aaaa0ggmc.morphext.abyssalcraft.passive.AntimatterAnnihilationPassive();
-        aaaa0ggmc.morphext.ability.AbilityRegistry.register(antimatter);
-        MorphManager.INSTANCE.abilities.put("ac_antimatter_annihilation", antimatter);
-
-        aaaa0ggmc.morphext.abyssalcraft.passive.ShoggothAcidPassive shoggothAcid = new aaaa0ggmc.morphext.abyssalcraft.passive.ShoggothAcidPassive();
-        aaaa0ggmc.morphext.ability.AbilityRegistry.register(shoggothAcid);
-        MorphManager.INSTANCE.abilities.put("ac_shoggoth_acid", shoggothAcid);
-
-        aaaa0ggmc.morphext.abyssalcraft.passive.CoraliumCarapacePassive coraliumCarapace = new aaaa0ggmc.morphext.abyssalcraft.passive.CoraliumCarapacePassive();
-        aaaa0ggmc.morphext.ability.AbilityRegistry.register(coraliumCarapace);
-        MorphManager.INSTANCE.abilities.put("ac_coralium_carapace", coraliumCarapace);
-
         // morph-abilities-audit E2 生物能力增补动作（AbyssalExtraActions2）
         MorphManager.INSTANCE.actions.put("ac_ghoul_rake", new AbyssalExtraActions2.GhoulRakeAction());
         MorphManager.INSTANCE.actions.put("ac_ghoul_immolate", new AbyssalExtraActions2.GhoulImmolateAction());
@@ -200,22 +172,5 @@ public class MorphExtAbyssalCraft {
         MorphManager.INSTANCE.actions.put("ac_shub_bleat", new AbyssalExtraActions2.ShubBleatAction());
         MorphManager.INSTANCE.actions.put("ac_gatekeeper_crush", new AbyssalExtraActions2.GatekeeperCrushAction());
         MorphManager.INSTANCE.actions.put("ac_shoggoth_crush", new AbyssalExtraActions2.ShoggothCrushAction());
-
-        // morph-abilities-audit E2 生物能力增补被动
-        aaaa0ggmc.morphext.abyssalcraft.passive.ShoggothOozeTrailPassive oozeTrail = new aaaa0ggmc.morphext.abyssalcraft.passive.ShoggothOozeTrailPassive();
-        aaaa0ggmc.morphext.ability.AbilityRegistry.register(oozeTrail);
-        MorphManager.INSTANCE.abilities.put("ac_shoggoth_ooze_trail", oozeTrail);
-
-        aaaa0ggmc.morphext.abyssalcraft.passive.CoraliumContactPassive coraliumContact = new aaaa0ggmc.morphext.abyssalcraft.passive.CoraliumContactPassive();
-        aaaa0ggmc.morphext.ability.AbilityRegistry.register(coraliumContact);
-        MorphManager.INSTANCE.abilities.put("ac_coralium_contact", coraliumContact);
-
-        aaaa0ggmc.morphext.abyssalcraft.passive.ShadowPhasePassive shadowPhase = new aaaa0ggmc.morphext.abyssalcraft.passive.ShadowPhasePassive();
-        aaaa0ggmc.morphext.ability.AbilityRegistry.register(shadowPhase);
-        MorphManager.INSTANCE.abilities.put("ac_shadow_phase", shadowPhase);
-
-        aaaa0ggmc.morphext.abyssalcraft.passive.AntiPredatorPassive antiPredator = new aaaa0ggmc.morphext.abyssalcraft.passive.AntiPredatorPassive();
-        aaaa0ggmc.morphext.ability.AbilityRegistry.register(antiPredator);
-        MorphManager.INSTANCE.abilities.put("ac_anti_predator", antiPredator);
     }
 }

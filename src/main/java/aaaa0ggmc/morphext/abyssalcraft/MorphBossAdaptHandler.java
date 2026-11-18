@@ -219,7 +219,10 @@ public final class MorphBossAdaptHandler {
                 }
 
                 if (!entity.world.isRemote) {
-                    sanitizeMorphEntity(player, currentMorph);
+                    // 仅对 AbyssalCraft 形态同步属主标记与遣返开关，避免每 tick 对全模组变身反复删加 AI（AI 净化已在 onMorphPost 完成）
+                    if (currentMorph != null && currentMorph.name != null && currentMorph.name.toLowerCase(java.util.Locale.ROOT).startsWith("abyssalcraft")) {
+                        syncAbyssalMorphTags(player, currentMorph);
+                    }
 
                     // 反物质形态实体碰撞湮灭检测。
                     // 注（A7）：IPassiveAbility.onCollide 目前核心无任何分发点（死钩子），
@@ -325,10 +328,31 @@ public final class MorphBossAdaptHandler {
     }
 
     /**
-     * 实体 AI 净化逻辑：将对 EntityPlayer 的仇恨任务清除，替换为安全的怪对怪索敌
+     * 每 tick 轻量同步：仅维持属主标签、Jzahar 遣返开关与清零误锁宿主，不再删加 AI 任务。
+     */
+    private static void syncAbyssalMorphTags(EntityPlayer player, AbstractMorph morph) {
+        if (!(morph instanceof EntityMorph)) return;
+        EntityLivingBase dummy = ((EntityMorph) morph).getEntity(player.world);
+        if (!(dummy instanceof EntityLiving)) return;
+        EntityLiving living = (EntityLiving) dummy;
+        BossNativeHelper.tagOwner(living, player);
+        if (BossNativeHelper.isJzahar(living)) {
+            living.getEntityData().setBoolean(TAG_JZAHAR_BANISH, isJzaharBanishAuraEnabled(player));
+        }
+        if (living.getAttackTarget() == player || living.getAttackTarget() == living) {
+            living.setAttackTarget(null);
+        }
+        if (living.getRevengeTarget() == player || living.getRevengeTarget() == living) {
+            living.setRevengeTarget(null);
+        }
+    }
+
+    /**
+     * 实体 AI 净化逻辑：将对 EntityPlayer 的仇恨任务清除，替换为安全的怪对怪索敌（仅在 MorphEvent.Post 调用）
      */
     private static void sanitizeMorphEntity(EntityPlayer player, AbstractMorph morph) {
         if (!(morph instanceof EntityMorph)) return;
+        if (morph.name == null || !morph.name.toLowerCase(java.util.Locale.ROOT).startsWith("abyssalcraft")) return;
         EntityLivingBase dummy = ((EntityMorph) morph).getEntity(player.world);
         if (!(dummy instanceof EntityLiving)) return;
 
@@ -525,7 +549,7 @@ public final class MorphBossAdaptHandler {
 
                 String mName = morph.name != null ? morph.name.toLowerCase() : "";
 
-                // 3. 扎哈尔变身自身触发的大地震熔岩地热与终焉咆哮撞墙自伤，阻断
+                // 3. 扎哈尔变身自身触发的大地震熔岩地热与终焉咆哮撞墙自伤 + 第四面墙秒杀，阻断
                 if (BossNativeHelper.isJzahar(dummy) || mName.contains("jzahar")) {
                     if (source == DamageSource.HOT_FLOOR || source == DamageSource.FLY_INTO_WALL || source == DamageSource.LIGHTNING_BOLT) {
                         return true;
@@ -536,107 +560,14 @@ public final class MorphBossAdaptHandler {
                     }
                 }
 
-                // 4. 阿索拉 / 恐惧巨龙俯冲强袭防摔落自伤与恐惧/珊瑚瘟疫伤害阻断
-                if (mName.contains("dragonboss") || mName.contains("asorah")) {
-                    if (source == DamageSource.FALL || source == com.shinoow.abyssalcraft.api.AbyssalCraftAPI.dread
-                            || source == com.shinoow.abyssalcraft.api.AbyssalCraftAPI.coralium) {
-                        return true;
-                    }
-                }
-
-                // 5. 萨克索斯/暗影生物自身暗影与窒息免伤
-                if (mName.contains("shadow") || mName.contains("sacthoth")) {
-                    if (source == com.shinoow.abyssalcraft.api.AbyssalCraftAPI.shadow || source == DamageSource.IN_WALL) {
-                        return true;
-                    }
-                }
-
-                // 6. 查伽洛斯与恐惧生物免伤 (Dread & Fire & Golem)
-                if (mName.contains("dread") || mName.contains("chagaroth")) {
-                    if (source == com.shinoow.abyssalcraft.api.AbyssalCraftAPI.dread || "dread".equalsIgnoreCase(source.getDamageType()) || source.isFireDamage()) {
-                        return true;
-                    }
-                    // A17：精确形态名匹配（原 contains("golem") 子串会把任何 *golem* 形态
-                    // 一并授予超额免疫；现只认 dreadgolem 本体，与 JSON damageImmunities 口径一致）
-                    if (isMorphNamed(mName, "dreadgolem")) {
-                        if (source == DamageSource.DROWN || source == DamageSource.CACTUS || source == DamageSource.IN_WALL || source == DamageSource.FALL) {
-                            return true;
-                        }
-                    }
-                }
-
-                // 7. 反物质生物绝对免疫反物质伤害
-                if (mName.contains("anti")) {
-                    if (source == com.shinoow.abyssalcraft.api.AbyssalCraftAPI.antimatter || "antimatter".equalsIgnoreCase(source.getDamageType())) {
-                        return true;
-                    }
-                }
-
-                // 8. 修格斯弹射物跳弹抗性、强酸、仙人掌、窒息、溺水免伤
-                if (mName.contains("shoggoth")) {
-                    if (source.isProjectile()) {
-                        player.world.playSound(null, player.posX, player.posY, player.posZ,
-                                net.minecraft.init.SoundEvents.ENTITY_SLIME_JUMP, SoundCategory.PLAYERS, 1.0F, 1.0F);
-                        return true;
-                    }
-                    if (source == com.shinoow.abyssalcraft.api.AbyssalCraftAPI.acid || "acid".equalsIgnoreCase(source.getDamageType())
-                            || "shoggoth_acid".equalsIgnoreCase(source.getDamageType())
-                            || source == DamageSource.CACTUS || source == DamageSource.IN_WALL || source == DamageSource.DROWN) {
-                        return true;
-                    }
+                // 4. 修格斯弹射物跳弹反馈音效（伤害免疫本身已交由核心 MorphImmunityHandler + morph_abilities.json 接管）
+                if (mName.contains("shoggoth") && source.isProjectile()) {
+                    player.world.playSound(null, player.posX, player.posY, player.posZ,
+                            net.minecraft.init.SoundEvents.ENTITY_SLIME_JUMP, SoundCategory.PLAYERS, 1.0F, 1.0F);
                 }
             }
         }
         return false;
-    }
-
-    /**
-     * 药水负面免疫：暗影失明、恐惧瘟疫、反物质药水、修格斯古神瘟疫免疫
-     */
-    @SubscribeEvent(priority = EventPriority.HIGHEST)
-    public static void onPotionApplicable(PotionEvent.PotionApplicableEvent event) {
-        if (event.getEntityLiving() instanceof EntityPlayer) {
-            EntityPlayer player = (EntityPlayer) event.getEntityLiving();
-            IMorphing morphing = Morphing.get(player);
-            if (morphing != null && morphing.isMorphed()) {
-                AbstractMorph morph = morphing.getCurrentMorph();
-                if (morph != null && morph.name != null) {
-                    String name = morph.name.toLowerCase();
-                    net.minecraft.potion.Potion pot = event.getPotionEffect().getPotion();
-
-                    // 暗影形态免疫失明
-                    if (pot == MobEffects.BLINDNESS && (name.contains("sacthoth") || name.contains("shadow") || name.contains("jzahar"))) {
-                        event.setResult(Event.Result.DENY);
-                        return;
-                    }
-
-                    // 恐惧形态免疫恐惧瘟疫
-                    if (name.contains("dread") && com.shinoow.abyssalcraft.api.AbyssalCraftAPI.dread_plague != null
-                            && pot == com.shinoow.abyssalcraft.api.AbyssalCraftAPI.dread_plague) {
-                        event.setResult(Event.Result.DENY);
-                        return;
-                    }
-
-                    // 反物质形态免疫反物质药水
-                    if (name.contains("anti") && com.shinoow.abyssalcraft.api.AbyssalCraftAPI.antimatter_potion != null
-                            && pot == com.shinoow.abyssalcraft.api.AbyssalCraftAPI.antimatter_potion) {
-                        event.setResult(Event.Result.DENY);
-                        return;
-                    }
-
-                    // 修格斯形态免疫珊瑚瘟疫、恐惧瘟疫、反物质药水与中毒
-                    if (name.contains("shoggoth")) {
-                        if (pot == MobEffects.POISON
-                                || (com.shinoow.abyssalcraft.api.AbyssalCraftAPI.coralium_plague != null && pot == com.shinoow.abyssalcraft.api.AbyssalCraftAPI.coralium_plague)
-                                || (com.shinoow.abyssalcraft.api.AbyssalCraftAPI.dread_plague != null && pot == com.shinoow.abyssalcraft.api.AbyssalCraftAPI.dread_plague)
-                                || (com.shinoow.abyssalcraft.api.AbyssalCraftAPI.antimatter_potion != null && pot == com.shinoow.abyssalcraft.api.AbyssalCraftAPI.antimatter_potion)) {
-                            event.setResult(Event.Result.DENY);
-                            return;
-                        }
-                    }
-                }
-            }
-        }
     }
 
     /**
@@ -649,7 +580,7 @@ public final class MorphBossAdaptHandler {
             IMorphing morphing = Morphing.get(player);
             if (morphing != null && morphing.isMorphed()) {
                 AbstractMorph morph = morphing.getCurrentMorph();
-                if (morph != null && morph.name != null && morph.name.contains("jzahar")) {
+                if (morph != null && morph.name != null && morph.name.toLowerCase(java.util.Locale.ROOT).contains("jzahar")) {
                     // 若周围 12 格内存在黑洞，拦截次元传送
                     boolean nearBlackHole = !player.world.getEntitiesWithinAABB(Entity.class,
                             player.getEntityBoundingBox().grow(12.0D),
