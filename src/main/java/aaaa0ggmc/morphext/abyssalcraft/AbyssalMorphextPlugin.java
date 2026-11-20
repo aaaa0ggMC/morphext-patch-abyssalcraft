@@ -2,6 +2,7 @@ package aaaa0ggmc.morphext.abyssalcraft;
 
 import aaaa0ggmc.morphext.abyssalcraft.ability.JzaharBanishAbility;
 import aaaa0ggmc.morphext.abyssalcraft.ability.JzaharBanishServerAbility;
+import aaaa0ggmc.morphext.abyssalcraft.ability.JzaharConverseAbility;
 import aaaa0ggmc.morphext.abyssalcraft.passive.*;
 import aaaa0ggmc.morphext.spi.IMorphextPlugin;
 import aaaa0ggmc.morphext.spi.MorphextPluginContext;
@@ -33,6 +34,8 @@ public final class AbyssalMorphextPlugin implements IMorphextPlugin {
 
         ctx.registerAbility(new JzaharBanishAbility());
         ctx.registerServerAbility("morphext:jzahar", new JzaharBanishServerAbility());
+        // 客户端能力：不注册服务端 handler，避免遣返前缀或世界扫描被挂到这句话上。
+        ctx.registerAbility(new JzaharConverseAbility());
     }
 
     @Override

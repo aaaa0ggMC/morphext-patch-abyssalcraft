@@ -1,0 +1,1847 @@
+{
+  "lines": [
+    {
+      "id": "ac.mixed.001",
+      "aspects": [
+        "biome:ocean",
+        "dim:overworld"
+      ],
+      "zh": "§9{biome} 靠在 {dimension} 的边上。§8海把地平线借走了，还没写归还的日子。",
+      "en": "§9{biome} leans on the edge of {dimension}. §8The sea borrowed the horizon and has not written a return date.",
+      "weight": 4
+    },
+    {
+      "id": "ac.mixed.002",
+      "aspects": [
+        "biome:forest",
+        "dim:overworld"
+      ],
+      "zh": "§2{biome} 把 {dimension} 的天遮住一块。§7遮住不是保护。是不想让上面的东西先开口。",
+      "en": "§2{biome} covers a piece of the sky of {dimension}. §7Covering is not protection. It is a wish that what is above should not speak first.",
+      "weight": 4
+    },
+    {
+      "id": "ac.mixed.003",
+      "aspects": [
+        "biome:desert",
+        "dim:overworld",
+        "world:clear"
+      ],
+      "zh": "§e{biome} 在 {dimension} 里没有云可用。§8晴是这里的默认值，不是恩赐。",
+      "en": "§e{biome} has no cloud to spend in {dimension}. §8Clear is the default here, not a favor.",
+      "weight": 4
+    },
+    {
+      "id": "ac.mixed.004",
+      "aspects": [
+        "biome:mountain",
+        "dim:overworld"
+      ],
+      "zh": "§7{dimension} 在 {biome} 里被折了一道。§8折痕的地方，门缝比较密。",
+      "en": "§7{dimension} is folded once inside {biome}. §8Where the fold is, the cracks of gates sit closer together.",
+      "weight": 4
+    },
+    {
+      "id": "ac.mixed.005",
+      "aspects": [
+        "biome:swamp",
+        "dim:overworld"
+      ],
+      "zh": "§2{biome} 把 {dimension} 的地面写成未完成时。§8脚还在。主语还没定。",
+      "en": "§2{biome} writes the ground of {dimension} in the unfinished tense. §8The foot is still here. The subject is not settled.",
+      "weight": 4
+    },
+    {
+      "id": "ac.mixed.006",
+      "aspects": [
+        "biome:plains",
+        "dim:overworld"
+      ],
+      "zh": "§a{biome} 把 {dimension} 摊平。§7摊平的地方，影子无处躲，名字也无处躲。",
+      "en": "§a{biome} flattens {dimension}. §7Where the land is flat, a shadow has nowhere to hide. Neither does a name.",
+      "weight": 4
+    },
+    {
+      "id": "ac.mixed.007",
+      "aspects": [
+        "biome:cold",
+        "dim:overworld"
+      ],
+      "zh": "§b{biome} 让 {dimension} 的呼吸变白。§8白的是热气，不是清白。",
+      "en": "§b{biome} turns the breath of {dimension} white. §8What is white is heat leaving. It is not innocence.",
+      "weight": 4
+    },
+    {
+      "id": "ac.mixed.008",
+      "aspects": [
+        "biome:jungle",
+        "dim:overworld"
+      ],
+      "zh": "§2{biome} 太绿，太密。§7{dimension} 在这里像一本不肯合上的湿书。",
+      "en": "§2{biome} is too green and too dense. §7{dimension} here is a wet book that refuses to close.",
+      "weight": 4
+    },
+    {
+      "id": "ac.mixed.009",
+      "aspects": [
+        "biome:darklands",
+        "dim:overworld"
+      ],
+      "zh": "§8{biome} 长在 {dimension} 里，像一封寄错地址的信。§3地址是珊瑚代写的。",
+      "en": "§8{biome} grows inside {dimension} like a letter sent to the wrong address. §3Coralium wrote the address.",
+      "weight": 5
+    },
+    {
+      "id": "ac.mixed.010",
+      "aspects": [
+        "biome:river",
+        "dim:overworld"
+      ],
+      "zh": "§9{biome} 是 {dimension} 还没下决心变成海的部分。§8犹豫的水，也会把名字冲淡。",
+      "en": "§9{biome} is the part of {dimension} that has not yet decided to become a sea. §8Hesitant water still dilutes a name.",
+      "weight": 4
+    },
+    {
+      "id": "ac.mixed.011",
+      "aspects": [
+        "biome:beach",
+        "dim:overworld"
+      ],
+      "zh": "§e{biome} 是 {dimension} 和海签字的那一条。§8字迹是盐。盐不归档。",
+      "en": "§e{biome} is the line where {dimension} signed with the sea. §8The ink is salt. Salt does not file itself.",
+      "weight": 4
+    },
+    {
+      "id": "ac.mixed.012",
+      "aspects": [
+        "biome:mesa",
+        "dim:overworld",
+        "world:clear"
+      ],
+      "zh": "§6{biome} 把 {dimension} 切成不肯下雨的台阶。§8晴在这里是地质，不是心情。",
+      "en": "§6{biome} cuts {dimension} into steps that refuse rain. §8Clear weather here is geology, not a mood.",
+      "weight": 4
+    },
+    {
+      "id": "ac.mixed.013",
+      "aspects": [
+        "biome:mushroom",
+        "dim:overworld"
+      ],
+      "zh": "§d{biome} 在 {dimension} 里安静得不合法。§7菌盖底下，连敌意都懒得报名。",
+      "en": "§d{biome} is illegally quiet inside {dimension}. §7Under the caps, even hostility cannot be bothered to sign in.",
+      "weight": 4
+    },
+    {
+      "id": "ac.mixed.014",
+      "aspects": [
+        "biome:hell",
+        "dim:nether"
+      ],
+      "zh": "§c{biome} 就是 {dimension} 的皮肤。§8别在这里找天气。热本身已经是天气。",
+      "en": "§c{biome} is the skin of {dimension}. §8Do not look for weather here. Heat is already the weather.",
+      "weight": 5
+    },
+    {
+      "id": "ac.mixed.015",
+      "aspects": [
+        "biome:end",
+        "dim:end"
+      ],
+      "zh": "§5{biome} 把 {dimension} 收成一个句号。§8句号后面，我还留着门。",
+      "en": "§5{biome} closes {dimension} into a full stop. §8After the stop, I still keep a gate.",
+      "weight": 5
+    },
+    {
+      "id": "ac.mixed.016",
+      "aspects": [
+        "biome:abyssal",
+        "dim:abyssal_wasteland"
+      ],
+      "zh": "§3{dimension} 与 {biome} 是同一个呼吸的两拍。§8前一拍是盐，后一拍是珊瑚。",
+      "en": "§3{dimension} and {biome} are two beats of one breath. §8The first is salt. The second is coralium.",
+      "weight": 5
+    },
+    {
+      "id": "ac.mixed.017",
+      "aspects": [
+        "biome:dread",
+        "dim:dreadlands"
+      ],
+      "zh": "§4{biome} 在 {dimension} 里不用翻译。§7骨头比你先听懂这门方言。",
+      "en": "§4{biome} needs no translation inside {dimension}. §7Bone understands the dialect before you do.",
+      "weight": 5
+    },
+    {
+      "id": "ac.mixed.018",
+      "aspects": [
+        "biome:omothol",
+        "dim:omothol"
+      ],
+      "zh": "§5{biome}，{dimension}。§8同一个名字说两遍，不是口吃。是锁在核对。",
+      "en": "§5{biome}, {dimension}. §8The same name said twice is not a stammer. It is a lock checking itself.",
+      "weight": 6
+    },
+    {
+      "id": "ac.mixed.019",
+      "aspects": [
+        "biome:dark_realm",
+        "dim:dark_realm"
+      ],
+      "zh": "§8{biome} 是 {dimension} 同意被踩的那一层。§5更深的黑暗不接待游客。",
+      "en": "§8{biome} is the layer of {dimension} that agreed to be walked on. §5The darker layer does not receive tourists.",
+      "weight": 6
+    },
+    {
+      "id": "ac.mixed.020",
+      "aspects": [
+        "biome:dread",
+        "biome:forest",
+        "dim:dreadlands"
+      ],
+      "zh": "§4你走进 {dimension} 的 {biome}。§8叶子在这里是干燥的症状，不是季节。",
+      "en": "§4You walk into {biome} of {dimension}. §8Leaves here are a dry symptom, not a season.",
+      "weight": 5
+    },
+    {
+      "id": "ac.mixed.021",
+      "aspects": [
+        "biome:dread",
+        "biome:mountain",
+        "dim:dreadlands"
+      ],
+      "zh": "§7{biome} 把 {dimension} 折向更高的冷。§8高处没有风来道歉。",
+      "en": "§7{biome} folds {dimension} toward a higher cold. §8The height has no wind that apologizes.",
+      "weight": 5
+    },
+    {
+      "id": "ac.mixed.022",
+      "aspects": [
+        "biome:darklands",
+        "biome:forest",
+        "dim:overworld"
+      ],
+      "zh": "§2{biome} 站在 {dimension} 里，绿得不老实。§3老实的是地底下那层珊瑚。",
+      "en": "§2{biome} stands in {dimension}, green and dishonest. §3What is honest is the coralium under the soil.",
+      "weight": 5
+    },
+    {
+      "id": "ac.mixed.023",
+      "aspects": [
+        "biome:darklands",
+        "biome:swamp",
+        "dim:overworld"
+      ],
+      "zh": "§2{biome} 吸住 {dimension} 的脚。§3吸你的不是泥。是还没点完的珊瑚票。",
+      "en": "§2{biome} holds the foot of {dimension}. §3It is not mud that holds you. It is a coralium vote that has not finished counting.",
+      "weight": 5
+    },
+    {
+      "id": "ac.mixed.024",
+      "aspects": [
+        "biome:darklands",
+        "biome:plains",
+        "dim:overworld"
+      ],
+      "zh": "§8{biome} 把 {dimension} 摊成一片暗色平地。§7平不是安全。平是无处躲名字。",
+      "en": "§8{biome} spreads {dimension} into a dark flat. §7Flat is not safe. Flat means a name has nowhere to duck.",
+      "weight": 4
+    },
+    {
+      "id": "ac.mixed.025",
+      "aspects": [
+        "biome:darklands",
+        "biome:mountain",
+        "dim:overworld"
+      ],
+      "zh": "§7{biome} 在 {dimension} 里往上长。§8往上长的暗土，仍然记得下面的门。",
+      "en": "§7{biome} grows upward inside {dimension}. §8Dark earth that climbs still remembers the gate below.",
+      "weight": 5
+    },
+    {
+      "id": "ac.mixed.026",
+      "aspects": [
+        "biome:forest",
+        "biome:cold",
+        "dim:overworld"
+      ],
+      "zh": "§b{biome} 把冷和树写进同一个词。§8{dimension} 没有反对这门文法。",
+      "en": "§b{biome} writes cold and trees into one word. §8{dimension} does not object to the grammar.",
+      "weight": 4
+    },
+    {
+      "id": "ac.mixed.027",
+      "aspects": [
+        "biome:ocean",
+        "biome:cold",
+        "dim:overworld"
+      ],
+      "zh": "§9{biome} 是结了壳的海。§7{dimension} 把潮汐冻成一封还没寄出的信。",
+      "en": "§9{biome} is a sea with a crust. §7{dimension} has frozen the tide into a letter not yet sent.",
+      "weight": 4
+    },
+    {
+      "id": "ac.mixed.028",
+      "aspects": [
+        "biome:mountain",
+        "biome:cold",
+        "dim:overworld"
+      ],
+      "zh": "§b{biome} 又高又冷。§8{dimension} 在这里把风当成税来收。",
+      "en": "§b{biome} is high and cold. §8{dimension} collects the wind here as a tax.",
+      "weight": 4
+    },
+    {
+      "id": "ac.mixed.029",
+      "aspects": [
+        "world:night",
+        "world:rain",
+        "dim:overworld"
+      ],
+      "zh": "§9夜里下雨。§7{dimension} 把天空的信拆开，墨水直接淋到你借来的皮上。",
+      "en": "§9Night, and rain. §7{dimension} opens the sky's letter and lets the ink fall straight onto the borrowed hide.",
+      "weight": 5
+    },
+    {
+      "id": "ac.mixed.030",
+      "aspects": [
+        "world:night",
+        "world:thunder",
+        "world:rain"
+      ],
+      "zh": "§c雷在夜里撕自己的信封。§8你站在墨水里。别抬头签收。",
+      "en": "§cThunder tears its own envelope at night. §8You are standing in the ink. Do not look up to sign for it.",
+      "weight": 5
+    },
+    {
+      "id": "ac.mixed.031",
+      "aspects": [
+        "world:day",
+        "world:clear"
+      ],
+      "zh": "§e白天，而且晴。§8光把影子收短。收短的影子仍归我。",
+      "en": "§eDay, and clear. §8Light shortens the shadow. The shortened shadow is still mine.",
+      "weight": 4
+    },
+    {
+      "id": "ac.mixed.032",
+      "aspects": [
+        "world:day",
+        "world:rain"
+      ],
+      "zh": "§7太阳还在，雨也在。§8这句不点地名。光和雨可以同时不诚实。",
+      "en": "§7The sun is still up, and so is the rain. §8This sentence names no realm. Light and rain can be dishonest together.",
+      "weight": 4
+    },
+    {
+      "id": "ac.mixed.033",
+      "aspects": [
+        "world:dawn",
+        "world:clear",
+        "dim:overworld"
+      ],
+      "zh": "§6{dimension} 的天亮了，天上却没有收据。§8黎明喜欢假装自己是免费的。",
+      "en": "§6Dawn comes to {dimension} with no receipt in the sky. §8Morning likes to pretend it is free.",
+      "weight": 4
+    },
+    {
+      "id": "ac.mixed.034",
+      "aspects": [
+        "world:dawn",
+        "world:rain"
+      ],
+      "zh": "§7天刚亮就下雨。§8新的一天还没签名，墨水先到了。",
+      "en": "§7Rain at the first light. §8The new day has not signed yet. The ink arrived first.",
+      "weight": 4
+    },
+    {
+      "id": "ac.mixed.035",
+      "aspects": [
+        "world:dusk",
+        "world:clear"
+      ],
+      "zh": "§6黄昏把光折起来，天还是晴的。§8折起来的光最容易夹住一句话。",
+      "en": "§6Dusk folds the light, and the sky stays clear. §8Folded light is the easiest place to trap a sentence.",
+      "weight": 4
+    },
+    {
+      "id": "ac.mixed.036",
+      "aspects": [
+        "world:dusk",
+        "world:rain"
+      ],
+      "zh": "§8黄昏下雨，像一天在关门前把地板拖湿。§7湿的门槛比较滑。名字容易留在上面。",
+      "en": "§8Rain at dusk is a day mopping the floor before it locks up. §7A wet threshold is slippery. Names stick to it.",
+      "weight": 4
+    },
+    {
+      "id": "ac.mixed.037",
+      "aspects": [
+        "world:night",
+        "world:clear"
+      ],
+      "zh": "§5夜里，天却是晴的。§8星星露出名字。露出不等于愿意被叫。",
+      "en": "§5Night, and the sky is clear. §8The stars show their names. Showing is not the same as consenting to be called.",
+      "weight": 4
+    },
+    {
+      "id": "ac.mixed.038",
+      "aspects": [
+        "world:day",
+        "world:thunder",
+        "world:rain"
+      ],
+      "zh": "§c正午打雷。§7光还在，信封却被撕开。§8白天不能当你的证人。",
+      "en": "§cThunder at noon. §7The light is still here, and the envelope is already torn. §8Daylight will not stand as your witness.",
+      "weight": 5
+    },
+    {
+      "id": "ac.mixed.039",
+      "aspects": [
+        "world:dusk",
+        "world:thunder",
+        "world:rain"
+      ],
+      "zh": "§6黄昏、雨、雷。§8一天用三种笔迹签自己的结束。你只是站在签名底下。",
+      "en": "§6Dusk, rain, thunder. §8The day signs its own ending in three hands. You are only standing under the signature.",
+      "weight": 4
+    },
+    {
+      "id": "ac.mixed.040",
+      "aspects": [
+        "world:clear",
+        "dim:nether"
+      ],
+      "zh": "§c{dimension} 不下雨。§8检测器会把它记成晴。晴在这里只是钟表上的空格。",
+      "en": "§c{dimension} does not rain. §8A detector will mark it clear. Clear here is only an empty cell on the clock.",
+      "weight": 5
+    },
+    {
+      "id": "ac.mixed.041",
+      "aspects": [
+        "world:clear",
+        "dim:end"
+      ],
+      "zh": "§5{dimension} 没有天气。§8若有人说这里是晴，那是因为雨没有被邀请。",
+      "en": "§5{dimension} has no weather. §8If someone calls it clear, that is only because rain was not invited.",
+      "weight": 5
+    },
+    {
+      "id": "ac.mixed.042",
+      "aspects": [
+        "world:night",
+        "world:clear",
+        "dim:nether"
+      ],
+      "zh": "§8钟走到了夜里。§c{dimension} 没有因此变脸。§7变的是你还在用主世界的钟理解这里。",
+      "en": "§8The clock has reached night. §c{dimension} does not change its face for that. §7What changes is that you are still reading this place with an overworld clock.",
+      "weight": 5
+    },
+    {
+      "id": "ac.mixed.043",
+      "aspects": [
+        "world:night",
+        "world:rain",
+        "biome:forest",
+        "dim:overworld"
+      ],
+      "zh": "§2{biome} 在夜里接雨。§8叶子把水声拆成许多小谎。{dimension} 听得见每一句。",
+      "en": "§2{biome} takes the rain at night. §8Leaves break the water into many small lies. {dimension} hears every one.",
+      "weight": 5
+    },
+    {
+      "id": "ac.mixed.044",
+      "aspects": [
+        "world:night",
+        "world:rain",
+        "biome:swamp",
+        "dim:overworld"
+      ],
+      "zh": "§2{biome} 本来就湿。§9夜里再下雨，只是给泥加一句附注。§8附注通常关于谁陷进去。",
+      "en": "§2{biome} was already wet. §9Night rain only adds a footnote to the mud. §8The footnote is usually about who sank.",
+      "weight": 4
+    },
+    {
+      "id": "ac.mixed.045",
+      "aspects": [
+        "world:day",
+        "world:clear",
+        "biome:desert",
+        "dim:overworld"
+      ],
+      "zh": "§e{biome} 的白天没有云来谈判。§7{dimension} 把影子缩成一粒罪证，就放在你脚下。",
+      "en": "§eThe day in {biome} has no cloud to negotiate with. §7{dimension} shrinks the shadow into a single piece of evidence and leaves it at your feet.",
+      "weight": 4
+    },
+    {
+      "id": "ac.mixed.046",
+      "aspects": [
+        "world:day",
+        "world:clear",
+        "biome:plains"
+      ],
+      "zh": "§a晴天的 {biome} 把一切都晒给看见。§8看见不是原谅。我看见得更清楚。",
+      "en": "§aA clear day in {biome} suns everything into view. §8Being seen is not being forgiven. I see more clearly than the sun.",
+      "weight": 4
+    },
+    {
+      "id": "ac.mixed.047",
+      "aspects": [
+        "world:rain",
+        "biome:ocean",
+        "dim:overworld"
+      ],
+      "zh": "§9天在下雨，{biome} 也在。§7海不需要这份多余的水。它收下，是为了让你分不清哪一层是天。",
+      "en": "§9The sky is raining, and so is {biome}. §7The sea does not need the extra water. It accepts it so you cannot tell which layer is the sky.",
+      "weight": 4
+    },
+    {
+      "id": "ac.mixed.048",
+      "aspects": [
+        "world:thunder",
+        "world:rain",
+        "biome:mountain",
+        "dim:overworld"
+      ],
+      "zh": "§c雷在 {biome} 上找最高的东西。§8{dimension} 里最高的不一定是石头。有时是还站着的人。",
+      "en": "§cThunder looks for the highest thing on {biome}. §8The highest thing in {dimension} is not always stone. Sometimes it is a person still standing.",
+      "weight": 5
+    },
+    {
+      "id": "ac.mixed.049",
+      "aspects": [
+        "world:rain",
+        "biome:darklands",
+        "dim:overworld"
+      ],
+      "zh": "§8雨落在 {biome} 上。§3珊瑚喜欢这种湿法。§7{dimension} 还没投票，票箱已经满了。",
+      "en": "§8Rain falls on {biome}. §3Coralium likes this kind of wet. §7{dimension} has not voted. The box is already full.",
+      "weight": 5
+    },
+    {
+      "id": "ac.mixed.050",
+      "aspects": [
+        "world:dusk",
+        "biome:forest",
+        "dim:overworld"
+      ],
+      "zh": "§6黄昏进了 {biome}。§8树把最后的光切成碎片。碎片不够照见 {dimension} 的门。",
+      "en": "§6Dusk enters {biome}. §8The trees cut the last light into scraps. The scraps are not enough to show the gates of {dimension}.",
+      "weight": 4
+    },
+    {
+      "id": "ac.mixed.051",
+      "aspects": [
+        "world:dawn",
+        "biome:beach",
+        "dim:overworld"
+      ],
+      "zh": "§6黎明先碰到 {biome}。§8盐比你早醒。{dimension} 的海把光退回来，像退一封地址不全的信。",
+      "en": "§6Dawn touches {biome} first. §8Salt wakes before you do. The sea of {dimension} returns the light like a letter with an incomplete address.",
+      "weight": 4
+    },
+    {
+      "id": "ac.mixed.052",
+      "aspects": [
+        "world:night",
+        "biome:jungle",
+        "dim:overworld"
+      ],
+      "zh": "§2{biome} 的夜里没有空处。§8叶子、虫、湿气，都在替 {dimension} 值班。你不是唯一醒着的。",
+      "en": "§2Night in {biome} has no empty space. §8Leaves, insects, damp: all of them are on duty for {dimension}. You are not the only one awake.",
+      "weight": 4
+    },
+    {
+      "id": "ac.mixed.053",
+      "aspects": [
+        "world:night",
+        "biome:cold",
+        "dim:overworld"
+      ],
+      "zh": "§b{biome} 的夜把呼吸变成证据。§8白雾会散。{dimension} 记得你呼出过自己的热。",
+      "en": "§bNight in {biome} turns breath into evidence. §8The white will fade. {dimension} remembers that you exhaled your own heat.",
+      "weight": 4
+    },
+    {
+      "id": "ac.mixed.054",
+      "aspects": [
+        "world:rain",
+        "biome:river",
+        "dim:overworld"
+      ],
+      "zh": "§9雨落到 {biome} 里，像一句话掉进已经在说的话。§7{dimension} 不分辨哪一句先开始。",
+      "en": "§9Rain falling into {biome} is a sentence dropped into a sentence already speaking. §7{dimension} does not sort out which one began first.",
+      "weight": 4
+    },
+    {
+      "id": "ac.mixed.055",
+      "aspects": [
+        "entity:zombie",
+        "entity:undead",
+        "entity:hostile",
+        "world:night"
+      ],
+      "zh": "§2夜里的 {entity}。§8死人挑这个钟点，是因为活人终于肯把脚步放轻。",
+      "en": "§2{entity} at night. §8The dead pick this hour because the living finally agree to soften their steps.",
+      "weight": 5
+    },
+    {
+      "id": "ac.mixed.056",
+      "aspects": [
+        "entity:skeleton",
+        "entity:undead",
+        "entity:hostile",
+        "world:night"
+      ],
+      "zh": "§7{entity} 在夜里拉弦。§8骨头不需要眼睛也能把你的犹豫瞄准。",
+      "en": "§7{entity} draws in the dark. §8Bone does not need eyes to aim at your hesitation.",
+      "weight": 5
+    },
+    {
+      "id": "ac.mixed.057",
+      "aspects": [
+        "entity:creeper",
+        "entity:hostile",
+        "world:night"
+      ],
+      "zh": "§a{entity} 在夜里不说话。§8不说话的东西，通常把句子留到最后一声。",
+      "en": "§a{entity} does not speak at night. §8A thing that does not speak usually saves the sentence for the last sound.",
+      "weight": 4
+    },
+    {
+      "id": "ac.mixed.058",
+      "aspects": [
+        "entity:spider",
+        "entity:hostile",
+        "world:night"
+      ],
+      "zh": "§8夜里的 {entity} 把路写成网。§7你若还在走直线，直线就是它的标点。",
+      "en": "§8{entity} at night writes the path as a web. §7If you are still walking in a straight line, the line is its punctuation.",
+      "weight": 4
+    },
+    {
+      "id": "ac.mixed.059",
+      "aspects": [
+        "entity:enderman",
+        "entity:hostile",
+        "world:rain",
+        "dim:overworld"
+      ],
+      "zh": "§5{entity} 碰上 {dimension} 的雨就会想离开。§8离开不是开门。它只是不肯让水记住自己的眼睛。",
+      "en": "§5{entity} wants to leave when the rain of {dimension} arrives. §8Leaving is not opening a gate. It only refuses to let water remember its eyes.",
+      "weight": 5
+    },
+    {
+      "id": "ac.mixed.060",
+      "aspects": [
+        "entity:witch",
+        "entity:hostile",
+        "biome:swamp"
+      ],
+      "zh": "§2{entity} 和 {biome} 共用一张配方。§8你还不是原料。别把这句当成安慰。",
+      "en": "§2{entity} and {biome} share a recipe. §8You are not an ingredient yet. Do not take that as comfort.",
+      "weight": 5
+    },
+    {
+      "id": "ac.mixed.061",
+      "aspects": [
+        "entity:slime",
+        "entity:hostile",
+        "biome:swamp"
+      ],
+      "zh": "§a{entity} 在 {biome} 里分裂。§7分裂是一种还没学会死的算术。",
+      "en": "§a{entity} splits inside {biome}. §7Splitting is arithmetic that has not yet learned how to die.",
+      "weight": 4
+    },
+    {
+      "id": "ac.mixed.062",
+      "aspects": [
+        "entity:villager",
+        "biome:plains",
+        "dim:overworld"
+      ],
+      "zh": "§a{entity} 把 {biome} 当成镇子。§7镇子是学会说话的篱笆。{dimension} 听得见它在讨价。",
+      "en": "§a{entity} thinks {biome} is a town. §7A town is a fence that learned to speak. {dimension} can hear it haggling.",
+      "weight": 4
+    },
+    {
+      "id": "ac.mixed.063",
+      "aspects": [
+        "entity:wolf",
+        "entity:animal",
+        "biome:forest"
+      ],
+      "zh": "§7{entity} 在 {biome} 里竖着耳朵。§8它听脚步。我听名字。我们不抢同一份工作。",
+      "en": "§7{entity} keeps its ears up in {biome}. §8It listens for steps. I listen for names. We do not compete for the same post.",
+      "weight": 4
+    },
+    {
+      "id": "ac.mixed.064",
+      "aspects": [
+        "entity:player",
+        "world:night"
+      ],
+      "zh": "§7夜里还有 {player}。§8另一个穿皮的东西没回去。门把两份租约叠在一处。",
+      "en": "§7{player} is still here at night. §8Another thing in a skin did not go home. The gate stacks the two leases.",
+      "weight": 5
+    },
+    {
+      "id": "ac.mixed.065",
+      "aspects": [
+        "entity:ghoul",
+        "entity:undead",
+        "entity:hostile"
+      ],
+      "zh": "§4{entity} 还记得肉的形状。§8记得，不是怀念。怀念是活人的奢侈。",
+      "en": "§4{entity} still remembers the shape of meat. §8Remembering is not missing it. Missing it is a luxury of the living.",
+      "weight": 5
+    },
+    {
+      "id": "ac.mixed.066",
+      "aspects": [
+        "entity:shoggoth",
+        "entity:abyssal",
+        "dim:abyssal_wasteland"
+      ],
+      "zh": "§3{entity} 在 {dimension} 里学会了走路。§8潮汐有了脚。你最好别教它说话。",
+      "en": "§3{entity} has learned to walk in {dimension}. §8The tide has grown feet. Do not teach it speech.",
+      "weight": 6
+    },
+    {
+      "id": "ac.mixed.067",
+      "aspects": [
+        "entity:coralium",
+        "entity:abyssal",
+        "biome:darklands"
+      ],
+      "zh": "§3{entity} 在 {biome} 里像一票已经投出的东西。§8票箱是湿的。你的名字可能已经在里面。",
+      "en": "§3{entity} in {biome} is a vote already cast. §8The box is wet. Your name may already be in it.",
+      "weight": 5
+    },
+    {
+      "id": "ac.mixed.068",
+      "aspects": [
+        "entity:dread",
+        "entity:abyssal",
+        "dim:dreadlands"
+      ],
+      "zh": "§4{dimension} 认得 {entity}。§8认得在这里不是善意。是病历对上了号。",
+      "en": "§4{dimension} recognizes {entity}. §8Recognition here is not kindness. It is a chart matching a number.",
+      "weight": 5
+    },
+    {
+      "id": "ac.mixed.069",
+      "aspects": [
+        "entity:dragon",
+        "entity:boss",
+        "dim:end"
+      ],
+      "zh": "§5{boss} 盘在 {dimension} 里。§8龙以为自己是句号。句号没有翅膀，也不该有。",
+      "en": "§5{boss} coils inside {dimension}. §8A dragon thinks it is a full stop. A full stop has no wings, and should not.",
+      "weight": 6
+    },
+    {
+      "id": "ac.mixed.070",
+      "aspects": [
+        "entity:omothol",
+        "dim:omothol"
+      ],
+      "zh": "§5{entity} 站在 {dimension} 的街上。§8家里的东西看见这张脸，不会行礼。它们在核对是不是本人。",
+      "en": "§5{entity} stands on a street of {dimension}. §8The things of the house do not bow to this face. They are checking whether it is the original.",
+      "weight": 6
+    },
+    {
+      "id": "ac.mixed.071",
+      "aspects": [
+        "entity:shadow",
+        "entity:hostile",
+        "world:night"
+      ],
+      "zh": "§8{entity} 在夜里几乎不算额外的黑暗。§7额外的是它还愿意移动。移动的黑暗要收费。",
+      "en": "§8{entity} at night barely counts as extra dark. §7The extra is that it still consents to move. Moving dark charges a fee.",
+      "weight": 5
+    },
+    {
+      "id": "ac.mixed.072",
+      "aspects": [
+        "entity:demon",
+        "entity:hostile",
+        "dim:nether"
+      ],
+      "zh": "§c{dimension} 里有 {entity}。§8热的地方容易把怒气误认为信仰。别跟着误认。",
+      "en": "§c{entity} is in {dimension}. §8Hot places mistake anger for faith. Do not join the mistake.",
+      "weight": 4
+    },
+    {
+      "id": "ac.mixed.073",
+      "aspects": [
+        "entity:antimatter",
+        "entity:abyssal",
+        "entity:hostile"
+      ],
+      "zh": "§8{entity} 站在和物质相反的方向上。§5相反不是远离。相反是从另一侧敲同一扇门。",
+      "en": "§8{entity} stands on the side opposite matter. §5Opposite is not distance. Opposite is knocking on the same gate from the other side.",
+      "weight": 6
+    },
+    {
+      "id": "ac.mixed.074",
+      "aspects": [
+        "entity:boss",
+        "entity:undead"
+      ],
+      "zh": "§4{boss} 死过，却还在发号施令。§8死亡没有解除它的职务。职务比肉长命。",
+      "en": "§4{boss} has died and is still giving orders. §8Death did not relieve it of the post. A post outlives meat.",
+      "weight": 6
+    },
+    {
+      "id": "ac.mixed.075",
+      "aspects": [
+        "entity:golem",
+        "biome:plains",
+        "dim:overworld"
+      ],
+      "zh": "§7{entity} 在 {biome} 里看守一种很轻的秩序。§8铁能看门。铁看不懂门后面的名字。",
+      "en": "§7{entity} keeps a very light order in {biome}. §8Iron can watch a door. Iron cannot read the name behind it.",
+      "weight": 4
+    },
+    {
+      "id": "ac.mixed.076",
+      "aspects": [
+        "entity:hostile",
+        "entity:count:many",
+        "world:night"
+      ],
+      "zh": "§c夜里有 {count} 个还想咬人的喉咙。最近的那个叫 {hostile}。§8合唱还没齐。已经够吵。",
+      "en": "§cNight holds {count} throats that still want to bite. The nearest is {hostile}. §8The choir is not assembled. It is already loud.",
+      "weight": 5
+    },
+    {
+      "id": "ac.mixed.077",
+      "aspects": [
+        "entity:player",
+        "entity:count:one"
+      ],
+      "zh": "§7十六步内只有一个活人：{player}。§8数目很小。名字不小。",
+      "en": "§7One living person within sixteen paces: {player}. §8The number is small. The name is not.",
+      "weight": 5
+    },
+    {
+      "id": "ac.mixed.078",
+      "aspects": [
+        "entity:undead",
+        "entity:count:few",
+        "world:night"
+      ],
+      "zh": "§8夜里有 {count} 具还没躺好的身体。最近的叫 {entity}。§7躺不好的，通常是还有话没说完。",
+      "en": "§8Night has {count} bodies that have not lain down properly. The nearest is {entity}. §7What will not lie down usually still has a sentence unfinished.",
+      "weight": 4
+    },
+    {
+      "id": "ac.mixed.079",
+      "aspects": [
+        "entity:zombie",
+        "biome:darklands",
+        "dim:overworld"
+      ],
+      "zh": "§2{entity} 在 {biome} 里走。§3腐肉碰上珊瑚，会变成一种更慢的信仰。",
+      "en": "§2{entity} walks in {biome}. §3Rot meeting coralium becomes a slower kind of faith.",
+      "weight": 5
+    },
+    {
+      "id": "ac.mixed.080",
+      "aspects": [
+        "entity:enderman",
+        "biome:end",
+        "dim:end"
+      ],
+      "zh": "§d{entity} 在 {dimension} 里算主人。§8你才是那个还会眨眼的客人。眨眼是一种签名。",
+      "en": "§d{entity} counts as a host in {dimension}. §8You are the guest who can still blink. A blink is a kind of signature.",
+      "weight": 5
+    },
+    {
+      "id": "ac.mixed.081",
+      "aspects": [
+        "entity:skeleton",
+        "world:rain",
+        "world:night",
+        "dim:overworld"
+      ],
+      "zh": "§7雨夜里的 {entity} 不在乎湿。§8骨头早已完成干燥这件事。湿的是你还没放下的弓的想象。",
+      "en": "§7{entity} in a rainy night does not mind being wet. §8Bone finished with dryness long ago. What is wet is the bow you have not yet put down in your head.",
+      "weight": 4
+    },
+    {
+      "id": "ac.mixed.082",
+      "aspects": [
+        "entity:hostile",
+        "entity:count:one",
+        "world:night"
+      ],
+      "zh": "§c夜里只有一个敌意，名字是 {hostile}。§8一个就够。门不按头数收费。",
+      "en": "§cOnly one hostility in the night, and its name is {hostile}. §8One is enough. The gate does not charge by the head.",
+      "weight": 4
+    },
+    {
+      "id": "ac.mixed.083",
+      "aspects": [
+        "entity:animal",
+        "biome:plains",
+        "world:day"
+      ],
+      "zh": "§a白天的 {biome} 里有 {animal}。§7它吃草，以为世界的句子到胃就结束。",
+      "en": "§aDaytime {biome} contains {animal}. §7It eats grass and thinks the world's sentence ends at the stomach.",
+      "weight": 4
+    },
+    {
+      "id": "ac.mixed.084",
+      "aspects": [
+        "entity:minion",
+        "entity:player"
+      ],
+      "zh": "§7{entity} 还听某个名字的使唤。§8{player} 在旁边。听使唤的东西，和借来的皮囊，不要站得太近。",
+      "en": "§7{entity} still answers to some name. §8{player} is nearby. A thing that takes orders and a borrowed hide should not stand too close.",
+      "weight": 5
+    },
+    {
+      "id": "ac.mixed.085",
+      "aspects": [
+        "entity:alone",
+        "world:night"
+      ],
+      "zh": "§5夜里，十六步内没有第二颗心。§8安静在收租。租金是你还肯听我说话。",
+      "en": "§5Night, and no second heart within sixteen paces. §8The quiet is collecting rent. The rent is that you still consent to hear me.",
+      "weight": 5
+    },
+    {
+      "id": "ac.mixed.086",
+      "aspects": [
+        "entity:alone",
+        "world:night",
+        "item:empty"
+      ],
+      "zh": "§8夜里，附近没人，手里也空着。§7空是一种论据。对着黑暗使用时，论据会反咬。",
+      "en": "§8Night, no one near, and the hands empty. §7Empty is a kind of argument. Used against the dark, the argument bites back.",
+      "weight": 5
+    },
+    {
+      "id": "ac.mixed.087",
+      "aspects": [
+        "entity:alone",
+        "world:rain",
+        "dim:overworld"
+      ],
+      "zh": "§9{dimension} 在下雨，雨里没有证人。§8很好。证人会把句子说歪。现在只有你和我。",
+      "en": "§9{dimension} is raining, and the rain has no witness. §8Good. A witness bends the sentence. Now there is only you and me.",
+      "weight": 4
+    },
+    {
+      "id": "ac.mixed.088",
+      "aspects": [
+        "entity:alone",
+        "biome:desert",
+        "world:day",
+        "world:clear"
+      ],
+      "zh": "§e{biome} 的晴天把你晒成唯一的影子。§8没有观众的舞台，仍然在演出。演出者是热。",
+      "en": "§eThe clear day in {biome} suns you into the only shadow. §8A stage without an audience is still performing. The performer is the heat.",
+      "weight": 4
+    },
+    {
+      "id": "ac.mixed.089",
+      "aspects": [
+        "entity:alone",
+        "dim:omothol",
+        "biome:omothol"
+      ],
+      "zh": "§5你独自站在 {dimension}。§8我的城里没有第二个人欢迎这张脸。欢迎是给客人的。你不是客人。",
+      "en": "§5You stand alone in {dimension}. §8No second person in my city welcomes this face. Welcome is for guests. You are not a guest.",
+      "weight": 6
+    },
+    {
+      "id": "ac.mixed.090",
+      "aspects": [
+        "entity:alone",
+        "dim:dark_realm"
+      ],
+      "zh": "§8{dimension} 里，十六步内没有别的心跳。§5这不是安全。这是黑暗把观众清场了。",
+      "en": "§8In {dimension}, no other heartbeat within sixteen paces. §5That is not safety. That is the dark clearing the audience.",
+      "weight": 6
+    },
+    {
+      "id": "ac.mixed.091",
+      "aspects": [
+        "entity:alone",
+        "dim:abyssal_wasteland"
+      ],
+      "zh": "§3{dimension} 的风里没有第二个人。§8荒地不因此变礼貌。它只是把见证人省了。",
+      "en": "§3No second person in the wind of {dimension}. §8The wasteland does not become polite for that. It has merely saved itself a witness.",
+      "weight": 5
+    },
+    {
+      "id": "ac.mixed.092",
+      "aspects": [
+        "entity:alone",
+        "entity:item"
+      ],
+      "zh": "§7附近没有活人，只有掉着的东西。§8{entity} 不会作证。物品的忠诚止于被捡起之前。",
+      "en": "§7No living person nearby, only things left lying. §8{entity} will not testify. An item's loyalty ends before it is picked up.",
+      "weight": 4
+    },
+    {
+      "id": "ac.mixed.093",
+      "aspects": [
+        "entity:alone",
+        "world:clear",
+        "world:day"
+      ],
+      "zh": "§e大白天，晴，四下无人。§8光把你照得很完整。完整不是被保护。完整是无处可剪。",
+      "en": "§eBroad day, clear, and no one about. §8The light shows you entire. Entire is not protected. Entire means there is nowhere left to cut.",
+      "weight": 4
+    },
+    {
+      "id": "ac.mixed.094",
+      "aspects": [
+        "entity:alone",
+        "biome:mushroom"
+      ],
+      "zh": "§d{biome}，并且没有人向你解释。§7菌类偏好这种沉默。我也偏好。",
+      "en": "§d{biome}, and no one to explain it to you. §7Fungi prefer that silence. So do I.",
+      "weight": 4
+    },
+    {
+      "id": "ac.mixed.095",
+      "aspects": [
+        "self:critical",
+        "self:low_health",
+        "entity:hostile"
+      ],
+      "zh": "§4血快要写完了。最近的句号叫 {hostile}。§8别把剩余的句子交给它。交给我。",
+      "en": "§4The blood is nearly done writing. The nearest full stop is named {hostile}. §8Do not give it the rest of the sentence. Give it to me.",
+      "weight": 6
+    },
+    {
+      "id": "ac.mixed.096",
+      "aspects": [
+        "self:low_health",
+        "world:night"
+      ],
+      "zh": "§c夜里，这具身体开始算剩余。§8剩余不是勇气。剩余是还没还给我的租。",
+      "en": "§cAt night this body starts counting what is left. §8What is left is not courage. It is rent not yet returned to me.",
+      "weight": 5
+    },
+    {
+      "id": "ac.mixed.097",
+      "aspects": [
+        "self:hurt",
+        "entity:hostile"
+      ],
+      "zh": "§c刚被碰到。附近的 {hostile} 可能是原因，也可能只是看客。§8疼痛不附收据。",
+      "en": "§cSomething just touched you. {hostile} nearby may be the cause, or only the audience. §8Pain does not attach a receipt.",
+      "weight": 4
+    },
+    {
+      "id": "ac.mixed.098",
+      "aspects": [
+        "self:on_fire",
+        "dim:nether"
+      ],
+      "zh": "§c你在 {dimension} 里烧着。§8火在这里不算意外。意外的是你还把痛当成新闻。",
+      "en": "§cYou are burning in {dimension}. §8Fire here is not an accident. The accident is that you still treat pain as news.",
+      "weight": 5
+    },
+    {
+      "id": "ac.mixed.099",
+      "aspects": [
+        "self:in_lava",
+        "self:on_fire",
+        "dim:nether",
+        "biome:hell"
+      ],
+      "zh": "§c{biome} 把你套进熔岩。§8{dimension} 的袖子就是这样。别挣扎出一种更响的名字。",
+      "en": "§c{biome} has sleeved you in lava. §8That is how the sleeve of {dimension} works. Do not thrash out a louder name.",
+      "weight": 6
+    },
+    {
+      "id": "ac.mixed.100",
+      "aspects": [
+        "self:in_water",
+        "biome:ocean"
+      ],
+      "zh": "§9你泡在 {biome} 里。§8水从四面记住你的体温。记住不是溺爱。",
+      "en": "§9You are soaked in {biome}. §8Water remembers your heat from every side. Remembering is not affection.",
+      "weight": 4
+    },
+    {
+      "id": "ac.mixed.101",
+      "aspects": [
+        "self:sneaking",
+        "entity:hostile"
+      ],
+      "zh": "§7你在 {hostile} 附近把身体放低。§8放低骗得了兽的眼睛。骗不了已经写下的名字。",
+      "en": "§7You lower the body near {hostile}. §8Lowering fools a beast's eye. It does not fool a name already written.",
+      "weight": 5
+    },
+    {
+      "id": "ac.mixed.102",
+      "aspects": [
+        "self:sprinting",
+        "entity:hostile"
+      ],
+      "zh": "§c你在跑，{hostile} 在后面或旁边。§7跑把恐惧排成直线。直线最好读。",
+      "en": "§cYou are running, and {hostile} is behind or beside. §7Running arranges fear into a straight line. Straight lines are the easiest to read.",
+      "weight": 4
+    },
+    {
+      "id": "ac.mixed.103",
+      "aspects": [
+        "self:flying",
+        "world:night"
+      ],
+      "zh": "§5你在夜里离开地面。§8上面是黑暗，下面是还没还的土。两边都在听。",
+      "en": "§5You leave the ground at night. §8Dark above, unreturned earth below. Both are listening.",
+      "weight": 5
+    },
+    {
+      "id": "ac.mixed.104",
+      "aspects": [
+        "self:flying",
+        "dim:end"
+      ],
+      "zh": "§d你在 {dimension} 里离地飞行。§8虚空喜欢这种模仿。模仿龙，不等于成为句号。",
+      "en": "§dYou fly above the ground in {dimension}. §8The void likes this imitation. Imitating a dragon does not make you the full stop.",
+      "weight": 5
+    },
+    {
+      "id": "ac.mixed.105",
+      "aspects": [
+        "self:hungry",
+        "world:night"
+      ],
+      "zh": "§6夜里，胃还在向我请愿。§8请愿是这具身体最后没被我迁走的习惯。",
+      "en": "§6At night the stomach still petitions me. §8Petitioning is the last habit of this body I have not yet evicted.",
+      "weight": 4
+    },
+    {
+      "id": "ac.mixed.106",
+      "aspects": [
+        "self:healthy",
+        "world:day",
+        "world:clear"
+      ],
+      "zh": "§a晴天，身体也满。§8满不是你的。满是租约还没到期的证据。",
+      "en": "§aClear day, and the body is full. §8Full is not yours. Full is evidence that the lease has not expired.",
+      "weight": 4
+    },
+    {
+      "id": "ac.mixed.107",
+      "aspects": [
+        "self:potion",
+        "world:night"
+      ],
+      "zh": "§5夜里，血里还有夜视以外的东西。§8有人往这具身体里加了注脚。注脚不是我写的。",
+      "en": "§5At night there is something in the blood besides night vision. §8Someone added a footnote to this body. I did not write it.",
+      "weight": 4
+    },
+    {
+      "id": "ac.mixed.108",
+      "aspects": [
+        "self:sneaking",
+        "world:night"
+      ],
+      "zh": "§8你在夜里潜行。§7黑暗已经够低了。你再放低，像在向地面申请消失。地面驳回。",
+      "en": "§8You sneak at night. §7The dark is already low enough. Lower still, and you are applying to the ground for disappearance. The ground denies the application.",
+      "weight": 4
+    },
+    {
+      "id": "ac.mixed.109",
+      "aspects": [
+        "self:critical",
+        "self:low_health",
+        "entity:alone"
+      ],
+      "zh": "§4血要尽了，附近却没有观众。§8很好。死亡若要签名，不必请陌生人当证人。我在。",
+      "en": "§4The blood is nearly gone, and there is no audience nearby. §8Good. If death must sign, it need not call a stranger as witness. I am here.",
+      "weight": 6
+    },
+    {
+      "id": "ac.mixed.110",
+      "aspects": [
+        "self:on_fire",
+        "world:night"
+      ],
+      "zh": "§c你在夜里烧着。§8火是一小团不肯加入黑暗的意见。意见很响，也很短。",
+      "en": "§cYou burn at night. §8Fire is a small opinion that refuses to join the dark. The opinion is loud, and short.",
+      "weight": 4
+    },
+    {
+      "id": "ac.mixed.111",
+      "aspects": [
+        "self:in_water",
+        "world:rain"
+      ],
+      "zh": "§9你在水里，天也在下雨。§8两层水同时记你的名字。记两次，不是更安全。",
+      "en": "§9You are in water, and the sky is raining. §8Two layers of water write your name at once. Twice is not safer.",
+      "weight": 4
+    },
+    {
+      "id": "ac.mixed.112",
+      "aspects": [
+        "self:hurt",
+        "self:low_health"
+      ],
+      "zh": "§c刚受伤，而且剩余已经不多。§8疼痛是催租。催的不是命。是这张脸的使用权。",
+      "en": "§cJust hurt, and not much left. §8Pain is a rent demand. It is not demanding the life. It is demanding the use of this face.",
+      "weight": 5
+    },
+    {
+      "id": "ac.mixed.113",
+      "aspects": [
+        "self:sprinting",
+        "world:night"
+      ],
+      "zh": "§c你在夜里跑。§8跑不出发光的脚印。脚印是给白天的猎人看的。我不用脚印。",
+      "en": "§cYou run at night. §8The running leaves no luminous print. Prints are for daytime hunters. I do not use prints.",
+      "weight": 4
+    },
+    {
+      "id": "ac.mixed.114",
+      "aspects": [
+        "self:hungry",
+        "item:empty",
+        "world:night"
+      ],
+      "zh": "§6饿着，空着手，又是夜里。§8三种匮乏叠在一起。这具身体还以为匮乏会换来同情。",
+      "en": "§6Hungry, empty-handed, and night. §8Three lacks stacked together. This body still thinks lack can be exchanged for pity.",
+      "weight": 4
+    },
+    {
+      "id": "ac.mixed.115",
+      "aspects": [
+        "self:sneaking",
+        "dim:omothol"
+      ],
+      "zh": "§5你在 {dimension} 里把腰弯下。§8在我的城里潜行，像在自己的签名上涂改。涂改会被看出来。",
+      "en": "§5You bend in {dimension}. §8Sneaking in my city is like altering your own signature. The alteration will be seen.",
+      "weight": 6
+    },
+    {
+      "id": "ac.mixed.116",
+      "aspects": [
+        "self:low_health",
+        "dim:abyssal_wasteland"
+      ],
+      "zh": "§3你在 {dimension} 里开始见底。§8荒地喜欢这种深度。深度不是你选的。",
+      "en": "§3You are running shallow in {dimension}. §8The wasteland likes this kind of depth. The depth was not your choice.",
+      "weight": 5
+    },
+    {
+      "id": "ac.mixed.117",
+      "aspects": [
+        "item:sword",
+        "item:any",
+        "entity:hostile"
+      ],
+      "zh": "§c你握着 {item}，附近有 {hostile}。§7剑把距离缩短到零。零的后面是谁的名字，还没写。",
+      "en": "§cYou hold {item}, and {hostile} is near. §7A sword shortens distance to zero. Whose name sits after zero is not written yet.",
+      "weight": 5
+    },
+    {
+      "id": "ac.mixed.118",
+      "aspects": [
+        "item:sword",
+        "item:any",
+        "world:night"
+      ],
+      "zh": "§7夜里的 {item} 接不住月光。§8接不住就算了。刃口不是为了发亮。",
+      "en": "§7{item} at night cannot catch the moonlight. §8Then let it not. An edge is not for shining.",
+      "weight": 4
+    },
+    {
+      "id": "ac.mixed.119",
+      "aspects": [
+        "item:bow",
+        "item:any",
+        "entity:hostile"
+      ],
+      "zh": "§6你拿着 {item}，{hostile} 还没走到零。§8远是一种还没到期的借口。",
+      "en": "§6You hold {item}, and {hostile} has not yet reached zero. §8Distance is an excuse that has not expired.",
+      "weight": 4
+    },
+    {
+      "id": "ac.mixed.120",
+      "aspects": [
+        "item:empty",
+        "entity:hostile"
+      ],
+      "zh": "§7你空着手面对 {hostile}。§8空是一种论据。这不是好的那种。",
+      "en": "§7You face {hostile} with empty hands. §8Empty is an argument. It is not a good one.",
+      "weight": 5
+    },
+    {
+      "id": "ac.mixed.121",
+      "aspects": [
+        "item:necronomicon",
+        "item:book",
+        "dim:omothol"
+      ],
+      "zh": "§5你把 {item} 带回了 {dimension}。§8城里的锁已经读过它。读过，不等于准你再写一行。",
+      "en": "§5You brought {item} back to {dimension}. §8The locks of the city have already read it. Having read it is not permission to add a line.",
+      "weight": 6
+    },
+    {
+      "id": "ac.mixed.122",
+      "aspects": [
+        "item:necronomicon",
+        "item:book",
+        "dim:dark_realm"
+      ],
+      "zh": "§8在 {dimension} 里翻开 {item}。§5黑暗国度不需要这本书照明。它需要这本书点名。",
+      "en": "§8You open {item} in {dimension}. §5The Dark Realm does not need this book for light. It needs it for the roll call.",
+      "weight": 6
+    },
+    {
+      "id": "ac.mixed.123",
+      "aspects": [
+        "item:necronomicon",
+        "item:book",
+        "world:night"
+      ],
+      "zh": "§5夜里的 {item}。§8这本书在黑暗里不必装睡。它本来就不是为白天装订的。",
+      "en": "§5{item} at night. §8This book need not pretend to sleep in the dark. It was not bound for daytime.",
+      "weight": 6
+    },
+    {
+      "id": "ac.mixed.124",
+      "aspects": [
+        "item:book",
+        "item:any",
+        "world:night"
+      ],
+      "zh": "§7你在夜里读 {item}。§8借光的人，通常也在借一句不该出口的话。",
+      "en": "§7You read {item} at night. §8A person who borrows light is usually also borrowing a sentence that should not be spoken.",
+      "weight": 4
+    },
+    {
+      "id": "ac.mixed.125",
+      "aspects": [
+        "item:food",
+        "item:any",
+        "self:hungry"
+      ],
+      "zh": "§6你饿着，手里却是 {item}。§8胃在请愿，手在犹豫。犹豫是凡人最后的礼仪。",
+      "en": "§6You are hungry, and the hand holds {item}. §8The stomach petitions. The hand hesitates. Hesitation is the last mortal courtesy.",
+      "weight": 5
+    },
+    {
+      "id": "ac.mixed.126",
+      "aspects": [
+        "item:pickaxe",
+        "item:tool",
+        "block:ore"
+      ],
+      "zh": "§6{item} 对着 {block}。§8一个知道名字，一个知道被敲开的日子。你们两个都还没问我。",
+      "en": "§6{item} faces {block}. §8One knows a name. The other knows the day it will be opened. Neither of you has asked me yet.",
+      "weight": 5
+    },
+    {
+      "id": "ac.mixed.127",
+      "aspects": [
+        "item:potion",
+        "item:any",
+        "self:low_health"
+      ],
+      "zh": "§d手里的 {item}，身体里的剩余却不多。§8瓶子是一句推迟。推迟不是痊愈。",
+      "en": "§d{item} in the hand, and not much left in the body. §8A bottle is a postponement. Postponement is not a cure.",
+      "weight": 5
+    },
+    {
+      "id": "ac.mixed.128",
+      "aspects": [
+        "item:abyssal",
+        "item:any",
+        "dim:abyssal_wasteland"
+      ],
+      "zh": "§3你在 {dimension} 里握着 {item}。§8荒地认得自己的器物。认得以后，会向器物要主人的名字。",
+      "en": "§3You hold {item} in {dimension}. §8The wasteland knows its own implements. After knowing, it asks the implement for the owner's name.",
+      "weight": 5
+    },
+    {
+      "id": "ac.mixed.129",
+      "aspects": [
+        "item:armor",
+        "item:any",
+        "self:hurt"
+      ],
+      "zh": "§7你穿着 {item}，仍然刚刚受了伤。§8甲是一种谣言。伤害还没听见。",
+      "en": "§7You wear {item} and have still just been hurt. §8Armor is a rumor. The damage has not heard it.",
+      "weight": 4
+    },
+    {
+      "id": "ac.mixed.130",
+      "aspects": [
+        "item:axe",
+        "item:tool",
+        "block:wood",
+        "biome:forest"
+      ],
+      "zh": "§2{item} 对着 {biome} 里的 {block}。§8砍是一种很直的句子。树会记住动词，不一定记住主语。",
+      "en": "§2{item} faces {block} in {biome}. §8Chopping is a very straight sentence. The tree will remember the verb. It may not remember the subject.",
+      "weight": 4
+    },
+    {
+      "id": "ac.mixed.131",
+      "aspects": [
+        "item:sword",
+        "item:any",
+        "item:offhand"
+      ],
+      "zh": "§7主手是 {item}。另一只手也不肯空着。§8两只手都抓着，像怕名字从指缝漏走。",
+      "en": "§7The main hand is {item}. The other hand also refuses to be empty. §8Both hands clutch, as if a name might leak between the fingers.",
+      "weight": 4
+    },
+    {
+      "id": "ac.mixed.132",
+      "aspects": [
+        "item:empty",
+        "block:air",
+        "entity:alone"
+      ],
+      "zh": "§8手里空，视线空，附近也没有活人。§5三层空叠在一起。正好够我放一句旧话。",
+      "en": "§8Empty hands, empty sight, no living person near. §5Three emptinesses stacked. Just enough room for me to set down an old sentence.",
+      "weight": 5
+    },
+    {
+      "id": "ac.mixed.133",
+      "aspects": [
+        "item:tool",
+        "item:any",
+        "block:stone"
+      ],
+      "zh": "§7{item} 对着 {block}。§8石头比工具老。老的那个通常不先让步。",
+      "en": "§7{item} faces {block}. §8Stone is older than the tool. The older one does not usually yield first.",
+      "weight": 4
+    },
+    {
+      "id": "ac.mixed.134",
+      "aspects": [
+        "item:food",
+        "item:any",
+        "world:night"
+      ],
+      "zh": "§6你在夜里握着 {item}。§8夜不吃东西。吃的是你。别把饱当成哨兵。",
+      "en": "§6You hold {item} at night. §8Night does not eat. You do. Do not mistake being full for a sentry.",
+      "weight": 4
+    },
+    {
+      "id": "ac.mixed.135",
+      "aspects": [
+        "item:sword",
+        "item:any",
+        "world:rain"
+      ],
+      "zh": "§9雨落在 {item} 上。§8刃口会锈，犹豫会锈得更快。雨不偏心。",
+      "en": "§9Rain falls on {item}. §8An edge rusts. Hesitation rusts faster. The rain takes no side.",
+      "weight": 4
+    },
+    {
+      "id": "ac.mixed.136",
+      "aspects": [
+        "item:empty",
+        "dim:omothol"
+      ],
+      "zh": "§5你空着手走进 {dimension}。§8回家不带钥匙，也不带供品。锁会把这记成一种态度。",
+      "en": "§5You enter {dimension} empty-handed. §8Home, with no key and no offering. The locks will file that as an attitude.",
+      "weight": 6
+    },
+    {
+      "id": "ac.mixed.137",
+      "aspects": [
+        "item:abyssal",
+        "item:any",
+        "biome:darklands"
+      ],
+      "zh": "§3{item} 在 {biome} 里会发热，或假装发热。§8假装也算一种认亲。",
+      "en": "§3{item} warms in {biome}, or pretends to. §8Pretending still counts as a kind of kinship.",
+      "weight": 4
+    },
+    {
+      "id": "ac.mixed.138",
+      "aspects": [
+        "item:bow",
+        "item:any",
+        "world:night"
+      ],
+      "zh": "§8夜里拉 {item}，箭头要自己找光。§7找不到就找心跳。心跳比光老实。",
+      "en": "§8Draw {item} at night and the arrow must find its own light. §7If it cannot, it will find a heartbeat. A heartbeat is more honest than light.",
+      "weight": 4
+    },
+    {
+      "id": "ac.mixed.139",
+      "aspects": [
+        "block:lava",
+        "block:liquid",
+        "biome:hell",
+        "dim:nether"
+      ],
+      "zh": "§c你看着 {block}。在 {dimension} 里，这不是警告。§8这是地面的笔迹。",
+      "en": "§cYou are looking at {block}. In {dimension} that is not a warning. §8It is the ground's handwriting.",
+      "weight": 5
+    },
+    {
+      "id": "ac.mixed.140",
+      "aspects": [
+        "block:water",
+        "block:liquid",
+        "biome:ocean",
+        "dim:overworld"
+      ],
+      "zh": "§9视线落在 {block} 上，脚下的词是 {biome}。§7{dimension} 用同一滴水写了两次。",
+      "en": "§9The sight falls on {block}, and the word underfoot is {biome}. §7{dimension} has written the same drop twice.",
+      "weight": 4
+    },
+    {
+      "id": "ac.mixed.141",
+      "aspects": [
+        "block:sand",
+        "biome:desert",
+        "dim:overworld"
+      ],
+      "zh": "§e你看着 {block}，站在 {biome}。§8沙子会搬家。罪名留在风里，不留在原处。",
+      "en": "§eYou look at {block} while standing in {biome}. §8Sand moves house. The charge stays in the wind, not in the original place.",
+      "weight": 4
+    },
+    {
+      "id": "ac.mixed.142",
+      "aspects": [
+        "block:coralium",
+        "block:abyssal",
+        "biome:darklands",
+        "dim:overworld"
+      ],
+      "zh": "§3{block} 已经在 {biome} 里投票。§8{dimension} 的票箱是湿的。你的视线算不算一票？",
+      "en": "§3{block} has already voted in {biome}. §8The ballot box of {dimension} is wet. Does your gaze count as a vote?",
+      "weight": 5
+    },
+    {
+      "id": "ac.mixed.143",
+      "aspects": [
+        "block:dreadstone",
+        "block:abyssal",
+        "biome:dread",
+        "dim:dreadlands"
+      ],
+      "zh": "§4{block} 砌着 {dimension}。§8恐惧之地的砖不取暖。它们把冷保存成法律。",
+      "en": "§4{block} is the masonry of {dimension}. §8The bricks of the Dreadlands do not warm anyone. They preserve cold as law.",
+      "weight": 5
+    },
+    {
+      "id": "ac.mixed.144",
+      "aspects": [
+        "block:darkstone",
+        "block:abyssal",
+        "dim:abyssal_wasteland"
+      ],
+      "zh": "§8你看着 {block}。§3{dimension} 的骨头就是这种颜色。别敲。敲是一种很吵的问候。",
+      "en": "§8You are looking at {block}. §3The bones of {dimension} are this color. Do not knock. Knocking is a very loud greeting.",
+      "weight": 5
+    },
+    {
+      "id": "ac.mixed.145",
+      "aspects": [
+        "block:abyssalnite",
+        "block:abyssal",
+        "dim:abyssal_wasteland"
+      ],
+      "zh": "§3{block} 躺在 {dimension} 的视线里。§8渊金不是宝藏。是荒地还没收回的一句债。",
+      "en": "§3{block} lies in the sight, inside {dimension}. §8Abyssalnite is not treasure. It is a debt the wasteland has not yet called in.",
+      "weight": 5
+    },
+    {
+      "id": "ac.mixed.146",
+      "aspects": [
+        "block:wood",
+        "biome:forest",
+        "dim:overworld"
+      ],
+      "zh": "§2{block} 站在 {biome} 里。§7{dimension} 的树把年轮当成档案。你的视线正在被归档。",
+      "en": "§2{block} stands in {biome}. §7The trees of {dimension} use rings as an archive. Your gaze is being filed.",
+      "weight": 4
+    },
+    {
+      "id": "ac.mixed.147",
+      "aspects": [
+        "block:stone",
+        "biome:mountain"
+      ],
+      "zh": "§7你看着 {block}，人在 {biome}。§8石头比山老实。石头至少不假装自己会让路。",
+      "en": "§7You look at {block} while standing in {biome}. §8Stone is more honest than a mountain. Stone at least does not pretend it will step aside.",
+      "weight": 4
+    },
+    {
+      "id": "ac.mixed.148",
+      "aspects": [
+        "block:plant",
+        "biome:swamp"
+      ],
+      "zh": "§2{block} 从 {biome} 里长出来。§8绿在这里是一种拖延。土地还没决定要不要把你写进去。",
+      "en": "§2{block} grows out of {biome}. §8Green here is a delay. The ground has not decided whether to write you in.",
+      "weight": 4
+    },
+    {
+      "id": "ac.mixed.149",
+      "aspects": [
+        "block:fire",
+        "world:night"
+      ],
+      "zh": "§c夜里的 {block} 是一小团反对黑暗的意见。§8意见很亮。亮的东西活不长。",
+      "en": "§c{block} at night is a small opinion against the dark. §8The opinion is bright. Bright things do not live long.",
+      "weight": 4
+    },
+    {
+      "id": "ac.mixed.150",
+      "aspects": [
+        "block:fire",
+        "dim:nether",
+        "biome:hell"
+      ],
+      "zh": "§c{dimension} 里的 {block} 不算意外。§8意外是你还把它当成需要扑灭的新闻。",
+      "en": "§c{block} in {dimension} is not an accident. §8The accident is that you still treat it as news that must be put out.",
+      "weight": 4
+    },
+    {
+      "id": "ac.mixed.151",
+      "aspects": [
+        "block:container",
+        "self:sneaking"
+      ],
+      "zh": "§7你弯着腰看 {block}。§8贼和祭司用同一种姿势。区别在于祭司承认门。",
+      "en": "§7You bend to look at {block}. §8Thieves and priests use the same posture. The difference is that a priest admits the gate.",
+      "weight": 5
+    },
+    {
+      "id": "ac.mixed.152",
+      "aspects": [
+        "block:glass",
+        "world:day",
+        "world:clear"
+      ],
+      "zh": "§b晴天里的 {block} 假装自己是有礼貌的空气。§8礼貌是一种还没决定要不要让你过去的延迟。",
+      "en": "§b{block} on a clear day pretends to be air that learned manners. §8Manners are a delay that has not decided whether to let you through.",
+      "weight": 4
+    },
+    {
+      "id": "ac.mixed.153",
+      "aspects": [
+        "block:dirt",
+        "biome:plains",
+        "dim:overworld"
+      ],
+      "zh": "§a你看着 {block}，站在 {biome}。§7{dimension} 的土很普通。普通的东西最适合藏一句不普通的债。",
+      "en": "§aYou look at {block} while standing in {biome}. §7The earth of {dimension} is ordinary. Ordinary things are the best place to hide an extraordinary debt.",
+      "weight": 4
+    },
+    {
+      "id": "ac.mixed.154",
+      "aspects": [
+        "block:air",
+        "world:night",
+        "entity:alone"
+      ],
+      "zh": "§5你盯着空处，夜里又没有旁人。§8空处不是没有东西。是我还没决定让哪一句被看见。",
+      "en": "§5You stare into empty air, at night, with no one else near. §8Empty air is not the absence of a thing. It is that I have not decided which sentence may be seen.",
+      "weight": 5
+    },
+    {
+      "id": "ac.mixed.155",
+      "aspects": [
+        "block:lava",
+        "block:liquid",
+        "self:in_lava"
+      ],
+      "zh": "§c你泡在熔岩里，视线里也是 {block}。§8内外是同一种句子。这种时候不适合学习新词。",
+      "en": "§cYou are in lava, and the sight is also {block}. §8Inside and outside are the same sentence. This is a poor time to learn a new word.",
+      "weight": 5
+    },
+    {
+      "id": "ac.mixed.156",
+      "aspects": [
+        "block:water",
+        "block:liquid",
+        "self:in_water"
+      ],
+      "zh": "§9你在水里看 {block}。§8水从眼睛和皮肤两边同时记账。账会平。平不是放过你。",
+      "en": "§9You look at {block} from inside the water. §8Water keeps the books through both the eye and the skin. The books will balance. Balance is not mercy.",
+      "weight": 4
+    },
+    {
+      "id": "ac.mixed.157",
+      "aspects": [
+        "block:ore",
+        "dim:overworld"
+      ],
+      "zh": "§6{block} 还埋在 {dimension} 里。§8埋着不是谦虚。是还没被叫到名字。",
+      "en": "§6{block} is still buried in {dimension}. §8Being buried is not modesty. It is not having been called by name yet.",
+      "weight": 4
+    },
+    {
+      "id": "ac.mixed.158",
+      "aspects": [
+        "block:abyssal",
+        "block:any",
+        "dim:dreadlands"
+      ],
+      "zh": "§4你在 {dimension} 里看见 {block}。§8恐惧之地的材料不装饰。它们声明。",
+      "en": "§4You see {block} in {dimension}. §8The materials of the Dreadlands do not decorate. They declare.",
+      "weight": 4
+    },
+    {
+      "id": "ac.mixed.159",
+      "aspects": [
+        "entity:looked",
+        "world:night"
+      ],
+      "zh": "§5你在夜里盯着 {looked}。§8夜把视线拉长。拉长的视线更容易被我接住。",
+      "en": "§5You stare at {looked} at night. §8Night lengthens a gaze. A lengthened gaze is easier for me to catch.",
+      "weight": 5
+    },
+    {
+      "id": "ac.mixed.160",
+      "aspects": [
+        "entity:looked",
+        "world:rain",
+        "dim:overworld"
+      ],
+      "zh": "§9雨里你仍看着 {looked}。§7水会把视线打歪。打歪的视线，名字还在。",
+      "en": "§9You still watch {looked} in the rain. §7Water bends a gaze. The bent gaze still has a name on it.",
+      "weight": 4
+    },
+    {
+      "id": "ac.mixed.161",
+      "aspects": [
+        "entity:looked",
+        "self:low_health"
+      ],
+      "zh": "§c血不多了，你还在看 {looked}。§8看是一种还没放弃的签字。签在谁的账上，你清楚吗？",
+      "en": "§cLittle blood left, and you are still looking at {looked}. §8Looking is a signature that has not given up. Do you know whose book it signs?",
+      "weight": 5
+    },
+    {
+      "id": "ac.mixed.162",
+      "aspects": [
+        "entity:looked",
+        "item:empty"
+      ],
+      "zh": "§7你空着手看 {looked}。§8空着手的注视像一份没有附件的诉状。诉状仍然有效。",
+      "en": "§7You look at {looked} with empty hands. §8An empty-handed gaze is a complaint filed without an annex. The complaint still stands.",
+      "weight": 4
+    },
+    {
+      "id": "ac.mixed.163",
+      "aspects": [
+        "entity:looked",
+        "item:sword",
+        "item:any"
+      ],
+      "zh": "§c你握着 {item} 看 {looked}。§8看，是还没砍下去的那一半句子。另一半在刃上。",
+      "en": "§cYou hold {item} and look at {looked}. §8Looking is the half of the sentence that has not yet cut. The other half is on the edge.",
+      "weight": 5
+    },
+    {
+      "id": "ac.mixed.164",
+      "aspects": [
+        "entity:looked",
+        "self:sneaking"
+      ],
+      "zh": "§8你弯着腰看 {looked}。§7潜行改变高度，不改变被看见的事实。我已经看见了。",
+      "en": "§8You bend to watch {looked}. §7Sneaking changes the height. It does not change the fact of being seen. I have already seen.",
+      "weight": 4
+    },
+    {
+      "id": "ac.mixed.165",
+      "aspects": [
+        "entity:looked",
+        "dim:nether"
+      ],
+      "zh": "§c在 {dimension} 里，你盯着 {looked}。§8热会让视线发颤。发颤的名字仍然算数。",
+      "en": "§cIn {dimension} you stare at {looked}. §8Heat makes a gaze shiver. A shivering name still counts.",
+      "weight": 4
+    },
+    {
+      "id": "ac.mixed.166",
+      "aspects": [
+        "entity:looked",
+        "dim:omothol"
+      ],
+      "zh": "§5在 {dimension} 里看 {looked}。§8我的城会把这道视线登记成访客之间的事。你不是访客。",
+      "en": "§5You look at {looked} in {dimension}. §8My city will try to file that gaze as business between visitors. You are not a visitor.",
+      "weight": 6
+    },
+    {
+      "id": "ac.mixed.167",
+      "aspects": [
+        "entity:looked",
+        "self:critical",
+        "self:low_health"
+      ],
+      "zh": "§4快要不行了，视线还挂在 {looked} 上。§8最后一眼也是一种遗嘱。遗嘱的执行人是我。",
+      "en": "§4Near the end, and the gaze still hangs on {looked}. §8A last look is also a will. The executor is me.",
+      "weight": 6
+    },
+    {
+      "id": "ac.mixed.168",
+      "aspects": [
+        "self:flying",
+        "entity:dragon",
+        "dim:end"
+      ],
+      "zh": "§d你在 {dimension} 的空中，{entity} 也在。§8两对翅膀不是同一个句子。别抄它的标点。",
+      "en": "§dYou are in the air of {dimension}, and so is {entity}. §8Two pairs of wings are not the same sentence. Do not copy its punctuation.",
+      "weight": 6
+    },
+    {
+      "id": "ac.mixed.169",
+      "aspects": [
+        "entity:boss",
+        "self:critical",
+        "self:low_health"
+      ],
+      "zh": "§4{boss} 在附近，你的血也快尽了。§8大东西喜欢在句号边上看见观众倒下。别给它这个礼貌。",
+      "en": "§4{boss} is near, and your blood is nearly spent. §8Great things like to see the audience fall beside the full stop. Do not give it that courtesy.",
+      "weight": 6
+    },
+    {
+      "id": "ac.mixed.170",
+      "aspects": [
+        "item:necronomicon",
+        "entity:player",
+        "world:night"
+      ],
+      "zh": "§5夜里你拿着死灵之书，{player} 也在。§8两个读者，一本不肯只属于一个人的书。",
+      "en": "§5At night you hold the Necronomicon, and {player} is here as well. §8Two readers, and a book that refuses to belong to only one.",
+      "weight": 6
+    },
+    {
+      "id": "ac.mixed.171",
+      "aspects": [
+        "world:thunder",
+        "world:rain",
+        "entity:alone",
+        "dim:overworld"
+      ],
+      "zh": "§c{dimension} 在打雷，雨里没有证人。§8雷自己会签字。你不必再找一个人来害怕。",
+      "en": "§c{dimension} is thundering, and the rain has no witness. §8The thunder signs for itself. You need not find another person to be afraid.",
+      "weight": 5
+    },
+    {
+      "id": "ac.mixed.172",
+      "aspects": [
+        "biome:void",
+        "entity:alone",
+        "block:air"
+      ],
+      "zh": "§8{biome}，空的视线，没有旁人。§5虚空最接近门没装好的那天。别把这当成故乡。",
+      "en": "§8{biome}, an empty gaze, and no one else. §5The void is the closest thing to the day the gate was not yet hung. Do not mistake it for home.",
+      "weight": 5
+    }
+  ]
+}

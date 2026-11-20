@@ -1,0 +1,832 @@
+{
+  "lines": [
+    {
+      "id": "ac.place.001",
+      "aspects": [
+        "biome:ocean"
+      ],
+      "zh": "§9{biome}。§7水把地平线吃掉了。吃掉的东西，门不一定还。",
+      "en": "§9{biome}. §7The water has eaten the horizon. A gate does not always return what was eaten.",
+      "weight": 4
+    },
+    {
+      "id": "ac.place.002",
+      "aspects": [
+        "biome:ocean"
+      ],
+      "zh": "§b你站在 {biome} 边上。§8潮声像一群不肯报名的访客。",
+      "en": "§bYou stand at the edge of {biome}. §8The tide sounds like visitors who refuse to give their names.",
+      "weight": 4
+    },
+    {
+      "id": "ac.place.003",
+      "aspects": [
+        "biome:ocean"
+      ],
+      "zh": "§8{biome} 没有路。§7没有路的地方，最适合放下一句不该说的话。",
+      "en": "§8{biome} has no road. §7A place without a road is the right place to set down a sentence that should not be spoken.",
+      "weight": 4
+    },
+    {
+      "id": "ac.place.004",
+      "aspects": [
+        "biome:forest"
+      ],
+      "zh": "§a{biome} 用叶子把天空盖住。§7盖住不是保护。是不想让上面的东西看见你。",
+      "en": "§a{biome} covers the sky with leaves. §7Covering is not protection. It is a wish that what is above should not see you.",
+      "weight": 4
+    },
+    {
+      "id": "ac.place.005",
+      "aspects": [
+        "biome:forest"
+      ],
+      "zh": "§7树很多，名字很少。§8{biome} 把名字都借给了年轮。",
+      "en": "§7There are many trees and few names. §8{biome} has lent its names to the rings.",
+      "weight": 4
+    },
+    {
+      "id": "ac.place.006",
+      "aspects": [
+        "biome:forest"
+      ],
+      "zh": "§2走进 {biome}，脚步会变软。§8软的地面在听。别把真名踩进土里。",
+      "en": "§2Step into {biome} and the footfall goes soft. §8Soft ground is listening. Do not tread your true name into it.",
+      "weight": 4
+    },
+    {
+      "id": "ac.place.007",
+      "aspects": [
+        "biome:desert"
+      ],
+      "zh": "§e{biome} 把路晒成了遗忘。§7遗忘是一种很干的宗教。",
+      "en": "§e{biome} suns the road into forgetfulness. §7Forgetfulness is a very dry religion.",
+      "weight": 4
+    },
+    {
+      "id": "ac.place.008",
+      "aspects": [
+        "biome:desert"
+      ],
+      "zh": "§6热，亮，没有影子愿意久留。§8{biome} 连影子都往别处赶。",
+      "en": "§6Hot, bright, and no shadow cares to stay. §8{biome} drives even shadows elsewhere.",
+      "weight": 4
+    },
+    {
+      "id": "ac.place.009",
+      "aspects": [
+        "biome:desert"
+      ],
+      "zh": "§7{biome} 的沙子记仇，风负责搬家。§8你的脚印只是临时的罪名。",
+      "en": "§7The sand of {biome} keeps a grudge, and the wind moves house for it. §8Your footprint is only a temporary charge.",
+      "weight": 4
+    },
+    {
+      "id": "ac.place.010",
+      "aspects": [
+        "biome:mountain"
+      ],
+      "zh": "§7{biome} 把世界折起来。§8折起来的地方，门缝比较多。",
+      "en": "§7{biome} folds the world. §8Where the world is folded, the cracks of gates are more numerous.",
+      "weight": 4
+    },
+    {
+      "id": "ac.place.011",
+      "aspects": [
+        "biome:mountain"
+      ],
+      "zh": "§8高处的风还不认得扎哈尔。§7{biome} 会教它。教的学费通常是一口气。",
+      "en": "§8The wind up high does not yet know J'zahar. §7{biome} will teach it. The fee is usually a breath.",
+      "weight": 4
+    },
+    {
+      "id": "ac.place.012",
+      "aspects": [
+        "biome:mountain"
+      ],
+      "zh": "§6你在 {biome} 里往上走。§8向上是一种还没学会回家的固执。",
+      "en": "§6You climb through {biome}. §8Upward is a stubbornness that has not yet learned the way home.",
+      "weight": 4
+    },
+    {
+      "id": "ac.place.013",
+      "aspects": [
+        "biome:swamp"
+      ],
+      "zh": "§2{biome} 把脚吸住。§7吸住，是土地还没决定要不要把你写成自己的句子。",
+      "en": "§2{biome} holds the foot. §7Holding is the land not yet deciding whether to write you into its own sentence.",
+      "weight": 4
+    },
+    {
+      "id": "ac.place.014",
+      "aspects": [
+        "biome:swamp"
+      ],
+      "zh": "§8雾、水、烂木头。§7{biome} 的词汇贫乏，意思却很黏。",
+      "en": "§8Fog, water, rotten wood. §7The vocabulary of {biome} is poor. The meaning is sticky.",
+      "weight": 4
+    },
+    {
+      "id": "ac.place.015",
+      "aspects": [
+        "biome:swamp"
+      ],
+      "zh": "§3珊瑚喜欢这种地方。§7{biome} 还没投票，票箱却已经湿了。",
+      "en": "§3Coralium likes a place like this. §7{biome} has not voted yet. The ballot box is already wet.",
+      "weight": 4
+    },
+    {
+      "id": "ac.place.016",
+      "aspects": [
+        "biome:hell"
+      ],
+      "zh": "§4{biome}。§8热得能把祷词烤焦。烤焦的祷词，下界当成方言。",
+      "en": "§4{biome}. §8Hot enough to char a prayer. The Nether takes a charred prayer for a dialect.",
+      "weight": 4
+    },
+    {
+      "id": "ac.place.017",
+      "aspects": [
+        "biome:hell"
+      ],
+      "zh": "§c{biome} 没有白天。§7没有白天的地方，不需要向太阳请假。",
+      "en": "§c{biome} has no day. §7A place without day does not ask the sun for leave.",
+      "weight": 4
+    },
+    {
+      "id": "ac.place.018",
+      "aspects": [
+        "biome:hell"
+      ],
+      "zh": "§6你走在 {biome} 里。§8脚下的石头在慢慢承认自己会饿。",
+      "en": "§6You walk in {biome}. §8The stone underfoot is slowly admitting that it can hunger.",
+      "weight": 4
+    },
+    {
+      "id": "ac.place.019",
+      "aspects": [
+        "biome:cold"
+      ],
+      "zh": "§b{biome} 把呼吸变成白字。§7白字散掉之前，不要把真名呼出去。",
+      "en": "§b{biome} turns breath into white letters. §7Before the letters scatter, do not breathe your true name out.",
+      "weight": 4
+    },
+    {
+      "id": "ac.place.020",
+      "aspects": [
+        "biome:cold"
+      ],
+      "zh": "§7冷是一种很干净的拒绝。§8{biome} 拒绝得很彻底。",
+      "en": "§7Cold is a very clean refusal. §8{biome} refuses thoroughly.",
+      "weight": 4
+    },
+    {
+      "id": "ac.place.021",
+      "aspects": [
+        "biome:cold"
+      ],
+      "zh": "§9{biome} 里，血会变慢。§8慢的血比较容易听见我。",
+      "en": "§9In {biome}, blood slows. §8Slow blood hears me more easily.",
+      "weight": 4
+    },
+    {
+      "id": "ac.place.022",
+      "aspects": [
+        "biome:jungle"
+      ],
+      "zh": "§a{biome} 太密了。§7密到光要排队才能落地。",
+      "en": "§a{biome} is too thick. §7Thick enough that light must queue to reach the ground.",
+      "weight": 4
+    },
+    {
+      "id": "ac.place.023",
+      "aspects": [
+        "biome:jungle"
+      ],
+      "zh": "§2叶子、湿热、看不见的牙。§8{biome} 把猎食写成天气。",
+      "en": "§2Leaves, damp heat, teeth you cannot see. §8{biome} writes predation as weather.",
+      "weight": 4
+    },
+    {
+      "id": "ac.place.024",
+      "aspects": [
+        "biome:jungle"
+      ],
+      "zh": "§7你在 {biome} 里拨开绿。§8绿会合上。合上的东西通常不想被读。",
+      "en": "§7You part the green in {biome}. §8The green closes. What closes usually does not wish to be read.",
+      "weight": 4
+    },
+    {
+      "id": "ac.place.025",
+      "aspects": [
+        "biome:mesa"
+      ],
+      "zh": "§6{biome} 像一页被烤硬的地层。§7地层记得水，水已经不记得它。",
+      "en": "§6{biome} is a page of strata baked hard. §7The strata remember water. Water has forgotten them.",
+      "weight": 4
+    },
+    {
+      "id": "ac.place.026",
+      "aspects": [
+        "biome:mesa"
+      ],
+      "zh": "§c红土一层一层地沉默。§8{biome} 的沉默比大多数神殿整齐。",
+      "en": "§cRed earth is silent, layer by layer. §8The silence of {biome} is tidier than most temples.",
+      "weight": 4
+    },
+    {
+      "id": "ac.place.027",
+      "aspects": [
+        "biome:mesa"
+      ],
+      "zh": "§7{biome} 没有树愿意作证。§8没有证人的地方，门说话比较随意。",
+      "en": "§7No tree in {biome} will testify. §8Where there is no witness, a gate speaks more casually.",
+      "weight": 4
+    },
+    {
+      "id": "ac.place.028",
+      "aspects": [
+        "biome:plains"
+      ],
+      "zh": "§a{biome} 坦得过分。§7坦，是一种还没学会锁门的文明。",
+      "en": "§a{biome} is excessively open. §7Openness is a civilization that has not learned to lock a door.",
+      "weight": 4
+    },
+    {
+      "id": "ac.place.029",
+      "aspects": [
+        "biome:plains"
+      ],
+      "zh": "§7一眼能望到边。§8边的后面不一定还是 {biome}。有时是门槛。",
+      "en": "§7You can see the edge at a glance. §8Beyond the edge it is not necessarily still {biome}. Sometimes it is a threshold.",
+      "weight": 4
+    },
+    {
+      "id": "ac.place.030",
+      "aspects": [
+        "biome:plains"
+      ],
+      "zh": "§e风在 {biome} 上跑，没有东西拦它。§8没有东西拦的风，最容易把名字吹丢。",
+      "en": "§eWind runs over {biome} with nothing to stop it. §8Wind that nothing stops is the kind that loses names.",
+      "weight": 4
+    },
+    {
+      "id": "ac.place.031",
+      "aspects": [
+        "biome:river"
+      ],
+      "zh": "§9{biome} 是一条不肯站定的路。§7路如果自己会走，就别跟着它去见门。",
+      "en": "§9{biome} is a road that will not stand still. §7If a road walks by itself, do not follow it to a gate.",
+      "weight": 4
+    },
+    {
+      "id": "ac.place.032",
+      "aspects": [
+        "biome:river"
+      ],
+      "zh": "§b水在 {biome} 里赶路。§8它不知道自己在替谁送信。",
+      "en": "§bWater is hurrying through {biome}. §8It does not know whose letter it carries.",
+      "weight": 4
+    },
+    {
+      "id": "ac.place.033",
+      "aspects": [
+        "biome:river"
+      ],
+      "zh": "§7沿着 {biome} 走，脚会一直湿。§8湿的脚印比干的脚印更诚实。",
+      "en": "§7Walk along {biome} and the feet stay wet. §8A wet footprint is more honest than a dry one.",
+      "weight": 4
+    },
+    {
+      "id": "ac.place.034",
+      "aspects": [
+        "biome:beach"
+      ],
+      "zh": "§e{biome} 是海和陆地还没签字的边界。§7边界最容易被潮水改写。",
+      "en": "§e{biome} is a border the sea and the land have not signed. §7Borders are the easiest thing for a tide to rewrite.",
+      "weight": 4
+    },
+    {
+      "id": "ac.place.035",
+      "aspects": [
+        "biome:beach"
+      ],
+      "zh": "§7你站在 {biome} 上。§8沙认脚，浪不认。浪只认还没说出口的名字。",
+      "en": "§7You stand on {biome}. §8Sand recognizes a foot. The wave does not. The wave recognizes only a name not yet spoken.",
+      "weight": 4
+    },
+    {
+      "id": "ac.place.036",
+      "aspects": [
+        "biome:beach"
+      ],
+      "zh": "§6{biome} 把贝壳当成零钱。§8零钱买不到奥穆索的沉默。",
+      "en": "§6{biome} treats shells as small change. §8Small change cannot buy the silence of Omothol.",
+      "weight": 4
+    },
+    {
+      "id": "ac.place.037",
+      "aspects": [
+        "biome:mushroom"
+      ],
+      "zh": "§5{biome}。§7菌盖像一群不肯下雨的伞。伞下面的孢子比雨更想搬家。",
+      "en": "§5{biome}. §7The caps are umbrellas that refuse to rain. The spores beneath them are more eager to move house than rain is.",
+      "weight": 4
+    },
+    {
+      "id": "ac.place.038",
+      "aspects": [
+        "biome:mushroom"
+      ],
+      "zh": "§d巨大的菌把生长做成了建筑。§8{biome} 没请建筑师，也不打算付工钱。",
+      "en": "§dGiant fungi have made growth into architecture. §8{biome} hired no architect, and does not intend to pay.",
+      "weight": 4
+    },
+    {
+      "id": "ac.place.039",
+      "aspects": [
+        "biome:mushroom"
+      ],
+      "zh": "§7{biome} 里几乎没有动物愿意留下名字。§8留下的是孢子。孢子不签名。",
+      "en": "§7Almost no animal in {biome} will leave a name. §8What remains is spores. Spores do not sign.",
+      "weight": 4
+    },
+    {
+      "id": "ac.place.040",
+      "aspects": [
+        "biome:void"
+      ],
+      "zh": "§8{biome} 是世界同意缺席的地方。§5缺席也是一种在场，只是不报姓名。",
+      "en": "§8{biome} is where the world agreed to be absent. §5Absence is still a kind of presence. It simply does not give a name.",
+      "weight": 4
+    },
+    {
+      "id": "ac.place.041",
+      "aspects": [
+        "biome:void"
+      ],
+      "zh": "§7你踩在 {biome} 上。§8脚下没有地质，只有一句还没写完的否定。",
+      "en": "§7You tread on {biome}. §8Underfoot there is no geology, only a negation that has not been finished.",
+      "weight": 4
+    },
+    {
+      "id": "ac.place.042",
+      "aspects": [
+        "biome:void"
+      ],
+      "zh": "§5{biome} 不生长，不腐烂，不回答。§7不回答的地方，最适合守门。",
+      "en": "§5{biome} does not grow, rot, or answer. §7A place that does not answer is the best place to keep a gate.",
+      "weight": 4
+    },
+    {
+      "id": "ac.place.043",
+      "aspects": [
+        "biome:end"
+      ],
+      "zh": "§5{biome}。§8末地把天空做成了私产，却忘了给门留一把钥匙。",
+      "en": "§5{biome}. §8The End made the sky into private property, and forgot to leave a key for the gate.",
+      "weight": 4
+    },
+    {
+      "id": "ac.place.044",
+      "aspects": [
+        "biome:end"
+      ],
+      "zh": "§7黄石、虚空、一只以为自己是终点的龙。§8{biome} 的终点是别人的门槛。",
+      "en": "§7Yellow stone, void, a dragon that thinks itself an ending. §8The ending of {biome} is someone else's threshold.",
+      "weight": 4
+    },
+    {
+      "id": "ac.place.045",
+      "aspects": [
+        "biome:end"
+      ],
+      "zh": "§d你在 {biome} 里走。§7脚步没有回声。没有回声的地方，话要自己负责。",
+      "en": "§dYou walk in {biome}. §7The steps have no echo. Where there is no echo, a sentence must answer for itself.",
+      "weight": 4
+    },
+    {
+      "id": "ac.place.046",
+      "aspects": [
+        "biome:abyssal"
+      ],
+      "zh": "§3{biome}。§8荒地的口音我听得懂。你只是借了我的耳朵。",
+      "en": "§3{biome}. §8I understand the accent of the wasteland. You have only borrowed my ears.",
+      "weight": 4
+    },
+    {
+      "id": "ac.place.047",
+      "aspects": [
+        "biome:abyssal"
+      ],
+      "zh": "§7珊瑚、暗石、盐一样的风。§8{biome} 是深渊写给自己的回信。",
+      "en": "§7Coralium, darkstone, a wind like salt. §8{biome} is the reply the abyss wrote to itself.",
+      "weight": 4
+    },
+    {
+      "id": "ac.place.048",
+      "aspects": [
+        "biome:abyssal"
+      ],
+      "zh": "§3别在 {biome} 里假装游客。§5这张脸在这里不是游客。游客会被收成砖。",
+      "en": "§3Do not pretend to be a tourist in {biome}. §5This face is not a tourist here. Tourists are collected as brick.",
+      "weight": 4
+    },
+    {
+      "id": "ac.place.049",
+      "aspects": [
+        "biome:dread"
+      ],
+      "zh": "§4{biome} 干，冷，像一口已经咳完的天空。",
+      "en": "§4{biome} is dry and cold, like a sky that has finished coughing.",
+      "weight": 4
+    },
+    {
+      "id": "ac.place.050",
+      "aspects": [
+        "biome:dread"
+      ],
+      "zh": "§7瘟疫在 {biome} 里有户口。§8户口比大多数祭司诚实。",
+      "en": "§7The plague has a household registration in {biome}. §8The registration is more honest than most priests.",
+      "weight": 4
+    },
+    {
+      "id": "ac.place.051",
+      "aspects": [
+        "biome:dread"
+      ],
+      "zh": "§8你走在 {biome} 上。§4地面把每一步登记成症状。别走太密。",
+      "en": "§8You walk on {biome}. §4The ground registers each step as a symptom. Do not walk too densely.",
+      "weight": 4
+    },
+    {
+      "id": "ac.place.052",
+      "aspects": [
+        "biome:omothol"
+      ],
+      "zh": "§5{biome}。§8到家了。家不欢迎借来的脚步，但认得这张脸。",
+      "en": "§5{biome}. §8You are home. Home does not welcome a borrowed step, but it knows this face.",
+      "weight": 4
+    },
+    {
+      "id": "ac.place.053",
+      "aspects": [
+        "biome:omothol"
+      ],
+      "zh": "§7奥穆索的尘不是土。§8{biome} 脚下漏出来的是算术，是锁，是我没写完的句子。",
+      "en": "§7The dust of Omothol is not soil. §8What leaks under {biome} is arithmetic, locks, and a sentence I did not finish.",
+      "weight": 4
+    },
+    {
+      "id": "ac.place.054",
+      "aspects": [
+        "biome:omothol"
+      ],
+      "zh": "§5在 {biome} 里，低语不需要借嘴。§7你若还听得见我，说明门没有完全把你关在外面。",
+      "en": "§5In {biome} a whisper does not need a borrowed mouth. §7If you can still hear me, the gate has not shut you entirely outside.",
+      "weight": 4
+    },
+    {
+      "id": "ac.place.055",
+      "aspects": [
+        "biome:dark_realm"
+      ],
+      "zh": "§8{biome}。§5黑暗国度不是夜。夜还会结束。这里的黑投票决定不结束。",
+      "en": "§8{biome}. §5The Dark Realm is not night. Night still ends. The black here has voted not to.",
+      "weight": 4
+    },
+    {
+      "id": "ac.place.056",
+      "aspects": [
+        "biome:dark_realm"
+      ],
+      "zh": "§7光在 {biome} 里是外来户。§8外来户通常活不久，除非它认得门。",
+      "en": "§7Light is an outsider in {biome}. §8Outsiders do not usually last, unless they know the gate.",
+      "weight": 4
+    },
+    {
+      "id": "ac.place.057",
+      "aspects": [
+        "biome:dark_realm"
+      ],
+      "zh": "§5你站在 {biome} 里。§8我的城不需要太阳。它需要记得锁的人。",
+      "en": "§5You stand in {biome}. §8My city does not need a sun. It needs someone who still remembers the locks.",
+      "weight": 4
+    },
+    {
+      "id": "ac.place.058",
+      "aspects": [
+        "biome:darklands"
+      ],
+      "zh": "§8{biome} 是主世界被深渊改过口音的一块皮。§7皮还温着，口音已经冷了。",
+      "en": "§8{biome} is a hide of the overworld whose accent the abyss has edited. §7The hide is still warm. The accent has gone cold.",
+      "weight": 4
+    },
+    {
+      "id": "ac.place.059",
+      "aspects": [
+        "biome:darklands"
+      ],
+      "zh": "§3黑暗之地不是黑暗国度。§7{biome} 只是门口的垫子。别把垫子当成殿。",
+      "en": "§3The Darklands are not the Dark Realm. §7{biome} is only the mat at the door. Do not take the mat for the hall.",
+      "weight": 4
+    },
+    {
+      "id": "ac.place.060",
+      "aspects": [
+        "biome:darklands"
+      ],
+      "zh": "§7{biome} 里的树不信任白天。§8它们学会了一种更黑的绿。",
+      "en": "§7The trees in {biome} do not trust daylight. §8They have learned a blacker green.",
+      "weight": 4
+    },
+    {
+      "id": "ac.place.061",
+      "aspects": [
+        "dim:overworld"
+      ],
+      "zh": "§a{dimension}。§7你们把这层薄薄的白天叫作家。家是一种还没被收回的租约。",
+      "en": "§a{dimension}. §7You call this thin layer of daylight home. Home is a lease that has not yet been called in.",
+      "weight": 4
+    },
+    {
+      "id": "ac.place.062",
+      "aspects": [
+        "dim:overworld"
+      ],
+      "zh": "§7太阳、草、市集、墓碑。§8{dimension} 的词汇很满，锁却很少。",
+      "en": "§7Sun, grass, markets, gravestones. §8The vocabulary of {dimension} is full. The locks are few.",
+      "weight": 4
+    },
+    {
+      "id": "ac.place.063",
+      "aspects": [
+        "dim:overworld"
+      ],
+      "zh": "§e你在 {dimension} 里借用这张脸。§8脸在这里太亮。亮的东西容易被当成神，也容易被当成猎物。",
+      "en": "§eYou borrow this face in {dimension}. §8The face is too bright here. Bright things are easily taken for gods, and easily taken for prey.",
+      "weight": 4
+    },
+    {
+      "id": "ac.place.064",
+      "aspects": [
+        "dim:overworld"
+      ],
+      "zh": "§7{dimension} 的门大多是木头做的。§5木头的门不认识我。认识我的那扇，不在这层。",
+      "en": "§7Most doors in {dimension} are made of wood. §5A wooden door does not know me. The one that does is not on this floor.",
+      "weight": 4
+    },
+    {
+      "id": "ac.place.065",
+      "aspects": [
+        "dim:nether"
+      ],
+      "zh": "§4{dimension}。§8热，吵，神学很业余。硫磺不是深渊。",
+      "en": "§4{dimension}. §8Hot, loud, and the theology is amateur. Brimstone is not the abyss.",
+      "weight": 4
+    },
+    {
+      "id": "ac.place.066",
+      "aspects": [
+        "dim:nether"
+      ],
+      "zh": "§c{dimension} 把熔岩当成天空。§7天空不该有这么好的胃口。",
+      "en": "§c{dimension} treats lava as a sky. §7A sky should not have so fine an appetite.",
+      "weight": 4
+    },
+    {
+      "id": "ac.place.067",
+      "aspects": [
+        "dim:nether"
+      ],
+      "zh": "§6要塞、骨头、一嘴不肯灭的火。§8{dimension} 是一封写给更深处的错信。",
+      "en": "§6Fortresses, bone, a mouth of fire that will not go out. §8{dimension} is a misaddressed letter to somewhere deeper.",
+      "weight": 4
+    },
+    {
+      "id": "ac.place.068",
+      "aspects": [
+        "dim:nether"
+      ],
+      "zh": "§7你在 {dimension} 里走。§8走得再深，也还没到我的门槛。别把热气误认成回家。",
+      "en": "§7You walk in {dimension}. §8However deep you go, you have not reached my threshold. Do not mistake heat for home.",
+      "weight": 4
+    },
+    {
+      "id": "ac.place.069",
+      "aspects": [
+        "dim:end"
+      ],
+      "zh": "§5{dimension}。§7末地以为虚空就是结局。结局是一种很自负的标点。",
+      "en": "§5{dimension}. §7The End thinks the void is a conclusion. A conclusion is a very vain piece of punctuation.",
+      "weight": 4
+    },
+    {
+      "id": "ac.place.070",
+      "aspects": [
+        "dim:end"
+      ],
+      "zh": "§8龙、塔、一地不会腐烂的黄石。§7{dimension} 把永恒做成了布景。",
+      "en": "§8A dragon, towers, yellow stone that will not rot. §7{dimension} has made eternity into scenery.",
+      "weight": 4
+    },
+    {
+      "id": "ac.place.071",
+      "aspects": [
+        "dim:end"
+      ],
+      "zh": "§d{dimension} 的居民会瞬移。§8瞬移不是开门。开门的人不需要把方块抱在怀里。",
+      "en": "§dThe inhabitants of {dimension} can blink. §8Blinking is not opening a gate. A gatekeeper does not need to clutch a block.",
+      "weight": 4
+    },
+    {
+      "id": "ac.place.072",
+      "aspects": [
+        "dim:end"
+      ],
+      "zh": "§7你站在 {dimension} 里。§5这张脸看过更远的终点。终点之后还有门。",
+      "en": "§7You stand in {dimension}. §5This face has seen a farther ending. After the ending there is still a gate.",
+      "weight": 4
+    },
+    {
+      "id": "ac.place.073",
+      "aspects": [
+        "dim:abyssal_wasteland"
+      ],
+      "zh": "§3{dimension}。§8荒地在呼吸。呼吸里有珊瑚，有盐，有我年轻时没关上的一扇窗。",
+      "en": "§3{dimension}. §8The wasteland is breathing. In the breath there is coralium, salt, and a window I did not shut when I was younger.",
+      "weight": 4
+    },
+    {
+      "id": "ac.place.074",
+      "aspects": [
+        "dim:abyssal_wasteland"
+      ],
+      "zh": "§7你踩进了 {dimension}。§5路过这张脸的人，荒地不会当客人。",
+      "en": "§7You have stepped into {dimension}. §5The wasteland does not treat a passerby in this face as a guest.",
+      "weight": 4
+    },
+    {
+      "id": "ac.place.075",
+      "aspects": [
+        "dim:abyssal_wasteland"
+      ],
+      "zh": "§8暗石、渊金、不肯退的潮。§7{dimension} 是深渊同意被踩的那一层。",
+      "en": "§8Darkstone, abyssalnite, a tide that will not withdraw. §7{dimension} is the layer the abyss agreed to be walked on.",
+      "weight": 4
+    },
+    {
+      "id": "ac.place.076",
+      "aspects": [
+        "dim:abyssal_wasteland"
+      ],
+      "zh": "§3在 {dimension} 里，低语比较近。§8近，不是因为我大声。是因为这里的空气认得发信人。",
+      "en": "§3In {dimension} the whisper is closer. §8Not because I am loud. Because the air here knows the sender.",
+      "weight": 4
+    },
+    {
+      "id": "ac.place.077",
+      "aspects": [
+        "dim:dreadlands"
+      ],
+      "zh": "§4{dimension}。§7恐惧之地的冷是干的。干的冷会把骨头教成臣民。",
+      "en": "§4{dimension}. §7The cold of the Dreadlands is dry. Dry cold teaches bone to be a subject.",
+      "weight": 4
+    },
+    {
+      "id": "ac.place.078",
+      "aspects": [
+        "dim:dreadlands"
+      ],
+      "zh": "§8查伽洛斯的国境。§7{dimension} 用瘟疫写法律。法律不需要你同意。",
+      "en": "§8The realm of Cha'garoth. §7{dimension} writes its law in plague. The law does not require your consent.",
+      "weight": 4
+    },
+    {
+      "id": "ac.place.079",
+      "aspects": [
+        "dim:dreadlands"
+      ],
+      "zh": "§c你走在 {dimension} 上。§8每一步都像在一份病历上签名。别签太快。",
+      "en": "§cYou walk on {dimension}. §8Each step is like signing a medical record. Do not sign too quickly.",
+      "weight": 4
+    },
+    {
+      "id": "ac.place.080",
+      "aspects": [
+        "dim:dreadlands"
+      ],
+      "zh": "§7{dimension} 的天空不下雨，它咳嗽。§8咳嗽是这里的天气，也是这里的礼仪。",
+      "en": "§7The sky of {dimension} does not rain. It coughs. §8A cough is the weather here, and the etiquette.",
+      "weight": 4
+    },
+    {
+      "id": "ac.place.081",
+      "aspects": [
+        "dim:omothol"
+      ],
+      "zh": "§5{dimension}。§8我的城。你把我的腿借来走我的街，步子却还是凡人的。",
+      "en": "§5{dimension}. §8My city. You borrowed my legs to walk my street, and the step is still mortal.",
+      "weight": 2
+    },
+    {
+      "id": "ac.place.082",
+      "aspects": [
+        "dim:omothol"
+      ],
+      "zh": "§7奥穆索的锁不是装饰。§8{dimension} 里每一道缝都在数有没有人多带了一把钥匙。",
+      "en": "§7The locks of Omothol are not decoration. §8Every crack in {dimension} is counting whether someone brought an extra key.",
+      "weight": 2
+    },
+    {
+      "id": "ac.place.083",
+      "aspects": [
+        "dim:omothol"
+      ],
+      "zh": "§5到了 {dimension}，就别再把这张脸当成伪装。§7伪装在家里会变成失礼。",
+      "en": "§5Now that you are in {dimension}, stop treating this face as a disguise. §7A disguise at home becomes a discourtesy.",
+      "weight": 2
+    },
+    {
+      "id": "ac.place.084",
+      "aspects": [
+        "dim:omothol"
+      ],
+      "zh": "§8尘、算术、不肯睡的门。§7{dimension} 记得每一个把真名写错的访客。你现在算哪一种？",
+      "en": "§8Dust, arithmetic, a gate that refuses to sleep. §7{dimension} remembers every visitor who misspelled a true name. Which kind are you?",
+      "weight": 4
+    },
+    {
+      "id": "ac.place.085",
+      "aspects": [
+        "dim:dark_realm"
+      ],
+      "zh": "§8{dimension}。§5黑暗国度。光在这里是非法移民，名字在这里是通货。",
+      "en": "§8{dimension}. §5The Dark Realm. Light is an illegal immigrant here. A name is currency.",
+      "weight": 2
+    },
+    {
+      "id": "ac.place.086",
+      "aspects": [
+        "dim:dark_realm"
+      ],
+      "zh": "§5我的殿在 {dimension} 的更深处。§7你若还听得见这句话，说明你还没走到那一扇门前。",
+      "en": "§5My hall is deeper in {dimension}. §7If you can still hear this sentence, you have not yet reached that door.",
+      "weight": 2
+    },
+    {
+      "id": "ac.place.087",
+      "aspects": [
+        "dim:dark_realm"
+      ],
+      "zh": "§8黑得没有回声。§7{dimension} 把回声都收成了税。税不用金子付。",
+      "en": "§8Black enough to have no echo. §7{dimension} collects echoes as tax. The tax is not paid in gold.",
+      "weight": 4
+    },
+    {
+      "id": "ac.place.088",
+      "aspects": [
+        "dim:dark_realm"
+      ],
+      "zh": "§4别在 {dimension} 里寻找太阳。§5太阳没被邀请。被邀请的是还肯把锁数完的人。",
+      "en": "§4Do not look for the sun in {dimension}. §5The sun was not invited. The invited are those who will still count the locks to the end.",
+      "weight": 4
+    },
+    {
+      "id": "ac.place.089",
+      "aspects": [
+        "dim:other"
+      ],
+      "zh": "§7{dimension}。§8一个我没有在门楣上登记的名字。未登记不等于不存在。",
+      "en": "§7{dimension}. §8A name I did not enter on the lintel. Unregistered is not the same as unreal.",
+      "weight": 4
+    },
+    {
+      "id": "ac.place.090",
+      "aspects": [
+        "dim:other"
+      ],
+      "zh": "§8你站在 {dimension} 里。§7这张脸没有这里的钥匙。没有钥匙的地方，步子放轻。",
+      "en": "§8You stand in {dimension}. §7This face has no key to this place. Where there is no key, lighten the step.",
+      "weight": 4
+    },
+    {
+      "id": "ac.place.091",
+      "aspects": [
+        "dim:other"
+      ],
+      "zh": "§5{dimension} 不在我常用的地图上。§8地图是给还会迷路的神准备的。我只是还没决定要不要把这里写成门。",
+      "en": "§5{dimension} is not on the map I usually keep. §8Maps are for gods who can still get lost. I have not yet decided whether to write this place as a gate.",
+      "weight": 4
+    },
+    {
+      "id": "ac.place.092",
+      "aspects": [
+        "dim:other"
+      ],
+      "zh": "§7陌生的天空，陌生的地面。§8{dimension} 若有锁，先不要敲。敲错的门会记仇。",
+      "en": "§7A strange sky, a strange ground. §8If {dimension} has a lock, do not knock yet. A door knocked wrong keeps a grudge.",
+      "weight": 4
+    }
+  ]
+}

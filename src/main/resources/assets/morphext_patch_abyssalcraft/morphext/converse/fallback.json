@@ -1,0 +1,116 @@
+{
+  "lines": [
+    {
+      "id": "ac.fallback.001",
+      "aspects": [],
+      "zh": "§5我在。§7你借走的不是沉默，是一扇还肯回答的门。",
+      "en": "§5I am here. §7What you borrowed is not silence. It is a gate that still consents to answer.",
+      "weight": 4
+    },
+    {
+      "id": "ac.fallback.002",
+      "aspects": [],
+      "zh": "§8有些话不挑地方。§7它们只挑还听得见的喉咙。",
+      "en": "§8Some sentences do not choose a place. §7They only choose a throat that can still hear.",
+      "weight": 4
+    },
+    {
+      "id": "ac.fallback.003",
+      "aspects": [],
+      "zh": "§7你问，我答。§8答完之后，门不一定还在原来的位置。",
+      "en": "§7You ask, I answer. §8After the answer, the gate is not obliged to remain where it was.",
+      "weight": 4
+    },
+    {
+      "id": "ac.fallback.004",
+      "aspects": [],
+      "zh": "§5低语不走耳朵。§7你若听见了，说明这张脸还认租约。",
+      "en": "§5A whisper does not travel by the ear. §7If you heard it, this face still honors the lease.",
+      "weight": 4
+    },
+    {
+      "id": "ac.fallback.005",
+      "aspects": [],
+      "zh": "§8世界在你外面继续吵。§7吵归吵。主语暂时是我。",
+      "en": "§8The world goes on being noisy outside you. §7Let it. The subject, for now, is me.",
+      "weight": 4
+    },
+    {
+      "id": "ac.fallback.006",
+      "aspects": [],
+      "zh": "§7不必找一个值得评论的东西。§8空着的时候，我也能把一句旧话翻出来。",
+      "en": "§7You need not find something worth remarking on. §8When the view is empty, I can still turn up an old sentence.",
+      "weight": 4
+    },
+    {
+      "id": "ac.fallback.007",
+      "aspects": [],
+      "zh": "§5借来的皮囊还热着。§8热，就说明你还没把我还回去。",
+      "en": "§5The borrowed hide is still warm. §8Warm means you have not given me back yet.",
+      "weight": 4
+    },
+    {
+      "id": "ac.fallback.008",
+      "aspects": [],
+      "zh": "§8奥穆索的尘不挑天气。§7它只问你还记不记得锁的数目。",
+      "en": "§8The dust of Omothol does not choose its weather. §7It only asks whether you still remember the number of the locks.",
+      "weight": 4
+    },
+    {
+      "id": "ac.fallback.009",
+      "aspects": [],
+      "zh": "§7这句话没有对象。§5没有对象的话，通常是说给门自己听的。",
+      "en": "§7This sentence has no object. §5A sentence without an object is usually spoken for the gate itself.",
+      "weight": 4
+    },
+    {
+      "id": "ac.fallback.010",
+      "aspects": [],
+      "zh": "§6你站着。§8站着就够。古神不需要一个理由才开口。",
+      "en": "§6You are standing. §8Standing is enough. An Old One does not need a reason to speak.",
+      "weight": 4
+    },
+    {
+      "id": "ac.fallback.011",
+      "aspects": [],
+      "zh": "§8名字在舌头上转了一圈，又回去了。§7今天先不说。",
+      "en": "§8A name turned once on the tongue, and went back. §7Not today.",
+      "weight": 4
+    },
+    {
+      "id": "ac.fallback.012",
+      "aspects": [],
+      "zh": "§5我看过你正在看的地方。§7看过，不等于批准。",
+      "en": "§5I have looked where you are looking. §7Having looked is not the same as having approved.",
+      "weight": 4
+    },
+    {
+      "id": "ac.fallback.013",
+      "aspects": [],
+      "zh": "§7深渊不急。§8急的是还以为沉默等于安全的人。",
+      "en": "§7The abyss is not in a hurry. §8The hurried one is the person who still thinks silence equals safety.",
+      "weight": 4
+    },
+    {
+      "id": "ac.fallback.014",
+      "aspects": [],
+      "zh": "§8这具身体把你的呼吸借给我听。§7呼吸很短。话可以更短。",
+      "en": "§8This body lends me your breath to listen to. §7Breath is short. A sentence may be shorter.",
+      "weight": 4
+    },
+    {
+      "id": "ac.fallback.015",
+      "aspects": [],
+      "zh": "§4别把安静当成我离开了。§7安静是我把下一句折起来的方式。",
+      "en": "§4Do not take quiet for my having left. §7Quiet is how I fold the next sentence.",
+      "weight": 4
+    },
+    {
+      "id": "ac.fallback.016",
+      "aspects": [],
+      "zh": "§8星门另一侧没有把话递完。§5那就由这侧的嘴先说一句。",
+      "en": "§8The far side of the gate did not finish passing the sentence. §5Then the mouth on this side will say one first.",
+      "weight": 4
+    }
+  ]
+}

@@ -2862,7 +2862,8 @@
       "prevent_fall",
       "faction_omothol_lord",
       "faction_shadow_lord",
-      "morphext:jzahar_banish"
+      "morphext:jzahar_banish",
+      "morphext:ac_converse"
     ],
     "actions": [
       "ac_jzahar_wither_salvo",
@@ -2921,7 +2922,8 @@
       "prevent_fall",
       "faction_omothol_lord",
       "faction_shadow_lord",
-      "morphext:jzahar_banish"
+      "morphext:jzahar_banish",
+      "morphext:ac_converse"
     ],
     "actions": [
       "ac_jzahar_wither_salvo",

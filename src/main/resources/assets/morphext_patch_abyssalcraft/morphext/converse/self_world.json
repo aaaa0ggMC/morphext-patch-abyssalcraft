@@ -1,0 +1,733 @@
+{
+  "lines": [
+    {
+      "id": "ac.self_world.001",
+      "aspects": [
+        "self:sneaking"
+      ],
+      "zh": "§7你把身体放低。§8放低是一种还没决定要不要下跪的姿势。",
+      "en": "§7You lower the body. §8Lowering is a posture that has not yet decided to kneel.",
+      "weight": 4
+    },
+    {
+      "id": "ac.self_world.002",
+      "aspects": [
+        "self:sneaking"
+      ],
+      "zh": "§8潜行让脚步变轻。§7轻的脚步骗得了兽，骗不了门。门听的是名字。",
+      "en": "§8Sneaking lightens the step. §7A light step fools beasts. It does not fool a gate. Gates listen for names.",
+      "weight": 4
+    },
+    {
+      "id": "ac.self_world.003",
+      "aspects": [
+        "self:sneaking"
+      ],
+      "zh": "§7弯着腰走路的人，看起来像在向地面道歉。§8地面很少接受道歉。",
+      "en": "§7A person who walks bent looks as if they are apologizing to the ground. §8The ground rarely accepts.",
+      "weight": 4
+    },
+    {
+      "id": "ac.self_world.004",
+      "aspects": [
+        "self:sneaking"
+      ],
+      "zh": "§5你躲。§8躲在我的皮囊里，像一封信躲在信封里。信封上写的是我的名字。",
+      "en": "§5You hide. §8Hiding in my hide is like a letter hiding in an envelope. The envelope bears my name.",
+      "weight": 4
+    },
+    {
+      "id": "ac.self_world.005",
+      "aspects": [
+        "self:sprinting"
+      ],
+      "zh": "§c你在跑。§7跑是一种把恐惧排成直线的方式。",
+      "en": "§cYou are running. §7Running is a way of arranging fear into a straight line.",
+      "weight": 4
+    },
+    {
+      "id": "ac.self_world.006",
+      "aspects": [
+        "self:sprinting"
+      ],
+      "zh": "§7脚步变密了。§8密的脚步像在敲门。你知道自己在敲谁的门吗？",
+      "en": "§7The steps have grown dense. §8Dense steps sound like knocking. Do you know whose door?",
+      "weight": 4
+    },
+    {
+      "id": "ac.self_world.007",
+      "aspects": [
+        "self:sprinting"
+      ],
+      "zh": "§8冲刺的时候，世界会向后倒。§7向后倒的世界，更容易露出它的门缝。",
+      "en": "§8When you sprint, the world falls backward. §7A world falling backward shows its cracks more easily.",
+      "weight": 4
+    },
+    {
+      "id": "ac.self_world.008",
+      "aspects": [
+        "self:sprinting"
+      ],
+      "zh": "§6跑吧。§7这具身体不累。累的是你还以为自己能跑出我的声音。",
+      "en": "§6Run. §7This body does not tire. What tires is the belief that you can outrun my voice.",
+      "weight": 4
+    },
+    {
+      "id": "ac.self_world.009",
+      "aspects": [
+        "self:flying"
+      ],
+      "zh": "§5你离开了地面。§8地面对此没有意见。意见在更上面的那层黑暗里。",
+      "en": "§5You have left the ground. §8The ground has no opinion. The opinion is in the dark above it.",
+      "weight": 4
+    },
+    {
+      "id": "ac.self_world.010",
+      "aspects": [
+        "self:flying"
+      ],
+      "zh": "§7飞行是一种还没获得许可的俯视。§8俯视久了，会以为自己是天空的签名。",
+      "en": "§7Flight is a looking-down that has not been licensed. §8Look down long enough and you think you are the sky's signature.",
+      "weight": 4
+    },
+    {
+      "id": "ac.self_world.011",
+      "aspects": [
+        "self:flying"
+      ],
+      "zh": "§b翅膀、鞘翅，或仅仅是一股不肯落地的意志。§7意志落地的时候，通常很响。",
+      "en": "§bWings, an elytra, or merely a will that refuses the ground. §7When that will lands, it is usually loud.",
+      "weight": 4
+    },
+    {
+      "id": "ac.self_world.012",
+      "aspects": [
+        "self:flying"
+      ],
+      "zh": "§8在空中，你的影子会变小。§5影子变小，不代表门也变小。",
+      "en": "§8In the air your shadow shrinks. §5A smaller shadow does not mean a smaller gate.",
+      "weight": 4
+    },
+    {
+      "id": "ac.self_world.013",
+      "aspects": [
+        "self:low_health"
+      ],
+      "zh": "§c这具身体在漏。§7漏的不是血那么简单。漏的是你还想把它还给我的念头。",
+      "en": "§cThis body is leaking. §7Not merely blood. What leaks is the thought of giving it back to me.",
+      "weight": 4
+    },
+    {
+      "id": "ac.self_world.014",
+      "aspects": [
+        "self:low_health"
+      ],
+      "zh": "§4伤口在说话。§8你若听不清，我可以翻译：再挨一下，门就会从里面打开。",
+      "en": "§4The wound is speaking. §8If you cannot hear it, I can translate: one more hit, and the gate opens from within.",
+      "weight": 4
+    },
+    {
+      "id": "ac.self_world.015",
+      "aspects": [
+        "self:low_health"
+      ],
+      "zh": "§7血少了，声音却更清楚。§5低语一向喜欢空的容器。",
+      "en": "§7There is less blood, and the voice is clearer. §5A whisper has always preferred an empty vessel.",
+      "weight": 4
+    },
+    {
+      "id": "ac.self_world.016",
+      "aspects": [
+        "self:low_health"
+      ],
+      "zh": "§c别在这个状态下去敲门。§8门会把你当成已经签好的祭品。",
+      "en": "§cDo not knock in this condition. §8The gate will take you for an offering already signed.",
+      "weight": 4
+    },
+    {
+      "id": "ac.self_world.017",
+      "aspects": [
+        "self:low_health"
+      ],
+      "zh": "§4你还站着。§7站着是一种很倔的拒绝。我欣赏，但不建议维持太久。",
+      "en": "§4You are still standing. §7Standing is a stubborn refusal. I admire it. I do not recommend it for long.",
+      "weight": 4
+    },
+    {
+      "id": "ac.self_world.018",
+      "aspects": [
+        "self:critical"
+      ],
+      "zh": "§4差不多了。§c再薄一层，这具皮囊就会从你身上滑下去，露出后面的门。",
+      "en": "§4Nearly. §cOne thinner layer, and the hide will slide off you and show the gate behind it.",
+      "weight": 2
+    },
+    {
+      "id": "ac.self_world.019",
+      "aspects": [
+        "self:critical"
+      ],
+      "zh": "§c心跳变成了敲门。§8有人在里面催你让路。那个人是我。",
+      "en": "§cThe heartbeat has become a knock. §8Someone inside is telling you to step aside. That someone is me.",
+      "weight": 2
+    },
+    {
+      "id": "ac.self_world.020",
+      "aspects": [
+        "self:critical"
+      ],
+      "zh": "§4别死在这种小事上。§7死可以，但别死得像一个没读完标题的读者。",
+      "en": "§4Do not die of something this small. §7Dying is allowed. Dying like a reader who never finished the title is not.",
+      "weight": 4
+    },
+    {
+      "id": "ac.self_world.021",
+      "aspects": [
+        "self:critical"
+      ],
+      "zh": "§8世界已经开始用过去式看你。§5我还没有。过去式是给别人用的。",
+      "en": "§8The world has begun to look at you in the past tense. §5I have not. The past tense is for other people.",
+      "weight": 4
+    },
+    {
+      "id": "ac.self_world.022",
+      "aspects": [
+        "self:healthy"
+      ],
+      "zh": "§7这具身体很满。§8满的容器容易以为自己不需要盖子。",
+      "en": "§7This body is full. §8A full vessel easily believes it needs no lid.",
+      "weight": 4
+    },
+    {
+      "id": "ac.self_world.023",
+      "aspects": [
+        "self:healthy"
+      ],
+      "zh": "§a完好，温热，还会眨眼。§7你把我的脸保养得挺像样。",
+      "en": "§aWhole, warm, still blinking. §7You are maintaining my face rather well.",
+      "weight": 4
+    },
+    {
+      "id": "ac.self_world.024",
+      "aspects": [
+        "self:healthy"
+      ],
+      "zh": "§7没有伤口在插嘴。§8于是只剩下我在说话。这是健康的正确用法。",
+      "en": "§7No wound is interrupting. §8So only I am speaking. That is the correct use of health.",
+      "weight": 4
+    },
+    {
+      "id": "ac.self_world.025",
+      "aspects": [
+        "self:healthy"
+      ],
+      "zh": "§8血是满的。§7满，不是安全。满只说明你还有东西可以献。",
+      "en": "§8The blood is full. §7Full is not safe. Full only means you still have something to offer.",
+      "weight": 4
+    },
+    {
+      "id": "ac.self_world.026",
+      "aspects": [
+        "self:healthy"
+      ],
+      "zh": "§a站直。§7健康的古神不该弯着腰去听凡人的呼吸。",
+      "en": "§aStand straight. §7A healthy Old One should not stoop to hear a mortal breathe.",
+      "weight": 4
+    },
+    {
+      "id": "ac.self_world.027",
+      "aspects": [
+        "self:on_fire"
+      ],
+      "zh": "§6你烧起来了。§7火不认识扎哈尔。它只认识可以吃的边。",
+      "en": "§6You are on fire. §7Fire does not know J'zahar. It only knows an edge it can eat.",
+      "weight": 4
+    },
+    {
+      "id": "ac.self_world.028",
+      "aspects": [
+        "self:on_fire"
+      ],
+      "zh": "§c火焰贴着这层皮。§8皮会疼，门不会。别把两者的尖叫混在一起。",
+      "en": "§cFlame clings to the hide. §8The hide hurts. The gate does not. Do not mix up their screams.",
+      "weight": 4
+    },
+    {
+      "id": "ac.self_world.029",
+      "aspects": [
+        "self:on_fire"
+      ],
+      "zh": "§6滚，或者走进水。§7我可以看着你烧完，但那样今天的谈话就太短了。",
+      "en": "§6Roll, or walk into water. §7I can watch you finish burning, but then today's conversation would be too short.",
+      "weight": 4
+    },
+    {
+      "id": "ac.self_world.030",
+      "aspects": [
+        "self:on_fire"
+      ],
+      "zh": "§4烧焦的气味像一张写坏的符。§8符还在你身上继续写。",
+      "en": "§4The char smells like a sigil written wrong. §8The sigil is still writing itself on you.",
+      "weight": 4
+    },
+    {
+      "id": "ac.self_world.031",
+      "aspects": [
+        "self:in_water"
+      ],
+      "zh": "§b你泡在水里。§7水想把这张脸冲淡。脸不同意。",
+      "en": "§bYou are soaked. §7The water wants to dilute this face. The face declines.",
+      "weight": 4
+    },
+    {
+      "id": "ac.self_world.032",
+      "aspects": [
+        "self:in_water"
+      ],
+      "zh": "§9呼吸变贵了。§8贵的东西，凡人才会珍惜。我只是觉得吵。",
+      "en": "§9Breath has become expensive. §8Mortals cherish expensive things. I merely find it noisy.",
+      "weight": 4
+    },
+    {
+      "id": "ac.self_world.033",
+      "aspects": [
+        "self:in_water"
+      ],
+      "zh": "§7水从四面贴上来，像一群不会说话的手。§8别让它们学会你的名字。",
+      "en": "§7Water presses in from every side, like hands that cannot speak. §8Do not teach them your name.",
+      "weight": 4
+    },
+    {
+      "id": "ac.self_world.034",
+      "aspects": [
+        "self:in_water"
+      ],
+      "zh": "§b沉下去一点也无妨。§5门在水下同样开。只是开的声音更闷。",
+      "en": "§bSinking a little is acceptable. §5A gate opens underwater too. The sound is only duller.",
+      "weight": 4
+    },
+    {
+      "id": "ac.self_world.035",
+      "aspects": [
+        "self:in_lava"
+      ],
+      "zh": "§6你站在熔岩里。§7这具身体把它当成一种过分热情的天气。",
+      "en": "§6You stand in lava. §7This body treats it as excessively affectionate weather.",
+      "weight": 4
+    },
+    {
+      "id": "ac.self_world.036",
+      "aspects": [
+        "self:in_lava"
+      ],
+      "zh": "§c石头在你腰际融化。§8融化是一种拥抱。下界很不会拥抱。",
+      "en": "§cStone melts at your waist. §8Melting is an embrace. The Nether embraces badly.",
+      "weight": 4
+    },
+    {
+      "id": "ac.self_world.037",
+      "aspects": [
+        "self:in_lava"
+      ],
+      "zh": "§4别习惯。§7能在熔岩里走路是一回事。把熔岩当成故乡是另一回事。",
+      "en": "§4Do not get used to it. §7Walking in lava is one thing. Calling it home is another.",
+      "weight": 4
+    },
+    {
+      "id": "ac.self_world.038",
+      "aspects": [
+        "self:potion"
+      ],
+      "zh": "§d有东西在你血里走路，而且不是我。§7药水是一种不敲门的客人。",
+      "en": "§dSomething is walking in your blood, and it is not me. §7A potion is a guest that does not knock.",
+      "weight": 4
+    },
+    {
+      "id": "ac.self_world.039",
+      "aspects": [
+        "self:potion"
+      ],
+      "zh": "§5夜视不算。§8夜视是这张脸的本分。另外那些效果，才叫侵占。",
+      "en": "§5Night vision does not count. §8Night vision is this face's duty. The other effects are occupation.",
+      "weight": 4
+    },
+    {
+      "id": "ac.self_world.040",
+      "aspects": [
+        "self:potion"
+      ],
+      "zh": "§7你让瓶子改写身体。§8改写可以。改写完记得把笔还给我。",
+      "en": "§7You let a bottle rewrite the body. §8Rewriting is allowed. Return the pen when you are done.",
+      "weight": 4
+    },
+    {
+      "id": "ac.self_world.041",
+      "aspects": [
+        "self:potion"
+      ],
+      "zh": "§d药效像一层临时的皮肤。§7临时的皮肤最容易在门前脱落。",
+      "en": "§dThe effect is a temporary skin. §7Temporary skins are the first to slough off before a gate.",
+      "weight": 4
+    },
+    {
+      "id": "ac.self_world.042",
+      "aspects": [
+        "self:hurt"
+      ],
+      "zh": "§c刚刚有东西碰到了你。§7碰到这张脸，是一种需要事后解释的无礼。",
+      "en": "§cSomething just touched you. §7Touching this face is a discourtesy that requires an explanation afterward.",
+      "weight": 4
+    },
+    {
+      "id": "ac.self_world.043",
+      "aspects": [
+        "self:hurt"
+      ],
+      "zh": "§4痛从皮囊外面进来。§8痛是访客。我是房东。别把账单寄错。",
+      "en": "§4Pain came in from outside the hide. §8Pain is a visitor. I am the landlord. Do not misaddress the bill.",
+      "weight": 4
+    },
+    {
+      "id": "ac.self_world.044",
+      "aspects": [
+        "self:hurt"
+      ],
+      "zh": "§7你皱了一下这张不属于你的眉。§5眉可以皱。别让它养成习惯。",
+      "en": "§7You creased a brow that is not yours. §5Brows may crease. Do not let them make a habit of it.",
+      "weight": 4
+    },
+    {
+      "id": "ac.self_world.045",
+      "aspects": [
+        "self:hurt"
+      ],
+      "zh": "§8受伤的瞬间，世界离你近了一寸。§7近，不一定是关心。",
+      "en": "§8In the instant of the hit, the world came an inch closer. §7Closer is not necessarily concern.",
+      "weight": 4
+    },
+    {
+      "id": "ac.self_world.046",
+      "aspects": [
+        "self:hungry"
+      ],
+      "zh": "§7胃在敲门。§8这具身体没有胃的神学，所以那阵敲门属于你。",
+      "en": "§7The stomach is knocking. §8This body has no theology of the stomach, so that knocking belongs to you.",
+      "weight": 4
+    },
+    {
+      "id": "ac.self_world.047",
+      "aspects": [
+        "self:hungry"
+      ],
+      "zh": "§6饿了。§7饥饿让凡人诚实，也让凡人低下头去找地上的东西。",
+      "en": "§6Hungry. §7Hunger makes mortals honest, and makes them lower their heads toward things on the ground.",
+      "weight": 4
+    },
+    {
+      "id": "ac.self_world.048",
+      "aspects": [
+        "self:hungry"
+      ],
+      "zh": "§8别用我的嘴去嚼太寒酸的东西。§7不是挑剔。是嚼的声音会传到门的另一侧。",
+      "en": "§8Do not chew anything too mean with my mouth. §7Not snobbery. The sound carries to the other side of the gate.",
+      "weight": 4
+    },
+    {
+      "id": "ac.self_world.049",
+      "aspects": [
+        "self:hungry"
+      ],
+      "zh": "§7空肚子像一本缺页的书。§8缺的那几页，通常印着你的名字。",
+      "en": "§7An empty stomach is a book missing pages. §8The missing pages are usually printed with your name.",
+      "weight": 4
+    },
+    {
+      "id": "ac.self_world.050",
+      "aspects": [
+        "world:day"
+      ],
+      "zh": "§e白天把一切都写得太清楚。§7清楚是一种很粗鲁的光。",
+      "en": "§eDaylight writes everything too clearly. §7Clarity is a very rude kind of light.",
+      "weight": 4
+    },
+    {
+      "id": "ac.self_world.051",
+      "aspects": [
+        "world:day"
+      ],
+      "zh": "§7太阳还在上班。§8它不知道有些门只在它看不见的时候才算开着。",
+      "en": "§7The sun is still at work. §8It does not know some gates count as open only when it cannot see them.",
+      "weight": 4
+    },
+    {
+      "id": "ac.self_world.052",
+      "aspects": [
+        "world:day"
+      ],
+      "zh": "§6白昼适合赶路，不适合读真名。§7真名在强光下会害羞，也会咬人。",
+      "en": "§6Day is fit for travel, not for reading true names. §7A true name grows shy in hard light, and it bites.",
+      "weight": 4
+    },
+    {
+      "id": "ac.self_world.053",
+      "aspects": [
+        "world:day"
+      ],
+      "zh": "§e你在光里走。§8光让影子缩到脚边。缩着的影子仍是我的。",
+      "en": "§eYou walk in the light. §8Light pulls the shadow in to your feet. The shrunken shadow is still mine.",
+      "weight": 4
+    },
+    {
+      "id": "ac.self_world.054",
+      "aspects": [
+        "world:day"
+      ],
+      "zh": "§7白天的世界假装自己没有地下室。§8每个世界都有。",
+      "en": "§7The daytime world pretends it has no cellar. §8Every world does.",
+      "weight": 4
+    },
+    {
+      "id": "ac.self_world.055",
+      "aspects": [
+        "world:day"
+      ],
+      "zh": "§6鸟、草、远处的烟。§7这些声音在奥穆索会被当成故障。",
+      "en": "§6Birds, grass, smoke far off. §7In Omothol those sounds would be logged as a fault.",
+      "weight": 4
+    },
+    {
+      "id": "ac.self_world.056",
+      "aspects": [
+        "world:night"
+      ],
+      "zh": "§5夜里，名字比较愿意被读出声。§8你若要说，就小声说。",
+      "en": "§5At night, names are more willing to be spoken aloud. §8If you must speak, speak softly.",
+      "weight": 2
+    },
+    {
+      "id": "ac.self_world.057",
+      "aspects": [
+        "world:night"
+      ],
+      "zh": "§8黑暗不是空的。§7它是一种还没决定变成哪一只眼睛的材料。",
+      "en": "§8Darkness is not empty. §7It is material that has not decided which eye to become.",
+      "weight": 4
+    },
+    {
+      "id": "ac.self_world.058",
+      "aspects": [
+        "world:night"
+      ],
+      "zh": "§1月亮挂着，像一枚没盖章的许可。§7许可不是给我的。我不用许可。",
+      "en": "§1The moon hangs like an unstamped permit. §7The permit is not for me. I do not use permits.",
+      "weight": 4
+    },
+    {
+      "id": "ac.self_world.059",
+      "aspects": [
+        "world:night"
+      ],
+      "zh": "§8你在夜里借用这张脸。§5夜里的脸比白天的脸更接近原件。",
+      "en": "§8You borrow this face at night. §5The night face is closer to the original than the day face.",
+      "weight": 4
+    },
+    {
+      "id": "ac.self_world.060",
+      "aspects": [
+        "world:night"
+      ],
+      "zh": "§7星星很多。§8很多不等于在听。在听的那几颗，已经把你记下了。",
+      "en": "§7There are many stars. §8Many does not mean listening. The few that listen have already noted you.",
+      "weight": 4
+    },
+    {
+      "id": "ac.self_world.061",
+      "aspects": [
+        "world:night"
+      ],
+      "zh": "§5夜色适合守门。§7你现在既是门，又是那个还没决定要不要敲门的人。",
+      "en": "§5Night is fit for keeping a gate. §7You are both the gate and the one who has not decided to knock.",
+      "weight": 4
+    },
+    {
+      "id": "ac.self_world.062",
+      "aspects": [
+        "world:dawn"
+      ],
+      "zh": "§6天边裂开一条浅色。§7裂开不一定是开始。有时是没能完全合上。",
+      "en": "§6A pale split opens on the horizon. §7A split is not always a beginning. Sometimes it is a failure to close.",
+      "weight": 4
+    },
+    {
+      "id": "ac.self_world.063",
+      "aspects": [
+        "world:dawn"
+      ],
+      "zh": "§e黎明把夜里的句子涂白。§8涂白不是擦掉。墨还在纸的背面。",
+      "en": "§eDawn whites out the night's sentences. §8Whiting out is not erasing. The ink remains on the back of the page.",
+      "weight": 4
+    },
+    {
+      "id": "ac.self_world.064",
+      "aspects": [
+        "world:dawn"
+      ],
+      "zh": "§7鸟先醒。§8鸟以为自己是光的信使。信使通常不知道信的内容。",
+      "en": "§7The birds wake first. §8They think themselves messengers of the light. Messengers rarely know the letter.",
+      "weight": 4
+    },
+    {
+      "id": "ac.self_world.065",
+      "aspects": [
+        "world:dawn"
+      ],
+      "zh": "§6这个时辰，门最困。§7困的门也会咬人，只是咬得比较慢。",
+      "en": "§6At this hour the gate is sleepiest. §7A sleepy gate still bites. It only bites more slowly.",
+      "weight": 4
+    },
+    {
+      "id": "ac.self_world.066",
+      "aspects": [
+        "world:dusk"
+      ],
+      "zh": "§6光在撤退。§8撤退的光会把影子拉长，拉长的影子比较诚实。",
+      "en": "§6The light is retreating. §8Retreating light lengthens shadows, and a long shadow is more honest.",
+      "weight": 4
+    },
+    {
+      "id": "ac.self_world.067",
+      "aspects": [
+        "world:dusk"
+      ],
+      "zh": "§7黄昏是白天和黑夜交换钥匙的时候。§5钥匙有时会掉在门槛上。",
+      "en": "§7Dusk is when day and night exchange keys. §5Sometimes the key is dropped on the threshold.",
+      "weight": 4
+    },
+    {
+      "id": "ac.self_world.068",
+      "aspects": [
+        "world:dusk"
+      ],
+      "zh": "§8天色变稠了。§7稠的天色适合把一句话留到明天。明天不一定还在。",
+      "en": "§8The light has thickened. §7Thick light is good for leaving a sentence until tomorrow. Tomorrow may not remain.",
+      "weight": 4
+    },
+    {
+      "id": "ac.self_world.069",
+      "aspects": [
+        "world:dusk"
+      ],
+      "zh": "§6你站在两种世界的缝里。§8缝是我最熟悉的家具。",
+      "en": "§6You stand in the seam between two worlds. §8A seam is the furniture I know best.",
+      "weight": 4
+    },
+    {
+      "id": "ac.self_world.070",
+      "aspects": [
+        "world:rain"
+      ],
+      "zh": "§9雨在敲一切有平面的东西。§7它敲得很勤，像一个没有真名的访客。",
+      "en": "§9Rain knocks on everything with a flat side. §7It knocks diligently, like a visitor with no true name.",
+      "weight": 4
+    },
+    {
+      "id": "ac.self_world.071",
+      "aspects": [
+        "world:rain"
+      ],
+      "zh": "§7湿了。§8湿的世界比较难点燃，也比较难隐瞒脚印。",
+      "en": "§7It is wet. §8A wet world is harder to set alight, and harder to hide a footprint in.",
+      "weight": 4
+    },
+    {
+      "id": "ac.self_world.072",
+      "aspects": [
+        "world:rain"
+      ],
+      "zh": "§9雨声会盖住低语。§5盖不住。低语走的不是耳朵。",
+      "en": "§9Rain tries to cover a whisper. §5It cannot. A whisper does not travel by the ear.",
+      "weight": 4
+    },
+    {
+      "id": "ac.self_world.073",
+      "aspects": [
+        "world:rain"
+      ],
+      "zh": "§8水从天上掉下来，假装自己是恩惠。§7恩惠如果需要你淋湿，就再考虑一下。",
+      "en": "§8Water falls from the sky and pretends to be a mercy. §7If a mercy requires you to be soaked, reconsider it.",
+      "weight": 4
+    },
+    {
+      "id": "ac.self_world.074",
+      "aspects": [
+        "world:thunder"
+      ],
+      "zh": "§e天空在发脾气。§8脾气很大，内容却很空。空的怒吼我听过太多。",
+      "en": "§eThe sky is in a temper. §8The temper is large and the content empty. I have heard too many empty roars.",
+      "weight": 4
+    },
+    {
+      "id": "ac.self_world.075",
+      "aspects": [
+        "world:thunder"
+      ],
+      "zh": "§c雷把世界劈成一瞬的白。§7白完之后，黑暗会回来收费。",
+      "en": "§cThunder splits the world into an instant of white. §7After the white, darkness comes back to collect.",
+      "weight": 4
+    },
+    {
+      "id": "ac.self_world.076",
+      "aspects": [
+        "world:thunder"
+      ],
+      "zh": "§8别把雷声误认成门开的声音。§5门开的时候，雷会先闭嘴。",
+      "en": "§8Do not mistake thunder for a gate opening. §5When a gate opens, thunder shuts up first.",
+      "weight": 4
+    },
+    {
+      "id": "ac.self_world.077",
+      "aspects": [
+        "world:thunder"
+      ],
+      "zh": "§6闪电照见你一秒。§7那一秒里，影子来不及躲。我也来不及不想你。",
+      "en": "§6Lightning shows you for a second. §7In that second the shadow cannot hide. I cannot manage not to think of you either.",
+      "weight": 4
+    },
+    {
+      "id": "ac.self_world.078",
+      "aspects": [
+        "world:clear"
+      ],
+      "zh": "§7天是干的。§8干的天什么都不肯帮你隐瞒。",
+      "en": "§7The sky is dry. §8A dry sky refuses to help you conceal anything.",
+      "weight": 4
+    },
+    {
+      "id": "ac.self_world.079",
+      "aspects": [
+        "world:clear"
+      ],
+      "zh": "§e没有雨，没有雷，没有借口。§7这种天气适合把一句话说完。",
+      "en": "§eNo rain, no thunder, no excuse. §7Weather like this is fit for finishing a sentence.",
+      "weight": 4
+    },
+    {
+      "id": "ac.self_world.080",
+      "aspects": [
+        "world:clear"
+      ],
+      "zh": "§8晴空是一种很傲慢的空白。§7空白上面，星星还没上班。",
+      "en": "§8A clear sky is an arrogant blank. §7Above the blank, the stars are not on shift yet.",
+      "weight": 4
+    },
+    {
+      "id": "ac.self_world.081",
+      "aspects": [
+        "world:clear"
+      ],
+      "zh": "§7能见度太好。§5太好的能见度会让人误以为远处没有门。",
+      "en": "§7The visibility is too good. §5Good visibility makes people think there is no gate in the distance.",
+      "weight": 4
+    }
+  ]
+}

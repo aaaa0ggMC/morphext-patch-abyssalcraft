@@ -1,0 +1,10 @@
+{
+  "files": [
+    "block_item.json",
+    "entity.json",
+    "fallback.json",
+    "mixed.json",
+    "place.json",
+    "self_world.json"
+  ]
+}

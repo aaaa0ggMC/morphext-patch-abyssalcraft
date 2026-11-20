@@ -2,6 +2,8 @@ package aaaa0ggmc.morphext.abyssalcraft.proxy;
 
 import aaaa0ggmc.morphext.abyssalcraft.AbyssalCoreIntegration;
 import aaaa0ggmc.morphext.abyssalcraft.SafeCleansingRitualHandler;
+import aaaa0ggmc.morphext.abyssalcraft.converse.ConverseCatalog;
+import aaaa0ggmc.morphext.abyssalcraft.converse.ConverseDetectors;
 import aaaa0ggmc.morphext.client.hand.GenericHandRegistry;
 import aaaa0ggmc.morphext.client.hand.HandPreset;
 import aaaa0ggmc.morphext.client.render.GenericMorphRenderRegistry;
@@ -15,6 +17,9 @@ public class ClientProxy extends CommonProxy {
     @Override
     public void preInit(FMLPreInitializationEvent event) {
         super.preInit(event);
+        if (event != null) {
+            ConverseCatalog.setConfigDirectory(event.getModConfigurationDirectory());
+        }
         net.minecraftforge.fml.client.registry.RenderingRegistry.registerEntityRenderingHandler(
                 aaaa0ggmc.morphext.abyssalcraft.entity.MorphEntityBlackHole.class,
                 com.shinoow.abyssalcraft.client.render.entity.RenderBlackHole::new
@@ -29,6 +34,8 @@ public class ClientProxy extends CommonProxy {
     public void init(FMLInitializationEvent event) {
         super.init(event);
         SafeCleansingRitualHandler.install();
+        ConverseDetectors.installDefaults();
+        ConverseCatalog.load();
         aaaa0ggmc.morphext.variant.MorphCreativeInjector.registerProvider(new aaaa0ggmc.morphext.abyssalcraft.variant.AbyssalCraftVariantProvider());
         /*
          * AGENTS.md §1.2 迁移承接（客户端侧）：
