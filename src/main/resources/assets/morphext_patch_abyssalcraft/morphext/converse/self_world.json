@@ -728,6 +728,321 @@
       "zh": "§7能见度太好。§5太好的能见度会让人误以为远处没有门。",
       "en": "§7The visibility is too good. §5Good visibility makes people think there is no gate in the distance.",
       "weight": 4
+    },
+    {
+      "id": "ac.self_world.082",
+      "aspects": [
+        "self:critical"
+      ],
+      "zh": "§4这具身体正在把句子写到最后一行。§8最后一行通常很短，而且不肯重来。",
+      "en": "§4This body is writing the sentence down to its last line. §8The last line is usually short, and it refuses a rewrite.",
+      "weight": 4
+    },
+    {
+      "id": "ac.self_world.083",
+      "aspects": [
+        "self:critical"
+      ],
+      "zh": "§c血少到可以数。§7能数的东西就快结束。结束之前，我还听得见你。",
+      "en": "§cThe blood is low enough to count. §7What can be counted is near its end. Before the end, I can still hear you.",
+      "weight": 4
+    },
+    {
+      "id": "ac.self_world.084",
+      "aspects": [
+        "self:flying"
+      ],
+      "zh": "§b你离开了地面的合同。§8合同暂时失效，重力仍在草稿里等你签字回来。",
+      "en": "§bYou have left the ground's contract. §8The contract is suspended. Gravity is still in the draft, waiting for your signature back.",
+      "weight": 4
+    },
+    {
+      "id": "ac.self_world.085",
+      "aspects": [
+        "self:flying"
+      ],
+      "zh": "§7从上面看，名字都变小。§8变小不是消失。是它们在等你落下来重新变大。",
+      "en": "§7From above, names look smaller. §8Smaller is not gone. They are waiting for you to land and become large again.",
+      "weight": 4
+    },
+    {
+      "id": "ac.self_world.086",
+      "aspects": [
+        "self:healthy"
+      ],
+      "zh": "§a这具身体目前没什么可抱怨的。§8没抱怨的时候，最适合听一句不舒服的话。",
+      "en": "§aThis body has little to complain of at the moment. §8The moment without complaint is the right moment for an uncomfortable sentence.",
+      "weight": 4
+    },
+    {
+      "id": "ac.self_world.087",
+      "aspects": [
+        "self:hungry"
+      ],
+      "zh": "§6胃在敲门。§8敲的不是饭。是一种很老的、比神更早的要求。",
+      "en": "§6The stomach is knocking. §8It is not knocking for a meal. It is an old demand, older than gods.",
+      "weight": 4
+    },
+    {
+      "id": "ac.self_world.088",
+      "aspects": [
+        "self:hungry"
+      ],
+      "zh": "§7饿会把世界翻译成食物。§8翻译得很差，可它很坚持。",
+      "en": "§7Hunger translates the world into food. §8The translation is poor, and it is persistent.",
+      "weight": 4
+    },
+    {
+      "id": "ac.self_world.089",
+      "aspects": [
+        "self:hurt"
+      ],
+      "zh": "§c刚挨的那一下还在皮肤上签名。§8签名未干。别急着把它当成过去。",
+      "en": "§cThe blow you just took is still signing the skin. §8The signature is wet. Do not file it as the past yet.",
+      "weight": 4
+    },
+    {
+      "id": "ac.self_world.090",
+      "aspects": [
+        "self:hurt"
+      ],
+      "zh": "§4痛是身体的信使，而且它不敲门。§7信的内容通常只有一个字：还在。",
+      "en": "§4Pain is the body's messenger, and it does not knock. §7The letter usually contains one word: still.",
+      "weight": 4
+    },
+    {
+      "id": "ac.self_world.091",
+      "aspects": [
+        "self:in_lava"
+      ],
+      "zh": "§c你在熔岩里。§4这不是沐浴。沐浴结束以后人还在，而且皮还是原来的皮。",
+      "en": "§cYou are in lava. §4This is not a bath. After a bath the person remains, and the skin is still the same skin.",
+      "weight": 4
+    },
+    {
+      "id": "ac.self_world.092",
+      "aspects": [
+        "self:in_lava"
+      ],
+      "zh": "§6热把时间缩短了。§8缩短以后，每一秒都贵得像最后一秒。有几秒确实是。",
+      "en": "§6Heat has shortened time. §8After the shortening, every second is priced like the last. A few of them are.",
+      "weight": 4
+    },
+    {
+      "id": "ac.self_world.093",
+      "aspects": [
+        "self:in_lava"
+      ],
+      "zh": "§4往外走。§c熔岩不收留房客。它只收留燃料，而且不开发票。",
+      "en": "§4Walk out. §cLava does not take lodgers. It takes fuel, and it does not issue a receipt.",
+      "weight": 4
+    },
+    {
+      "id": "ac.self_world.094",
+      "aspects": [
+        "self:in_water"
+      ],
+      "zh": "§9水没过这具身体的时候，声音会先变远。§8远的是外面的世界。近的是你自己的心跳。",
+      "en": "§9When the water covers this body, sound goes far first. §8What goes far is the outside world. What stays near is your own pulse.",
+      "weight": 4
+    },
+    {
+      "id": "ac.self_world.095",
+      "aspects": [
+        "self:in_water"
+      ],
+      "zh": "§b泡在水里，重量会被暂时赦免。§7赦免有期限。上岸的时候，重量会连本带利回来。",
+      "en": "§bSoaked, the weight is briefly pardoned. §7The pardon has a term. When you come ashore, the weight returns with interest.",
+      "weight": 4
+    },
+    {
+      "id": "ac.self_world.096",
+      "aspects": [
+        "self:low_health"
+      ],
+      "zh": "§c还没到最后一行，可纸已经透了。§8透光的纸不适合再写很长的计划。",
+      "en": "§cNot the last line yet, but the paper is already showing light through. §8Paper that shows light is a poor place for a long plan.",
+      "weight": 4
+    },
+    {
+      "id": "ac.self_world.097",
+      "aspects": [
+        "self:on_fire"
+      ],
+      "zh": "§c你着了。§6火不关心你是谁的皮囊。它只关心还有没有可以烧的续篇。",
+      "en": "§cYou are burning. §6Fire does not care whose hide this is. It only cares whether there is a sequel left to burn.",
+      "weight": 4
+    },
+    {
+      "id": "ac.self_world.098",
+      "aspects": [
+        "self:on_fire"
+      ],
+      "zh": "§4先灭。§8哲学可以等。火不等。火的语法里没有稍后。",
+      "en": "§4Put it out first. §8Philosophy can wait. Fire does not. Fire's grammar has no later.",
+      "weight": 4
+    },
+    {
+      "id": "ac.self_world.099",
+      "aspects": [
+        "self:potion"
+      ],
+      "zh": "§d血里有一种不属于这具身体的语法。§8语法在生效。生效的东西，不一定是你邀请的。",
+      "en": "§dThere is a grammar in the blood that does not belong to this body. §8The grammar is in effect. What is in effect was not necessarily invited.",
+      "weight": 4
+    },
+    {
+      "id": "ac.self_world.100",
+      "aspects": [
+        "self:potion"
+      ],
+      "zh": "§5药水还在改你。§7改完以前，别太相信现在的勇气。勇气可能是借来的，而且会过期。",
+      "en": "§5The potion is still editing you. §7Until it finishes, do not trust the present courage. It may be borrowed, and it expires.",
+      "weight": 4
+    },
+    {
+      "id": "ac.self_world.101",
+      "aspects": [
+        "self:sneaking"
+      ],
+      "zh": "§7你把呼吸也放低了。§8放低的呼吸像一句括号里的话。括号挡得住读者，挡不住门。",
+      "en": "§7You have lowered your breath as well. §8A lowered breath is a sentence in parentheses. Parentheses stop a reader. They do not stop a gate.",
+      "weight": 4
+    },
+    {
+      "id": "ac.self_world.102",
+      "aspects": [
+        "self:sneaking"
+      ],
+      "zh": "§8潜行的人以为自己在减少存在。§7存在不是体积。你弯下腰，名字还是原来的高度。",
+      "en": "§8A sneaking person thinks they are reducing their existence. §7Existence is not volume. You bend, and the name stays at its old height.",
+      "weight": 4
+    },
+    {
+      "id": "ac.self_world.103",
+      "aspects": [
+        "self:sprinting"
+      ],
+      "zh": "§c跑的时候，世界变成两条线。§8线的尽头如果是牙，线不会提前告诉你。",
+      "en": "§cWhile you run, the world becomes two lines. §8If the end of the line is teeth, the line will not warn you early.",
+      "weight": 4
+    },
+    {
+      "id": "ac.self_world.104",
+      "aspects": [
+        "self:sprinting"
+      ],
+      "zh": "§6急什么。§7急是一种把后面的东西邀请到前面来的方式。",
+      "en": "§6Why the hurry. §7Hurry is a way of inviting what is behind to arrive in front.",
+      "weight": 4
+    },
+    {
+      "id": "ac.self_world.105",
+      "aspects": [
+        "world:clear"
+      ],
+      "zh": "§e天是干的。§8干的天不帮忙隐瞒。你的影子被晒得无可辩驳。",
+      "en": "§eThe sky is dry. §8A dry sky does not help you hide. Your shadow is sunned into something undeniable.",
+      "weight": 4
+    },
+    {
+      "id": "ac.self_world.106",
+      "aspects": [
+        "world:clear"
+      ],
+      "zh": "§7晴天是一种没有借口的照明。§8没有借口的时候，人最容易以为自己安全。",
+      "en": "§7Clear weather is a light with no excuse attached. §8When there is no excuse, people are quickest to think themselves safe.",
+      "weight": 4
+    },
+    {
+      "id": "ac.self_world.107",
+      "aspects": [
+        "world:clear"
+      ],
+      "zh": "§e云今天不上班。§8不上班的遮蔽，把你直接交给上面的眼睛。",
+      "en": "§eThe clouds are off duty today. §8When cover does not come to work, you are handed directly to the eyes above.",
+      "weight": 4
+    },
+    {
+      "id": "ac.self_world.108",
+      "aspects": [
+        "world:clear"
+      ],
+      "zh": "§6能见度很好。§7很好的意思是：别人也看得见你。",
+      "en": "§6Visibility is excellent. §7Excellent means other things can see you too.",
+      "weight": 4
+    },
+    {
+      "id": "ac.self_world.109",
+      "aspects": [
+        "world:dawn"
+      ],
+      "zh": "§6天边在重新起草光。§8草稿很薄。薄的光最先照见还没离开的东西。",
+      "en": "§6The horizon is redrafting the light. §8The draft is thin. Thin light shows first what has not yet left.",
+      "weight": 4
+    },
+    {
+      "id": "ac.self_world.110",
+      "aspects": [
+        "world:dawn"
+      ],
+      "zh": "§e夜里的合同快到期了。§7到期不等于作废。有些签名用的是牙，不是墨。",
+      "en": "§eThe night's contract is nearly expired. §7Expiry is not annulment. Some signatures were made with teeth, not ink.",
+      "weight": 4
+    },
+    {
+      "id": "ac.self_world.111",
+      "aspects": [
+        "world:dusk"
+      ],
+      "zh": "§6光在收回它的担保。§8担保一撤，影子就不用再解释自己为什么变长。",
+      "en": "§6The light is withdrawing its guarantee. §8Once the guarantee goes, a shadow no longer has to explain why it lengthened.",
+      "weight": 4
+    },
+    {
+      "id": "ac.self_world.112",
+      "aspects": [
+        "world:dusk"
+      ],
+      "zh": "§e这个时辰最适合把话说短。§7短话在天黑以前还能落地。长话会留在外面过夜。",
+      "en": "§eThis hour is the right hour for short sentences. §7A short sentence can still land before dark. A long one will be left outside overnight.",
+      "weight": 4
+    },
+    {
+      "id": "ac.self_world.113",
+      "aspects": [
+        "world:rain"
+      ],
+      "zh": "§9雨在替地面洗脸。§8洗掉的如果是脚印，别高兴。雨有自己的档案室，叫泥。",
+      "en": "§9The rain is washing the ground's face. §8If what it washes off is a footprint, do not be pleased. Rain has its own archive. It is called mud.",
+      "weight": 4
+    },
+    {
+      "id": "ac.self_world.114",
+      "aspects": [
+        "world:rain"
+      ],
+      "zh": "§7湿透的世界听得更清楚。§8清楚不是恩惠。是你的脚步失去了干燥的借口。",
+      "en": "§7A soaked world hears more clearly. §8Clarity is not a favor. Your step has lost the excuse of being dry.",
+      "weight": 4
+    },
+    {
+      "id": "ac.self_world.115",
+      "aspects": [
+        "world:thunder"
+      ],
+      "zh": "§e雷把天撕开一条缝。§8缝里不一定有门。可每一次撕开，门都会侧耳。",
+      "en": "§eThunder tears a seam in the sky. §8There is not always a gate in the seam. But every tear makes a gate turn its ear.",
+      "weight": 4
+    },
+    {
+      "id": "ac.self_world.116",
+      "aspects": [
+        "world:thunder"
+      ],
+      "zh": "§6先看见光，后听见判决。§7这个顺序对凡人很仁慈。仁慈只有一两秒。",
+      "en": "§6The light arrives first, the verdict after. §7That order is merciful to mortals. The mercy lasts a second or two.",
+      "weight": 4
     }
   ]
 }

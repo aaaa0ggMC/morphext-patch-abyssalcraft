@@ -887,8 +887,8 @@
       "aspects": [
         "item:armor"
       ],
-      "zh": "§7穿着 {item}，你仍是软的。§5软的那一层不在甲下面，在你还肯眨眼的地方。",
-      "en": "§7Wearing {item}, you are still soft. §5The soft layer is not under the plate. It is where you still blink.",
+      "zh": "§7拿着 {item}，你仍是软的。§5甲在手里。软的那一层在你还肯眨眼的地方。",
+      "en": "§7Holding {item}, you are still soft. §5The plate is in the hand. The soft layer is where you still blink.",
       "weight": 4
     },
     {
@@ -1060,6 +1060,798 @@
       ],
       "zh": "§7你让两只手都有事做。§5很好。这样它们就腾不出空来发抖。",
       "en": "§7You have given both hands an errand. §5Good. Then they have no spare time to shake.",
+      "weight": 4
+    },
+    {
+      "id": "ac.block_item.119",
+      "aspects": [
+        "block:abyssal"
+      ],
+      "zh": "§3{block} 认得深渊的口音。§8你的手如果带着主世界的温度，它会先凉一凉再决定认不认。",
+      "en": "§3{block} knows the accent of the abyss. §8If your hand still carries overworld heat, it will cool the hand before it decides to answer.",
+      "weight": 4
+    },
+    {
+      "id": "ac.block_item.120",
+      "aspects": [
+        "block:abyssal"
+      ],
+      "zh": "§8把 {block} 砌进房子里，房子就不再只是房子。§5它开始有了籍贯。",
+      "en": "§8Lay {block} into a house and the house stops being only a house. §5It acquires a place of origin.",
+      "weight": 4
+    },
+    {
+      "id": "ac.block_item.121",
+      "aspects": [
+        "block:abyssalnite"
+      ],
+      "zh": "§5{block} 在暗处发亮，像一种不肯熄灭的脾气。§8脾气可以锻，不可以劝。",
+      "en": "§5{block} glows in the dark like a temper that refuses to go out. §8A temper can be forged. It cannot be talked down.",
+      "weight": 4
+    },
+    {
+      "id": "ac.block_item.122",
+      "aspects": [
+        "block:abyssalnite"
+      ],
+      "zh": "§8敲 {block} 的声音很沉。§7沉是因为每一击都在问：你确定要把它从家里带走？",
+      "en": "§8The sound of striking {block} is heavy. §7Heavy, because each blow asks whether you are sure you mean to take it from home.",
+      "weight": 4
+    },
+    {
+      "id": "ac.block_item.123",
+      "aspects": [
+        "block:abyssalnite"
+      ],
+      "zh": "§5{block} 做成的刃会记得矿脉的方向。§8所以有些剑砍着砍着，会想往下。",
+      "en": "§5A blade made from {block} remembers the direction of the vein. §8That is why some swords, mid-swing, want to go down.",
+      "weight": 4
+    },
+    {
+      "id": "ac.block_item.124",
+      "aspects": [
+        "block:air"
+      ],
+      "zh": "§7你盯着空处。§8空处没有义务回看，可门有。门就站在空处后面。",
+      "en": "§7You are staring at empty air. §8Empty air is not obliged to look back. A gate is. The gate stands just behind the empty.",
+      "weight": 4
+    },
+    {
+      "id": "ac.block_item.125",
+      "aspects": [
+        "block:air"
+      ],
+      "zh": "§8准星落在没有名字的地方。§7没有名字，就不欠你一句解释。",
+      "en": "§8The crosshair has landed where there is no name. §7What has no name owes you no explanation.",
+      "weight": 4
+    },
+    {
+      "id": "ac.block_item.126",
+      "aspects": [
+        "block:air"
+      ],
+      "zh": "§7空，不是无。§8无是一种还没被邀请的材料。你现在看着的，只是它的等候室。",
+      "en": "§7Empty is not nothing. §8Nothing is a material not yet invited. What you are looking at is only its waiting room.",
+      "weight": 4
+    },
+    {
+      "id": "ac.block_item.127",
+      "aspects": [
+        "block:any"
+      ],
+      "zh": "§7{block}。§8你看着它，它就暂时有了观众。观众是一种很轻的责任，轻到方块感觉不到。",
+      "en": "§7{block}. §8While you look, it briefly has an audience. An audience is a light duty, too light for a block to feel.",
+      "weight": 4
+    },
+    {
+      "id": "ac.block_item.128",
+      "aspects": [
+        "block:any"
+      ],
+      "zh": "§8{block} 不会因为被看见而改变用途。§7改变用途的通常是看见它的人。",
+      "en": "§8{block} will not change its use because it was seen. §7What changes its use is usually the person who saw it.",
+      "weight": 4
+    },
+    {
+      "id": "ac.block_item.129",
+      "aspects": [
+        "block:container"
+      ],
+      "zh": "§6{block} 把黑暗折起来存放。§8存放不是安全。是推迟被看见的时间。",
+      "en": "§6{block} folds darkness and stores it. §8Storage is not safety. It is a postponement of being seen.",
+      "weight": 4
+    },
+    {
+      "id": "ac.block_item.130",
+      "aspects": [
+        "block:container"
+      ],
+      "zh": "§7打开 {block} 之前，先听一听。§8有些箱子的铰链声，其实是里面的东西在叹气。",
+      "en": "§7Listen before you open {block}. §8Some hinges sigh because the contents are sighing.",
+      "weight": 4
+    },
+    {
+      "id": "ac.block_item.131",
+      "aspects": [
+        "block:container"
+      ],
+      "zh": "§8{block} 的锁如果是你加上的，锁保护的是你的贪。§7贪不喜欢被命名，可它喜欢有盖子。",
+      "en": "§8If you added the lock on {block}, the lock is protecting your greed. §7Greed dislikes being named. It likes having a lid.",
+      "weight": 4
+    },
+    {
+      "id": "ac.block_item.132",
+      "aspects": [
+        "block:coralium"
+      ],
+      "zh": "§3{block} 的蓝会爬。§8爬不是生长。是一种还在拉票的几何。",
+      "en": "§3The blue of {block} climbs. §8Climbing is not growth. It is a geometry still canvassing for votes.",
+      "weight": 4
+    },
+    {
+      "id": "ac.block_item.133",
+      "aspects": [
+        "block:coralium"
+      ],
+      "zh": "§b别用手背去试 {block} 凉不凉。§7凉是诱饵。热的是后面的邀请。",
+      "en": "§bDo not test the cool of {block} with the back of your hand. §7Cool is the bait. The invitation behind it is warm.",
+      "weight": 4
+    },
+    {
+      "id": "ac.block_item.134",
+      "aspects": [
+        "block:darkstone"
+      ],
+      "zh": "§8{block} 吸光，像在征收一种主世界还没立法的税。§7税叫影子。",
+      "en": "§8{block} drinks light the way one collects a tax the overworld has not yet legislated. §7The tax is called shadow.",
+      "weight": 4
+    },
+    {
+      "id": "ac.block_item.135",
+      "aspects": [
+        "block:darkstone"
+      ],
+      "zh": "§7把耳朵贴在 {block} 上，你会听见一种很低的拒绝。§8拒绝的对象不是你。是光。",
+      "en": "§7Put an ear to {block} and you will hear a very low refusal. §8The refusal is not aimed at you. It is aimed at light.",
+      "weight": 4
+    },
+    {
+      "id": "ac.block_item.136",
+      "aspects": [
+        "block:darkstone"
+      ],
+      "zh": "§8{block} 砌成的房间，火把会显得抱歉。§5抱歉的光，照不清角落里已经坐下的东西。",
+      "en": "§8In a room laid with {block}, a torch looks apologetic. §5Apologetic light cannot show what has already sat down in the corner.",
+      "weight": 4
+    },
+    {
+      "id": "ac.block_item.137",
+      "aspects": [
+        "block:dirt"
+      ],
+      "zh": "§6{block}。§7最普通的地面，也是最常被用来掩盖的材料。",
+      "en": "§6{block}. §7The most ordinary ground is also the material most often used to cover something.",
+      "weight": 4
+    },
+    {
+      "id": "ac.block_item.138",
+      "aspects": [
+        "block:dirt"
+      ],
+      "zh": "§8你看着 {block}，像看着一张还没写字的葬纸。§7纸不急。人会自己躺上去。",
+      "en": "§8You look at {block} as at burial paper not yet written on. §7The paper is not in a hurry. People lie down on it themselves.",
+      "weight": 4
+    },
+    {
+      "id": "ac.block_item.139",
+      "aspects": [
+        "block:dirt"
+      ],
+      "zh": "§2{block} 记得每一种脚。§8记得，却不告密。告密是草的工作，而且草也会烂。",
+      "en": "§2{block} remembers every kind of foot. §8It remembers and does not inform. Informing is the grass's job, and grass rots too.",
+      "weight": 4
+    },
+    {
+      "id": "ac.block_item.140",
+      "aspects": [
+        "block:dirt"
+      ],
+      "zh": "§7挖开 {block}，下面还是它。§8世界有时候老实得令人失望。失望也是一种掩护。",
+      "en": "§7Dig into {block} and under it is more of it. §8The world is sometimes honest enough to disappoint. Disappointment is also a cover.",
+      "weight": 4
+    },
+    {
+      "id": "ac.block_item.141",
+      "aspects": [
+        "block:dirt"
+      ],
+      "zh": "§6别小看 {block}。§8小看是一种站在上面的人的特权，特权在下雨时会变滑。",
+      "en": "§6Do not slight {block}. §8Slighting is a privilege of those who stand on it, and the privilege gets slippery in rain.",
+      "weight": 4
+    },
+    {
+      "id": "ac.block_item.142",
+      "aspects": [
+        "block:dreadstone"
+      ],
+      "zh": "§4{block} 的粉末不该进肺。§8肺是一种太愿意相信空气的器官。",
+      "en": "§4The dust of {block} should not enter a lung. §8A lung is an organ too willing to trust air.",
+      "weight": 4
+    },
+    {
+      "id": "ac.block_item.143",
+      "aspects": [
+        "block:dreadstone"
+      ],
+      "zh": "§8{block} 摸上去像一句已经痊愈的谎言。§4痊愈的是表面。谎言还在里面发干。",
+      "en": "§8{block} feels like a lie that has already recovered. §4The surface recovered. The lie is still drying inside.",
+      "weight": 4
+    },
+    {
+      "id": "ac.block_item.144",
+      "aspects": [
+        "block:fire"
+      ],
+      "zh": "§c{block} 不占地方，可它收租。§8租约写在你的袖口上，用焦味签字。",
+      "en": "§c{block} takes up no space, and still it collects rent. §8The lease is signed on your cuff, in the smell of scorch.",
+      "weight": 4
+    },
+    {
+      "id": "ac.block_item.145",
+      "aspects": [
+        "block:fire"
+      ],
+      "zh": "§6看着 {block}，你会觉得它在跳舞。§7跳舞的东西通常不想被踩灭。它会记住鞋底。",
+      "en": "§6Watch {block} and you will think it is dancing. §7What dances usually does not wish to be stamped out. It remembers soles.",
+      "weight": 4
+    },
+    {
+      "id": "ac.block_item.146",
+      "aspects": [
+        "block:fire"
+      ],
+      "zh": "§c{block} 是一种很短的居民。§8短命的居民，脾气往往最急。",
+      "en": "§c{block} is a very brief resident. §8Brief residents tend to have the shortest temper.",
+      "weight": 4
+    },
+    {
+      "id": "ac.block_item.147",
+      "aspects": [
+        "block:glass"
+      ],
+      "zh": "§b{block} 让你看见，却不让你过去。§8看见是一种被允许的折磨。",
+      "en": "§b{block} lets you see and does not let you through. §8Seeing is a permitted form of torment.",
+      "weight": 4
+    },
+    {
+      "id": "ac.block_item.148",
+      "aspects": [
+        "block:glass"
+      ],
+      "zh": "§7{block} 碎的时候声音很诚实。§8诚实的东西通常只出现一次。",
+      "en": "§7{block} is honest when it breaks. §8Honest things usually appear only once.",
+      "weight": 4
+    },
+    {
+      "id": "ac.block_item.149",
+      "aspects": [
+        "block:glass"
+      ],
+      "zh": "§b别相信 {block} 后面的安全。§8安全如果透明，就只是一种还没被敲的延迟。",
+      "en": "§bDo not trust the safety behind {block}. §8If safety is transparent, it is only a delay that has not been struck yet.",
+      "weight": 4
+    },
+    {
+      "id": "ac.block_item.150",
+      "aspects": [
+        "block:lava"
+      ],
+      "zh": "§c{block} 慢，亮，而且不谈判。§4慢是为了让你看清自己怎么消失。",
+      "en": "§c{block} is slow, bright, and does not negotiate. §4The slowness is so you can watch how you disappear.",
+      "weight": 4
+    },
+    {
+      "id": "ac.block_item.151",
+      "aspects": [
+        "block:lava"
+      ],
+      "zh": "§6{block} 的表面结壳，像一句还没说完就凝固的威胁。§8壳下面仍是热的。",
+      "en": "§6The skin on {block} is a threat that cooled before it finished speaking. §8Under the skin it is still hot.",
+      "weight": 4
+    },
+    {
+      "id": "ac.block_item.152",
+      "aspects": [
+        "block:liquid"
+      ],
+      "zh": "§9{block} 没有棱角，所以你无法跟它讲条件。§8条件需要边。它把边都融化了。",
+      "en": "§9{block} has no corners, so you cannot set terms with it. §8Terms need edges. It has melted the edges.",
+      "weight": 4
+    },
+    {
+      "id": "ac.block_item.153",
+      "aspects": [
+        "block:liquid"
+      ],
+      "zh": "§b你看着 {block}，它也在看着一个更低的地方。§7液体的忠诚永远向下。",
+      "en": "§bYou look at {block}. It is looking toward somewhere lower. §7The loyalty of a liquid is always downward.",
+      "weight": 4
+    },
+    {
+      "id": "ac.block_item.154",
+      "aspects": [
+        "block:liquid"
+      ],
+      "zh": "§8{block} 会填满你给它的任何形状。§7包括一个疏忽。疏忽的形状通常是一只脚。",
+      "en": "§8{block} will fill any shape you give it. §7Including a carelessness. The shape of carelessness is usually a foot.",
+      "weight": 4
+    },
+    {
+      "id": "ac.block_item.155",
+      "aspects": [
+        "block:ore"
+      ],
+      "zh": "§e{block} 藏在石头里，像一句不愿被提前读到的话。§8你现在提前了。",
+      "en": "§e{block} hides in stone like a sentence that did not want to be read early. §8You are early.",
+      "weight": 4
+    },
+    {
+      "id": "ac.block_item.156",
+      "aspects": [
+        "block:ore"
+      ],
+      "zh": "§6挖 {block} 的人总说自己在取。§7取是一种把别人的沉默变成自己的库存的礼貌说法。",
+      "en": "§6People who dig {block} say they are taking. §7Taking is the polite word for turning someone else's silence into your stock.",
+      "weight": 4
+    },
+    {
+      "id": "ac.block_item.157",
+      "aspects": [
+        "block:ore"
+      ],
+      "zh": "§e{block} 在火里会改口。§8改口之后，它就愿意变成工具，而不再愿意做石头。",
+      "en": "§e{block} changes its story in the fire. §8After the change it is willing to become a tool, and no longer willing to be stone.",
+      "weight": 4
+    },
+    {
+      "id": "ac.block_item.158",
+      "aspects": [
+        "block:plant"
+      ],
+      "zh": "§a{block} 还在把光变成身体。§8这种手艺，门学不会。门只会把身体变成通路。",
+      "en": "§a{block} is still turning light into a body. §8That craft is one a gate never learned. A gate only turns bodies into passages.",
+      "weight": 4
+    },
+    {
+      "id": "ac.block_item.159",
+      "aspects": [
+        "block:plant"
+      ],
+      "zh": "§2踩过 {block} 会留下味道。§7味道是一种你没打算签名的收据。",
+      "en": "§2Step through {block} and you leave a smell. §7A smell is a receipt you did not mean to sign.",
+      "weight": 4
+    },
+    {
+      "id": "ac.block_item.160",
+      "aspects": [
+        "block:plant"
+      ],
+      "zh": "§a{block} 低头的时候，不一定是风。§8有时候是它听见了地底下的点名。",
+      "en": "§aWhen {block} bows, it is not always the wind. §8Sometimes it heard a roll call under the ground.",
+      "weight": 4
+    },
+    {
+      "id": "ac.block_item.161",
+      "aspects": [
+        "block:sand"
+      ],
+      "zh": "§e{block} 记不住脚，可它非常擅长掩埋。§8记不住和掩埋，是两种不同的仁慈。",
+      "en": "§e{block} cannot remember a foot, and it is very good at burying one. §8Forgetting and burying are two different mercies.",
+      "weight": 4
+    },
+    {
+      "id": "ac.block_item.162",
+      "aspects": [
+        "block:sand"
+      ],
+      "zh": "§6风一来，{block} 就改地形。§7改地形的东西，不适合拿来做承诺。",
+      "en": "§6When the wind comes, {block} redraws the ground. §7What redraws the ground is a poor material for a promise.",
+      "weight": 4
+    },
+    {
+      "id": "ac.block_item.163",
+      "aspects": [
+        "block:sand"
+      ],
+      "zh": "§e{block} 进眼里的时候很诚实。§8诚实的痛通常很小，而且正好足够让你停下。",
+      "en": "§e{block} is honest when it gets in the eye. §8Honest pain is usually small, and exactly enough to make you stop.",
+      "weight": 4
+    },
+    {
+      "id": "ac.block_item.164",
+      "aspects": [
+        "block:stone"
+      ],
+      "zh": "§7{block} 是世界同意被踩的那一种硬度。§8同意可以撤回。撤回的时候叫塌方。",
+      "en": "§7{block} is the hardness the world agreed to be walked on. §8Agreement can be withdrawn. Withdrawal is called a collapse.",
+      "weight": 4
+    },
+    {
+      "id": "ac.block_item.165",
+      "aspects": [
+        "block:stone"
+      ],
+      "zh": "§8{block} 不腐烂，所以人们信任它。§7信任一种不会死的东西，是一种很常见的误判。",
+      "en": "§8{block} does not rot, so people trust it. §7Trusting a thing that does not die is a very common misjudgment.",
+      "weight": 4
+    },
+    {
+      "id": "ac.block_item.166",
+      "aspects": [
+        "block:stone"
+      ],
+      "zh": "§7敲 {block} 的回声很短。§8短是因为石头不想跟你长谈。长谈是矿的工作。",
+      "en": "§7The echo off {block} is short. §8Short, because stone does not want a long talk. Long talks are the ore's job.",
+      "weight": 4
+    },
+    {
+      "id": "ac.block_item.167",
+      "aspects": [
+        "block:stone"
+      ],
+      "zh": "§8{block} 砌成的墙看起来像结论。§7结论如果能被镐打开，就只是一种暂时的语气。",
+      "en": "§8A wall of {block} looks like a conclusion. §7If a conclusion can be opened with a pick, it was only a temporary tone.",
+      "weight": 4
+    },
+    {
+      "id": "ac.block_item.168",
+      "aspects": [
+        "block:water"
+      ],
+      "zh": "§9{block} 把脸还你，却把名字留在涟漪里。§8涟漪散得很快。名字不一定跟着散。",
+      "en": "§9{block} returns your face and keeps your name in the ripple. §8The ripple breaks quickly. The name does not always break with it.",
+      "weight": 4
+    },
+    {
+      "id": "ac.block_item.169",
+      "aspects": [
+        "block:water"
+      ],
+      "zh": "§b看着 {block}，你会想喝。§7想喝是身体的诚实。诚实的身体最容易被引进去。",
+      "en": "§bLook at {block} and you will want to drink. §7Wanting to drink is the body's honesty. An honest body is the easiest to lead in.",
+      "weight": 4
+    },
+    {
+      "id": "ac.block_item.170",
+      "aspects": [
+        "block:wood"
+      ],
+      "zh": "§6{block} 曾经朝上长。§8现在它横着，任你决定它是门、是燃料，还是棺材的草稿。",
+      "en": "§6{block} used to grow upward. §8Now it lies sideways, and lets you decide whether it is a door, fuel, or the draft of a coffin.",
+      "weight": 4
+    },
+    {
+      "id": "ac.block_item.171",
+      "aspects": [
+        "block:wood"
+      ],
+      "zh": "§2{block} 的纹路还是树的记忆。§7记忆被锯开以后，不会抗议，只会在火里复述一次。",
+      "en": "§2The grain of {block} is still the tree's memory. §7After the saw, memory does not protest. It recites itself once in the fire.",
+      "weight": 4
+    },
+    {
+      "id": "ac.block_item.172",
+      "aspects": [
+        "block:wood"
+      ],
+      "zh": "§6敲 {block} 是空的。§8空心的材料适合做鼓，也适合藏一句不想被立刻听见的话。",
+      "en": "§6{block} sounds hollow when struck. §8Hollow material makes a good drum, and a good place to hide a sentence you do not want heard yet.",
+      "weight": 4
+    },
+    {
+      "id": "ac.block_item.173",
+      "aspects": [
+        "block:wood"
+      ],
+      "zh": "§7{block} 会返潮。§8返潮的东西记得自己从哪来。从森林来的，下雨时会想回去。",
+      "en": "§7{block} takes damp back into itself. §8What takes damp back remembers where it came from. What came from a forest wants to return when it rains.",
+      "weight": 4
+    },
+    {
+      "id": "ac.block_item.174",
+      "aspects": [
+        "block:wood"
+      ],
+      "zh": "§2把 {block} 当成死物，是锯木人的安慰。§8安慰不改变年轮还在数的事实。",
+      "en": "§2Treating {block} as a dead thing is the sawyer's comfort. §8Comfort does not change the fact that the rings are still counting.",
+      "weight": 4
+    },
+    {
+      "id": "ac.block_item.175",
+      "aspects": [
+        "item:abyssal"
+      ],
+      "zh": "§3{item} 的重量不只在手上。§8它还在你的名字上加了一点深渊的口音。",
+      "en": "§3The weight of {item} is not only in the hand. §8It also adds a little of the abyss's accent to your name.",
+      "weight": 4
+    },
+    {
+      "id": "ac.block_item.176",
+      "aspects": [
+        "item:abyssal"
+      ],
+      "zh": "§5拿着 {item}，你像一个还没正式入籍的人，已经开始用那边的货币。",
+      "en": "§5Holding {item}, you are like someone not yet naturalized who has already started spending the other side's coin.",
+      "weight": 4
+    },
+    {
+      "id": "ac.block_item.177",
+      "aspects": [
+        "item:any"
+      ],
+      "zh": "§7{item} 在你手里。§8手里的东西会变成句子的主语，如果你不小心让它先开口。",
+      "en": "§7{item} is in your hand. §8What is in the hand becomes the subject of the sentence, if you let it speak first.",
+      "weight": 4
+    },
+    {
+      "id": "ac.block_item.178",
+      "aspects": [
+        "item:any"
+      ],
+      "zh": "§8我看见 {item}。§7看见不是批准。批准是一种更重的手续，而这件东西还没申请。",
+      "en": "§8I see {item}. §7Seeing is not approval. Approval is a heavier procedure, and this thing has not applied.",
+      "weight": 4
+    },
+    {
+      "id": "ac.block_item.179",
+      "aspects": [
+        "item:armor"
+      ],
+      "zh": "§7{item} 让你觉得自己厚了一层。§8厚是一种可以敲响的幻觉。敲响的是金属，不是命运。",
+      "en": "§7{item} makes you feel a layer thicker. §8Thickness is an illusion that can be struck. What rings is metal, not fate.",
+      "weight": 4
+    },
+    {
+      "id": "ac.block_item.180",
+      "aspects": [
+        "item:armor"
+      ],
+      "zh": "§8把 {item} 握在手里，金属会先替你开口。§7开口的东西在夜里尤其容易被点名。",
+      "en": "§8Hold {item} and the metal speaks before you do. §7What speaks is especially easy to call on at night.",
+      "weight": 4
+    },
+    {
+      "id": "ac.block_item.181",
+      "aspects": [
+        "item:armor"
+      ],
+      "zh": "§7{item} 防的是牙和刃。§5防不住一句已经写好的名字。名字不走胸甲的缝。",
+      "en": "§7{item} stops teeth and edges. §5It does not stop a name already written. A name does not travel through the seams of a breastplate.",
+      "weight": 4
+    },
+    {
+      "id": "ac.block_item.182",
+      "aspects": [
+        "item:axe"
+      ],
+      "zh": "§6{item} 的工作是把直立的东西放倒。§8放倒以后，年轮会把时间交出来。",
+      "en": "§6The work of {item} is to lay upright things down. §8Once they are down, the rings hand over the time.",
+      "weight": 4
+    },
+    {
+      "id": "ac.block_item.183",
+      "aspects": [
+        "item:axe"
+      ],
+      "zh": "§7你握着 {item}，像握着一个很短的许可。§8许可的对象是树，不是门。别搞混。",
+      "en": "§7You hold {item} like a very short permission. §8The permission is for trees, not for gates. Do not confuse them.",
+      "weight": 4
+    },
+    {
+      "id": "ac.block_item.184",
+      "aspects": [
+        "item:axe"
+      ],
+      "zh": "§6{item} 砍下去的声音很干。§8干是木头在最后一次拒绝变湿。",
+      "en": "§6{item} lands with a dry sound. §8Dry is the wood refusing, one last time, to become wet.",
+      "weight": 4
+    },
+    {
+      "id": "ac.block_item.185",
+      "aspects": [
+        "item:book"
+      ],
+      "zh": "§7{item} 把嘴装订起来，方便携带。§8携带一张嘴，就要准备听它在不该开口的时候开口。",
+      "en": "§7{item} binds a mouth so it can be carried. §8Carry a mouth, and be ready for it to open when it should not.",
+      "weight": 4
+    },
+    {
+      "id": "ac.block_item.186",
+      "aspects": [
+        "item:book"
+      ],
+      "zh": "§8翻开 {item}，纸会先吸收你的光。§5吸收不是阅读。阅读是后面那种更贪的动作。",
+      "en": "§8Open {item} and the paper drinks your light first. §5Drinking is not reading. Reading is the greedier act that follows.",
+      "weight": 4
+    },
+    {
+      "id": "ac.block_item.187",
+      "aspects": [
+        "item:book"
+      ],
+      "zh": "§7{item} 的重量很轻。§8轻是因为真正重的那部分还没被你念出来。",
+      "en": "§7{item} is light. §8Light, because the heavy part has not yet been read aloud.",
+      "weight": 4
+    },
+    {
+      "id": "ac.block_item.188",
+      "aspects": [
+        "item:bow"
+      ],
+      "zh": "§7{item} 把杀意拉成一条线。§8线的好处是你可以假装自己还没决定。松手的时候，假装结束。",
+      "en": "§7{item} draws killing intent into a line. §8The virtue of a line is that you can pretend you have not decided. The pretense ends when you let go.",
+      "weight": 4
+    },
+    {
+      "id": "ac.block_item.189",
+      "aspects": [
+        "item:bow"
+      ],
+      "zh": "§8{item} 沉默的时候最危险。§7出声的是弦，不是良心。",
+      "en": "§8{item} is most dangerous while it is silent. §7What makes the sound is the string, not the conscience.",
+      "weight": 4
+    },
+    {
+      "id": "ac.block_item.190",
+      "aspects": [
+        "item:bow"
+      ],
+      "zh": "§7拿着 {item} 的人喜欢距离。§8距离是一种还没承认自己会靠近的礼貌。",
+      "en": "§7A person holding {item} likes distance. §8Distance is a courtesy that has not yet admitted it will come closer.",
+      "weight": 4
+    },
+    {
+      "id": "ac.block_item.191",
+      "aspects": [
+        "item:food"
+      ],
+      "zh": "§6{item} 是一种暂时的停战。§8停战的对象是你自己的胃，不是外面的牙。",
+      "en": "§6{item} is a temporary ceasefire. §8The ceasefire is with your own stomach, not with the teeth outside.",
+      "weight": 4
+    },
+    {
+      "id": "ac.block_item.192",
+      "aspects": [
+        "item:food"
+      ],
+      "zh": "§e吃掉 {item} 之前，它还算物品。§7吃掉以后，它开始用你的血重写自己。",
+      "en": "§eBefore you eat {item}, it still counts as an item. §7Afterward it begins rewriting itself in your blood.",
+      "weight": 4
+    },
+    {
+      "id": "ac.block_item.193",
+      "aspects": [
+        "item:offhand"
+      ],
+      "zh": "§7另一只手也没有闲着。§8闲着的手才会老实。不闲的那只，通常藏着备用的结局。",
+      "en": "§7The other hand is not idle either. §8Only an idle hand stays honest. The busy one usually hides a spare ending.",
+      "weight": 4
+    },
+    {
+      "id": "ac.block_item.194",
+      "aspects": [
+        "item:offhand"
+      ],
+      "zh": "§8副手是一种不想被主句提到的从句。§7从句翻脸的时候，往往比主句更快。",
+      "en": "§8The off hand is a clause that does not want to be in the main sentence. §7When a clause turns, it is often faster than the sentence.",
+      "weight": 4
+    },
+    {
+      "id": "ac.block_item.195",
+      "aspects": [
+        "item:offhand"
+      ],
+      "zh": "§7你把保险放在另一侧。§8保险这个词，在门的词典里拼法接近诱饵。",
+      "en": "§7You keep the insurance on the other side. §8In a gate's dictionary, insurance is spelled very close to bait.",
+      "weight": 4
+    },
+    {
+      "id": "ac.block_item.196",
+      "aspects": [
+        "item:pickaxe"
+      ],
+      "zh": "§7{item} 专门跟石头争论。§8争论的结果通常是石头让步，让出一条更深的黑。",
+      "en": "§7{item} argues with stone for a living. §8The usual result is that the stone yields, and yields a deeper black.",
+      "weight": 4
+    },
+    {
+      "id": "ac.block_item.197",
+      "aspects": [
+        "item:pickaxe"
+      ],
+      "zh": "§8握着 {item} 的人容易相信底下有答案。§7底下通常只有更多的问题，以及一种可以熔的问题。",
+      "en": "§8A person holding {item} tends to believe the answer is below. §7Below there are usually more questions, and one kind that can be smelted.",
+      "weight": 4
+    },
+    {
+      "id": "ac.block_item.198",
+      "aspects": [
+        "item:pickaxe"
+      ],
+      "zh": "§6{item} 的尖是一个很窄的野心。§8窄的野心最容易扎进不该扎的矿脉。",
+      "en": "§6The point of {item} is a very narrow ambition. §8Narrow ambitions are the easiest to drive into a vein they should not touch.",
+      "weight": 4
+    },
+    {
+      "id": "ac.block_item.199",
+      "aspects": [
+        "item:potion"
+      ],
+      "zh": "§d{item} 把后果装在玻璃里。§8玻璃很薄。后果不薄。",
+      "en": "§d{item} keeps a consequence in glass. §8The glass is thin. The consequence is not.",
+      "weight": 4
+    },
+    {
+      "id": "ac.block_item.200",
+      "aspects": [
+        "item:potion"
+      ],
+      "zh": "§5喝下 {item} 之前，先问它想改你的哪一条。§7血、速度，还是你还以为属于自己的那点时间。",
+      "en": "§5Before you drink {item}, ask which line of you it means to edit. §7The blood, the speed, or the little time you still think is yours.",
+      "weight": 4
+    },
+    {
+      "id": "ac.block_item.201",
+      "aspects": [
+        "item:potion"
+      ],
+      "zh": "§d{item} 的颜色是一种预告。§8预告通常比正文诚实，也比正文更难拒绝。",
+      "en": "§dThe color of {item} is a preview. §8Previews are usually more honest than the text, and harder to refuse.",
+      "weight": 4
+    },
+    {
+      "id": "ac.block_item.202",
+      "aspects": [
+        "item:sword"
+      ],
+      "zh": "§c{item} 把距离缩短成臂长。§8臂长是一种很亲密的判决。",
+      "en": "§c{item} shortens distance to the length of an arm. §8An arm's length is a very intimate verdict.",
+      "weight": 4
+    },
+    {
+      "id": "ac.block_item.203",
+      "aspects": [
+        "item:sword"
+      ],
+      "zh": "§7{item} 不出鞘的时候，只是一种沉重的暗示。§8暗示如果足够沉，就不需要说完。",
+      "en": "§7While {item} stays sheathed, it is only a heavy implication. §8If the implication is heavy enough, it does not need to be finished.",
+      "weight": 4
+    },
+    {
+      "id": "ac.block_item.204",
+      "aspects": [
+        "item:tool"
+      ],
+      "zh": "§7{item} 是一只被允许延长的手。§8延长的手能干更多活，也能犯更远的错。",
+      "en": "§7{item} is a hand that has been permitted to grow longer. §8A longer hand can do more work, and make a more distant mistake.",
+      "weight": 4
+    },
+    {
+      "id": "ac.block_item.205",
+      "aspects": [
+        "item:tool"
+      ],
+      "zh": "§8你靠 {item} 跟世界谈判。§7世界通常只同意被敲开，不同意被说服。",
+      "en": "§8You negotiate with the world through {item}. §7The world usually agrees to be opened. It does not agree to be persuaded.",
+      "weight": 4
+    },
+    {
+      "id": "ac.block_item.206",
+      "aspects": [
+        "item:tool"
+      ],
+      "zh": "§6{item} 会钝。§8钝是工具在提醒你：连它都要休息，你凭什么一直锋利。",
+      "en": "§6{item} will go dull. §8Dullness is the tool reminding you that even it must rest, so why should you stay sharp forever.",
       "weight": 4
     }
   ]
