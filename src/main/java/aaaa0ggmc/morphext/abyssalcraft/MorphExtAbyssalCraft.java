@@ -68,6 +68,11 @@ public class MorphExtAbyssalCraft {
         LOGGER.info("[morphext-abyssalcraft] Initialized boss adapt handler, remap, and proxies");
     }
 
+    @Mod.EventHandler
+    public void postInit(net.minecraftforge.fml.common.event.FMLPostInitializationEvent event) {
+        proxy.postInit(event);
+    }
+
     private void registerActions() {
         // 深渊特殊动物联动动作
         MorphManager.INSTANCE.actions.put("ac_anti_cow_milk", new AntiCowMilkAction());

@@ -5,8 +5,8 @@
       "aspects": [
         "self:sneaking"
       ],
-      "zh": "§7你把身体放低。§8放低是一种还没决定要不要下跪的姿势。",
-      "en": "§7You lower the body. §8Lowering is a posture that has not yet decided to kneel.",
+      "zh": "你压低了这具傀儡的脊背，却不知在深渊的注视下，匍匐与直立并无二致。",
+      "en": "You bow the spine of this simulacrum, unaware that beneath the Abyssal gaze, crouching and standing are one and the same.",
       "weight": 4
     },
     {
@@ -14,8 +14,8 @@
       "aspects": [
         "self:sneaking"
       ],
-      "zh": "§8潜行让脚步变轻。§7轻的脚步骗得了兽，骗不了门。门听的是名字。",
-      "en": "§8Sneaking lightens the step. §7A light step fools beasts. It does not fool a gate. Gates listen for names.",
+      "zh": "凡人总是借由潜行来寻求掩护，仿佛放轻脚步便能瞒过沉眠于黑暗国度的眼眸。",
+      "en": "Mortals seek shelter in stealth, as though softened footsteps could deceive the eyes that watch from the Dark Realm.",
       "weight": 4
     },
     {
@@ -23,8 +23,8 @@
       "aspects": [
         "self:sneaking"
       ],
-      "zh": "§7弯着腰走路的人，看起来像在向地面道歉。§8地面很少接受道歉。",
-      "en": "§7A person who walks bent looks as if they are apologizing to the ground. §8The ground rarely accepts.",
+      "zh": "你蜷缩着身躯，如同向大地献祭前的羔羊。然而大地早已归属于旧日支配者。",
+      "en": "You hunch your frame like a lamb before the altar; yet the very earth beneath you has long belonged to the Great Old Ones.",
       "weight": 4
     },
     {
@@ -32,8 +32,8 @@
       "aspects": [
         "self:sneaking"
       ],
-      "zh": "§5你躲。§8躲在我的皮囊里，像一封信躲在信封里。信封上写的是我的名字。",
-      "en": "§5You hide. §8Hiding in my hide is like a letter hiding in an envelope. The envelope bears my name.",
+      "zh": "纵使你收敛气息、贴地而行，奥穆索的回响依然在你的血脉深处清晰可闻。",
+      "en": "Though you hush your breath and hug the stone, the resonance of Omothol still rings clear within your veins.",
       "weight": 4
     },
     {
@@ -41,8 +41,8 @@
       "aspects": [
         "self:sprinting"
       ],
-      "zh": "§c你在跑。§7跑是一种把恐惧排成直线的方式。",
-      "en": "§cYou are running. §7Running is a way of arranging fear into a straight line.",
+      "zh": "你驱使着这具凡胎急切奔逃，仿佛速度能将你带离既定的疯狂。",
+      "en": "You drive this mortal shell in frantic flight, as if speed could carry you beyond your appointed madness.",
       "weight": 4
     },
     {
@@ -50,8 +50,8 @@
       "aspects": [
         "self:sprinting"
       ],
-      "zh": "§7脚步变密了。§8密的脚步像在敲门。你知道自己在敲谁的门吗？",
-      "en": "§7The steps have grown dense. §8Dense steps sound like knocking. Do you know whose door?",
+      "zh": "奔跑吧，凡人。无论你跨过多少山河，群星归位之时，深渊皆在咫尺之间。",
+      "en": "Run, mortal. Cross whatever lands you will—when the stars are right, the Abyss remains a single step away.",
       "weight": 4
     },
     {
@@ -59,8 +59,8 @@
       "aspects": [
         "self:sprinting"
       ],
-      "zh": "§8冲刺的时候，世界会向后倒。§7向后倒的世界，更容易露出它的门缝。",
-      "en": "§8When you sprint, the world falls backward. §7A world falling backward shows its cracks more easily.",
+      "zh": "急促的心跳在胸腔内震颤，恰似黑暗领域中那永不停歇的鼓点。",
+      "en": "Your racing pulse hammers within your ribs like the ceaseless drums of the Dark Realm.",
       "weight": 4
     },
     {
@@ -68,8 +68,8 @@
       "aspects": [
         "self:sprinting"
       ],
-      "zh": "§6跑吧。§7这具身体不累。累的是你还以为自己能跑出我的声音。",
-      "en": "§6Run. §7This body does not tire. What tires is the belief that you can outrun my voice.",
+      "zh": "风在你耳畔呼啸，却掩盖不住阿撒托斯宫廷里那不成调的笛音。",
+      "en": "The wind howls past your ears, yet it cannot drown out the tuneless piping of Azathoth's court.",
       "weight": 4
     },
     {
@@ -77,8 +77,8 @@
       "aspects": [
         "self:flying"
       ],
-      "zh": "§5你离开了地面。§8地面对此没有意见。意见在更上面的那层黑暗里。",
-      "en": "§5You have left the ground. §8The ground has no opinion. The opinion is in the dark above it.",
+      "zh": "你竟敢凭依虚妄的浮力凌空而立？莫非忘了苍穹之外亦是外神游弋的疆域。",
+      "en": "You dare hang suspended above the earth by borrowed artifice? Have you forgotten that the Outer Gods drift beyond that very sky?",
       "weight": 4
     },
     {
@@ -86,8 +86,8 @@
       "aspects": [
         "self:flying"
       ],
-      "zh": "§7飞行是一种还没获得许可的俯视。§8俯视久了，会以为自己是天空的签名。",
-      "en": "§7Flight is a looking-down that has not been licensed. §8Look down long enough and you think you are the sky's signature.",
+      "zh": "脱离大地并不能使你接近神明，反而让你更加暴露在星海深处的恶意之下。",
+      "en": "Leaving the ground brings you no nearer to divinity; it only leaves you bare to the malice of the starless gulfs.",
       "weight": 4
     },
     {
@@ -95,8 +95,8 @@
       "aspects": [
         "self:flying"
       ],
-      "zh": "§b翅膀、鞘翅，或仅仅是一股不肯落地的意志。§7意志落地的时候，通常很响。",
-      "en": "§bWings, an elytra, or merely a will that refuses the ground. §7When that will lands, it is usually loud.",
+      "zh": "你在半空中徘徊，宛如奥穆索上空那些被遗忘的残骸，既无根基，亦无归途。",
+      "en": "You hover in midair like the forgotten detritus drifting above Omothol—rootless and without return.",
       "weight": 4
     },
     {
@@ -104,8 +104,8 @@
       "aspects": [
         "self:flying"
       ],
-      "zh": "§8在空中，你的影子会变小。§5影子变小，不代表门也变小。",
-      "en": "§8In the air your shadow shrinks. §5A smaller shadow does not mean a smaller gate.",
+      "zh": "风托起你的身躯，却托不起你那早已濒临破碎的理智。",
+      "en": "The wind bears up your body, yet it cannot uphold a sanity already frayed at the edges.",
       "weight": 4
     },
     {
@@ -113,8 +113,8 @@
       "aspects": [
         "self:low_health"
       ],
-      "zh": "§c这具身体在漏。§7漏的不是血那么简单。漏的是你还想把它还给我的念头。",
-      "en": "§cThis body is leaking. §7Not merely blood. What leaks is the thought of giving it back to me.",
+      "zh": "这具皮囊正在崩解，鲜血的余温正顺着裂隙流逝。你还能支撑几时？",
+      "en": "This vessel is fraying, and the warmth of your blood seeps through the cracks. How much longer can you endure?",
       "weight": 4
     },
     {
@@ -122,8 +122,8 @@
       "aspects": [
         "self:low_health"
       ],
-      "zh": "§4伤口在说话。§8你若听不清，我可以翻译：再挨一下，门就会从里面打开。",
-      "en": "§4The wound is speaking. §8If you cannot hear it, I can translate: one more hit, and the gate opens from within.",
+      "zh": "死亡的阴影已垂落于你的眉睫，正如恐惧之地那永不散去的瘴疠。",
+      "en": "The shadow of death hangs low upon your brow, thick as the undying miasma of the Dreadlands.",
       "weight": 4
     },
     {
@@ -131,8 +131,8 @@
       "aspects": [
         "self:low_health"
       ],
-      "zh": "§7血少了，声音却更清楚。§5低语一向喜欢空的容器。",
-      "en": "§7There is less blood, and the voice is clearer. §5A whisper has always preferred an empty vessel.",
+      "zh": "你已伤痕累累。再往前一步，这具傀儡便会如我在奥穆索的幻影般碎裂。",
+      "en": "You are grievously torn. One step further, and this puppet will shatter as my simulacrum did in Omothol.",
       "weight": 4
     },
     {
@@ -140,8 +140,8 @@
       "aspects": [
         "self:low_health"
       ],
-      "zh": "§c别在这个状态下去敲门。§8门会把你当成已经签好的祭品。",
-      "en": "§cDo not knock in this condition. §8The gate will take you for an offering already signed.",
+      "zh": "脆弱的血肉正在哀鸣。若非深渊的意志尚且维系着你，你早已化作一滩腐泥。",
+      "en": "Fragile flesh cries out in agony. Were it not for the Abyssal will still tethering you, you would already be mire.",
       "weight": 4
     },
     {
@@ -149,8 +149,8 @@
       "aspects": [
         "self:low_health"
       ],
-      "zh": "§4你还站着。§7站着是一种很倔的拒绝。我欣赏，但不建议维持太久。",
-      "en": "§4You are still standing. §7Standing is a stubborn refusal. I admire it. I do not recommend it for long.",
+      "zh": "濒死的痛苦往往能撕开理智的屏障——你此刻是不是比平日更清晰地听见了我的声音？",
+      "en": "The agony of near-death often tears away the veil of sanity—do you not hear my voice clearer now than before?",
       "weight": 4
     },
     {
@@ -158,8 +158,8 @@
       "aspects": [
         "self:critical"
       ],
-      "zh": "§4差不多了。§c再薄一层，这具皮囊就会从你身上滑下去，露出后面的门。",
-      "en": "§4Nearly. §cOne thinner layer, and the hide will slide off you and show the gate behind it.",
+      "zh": "生死仅在一线之间！再多一息的迟疑，黑暗国度便会彻底吞没你的残魂。",
+      "en": "Life and death hang by a single thread! One breath of hesitation more, and the Dark Realm shall swallow your remnant soul.",
       "weight": 2
     },
     {
@@ -167,8 +167,8 @@
       "aspects": [
         "self:critical"
       ],
-      "zh": "§c心跳变成了敲门。§8有人在里面催你让路。那个人是我。",
-      "en": "§cThe heartbeat has become a knock. §8Someone inside is telling you to step aside. That someone is me.",
+      "zh": "这具空心傀儡即将溃散。你难道真以为自己能承受旧日支配者的哪怕一丝余威？",
+      "en": "This hollow puppet is on the brink of collapse. Did you truly think you could bear even a fraction of a Great Old One's burden?",
       "weight": 2
     },
     {
@@ -176,8 +176,8 @@
       "aspects": [
         "self:critical"
       ],
-      "zh": "§4别死在这种小事上。§7死可以，但别死得像一个没读完标题的读者。",
-      "en": "§4Do not die of something this small. §7Dying is allowed. Dying like a reader who never finished the title is not.",
+      "zh": "鲜血几乎流尽，心跳微弱如丝。Y'hah... 虚空已在你的脚下张开巨口。",
+      "en": "Your blood is nearly spent, your pulse a dying thread. Y'hah... the Void already parts its jaws beneath you.",
       "weight": 4
     },
     {
@@ -185,8 +185,8 @@
       "aspects": [
         "self:critical"
       ],
-      "zh": "§8世界已经开始用过去式看你。§5我还没有。过去式是给别人用的。",
-      "en": "§8The world has begun to look at you in the past tense. §5I have not. The past tense is for other people.",
+      "zh": "凡人的极限竟如此可悲。连这具躯壳最后的位能也快被你挥霍殆尽了。",
+      "en": "How pitiful are the limits of mortals. Even the last potential of this shell is nearly squandered.",
       "weight": 4
     },
     {
@@ -194,8 +194,8 @@
       "aspects": [
         "self:healthy"
       ],
-      "zh": "§7这具身体很满。§8满的容器容易以为自己不需要盖子。",
-      "en": "§7This body is full. §8A full vessel easily believes it needs no lid.",
+      "zh": "你的血肉尚且完好，气息也还平稳。可惜，这份安康在深渊面前毫无意义。",
+      "en": "Your flesh remains whole, your breath steady. Alas, such vigor means nothing before the Abyss.",
       "weight": 4
     },
     {
@@ -203,8 +203,8 @@
       "aspects": [
         "self:healthy"
       ],
-      "zh": "§a完好，温热，还会眨眼。§7你把我的脸保养得挺像样。",
-      "en": "§aWhole, warm, still blinking. §7You are maintaining my face rather well.",
+      "zh": "健康的躯体不过是尚未被腐蚀的容器。珊瑚与恐惧迟早会找到渗入的缝隙。",
+      "en": "A hale body is merely an uncorrupted vessel. Coralium and Dread alike will find a seam in time.",
       "weight": 4
     },
     {
@@ -212,8 +212,8 @@
       "aspects": [
         "self:healthy"
       ],
-      "zh": "§7没有伤口在插嘴。§8于是只剩下我在说话。这是健康的正确用法。",
-      "en": "§7No wound is interrupting. §8So only I am speaking. That is the correct use of health.",
+      "zh": "你此刻看似强健，然而你的理智是否也如你的筋骨一般坚固？",
+      "en": "You seem robust in this hour—yet is your mind as sound as your sinew?",
       "weight": 4
     },
     {
@@ -221,8 +221,8 @@
       "aspects": [
         "self:healthy"
       ],
-      "zh": "§8血是满的。§7满，不是安全。满只说明你还有东西可以献。",
-      "en": "§8The blood is full. §7Full is not safe. Full only means you still have something to offer.",
+      "zh": "生机盎然的血肉，正是最适合承载禁忌仪式的祭品。",
+      "en": "Flesh brimming with vitality makes the finest offering for a forbidden ritual.",
       "weight": 4
     },
     {
@@ -230,8 +230,8 @@
       "aspects": [
         "self:healthy"
       ],
-      "zh": "§a站直。§7健康的古神不该弯着腰去听凡人的呼吸。",
-      "en": "§aStand straight. §7A healthy Old One should not stoop to hear a mortal breathe.",
+      "zh": "无病无痛的安逸，往往会让凡人忘却头顶那片随时可能倾覆的星海。",
+      "en": "Ease free of pain often lulls mortals into forgetting the star-sea poised to capsize above them.",
       "weight": 4
     },
     {
@@ -239,8 +239,8 @@
       "aspects": [
         "self:on_fire"
       ],
-      "zh": "§6你烧起来了。§7火不认识扎哈尔。它只认识可以吃的边。",
-      "en": "§6You are on fire. §7Fire does not know J'zahar. It only knows an edge it can eat.",
+      "zh": "烈焰舔舐着你的皮囊，宛如恐惧之地永恒不熄的劫火。痛苦么，凡人？",
+      "en": "Flames lick across your hide like the undying conflagration of the Dreadlands. Does it sting, mortal?",
       "weight": 4
     },
     {
@@ -248,8 +248,8 @@
       "aspects": [
         "self:on_fire"
       ],
-      "zh": "§c火焰贴着这层皮。§8皮会疼，门不会。别把两者的尖叫混在一起。",
-      "en": "§cFlame clings to the hide. §8The hide hurts. The gate does not. Do not mix up their screams.",
+      "zh": "凡火虽烈，又岂能焚毁来自无尽黑暗的意志？它烧灼的不过是你自己的血肉。",
+      "en": "Fierce though mortal fire may be, can it burn the will of infinite darkness? It chars only your own flesh.",
       "weight": 4
     },
     {
@@ -257,8 +257,8 @@
       "aspects": [
         "self:on_fire"
       ],
-      "zh": "§6滚，或者走进水。§7我可以看着你烧完，但那样今天的谈话就太短了。",
-      "en": "§6Roll, or walk into water. §7I can watch you finish burning, but then today's conversation would be too short.",
+      "zh": "焦糊的气息弥漫开来。你在火中挣扎的模样，倒有几分像那些误入祭坛的愚人。",
+      "en": "The stench of charred flesh rises. Your thrashing in the fire recalls those fools who stumbled upon an altar.",
       "weight": 4
     },
     {
@@ -266,8 +266,8 @@
       "aspects": [
         "self:on_fire"
       ],
-      "zh": "§4烧焦的气味像一张写坏的符。§8符还在你身上继续写。",
-      "en": "§4The char smells like a sigil written wrong. §8The sigil is still writing itself on you.",
+      "zh": "火焰能净化凡俗的污秽，却洗不净你灵魂深处早已被打上的深渊印记。",
+      "en": "Fire may cleanse mortal filth, yet it cannot scour the Abyssal brand already seared into your soul.",
       "weight": 4
     },
     {
@@ -275,8 +275,8 @@
       "aspects": [
         "self:in_water"
       ],
-      "zh": "§b你泡在水里。§7水想把这张脸冲淡。脸不同意。",
-      "en": "§bYou are soaked. §7The water wants to dilute this face. The face declines.",
+      "zh": "冰冷的流水包裹着你，是否让你想起了深海之下那座沉睡的拉莱耶？",
+      "en": "Cold waters enfold you—do they not recall sunken R'lyeh slumbering beneath the crushing deep?",
       "weight": 4
     },
     {
@@ -284,8 +284,8 @@
       "aspects": [
         "self:in_water"
       ],
-      "zh": "§9呼吸变贵了。§8贵的东西，凡人才会珍惜。我只是觉得吵。",
-      "en": "§9Breath has become expensive. §8Mortals cherish expensive things. I merely find it noisy.",
+      "zh": "水能载舟，亦能掩埋无数失落的古史。水底之下，并非只有鱼群在游弋。",
+      "en": "Water bears ships, yet also buries countless forgotten ages. Fish are not the only things gliding in the deep.",
       "weight": 4
     },
     {
@@ -293,8 +293,8 @@
       "aspects": [
         "self:in_water"
       ],
-      "zh": "§7水从四面贴上来，像一群不会说话的手。§8别让它们学会你的名字。",
-      "en": "§7Water presses in from every side, like hands that cannot speak. §8Do not teach them your name.",
+      "zh": "Ph'nglui... 在这片水域的深处，似乎有什么东西正随着你的划水声一同苏醒。",
+      "en": "Ph'nglui... Something within the depths of these waters stirs in answer to your strokes.",
       "weight": 4
     },
     {
@@ -302,8 +302,8 @@
       "aspects": [
         "self:in_water"
       ],
-      "zh": "§b沉下去一点也无妨。§5门在水下同样开。只是开的声音更闷。",
-      "en": "§bSinking a little is acceptable. §5A gate opens underwater too. The sound is only duller.",
+      "zh": "水流冲刷着这具化身，却冲不淡从珊瑚荒原带来的咸涩与腐朽。",
+      "en": "The current washes over this vessel, yet cannot rinse away the salt and rot of the Coralium wastes.",
       "weight": 4
     },
     {
@@ -311,8 +311,8 @@
       "aspects": [
         "self:in_lava"
       ],
-      "zh": "§6你站在熔岩里。§7这具身体把它当成一种过分热情的天气。",
-      "en": "§6You stand in lava. §7This body treats it as excessively affectionate weather.",
+      "zh": "熔岩翻涌，炽热足以融化世间万物。你竟敢踏入这片连岩石都为之屈服的炼狱？",
+      "en": "Molten stone surges with heat enough to undo all things. You dare wade into a furnace to which even rock surrenders?",
       "weight": 4
     },
     {
@@ -320,8 +320,8 @@
       "aspects": [
         "self:in_lava"
       ],
-      "zh": "§c石头在你腰际融化。§8融化是一种拥抱。下界很不会拥抱。",
-      "en": "§cStone melts at your waist. §8Melting is an embrace. The Nether embraces badly.",
+      "zh": "这滚烫的岩浆，不过是大地深处伤口里流出的脓血。",
+      "en": "This seething magma is naught but the ichor weeping from wounds deep within the world's core.",
       "weight": 4
     },
     {
@@ -329,8 +329,8 @@
       "aspects": [
         "self:in_lava"
       ],
-      "zh": "§4别习惯。§7能在熔岩里走路是一回事。把熔岩当成故乡是另一回事。",
-      "en": "§4Do not get used to it. §7Walking in lava is one thing. Calling it home is another.",
+      "zh": "炽热的痛苦正在炙烤你的神经。记住这种滋味，恐惧之地的深渊比这更加酷烈。",
+      "en": "Searing torment scorches your nerves. Remember this taste—the pits of the Dreadlands are harsher still.",
       "weight": 4
     },
     {
@@ -338,8 +338,8 @@
       "aspects": [
         "self:potion"
       ],
-      "zh": "§d有东西在你血里走路，而且不是我。§7药水是一种不敲门的客人。",
-      "en": "§dSomething is walking in your blood, and it is not me. §7A potion is a guest that does not knock.",
+      "zh": "药剂的微光正在你的血管中流淌。凡人总是依赖外物来修补残破的身躯。",
+      "en": "The faint shimmer of potions courses through your veins. Mortals forever lean on tinctures to mend their brittle frames.",
       "weight": 4
     },
     {
@@ -347,8 +347,8 @@
       "aspects": [
         "self:potion"
       ],
-      "zh": "§5夜视不算。§8夜视是这张脸的本分。另外那些效果，才叫侵占。",
-      "en": "§5Night vision does not count. §8Night vision is this face's duty. The other effects are occupation.",
+      "zh": "各种草药与炼金残渣在你体内交融，散发出一种令深渊生厌的甜腻气味。",
+      "en": "Herbs and alchemical dregs mingle within you, exhaling a cloying sweetness offensive to the Abyss.",
       "weight": 4
     },
     {
@@ -356,8 +356,8 @@
       "aspects": [
         "self:potion"
       ],
-      "zh": "§7你让瓶子改写身体。§8改写可以。改写完记得把笔还给我。",
-      "en": "§7You let a bottle rewrite the body. §8Rewriting is allowed. Return the pen when you are done.",
+      "zh": "你能用魔药暂时延缓伤痛，却没有任何药剂能够治愈理智的溃烂。",
+      "en": "You may dull your wounds for a time with brews, yet no draught can mend a festering mind.",
       "weight": 4
     },
     {
@@ -365,8 +365,8 @@
       "aspects": [
         "self:potion"
       ],
-      "zh": "§d药效像一层临时的皮肤。§7临时的皮肤最容易在门前脱落。",
-      "en": "§dThe effect is a temporary skin. §7Temporary skins are the first to slough off before a gate.",
+      "zh": "异样的魔力正在改写你体表的法则。小心，莫让这些药水反过来侵蚀了你的本源。",
+      "en": "Strange potencies rewrite the laws of your flesh. Beware lest these elixirs corrode your own essence.",
       "weight": 4
     },
     {
@@ -374,8 +374,8 @@
       "aspects": [
         "self:hurt"
       ],
-      "zh": "§c刚刚有东西碰到了你。§7碰到这张脸，是一种需要事后解释的无礼。",
-      "en": "§cSomething just touched you. §7Touching this face is a discourtesy that requires an explanation afterward.",
+      "zh": "伤口正在渗血。看来这具躯壳并没有你想象中那般坚不可摧。",
+      "en": "Your wounds seep blood. It seems this shell is not so impervious as you imagined.",
       "weight": 4
     },
     {
@@ -383,8 +383,8 @@
       "aspects": [
         "self:hurt"
       ],
-      "zh": "§4痛从皮囊外面进来。§8痛是访客。我是房东。别把账单寄错。",
-      "en": "§4Pain came in from outside the hide. §8Pain is a visitor. I am the landlord. Do not misaddress the bill.",
+      "zh": "疼痛是血肉之躯发出的警讯，提醒着你：你终究只是个会流血的凡人。",
+      "en": "Pain is the warning cry of mortal meat, reminding you that you are still a creature that bleeds.",
       "weight": 4
     },
     {
@@ -392,8 +392,8 @@
       "aspects": [
         "self:hurt"
       ],
-      "zh": "§7你皱了一下这张不属于你的眉。§5眉可以皱。别让它养成习惯。",
-      "en": "§7You creased a brow that is not yours. §5Brows may crease. Do not let them make a habit of it.",
+      "zh": "每一道伤痕都是现实对你的嘲弄。去寻个安全之处舔舐你的创口吧。",
+      "en": "Every gash is reality's mockery of your pride. Seek some quiet corner to tend your lacerations.",
       "weight": 4
     },
     {
@@ -401,8 +401,8 @@
       "aspects": [
         "self:hurt"
       ],
-      "zh": "§8受伤的瞬间，世界离你近了一寸。§7近，不一定是关心。",
-      "en": "§8In the instant of the hit, the world came an inch closer. §7Closer is not necessarily concern.",
+      "zh": "伤痛会动摇意志，而动摇的意志正是虚空低语最喜爱的温床。",
+      "en": "Injury shakes the will, and a shaken will is the choicest soil for whispers from the Void.",
       "weight": 4
     },
     {
@@ -410,8 +410,8 @@
       "aspects": [
         "self:hungry"
       ],
-      "zh": "§7胃在敲门。§8这具身体没有胃的神学，所以那阵敲门属于你。",
-      "en": "§7The stomach is knocking. §8This body has no theology of the stomach, so that knocking belongs to you.",
+      "zh": "腹中的空虚正在啃噬你的力气。血肉之躯真是麻烦，竟需要不断吞咽尘世的腐殖来维系。",
+      "en": "Hollowness gnaws at your strength. How tiresome is mortal flesh, requiring constant mouthfuls of earthly decay merely to persist.",
       "weight": 4
     },
     {
@@ -419,8 +419,8 @@
       "aspects": [
         "self:hungry"
       ],
-      "zh": "§6饿了。§7饥饿让凡人诚实，也让凡人低下头去找地上的东西。",
-      "en": "§6Hungry. §7Hunger makes mortals honest, and makes them lower their heads toward things on the ground.",
+      "zh": "饥饿感正在蔓延。莫要让这股本能蒙蔽了你的双眼，甚至让你觊觎起不该入口的东西。",
+      "en": "Hunger spreads through you. Do not let that brute instinct cloud your sight, lest you crave things never meant to be eaten.",
       "weight": 4
     },
     {
@@ -428,8 +428,8 @@
       "aspects": [
         "self:hungry"
       ],
-      "zh": "§8别用我的嘴去嚼太寒酸的东西。§7不是挑剔。是嚼的声音会传到门的另一侧。",
-      "en": "§8Do not chew anything too mean with my mouth. §7Not snobbery. The sound carries to the other side of the gate.",
+      "zh": "你在渴望食物，而深渊之外的某些存在，正在渴望着吞噬你的灵魂。",
+      "en": "You crave sustenance, while things beyond the Abyss crave the devouring of your soul.",
       "weight": 4
     },
     {
@@ -437,8 +437,8 @@
       "aspects": [
         "self:hungry"
       ],
-      "zh": "§7空肚子像一本缺页的书。§8缺的那几页，通常印着你的名字。",
-      "en": "§7An empty stomach is a book missing pages. §8The missing pages are usually printed with your name.",
+      "zh": "乏力感正从胃囊扩散至四肢。没有充足的供奉，傀儡便难以长久运转。",
+      "en": "Lethargy spreads from your belly to your limbs. Without proper sustenance, even a simulacrum falters.",
       "weight": 4
     },
     {
@@ -446,8 +446,8 @@
       "aspects": [
         "world:day"
       ],
-      "zh": "§e白天把一切都写得太清楚。§7清楚是一种很粗鲁的光。",
-      "en": "§eDaylight writes everything too clearly. §7Clarity is a very rude kind of light.",
+      "zh": "白昼的阳光刺目而虚伪，它不过是主世界用来掩盖宇宙真相的一块薄纱。",
+      "en": "The glare of day is blinding and false—a thin veil cast over the Overworld to hide cosmic truth.",
       "weight": 4
     },
     {
@@ -455,8 +455,8 @@
       "aspects": [
         "world:day"
       ],
-      "zh": "§7太阳还在上班。§8它不知道有些门只在它看不见的时候才算开着。",
-      "en": "§7The sun is still at work. §8It does not know some gates count as open only when it cannot see them.",
+      "zh": "日光之下似乎万物有序，然而深渊的阴影从未因太阳的升起而消退半寸。",
+      "en": "All seems orderly beneath the sun, yet the shadow of the Abyss retreats not a hair's breadth before its rising.",
       "weight": 4
     },
     {
@@ -464,8 +464,8 @@
       "aspects": [
         "world:day"
       ],
-      "zh": "§6白昼适合赶路，不适合读真名。§7真名在强光下会害羞，也会咬人。",
-      "en": "§6Day is fit for travel, not for reading true names. §7A true name grows shy in hard light, and it bites.",
+      "zh": "在光明最盛的时刻，往往也是暗流在地下潜滋暗长的时刻。",
+      "en": "The hour of brightest noon is often when dark currents swell unseen beneath the earth.",
       "weight": 4
     },
     {
@@ -473,8 +473,8 @@
       "aspects": [
         "world:day"
       ],
-      "zh": "§e你在光里走。§8光让影子缩到脚边。缩着的影子仍是我的。",
-      "en": "§eYou walk in the light. §8Light pulls the shadow in to your feet. The shrunken shadow is still mine.",
+      "zh": "凡人喜爱白昼，只因阳光能替他们遮住星海之外那些不可名状的轮廓。",
+      "en": "Mortals love the daylight only because it hides the nameless silhouettes drifting beyond the stars.",
       "weight": 4
     },
     {
@@ -482,8 +482,8 @@
       "aspects": [
         "world:day"
       ],
-      "zh": "§7白天的世界假装自己没有地下室。§8每个世界都有。",
-      "en": "§7The daytime world pretends it has no cellar. §8Every world does.",
+      "zh": "日光温暖着你的皮肤，却照不进黑暗国度那永恒冻结的虚无。",
+      "en": "Sunlight warms your skin, yet cannot pierce the eternally frozen void of the Dark Realm.",
       "weight": 4
     },
     {
@@ -491,8 +491,8 @@
       "aspects": [
         "world:day"
       ],
-      "zh": "§6鸟、草、远处的烟。§7这些声音在奥穆索会被当成故障。",
-      "en": "§6Birds, grass, smoke far off. §7In Omothol those sounds would be logged as a fault.",
+      "zh": "趁着白昼尚在，做好准备吧。黑夜与疯狂从不会提前敲门。",
+      "en": "Make your preparations while the day endures. Night and madness never knock before they enter.",
       "weight": 4
     },
     {
@@ -500,8 +500,8 @@
       "aspects": [
         "world:night"
       ],
-      "zh": "§5夜里，名字比较愿意被读出声。§8你若要说，就小声说。",
-      "en": "§5At night, names are more willing to be spoken aloud. §8If you must speak, speak softly.",
+      "zh": "夜幕降临了。当太阳沉落，宇宙真实的寒意才得以毫无遮拦地渗入此界。",
+      "en": "Night has fallen. Only when the sun sinks does the true chill of the cosmos seep unhindered into this realm.",
       "weight": 2
     },
     {
@@ -509,8 +509,8 @@
       "aspects": [
         "world:night"
       ],
-      "zh": "§8黑暗不是空的。§7它是一种还没决定变成哪一只眼睛的材料。",
-      "en": "§8Darkness is not empty. §7It is material that has not decided which eye to become.",
+      "zh": "黑夜是群星的低语时刻。抬头望去，那些光点并非恒星，而是无数窥视的眼眸。",
+      "en": "Night is the hour when the stars whisper. Look up: those points of light are not suns, but countless watching eyes.",
       "weight": 4
     },
     {
@@ -518,8 +518,8 @@
       "aspects": [
         "world:night"
       ],
-      "zh": "§1月亮挂着，像一枚没盖章的许可。§7许可不是给我的。我不用许可。",
-      "en": "§1The moon hangs like an unstamped permit. §7The permit is not for me. I do not use permits.",
+      "zh": "黑暗中潜藏着不死族、暗影与未知的猎手。莫要以为这具形貌能替你挡下所有的恶意。",
+      "en": "Undead, shadows, and nameless hunters prowl the dark. Do not imagine this likeness shields you from all malice.",
       "weight": 4
     },
     {
@@ -527,8 +527,8 @@
       "aspects": [
         "world:night"
       ],
-      "zh": "§8你在夜里借用这张脸。§5夜里的脸比白天的脸更接近原件。",
-      "en": "§8You borrow this face at night. §5The night face is closer to the original than the day face.",
+      "zh": "夜晚总是格外漫长，尤其是当你开始怀疑阴影里是否站着另一个东西的时候。",
+      "en": "The night stretches ever longer, especially when you begin to wonder if something else stands inside your shadow.",
       "weight": 4
     },
     {
@@ -536,8 +536,8 @@
       "aspects": [
         "world:night"
       ],
-      "zh": "§7星星很多。§8很多不等于在听。在听的那几颗，已经把你记下了。",
-      "en": "§7There are many stars. §8Many does not mean listening. The few that listen have already noted you.",
+      "zh": "星辰在天幕上缓缓移动，距离它们归位之日，又近了一瞬。",
+      "en": "The stars wheel slowly across the firmament, one breath nearer to the hour when they are right.",
       "weight": 4
     },
     {
@@ -545,8 +545,8 @@
       "aspects": [
         "world:night"
       ],
-      "zh": "§5夜色适合守门。§7你现在既是门，又是那个还没决定要不要敲门的人。",
-      "en": "§5Night is fit for keeping a gate. §7You are both the gate and the one who has not decided to knock.",
+      "zh": "此乃举行仪式的良辰。黑夜将掩盖位能流动的痕迹，也会放大你耳畔的低语。",
+      "en": "A fitting hour for ritual. Darkness conceals the flow of Potential Energy—and sharpens the whispers at your ear.",
       "weight": 4
     },
     {
@@ -554,8 +554,8 @@
       "aspects": [
         "world:dawn"
       ],
-      "zh": "§6天边裂开一条浅色。§7裂开不一定是开始。有时是没能完全合上。",
-      "en": "§6A pale split opens on the horizon. §7A split is not always a beginning. Sometimes it is a failure to close.",
+      "zh": "黎明微光初现，宛如深渊裂缝中透出的一丝苍白冷焰。",
+      "en": "The first pale light of dawn breaks, cold as a sliver of flame leaking through a fissure in the Abyss.",
       "weight": 4
     },
     {
@@ -563,8 +563,8 @@
       "aspects": [
         "world:dawn"
       ],
-      "zh": "§e黎明把夜里的句子涂白。§8涂白不是擦掉。墨还在纸的背面。",
-      "en": "§eDawn whites out the night's sentences. §8Whiting out is not erasing. The ink remains on the back of the page.",
+      "zh": "黑夜退去，新的循环再度开启。凡人总在日出时感到希望，殊不知只是新一轮的虚耗。",
+      "en": "Night recedes and the cycle turns anew. Mortals take heart at sunrise, blind to the fact that it is only another round of slow decay.",
       "weight": 4
     },
     {
@@ -572,8 +572,8 @@
       "aspects": [
         "world:dawn"
       ],
-      "zh": "§7鸟先醒。§8鸟以为自己是光的信使。信使通常不知道信的内容。",
-      "en": "§7The birds wake first. §8They think themselves messengers of the light. Messengers rarely know the letter.",
+      "zh": "晨雾尚未散尽，界域之间的边界在此刻最为模糊。",
+      "en": "The morning mist still clings, and the borders between realms are thinnest in this twilight hour.",
       "weight": 4
     },
     {
@@ -581,8 +581,8 @@
       "aspects": [
         "world:dawn"
       ],
-      "zh": "§6这个时辰，门最困。§7困的门也会咬人，只是咬得比较慢。",
-      "en": "§6At this hour the gate is sleepiest. §7A sleepy gate still bites. It only bites more slowly.",
+      "zh": "太阳即将升起，将星辰与噩梦暂时驱逐到视野之外。",
+      "en": "The sun prepares to rise, driving stars and nightmares for a little while beyond mortal sight.",
       "weight": 4
     },
     {
@@ -590,8 +590,8 @@
       "aspects": [
         "world:dusk"
       ],
-      "zh": "§6光在撤退。§8撤退的光会把影子拉长，拉长的影子比较诚实。",
-      "en": "§6The light is retreating. §8Retreating light lengthens shadows, and a long shadow is more honest.",
+      "zh": "黄昏将至，天际染上如血般的残红，恰似恐惧之地永不愈合的创口。",
+      "en": "Dusk settles, staining the horizon a bruised crimson like an unhealed wound of the Dreadlands.",
       "weight": 4
     },
     {
@@ -599,8 +599,8 @@
       "aspects": [
         "world:dusk"
       ],
-      "zh": "§7黄昏是白天和黑夜交换钥匙的时候。§5钥匙有时会掉在门槛上。",
-      "en": "§7Dusk is when day and night exchange keys. §5Sometimes the key is dropped on the threshold.",
+      "zh": "暮色四合，白昼的伪装正在剥落。准备好迎接真正的黑暗了么？",
+      "en": "Twilight gathers and the mask of day peels away. Are you ready to face the true dark?",
       "weight": 4
     },
     {
@@ -608,8 +608,8 @@
       "aspects": [
         "world:dusk"
       ],
-      "zh": "§8天色变稠了。§7稠的天色适合把一句话留到明天。明天不一定还在。",
-      "en": "§8The light has thickened. §7Thick light is good for leaving a sentence until tomorrow. Tomorrow may not remain.",
+      "zh": "日落之时，万物投下长长的影子——有些影子，并不属于它们的主人。",
+      "en": "At sunset all things cast long shadows—and some shadows do not belong to their owners.",
       "weight": 4
     },
     {
@@ -617,8 +617,8 @@
       "aspects": [
         "world:dusk"
       ],
-      "zh": "§6你站在两种世界的缝里。§8缝是我最熟悉的家具。",
-      "en": "§6You stand in the seam between two worlds. §8A seam is the furniture I know best.",
+      "zh": "天色正在暗淡，正如人类文明在旧日支配者苏醒前的最后余晖。",
+      "en": "The sky dims, like the last embers of mortal civilization before the Great Old Ones stir.",
       "weight": 4
     },
     {
@@ -626,8 +626,8 @@
       "aspects": [
         "world:rain"
       ],
-      "zh": "§9雨在敲一切有平面的东西。§7它敲得很勤，像一个没有真名的访客。",
-      "en": "§9Rain knocks on everything with a flat side. §7It knocks diligently, like a visitor with no true name.",
+      "zh": "冰冷的雨水自天穹倾泻，洗刷着尘世的污浊，却洗不去深渊的印记。",
+      "en": "Cold rain pours from the firmament, washing earthly filth away yet leaving the Abyssal brand untouched.",
       "weight": 4
     },
     {
@@ -635,8 +635,8 @@
       "aspects": [
         "world:rain"
       ],
-      "zh": "§7湿了。§8湿的世界比较难点燃，也比较难隐瞒脚印。",
-      "en": "§7It is wet. §8A wet world is harder to set alight, and harder to hide a footprint in.",
+      "zh": "雨声淅沥，掩盖了草丛中潜行的脚步，也遮住了远方传来的异响。",
+      "en": "The patter of rain masks footsteps in the brush and muffles strange sounds from afar.",
       "weight": 4
     },
     {
@@ -644,8 +644,8 @@
       "aspects": [
         "world:rain"
       ],
-      "zh": "§9雨声会盖住低语。§5盖不住。低语走的不是耳朵。",
-      "en": "§9Rain tries to cover a whisper. §5It cannot. A whisper does not travel by the ear.",
+      "zh": "天空仿佛在哀泣。或许它也察觉到了某种不可逆转的腐化正在这片大地上蔓延。",
+      "en": "The sky itself seems to weep—perhaps sensing some irreversible corruption creeping across this land.",
       "weight": 4
     },
     {
@@ -653,8 +653,8 @@
       "aspects": [
         "world:rain"
       ],
-      "zh": "§8水从天上掉下来，假装自己是恩惠。§7恩惠如果需要你淋湿，就再考虑一下。",
-      "en": "§8Water falls from the sky and pretends to be a mercy. §7If a mercy requires you to be soaked, reconsider it.",
+      "zh": "潮湿的水汽令人窒息，恰似珊瑚感染沼泽中那终年不散的湿冷瘴气。",
+      "en": "Damp vapor weighs upon the air like the chill miasma clinging forever to a Coralium-infested swamp.",
       "weight": 4
     },
     {
@@ -662,8 +662,8 @@
       "aspects": [
         "world:thunder"
       ],
-      "zh": "§e天空在发脾气。§8脾气很大，内容却很空。空的怒吼我听过太多。",
-      "en": "§eThe sky is in a temper. §8The temper is large and the content empty. I have heard too many empty roars.",
+      "zh": "雷鸣震彻苍穹！仿佛有某种庞然大物正在云层之上翻身苏醒。",
+      "en": "Thunder shakes the vault of heaven! It is as though some colossus were turning in its sleep above the clouds.",
       "weight": 4
     },
     {
@@ -671,8 +671,8 @@
       "aspects": [
         "world:thunder"
       ],
-      "zh": "§c雷把世界劈成一瞬的白。§7白完之后，黑暗会回来收费。",
-      "en": "§cThunder splits the world into an instant of white. §7After the white, darkness comes back to collect.",
+      "zh": "电光撕裂黑暗，在那一瞬间的惨白里，你可曾看见天幕之外潜伏的触须？",
+      "en": "Lightning rips the dark apart; in that instant of stark pallor, did you glimpse what tendrils coil beyond the sky?",
       "weight": 4
     },
     {
@@ -680,8 +680,8 @@
       "aspects": [
         "world:thunder"
       ],
-      "zh": "§8别把雷声误认成门开的声音。§5门开的时候，雷会先闭嘴。",
-      "en": "§8Do not mistake thunder for a gate opening. §5When a gate opens, thunder shuts up first.",
+      "zh": "暴风雨怒吼着，正如黑暗国度倾泻而出的无尽狂怒。",
+      "en": "The tempest roars like the boundless fury spilling forth from the Dark Realm.",
       "weight": 4
     },
     {
@@ -689,8 +689,8 @@
       "aspects": [
         "world:thunder"
       ],
-      "zh": "§6闪电照见你一秒。§7那一秒里，影子来不及躲。我也来不及不想你。",
-      "en": "§6Lightning shows you for a second. §7In that second the shadow cannot hide. I cannot manage not to think of you either.",
+      "zh": "震耳欲聋的霹雳掩盖了所有凡俗的声响，唯有死灵之书中的咒文仍在心中回荡。",
+      "en": "Deafening thunderbolts drown every mortal sound, leaving only the incantations of the Necronomicon echoing within.",
       "weight": 4
     },
     {
@@ -698,8 +698,8 @@
       "aspects": [
         "world:clear"
       ],
-      "zh": "§7天是干的。§8干的天什么都不肯帮你隐瞒。",
-      "en": "§7The sky is dry. §8A dry sky refuses to help you conceal anything.",
+      "zh": "万里无云的晴空看似澄澈，实则让你毫无遮蔽地暴露在群星的视线之下。",
+      "en": "A cloudless sky appears serene, yet leaves you utterly bare beneath the gaze of the stars.",
       "weight": 4
     },
     {
@@ -707,8 +707,8 @@
       "aspects": [
         "world:clear"
       ],
-      "zh": "§e没有雨，没有雷，没有借口。§7这种天气适合把一句话说完。",
-      "en": "§eNo rain, no thunder, no excuse. §7Weather like this is fit for finishing a sentence.",
+      "zh": "苍穹澄明，远方的星辰或太阳一览无余。然而清澈的视野有时比迷雾更加令人绝望。",
+      "en": "The firmament stands clear, sun or stars laid plain; yet clear sight can be more despairing than any fog.",
       "weight": 4
     },
     {
@@ -716,8 +716,8 @@
       "aspects": [
         "world:clear"
       ],
-      "zh": "§8晴空是一种很傲慢的空白。§7空白上面，星星还没上班。",
-      "en": "§8A clear sky is an arrogant blank. §7Above the blank, the stars are not on shift yet.",
+      "zh": "没有云层的阻隔，宇宙的空旷与冷漠便直接压在你的头顶之上。",
+      "en": "With no clouds to interpose, the emptiness and indifference of the cosmos press directly down upon your head.",
       "weight": 4
     },
     {
@@ -725,8 +725,8 @@
       "aspects": [
         "world:clear"
       ],
-      "zh": "§7能见度太好。§5太好的能见度会让人误以为远处没有门。",
-      "en": "§7The visibility is too good. §5Good visibility makes people think there is no gate in the distance.",
+      "zh": "风平浪静，天色晴朗——多么脆弱的和平，仿佛随时会被一道裂隙撕碎。",
+      "en": "Calm winds and clear skies—how fragile a peace, as though a single rift could tear it asunder.",
       "weight": 4
     },
     {
@@ -734,8 +734,8 @@
       "aspects": [
         "self:critical"
       ],
-      "zh": "§4这具身体正在把句子写到最后一行。§8最后一行通常很短，而且不肯重来。",
-      "en": "§4This body is writing the sentence down to its last line. §8The last line is usually short, and it refuses a rewrite.",
+      "zh": "你已在灭亡的门槛上摇摇欲坠。若就此陨落，连深渊之书也不会为你留下半行注脚。",
+      "en": "You totter upon the threshold of ruin. Fall here, and not even the Abyssalnomicon will spare you a single footnote.",
       "weight": 4
     },
     {
@@ -743,8 +743,8 @@
       "aspects": [
         "self:critical"
       ],
-      "zh": "§c血少到可以数。§7能数的东西就快结束。结束之前，我还听得见你。",
-      "en": "§cThe blood is low enough to count. §7What can be counted is near its end. Before the end, I can still hear you.",
+      "zh": "剧痛正在吞噬你的神智。闭上眼吧，或是挣扎着从绝境中爬回来。",
+      "en": "Torment consumes your wits. Close your eyes—or claw your way back from the abyssal brink.",
       "weight": 4
     },
     {
@@ -752,8 +752,8 @@
       "aspects": [
         "self:flying"
       ],
-      "zh": "§b你离开了地面的合同。§8合同暂时失效，重力仍在草稿里等你签字回来。",
-      "en": "§bYou have left the ground's contract. §8The contract is suspended. Gravity is still in the draft, waiting for your signature back.",
+      "zh": "从高处俯瞰这片尘世吧，凡人。在旧日支配者眼中，整座世界也不过是一粒微尘。",
+      "en": "Look down upon this mortal dust from aloft. In the eyes of a Great Old One, the whole world is scarcely a mote.",
       "weight": 4
     },
     {
@@ -761,8 +761,8 @@
       "aspects": [
         "self:flying"
       ],
-      "zh": "§7从上面看，名字都变小。§8变小不是消失。是它们在等你落下来重新变大。",
-      "en": "§7From above, names look smaller. §8Smaller is not gone. They are waiting for you to land and become large again.",
+      "zh": "高悬于天际之时，你是否听见了云层之上那冰冷而古老的嗡鸣？",
+      "en": "Suspended beneath the heavens, do you not hear that cold, ancient droning above the clouds?",
       "weight": 4
     },
     {
@@ -770,8 +770,8 @@
       "aspects": [
         "self:healthy"
       ],
-      "zh": "§a这具身体目前没什么可抱怨的。§8没抱怨的时候，最适合听一句不舒服的话。",
-      "en": "§aThis body has little to complain of at the moment. §8The moment without complaint is the right moment for an uncomfortable sentence.",
+      "zh": "好好珍惜这份完整的躯壳吧，在奥穆索，完整本身就是一种奢侈。",
+      "en": "Cherish this unbroken shell while you may; in Omothol, wholeness itself is a rare indulgence.",
       "weight": 4
     },
     {
@@ -779,8 +779,8 @@
       "aspects": [
         "self:hungry"
       ],
-      "zh": "§6胃在敲门。§8敲的不是饭。是一种很老的、比神更早的要求。",
-      "en": "§6The stomach is knocking. §8It is not knocking for a meal. It is an old demand, older than gods.",
+      "zh": "再不进食，这具躯壳便会自行枯萎。凡人的脆弱总是体现在这些微不足道的细节上。",
+      "en": "Eat soon, or this frame will wither of its own accord. Mortal frailty always betrays itself in such petty needs.",
       "weight": 4
     },
     {
@@ -788,8 +788,8 @@
       "aspects": [
         "self:hungry"
       ],
-      "zh": "§7饿会把世界翻译成食物。§8翻译得很差，可它很坚持。",
-      "en": "§7Hunger translates the world into food. §8The translation is poor, and it is persistent.",
+      "zh": "饥肠辘辘之际，连死灵之书的书页在你眼中也会显得如同干瘪的肉块吧？",
+      "en": "When starvation bites, do even the vellum leaves of the Necronomicon begin to look like dried meat?",
       "weight": 4
     },
     {
@@ -797,8 +797,8 @@
       "aspects": [
         "self:hurt"
       ],
-      "zh": "§c刚挨的那一下还在皮肤上签名。§8签名未干。别急着把它当成过去。",
-      "en": "§cThe blow you just took is still signing the skin. §8The signature is wet. Do not file it as the past yet.",
+      "zh": "你流出的血落在尘埃里，或许正悄然唤醒地底沉眠的食尸鬼。",
+      "en": "The blood you spill into the dust may even now be waking the ghouls slumbering beneath.",
       "weight": 4
     },
     {
@@ -806,8 +806,8 @@
       "aspects": [
         "self:hurt"
       ],
-      "zh": "§4痛是身体的信使，而且它不敲门。§7信的内容通常只有一个字：还在。",
-      "en": "§4Pain is the body's messenger, and it does not knock. §7The letter usually contains one word: still.",
+      "zh": "这点微末的创伤便让你皱眉了么？在奥穆索，这甚至算不上一次礼貌的问候。",
+      "en": "Does so slight a wound make you flinch? In Omothol, that would scarcely pass for a polite greeting.",
       "weight": 4
     },
     {
@@ -815,8 +815,8 @@
       "aspects": [
         "self:in_lava"
       ],
-      "zh": "§c你在熔岩里。§4这不是沐浴。沐浴结束以后人还在，而且皮还是原来的皮。",
-      "en": "§cYou are in lava. §4This is not a bath. After a bath the person remains, and the skin is still the same skin.",
+      "zh": "若连这凡世的熔岩都无法承受，你又何谈直面沙格斯与查伽洛斯的怒火？",
+      "en": "If you cannot endure mere earthly lava, how could you hope to face the wrath of Shoggoths or Chagaroth?",
       "weight": 4
     },
     {
@@ -824,8 +824,8 @@
       "aspects": [
         "self:in_lava"
       ],
-      "zh": "§6热把时间缩短了。§8缩短以后，每一秒都贵得像最后一秒。有几秒确实是。",
-      "en": "§6Heat has shortened time. §8After the shortening, every second is priced like the last. A few of them are.",
+      "zh": "红莲般的岩浆映照着你扭曲的倒影。傀儡将毁，而守门人依旧无恙。",
+      "en": "Crimson magma mirrors your contorted silhouette. The puppet may perish, yet the Gatekeeper remains untouched.",
       "weight": 4
     },
     {
@@ -833,8 +833,8 @@
       "aspects": [
         "self:in_lava"
       ],
-      "zh": "§4往外走。§c熔岩不收留房客。它只收留燃料，而且不开发票。",
-      "en": "§4Walk out. §cLava does not take lodgers. It takes fuel, and it does not issue a receipt.",
+      "zh": "挣扎吧，在石浆将你彻底吞没之前。",
+      "en": "Struggle, then, before the molten stone claims you whole.",
       "weight": 4
     },
     {
@@ -842,8 +842,8 @@
       "aspects": [
         "self:in_water"
       ],
-      "zh": "§9水没过这具身体的时候，声音会先变远。§8远的是外面的世界。近的是你自己的心跳。",
-      "en": "§9When the water covers this body, sound goes far first. §8What goes far is the outside world. What stays near is your own pulse.",
+      "zh": "溺毙于水中的凡人不在少数，而他们临终前看到的，往往不是水面，而是深渊。",
+      "en": "Many mortals have drowned beneath the waves; and at the last, they rarely saw the surface—only the Abyss.",
       "weight": 4
     },
     {
@@ -851,8 +851,8 @@
       "aspects": [
         "self:in_water"
       ],
-      "zh": "§b泡在水里，重量会被暂时赦免。§7赦免有期限。上岸的时候，重量会连本带利回来。",
-      "en": "§bSoaked, the weight is briefly pardoned. §7The pardon has a term. When you come ashore, the weight returns with interest.",
+      "zh": "屏住呼吸吧。水波的折射会扭曲你的视线，正如疯狂扭曲现实。",
+      "en": "Hold your breath. The ripples bend your sight, much as madness bends reality.",
       "weight": 4
     },
     {
@@ -860,8 +860,8 @@
       "aspects": [
         "self:low_health"
       ],
-      "zh": "§c还没到最后一行，可纸已经透了。§8透光的纸不适合再写很长的计划。",
-      "en": "§cNot the last line yet, but the paper is already showing light through. §8Paper that shows light is a poor place for a long plan.",
+      "zh": "生命之火已如风中残烛。去吧，要么寻得生机，要么在虚空中归于沉寂。",
+      "en": "The flame of your life flickers like a guttering wick. Go—find renewal, or gutter out into the Void.",
       "weight": 4
     },
     {
@@ -869,8 +869,8 @@
       "aspects": [
         "self:on_fire"
       ],
-      "zh": "§c你着了。§6火不关心你是谁的皮囊。它只关心还有没有可以烧的续篇。",
-      "en": "§cYou are burning. §6Fire does not care whose hide this is. It only cares whether there is a sequel left to burn.",
+      "zh": "在灼痛之中保持清醒吧，否则疯狂将比灰烬更早一步将你覆盖。",
+      "en": "Keep your wits amidst the searing heat, lest madness bury you before the ashes do.",
       "weight": 4
     },
     {
@@ -878,8 +878,8 @@
       "aspects": [
         "self:on_fire"
       ],
-      "zh": "§4先灭。§8哲学可以等。火不等。火的语法里没有稍后。",
-      "en": "§4Put it out first. §8Philosophy can wait. Fire does not. Fire's grammar has no later.",
+      "zh": "烈火焚身之时，时间仿佛被拉长——正如你在仪式中被剥离理智的那一瞬。",
+      "en": "When fire consumes the body, time stretches thin—just as in the instant a ritual strips away your sanity.",
       "weight": 4
     },
     {
@@ -887,8 +887,8 @@
       "aspects": [
         "self:potion"
       ],
-      "zh": "§d血里有一种不属于这具身体的语法。§8语法在生效。生效的东西，不一定是你邀请的。",
-      "en": "§dThere is a grammar in the blood that does not belong to this body. §8The grammar is in effect. What is in effect was not necessarily invited.",
+      "zh": "借来的力量终有尽时，药效消散之后，虚弱会加倍地回到你身上。",
+      "en": "Borrowed vigor always expires; when the draught fades, weakness returns twofold.",
       "weight": 4
     },
     {
@@ -896,8 +896,8 @@
       "aspects": [
         "self:potion"
       ],
-      "zh": "§5药水还在改你。§7改完以前，别太相信现在的勇气。勇气可能是借来的，而且会过期。",
-      "en": "§5The potion is still editing you. §7Until it finishes, do not trust the present courage. It may be borrowed, and it expires.",
+      "zh": "你饮下了混沌的调和物，恰似饮下了一口稀释后的珊瑚毒液。",
+      "en": "You have swallowed a concoction of chaos, scarcely different from a diluted draught of Coralium.",
       "weight": 4
     },
     {
@@ -905,8 +905,8 @@
       "aspects": [
         "self:sneaking"
       ],
-      "zh": "§7你把呼吸也放低了。§8放低的呼吸像一句括号里的话。括号挡得住读者，挡不住门。",
-      "en": "§7You have lowered your breath as well. §8A lowered breath is a sentence in parentheses. Parentheses stop a reader. They do not stop a gate.",
+      "zh": "你在阴影中潜行，殊不知阴影本身便是奈亚拉托提普披挂的衣袍。",
+      "en": "You creep through the shadows, little knowing that shadow itself is the raiment of Nyarlathotep.",
       "weight": 4
     },
     {
@@ -914,8 +914,8 @@
       "aspects": [
         "self:sneaking"
       ],
-      "zh": "§8潜行的人以为自己在减少存在。§7存在不是体积。你弯下腰，名字还是原来的高度。",
-      "en": "§8A sneaking person thinks they are reducing their existence. §7Existence is not volume. You bend, and the name stays at its old height.",
+      "zh": "低伏姿态或许能躲过野兽的视线，却逃不开门扉之后那道永恒的凝望。",
+      "en": "A lowered stance may evade the eyes of beasts, yet it cannot escape the eternal gaze beyond the Gate.",
       "weight": 4
     },
     {
@@ -923,8 +923,8 @@
       "aspects": [
         "self:sprinting"
       ],
-      "zh": "§c跑的时候，世界变成两条线。§8线的尽头如果是牙，线不会提前告诉你。",
-      "en": "§cWhile you run, the world becomes two lines. §8If the end of the line is teeth, the line will not warn you early.",
+      "zh": "你为何如此匆忙？难道你以为逃离了此地，便能逃离死灵之书为你写下的结局？",
+      "en": "Why such haste? Do you truly believe that fleeing this place frees you from the end written for you in the Necronomicon?",
       "weight": 4
     },
     {
@@ -932,8 +932,8 @@
       "aspects": [
         "self:sprinting"
       ],
-      "zh": "§6急什么。§7急是一种把后面的东西邀请到前面来的方式。",
-      "en": "§6Why the hurry. §7Hurry is a way of inviting what is behind to arrive in front.",
+      "zh": "疾驰的脚步只会加速血液的沸腾，让珊瑚的微光更早渗入你的骨髓。",
+      "en": "Swift steps only quicken the blood, inviting the faint taint of Coralium all the sooner into your marrow.",
       "weight": 4
     },
     {
@@ -941,8 +941,8 @@
       "aspects": [
         "world:clear"
       ],
-      "zh": "§e天是干的。§8干的天不帮忙隐瞒。你的影子被晒得无可辩驳。",
-      "en": "§eThe sky is dry. §8A dry sky does not help you hide. Your shadow is sunned into something undeniable.",
+      "zh": "晴空之下，一切阴影都显得格外分明。你无法隐藏自己，哪怕只是一瞬。",
+      "en": "Beneath a clear sky, every shadow stands razor-sharp. You cannot hide yourself, not even for a heartbeat.",
       "weight": 4
     },
     {
@@ -950,8 +950,8 @@
       "aspects": [
         "world:clear"
       ],
-      "zh": "§7晴天是一种没有借口的照明。§8没有借口的时候，人最容易以为自己安全。",
-      "en": "§7Clear weather is a light with no excuse attached. §8When there is no excuse, people are quickest to think themselves safe.",
+      "zh": "在这毫无遮拦的天穹下，奥穆索的注视穿透空气，直抵你的灵魂。",
+      "en": "Under this unobstructed vault, the gaze of Omothol pierces the air straight to your soul.",
       "weight": 4
     },
     {
@@ -959,8 +959,8 @@
       "aspects": [
         "world:clear"
       ],
-      "zh": "§e云今天不上班。§8不上班的遮蔽，把你直接交给上面的眼睛。",
-      "en": "§eThe clouds are off duty today. §8When cover does not come to work, you are handed directly to the eyes above.",
+      "zh": "宁静的晴日总是令人产生一切尽在掌握的错觉。真是可怜的自我安慰。",
+      "en": "A tranquil, cloudless day always breeds the illusion that all is in hand. A pitiful comfort.",
       "weight": 4
     },
     {
@@ -968,8 +968,8 @@
       "aspects": [
         "world:clear"
       ],
-      "zh": "§6能见度很好。§7很好的意思是：别人也看得见你。",
-      "en": "§6Visibility is excellent. §7Excellent means other things can see you too.",
+      "zh": "即便天色明朗，我也依然能看见你背后那道挥之不去的深渊倒影。",
+      "en": "Though the heavens shine clear, I still see the Abyssal silhouette clinging behind your back.",
       "weight": 4
     },
     {
@@ -977,8 +977,8 @@
       "aspects": [
         "world:dawn"
       ],
-      "zh": "§6天边在重新起草光。§8草稿很薄。薄的光最先照见还没离开的东西。",
-      "en": "§6The horizon is redrafting the light. §8The draft is thin. Thin light shows first what has not yet left.",
+      "zh": "破晓的寒意刺骨，正如奥穆索那永无止境的冷风。",
+      "en": "The chill of daybreak bites deep, much like the unending wind of Omothol.",
       "weight": 4
     },
     {
@@ -986,8 +986,8 @@
       "aspects": [
         "world:dawn"
       ],
-      "zh": "§e夜里的合同快到期了。§7到期不等于作废。有些签名用的是牙，不是墨。",
-      "en": "§eThe night's contract is nearly expired. §7Expiry is not annulment. Some signatures were made with teeth, not ink.",
+      "zh": "又一个白昼开始了。你距离真相究竟更近了一步，还是在原地打转？",
+      "en": "Another day begins. Have you drawn any nearer to the truth, or do you merely walk in circles?",
       "weight": 4
     },
     {
@@ -995,8 +995,8 @@
       "aspects": [
         "world:dusk"
       ],
-      "zh": "§6光在收回它的担保。§8担保一撤，影子就不用再解释自己为什么变长。",
-      "en": "§6The light is withdrawing its guarantee. §8Once the guarantee goes, a shadow no longer has to explain why it lengthened.",
+      "zh": "黄昏是清醒与梦魇交界的时刻。拉莱耶的呼唤往往在此时最为清晰。",
+      "en": "Dusk is the borderland between waking and nightmare. The call of R'lyeh rings clearest in this hour.",
       "weight": 4
     },
     {
@@ -1004,8 +1004,8 @@
       "aspects": [
         "world:dusk"
       ],
-      "zh": "§e这个时辰最适合把话说短。§7短话在天黑以前还能落地。长话会留在外面过夜。",
-      "en": "§eThis hour is the right hour for short sentences. §7A short sentence can still land before dark. A long one will be left outside overnight.",
+      "zh": "太阳沉没了，属于暗影生物与亡灵的时刻即将到来。",
+      "en": "The sun has drowned; the hour of shadow creatures and the restless dead draws nigh.",
       "weight": 4
     },
     {
@@ -1013,8 +1013,8 @@
       "aspects": [
         "world:rain"
       ],
-      "zh": "§9雨在替地面洗脸。§8洗掉的如果是脚印，别高兴。雨有自己的档案室，叫泥。",
-      "en": "§9The rain is washing the ground's face. §8If what it washes off is a footprint, do not be pleased. Rain has its own archive. It is called mud.",
+      "zh": "雨滴敲打着你的头颅，每一声都像是在倒数着理智耗尽的时刻。",
+      "en": "Raindrops drum against your skull, each tap counting down the moments until sanity runs dry.",
       "weight": 4
     },
     {
@@ -1022,8 +1022,8 @@
       "aspects": [
         "world:rain"
       ],
-      "zh": "§7湿透的世界听得更清楚。§8清楚不是恩惠。是你的脚步失去了干燥的借口。",
-      "en": "§7A soaked world hears more clearly. §8Clarity is not a favor. Your step has lost the excuse of being dry.",
+      "zh": "在这连绵的阴雨中，地面变得泥泞不堪，正如被查伽洛斯践踏过的泥沼。",
+      "en": "Beneath this ceaseless rain the earth turns to mire, like the fouled fens trampled by Chagaroth.",
       "weight": 4
     },
     {
@@ -1031,8 +1031,8 @@
       "aspects": [
         "world:thunder"
       ],
-      "zh": "§e雷把天撕开一条缝。§8缝里不一定有门。可每一次撕开，门都会侧耳。",
-      "en": "§eThunder tears a seam in the sky. §8There is not always a gate in the seam. But every tear makes a gate turn its ear.",
+      "zh": "雷电是天空的怒火，然而在真正的外神面前，这不过是孩童手中的火花。",
+      "en": "Lightning is the wrath of the sky; yet before the true Outer Gods, it is no more than a child's spark.",
       "weight": 4
     },
     {
@@ -1040,8 +1040,8 @@
       "aspects": [
         "world:thunder"
       ],
-      "zh": "§6先看见光，后听见判决。§7这个顺序对凡人很仁慈。仁慈只有一两秒。",
-      "en": "§6The light arrives first, the verdict after. §7That order is merciful to mortals. The mercy lasts a second or two.",
+      "zh": "风暴之中，门扉的共振愈发强烈。小心莫让雷霆引来不速之客。",
+      "en": "Amidst the storm, the Gate resonates all the fiercer. Take care the thunder does not summon unwanted guests.",
       "weight": 4
     }
   ]

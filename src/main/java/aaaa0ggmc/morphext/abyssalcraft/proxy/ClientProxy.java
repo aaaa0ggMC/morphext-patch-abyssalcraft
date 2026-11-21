@@ -46,6 +46,135 @@ public class ClientProxy extends CommonProxy {
         AbyssalCoreIntegration.registerCreativeFallbacks();
         registerHandPresets();
         registerRenderAdjustments();
+        net.minecraftforge.common.MinecraftForge.EVENT_BUS.register(this);
+    }
+
+    private static final String STATIC_CIPHER_GLYPHS = "ᚠᚢᚦᚨᚱᚲᚷᚹᚺᚾᛁᛃᛇᛈᛉᛊᛏᛒᛖᛗᛚᛜᛞᛟ";
+
+    /**
+     * AbyssalCraft 的 AbyssalCraftClientEventHooks.tooltipFont 在非 COMMON 稀有度或
+     * Unicode/JEI 环境下未能触发 Aklo 字体，导致暴露明文 "Lorem ipsum" 与后续用法。
+     * 此处将整段未解锁提示替换为静态古符文密文（不闪烁，避免光敏/视觉不适）。
+     */
+    @net.minecraftforge.fml.common.eventhandler.SubscribeEvent(priority = net.minecraftforge.fml.common.eventhandler.EventPriority.LOW)
+    public void onItemTooltip(net.minecraftforge.event.entity.player.ItemTooltipEvent event) {
+        if (com.shinoow.abyssalcraft.api.APIUtils.display_names || event.getToolTip().isEmpty()) {
+            return;
+        }
+        java.util.List<String> lines = event.getToolTip();
+        String first = net.minecraft.util.text.TextFormatting.getTextWithoutFormattingCodes(lines.get(0));
+        if (first == null || !first.startsWith("Lorem ipsum")) {
+            return;
+        }
+        lines.set(0, net.minecraft.util.text.TextFormatting.DARK_PURPLE + scrambleStatic(first));
+        for (int i = 1; i < lines.size(); i++) {
+            String plain = net.minecraft.util.text.TextFormatting.getTextWithoutFormattingCodes(lines.get(i));
+            if (plain != null && !plain.isEmpty()) {
+                lines.set(i, net.minecraft.util.text.TextFormatting.DARK_GRAY + scrambleStatic(plain));
+            }
+        }
+    }
+
+    private static String scrambleStatic(String text) {
+        StringBuilder sb = new StringBuilder(text.length());
+        for (int i = 0; i < text.length(); i++) {
+            char c = text.charAt(i);
+            if (Character.isWhitespace(c)) {
+                sb.append(c);
+            } else {
+                int idx = Math.abs((c * 31 + i * 17)) % STATIC_CIPHER_GLYPHS.length();
+                sb.append(STATIC_CIPHER_GLYPHS.charAt(idx));
+            }
+        }
+        return sb.toString();
+    }
+
+    @Override
+    public void postInit(net.minecraftforge.fml.common.event.FMLPostInitializationEvent event) {
+        super.postInit(event);
+        fixAntiSkeletonArmorLayers();
+    }
+
+    /**
+     * AbyssalCraft 的 RenderAntiSkeleton 给护甲层使用了原版 ModelSkeleton，
+     * 但 EntityAntiSkeleton 继承 EntityMob 而非 AbstractSkeleton，导致 ModelSkeleton.setLivingAnimations
+     * 每帧强转 (AbstractSkeleton) 抛出 ClassCastException 并狂刷日志。
+     * 此处通过反射将护甲模型替换为安全子类，保留骨骼护甲外观且消除异常。
+     */
+    private static void fixAntiSkeletonArmorLayers() {
+        try {
+            net.minecraft.client.renderer.entity.Render<?> render =
+                    net.minecraft.client.Minecraft.getMinecraft().getRenderManager()
+                            .getEntityClassRenderObject(com.shinoow.abyssalcraft.common.entity.anti.EntityAntiSkeleton.class);
+            if (!(render instanceof net.minecraft.client.renderer.entity.RenderLivingBase)) {
+                return;
+            }
+            java.lang.reflect.Field layersField = findField(
+                    net.minecraft.client.renderer.entity.RenderLivingBase.class,
+                    "field_177097_h", "layerRenderers");
+            java.lang.reflect.Field leggingsField = findField(
+                    net.minecraft.client.renderer.entity.layers.LayerArmorBase.class,
+                    "field_177189_c", "modelLeggings");
+            java.lang.reflect.Field armorField = findField(
+                    net.minecraft.client.renderer.entity.layers.LayerArmorBase.class,
+                    "field_177186_d", "modelArmor");
+            if (layersField == null || leggingsField == null || armorField == null) {
+                return;
+            }
+            @SuppressWarnings("unchecked")
+            java.util.List<net.minecraft.client.renderer.entity.layers.LayerRenderer<?>> layers =
+                    (java.util.List<net.minecraft.client.renderer.entity.layers.LayerRenderer<?>>) layersField.get(render);
+            int patched = 0;
+            for (net.minecraft.client.renderer.entity.layers.LayerRenderer<?> layer : layers) {
+                if (layer instanceof net.minecraft.client.renderer.entity.layers.LayerArmorBase) {
+                    if (leggingsField.get(layer) instanceof net.minecraft.client.model.ModelSkeleton) {
+                        leggingsField.set(layer, new net.minecraft.client.model.ModelBiped(0.5F, 0.0F, 64, 32));
+                        patched++;
+                    }
+                    if (armorField.get(layer) instanceof net.minecraft.client.model.ModelSkeleton) {
+                        armorField.set(layer, new net.minecraft.client.model.ModelBiped(1.0F, 0.0F, 64, 32));
+                        patched++;
+                    }
+                }
+            }
+            if (patched > 0) {
+                org.apache.logging.log4j.LogManager.getLogger("morphext-patch-abyssalcraft")
+                        .info("[morphext-patch-abyssalcraft] Patched {} AntiSkeleton armor model(s) to prevent ModelSkeleton ClassCastException", patched);
+            }
+        } catch (Throwable t) {
+            org.apache.logging.log4j.LogManager.getLogger("morphext-patch-abyssalcraft")
+                    .warn("[morphext-patch-abyssalcraft] Failed to patch AntiSkeleton armor layers: {}", t.toString());
+        }
+    }
+
+    private static java.lang.reflect.Field findField(Class<?> cls, String srg, String mcp) {
+        for (Class<?> c = cls; c != null; c = c.getSuperclass()) {
+            for (String name : new String[]{srg, mcp}) {
+                try {
+                    java.lang.reflect.Field f = c.getDeclaredField(name);
+                    f.setAccessible(true);
+                    return f;
+                } catch (NoSuchFieldException ignored) {
+                }
+            }
+        }
+        return null;
+    }
+
+    private static final class SafeAntiSkeletonArmorModel extends net.minecraft.client.model.ModelSkeleton {
+        SafeAntiSkeletonArmorModel(float modelSize) {
+            super(modelSize, true);
+        }
+
+        @Override
+        public void setLivingAnimations(net.minecraft.entity.EntityLivingBase entity, float limbSwing, float limbSwingAmount, float partialTickTime) {
+            if (entity instanceof net.minecraft.entity.monster.AbstractSkeleton) {
+                super.setLivingAnimations(entity, limbSwing, limbSwingAmount, partialTickTime);
+                return;
+            }
+            this.rightArmPose = net.minecraft.client.model.ModelBiped.ArmPose.EMPTY;
+            this.leftArmPose = net.minecraft.client.model.ModelBiped.ArmPose.EMPTY;
+        }
     }
 
     private void registerRenderAdjustments() {

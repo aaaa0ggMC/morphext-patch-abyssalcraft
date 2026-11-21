@@ -171,11 +171,37 @@ public final class BossNativeHelper {
         if (entity == null) return true;
         if (entity == owner) return true;
         if (owner != null && isOwnedBy(entity, owner)) return true;
-        if (owner == null || !(entity instanceof EntityLivingBase)) return false;
+        if (owner == null) {
+            if (entity instanceof com.shinoow.abyssalcraft.api.entity.IOmotholEntity) return true;
+            if (entity instanceof EntityPlayer
+                    && aaaa0ggmc.morphext.abyssalcraft.MorphBossAdaptHandler.isMorphedAsEldritch((EntityPlayer) entity)) {
+                return true;
+            }
+            return false;
+        }
+        if (!(entity instanceof EntityLivingBase)) return false;
 
         EntityLivingBase target = (EntityLivingBase) entity;
         if (target.isOnSameTeam(owner)) return true;
         return !FactionEnmity.isEnemy(owner, target);
+    }
+
+    /** 将可选 UUID 写入实体生成同步包。 */
+    public static void writeUuid(io.netty.buffer.ByteBuf buf, java.util.UUID uuid) {
+        if (buf == null) return;
+        if (uuid != null) {
+            buf.writeBoolean(true);
+            buf.writeLong(uuid.getMostSignificantBits());
+            buf.writeLong(uuid.getLeastSignificantBits());
+        } else {
+            buf.writeBoolean(false);
+        }
+    }
+
+    /** 从实体生成同步包读取可选 UUID。 */
+    public static java.util.UUID readUuid(io.netty.buffer.ByteBuf buf) {
+        if (buf == null || !buf.readBoolean()) return null;
+        return new java.util.UUID(buf.readLong(), buf.readLong());
     }
 
     /** A16：实体是否被"别人"召唤/标记（有属主标签但属主不是 owner）。无主实体返回 false。 */

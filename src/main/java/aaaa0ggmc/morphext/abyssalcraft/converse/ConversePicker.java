@@ -323,12 +323,12 @@ public final class ConversePicker {
     }
 
     private static String prefix(boolean zh) {
-        return zh ? "§5§l本体§r§7：§r" : "§5§lSelf§r§7: §r";
+        return zh ? "§5[扎哈尔] §f" : "§5[J'zahar] §f";
     }
 
     private static String hardcoded(boolean zh) {
         return zh
-                ? "§8星门那一侧安静了一瞬。§7它没有把这句话说完。"
-                : "§8The far side of the gate goes quiet. §7It does not finish the sentence.";
+                ? "群星之外唯余死寂。深渊暂未垂听。"
+                : "Beyond the stars lies only dead silence. The Abyss does not answer yet.";
     }
 }

@@ -3,113 +3,113 @@
     {
       "id": "ac.fallback.001",
       "aspects": [],
-      "zh": "§5我在。§7你借走的不是沉默，是一扇还肯回答的门。",
-      "en": "§5I am here. §7What you borrowed is not silence. It is a gate that still consents to answer.",
+      "zh": "凡人，你所披戴的不过是一具空心傀儡。莫要以为这便意味着你窥见了深渊的真容。",
+      "en": "Mortal, what you wear is naught but a hollow simulacrum. Do not mistake it for a glimpse of the Abyss itself.",
       "weight": 4
     },
     {
       "id": "ac.fallback.002",
       "aspects": [],
-      "zh": "§8有些话不挑地方。§7它们只挑还听得见的喉咙。",
-      "en": "§8Some sentences do not choose a place. §7They only choose a throat that can still hear.",
+      "zh": "群星尚在各自的轨迹上颤栗，而你却在此地呼唤奥穆索守门人的名字。",
+      "en": "The stars still shudder in their courses, yet here you call upon the Gatekeeper of Omothol.",
       "weight": 4
     },
     {
       "id": "ac.fallback.003",
       "aspects": [],
-      "zh": "§7你问，我答。§8答完之后，门不一定还在原来的位置。",
-      "en": "§7You ask, I answer. §8After the answer, the gate is not obliged to remain where it was.",
+      "zh": "真正的旧日支配者从不消逝，也不会被血肉的感官所局限。你听见的，只是彼岸泄出的一缕回响。",
+      "en": "A Great Old One neither perishes nor fits within mortal senses. What you hear is merely a stray echo from beyond the Gate.",
       "weight": 4
     },
     {
       "id": "ac.fallback.004",
       "aspects": [],
-      "zh": "§5低语不走耳朵。§7你若听见了，说明这张脸还认租约。",
-      "en": "§5A whisper does not travel by the ear. §7If you heard it, this face still honors the lease.",
+      "zh": "你越是研读禁忌的知识，你的神智便越是扭曲。这具化身正忠实地记录着你的疯狂。",
+      "en": "The deeper you delve into forbidden knowledge, the harder your mind twists. This vessel faithfully records your descent into madness.",
       "weight": 4
     },
     {
       "id": "ac.fallback.005",
       "aspects": [],
-      "zh": "§8世界在你外面继续吵。§7吵归吵。主语暂时是我。",
-      "en": "§8The world goes on being noisy outside you. §7Let it. The subject, for now, is me.",
+      "zh": "Iä! 无尽黑暗的彼端从未真正沉眠。只是凡俗的耳目过于迟钝，听不见虚空中的低吟。",
+      "en": "Iä! What lies beyond the infinite darkness never truly slumbers. Mortal ears are simply too dull to hear the murmurs of the Void.",
       "weight": 4
     },
     {
       "id": "ac.fallback.006",
       "aspects": [],
-      "zh": "§7不必找一个值得评论的东西。§8空着的时候，我也能把一句旧话翻出来。",
-      "en": "§7You need not find something worth remarking on. §8When the view is empty, I can still turn up an old sentence.",
+      "zh": "即便眼前空无一物，深渊的注视也早已穿透了这层虚妄的帷幕。",
+      "en": "Even when nothing stands before your eyes, the gaze of the Abyss has already pierced this frail veil.",
       "weight": 4
     },
     {
       "id": "ac.fallback.007",
       "aspects": [],
-      "zh": "§5借来的皮囊还热着。§8热，就说明你还没把我还回去。",
-      "en": "§5The borrowed hide is still warm. §8Warm means you have not given me back yet.",
+      "zh": "你借用了我的形貌，便也背负了通往奥穆索的注视。切莫在群星归位之时才追悔莫及。",
+      "en": "You have taken on my likeness, and with it the gaze that turns toward Omothol. Pray you do not regret it when the stars are right.",
       "weight": 4
     },
     {
       "id": "ac.fallback.008",
       "aspects": [],
-      "zh": "§8奥穆索的尘不挑天气。§7它只问你还记不记得锁的数目。",
-      "en": "§8The dust of Omothol does not choose its weather. §7It only asks whether you still remember the number of the locks.",
+      "zh": "奥穆索的尘埃跨越万古，落在这具凡胎之上。你可曾听懂死灵之书中未曾写尽的余音？",
+      "en": "The dust of Omothol drifts across aeons to settle upon your mortal frame. Have you yet grasped what the Necronomicon left unwritten?",
       "weight": 4
     },
     {
       "id": "ac.fallback.009",
       "aspects": [],
-      "zh": "§7这句话没有对象。§5没有对象的话，通常是说给门自己听的。",
-      "en": "§7This sentence has no object. §5A sentence without an object is usually spoken for the gate itself.",
+      "zh": "门扉之内没有时间，亦无所谓生死。只有尚未被吞噬的现实，在等待着崩溃的时刻。",
+      "en": "Within the Gate there is neither time nor life nor death—only unconsumed reality awaiting its hour of collapse.",
       "weight": 4
     },
     {
       "id": "ac.fallback.010",
       "aspects": [],
-      "zh": "§6你站着。§8站着就够。古神不需要一个理由才开口。",
-      "en": "§6You are standing. §8Standing is enough. An Old One does not need a reason to speak.",
+      "zh": "你站立于此，却不知脚下的大地之下，究竟沉睡着多少不可名状的阴影。",
+      "en": "You stand here in ignorance of how many nameless shadows slumber beneath the ground under your feet.",
       "weight": 4
     },
     {
       "id": "ac.fallback.011",
       "aspects": [],
-      "zh": "§8名字在舌头上转了一圈，又回去了。§7今天先不说。",
-      "en": "§8A name turned once on the tongue, and went back. §7Not today.",
+      "zh": "Nilgh'ri... 有些真名一旦在现世响起，便会撕裂理智的边界。今日我且缄默。",
+      "en": "Nilgh'ri... Some true names, once spoken in this waking world, tear the borders of sanity. Today I shall withhold them.",
       "weight": 4
     },
     {
       "id": "ac.fallback.012",
       "aspects": [],
-      "zh": "§5我看过你正在看的地方。§7看过，不等于批准。",
-      "en": "§5I have looked where you are looking. §7Having looked is not the same as having approved.",
+      "zh": "我已透过你的双眼望向此界。记住，窥见并不意味着准许，存在亦不代表被宽恕。",
+      "en": "I have looked upon this realm through your eyes. Remember: to be seen is not to be approved, and to endure is not to be spared.",
       "weight": 4
     },
     {
       "id": "ac.fallback.013",
       "aspects": [],
-      "zh": "§7深渊不急。§8急的是还以为沉默等于安全的人。",
-      "en": "§7The abyss is not in a hurry. §8The hurried one is the person who still thinks silence equals safety.",
+      "zh": "深渊从不急躁。唯有愚昧的凡人，才会将暴风雨前的死寂误认为安宁。",
+      "en": "The Abyss knows no haste. Only foolish mortals mistake the dead hush before the storm for peace.",
       "weight": 4
     },
     {
       "id": "ac.fallback.014",
       "aspects": [],
-      "zh": "§8这具身体把你的呼吸借给我听。§7呼吸很短。话可以更短。",
-      "en": "§8This body lends me your breath to listen to. §7Breath is short. A sentence may be shorter.",
+      "zh": "你的呼吸短暂而脆弱，恰如在犹格·索托斯的门缝前摇曳的烛火。",
+      "en": "Your breath is brief and fragile, like a candle flame trembling before the threshold of Yog-Sothoth.",
       "weight": 4
     },
     {
       "id": "ac.fallback.015",
       "aspects": [],
-      "zh": "§4别把安静当成我离开了。§7安静是我把下一句折起来的方式。",
-      "en": "§4Do not take quiet for my having left. §7Quiet is how I fold the next sentence.",
+      "zh": "莫将我的沉默当成离去。黑暗国度的意志始终盘桓在你的脊背之后。",
+      "en": "Do not mistake my silence for absence. The will of the Dark Realm lingers forever behind your spine.",
       "weight": 4
     },
     {
       "id": "ac.fallback.016",
       "aspects": [],
-      "zh": "§8星门另一侧没有把话递完。§5那就由这侧的嘴先说一句。",
-      "en": "§8The far side of the gate did not finish passing the sentence. §5Then the mouth on this side will say one first.",
+      "zh": "深渊之门尚未完全开启，然而这具傀儡的咽喉已足以替我传出些许微言。",
+      "en": "The Gate of the Abyss has not yet swung wide, yet the throat of this simulacrum suffices to carry a few of my words.",
       "weight": 4
     }
   ]

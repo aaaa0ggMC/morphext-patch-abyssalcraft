@@ -5,6 +5,7 @@ import com.shinoow.abyssalcraft.common.entity.EntityBlackHole;
 import com.shinoow.abyssalcraft.common.entity.EntityImplosion;
 import com.shinoow.abyssalcraft.lib.ACConfig;
 import com.shinoow.abyssalcraft.lib.ACSounds;
+import io.netty.buffer.ByteBuf;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
@@ -12,6 +13,7 @@ import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.util.DamageSource;
 import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.World;
+import net.minecraftforge.fml.common.registry.IEntityAdditionalSpawnData;
 
 import java.util.List;
 import java.util.UUID;
@@ -21,7 +23,7 @@ import java.util.UUID;
  * 1. 还原原生 360 tick 内爆音画、末影龙破空特效与范围雷击；
  * 2. 宿主玩家、队友与古神变身 100% 免疫引力拉扯与 100 点致死雷击自伤。
  */
-public class MorphEntityImplosion extends EntityImplosion {
+public class MorphEntityImplosion extends EntityImplosion implements IEntityAdditionalSpawnData {
 
     private UUID ownerUUID;
     private double pullSpeed = 0.0D;
@@ -139,5 +141,15 @@ public class MorphEntityImplosion extends EntityImplosion {
                 ownerUUID = UUID.fromString(compound.getString("OwnerUUID"));
             } catch (Exception ignored) {}
         }
+    }
+
+    @Override
+    public void writeSpawnData(ByteBuf buffer) {
+        BossNativeHelper.writeUuid(buffer, ownerUUID);
+    }
+
+    @Override
+    public void readSpawnData(ByteBuf additionalData) {
+        this.ownerUUID = BossNativeHelper.readUuid(additionalData);
     }
 }

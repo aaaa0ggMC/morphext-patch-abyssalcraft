@@ -257,24 +257,14 @@ public final class MorphBossAdaptHandler {
         Entity entity = event.getEntity();
         if (entity == null || entity.world.isRemote) return;
 
-        // 核心防御 1：变身扎哈尔 AI 释放的黑洞实体替换为安全黑洞
+        // 核心防御 1：变身扎哈尔 AI 释放的黑洞实体替换为安全黑洞；若场上有古神形态玩家，野生黑洞同样替换以豁免牵引
         if (entity.getClass() == EntityBlackHole.class) {
             EntityBlackHole blackHole = (EntityBlackHole) entity;
             EntityPlayer owner = findMorphOwner(blackHole.shootingEntity);
             if (owner == null) {
-                // 如果 shootingEntity 未打标签，检查周围是否有变身扎哈尔的玩家
-                for (EntityPlayer p : entity.world.playerEntities) {
-                    IMorphing morphing = Morphing.get(p);
-                    if (morphing != null && morphing.isMorphed()) {
-                        AbstractMorph m = morphing.getCurrentMorph();
-                        if (m != null && m.name != null && m.name.toLowerCase().contains("jzahar")) {
-                            owner = p;
-                            break;
-                        }
-                    }
-                }
+                owner = findMorphedJzaharOwner(entity.world);
             }
-            if (owner != null) {
+            if (owner != null || hasEldritchMorphedPlayer(entity.world)) {
                 event.setCanceled(true);
                 aaaa0ggmc.morphext.abyssalcraft.entity.MorphEntityBlackHole safeHole =
                         new aaaa0ggmc.morphext.abyssalcraft.entity.MorphEntityBlackHole(event.getWorld(), owner);
@@ -292,16 +282,7 @@ public final class MorphBossAdaptHandler {
             EntityImplosion implosion = (EntityImplosion) entity;
             EntityPlayer owner = findMorphOwner(implosion.shootingEntity);
             if (owner == null) {
-                for (EntityPlayer p : entity.world.playerEntities) {
-                    IMorphing morphing = Morphing.get(p);
-                    if (morphing != null && morphing.isMorphed()) {
-                        AbstractMorph m = morphing.getCurrentMorph();
-                        if (m != null && m.name != null && m.name.toLowerCase().contains("jzahar")) {
-                            owner = p;
-                            break;
-                        }
-                    }
-                }
+                owner = findMorphedJzaharOwner(entity.world);
             }
             if (owner != null) {
                 event.setCanceled(true);
@@ -444,6 +425,32 @@ public final class MorphBossAdaptHandler {
             }
         }
         return null;
+    }
+
+    /** 查找世界中任意处于扎哈尔形态的玩家（用于无属主标签的派生黑洞/内爆归属兜底）。 */
+    private static EntityPlayer findMorphedJzaharOwner(World world) {
+        if (world == null) return null;
+        for (EntityPlayer p : world.playerEntities) {
+            IMorphing morphing = Morphing.get(p);
+            if (morphing != null && morphing.isMorphed()) {
+                AbstractMorph m = morphing.getCurrentMorph();
+                if (m != null && m.name != null && m.name.toLowerCase(java.util.Locale.ROOT).contains("jzahar")) {
+                    return p;
+                }
+            }
+        }
+        return null;
+    }
+
+    /** 检查世界中是否存在任意处于深渊古神阵营形态的玩家。 */
+    private static boolean hasEldritchMorphedPlayer(World world) {
+        if (world == null) return false;
+        for (EntityPlayer p : world.playerEntities) {
+            if (isMorphedAsEldritch(p)) {
+                return true;
+            }
+        }
+        return false;
     }
 
     /**

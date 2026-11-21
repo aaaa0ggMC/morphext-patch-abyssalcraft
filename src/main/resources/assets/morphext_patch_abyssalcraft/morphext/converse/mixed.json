@@ -6,8 +6,8 @@
         "biome:ocean",
         "dim:overworld"
       ],
-      "zh": "§9{biome} 靠在 {dimension} 的边上。§8海把地平线借走了，还没写归还的日子。",
-      "en": "§9{biome} leans on the edge of {dimension}. §8The sea borrowed the horizon and has not written a return date.",
+      "zh": "{dimension}的{biome}一望无垠，恰如沉睡在拉莱耶外围的死水，吞没了所有归航的坐标。",
+      "en": "The {biome} of {dimension} stretches without shore, like the dead waters ringing R'lyeh that swallow every chart.",
       "weight": 4
     },
     {
@@ -16,8 +16,8 @@
         "biome:forest",
         "dim:overworld"
       ],
-      "zh": "§2{biome} 把 {dimension} 的天遮住一块。§7遮住不是保护。是不想让上面的东西先开口。",
-      "en": "§2{biome} covers a piece of the sky of {dimension}. §7Covering is not protection. It is a wish that what is above should not speak first.",
+      "zh": "{dimension}的{biome}遮蔽了天日，却遮不住树根下悄然滋长的深渊阴影。",
+      "en": "The {biome} of {dimension} shuts out the sun, yet cannot hide the Abyssal shadow creeping beneath its roots.",
       "weight": 4
     },
     {
@@ -27,8 +27,8 @@
         "dim:overworld",
         "world:clear"
       ],
-      "zh": "§e{biome} 在 {dimension} 里没有云可用。§8晴是这里的默认值，不是恩赐。",
-      "en": "§e{biome} has no cloud to spend in {dimension}. §8Clear is the default here, not a favor.",
+      "zh": "晴空炙烤着{dimension}的{biome}，将一切生机晒成干裂的死寂。",
+      "en": "A cloudless sky scorches {biome} in {dimension}, baking all life into cracked desolation.",
       "weight": 4
     },
     {
@@ -37,8 +37,8 @@
         "biome:mountain",
         "dim:overworld"
       ],
-      "zh": "§7{dimension} 在 {biome} 里被折了一道。§8折痕的地方，门缝比较密。",
-      "en": "§7{dimension} is folded once inside {biome}. §8Where the fold is, the cracks of gates sit closer together.",
+      "zh": "{dimension}的{biome}高耸入云，然而即便站在山巅，你也依然仰望不到群星之外的真相。",
+      "en": "The peaks of {biome} in {dimension} pierce the clouds, yet even from their crests you cannot glimpse the truth beyond the stars.",
       "weight": 4
     },
     {
@@ -47,8 +47,8 @@
         "biome:swamp",
         "dim:overworld"
       ],
-      "zh": "§2{biome} 把 {dimension} 的地面写成未完成时。§8脚还在。主语还没定。",
-      "en": "§2{biome} writes the ground of {dimension} in the unfinished tense. §8The foot is still here. The subject is not settled.",
+      "zh": "{dimension}的{biome}弥漫着腐朽的泥泞气息，仿佛珊瑚瘟疫随时会从死水底端渗出。",
+      "en": "The {biome} of {dimension} reeks of stagnant mire, as though the Coralium Plague might seep from its pools at any hour.",
       "weight": 4
     },
     {
@@ -57,8 +57,8 @@
         "biome:plains",
         "dim:overworld"
       ],
-      "zh": "§a{biome} 把 {dimension} 摊平。§7摊平的地方，影子无处躲，名字也无处躲。",
-      "en": "§a{biome} flattens {dimension}. §7Where the land is flat, a shadow has nowhere to hide. Neither does a name.",
+      "zh": "在{dimension}平坦的{biome}上，凡人毫无遮蔽地暴露在苍穹与深渊的双重注视之下。",
+      "en": "Upon the flat {biome} of {dimension}, mortals stand unsheltered beneath the twin gazes of sky and Abyss.",
       "weight": 4
     },
     {
@@ -67,8 +67,8 @@
         "biome:cold",
         "dim:overworld"
       ],
-      "zh": "§b{biome} 让 {dimension} 的呼吸变白。§8白的是热气，不是清白。",
-      "en": "§b{biome} turns the breath of {dimension} white. §8What is white is heat leaving. It is not innocence.",
+      "zh": "严寒冻结了{dimension}的{biome}，连风雪的呼啸都带着几分来自黑暗国度的死寂。",
+      "en": "Bitter frost locks {biome} in {dimension}, and even its howling snow carries the dead hush of the Dark Realm.",
       "weight": 4
     },
     {
@@ -77,8 +77,8 @@
         "biome:jungle",
         "dim:overworld"
       ],
-      "zh": "§2{biome} 太绿，太密。§7{dimension} 在这里像一本不肯合上的湿书。",
-      "en": "§2{biome} is too green and too dense. §7{dimension} here is a wet book that refuses to close.",
+      "zh": "{dimension}的{biome}疯狂蔓生，缠绕的藤蔓掩盖了多少早已被遗忘的古老祭坛？",
+      "en": "The {biome} of {dimension} grows in blind frenzy; how many forgotten altars lie choked beneath its vines?",
       "weight": 4
     },
     {
@@ -87,8 +87,8 @@
         "biome:darklands",
         "dim:overworld"
       ],
-      "zh": "§8{biome} 长在 {dimension} 里，像一封寄错地址的信。§3地址是珊瑚代写的。",
-      "en": "§8{biome} grows inside {dimension} like a letter sent to the wrong address. §3Coralium wrote the address.",
+      "zh": "{dimension}的{biome}已被深渊气息浸透——这便是黑暗之地向现世伸出的第一道边界。",
+      "en": "The {biome} of {dimension} is already steeped in Abyssal breath—the first border the Darklands carve into the waking world.",
       "weight": 5
     },
     {
@@ -97,8 +97,8 @@
         "biome:river",
         "dim:overworld"
       ],
-      "zh": "§9{biome} 是 {dimension} 还没下决心变成海的部分。§8犹豫的水，也会把名字冲淡。",
-      "en": "§9{biome} is the part of {dimension} that has not yet decided to become a sea. §8Hesitant water still dilutes a name.",
+      "zh": "{dimension}的{biome}奔流不息，将尘世的碎屑冲向未知的深海。",
+      "en": "The {biome} of {dimension} rushes onward without pause, bearing earthly dross toward unknown depths.",
       "weight": 4
     },
     {
@@ -107,8 +107,8 @@
         "biome:beach",
         "dim:overworld"
       ],
-      "zh": "§e{biome} 是 {dimension} 和海签字的那一条。§8字迹是盐。盐不归档。",
-      "en": "§e{biome} is the line where {dimension} signed with the sea. §8The ink is salt. Salt does not file itself.",
+      "zh": "站在{dimension}的{biome}边缘，海潮正一遍遍抹去沙地上属于凡人的微末足迹。",
+      "en": "At the rim of {biome} in {dimension}, the tide scrubs away every fleeting mortal footprint.",
       "weight": 4
     },
     {
@@ -118,8 +118,8 @@
         "dim:overworld",
         "world:clear"
       ],
-      "zh": "§6{biome} 把 {dimension} 切成不肯下雨的台阶。§8晴在这里是地质，不是心情。",
-      "en": "§6{biome} cuts {dimension} into steps that refuse rain. §8Clear weather here is geology, not a mood.",
+      "zh": "烈日照耀着{dimension}赤红的{biome}，暴露出大地如剥皮白骨般的古老岩层。",
+      "en": "Clear sun beats upon the crimson {biome} of {dimension}, laying bare ancient strata like flayed bone.",
       "weight": 4
     },
     {
@@ -128,8 +128,8 @@
         "biome:mushroom",
         "dim:overworld"
       ],
-      "zh": "§d{biome} 在 {dimension} 里安静得不合法。§7菌盖底下，连敌意都懒得报名。",
-      "en": "§d{biome} is illegally quiet inside {dimension}. §7Under the caps, even hostility cannot be bothered to sign in.",
+      "zh": "{dimension}的{biome}笼罩在异界般的菌毯之中，连寻常的怪物都不愿轻易踏足。",
+      "en": "The {biome} of {dimension} lies beneath an otherworldly fungal mat that even common beasts shun.",
       "weight": 4
     },
     {
@@ -138,8 +138,8 @@
         "biome:hell",
         "dim:nether"
       ],
-      "zh": "§c{biome} 就是 {dimension} 的皮肤。§8别在这里找天气。热本身已经是天气。",
-      "en": "§c{biome} is the skin of {dimension}. §8Do not look for weather here. Heat is already the weather.",
+      "zh": "{dimension}的{biome}翻涌着硫磺与烈焰，然则在真正的旧日支配者眼中，这不过是嘈杂的熔炉。",
+      "en": "Sulfur and flame churn across {biome} in {dimension}; yet to a Great Old One, this is merely a noisy furnace.",
       "weight": 5
     },
     {
@@ -148,8 +148,8 @@
         "biome:end",
         "dim:end"
       ],
-      "zh": "§5{biome} 把 {dimension} 收成一个句号。§8句号后面，我还留着门。",
-      "en": "§5{biome} closes {dimension} into a full stop. §8After the stop, I still keep a gate.",
+      "zh": "{dimension}的{biome}漂浮在无光虚空之中，恰似被宇宙遗弃的破碎尸骸。",
+      "en": "The {biome} of {dimension} drifts through lightless void like the shattered carcass of a forgotten world.",
       "weight": 5
     },
     {
@@ -158,8 +158,8 @@
         "biome:abyssal",
         "dim:abyssal_wasteland"
       ],
-      "zh": "§3{dimension} 与 {biome} 是同一个呼吸的两拍。§8前一拍是盐，后一拍是珊瑚。",
-      "en": "§3{dimension} and {biome} are two beats of one breath. §8The first is salt. The second is coralium.",
+      "zh": "你正立于{dimension}的{biome}——这片被珊瑚瘟疫彻底吞噬的苍白荒原，便是傲慢者的墓碑。",
+      "en": "You stand in the {biome} of {dimension}—this pale waste devoured by the Coralium Plague is the tombstone of the arrogant.",
       "weight": 5
     },
     {
@@ -168,8 +168,8 @@
         "biome:dread",
         "dim:dreadlands"
       ],
-      "zh": "§4{biome} 在 {dimension} 里不用翻译。§7骨头比你先听懂这门方言。",
-      "en": "§4{biome} needs no translation inside {dimension}. §7Bone understands the dialect before you do.",
+      "zh": "{dimension}的{biome}浸透了恐惧瘟疫，连岩石与泥土都在查伽洛斯的阴影下扭曲畸变。",
+      "en": "The {biome} of {dimension} is drenched in the Dread Plague; stone and soil alike warp beneath Chagaroth's shadow.",
       "weight": 5
     },
     {
@@ -178,8 +178,8 @@
         "biome:omothol",
         "dim:omothol"
       ],
-      "zh": "§5{biome}，{dimension}。§8同一个名字说两遍，不是口吃。是锁在核对。",
-      "en": "§5{biome}, {dimension}. §8The same name said twice is not a stammer. It is a lock checking itself.",
+      "zh": "欢迎来到{dimension}的{biome}，凡人。群星之外的圣城正以永恒的晦暗注视着你。",
+      "en": "Welcome to {biome} in {dimension}, mortal. The citadel beyond the stars watches you from eternal twilight.",
       "weight": 6
     },
     {
@@ -188,8 +188,8 @@
         "biome:dark_realm",
         "dim:dark_realm"
       ],
-      "zh": "§8{biome} 是 {dimension} 同意被踩的那一层。§5更深的黑暗不接待游客。",
-      "en": "§8{biome} is the layer of {dimension} that agreed to be walked on. §5The darker layer does not receive tourists.",
+      "zh": "你已深入{dimension}的{biome}。在此无光之底，萨克索斯的怒火与暗影从未停歇。",
+      "en": "You have descended into {biome} of {dimension}. At this lightless floor, Sacthoth's wrath and shadows never rest.",
       "weight": 6
     },
     {
@@ -199,8 +199,8 @@
         "biome:forest",
         "dim:dreadlands"
       ],
-      "zh": "§4你走进 {dimension} 的 {biome}。§8叶子在这里是干燥的症状，不是季节。",
-      "en": "§4You walk into {biome} of {dimension}. §8Leaves here are a dry symptom, not a season.",
+      "zh": "{dimension}的{biome}之中，连树木都在恐惧瘟疫的腐化下化作了扭曲的枯骨。",
+      "en": "Within the {biome} of {dimension}, even the trees have twisted into blighted bone under the Dread Plague.",
       "weight": 5
     },
     {
@@ -210,8 +210,8 @@
         "biome:mountain",
         "dim:dreadlands"
       ],
-      "zh": "§7{biome} 把 {dimension} 折向更高的冷。§8高处没有风来道歉。",
-      "en": "§7{biome} folds {dimension} toward a higher cold. §8The height has no wind that apologizes.",
+      "zh": "{dimension}的{biome}群峰耸立，红雾与瘴气在陡峭的岩壁间翻滚不休。",
+      "en": "Jagged peaks rise through {biome} in {dimension}, crimson mist and miasma rolling endlessly between their cliffs.",
       "weight": 5
     },
     {
@@ -221,8 +221,8 @@
         "biome:forest",
         "dim:overworld"
       ],
-      "zh": "§2{biome} 站在 {dimension} 里，绿得不老实。§3老实的是地底下那层珊瑚。",
-      "en": "§2{biome} stands in {dimension}, green and dishonest. §3What is honest is the coralium under the soil.",
+      "zh": "{dimension}的{biome}散发着晦暗的木质腐气，每一棵扭曲的树干都仿佛在向奥穆索俯首。",
+      "en": "The {biome} of {dimension} exhales a dim, woody rot; every twisted trunk seems to bow toward Omothol.",
       "weight": 5
     },
     {
@@ -232,8 +232,8 @@
         "biome:swamp",
         "dim:overworld"
       ],
-      "zh": "§2{biome} 吸住 {dimension} 的脚。§3吸你的不是泥。是还没点完的珊瑚票。",
-      "en": "§2{biome} holds the foot of {dimension}. §3It is not mud that holds you. It is a coralium vote that has not finished counting.",
+      "zh": "在{dimension}的{biome}里，腐烂的泥沼与暗影石交织在一起，滋养着未知的畸变。",
+      "en": "In the {biome} of {dimension}, stagnant mire and Darkstone entwine, nursing nameless mutations.",
       "weight": 5
     },
     {
@@ -243,8 +243,8 @@
         "biome:plains",
         "dim:overworld"
       ],
-      "zh": "§8{biome} 把 {dimension} 摊成一片暗色平地。§7平不是安全。平是无处躲名字。",
-      "en": "§8{biome} spreads {dimension} into a dark flat. §7Flat is not safe. Flat means a name has nowhere to duck.",
+      "zh": "{dimension}的{biome}一片晦暗开阔，仿佛随时准备迎接仪式祭坛的降临。",
+      "en": "The {biome} of {dimension} stretches dim and open, as if awaiting the raising of a ritual altar.",
       "weight": 4
     },
     {
@@ -254,8 +254,8 @@
         "biome:mountain",
         "dim:overworld"
       ],
-      "zh": "§7{biome} 在 {dimension} 里往上长。§8往上长的暗土，仍然记得下面的门。",
-      "en": "§7{biome} grows upward inside {dimension}. §8Dark earth that climbs still remembers the gate below.",
+      "zh": "{dimension}的{biome}峰峦漆黑如墨，山体深处沉睡着冰冷的渊素矿脉。",
+      "en": "The peaks of {biome} in {dimension} stand ink-black, guarding cold veins of Abyssalnite deep within.",
       "weight": 5
     },
     {
@@ -265,8 +265,8 @@
         "biome:cold",
         "dim:overworld"
       ],
-      "zh": "§b{biome} 把冷和树写进同一个词。§8{dimension} 没有反对这门文法。",
-      "en": "§b{biome} writes cold and trees into one word. §8{dimension} does not object to the grammar.",
+      "zh": "{dimension}严寒的{biome}被冰雪封缄，枯枝在冻风中发出如同白骨摩擦的声响。",
+      "en": "Frigid {biome} in {dimension} lies sealed in frost, bare boughs rattling like dry bone in the wind.",
       "weight": 4
     },
     {
@@ -276,8 +276,8 @@
         "biome:cold",
         "dim:overworld"
       ],
-      "zh": "§9{biome} 是结了壳的海。§7{dimension} 把潮汐冻成一封还没寄出的信。",
-      "en": "§9{biome} is a sea with a crust. §7{dimension} has frozen the tide into a letter not yet sent.",
+      "zh": "冰冷的浮冰漂浮在{dimension}的{biome}之上，水底的寒意足以瞬间冻结凡人的血脉。",
+      "en": "Drifting floes ride the {biome} of {dimension}; the chill beneath its waves can freeze mortal blood in a breath.",
       "weight": 4
     },
     {
@@ -287,8 +287,8 @@
         "biome:cold",
         "dim:overworld"
       ],
-      "zh": "§b{biome} 又高又冷。§8{dimension} 在这里把风当成税来收。",
-      "en": "§b{biome} is high and cold. §8{dimension} collects the wind here as a tax.",
+      "zh": "{dimension}那覆雪的{biome}直插苍穹，绝壁之上唯有刺骨的寒风与死寂。",
+      "en": "Snow-clad {biome} in {dimension} pierces the sky, its sheer crags home only to biting wind and silence.",
       "weight": 4
     },
     {
@@ -298,8 +298,8 @@
         "world:rain",
         "dim:overworld"
       ],
-      "zh": "§9夜里下雨。§7{dimension} 把天空的信拆开，墨水直接淋到你借来的皮上。",
-      "en": "§9Night, and rain. §7{dimension} opens the sky's letter and lets the ink fall straight onto the borrowed hide.",
+      "zh": "冰冷的夜雨正冲刷着{dimension}。黑暗与潮湿交织，最适合阴影在暗处潜行。",
+      "en": "Cold night rain scours {dimension}. Darkness and damp entwine—ideal cover for shadows prowling unseen.",
       "weight": 5
     },
     {
@@ -309,8 +309,8 @@
         "world:thunder",
         "world:rain"
       ],
-      "zh": "§c雷在夜里撕自己的信封。§8你站在墨水里。别抬头签收。",
-      "en": "§cThunder tears its own envelope at night. §8You are standing in the ink. Do not look up to sign for it.",
+      "zh": "黑夜、暴雨与雷霆同时降临——仿佛天穹之上正有一位外神翻身苏醒。",
+      "en": "Night, storm, and thunder strike at once—as though some Outer God stirred in its sleep above the clouds.",
       "weight": 5
     },
     {
@@ -319,8 +319,8 @@
         "world:day",
         "world:clear"
       ],
-      "zh": "§e白天，而且晴。§8光把影子收短。收短的影子仍归我。",
-      "en": "§eDay, and clear. §8Light shortens the shadow. The shortened shadow is still mine.",
+      "zh": "白昼晴朗无云，日光却照不透凡人对宇宙真相那根深蒂固的无知。",
+      "en": "Daylight shines clear and cloudless, yet cannot pierce mortal ignorance of cosmic truth.",
       "weight": 4
     },
     {
@@ -329,8 +329,8 @@
         "world:day",
         "world:rain"
       ],
-      "zh": "§7太阳还在，雨也在。§8这句不点地名。光和雨可以同时不诚实。",
-      "en": "§7The sun is still up, and so is the rain. §8This sentence names no realm. Light and rain can be dishonest together.",
+      "zh": "白昼被阴雨笼罩，灰暗的天色倒比刺眼的阳光更衬托这片荒诞的世界。",
+      "en": "Rain dims the daylight; this sullen gray suits an absurd world better than glaring sun.",
       "weight": 4
     },
     {
@@ -340,8 +340,8 @@
         "world:clear",
         "dim:overworld"
       ],
-      "zh": "§6{dimension} 的天亮了，天上却没有收据。§8黎明喜欢假装自己是免费的。",
-      "en": "§6Dawn comes to {dimension} with no receipt in the sky. §8Morning likes to pretend it is free.",
+      "zh": "清朗的黎明微光洒在{dimension}，短暂地驱散了夜色，却驱不散潜伏在时间尽头的阴影。",
+      "en": "Clear dawn spills pale light across {dimension}, driving back the night for a moment yet never touching the shadow at time's end.",
       "weight": 4
     },
     {
@@ -350,8 +350,8 @@
         "world:dawn",
         "world:rain"
       ],
-      "zh": "§7天刚亮就下雨。§8新的一天还没签名，墨水先到了。",
-      "en": "§7Rain at the first light. §8The new day has not signed yet. The ink arrived first.",
+      "zh": "黎明在阴雨中悄然到来，天色晦暗得仿佛黑夜从未真正离开。",
+      "en": "Dawn arrives wrapped in rain, so dim it seems the night never truly departed.",
       "weight": 4
     },
     {
@@ -360,8 +360,8 @@
         "world:dusk",
         "world:clear"
       ],
-      "zh": "§6黄昏把光折起来，天还是晴的。§8折起来的光最容易夹住一句话。",
-      "en": "§6Dusk folds the light, and the sky stays clear. §8Folded light is the easiest place to trap a sentence.",
+      "zh": "晴朗的黄昏将天际染作残红，群星正准备在夜幕中重新睁开窥视的眼眸。",
+      "en": "A clear dusk stains the horizon bruised red, and the stars prepare to open their watching eyes.",
       "weight": 4
     },
     {
@@ -370,8 +370,8 @@
         "world:dusk",
         "world:rain"
       ],
-      "zh": "§8黄昏下雨，像一天在关门前把地板拖湿。§7湿的门槛比较滑。名字容易留在上面。",
-      "en": "§8Rain at dusk is a day mopping the floor before it locks up. §7A wet threshold is slippery. Names stick to it.",
+      "zh": "暮色与雨水一同垂落，世界在湿冷的晦暗里渐渐模糊了边界。",
+      "en": "Twilight and rain descend together, blurring the borders of the world in cold gloom.",
       "weight": 4
     },
     {
@@ -380,8 +380,8 @@
         "world:night",
         "world:clear"
       ],
-      "zh": "§5夜里，天却是晴的。§8星星露出名字。露出不等于愿意被叫。",
-      "en": "§5Night, and the sky is clear. §8The stars show their names. Showing is not the same as consenting to be called.",
+      "zh": "晴朗的夜空下，星辰密布——每一颗遥远的光点，都在冷漠地俯瞰着你的渺小。",
+      "en": "Beneath a clear night sky the stars crowd thick—each distant point looking coldly down upon your insignificance.",
       "weight": 4
     },
     {
@@ -391,8 +391,8 @@
         "world:thunder",
         "world:rain"
       ],
-      "zh": "§c正午打雷。§7光还在，信封却被撕开。§8白天不能当你的证人。",
-      "en": "§cThunder at noon. §7The light is still here, and the envelope is already torn. §8Daylight will not stand as your witness.",
+      "zh": "白昼的雷暴撕裂天幕，在那一瞬间的电光里，连阳光都显得苍白无力。",
+      "en": "Daytime thunderbolts split the sky; in that stark flash, even the sun seems pale.",
       "weight": 5
     },
     {
@@ -402,8 +402,8 @@
         "world:thunder",
         "world:rain"
       ],
-      "zh": "§6黄昏、雨、雷。§8一天用三种笔迹签自己的结束。你只是站在签名底下。",
-      "en": "§6Dusk, rain, thunder. §8The day signs its own ending in three hands. You are only standing under the signature.",
+      "zh": "黄昏的暴雨伴着雷鸣倾泻而下，宛如世界在迎接着黑夜的审判。",
+      "en": "Dusk's tempest pours down with roaring thunder, as though the world faced judgment at nightfall.",
       "weight": 4
     },
     {
@@ -412,8 +412,8 @@
         "world:clear",
         "dim:nether"
       ],
-      "zh": "§c{dimension} 不下雨。§8检测器会把它记成晴。晴在这里只是钟表上的空格。",
-      "en": "§c{dimension} does not rain. §8A detector will mark it clear. Clear here is only an empty cell on the clock.",
+      "zh": "即便在{dimension}这片没有天空的火狱里，焦热与烟尘也从未真正平息。",
+      "en": "Even in {dimension}, a furnace without a sky, scorching heat and ash never truly settle.",
       "weight": 5
     },
     {
@@ -422,8 +422,8 @@
         "world:clear",
         "dim:end"
       ],
-      "zh": "§5{dimension} 没有天气。§8若有人说这里是晴，那是因为雨没有被邀请。",
-      "en": "§5{dimension} has no weather. §8If someone calls it clear, that is only because rain was not invited.",
+      "zh": "{dimension}的漆黑虚空永恒不变，没有风雨，唯有星辰之外的死寂。",
+      "en": "The pitch-black void of {dimension} never alters—no wind, no rain, only dead silence beyond the stars.",
       "weight": 5
     },
     {
@@ -433,8 +433,8 @@
         "world:clear",
         "dim:nether"
       ],
-      "zh": "§8钟走到了夜里。§c{dimension} 没有因此变脸。§7变的是你还在用主世界的钟理解这里。",
-      "en": "§8The clock has reached night. §c{dimension} does not change its face for that. §7What changes is that you are still reading this place with an overworld clock.",
+      "zh": "在{dimension}之中，昼夜早已失去了意义，唯有永恒的暗红火光。",
+      "en": "Within {dimension}, day and night lost all meaning long ago; only eternal crimson glare remains.",
       "weight": 5
     },
     {
@@ -445,8 +445,8 @@
         "biome:forest",
         "dim:overworld"
       ],
-      "zh": "§2{biome} 在夜里接雨。§8叶子把水声拆成许多小谎。{dimension} 听得见每一句。",
-      "en": "§2{biome} takes the rain at night. §8Leaves break the water into many small lies. {dimension} hears every one.",
+      "zh": "夜雨敲打着{dimension}的{biome}，枝叶的阴影在闪电与暗夜里化作张牙舞爪的轮廓。",
+      "en": "Night rain drums through {biome} in {dimension}, turning shadowed boughs into clawing silhouettes.",
       "weight": 5
     },
     {
@@ -457,8 +457,8 @@
         "biome:swamp",
         "dim:overworld"
       ],
-      "zh": "§2{biome} 本来就湿。§9夜里再下雨，只是给泥加一句附注。§8附注通常关于谁陷进去。",
-      "en": "§2{biome} was already wet. §9Night rain only adds a footnote to the mud. §8The footnote is usually about who sank.",
+      "zh": "黑夜与暴雨将{biome}化作一片沸腾的泥沼，鬼火与腐气在黑暗中悄然浮起。",
+      "en": "Night and rain turn {biome} into a seething mire where pale lights and rot drift unseen.",
       "weight": 4
     },
     {
@@ -469,8 +469,8 @@
         "biome:desert",
         "dim:overworld"
       ],
-      "zh": "§e{biome} 的白天没有云来谈判。§7{dimension} 把影子缩成一粒罪证，就放在你脚下。",
-      "en": "§eThe day in {biome} has no cloud to negotiate with. §7{dimension} shrinks the shadow into a single piece of evidence and leaves it at your feet.",
+      "zh": "白昼的烈阳炙烤着{dimension}干涸的{biome}，连一丝多余的云翳都不肯施舍。",
+      "en": "Noon sun beats down on parched {biome} in {dimension}, refusing even a scrap of cloud.",
       "weight": 4
     },
     {
@@ -480,8 +480,8 @@
         "world:clear",
         "biome:plains"
       ],
-      "zh": "§a晴天的 {biome} 把一切都晒给看见。§8看见不是原谅。我看见得更清楚。",
-      "en": "§aA clear day in {biome} suns everything into view. §8Being seen is not being forgiven. I see more clearly than the sun.",
+      "zh": "晴朗的白昼铺展在{biome}之上，让你毫无遮蔽地暴露在天地之间。",
+      "en": "Clear daylight spreads across {biome}, leaving you bare between earth and sky.",
       "weight": 4
     },
     {
@@ -491,8 +491,8 @@
         "biome:ocean",
         "dim:overworld"
       ],
-      "zh": "§9天在下雨，{biome} 也在。§7海不需要这份多余的水。它收下，是为了让你分不清哪一层是天。",
-      "en": "§9The sky is raining, and so is {biome}. §7The sea does not need the extra water. It accepts it so you cannot tell which layer is the sky.",
+      "zh": "暴雨倾泻在{biome}的波涛之上，海天相接之处翻涌着深不可测的幽暗。",
+      "en": "Rain lashes the waves of {biome}, churning unfathomable gloom where sea meets sky.",
       "weight": 4
     },
     {
@@ -503,8 +503,8 @@
         "biome:mountain",
         "dim:overworld"
       ],
-      "zh": "§c雷在 {biome} 上找最高的东西。§8{dimension} 里最高的不一定是石头。有时是还站着的人。",
-      "en": "§cThunder looks for the highest thing on {biome}. §8The highest thing in {dimension} is not always stone. Sometimes it is a person still standing.",
+      "zh": "雷暴正猛烈冲击着{dimension}的{biome}，狂风与闪电在绝壁间咆哮不休。",
+      "en": "A thunderstorm batters {biome} in {dimension}, gale and lightning howling between the crags.",
       "weight": 5
     },
     {
@@ -514,8 +514,8 @@
         "biome:darklands",
         "dim:overworld"
       ],
-      "zh": "§8雨落在 {biome} 上。§3珊瑚喜欢这种湿法。§7{dimension} 还没投票，票箱已经满了。",
-      "en": "§8Rain falls on {biome}. §3Coralium likes this kind of wet. §7{dimension} has not voted. The box is already full.",
+      "zh": "雨水打湿了{dimension}的{biome}，暗影石在湿冷中泛出愈发幽深的光泽。",
+      "en": "Rain slicks {biome} in {dimension}, lending the Darkstone an even deeper, colder sheen.",
       "weight": 5
     },
     {
@@ -525,8 +525,8 @@
         "biome:forest",
         "dim:overworld"
       ],
-      "zh": "§6黄昏进了 {biome}。§8树把最后的光切成碎片。碎片不够照见 {dimension} 的门。",
-      "en": "§6Dusk enters {biome}. §8The trees cut the last light into scraps. The scraps are not enough to show the gates of {dimension}.",
+      "zh": "黄昏降临在{dimension}的{biome}，林间的长影正悄然苏醒。",
+      "en": "Dusk settles over {biome} in {dimension}, and long shadows stir between the trunks.",
       "weight": 4
     },
     {
@@ -536,8 +536,8 @@
         "biome:beach",
         "dim:overworld"
       ],
-      "zh": "§6黎明先碰到 {biome}。§8盐比你早醒。{dimension} 的海把光退回来，像退一封地址不全的信。",
-      "en": "§6Dawn touches {biome} first. §8Salt wakes before you do. The sea of {dimension} returns the light like a letter with an incomplete address.",
+      "zh": "黎明的第一缕微光掠过{dimension}的{biome}，海浪依旧不知疲倦地拍打着岸边。",
+      "en": "The first pale light of dawn brushes {biome} in {dimension}, while the surf beats endlessly on.",
       "weight": 4
     },
     {
@@ -547,8 +547,8 @@
         "biome:jungle",
         "dim:overworld"
       ],
-      "zh": "§2{biome} 的夜里没有空处。§8叶子、虫、湿气，都在替 {dimension} 值班。你不是唯一醒着的。",
-      "en": "§2Night in {biome} has no empty space. §8Leaves, insects, damp: all of them are on duty for {dimension}. You are not the only one awake.",
+      "zh": "黑夜笼罩着{dimension}闷热的{biome}，藤蔓阴影背后藏着无数双窥视的兽瞳。",
+      "en": "Night blankets steaming {biome} in {dimension}; behind tangled vines gleam countless watching eyes.",
       "weight": 4
     },
     {
@@ -558,8 +558,8 @@
         "biome:cold",
         "dim:overworld"
       ],
-      "zh": "§b{biome} 的夜把呼吸变成证据。§8白雾会散。{dimension} 记得你呼出过自己的热。",
-      "en": "§bNight in {biome} turns breath into evidence. §8The white will fade. {dimension} remembers that you exhaled your own heat.",
+      "zh": "极夜的寒风吹过{dimension}的{biome}，刺骨的冷意直透骨髓。",
+      "en": "Night winds sweep frigid {biome} in {dimension}, driving cold straight to the marrow.",
       "weight": 4
     },
     {
@@ -569,8 +569,8 @@
         "biome:river",
         "dim:overworld"
       ],
-      "zh": "§9雨落到 {biome} 里，像一句话掉进已经在说的话。§7{dimension} 不分辨哪一句先开始。",
-      "en": "§9Rain falling into {biome} is a sentence dropped into a sentence already speaking. §7{dimension} does not sort out which one began first.",
+      "zh": "雨水汇入{dimension}的{biome}，浑浊的河水携带着泥沙奔向未知的深渊。",
+      "en": "Rain swells {biome} in {dimension}, carrying mud and silt toward unknown depths.",
       "weight": 4
     },
     {
@@ -581,8 +581,8 @@
         "entity:hostile",
         "world:night"
       ],
-      "zh": "§2夜里的 {entity}。§8死人挑这个钟点，是因为活人终于肯把脚步放轻。",
-      "en": "§2{entity} at night. §8The dead pick this hour because the living finally agree to soften their steps.",
+      "zh": "黑夜之中，一具腐烂的{entity}正循着活人的气味蹒跚而来。",
+      "en": "Through the night, a rotting {entity} shambles toward the scent of living flesh.",
       "weight": 5
     },
     {
@@ -593,8 +593,8 @@
         "entity:hostile",
         "world:night"
       ],
-      "zh": "§7{entity} 在夜里拉弦。§8骨头不需要眼睛也能把你的犹豫瞄准。",
-      "en": "§7{entity} draws in the dark. §8Bone does not need eyes to aim at your hesitation.",
+      "zh": "夜色掩护着那具{entity}，枯骨拉响弓弦的脆响在黑暗里格外刺耳。",
+      "en": "Darkness shields that {entity}; the creak of its bowstring cuts sharp through the night.",
       "weight": 5
     },
     {
@@ -604,8 +604,8 @@
         "entity:hostile",
         "world:night"
       ],
-      "zh": "§a{entity} 在夜里不说话。§8不说话的东西，通常把句子留到最后一声。",
-      "en": "§a{entity} does not speak at night. §8A thing that does not speak usually saves the sentence for the last sound.",
+      "zh": "在黑夜的掩护下，一只{entity}正悄无声息地向你的背后逼近。",
+      "en": "Under cover of night, a {entity} creeps silently toward your back.",
       "weight": 4
     },
     {
@@ -615,8 +615,8 @@
         "entity:hostile",
         "world:night"
       ],
-      "zh": "§8夜里的 {entity} 把路写成网。§7你若还在走直线，直线就是它的标点。",
-      "en": "§8{entity} at night writes the path as a web. §7If you are still walking in a straight line, the line is its punctuation.",
+      "zh": "夜幕降临，那只多足的{entity}已沿着阴影爬出巢穴。",
+      "en": "Night has fallen, and that many-legged {entity} has crawled out from its lair.",
       "weight": 4
     },
     {
@@ -627,8 +627,8 @@
         "world:rain",
         "dim:overworld"
       ],
-      "zh": "§5{entity} 碰上 {dimension} 的雨就会想离开。§8离开不是开门。它只是不肯让水记住自己的眼睛。",
-      "en": "§5{entity} wants to leave when the rain of {dimension} arrives. §8Leaving is not opening a gate. It only refuses to let water remember its eyes.",
+      "zh": "雨水迫使{dimension}里的那只{entity}不断瞬移避雨——连虚空的游魂也畏惧凡尘的雨水。",
+      "en": "Rain drives that {entity} in {dimension} to blink frantically from place to place—even a void-walker flinches from earthly showers.",
       "weight": 5
     },
     {
@@ -638,8 +638,8 @@
         "entity:hostile",
         "biome:swamp"
       ],
-      "zh": "§2{entity} 和 {biome} 共用一张配方。§8你还不是原料。别把这句当成安慰。",
-      "en": "§2{entity} and {biome} share a recipe. §8You are not an ingredient yet. Do not take that as comfort.",
+      "zh": "在{biome}的迷雾深处，那个疯癫的{entity}正调配着散发恶臭的毒剂。",
+      "en": "Deep in the mists of {biome}, that crazed {entity} brews foul-smelling toxins.",
       "weight": 5
     },
     {
@@ -649,8 +649,8 @@
         "entity:hostile",
         "biome:swamp"
       ],
-      "zh": "§a{entity} 在 {biome} 里分裂。§7分裂是一种还没学会死的算术。",
-      "en": "§a{entity} splits inside {biome}. §7Splitting is arithmetic that has not yet learned how to die.",
+      "zh": "{biome}的泥沼里正弹跳着一团黏腻的{entity}，与这片污浊之地倒也相配。",
+      "en": "A slick {entity} squelches through the mire of {biome}—a fitting tenant for such foul water.",
       "weight": 4
     },
     {
@@ -660,8 +660,8 @@
         "biome:plains",
         "dim:overworld"
       ],
-      "zh": "§a{entity} 把 {biome} 当成镇子。§7镇子是学会说话的篱笆。{dimension} 听得见它在讨价。",
-      "en": "§a{entity} thinks {biome} is a town. §7A town is a fence that learned to speak. {dimension} can hear it haggling.",
+      "zh": "在{dimension}的{biome}上，那个无知的{entity}仍在过着庸碌而脆弱的日常。",
+      "en": "Upon {biome} in {dimension}, that ignorant {entity} goes on with its dull, fragile days.",
       "weight": 4
     },
     {
@@ -671,8 +671,8 @@
         "entity:animal",
         "biome:forest"
       ],
-      "zh": "§7{entity} 在 {biome} 里竖着耳朵。§8它听脚步。我听名字。我们不抢同一份工作。",
-      "en": "§7{entity} keeps its ears up in {biome}. §8It listens for steps. I listen for names. We do not compete for the same post.",
+      "zh": "{biome}的林影之间，一头警觉的{entity}正用野性的目光审视着你。",
+      "en": "Among the trees of {biome}, a wary {entity} sizes you up with feral eyes.",
       "weight": 4
     },
     {
@@ -681,8 +681,8 @@
         "entity:player",
         "world:night"
       ],
-      "zh": "§7夜里还有 {player}。§8另一个穿皮的东西没回去。门把两份租约叠在一处。",
-      "en": "§7{player} is still here at night. §8Another thing in a skin did not go home. The gate stacks the two leases.",
+      "zh": "黑夜已深，另一位凡人{player}仍在暗处徘徊。记住，人心有时比深渊更难测。",
+      "en": "Night deepens while another mortal, {player}, still wanders nearby. Remember: human hearts can be murkier than the Abyss.",
       "weight": 5
     },
     {
@@ -692,8 +692,8 @@
         "entity:undead",
         "entity:hostile"
       ],
-      "zh": "§4{entity} 还记得肉的形状。§8记得，不是怀念。怀念是活人的奢侈。",
-      "en": "§4{entity} still remembers the shape of meat. §8Remembering is not missing it. Missing it is a luxury of the living.",
+      "zh": "一头饥渴的{entity}正在附近低吼，那副腐朽的躯壳对血肉有着无尽的贪欲。",
+      "en": "A starving {entity} snarls nearby, its decaying frame driven by endless hunger for flesh.",
       "weight": 5
     },
     {
@@ -703,8 +703,8 @@
         "entity:abyssal",
         "dim:abyssal_wasteland"
       ],
-      "zh": "§3{entity} 在 {dimension} 里学会了走路。§8潮汐有了脚。你最好别教它说话。",
-      "en": "§3{entity} has learned to walk in {dimension}. §8The tide has grown feet. Do not teach it speech.",
+      "zh": "在{dimension}的苍白荒原里，一头不可名状的{entity}正沸腾蠕动——Tekeli-li!",
+      "en": "Across the pale wastes of {dimension}, a nameless {entity} churns and seethes—Tekeli-li!",
       "weight": 6
     },
     {
@@ -714,8 +714,8 @@
         "entity:abyssal",
         "biome:darklands"
       ],
-      "zh": "§3{entity} 在 {biome} 里像一票已经投出的东西。§8票箱是湿的。你的名字可能已经在里面。",
-      "en": "§3{entity} in {biome} is a vote already cast. §8The box is wet. Your name may already be in it.",
+      "zh": "{biome}的阴影里游荡着一头被珊瑚侵蚀的{entity}，宣告着腐化早已渗入此地。",
+      "en": "A Coralium-warped {entity} prowls the shade of {biome}, proof that corruption already walks here.",
       "weight": 5
     },
     {
@@ -725,8 +725,8 @@
         "entity:abyssal",
         "dim:dreadlands"
       ],
-      "zh": "§4{dimension} 认得 {entity}。§8认得在这里不是善意。是病历对上了号。",
-      "en": "§4{dimension} recognizes {entity}. §8Recognition here is not kindness. It is a chart matching a number.",
+      "zh": "在{dimension}的血红迷雾中，一头狂暴的{entity}正带着恐惧瘟疫向你逼近。",
+      "en": "Through the crimson haze of {dimension}, a frenzied {entity} closes in with the Dread Plague.",
       "weight": 5
     },
     {
@@ -736,8 +736,8 @@
         "entity:boss",
         "dim:end"
       ],
-      "zh": "§5{boss} 盘在 {dimension} 里。§8龙以为自己是句号。句号没有翅膀，也不该有。",
-      "en": "§5{boss} coils inside {dimension}. §8A dragon thinks it is a full stop. A full stop has no wings, and should not.",
+      "zh": "{dimension}的虚空霸主{boss}正在天际盘旋——去折断它的傲慢吧，凡人！",
+      "en": "{boss}, sovereign of {dimension}, wheels across the void—go break its pride, mortal!",
       "weight": 6
     },
     {
@@ -746,8 +746,8 @@
         "entity:omothol",
         "dim:omothol"
       ],
-      "zh": "§5{entity} 站在 {dimension} 的街上。§8家里的东西看见这张脸，不会行礼。它们在核对是不是本人。",
-      "en": "§5{entity} stands on a street of {dimension}. §8The things of the house do not bow to this face. They are checking whether it is the original.",
+      "zh": "在{dimension}的断壁残垣间，一名{entity}正用死灵之书的目光审视着你这具傀儡。",
+      "en": "Among the ruins of {dimension}, an {entity} appraises your simulacrum with the eyes of the Necronomicon.",
       "weight": 6
     },
     {
@@ -757,8 +757,8 @@
         "entity:hostile",
         "world:night"
       ],
-      "zh": "§8{entity} 在夜里几乎不算额外的黑暗。§7额外的是它还愿意移动。移动的黑暗要收费。",
-      "en": "§8{entity} at night barely counts as extra dark. §7The extra is that it still consents to move. Moving dark charges a fee.",
+      "zh": "夜色最深处，一团来自黑暗国度的{entity}正悄然凝结成形。",
+      "en": "At the dead of night, a {entity} of the Dark Realm quietly gathers form.",
       "weight": 5
     },
     {
@@ -768,8 +768,8 @@
         "entity:hostile",
         "dim:nether"
       ],
-      "zh": "§c{dimension} 里有 {entity}。§8热的地方容易把怒气误认为信仰。别跟着误认。",
-      "en": "§c{entity} is in {dimension}. §8Hot places mistake anger for faith. Do not join the mistake.",
+      "zh": "{dimension}的焦土之上，一头暴虐的{entity}正挥舞着爪牙寻找猎物。",
+      "en": "Upon the scorched crust of {dimension}, a brutal {entity} hunts with bared claws.",
       "weight": 4
     },
     {
@@ -779,8 +779,8 @@
         "entity:abyssal",
         "entity:hostile"
       ],
-      "zh": "§8{entity} 站在和物质相反的方向上。§5相反不是远离。相反是从另一侧敲同一扇门。",
-      "en": "§8{entity} stands on the side opposite matter. §5Opposite is not distance. Opposite is knocking on the same gate from the other side.",
+      "zh": "警告！一团扭曲法则的{entity}就在附近——稍有触碰便是湮灭的下场。",
+      "en": "Beware! An {entity} that mocks reality's laws drifts nearby—one touch means annihilation.",
       "weight": 6
     },
     {
@@ -789,8 +789,8 @@
         "entity:boss",
         "entity:undead"
       ],
-      "zh": "§4{boss} 死过，却还在发号施令。§8死亡没有解除它的职务。职务比肉长命。",
-      "en": "§4{boss} has died and is still giving orders. §8Death did not relieve it of the post. A post outlives meat.",
+      "zh": "死灵的威压笼罩四周，那尊强大的{boss}已将冰冷的视线投向了你。",
+      "en": "The weight of undeath presses down; that mighty {boss} has turned its cold gaze upon you.",
       "weight": 6
     },
     {
@@ -800,8 +800,8 @@
         "biome:plains",
         "dim:overworld"
       ],
-      "zh": "§7{entity} 在 {biome} 里看守一种很轻的秩序。§8铁能看门。铁看不懂门后面的名字。",
-      "en": "§7{entity} keeps a very light order in {biome}. §8Iron can watch a door. Iron cannot read the name behind it.",
+      "zh": "在{dimension}的{biome}上，一尊沉默的{entity}正僵硬地守卫着尘世的领地。",
+      "en": "Across {biome} in {dimension}, a silent {entity} keeps stiff watch over earthly ground.",
       "weight": 4
     },
     {
@@ -811,8 +811,8 @@
         "entity:count:many",
         "world:night"
       ],
-      "zh": "§c夜里有 {count} 个还想咬人的喉咙。最近的那个叫 {hostile}。§8合唱还没齐。已经够吵。",
-      "en": "§cNight holds {count} throats that still want to bite. The nearest is {hostile}. §8The choir is not assembled. It is already loud.",
+      "zh": "黑夜之中足有{count}头怪物在四周躁动，为首的{hostile}已对你露出了獠牙。",
+      "en": "Full {count} foes stir through the night around you, led by {hostile} with bared fangs.",
       "weight": 5
     },
     {
@@ -821,8 +821,8 @@
         "entity:player",
         "entity:count:one"
       ],
-      "zh": "§7十六步内只有一个活人：{player}。§8数目很小。名字不小。",
-      "en": "§7One living person within sixteen paces: {player}. §8The number is small. The name is not.",
+      "zh": "四周仅有{player}一人与你相对。在这寂静里，秘密与刀锋往往只隔着一线。",
+      "en": "Only {player} stands opposite you here. In such quiet, secrets and steel sit a hair's breadth apart.",
       "weight": 5
     },
     {
@@ -832,8 +832,8 @@
         "entity:count:few",
         "world:night"
       ],
-      "zh": "§8夜里有 {count} 具还没躺好的身体。最近的叫 {entity}。§7躺不好的，通常是还有话没说完。",
-      "en": "§8Night has {count} bodies that have not lain down properly. The nearest is {entity}. §7What will not lie down usually still has a sentence unfinished.",
+      "zh": "夜幕下仅有{count}具诸如{entity}般的不死之物游荡，尚不足以构成威胁。",
+      "en": "Only {count} restless dead like {entity} wander the night—scarcely a host to fear.",
       "weight": 4
     },
     {
@@ -843,8 +843,8 @@
         "biome:darklands",
         "dim:overworld"
       ],
-      "zh": "§2{entity} 在 {biome} 里走。§3腐肉碰上珊瑚，会变成一种更慢的信仰。",
-      "en": "§2{entity} walks in {biome}. §3Rot meeting coralium becomes a slower kind of faith.",
+      "zh": "在{dimension}的{biome}里，那具{entity}身上似乎也沾染了几分晦暗的腐气。",
+      "en": "Within {biome} of {dimension}, even that {entity} seems stained with darkling rot.",
       "weight": 5
     },
     {
@@ -854,8 +854,8 @@
         "biome:end",
         "dim:end"
       ],
-      "zh": "§d{entity} 在 {dimension} 里算主人。§8你才是那个还会眨眼的客人。眨眼是一种签名。",
-      "en": "§d{entity} counts as a host in {dimension}. §8You are the guest who can still blink. A blink is a kind of signature.",
+      "zh": "在{dimension}的无光孤岛上，{entity}如幽灵般成群徘徊，守望着破碎的虚空。",
+      "en": "Upon the lightless isles of {dimension}, {entity} drift like ghosts guarding shattered void.",
       "weight": 5
     },
     {
@@ -866,8 +866,8 @@
         "world:night",
         "dim:overworld"
       ],
-      "zh": "§7雨夜里的 {entity} 不在乎湿。§8骨头早已完成干燥这件事。湿的是你还没放下的弓的想象。",
-      "en": "§7{entity} in a rainy night does not mind being wet. §8Bone finished with dryness long ago. What is wet is the bow you have not yet put down in your head.",
+      "zh": "夜雨中，那具{entity}的弓弦被雨水打湿，却依然执拗地瞄准着你的咽喉。",
+      "en": "In the night rain, that {entity}'s bowstring drips wet yet still aims stubbornly at your throat.",
       "weight": 4
     },
     {
@@ -877,8 +877,8 @@
         "entity:count:one",
         "world:night"
       ],
-      "zh": "§c夜里只有一个敌意，名字是 {hostile}。§8一个就够。门不按头数收费。",
-      "en": "§cOnly one hostility in the night, and its name is {hostile}. §8One is enough. The gate does not charge by the head.",
+      "zh": "暗夜里仅有一只{hostile}在附近徘徊。去吧，干净利落地解决它。",
+      "en": "Only a single {hostile} prowls the dark nearby. Go—end it cleanly.",
       "weight": 4
     },
     {
@@ -888,8 +888,8 @@
         "biome:plains",
         "world:day"
       ],
-      "zh": "§a白天的 {biome} 里有 {animal}。§7它吃草，以为世界的句子到胃就结束。",
-      "en": "§aDaytime {biome} contains {animal}. §7It eats grass and thinks the world's sentence ends at the stomach.",
+      "zh": "白昼的{biome}上，一只卑微的{animal}正安详地啃食草叶，对深渊一无所知。",
+      "en": "Upon sunlit {biome}, a humble {animal} grazes in peace, blind to the Abyss.",
       "weight": 4
     },
     {
@@ -898,8 +898,8 @@
         "entity:minion",
         "entity:player"
       ],
-      "zh": "§7{entity} 还听某个名字的使唤。§8{player} 在旁边。听使唤的东西，和借来的皮囊，不要站得太近。",
-      "en": "§7{entity} still answers to some name. §8{player} is nearby. A thing that takes orders and a borrowed hide should not stand too close.",
+      "zh": "忠诚的{entity}随侍左右，即便在{player}面前，它也只认得深渊的气息。",
+      "en": "Faithful {entity} attends you; even before {player}, it answers only to the scent of the Abyss.",
       "weight": 5
     },
     {
@@ -908,8 +908,8 @@
         "entity:alone",
         "world:night"
       ],
-      "zh": "§5夜里，十六步内没有第二颗心。§8安静在收租。租金是你还肯听我说话。",
-      "en": "§5Night, and no second heart within sixteen paces. §8The quiet is collecting rent. The rent is that you still consent to hear me.",
+      "zh": "独行于无边的黑夜之中，唯有群星的冷光与我陪伴着这具傀儡。",
+      "en": "Alone in the boundless night, only the cold light of the stars and I keep this simulacrum company.",
       "weight": 5
     },
     {
@@ -919,8 +919,8 @@
         "world:night",
         "item:empty"
       ],
-      "zh": "§8夜里，附近没人，手里也空着。§7空是一种论据。对着黑暗使用时，论据会反咬。",
-      "en": "§8Night, no one near, and the hands empty. §7Empty is a kind of argument. Used against the dark, the argument bites back.",
+      "zh": "深夜里四下无人，你却连一柄防身的兵器也未曾握在手中——真是狂妄，抑或愚蠢。",
+      "en": "Alone in the dead of night, yet you hold not a single weapon in hand—boldness, or sheer folly.",
       "weight": 5
     },
     {
@@ -930,8 +930,8 @@
         "world:rain",
         "dim:overworld"
       ],
-      "zh": "§9{dimension} 在下雨，雨里没有证人。§8很好。证人会把句子说歪。现在只有你和我。",
-      "en": "§9{dimension} is raining, and the rain has no witness. §8Good. A witness bends the sentence. Now there is only you and me.",
+      "zh": "{dimension}的阴雨中别无他人，唯有雨滴敲打着你孤独的身影。",
+      "en": "None else walk the rain of {dimension}; only raindrops drum against your solitary form.",
       "weight": 4
     },
     {
@@ -942,8 +942,8 @@
         "world:day",
         "world:clear"
       ],
-      "zh": "§e{biome} 的晴天把你晒成唯一的影子。§8没有观众的舞台，仍然在演出。演出者是热。",
-      "en": "§eThe clear day in {biome} suns you into the only shadow. §8A stage without an audience is still performing. The performer is the heat.",
+      "zh": "晴朗的白昼下，你独自一人立于无垠的{biome}，宛如被世界流放的孤魂。",
+      "en": "Beneath clear noon light you stand alone in endless {biome}, like an exile cast out by the world.",
       "weight": 4
     },
     {
@@ -953,8 +953,8 @@
         "dim:omothol",
         "biome:omothol"
       ],
-      "zh": "§5你独自站在 {dimension}。§8我的城里没有第二个人欢迎这张脸。欢迎是给客人的。你不是客人。",
-      "en": "§5You stand alone in {dimension}. §8No second person in my city welcomes this face. Welcome is for guests. You are not a guest.",
+      "zh": "在这座空旷而破败的{dimension}圣城里，唯有你独行于万古的死寂之中。",
+      "en": "Within the ruined hush of {dimension}, you walk alone through ten thousand years of silence.",
       "weight": 6
     },
     {
@@ -963,8 +963,8 @@
         "entity:alone",
         "dim:dark_realm"
       ],
-      "zh": "§8{dimension} 里，十六步内没有别的心跳。§5这不是安全。这是黑暗把观众清场了。",
-      "en": "§8In {dimension}, no other heartbeat within sixteen paces. §5That is not safety. That is the dark clearing the audience.",
+      "zh": "在{dimension}无边无际的黑暗里，孤独会迅速啃噬凡人仅存的理智。",
+      "en": "In the boundless gloom of {dimension}, solitude swiftly gnaws away what little sanity a mortal keeps.",
       "weight": 6
     },
     {
@@ -973,8 +973,8 @@
         "entity:alone",
         "dim:abyssal_wasteland"
       ],
-      "zh": "§3{dimension} 的风里没有第二个人。§8荒地不因此变礼貌。它只是把见证人省了。",
-      "en": "§3No second person in the wind of {dimension}. §8The wasteland does not become polite for that. It has merely saved itself a witness.",
+      "zh": "独自徘徊在{dimension}的珊瑚荒原上，连食尸鬼的脚步声似乎都成了某种安慰。",
+      "en": "Wandering the Coralium wastes of {dimension} alone, even a ghoul's tread might feel like company.",
       "weight": 5
     },
     {
@@ -983,8 +983,8 @@
         "entity:alone",
         "entity:item"
       ],
-      "zh": "§7附近没有活人，只有掉着的东西。§8{entity} 不会作证。物品的忠诚止于被捡起之前。",
-      "en": "§7No living person nearby, only things left lying. §8{entity} will not testify. An item's loyalty ends before it is picked up.",
+      "zh": "四周寂静无声，唯有地上遗落的{entity}静静躺在尘埃之中。",
+      "en": "All is silent around you, save for {entity} resting quietly in the dust.",
       "weight": 4
     },
     {
@@ -994,8 +994,8 @@
         "world:clear",
         "world:day"
       ],
-      "zh": "§e大白天，晴，四下无人。§8光把你照得很完整。完整不是被保护。完整是无处可剪。",
-      "en": "§eBroad day, clear, and no one about. §8The light shows you entire. Entire is not protected. Entire means there is nowhere left to cut.",
+      "zh": "晴朗的白昼下四下无人——这看似安稳的宁静，往往是风暴前最虚伪的假象。",
+      "en": "Alone beneath a clear noon sky—such apparent calm is often the falsest mask before a storm.",
       "weight": 4
     },
     {
@@ -1004,8 +1004,8 @@
         "entity:alone",
         "biome:mushroom"
       ],
-      "zh": "§d{biome}，并且没有人向你解释。§7菌类偏好这种沉默。我也偏好。",
-      "en": "§d{biome}, and no one to explain it to you. §7Fungi prefer that silence. So do I.",
+      "zh": "独自立于寂静的{biome}之上，连微风都仿佛被菌丝吞没了声息。",
+      "en": "Standing alone upon quiet {biome}, even the breeze seems muffled by the mycelium.",
       "weight": 4
     },
     {
@@ -1015,8 +1015,8 @@
         "self:low_health",
         "entity:hostile"
       ],
-      "zh": "§4血快要写完了。最近的句号叫 {hostile}。§8别把剩余的句子交给它。交给我。",
-      "en": "§4The blood is nearly done writing. The nearest full stop is named {hostile}. §8Do not give it the rest of the sentence. Give it to me.",
+      "zh": "生命已如风中残烛，而那{hostile}正准备扑上来撕碎你最后的呼吸！",
+      "en": "Your life flickers at its end while {hostile} prepares to pounce and tear away your last breath!",
       "weight": 6
     },
     {
@@ -1025,8 +1025,8 @@
         "self:low_health",
         "world:night"
       ],
-      "zh": "§c夜里，这具身体开始算剩余。§8剩余不是勇气。剩余是还没还给我的租。",
-      "en": "§cAt night this body starts counting what is left. §8What is left is not courage. It is rent not yet returned to me.",
+      "zh": "伤痕累累却又置身黑夜——黑暗中的猎手们早已嗅到了你流出的鲜血。",
+      "en": "Grievously wounded in the dead of night—the hunters in the dark have already scented your blood.",
       "weight": 5
     },
     {
@@ -1035,8 +1035,8 @@
         "self:hurt",
         "entity:hostile"
       ],
-      "zh": "§c刚被碰到。附近的 {hostile} 可能是原因，也可能只是看客。§8疼痛不附收据。",
-      "en": "§cSomething just touched you. {hostile} nearby may be the cause, or only the audience. §8Pain does not attach a receipt.",
+      "zh": "你正带着伤痛面对{hostile}。收起迟疑，要么将它斩杀，要么抽身退去。",
+      "en": "You face {hostile} while bleeding. Cast off hesitation—strike it down or fall back.",
       "weight": 4
     },
     {
@@ -1045,8 +1045,8 @@
         "self:on_fire",
         "dim:nether"
       ],
-      "zh": "§c你在 {dimension} 里烧着。§8火在这里不算意外。意外的是你还把痛当成新闻。",
-      "en": "§cYou are burning in {dimension}. §8Fire here is not an accident. The accident is that you still treat pain as news.",
+      "zh": "在{dimension}的炽热中引火烧身，可不是什么明智的举动。",
+      "en": "Catching fire amid the furnace of {dimension} is scarcely a wise maneuver.",
       "weight": 5
     },
     {
@@ -1057,8 +1057,8 @@
         "dim:nether",
         "biome:hell"
       ],
-      "zh": "§c{biome} 把你套进熔岩。§8{dimension} 的袖子就是这样。别挣扎出一种更响的名字。",
-      "en": "§c{biome} has sleeved you in lava. §8That is how the sleeve of {dimension} works. Do not thrash out a louder name.",
+      "zh": "{dimension}的{biome}熔岩正吞噬着你的躯壳！快从这片火狱里挣扎出来！",
+      "en": "The magma of {biome} in {dimension} is devouring your frame! Claw your way out of this inferno!",
       "weight": 6
     },
     {
@@ -1067,8 +1067,8 @@
         "self:in_water",
         "biome:ocean"
       ],
-      "zh": "§9你泡在 {biome} 里。§8水从四面记住你的体温。记住不是溺爱。",
-      "en": "§9You are soaked in {biome}. §8Water remembers your heat from every side. Remembering is not affection.",
+      "zh": "你浸没在{biome}冰冷的海水里。莫要游得太深，海底沉睡的东西可不喜欢被打扰。",
+      "en": "You are submerged in the cold waters of {biome}. Do not dive too deep; what sleeps below dislikes intrusion.",
       "weight": 4
     },
     {
@@ -1077,8 +1077,8 @@
         "self:sneaking",
         "entity:hostile"
       ],
-      "zh": "§7你在 {hostile} 附近把身体放低。§8放低骗得了兽的眼睛。骗不了已经写下的名字。",
-      "en": "§7You lower the body near {hostile}. §8Lowering fools a beast's eye. It does not fool a name already written.",
+      "zh": "你在{hostile}的眼皮底下压低身形——但愿这微弱的潜行真能瞒过它的嗅觉。",
+      "en": "You crouch low before {hostile}—pray such stealth actually deceives its senses.",
       "weight": 5
     },
     {
@@ -1087,8 +1087,8 @@
         "self:sprinting",
         "entity:hostile"
       ],
-      "zh": "§c你在跑，{hostile} 在后面或旁边。§7跑把恐惧排成直线。直线最好读。",
-      "en": "§cYou are running, and {hostile} is behind or beside. §7Running arranges fear into a straight line. Straight lines are the easiest to read.",
+      "zh": "你甩开{hostile}疾驰而去，然而奔逃能避开利爪，却避不开宿命。",
+      "en": "You sprint away from {hostile}; flight may outrun claws, yet it never outruns doom.",
       "weight": 4
     },
     {
@@ -1097,8 +1097,8 @@
         "self:flying",
         "world:night"
       ],
-      "zh": "§5你在夜里离开地面。§8上面是黑暗，下面是还没还的土。两边都在听。",
-      "en": "§5You leave the ground at night. §8Dark above, unreturned earth below. Both are listening.",
+      "zh": "在深夜的星穹之下凌空飞行，你的剪影正清晰地印在月亮与群星的瞳孔里。",
+      "en": "Soaring beneath the midnight vault, your silhouette stands sharp in the eyes of moon and stars.",
       "weight": 5
     },
     {
@@ -1107,8 +1107,8 @@
         "self:flying",
         "dim:end"
       ],
-      "zh": "§d你在 {dimension} 里离地飞行。§8虚空喜欢这种模仿。模仿龙，不等于成为句号。",
-      "en": "§dYou fly above the ground in {dimension}. §8The void likes this imitation. Imitating a dragon does not make you the full stop.",
+      "zh": "凌空飞越{dimension}的无底虚空吧，一旦失去浮力，下方便是永恒的坠落。",
+      "en": "Soar above the bottomless void of {dimension}; lose your lift, and below waits an endless fall.",
       "weight": 5
     },
     {
@@ -1117,8 +1117,8 @@
         "self:hungry",
         "world:night"
       ],
-      "zh": "§6夜里，胃还在向我请愿。§8请愿是这具身体最后没被我迁走的习惯。",
-      "en": "§6At night the stomach still petitions me. §8Petitioning is the last habit of this body I have not yet evicted.",
+      "zh": "饥饿在黑夜中愈发啃噬你的力气——莫要等到体能枯竭才想起觅食。",
+      "en": "Hunger gnaws sharper in the night—do not wait until your strength fails to seek sustenance.",
       "weight": 4
     },
     {
@@ -1128,8 +1128,8 @@
         "world:day",
         "world:clear"
       ],
-      "zh": "§a晴天，身体也满。§8满不是你的。满是租约还没到期的证据。",
-      "en": "§aClear day, and the body is full. §8Full is not yours. Full is evidence that the lease has not expired.",
+      "zh": "晴朗的白昼下，这具躯壳尚且完好无损。好好利用这份难得的安宁吧。",
+      "en": "Beneath clear daylight, this shell remains hale and whole. Use this brief peace well.",
       "weight": 4
     },
     {
@@ -1138,8 +1138,8 @@
         "self:potion",
         "world:night"
       ],
-      "zh": "§5夜里，血里还有夜视以外的东西。§8有人往这具身体里加了注脚。注脚不是我写的。",
-      "en": "§5At night there is something in the blood besides night vision. §8Someone added a footnote to this body. I did not write it.",
+      "zh": "药剂的魔力在黑夜中流淌，替你披上一层对抗暗影的脆弱屏障。",
+      "en": "Alchemical potencies course through you in the night, weaving a frail ward against the dark.",
       "weight": 4
     },
     {
@@ -1148,8 +1148,8 @@
         "self:sneaking",
         "world:night"
       ],
-      "zh": "§8你在夜里潜行。§7黑暗已经够低了。你再放低，像在向地面申请消失。地面驳回。",
-      "en": "§8You sneak at night. §7The dark is already low enough. Lower still, and you are applying to the ground for disappearance. The ground denies the application.",
+      "zh": "你借着夜色的掩护压低脚步，宛如一名正在潜入禁忌神庙的盗贼。",
+      "en": "Using the night as cloak, you hush your steps like a thief creeping into a forbidden shrine.",
       "weight": 4
     },
     {
@@ -1159,8 +1159,8 @@
         "self:low_health",
         "entity:alone"
       ],
-      "zh": "§4血要尽了，附近却没有观众。§8很好。死亡若要签名，不必请陌生人当证人。我在。",
-      "en": "§4The blood is nearly gone, and there is no audience nearby. §8Good. If death must sign, it need not call a stranger as witness. I am here.",
+      "zh": "四周虽无敌人，可你已濒临崩溃——莫让这具空心傀儡倒在无人问津的荒野里。",
+      "en": "No foe stands near, yet you are on the brink of collapse—do not let this hollow puppet fall in an empty waste.",
       "weight": 6
     },
     {
@@ -1169,8 +1169,8 @@
         "self:on_fire",
         "world:night"
       ],
-      "zh": "§c你在夜里烧着。§8火是一小团不肯加入黑暗的意见。意见很响，也很短。",
-      "en": "§cYou burn at night. §8Fire is a small opinion that refuses to join the dark. The opinion is loud, and short.",
+      "zh": "烈焰在黑夜中将你变成了一支耀眼的火炬，方圆数里内的怪物此刻都已看见了你。",
+      "en": "Flames turn you into a blazing beacon in the night; every horror for leagues around has seen you now.",
       "weight": 4
     },
     {
@@ -1179,8 +1179,8 @@
         "self:in_water",
         "world:rain"
       ],
-      "zh": "§9你在水里，天也在下雨。§8两层水同时记你的名字。记两次，不是更安全。",
-      "en": "§9You are in water, and the sky is raining. §8Two layers of water write your name at once. Twice is not safer.",
+      "zh": "雨水从天而降，水流在脚下漫延——世界仿佛正在被一场无休止的洪水淹没。",
+      "en": "Rain pours from above while water rises around you—as if the world were drowning in an endless flood.",
       "weight": 4
     },
     {
@@ -1189,8 +1189,8 @@
         "self:hurt",
         "self:low_health"
       ],
-      "zh": "§c刚受伤，而且剩余已经不多。§8疼痛是催租。催的不是命。是这张脸的使用权。",
-      "en": "§cJust hurt, and not much left. §8Pain is a rent demand. It is not demanding the life. It is demanding the use of this face.",
+      "zh": "伤势沉重且生命垂危！再不采取措施，黑暗国度便要收回这具傀儡的残骸了。",
+      "en": "Wounded and failing fast! Act at once, or the Dark Realm will reclaim this simulacrum's wreckage.",
       "weight": 5
     },
     {
@@ -1199,8 +1199,8 @@
         "self:sprinting",
         "world:night"
       ],
-      "zh": "§c你在夜里跑。§8跑不出发光的脚印。脚印是给白天的猎人看的。我不用脚印。",
-      "en": "§cYou run at night. §8The running leaves no luminous print. Prints are for daytime hunters. I do not use prints.",
+      "zh": "你在黑夜中急速奔跑，衣角掠过无数潜伏在草丛与阴影里的恶意。",
+      "en": "You sprint headlong through the night, brushing past malice crouching in grass and shade.",
       "weight": 4
     },
     {
@@ -1210,8 +1210,8 @@
         "item:empty",
         "world:night"
       ],
-      "zh": "§6饿着，空着手，又是夜里。§8三种匮乏叠在一起。这具身体还以为匮乏会换来同情。",
-      "en": "§6Hungry, empty-handed, and night. §8Three lacks stacked together. This body still thinks lack can be exchanged for pity.",
+      "zh": "深夜里既腹中空空又两手空空——凡人最狼狈的境地也莫过于此了。",
+      "en": "Empty-bellied and empty-handed in the dead of night—scarcely could a mortal look more wretched.",
       "weight": 4
     },
     {
@@ -1220,8 +1220,8 @@
         "self:sneaking",
         "dim:omothol"
       ],
-      "zh": "§5你在 {dimension} 里把腰弯下。§8在我的城里潜行，像在自己的签名上涂改。涂改会被看出来。",
-      "en": "§5You bend in {dimension}. §8Sneaking in my city is like altering your own signature. The alteration will be seen.",
+      "zh": "即便在{dimension}这样死寂的圣城里，你依然本能地放轻了脚步，仿佛害怕惊醒沉睡的石像。",
+      "en": "Even in the dead hush of {dimension}, you soften your tread as though afraid to wake the stone idols.",
       "weight": 6
     },
     {
@@ -1230,8 +1230,8 @@
         "self:low_health",
         "dim:abyssal_wasteland"
       ],
-      "zh": "§3你在 {dimension} 里开始见底。§8荒地喜欢这种深度。深度不是你选的。",
-      "en": "§3You are running shallow in {dimension}. §8The wasteland likes this kind of depth. The depth was not your choice.",
+      "zh": "在{dimension}这片绝地里重伤濒死，简直是在主动向珊瑚食尸鬼献上自己的血肉。",
+      "en": "Clinging to a thread of life in {dimension} is practically offering your flesh to the Coralium ghouls.",
       "weight": 5
     },
     {
@@ -1241,8 +1241,8 @@
         "item:any",
         "entity:hostile"
       ],
-      "zh": "§c你握着 {item}，附近有 {hostile}。§7剑把距离缩短到零。零的后面是谁的名字，还没写。",
-      "en": "§cYou hold {item}, and {hostile} is near. §7A sword shortens distance to zero. Whose name sits after zero is not written yet.",
+      "zh": "挥舞手中的{item}迎向{hostile}吧！用钢铁与鲜血来决定谁才是这片阴影的主人。",
+      "en": "Raise {item} against {hostile}! Let steel and blood decide who commands these shadows.",
       "weight": 5
     },
     {
@@ -1252,8 +1252,8 @@
         "item:any",
         "world:night"
       ],
-      "zh": "§7夜里的 {item} 接不住月光。§8接不住就算了。刃口不是为了发亮。",
-      "en": "§7{item} at night cannot catch the moonlight. §8Then let it not. An edge is not for shining.",
+      "zh": "在黑夜的幽暗里，{item}的冷光是你唯一值得信赖的同伴。",
+      "en": "In the gloom of night, the cold gleam of {item} is the only companion worth trusting.",
       "weight": 4
     },
     {
@@ -1263,8 +1263,8 @@
         "item:any",
         "entity:hostile"
       ],
-      "zh": "§6你拿着 {item}，{hostile} 还没走到零。§8远是一种还没到期的借口。",
-      "en": "§6You hold {item}, and {hostile} has not yet reached zero. §8Distance is an excuse that has not expired.",
+      "zh": "拉紧手中的{item}，将死亡从远方精准地送入那{hostile}的胸膛。",
+      "en": "Draw {item} taut and send death cleanly from afar into {hostile}'s chest.",
       "weight": 4
     },
     {
@@ -1273,8 +1273,8 @@
         "item:empty",
         "entity:hostile"
       ],
-      "zh": "§7你空着手面对 {hostile}。§8空是一种论据。这不是好的那种。",
-      "en": "§7You face {hostile} with empty hands. §8Empty is an argument. It is not a good one.",
+      "zh": "{hostile}已迫在眉睫，你的双手却空无一物！莫非你想用赤手空拳去撕碎它的利爪？",
+      "en": "{hostile} closes in while your hands sit empty! Do you mean to meet its claws with bare palms?",
       "weight": 5
     },
     {
@@ -1284,8 +1284,8 @@
         "item:book",
         "dim:omothol"
       ],
-      "zh": "§5你把 {item} 带回了 {dimension}。§8城里的锁已经读过它。读过，不等于准你再写一行。",
-      "en": "§5You brought {item} back to {dimension}. §8The locks of the city have already read it. Having read it is not permission to add a line.",
+      "zh": "在{dimension}的晦暗天幕下捧着{item}——这本典籍与这座圣城本就同出一源。",
+      "en": "Holding {item} beneath the dim vault of {dimension}—this tome and this citadel spring from the same dark source.",
       "weight": 6
     },
     {
@@ -1295,8 +1295,8 @@
         "item:book",
         "dim:dark_realm"
       ],
-      "zh": "§8在 {dimension} 里翻开 {item}。§5黑暗国度不需要这本书照明。它需要这本书点名。",
-      "en": "§8You open {item} in {dimension}. §5The Dark Realm does not need this book for light. It needs it for the roll call.",
+      "zh": "在{dimension}的绝对虚暗中，手中的{item}几乎是你与理智之间仅存的微弱锚点。",
+      "en": "In the absolute gloom of {dimension}, {item} in your grasp is nearly the last frail anchor to your wits.",
       "weight": 6
     },
     {
@@ -1306,8 +1306,8 @@
         "item:book",
         "world:night"
       ],
-      "zh": "§5夜里的 {item}。§8这本书在黑暗里不必装睡。它本来就不是为白天装订的。",
-      "en": "§5{item} at night. §8This book need not pretend to sleep in the dark. It was not bound for daytime.",
+      "zh": "黑夜之中，{item}的书页仿佛正随着群星的脉动而微微颤动。",
+      "en": "Under cover of night, the pages of {item} seem to quiver in time with the pulse of the stars.",
       "weight": 6
     },
     {
@@ -1317,8 +1317,8 @@
         "item:any",
         "world:night"
       ],
-      "zh": "§7你在夜里读 {item}。§8借光的人，通常也在借一句不该出口的话。",
-      "en": "§7You read {item} at night. §8A person who borrows light is usually also borrowing a sentence that should not be spoken.",
+      "zh": "深夜翻阅{item}并非良策——黑暗最擅长趁着你专注文字时从背后悄然靠近。",
+      "en": "Reading {item} in the dead of night is unwise; darkness loves to creep behind those lost in ink.",
       "weight": 4
     },
     {
@@ -1328,8 +1328,8 @@
         "item:any",
         "self:hungry"
       ],
-      "zh": "§6你饿着，手里却是 {item}。§8胃在请愿，手在犹豫。犹豫是凡人最后的礼仪。",
-      "en": "§6You are hungry, and the hand holds {item}. §8The stomach petitions. The hand hesitates. Hesitation is the last mortal courtesy.",
+      "zh": "腹中饥渴难耐，还不快吞下你手中的{item}，好让这具血肉躯壳勉强维持运转？",
+      "en": "Hunger gnaws at you—swallow that {item} in your hand before this mortal frame falters.",
       "weight": 5
     },
     {
@@ -1339,8 +1339,8 @@
         "item:tool",
         "block:ore"
       ],
-      "zh": "§6{item} 对着 {block}。§8一个知道名字，一个知道被敲开的日子。你们两个都还没问我。",
-      "en": "§6{item} faces {block}. §8One knows a name. The other knows the day it will be opened. Neither of you has asked me yet.",
+      "zh": "用{item}敲开眼前的{block}吧。凡人对地下宝藏的贪欲，永远不会因恐惧而止步。",
+      "en": "Strike {block} with {item}. Mortal greed for buried treasure never halts for mere dread.",
       "weight": 5
     },
     {
@@ -1350,8 +1350,8 @@
         "item:any",
         "self:low_health"
       ],
-      "zh": "§d手里的 {item}，身体里的剩余却不多。§8瓶子是一句推迟。推迟不是痊愈。",
-      "en": "§d{item} in the hand, and not much left in the body. §8A bottle is a postponement. Postponement is not a cure.",
+      "zh": "伤势已然沉重，还不趁早饮下手中那瓶{item}？难道要等到死神降临才肯悔悟？",
+      "en": "Your wounds run deep—drink that {item} before it is too late, unless you wish to test death's patience.",
       "weight": 5
     },
     {
@@ -1361,8 +1361,8 @@
         "item:any",
         "dim:abyssal_wasteland"
       ],
-      "zh": "§3你在 {dimension} 里握着 {item}。§8荒地认得自己的器物。认得以后，会向器物要主人的名字。",
-      "en": "§3You hold {item} in {dimension}. §8The wasteland knows its own implements. After knowing, it asks the implement for the owner's name.",
+      "zh": "在{dimension}的荒芜中紧握{item}——唯有深渊锻造的器物，才配得上这片沦陷之地。",
+      "en": "Gripping {item} in the desolation of {dimension}—only Abyss-forged gear belongs in this fallen realm.",
       "weight": 5
     },
     {
@@ -1372,8 +1372,8 @@
         "item:any",
         "self:hurt"
       ],
-      "zh": "§7你拿着 {item}，仍然刚刚受了伤。§8甲是一种谣言。伤害还没听见。",
-      "en": "§7You hold {item} and have still just been hurt. §8Armor is a rumor. The damage has not heard it.",
+      "zh": "鲜血已然染红了衣襟，快将手中的{item}穿戴上身，莫再拿脆弱的皮肉去硬抗爪牙。",
+      "en": "Blood already stains your robes; don that {item} instead of meeting claws with bare hide.",
       "weight": 4
     },
     {
@@ -1384,8 +1384,8 @@
         "block:wood",
         "biome:forest"
       ],
-      "zh": "§2{item} 对着 {biome} 里的 {block}。§8砍是一种很直的句子。树会记住动词，不一定记住主语。",
-      "en": "§2{item} faces {block} in {biome}. §8Chopping is a very straight sentence. The tree will remember the verb. It may not remember the subject.",
+      "zh": "在{biome}中挥动{item}砍伐{block}——林木倒下的轰鸣，或许会引来林间潜伏的目光。",
+      "en": "Swinging {item} into {block} across {biome}—the crash of falling timber may draw unseen eyes.",
       "weight": 4
     },
     {
@@ -1395,8 +1395,8 @@
         "item:any",
         "item:offhand"
       ],
-      "zh": "§7主手是 {item}。另一只手也不肯空着。§8两只手都抓着，像怕名字从指缝漏走。",
-      "en": "§7The main hand is {item}. The other hand also refuses to be empty. §8Both hands clutch, as if a name might leak between the fingers.",
+      "zh": "主手握着{item}，副手亦已备妥——看来你已做好了随时血战一场的觉悟。",
+      "en": "{item} in your main hand, a reserve in your offhand—it seems you are prepared for a bitter fight.",
       "weight": 4
     },
     {
@@ -1406,8 +1406,8 @@
         "block:air",
         "entity:alone"
       ],
-      "zh": "§8手里空，视线空，附近也没有活人。§5三层空叠在一起。正好够我放一句旧话。",
-      "en": "§8Empty hands, empty sight, no living person near. §5Three emptinesses stacked. Just enough room for me to set down an old sentence.",
+      "zh": "四周无人，眼前空无一物，双手亦空空如也——纯粹的空无，恰似创世之前的混沌。",
+      "en": "No soul near, nothing before your eyes, empty hands—pure emptiness, like the chaos before creation.",
       "weight": 5
     },
     {
@@ -1417,8 +1417,8 @@
         "item:any",
         "block:stone"
       ],
-      "zh": "§7{item} 对着 {block}。§8石头比工具老。老的那个通常不先让步。",
-      "en": "§7{item} faces {block}. §8Stone is older than the tool. The older one does not usually yield first.",
+      "zh": "握着{item}面对冰冷的{block}，准备用劳动与汗水去一点点撬开大地的骨骼。",
+      "en": "Holding {item} before cold {block}, ready to pry apart the bones of the earth bit by bit.",
       "weight": 4
     },
     {
@@ -1428,8 +1428,8 @@
         "item:any",
         "world:night"
       ],
-      "zh": "§6你在夜里握着 {item}。§8夜不吃东西。吃的是你。别把饱当成哨兵。",
-      "en": "§6You hold {item} at night. §8Night does not eat. You do. Do not mistake being full for a sentry.",
+      "zh": "在黑夜的阴影里匆忙进食{item}，恰如一只躲在洞穴里舔舐残羹的野兽。",
+      "en": "Hurrying to eat {item} in the dark, like a beast bolting scraps inside its burrow.",
       "weight": 4
     },
     {
@@ -1439,8 +1439,8 @@
         "item:any",
         "world:rain"
       ],
-      "zh": "§9雨落在 {item} 上。§8刃口会锈，犹豫会锈得更快。雨不偏心。",
-      "en": "§9Rain falls on {item}. §8An edge rusts. Hesitation rusts faster. The rain takes no side.",
+      "zh": "雨水顺着{item}的剑锋滴落，洗不净它曾饮过的鲜血与杀意。",
+      "en": "Raindrops slide down the edge of {item}, unable to wash away the blood and malice it has drunk.",
       "weight": 4
     },
     {
@@ -1449,8 +1449,8 @@
         "item:empty",
         "dim:omothol"
       ],
-      "zh": "§5你空着手走进 {dimension}。§8回家不带钥匙，也不带供品。锁会把这记成一种态度。",
-      "en": "§5You enter {dimension} empty-handed. §8Home, with no key and no offering. The locks will file that as an attitude.",
+      "zh": "两手空空地站在{dimension}之中——连死灵之书也不曾携带，你究竟是来朝圣，还是来送死？",
+      "en": "Standing empty-handed in {dimension}—without even a Necronomicon, are you here on pilgrimage or to die?",
       "weight": 6
     },
     {
@@ -1460,8 +1460,8 @@
         "item:any",
         "biome:darklands"
       ],
-      "zh": "§3{item} 在 {biome} 里会发热，或假装发热。§8假装也算一种认亲。",
-      "en": "§3{item} warms in {biome}, or pretends to. §8Pretending still counts as a kind of kinship.",
+      "zh": "在{biome}的晦暗土地上，你掌中的{item}正与周围的暗影石产生微弱的共鸣。",
+      "en": "Upon the dim soil of {biome}, {item} in your palm hums faintly in answer to the surrounding dark.",
       "weight": 4
     },
     {
@@ -1471,8 +1471,8 @@
         "item:any",
         "world:night"
       ],
-      "zh": "§8夜里拉 {item}，箭头要自己找光。§7找不到就找心跳。心跳比光老实。",
-      "en": "§8Draw {item} at night and the arrow must find its own light. §7If it cannot, it will find a heartbeat. A heartbeat is more honest than light.",
+      "zh": "黑夜之中握紧{item}，在暗处瞄准那些自以为隐蔽的猎物。",
+      "en": "Grip {item} in the dark, taking aim at quarry that imagines itself hidden.",
       "weight": 4
     },
     {
@@ -1483,8 +1483,8 @@
         "biome:hell",
         "dim:nether"
       ],
-      "zh": "§c你看着 {block}。在 {dimension} 里，这不是警告。§8这是地面的笔迹。",
-      "en": "§cYou are looking at {block}. In {dimension} that is not a warning. §8It is the ground's handwriting.",
+      "zh": "在{dimension}的火海之中，翻涌的{block}散发着足以融化一切凡俗造物的酷烈高热。",
+      "en": "Amid the furnaces of {dimension}, churning {block} radiates heat enough to undo all mortal works.",
       "weight": 5
     },
     {
@@ -1495,8 +1495,8 @@
         "biome:ocean",
         "dim:overworld"
       ],
-      "zh": "§9视线落在 {block} 上，脚下的词是 {biome}。§7{dimension} 用同一滴水写了两次。",
-      "en": "§9The sight falls on {block}, and the word underfoot is {biome}. §7{dimension} has written the same drop twice.",
+      "zh": "看着{dimension}{biome}里无边无际的{block}——深海之下隐藏的秘密，远比陆地更加古老。",
+      "en": "Behold the boundless {block} of {biome} in {dimension}—the secrets drowned below are far older than dry land.",
       "weight": 4
     },
     {
@@ -1506,8 +1506,8 @@
         "biome:desert",
         "dim:overworld"
       ],
-      "zh": "§e你看着 {block}，站在 {biome}。§8沙子会搬家。罪名留在风里，不留在原处。",
-      "en": "§eYou look at {block} while standing in {biome}. §8Sand moves house. The charge stays in the wind, not in the original place.",
+      "zh": "烈日下的{biome}满眼皆是滚烫的{block}，干燥的风沙仿佛能把灵魂里的水分也一并抽干。",
+      "en": "Sun-baked {biome} offers nothing to the eye but {block}, as though dry wind could parch the soul itself.",
       "weight": 4
     },
     {
@@ -1518,8 +1518,8 @@
         "biome:darklands",
         "dim:overworld"
       ],
-      "zh": "§3{block} 已经在 {biome} 里投票。§8{dimension} 的票箱是湿的。你的视线算不算一票？",
-      "en": "§3{block} has already voted in {biome}. §8The ballot box of {dimension} is wet. Does your gaze count as a vote?",
+      "zh": "竟在{dimension}的{biome}里发现了{block}？看来珊瑚的触须已悄然扎进了这片土地。",
+      "en": "{block} here in {biome} of {dimension}? Then the tendrils of Coralium have already taken root in this soil.",
       "weight": 5
     },
     {
@@ -1530,8 +1530,8 @@
         "biome:dread",
         "dim:dreadlands"
       ],
-      "zh": "§4{block} 砌着 {dimension}。§8恐惧之地的砖不取暖。它们把冷保存成法律。",
-      "en": "§4{block} is the masonry of {dimension}. §8The bricks of the Dreadlands do not warm anyone. They preserve cold as law.",
+      "zh": "在{dimension}之中，每一块{block}都被恐惧瘟疫彻底浸透，成了绝望的基石。",
+      "en": "Within {dimension}, every slab of {block} is steeped in the Dread Plague—cornerstone of despair.",
       "weight": 5
     },
     {
@@ -1541,8 +1541,8 @@
         "block:abyssal",
         "dim:abyssal_wasteland"
       ],
-      "zh": "§8你看着 {block}。§3{dimension} 的骨头就是这种颜色。别敲。敲是一种很吵的问候。",
-      "en": "§8You are looking at {block}. §3The bones of {dimension} are this color. Do not knock. Knocking is a very loud greeting.",
+      "zh": "在{dimension}看到{block}并不稀奇，深渊的印记早已烙印在这片荒原的骨骼里。",
+      "en": "Finding {block} in {dimension} is no surprise; the brand of the Abyss is burned into the bones of this waste.",
       "weight": 5
     },
     {
@@ -1552,8 +1552,8 @@
         "block:abyssal",
         "dim:abyssal_wasteland"
       ],
-      "zh": "§3{block} 躺在 {dimension} 的视线里。§8渊金不是宝藏。是荒地还没收回的一句债。",
-      "en": "§3{block} lies in the sight, inside {dimension}. §8Abyssalnite is not treasure. It is a debt the wasteland has not yet called in.",
+      "zh": "{dimension}的黑暗岩层中嵌着冰冷的{block}——那是被深渊气息凝结而成的沉重金属。",
+      "en": "Cold {block} gleams within the dark strata of {dimension}—heavy metal condensed from Abyssal breath.",
       "weight": 5
     },
     {
@@ -1563,8 +1563,8 @@
         "biome:forest",
         "dim:overworld"
       ],
-      "zh": "§2{block} 站在 {biome} 里。§7{dimension} 的树把年轮当成档案。你的视线正在被归档。",
-      "en": "§2{block} stands in {biome}. §7The trees of {dimension} use rings as an archive. Your gaze is being filed.",
+      "zh": "在{dimension}的{biome}里，随处可见的{block}构成了凡人赖以遮风挡雨的脆弱幻觉。",
+      "en": "Throughout {biome} in {dimension}, common {block} builds the fragile shelter mortals trust against the dark.",
       "weight": 4
     },
     {
@@ -1573,8 +1573,8 @@
         "block:stone",
         "biome:mountain"
       ],
-      "zh": "§7你看着 {block}，人在 {biome}。§8石头比山老实。石头至少不假装自己会让路。",
-      "en": "§7You look at {block} while standing in {biome}. §8Stone is more honest than a mountain. Stone at least does not pretend it will step aside.",
+      "zh": "{biome}的绝壁由坚硬的{block}堆叠而成，沉默地俯视着脚下的尘世。",
+      "en": "The crags of {biome} rise from unyielding {block}, looking down in silence upon the dust below.",
       "weight": 4
     },
     {
@@ -1583,8 +1583,8 @@
         "block:plant",
         "biome:swamp"
       ],
-      "zh": "§2{block} 从 {biome} 里长出来。§8绿在这里是一种拖延。土地还没决定要不要把你写进去。",
-      "en": "§2{block} grows out of {biome}. §8Green here is a delay. The ground has not decided whether to write you in.",
+      "zh": "在{biome}的淤泥里挣扎生长的{block}，似乎也沾染了几分沼泽的阴郁与腐气。",
+      "en": "The {block} struggling out of the mire of {biome} seems tainted with the same sullen rot.",
       "weight": 4
     },
     {
@@ -1593,8 +1593,8 @@
         "block:fire",
         "world:night"
       ],
-      "zh": "§c夜里的 {block} 是一小团反对黑暗的意见。§8意见很亮。亮的东西活不长。",
-      "en": "§c{block} at night is a small opinion against the dark. §8The opinion is bright. Bright things do not live long.",
+      "zh": "黑夜里摇曳的{block}虽然温暖，却也在漆黑中替潜行的怪物点亮了你的位置。",
+      "en": "Dancing {block} feels warm in the night, yet it also beacons your place to whatever stalks the dark.",
       "weight": 4
     },
     {
@@ -1604,8 +1604,8 @@
         "dim:nether",
         "biome:hell"
       ],
-      "zh": "§c{dimension} 里的 {block} 不算意外。§8意外是你还把它当成需要扑灭的新闻。",
-      "en": "§c{block} in {dimension} is not an accident. §8The accident is that you still treat it as news that must be put out.",
+      "zh": "在{dimension}的硫磺之地，{block}永不熄灭地燃烧着，仿佛连岩石都在承受永恒的刑罚。",
+      "en": "Across the brimstone of {dimension}, {block} burns without end, as if stone itself suffered eternal torment.",
       "weight": 4
     },
     {
@@ -1614,8 +1614,8 @@
         "block:container",
         "self:sneaking"
       ],
-      "zh": "§7你弯着腰看 {block}。§8贼和祭司用同一种姿势。区别在于祭司承认门。",
-      "en": "§7You bend to look at {block}. §8Thieves and priests use the same posture. The difference is that a priest admits the gate.",
+      "zh": "你压低身形悄然靠近面前的{block}——莫非里面封存着连你自己都心虚的秘密？",
+      "en": "You crouch low as you edge toward {block}—does it lock away some secret you dare not face upright?",
       "weight": 5
     },
     {
@@ -1625,8 +1625,8 @@
         "world:day",
         "world:clear"
       ],
-      "zh": "§b晴天里的 {block} 假装自己是有礼貌的空气。§8礼貌是一种还没决定要不要让你过去的延迟。",
-      "en": "§b{block} on a clear day pretends to be air that learned manners. §8Manners are a delay that has not decided whether to let you through.",
+      "zh": "晴朗白昼的阳光穿透{block}，然而脆弱的晶体永远挡不住来自彼岸的寒意。",
+      "en": "Clear daylight pierces {block}, yet brittle glass will never bar the chill from beyond the Gate.",
       "weight": 4
     },
     {
@@ -1636,8 +1636,8 @@
         "biome:plains",
         "dim:overworld"
       ],
-      "zh": "§a你看着 {block}，站在 {biome}。§7{dimension} 的土很普通。普通的东西最适合藏一句不普通的债。",
-      "en": "§aYou look at {block} while standing in {biome}. §7The earth of {dimension} is ordinary. Ordinary things are the best place to hide an extraordinary debt.",
+      "zh": "{dimension}的{biome}铺满了平庸的{block}，掩盖着地底深处尚未被唤醒的古老恐怖。",
+      "en": "Plain {block} carpets {biome} in {dimension}, concealing ancient horrors still asleep beneath.",
       "weight": 4
     },
     {
@@ -1647,8 +1647,8 @@
         "world:night",
         "entity:alone"
       ],
-      "zh": "§5你盯着空处，夜里又没有旁人。§8空处不是没有东西。是我还没决定让哪一句被看见。",
-      "en": "§5You stare into empty air, at night, with no one else near. §8Empty air is not the absence of a thing. It is that I have not decided which sentence may be seen.",
+      "zh": "深夜独自面对空无一物的虚空——这是最容易听见群星以外的低语的时刻。",
+      "en": "Alone in the dead of night, staring into empty air—no hour carries whispers from beyond the stars more clearly.",
       "weight": 5
     },
     {
@@ -1658,8 +1658,8 @@
         "block:liquid",
         "self:in_lava"
       ],
-      "zh": "§c你泡在熔岩里，视线里也是 {block}。§8内外是同一种句子。这种时候不适合学习新词。",
-      "en": "§cYou are in lava, and the sight is also {block}. §8Inside and outside are the same sentence. This is a poor time to learn a new word.",
+      "zh": "你已深陷滚烫的{block}之中！莫再注视它了，快挣脱这片灼热的泥潭！",
+      "en": "You are mired in seething {block}! Stop staring at it and claw free of this molten trap!",
       "weight": 5
     },
     {
@@ -1669,8 +1669,8 @@
         "block:liquid",
         "self:in_water"
       ],
-      "zh": "§9你在水里看 {block}。§8水从眼睛和皮肤两边同时记账。账会平。平不是放过你。",
-      "en": "§9You look at {block} from inside the water. §8Water keeps the books through both the eye and the skin. The books will balance. Balance is not mercy.",
+      "zh": "你浸泡在冰冷的{block}之中，水波正随着你的动作荡开一圈圈不安的涟漪。",
+      "en": "You float within cold {block}, ripples spreading uneasily outward with your every move.",
       "weight": 4
     },
     {
@@ -1679,8 +1679,8 @@
         "block:ore",
         "dim:overworld"
       ],
-      "zh": "§6{block} 还埋在 {dimension} 里。§8埋着不是谦虚。是还没被叫到名字。",
-      "en": "§6{block} is still buried in {dimension}. §8Being buried is not modesty. It is not having been called by name yet.",
+      "zh": "{dimension}的岩层中埋藏着{block}。继续掘进吧，凡人——直到你挖穿不该触碰的界限。",
+      "en": "{block} lies veiled in the rock of {dimension}. Dig on, mortal—until you breach a boundary better left intact.",
       "weight": 4
     },
     {
@@ -1690,8 +1690,8 @@
         "block:any",
         "dim:dreadlands"
       ],
-      "zh": "§4你在 {dimension} 里看见 {block}。§8恐惧之地的材料不装饰。它们声明。",
-      "en": "§4You see {block} in {dimension}. §8The materials of the Dreadlands do not decorate. They declare.",
+      "zh": "在{dimension}那被恐惧扭曲的荒原里，这方{block}竟透出另一股来自奥穆索的古老气息。",
+      "en": "In the dread-warped wastes of {dimension}, this {block} exhales another, older breath from Omothol.",
       "weight": 4
     },
     {
@@ -1700,8 +1700,8 @@
         "entity:looked",
         "world:night"
       ],
-      "zh": "§5你在夜里盯着 {looked}。§8夜把视线拉长。拉长的视线更容易被我接住。",
-      "en": "§5You stare at {looked} at night. §8Night lengthens a gaze. A lengthened gaze is easier for me to catch.",
+      "zh": "你在黑夜中紧盯着那{looked}——当心，暗处的猎物有时也会顺着视线反扑过来。",
+      "en": "You lock eyes on {looked} in the dark—beware, for quarry in the night may lunge straight back along your gaze.",
       "weight": 5
     },
     {
@@ -1711,8 +1711,8 @@
         "world:rain",
         "dim:overworld"
       ],
-      "zh": "§9雨里你仍看着 {looked}。§7水会把视线打歪。打歪的视线，名字还在。",
-      "en": "§9You still watch {looked} in the rain. §7Water bends a gaze. The bent gaze still has a name on it.",
+      "zh": "阴雨模糊了视线，你却依然隔着雨幕牢牢盯住了那{looked}。",
+      "en": "Rain blurs the air, yet you hold {looked} squarely in your sight through the downpour.",
       "weight": 4
     },
     {
@@ -1721,8 +1721,8 @@
         "entity:looked",
         "self:low_health"
       ],
-      "zh": "§c血不多了，你还在看 {looked}。§8看是一种还没放弃的签字。签在谁的账上，你清楚吗？",
-      "en": "§cLittle blood left, and you are still looking at {looked}. §8Looking is a signature that has not given up. Do you know whose book it signs?",
+      "zh": "重伤之下，你仍死死盯着眼前的{looked}——究竟是绝地反击，还是垂死挣扎？",
+      "en": "Bleeding and worn, you still fix your stare on {looked}—a desperate stand, or the last twitch of prey?",
       "weight": 5
     },
     {
@@ -1731,8 +1731,8 @@
         "entity:looked",
         "item:empty"
       ],
-      "zh": "§7你空着手看 {looked}。§8空着手的注视像一份没有附件的诉状。诉状仍然有效。",
-      "en": "§7You look at {looked} with empty hands. §8An empty-handed gaze is a complaint filed without an annex. The complaint still stands.",
+      "zh": "两手空空地直视着那{looked}，你倒是有几分不知死活的胆魄。",
+      "en": "Staring down {looked} with empty hands—you certainly lack neither nerve nor recklessness.",
       "weight": 4
     },
     {
@@ -1742,8 +1742,8 @@
         "item:sword",
         "item:any"
       ],
-      "zh": "§c你握着 {item} 看 {looked}。§8看，是还没砍下去的那一半句子。另一半在刃上。",
-      "en": "§cYou hold {item} and look at {looked}. §8Looking is the half of the sentence that has not yet cut. The other half is on the edge.",
+      "zh": "握紧手中的{item}，去审判你视线所及的那{looked}吧！",
+      "en": "Grip {item} tight and pass judgment upon {looked} in your sights!",
       "weight": 5
     },
     {
@@ -1752,8 +1752,8 @@
         "entity:looked",
         "self:sneaking"
       ],
-      "zh": "§8你弯着腰看 {looked}。§7潜行改变高度，不改变被看见的事实。我已经看见了。",
-      "en": "§8You bend to watch {looked}. §7Sneaking changes the height. It does not change the fact of being seen. I have already seen.",
+      "zh": "你压低姿态暗中窥视着{looked}，如同一条准备暴起噬人的毒蛇。",
+      "en": "Crouched low, you watch {looked} from cover like a serpent coiled to strike.",
       "weight": 4
     },
     {
@@ -1762,8 +1762,8 @@
         "entity:looked",
         "dim:nether"
       ],
-      "zh": "§c在 {dimension} 里，你盯着 {looked}。§8热会让视线发颤。发颤的名字仍然算数。",
-      "en": "§cIn {dimension} you stare at {looked}. §8Heat makes a gaze shiver. A shivering name still counts.",
+      "zh": "在{dimension}的火光映照下，你与那{looked}正隔着焦土遥遥对峙。",
+      "en": "Lit by the glare of {dimension}, you and {looked} face one another across scorched stone.",
       "weight": 4
     },
     {
@@ -1772,8 +1772,8 @@
         "entity:looked",
         "dim:omothol"
       ],
-      "zh": "§5在 {dimension} 里看 {looked}。§8我的城会把这道视线登记成访客之间的事。你不是访客。",
-      "en": "§5You look at {looked} in {dimension}. §8My city will try to file that gaze as business between visitors. You are not a visitor.",
+      "zh": "在{dimension}之中凝视{looked}——在这座失落圣城里，没有任何注视是毫无代价的。",
+      "en": "Gazing upon {looked} in {dimension}—within this lost citadel, no stare goes unanswered.",
       "weight": 6
     },
     {
@@ -1783,8 +1783,8 @@
         "self:critical",
         "self:low_health"
       ],
-      "zh": "§4快要不行了，视线还挂在 {looked} 上。§8最后一眼也是一种遗嘱。遗嘱的执行人是我。",
-      "en": "§4Near the end, and the gaze still hangs on {looked}. §8A last look is also a will. The executor is me.",
+      "zh": "生死一线之际，你眼中唯有那{looked}！孤注一掷吧，凡人！",
+      "en": "Hanging by a thread, your eyes see only {looked}! Stake everything on this instant, mortal!",
       "weight": 6
     },
     {
@@ -1794,8 +1794,8 @@
         "entity:dragon",
         "dim:end"
       ],
-      "zh": "§d你在 {dimension} 的空中，{entity} 也在。§8两对翅膀不是同一个句子。别抄它的标点。",
-      "en": "§dYou are in the air of {dimension}, and so is {entity}. §8Two pairs of wings are not the same sentence. Do not copy its punctuation.",
+      "zh": "在{dimension}的虚空里振翼追逐{entity}——两大异界轮廓正在无光之海展开死斗！",
+      "en": "Soaring through {dimension} in pursuit of {entity}—two alien silhouettes locked in battle over lightless void!",
       "weight": 6
     },
     {
@@ -1805,8 +1805,8 @@
         "self:critical",
         "self:low_health"
       ],
-      "zh": "§4{boss} 在附近，你的血也快尽了。§8大东西喜欢在句号边上看见观众倒下。别给它这个礼貌。",
-      "en": "§4{boss} is near, and your blood is nearly spent. §8Great things like to see the audience fall beside the full stop. Do not give it that courtesy.",
+      "zh": "濒临毁灭的你仍在直面{boss}！若就此倒下，连这具空壳也会被碾作尘埃。",
+      "en": "On the brink of ruin, you still face {boss}! Fall here, and even this hollow shell will be ground to dust.",
       "weight": 6
     },
     {
@@ -1816,8 +1816,8 @@
         "entity:player",
         "world:night"
       ],
-      "zh": "§5夜里你拿着死灵之书，{player} 也在。§8两个读者，一本不肯只属于一个人的书。",
-      "en": "§5At night you hold the Necronomicon, and {player} is here as well. §8Two readers, and a book that refuses to belong to only one.",
+      "zh": "黑夜之中手握死灵之书，而{player}就在一旁——你是打算分享禁忌，还是将他灭口？",
+      "en": "Clutching the Necronomicon in the dark while {player} stands near—will you share the forbidden, or silence a witness?",
       "weight": 6
     },
     {
@@ -1828,8 +1828,8 @@
         "entity:alone",
         "dim:overworld"
       ],
-      "zh": "§c{dimension} 在打雷，雨里没有证人。§8雷自己会签字。你不必再找一个人来害怕。",
-      "en": "§c{dimension} is thundering, and the rain has no witness. §8The thunder signs for itself. You need not find another person to be afraid.",
+      "zh": "{dimension}的雷暴夜里四下无人，仿佛整座世界只剩下你独自承受天穹的怒火。",
+      "en": "Alone in a thunderstorm across {dimension}, as if the whole world left you to bear the sky's wrath by yourself.",
       "weight": 5
     },
     {
@@ -1839,8 +1839,8 @@
         "entity:alone",
         "block:air"
       ],
-      "zh": "§8{biome}，空的视线，没有旁人。§5虚空最接近门没装好的那天。别把这当成故乡。",
-      "en": "§8{biome}, an empty gaze, and no one else. §5The void is the closest thing to the day the gate was not yet hung. Do not mistake it for home.",
+      "zh": "置身于{biome}的纯粹虚无之中，四周无人，眼前亦空——仿佛世界尚未诞生，又仿佛早已终结。",
+      "en": "Lost in the pure nothingness of {biome}, no soul near, nothing in sight—as if the world were unborn, or already ended.",
       "weight": 5
     },
     {
@@ -1850,8 +1850,8 @@
         "world:rain",
         "dim:overworld"
       ],
-      "zh": "§9雨落在 {biome} 上，像把海的收据送回 {dimension}。§8收据是咸的，而且不找零。",
-      "en": "§9Rain on {biome} is the sea sending its receipt back to {dimension}. §8The receipt is salt, and there is no change.",
+      "zh": "雨水敲打着{dimension}的{biome}，海面泛起无数苍白的泡沫，恰似深渊在黑暗中喘息。",
+      "en": "Rain lashes {biome} in {dimension}, churning pale foam as though the Abyss itself were breathing in the dark.",
       "weight": 5
     },
     {
@@ -1861,8 +1861,8 @@
         "world:thunder",
         "dim:overworld"
       ],
-      "zh": "§e雷在 {biome} 上找海平面。§9{dimension} 的水已经够响，它还是要再加一句。",
-      "en": "§eThunder looks for the waterline over {biome}. §9The water of {dimension} was already loud. It adds a sentence anyway.",
+      "zh": "雷暴轰鸣在{dimension}的{biome}上空，闪电照亮了海天之间那令凡人绝望的浩瀚。",
+      "en": "Thunder rolls over {biome} in {dimension}; lightning lays bare a vastness between sea and sky that crushes mortal pride.",
       "weight": 5
     },
     {
@@ -1872,8 +1872,8 @@
         "world:night",
         "dim:overworld"
       ],
-      "zh": "§2夜里的 {biome} 把 {dimension} 的天漏成碎屑。§8碎屑够不到地面。地面上走路的东西因此更大胆。",
-      "en": "§2At night {biome} leaks the sky of {dimension} into scraps. §8The scraps do not reach the ground. What walks there grows bolder.",
+      "zh": "夜色吞没了{dimension}的{biome}，林木在黑暗中化作扭曲的黑影，低声诉说着未知的恶兆。",
+      "en": "Night swallows {biome} in {dimension}; timber twists into jagged silhouettes whispering nameless omens.",
       "weight": 5
     },
     {
@@ -1883,8 +1883,8 @@
         "world:rain",
         "dim:overworld"
       ],
-      "zh": "§9雨在 {biome} 里要先问叶子。§7{dimension} 的地面听到的，已经是第二手的湿。",
-      "en": "§9Rain in {biome} must ask the leaves first. §7What the ground of {dimension} hears is wetness at second hand.",
+      "zh": "冷雨落进{dimension}的{biome}，树叶沙沙作响，掩盖了草丛里正在逼近的脚步。",
+      "en": "Cold rain falls through {biome} in {dimension}, rustling leaves masking whatever creeps closer in the brush.",
       "weight": 5
     },
     {
@@ -1894,8 +1894,8 @@
         "world:rain",
         "dim:overworld"
       ],
-      "zh": "§2{biome} 本来就是湿的。§9雨在 {dimension} 里只是来确认：档案还在，而且更烂了。",
-      "en": "§2{biome} was already wet. §9Rain in {dimension} only came to confirm that the archive is still here, and worse.",
+      "zh": "阴雨绵绵不断，将{dimension}的{biome}泡得愈发腐烂，空气里弥漫着死亡的腥甜。",
+      "en": "Ceaseless rain steeps {biome} in {dimension} deeper into rot, thickening the air with sweet decay.",
       "weight": 5
     },
     {
@@ -1906,8 +1906,8 @@
         "world:clear",
         "dim:overworld"
       ],
-      "zh": "§a晴天的 {biome} 把 {dimension} 摊开晒。§8晒干的东西没有影子可躲，名字也没有。",
-      "en": "§aClear day spreads {biome} out to dry across {dimension}. §8What is sunned has no shadow to hide in. Neither does a name.",
+      "zh": "晴朗的白昼铺在{dimension}的{biome}上，看似宁静祥和——多么适合用来掩盖地底的暗流。",
+      "en": "Clear noon rests over {biome} in {dimension}, calm on the surface—a fine veil for dark currents below.",
       "weight": 6
     },
     {
@@ -1917,8 +1917,8 @@
         "world:night",
         "dim:overworld"
       ],
-      "zh": "§8夜里的 {biome} 太平。§7平的地方，{dimension} 的星光没有借口不到达你。",
-      "en": "§8{biome} is too flat at night. §7Where it is flat, the starlight of {dimension} has no excuse not to reach you.",
+      "zh": "黑夜降临在开阔的{dimension}{biome}之上，四野空旷，唯有星辰冷漠地注视着你的身影。",
+      "en": "Night falls across open {biome} in {dimension}; bare plains stretch wide under the cold stare of the stars.",
       "weight": 5
     },
     {
@@ -1928,8 +1928,8 @@
         "world:night",
         "dim:overworld"
       ],
-      "zh": "§b{biome} 的夜里，呼吸先你一步变成白字。§8{dimension} 会读。读完不一定还你。",
-      "en": "§bAt night in {biome}, breath turns into white writing before you do. §8{dimension} will read it. It may not give it back.",
+      "zh": "严寒的夜晚降临在{dimension}的{biome}，寒风仿佛能将凡人的呼吸直接冻碎在喉咙里。",
+      "en": "A bitter night settles on {biome} in {dimension}, frost sharp enough to shatter breath in the throat.",
       "weight": 5
     },
     {
@@ -1939,8 +1939,8 @@
         "world:clear",
         "dim:overworld"
       ],
-      "zh": "§b晴天的 {biome} 亮得发脆。§7{dimension} 把雪当成一种不需要墨的纸。",
-      "en": "§b{biome} on a clear day is bright enough to snap. §7{dimension} treats the snow as paper that needs no ink.",
+      "zh": "晴空下的{dimension}{biome}一片苍白刺目，冰雪折射着冷光，却没有半点暖意。",
+      "en": "Beneath a clear sky, {biome} in {dimension} gleams stark white—cold light without a drop of warmth.",
       "weight": 5
     },
     {
@@ -1950,8 +1950,8 @@
         "world:rain",
         "dim:overworld"
       ],
-      "zh": "§2雨进 {biome}，要排队。§9{dimension} 的叶子已经先把水领走了。",
-      "en": "§2Rain entering {biome} must queue. §9The leaves of {dimension} have already collected the water.",
+      "zh": "暴雨浇透了{dimension}闷热的{biome}，水汽与瘴气在密林深处久久不散。",
+      "en": "Downpour drenches steaming {biome} in {dimension}, trapping vapor and miasma beneath the canopy.",
       "weight": 5
     },
     {
@@ -1961,8 +1961,8 @@
         "world:dusk",
         "dim:overworld"
       ],
-      "zh": "§6黄昏先离开 {biome} 的谷，后离开它的顶。§8{dimension} 在折痕里多留你一会儿。",
-      "en": "§6Dusk leaves the valleys of {biome} before the peaks. §8{dimension} keeps you a little longer in the crease.",
+      "zh": "残阳如血，将{dimension}高耸的{biome}染上一层不祥的暗红。",
+      "en": "A dying sun stains the crags of {biome} in {dimension} with an ominous, blood-dark hue.",
       "weight": 5
     },
     {
@@ -1972,8 +1972,8 @@
         "world:rain",
         "dim:overworld"
       ],
-      "zh": "§9雨把 {biome} 写得更满。§8{dimension} 的这条犹豫，今天没那么犹豫了。",
-      "en": "§9Rain writes {biome} fuller. §8This hesitation of {dimension} is less hesitant today.",
+      "zh": "雨势渐大，{dimension}的{biome}水位暗暗上涨，浑浊的波涛拍打着泥泞的岸边。",
+      "en": "Rain swells {biome} in {dimension}, murky waves lapping higher against the mud.",
       "weight": 5
     },
     {
@@ -1983,8 +1983,8 @@
         "world:dawn",
         "dim:overworld"
       ],
-      "zh": "§6黎明的 {biome} 还没决定把脚印还给谁。§e{dimension} 的潮在旁边起草答案。",
-      "en": "§6At dawn {biome} has not decided whom to return the footprints to. §eThe tide of {dimension} is drafting an answer beside it.",
+      "zh": "黎明微光初现于{dimension}的{biome}，海浪在苍白的晨雾里一遍遍冲刷着沙滩。",
+      "en": "Pale dawn breaks over {biome} in {dimension}, surf scouring the sand through cold morning mist.",
       "weight": 5
     },
     {
@@ -1994,8 +1994,8 @@
         "world:night",
         "dim:overworld"
       ],
-      "zh": "§8夜里的 {biome} 不再假装自己属于 {dimension}。§3珊瑚在暗处继续计票。",
-      "en": "§8At night {biome} stops pretending it belongs to {dimension}. §3Coralium keeps counting votes in the dark.",
+      "zh": "黑夜里的{dimension}{biome}愈发显得幽暗诡谲，仿佛整片土地随时会沉入黑暗国度。",
+      "en": "By night, {biome} in {dimension} grows doubly uncanny, as if the whole tract might sink into the Dark Realm.",
       "weight": 5
     },
     {
@@ -2005,8 +2005,8 @@
         "world:rain",
         "dim:overworld"
       ],
-      "zh": "§9雨打在 {biome} 上，声音比别处闷。§3{dimension} 还以为这是天气。珊瑚以为这是出席。",
-      "en": "§9Rain on {biome} sounds duller than elsewhere. §3{dimension} still thinks this is weather. Coralium thinks it is attendance.",
+      "zh": "雨水顺着{dimension}{biome}的黑石滑落，空气中浮动着浓郁的深渊气息。",
+      "en": "Rain sheets down the dark stone of {biome} in {dimension}, the air thick with Abyssal breath.",
       "weight": 5
     },
     {
@@ -2017,8 +2017,8 @@
         "world:clear",
         "dim:overworld"
       ],
-      "zh": "§d晴天也照不进 {biome} 的菌盖底下。§7{dimension} 的光在这里要弯腰。",
-      "en": "§dEven a clear day does not get under the caps of {biome}. §7The light of {dimension} has to stoop here.",
+      "zh": "晴朗白昼下的{dimension}{biome}安静得近乎诡异，连一丝暴力的喧嚣都不复存在。",
+      "en": "Under clear noon, {biome} in {dimension} lies eerily hushed, free of earthly clamor.",
       "weight": 6
     },
     {
@@ -2029,8 +2029,8 @@
         "world:day",
         "dim:overworld"
       ],
-      "zh": "§e{biome} 在 {dimension} 的白天里没有云可借。§6热是这里的常任，不是访客。",
-      "en": "§e{biome} has no cloud to borrow during the day in {dimension}. §6Heat is staff here, not a visitor.",
+      "zh": "白昼的烈阳烤炙着{dimension}的{biome}，黄沙在热浪中扭曲，令人产生幻觉。",
+      "en": "Noon heat shimmers across {biome} in {dimension}, warping the dunes into mirages.",
       "weight": 6
     },
     {
@@ -2041,8 +2041,8 @@
         "world:dusk",
         "dim:overworld"
       ],
-      "zh": "§6黄昏把 {biome} 的台阶再染红一层。§e{dimension} 今天仍然没有雨的签名。",
-      "en": "§6Dusk dyes the steps of {biome} one red deeper. §e{dimension} still has no signature from the rain today.",
+      "zh": "黄昏的余晖落在{dimension}的{biome}之上，赤红的岩壁仿佛在无声地燃烧。",
+      "en": "Dusk's last embers fall on {biome} in {dimension}, turning its crimson cliffs into silent flame.",
       "weight": 6
     },
     {
@@ -2051,8 +2051,8 @@
         "biome:hell",
         "dim:nether"
       ],
-      "zh": "§c{biome} 就是 {dimension} 的默认语气。§4默认语气不需要天气来帮忙。",
-      "en": "§c{biome} is the default tone of {dimension}. §4A default tone does not need weather to assist it.",
+      "zh": "在{dimension}的{biome}里，硫磺与岩浆构成了永恒的炼狱，却依然无法触及真正的外神。",
+      "en": "In {biome} of {dimension}, sulfur and magma form an endless furnace—yet still fall short of the Outer Gods.",
       "weight": 4
     },
     {
@@ -2061,8 +2061,8 @@
         "biome:end",
         "dim:end"
       ],
-      "zh": "§5{biome} 铺在 {dimension} 的岛上，像一张不肯装订的尾页。§8尾页上还有人在走。",
-      "en": "§5{biome} lies on the islands of {dimension} like a last page that refuses binding. §8Someone is still walking on the page.",
+      "zh": "漂浮在{dimension}里的{biome}孤岛沉默不语，周围是吞噬一切的漆黑虚空。",
+      "en": "The drifting isles of {biome} in {dimension} keep silent watch above all-devouring void.",
       "weight": 4
     },
     {
@@ -2071,8 +2071,8 @@
         "biome:abyssal",
         "dim:abyssal_wasteland"
       ],
-      "zh": "§3{biome} 与 {dimension} 是同一口盐的两种写法。§8一种写在风上，一种写在你的鞋底。",
-      "en": "§3{biome} and {dimension} are two spellings of the same salt. §8One is written on the wind. One is written on your sole.",
+      "zh": "你正站在{dimension}的{biome}之中——珊瑚的苍蓝与无尽荒芜交织成深渊的前庭。",
+      "en": "You stand within {biome} of {dimension}—azure Coralium and endless desolation woven into the Abyss's outer court.",
       "weight": 4
     },
     {
@@ -2081,8 +2081,8 @@
         "biome:dread",
         "dim:dreadlands"
       ],
-      "zh": "§4{biome} 是 {dimension} 同意被踩的那一层症状。§8症状不欢迎访客，可它非常好客于肺。",
-      "en": "§4{biome} is the layer of symptom {dimension} agreed to be walked on. §8The symptom does not welcome visitors. It is very hospitable to lungs.",
+      "zh": "{dimension}的{biome}处处透着血肉畸变的恶寒，仿佛大地本身也在恐惧瘟疫下痛苦呻吟。",
+      "en": "Every span of {biome} in {dimension} reeks of warped flesh, as though the earth groaned under the Dread Plague.",
       "weight": 4
     },
     {
@@ -2091,8 +2091,8 @@
         "biome:forest",
         "dim:dreadlands"
       ],
-      "zh": "§2{biome} 还站在 {dimension} 里。§4绿是一种过期的伪装，瘟疫懒得揭穿，因为揭穿也要费水。",
-      "en": "§2{biome} is still standing in {dimension}. §4Green is an expired disguise. The plague does not bother to expose it. Exposure would cost water.",
+      "zh": "{dimension}里的{biome}扭曲而焦黑，林木早已沦为恐惧瘟疫滋养的畸形怪物。",
+      "en": "The {biome} of {dimension} stands blackened and warped, its trees twisted into monuments of the Dread Plague.",
       "weight": 4
     },
     {
@@ -2101,8 +2101,8 @@
         "biome:mountain",
         "dim:dreadlands"
       ],
-      "zh": "§7{biome} 在 {dimension} 里折起干风。§4折痕处没有雪。雪需要一种这里已注销的许可。",
-      "en": "§7{biome} folds the dry wind inside {dimension}. §4There is no snow in the crease. Snow would need a permission this place has cancelled.",
+      "zh": "{dimension}的{biome}险峻荒凉，山风中夹杂着恐惧守卫与野兽的低沉嘶吼。",
+      "en": "The {biome} of {dimension} rises bleak and jagged, carrying the low snarls of Dreadguards and beasts.",
       "weight": 4
     },
     {
@@ -2111,8 +2111,8 @@
         "biome:omothol",
         "dim:omothol"
       ],
-      "zh": "§5{biome} 的尘在 {dimension} 里自己对齐。§8你的脚印是唯一不肯进位的数字。",
-      "en": "§5The dust of {biome} aligns itself inside {dimension}. §8Your footprint is the only digit that refuses to carry.",
+      "zh": "此处便是{dimension}的{biome}——我的圣城，群星之外最后一座尚存的黑暗殿堂。",
+      "en": "This is {biome} of {dimension}—my citadel, the last dark sanctuary standing beyond the stars.",
       "weight": 4
     },
     {
@@ -2121,8 +2121,8 @@
         "biome:dark_realm",
         "dim:dark_realm"
       ],
-      "zh": "§8{biome} 与 {dimension} 之间没有远近。§5没有光的地方，距离是一种没有证据的谣言。",
-      "en": "§8There is no near or far between {biome} and {dimension}. §5Where there is no light, distance is a rumor without evidence.",
+      "zh": "你已立于{dimension}的{biome}最深处。此处唯有纯粹的黑暗与外神冷漠的注视。",
+      "en": "You stand at the deepest floor of {biome} in {dimension}—where only pure darkness and cold Outer gazes remain.",
       "weight": 4
     },
     {
@@ -2132,8 +2132,8 @@
         "world:night",
         "entity:alone"
       ],
-      "zh": "§8{biome} 在夜里更诚实。§7没有地，没有伴，没有可以拿来撒谎的地平线。",
-      "en": "§8{biome} is more honest at night. §7No ground, no company, no horizon available to lie with.",
+      "zh": "黑夜与虚空在此交融，你独自一人立于{biome}，听不见任何尘世的回响。",
+      "en": "Night and nothingness merge here; alone in {biome}, you hear not a single earthly echo.",
       "weight": 5
     },
     {
@@ -2145,8 +2145,8 @@
         "world:night",
         "dim:overworld"
       ],
-      "zh": "§2夜里的 {hostile} 走路像在背诵饥饿。§8{dimension} 的月亮只负责照明，不负责停尸。",
-      "en": "§2At night {hostile} walks as if reciting hunger. §8The moon of {dimension} is only a lamp. It is not a coroner.",
+      "zh": "黑夜笼罩{dimension}，那头腐臭的{hostile}正循着你的气息在暗中逼近。",
+      "en": "Night blankets {dimension}, and that foul {hostile} creeps closer along your scent.",
       "weight": 6
     },
     {
@@ -2156,8 +2156,8 @@
         "entity:undead",
         "world:night"
       ],
-      "zh": "§7{entity} 在夜里拉弓，骨头不反光，箭反光。§8反光的那一支，通常已经选好了你。",
-      "en": "§7{entity} draws at night. The bone does not shine. The arrow does. §8The shining one has usually already chosen you.",
+      "zh": "夜色之中，那具{entity}拉满弓弦的声响在黑暗里格外刺耳。",
+      "en": "In the dark of night, the creak of that {entity}'s bowstring cuts razor-sharp.",
       "weight": 5
     },
     {
@@ -2167,8 +2167,8 @@
         "entity:hostile",
         "world:night"
       ],
-      "zh": "§8{hostile} 喜欢这个时辰。§7墙和地在夜里是同一种路，而你只有一种脚。",
-      "en": "§8{hostile} likes this hour. §7At night the wall and the floor are the same road, and you have only one kind of foot.",
+      "zh": "黑夜正是多足猎手的舞台——阴影中的{hostile}已盯上了你的咽喉。",
+      "en": "Night is the hunting hour of many-legged things—{hostile} in the shade has marked your throat.",
       "weight": 5
     },
     {
@@ -2179,8 +2179,8 @@
         "world:day",
         "dim:overworld"
       ],
-      "zh": "§a白天的 {dimension} 并不因此安全。§7{hostile} 的安静不靠天黑。它靠你没回头。",
-      "en": "§aDay in {dimension} is not safety. §7The quiet of {hostile} does not depend on dark. It depends on you not turning around.",
+      "zh": "即便在{dimension}的白昼阳光下，那只沉默的{hostile}依然带着随时引爆的恶意悄悄靠近。",
+      "en": "Even in {dimension}'s daylight, that silent {hostile} creeps nearer with explosive malice.",
       "weight": 6
     },
     {
@@ -2191,8 +2191,8 @@
         "world:clear",
         "dim:overworld"
       ],
-      "zh": "§a晴天里 {entity} 把门打开一条缝。§7{dimension} 的缝是为了做买卖，不是为了信神。",
-      "en": "§aIn clear daylight {entity} opens a door a crack. §7The crack in {dimension} is for trade, not for faith.",
+      "zh": "晴朗白昼下的{dimension}里，{entity}仍在毫无察觉地重复着平凡的交易与劳作。",
+      "en": "In sunlit {dimension}, {entity} goes on with petty trades and labor, suspecting nothing.",
       "weight": 6
     },
     {
@@ -2203,8 +2203,8 @@
         "world:night",
         "dim:overworld"
       ],
-      "zh": "§5夜里的 {entity} 把瓶子对准 {dimension} 的黑。§8瓶子里的颜色比夜更有主见。",
-      "en": "§5At night {entity} aims a bottle at the dark of {dimension}. §8The color in the bottle has more of an opinion than the night does.",
+      "zh": "在{dimension}的黑夜里，那个疯癫的{entity}正晃着毒药瓶发出刺耳的怪笑。",
+      "en": "Through the night of {dimension}, that crazed {entity} cackles over its toxic phials.",
       "weight": 6
     },
     {
@@ -2215,8 +2215,8 @@
         "world:rain",
         "dim:overworld"
       ],
-      "zh": "§9雨打在 {entity} 上，像一种它无法搬运的天气。§8{dimension} 今天用湿法拒绝了它。",
-      "en": "§9Rain strikes {entity} like weather it cannot carry. §8{dimension} refused it today by getting wet.",
+      "zh": "雨水令{dimension}里的{entity}焦躁不安地四处瞬移，每一次现身都带着空间撕裂的轻响。",
+      "en": "Rain drives {entity} in {dimension} to blink restlessly from spot to spot with faint tears in space.",
       "weight": 6
     },
     {
@@ -2226,8 +2226,8 @@
         "biome:swamp",
         "dim:overworld"
       ],
-      "zh": "§a{entity} 在 {biome} 里像一句被水泡软的恶意。§8{dimension} 的泥会替它保管形状。",
-      "en": "§a{entity} in {biome} is a malice soaked soft. §8The mud of {dimension} will keep its shape for it.",
+      "zh": "在{dimension}潮湿的{biome}里，那团{entity}正如泥沼的衍生物般弹跳不止。",
+      "en": "Through damp {biome} in {dimension}, that {entity} squelches along like an offshoot of the mire.",
       "weight": 5
     },
     {
@@ -2238,8 +2238,8 @@
         "biome:forest",
         "dim:overworld"
       ],
-      "zh": "§7{animal} 在 {biome} 的树间认路。§8它认的不是 {dimension}。是气味，以及谁不该靠近。",
-      "en": "§7{animal} finds its way between the trees of {biome}. §8It is not finding {dimension}. It is finding scent, and who should not come closer.",
+      "zh": "{dimension}的{biome}林间，那头野性的{animal}正警惕地打量着你这具异界的躯壳。",
+      "en": "Among the trees of {biome} in {dimension}, that feral {animal} eyes your alien frame with wariness.",
       "weight": 6
     },
     {
@@ -2250,8 +2250,8 @@
         "biome:swamp",
         "dim:overworld"
       ],
-      "zh": "§4{entity} 在 {biome} 里找还没烂完的东西。§8{dimension} 的水会帮忙，帮忙的方式是让你也变慢。",
-      "en": "§4{entity} looks in {biome} for what has not finished rotting. §8The water of {dimension} will help. Its help is to make you slow as well.",
+      "zh": "在{dimension}污浊的{biome}里，一头啃食腐肉的{entity}正在迷雾中低声嘶吼。",
+      "en": "Within fouled {biome} in {dimension}, a carrion-eating {entity} snarls through the mist.",
       "weight": 6
     },
     {
@@ -2262,8 +2262,8 @@
         "biome:hell",
         "dim:nether"
       ],
-      "zh": "§c{hostile} 在 {biome} 里不必伪装。§4{dimension} 的火已经替它把背景烧成同一种颜色。",
-      "en": "§c{hostile} need not disguise itself in {biome}. §4The fire of {dimension} has already burned the background to the same color.",
+      "zh": "{dimension}的{biome}火海之间，那头暴虐的{hostile}正带着硫磺气息向你扑来。",
+      "en": "Amid the flames of {biome} in {dimension}, that brutal {hostile} charges through the brimstone.",
       "weight": 6
     },
     {
@@ -2274,8 +2274,8 @@
         "biome:end",
         "dim:end"
       ],
-      "zh": "§5{boss} 把 {biome} 当成跑道。§8{dimension} 的岛是它允许存在的标点，不是你的落脚点。",
-      "en": "§5{boss} treats {biome} as a runway. §8The islands of {dimension} are punctuation it permits, not a footing it granted you.",
+      "zh": "在{dimension}的{biome}上空，末影巨龙{boss}正傲慢地盘旋——去让它见识深渊的份量吧！",
+      "en": "Above {biome} in {dimension}, {boss} wheels in haughty flight—teach it the weight of the Abyss!",
       "weight": 6
     },
     {
@@ -2286,8 +2286,8 @@
         "biome:abyssal",
         "dim:abyssal_wasteland"
       ],
-      "zh": "§2{entity} 在 {biome} 里没有轮廓可以背叛它。§3{dimension} 的盐早就不要求生物有固定的边。",
-      "en": "§2{entity} has no outline in {biome} that could betray it. §3The salt of {dimension} stopped requiring creatures to keep a fixed edge long ago.",
+      "zh": "在{dimension}的{biome}中，{entity}的千万只眼睛正一齐凝视着你——Tekeli-li!",
+      "en": "Across {biome} in {dimension}, the thousand eyes of {entity} turn upon you at once—Tekeli-li!",
       "weight": 6
     },
     {
@@ -2298,8 +2298,8 @@
         "biome:darklands",
         "dim:overworld"
       ],
-      "zh": "§3{entity} 走在 {biome} 里，像一票已经投出的感染。§8{dimension} 还没计完，人已经开始咳嗽。",
-      "en": "§3{entity} walks in {biome} like an infection that has already cast its vote. §8{dimension} has not finished counting. People have already started to cough.",
+      "zh": "即便在{dimension}的{biome}里，那头被珊瑚寄生的{entity}也早已失去了原本的模样。",
+      "en": "Even in {biome} of {dimension}, that Coralium-ridden {entity} has long lost its former shape.",
       "weight": 6
     },
     {
@@ -2310,8 +2310,8 @@
         "biome:dread",
         "dim:dreadlands"
       ],
-      "zh": "§4{entity} 在 {biome} 里不必追。§8{dimension} 的风会把你的呼吸送过去，干燥，免费，而且可传染。",
-      "en": "§4{entity} does not have to chase in {biome}. §8The wind of {dimension} will carry your breath to it, dry, free, and contagious.",
+      "zh": "{dimension}的{biome}之内，那头被恐惧瘟疫吞噬的{entity}正发出令人作呕的咆哮。",
+      "en": "Within {biome} of {dimension}, that {entity} consumed by the Dread Plague lets out a sickening roar.",
       "weight": 6
     },
     {
@@ -2321,8 +2321,8 @@
         "dim:omothol",
         "biome:omothol"
       ],
-      "zh": "§5{entity} 站在 {biome} 里，像一枚还没归位的钥匙。§8{dimension} 的锁看见它，会自己对齐。",
-      "en": "§5{entity} stands in {biome} like a key not yet returned to its place. §8The locks of {dimension} see it and align themselves.",
+      "zh": "在{dimension}的{biome}街道上，那名{entity}仍忠诚地守望着奥穆索最后的余晖。",
+      "en": "Along the avenues of {biome} in {dimension}, that {entity} still keeps faithful watch over Omothol's last twilight.",
       "weight": 5
     },
     {
@@ -2333,8 +2333,8 @@
         "biome:dark_realm",
         "dim:dark_realm"
       ],
-      "zh": "§8{hostile} 在 {biome} 里不需要躲光。§5{dimension} 已经把光劝退了。",
-      "en": "§8{hostile} does not need to hide from light in {biome}. §5{dimension} has already persuaded the light to leave.",
+      "zh": "在{dimension}的{biome}深处，那团{hostile}几乎与永恒的黑暗融为一体。",
+      "en": "Deep within {biome} of {dimension}, that {hostile} melts nearly seamless into the eternal dark.",
       "weight": 6
     },
     {
@@ -2343,8 +2343,8 @@
         "entity:antimatter",
         "dim:dark_realm"
       ],
-      "zh": "§5{entity} 在 {dimension} 里像一句被涂掉又涂得不够的话。§8涂掉的地方仍在吞周围的字。",
-      "en": "§5{entity} in {dimension} is a word crossed out, and not crossed out enough. §8The crossing still swallows the letters around it.",
+      "zh": "在{dimension}的绝对虚暗里，{entity}那倒错而湮灭的气息显得格外刺眼。",
+      "en": "In the absolute gloom of {dimension}, the inverted, annihilating presence of {entity} stands out starkly.",
       "weight": 4
     },
     {
@@ -2353,8 +2353,8 @@
         "entity:player",
         "world:night"
       ],
-      "zh": "§7夜里还有 {player}。§8另一个借来的名字。门一次听得见两个，而且不会搞混。",
-      "en": "§7{player} is still here at night. §8Another borrowed name. A gate can hear two at once, and it does not mix them up.",
+      "zh": "深夜之中，你与{player}各自藏在黑暗里。记住，在群星之下，秘密永远是最危险的火种。",
+      "en": "In the dead of night, you and {player} keep to the dark. Remember: beneath the stars, secrets are the deadliest spark.",
       "weight": 4
     },
     {
@@ -2364,8 +2364,8 @@
         "world:night",
         "dim:overworld"
       ],
-      "zh": "§8{dimension} 的夜里，{hostile} 把路当成餐桌。§7你走在桌上，还以为自己是客人。",
-      "en": "§8At night in {dimension}, {hostile} treats the road as a table. §7You are walking on the table and still think yourself a guest.",
+      "zh": "{dimension}的黑夜从不怜悯弱者——暗处的{hostile}已将你视作今夜的猎物。",
+      "en": "The night of {dimension} spares no weakling—{hostile} in the dark has marked you for tonight's quarry.",
       "weight": 5
     },
     {
@@ -2375,8 +2375,8 @@
         "entity:count:many",
         "world:night"
       ],
-      "zh": "§c{count} 个敌意挤在夜里。§8{hostile} 只是其中最近的一张嘴。嘴多的时候，不必排队。",
-      "en": "§c{count} hostilities packed into the night. §8{hostile} is only the nearest mouth. When there are many mouths, they do not queue.",
+      "zh": "黑夜之中整整{count}头怪物围拢过来，{hostile}正领头向你逼近！",
+      "en": "Full {count} monsters close in through the night, led by {hostile}!",
       "weight": 5
     },
     {
@@ -2385,8 +2385,8 @@
         "entity:boss",
         "entity:count:one"
       ],
-      "zh": "§5周围只有 {count}，而那一个是 {boss}。§8数目诚实。诚实偶尔比军团更重。",
-      "en": "§5There is only {count} nearby, and that one is {boss}. §8The number is honest. Honesty is occasionally heavier than a legion.",
+      "zh": "方圆之内唯有那{count}尊强敌——{boss}正独自等待着与你的死战。",
+      "en": "Only {count} towering foe stands within reach—{boss} awaits battle alone.",
       "weight": 4
     },
     {
@@ -2395,8 +2395,8 @@
         "entity:alone",
         "world:night"
       ],
-      "zh": "§8夜里没有第二颗心。§7这种空，星光会试图填。星光填不满一个名字。",
-      "en": "§8There is no second heart in the night. §7Starlight will try to fill the emptiness. Starlight cannot fill a name.",
+      "zh": "四下无人的黑夜里，唯有星辰的微光与奥穆索的低语在你耳边轻轻回荡。",
+      "en": "Alone in the night, only starlight and the whispers of Omothol murmur gently at your ear.",
       "weight": 4
     },
     {
@@ -2405,8 +2405,8 @@
         "entity:alone",
         "dim:omothol"
       ],
-      "zh": "§5{dimension} 的走廊里只有你。§8只有你的时候，锁听得最清楚。别数它们。",
-      "en": "§5You are alone in the corridors of {dimension}. §8When you are alone, the locks hear best. Do not count them.",
+      "zh": "独自徘徊在{dimension}的破败神庙之间，连遗民的叹息似乎都已远去。",
+      "en": "Wandering alone among the broken temples of {dimension}, even the sighs of Remnants seem far away.",
       "weight": 4
     },
     {
@@ -2416,8 +2416,8 @@
         "world:day",
         "world:clear"
       ],
-      "zh": "§e晴天，白天，没有旁观者。§8没有旁观者不是自由。是句子失去了可以推诿的宾语。",
-      "en": "§eClear, day, no witness. §8No witness is not freedom. It means the sentence has lost an object it could blame.",
+      "zh": "晴朗的白昼里四周空无一人，世界安静得仿佛只剩下一块等待画笔的幕布。",
+      "en": "Alone beneath a clear noon sky, the world lies quiet as an untouched curtain.",
       "weight": 5
     },
     {
@@ -2426,8 +2426,8 @@
         "entity:item",
         "entity:alone"
       ],
-      "zh": "§7地上有 {entity}，周围没有活的嘴。§8弃物比活物诚实。它不假装自己还会走路。",
-      "en": "§7{entity} is on the ground, and there is no living mouth nearby. §8Discarded things are more honest than living ones. They do not pretend they can still walk.",
+      "zh": "周围别无生灵，唯有那枚孤零零的{entity}躺在尘埃里，等待着被拾起或遗忘。",
+      "en": "No living thing stirs near—only that lone {entity} resting in the dust, waiting to be claimed or forgotten.",
       "weight": 4
     },
     {
@@ -2436,8 +2436,8 @@
         "entity:projectile",
         "entity:hostile"
       ],
-      "zh": "§c{entity} 已经在路上。§8{hostile} 还站在原处。离手的那一半，往往先到。",
-      "en": "§c{entity} is already on the way. §8{hostile} is still where it stood. The half that left the hand usually arrives first.",
+      "zh": "一枚{entity}正破空袭来，而那该死的{hostile}就在不远处冷笑！",
+      "en": "A {entity} streaks toward you while that cursed {hostile} lurks nearby!",
       "weight": 4
     },
     {
@@ -2447,8 +2447,8 @@
         "entity:omothol",
         "dim:omothol"
       ],
-      "zh": "§5{entity} 在 {dimension} 里跑腿。§8跑腿的句子没有钥匙。钥匙在派它出来的那只手里。",
-      "en": "§5{entity} is running an errand in {dimension}. §8An errand-sentence has no key. The key is in the hand that sent it.",
+      "zh": "在{dimension}之中，那忠实的{entity}静立于门扉之侧，随时听候扎哈尔的差遣。",
+      "en": "Within {dimension}, that loyal {entity} stands ready beside the Gate, awaiting J'zahar's word.",
       "weight": 5
     },
     {
@@ -2459,8 +2459,8 @@
         "biome:hell",
         "dim:nether"
       ],
-      "zh": "§c你看着 {block}。§4在 {biome} 里，这就是 {dimension} 的地下水。地下水不负责让你活。",
-      "en": "§cYou are looking at {block}. §4In {biome}, this is the groundwater of {dimension}. Groundwater is not responsible for keeping you alive.",
+      "zh": "{dimension}的{biome}里尽是炽热的{block}，翻涌的岩浆随时准备吞没大意的旅人。",
+      "en": "{biome} in {dimension} teems with seething {block}, ready to swallow any careless traveler.",
       "weight": 6
     },
     {
@@ -2471,8 +2471,8 @@
         "world:clear",
         "dim:overworld"
       ],
-      "zh": "§e{block} 在 {biome} 上被晒得没有借口。§6{dimension} 今天连云都不肯来作证。",
-      "en": "§e{block} is sunned on {biome} until it has no excuse. §6{dimension} will not even send a cloud to testify today.",
+      "zh": "晴空之下，{dimension}的{biome}铺满了炽热的{block}，令人目眩神迷。",
+      "en": "Beneath a clear sky, {biome} in {dimension} stretches out in blinding {block}.",
       "weight": 6
     },
     {
@@ -2483,8 +2483,8 @@
         "biome:ocean",
         "dim:overworld"
       ],
-      "zh": "§9{block} 靠着 {biome}。§8{dimension} 把同一件东西写成了两种规模，都咸。",
-      "en": "§9{block} leans against {biome}. §8{dimension} wrote the same thing at two scales. Both are salt.",
+      "zh": "{dimension}的{biome}深处涌动着无边无际的{block}，隐藏着连海图也未曾标注的恐怖。",
+      "en": "Boundless {block} surges through {biome} in {dimension}, hiding terrors no chart has ever marked.",
       "weight": 6
     },
     {
@@ -2494,8 +2494,8 @@
         "world:rain",
         "dim:overworld"
       ],
-      "zh": "§9你看着 {block}，天也在落水。§8{dimension} 今天不缺湿。缺的是一块愿意保持形状的地面。",
-      "en": "§9You are looking at {block}, and the sky is falling as water too. §8{dimension} is not short of wet today. It is short of ground willing to keep its shape.",
+      "zh": "雨水不断落入{dimension}的{block}之中，激起无数细碎而冰冷的波纹。",
+      "en": "Raindrops patter into {block} across {dimension}, raising countless cold, restless ripples.",
       "weight": 5
     },
     {
@@ -2506,8 +2506,8 @@
         "biome:darklands",
         "dim:overworld"
       ],
-      "zh": "§3{block} 长在 {biome} 里，像 {dimension} 没能拦住的一票。§8票已经进箱。箱是蓝的。",
-      "en": "§3{block} grows in {biome} like a vote {dimension} failed to stop. §8The vote is in the box. The box is blue.",
+      "zh": "在{dimension}的{biome}里竟已出现了{block}——珊瑚的毒素正悄无声息地蔓延。",
+      "en": "{block} already surfaces in {biome} of {dimension}—Coralium poison spreads without a sound.",
       "weight": 6
     },
     {
@@ -2517,8 +2517,8 @@
         "biome:dread",
         "dim:dreadlands"
       ],
-      "zh": "§4{block} 是 {biome} 同意被记住的方式。§8{dimension} 的记忆不进书。它进肺。",
-      "en": "§4{block} is the way {biome} agreed to be remembered. §8The memory of {dimension} does not go into books. It goes into lungs.",
+      "zh": "{dimension}的{biome}到处都是被恐惧浸透的{block}，散发着铁锈与绝望的气息。",
+      "en": "{biome} in {dimension} is littered with dread-soaked {block}, exhaling rust and despair.",
       "weight": 5
     },
     {
@@ -2528,8 +2528,8 @@
         "block:abyssal",
         "dim:abyssal_wasteland"
       ],
-      "zh": "§5{block} 还在 {dimension} 的暗处发热。§8热是矿在说：你可以带走我，但我会记住路。",
-      "en": "§5{block} is still warm in the dark of {dimension}. §8The heat says you may take it, and it will remember the road.",
+      "zh": "在{dimension}的黑暗岩壁间嵌着沉重的{block}——那是深渊留给掠夺者的冰冷馈赠。",
+      "en": "Heavy {block} lies embedded in the dark walls of {dimension}—a cold gift from the Abyss to plunderers.",
       "weight": 5
     },
     {
@@ -2540,8 +2540,8 @@
         "biome:darklands",
         "dim:overworld"
       ],
-      "zh": "§8{block} 砌在 {biome} 里，光变得客气。§3客气的光进不了 {dimension} 已经改过地址的角落。",
-      "en": "§8{block} is laid in {biome}, and the light turns polite. §3Polite light cannot enter a corner whose address {dimension} has already changed.",
+      "zh": "{dimension}的{biome}深处埋藏着冰冷的{block}，天生便渴望着承接奥穆索的位能。",
+      "en": "Cold {block} rests within {biome} of {dimension}, born to drink in the Potential Energy of Omothol.",
       "weight": 6
     },
     {
@@ -2551,8 +2551,8 @@
         "world:night",
         "dim:overworld"
       ],
-      "zh": "§e夜里看着 {block}。§8{dimension} 的地表在睡觉，地层没有。地层从不实行宵禁。",
-      "en": "§eYou are looking at {block} at night. §8The surface of {dimension} is asleep. The strata are not. Strata do not keep curfew.",
+      "zh": "黑夜之中，{dimension}岩壁里的{block}依然沉默地等待着贪婪的镐尖。",
+      "en": "In the night, {block} inside the rock of {dimension} waits silently for greedy picks.",
       "weight": 5
     },
     {
@@ -2562,8 +2562,8 @@
         "biome:forest",
         "dim:overworld"
       ],
-      "zh": "§6{block} 还带着 {biome} 的纹路。§8被锯开以后，它仍知道 {dimension} 的哪一边是上。",
-      "en": "§6{block} still carries the grain of {biome}. §8After the saw, it still knows which way of {dimension} was up.",
+      "zh": "{dimension}的{biome}矗立着无数{block}，林木的阴影下潜藏着未知的目光。",
+      "en": "Countless {block} stand across {biome} in {dimension}, hiding unseen eyes beneath their shade.",
       "weight": 5
     },
     {
@@ -2573,8 +2573,8 @@
         "biome:jungle",
         "dim:overworld"
       ],
-      "zh": "§2{block} 在 {biome} 里挤着长。§7{dimension} 的光要申请才能落到它身上，申请常常被驳回。",
-      "en": "§2{block} grows crowded in {biome}. §7The light of {dimension} must apply to land on it. The application is often rejected.",
+      "zh": "在{dimension}闷热的{biome}里，疯狂生长的{block}纠缠成一道密不透风的绿色迷宫。",
+      "en": "In steaming {biome} of {dimension}, wild {block} tangles into a suffocating green maze.",
       "weight": 5
     },
     {
@@ -2584,8 +2584,8 @@
         "biome:swamp",
         "dim:overworld"
       ],
-      "zh": "§2{block} 从 {biome} 的湿里长出来。§8{dimension} 的泥不区分草和即将沉下去的脚。",
-      "en": "§2{block} grows out of the wet of {biome}. §8The mud of {dimension} does not distinguish grass from a foot about to sink.",
+      "zh": "{dimension}的{biome}泥沼之中，腐气滋养着随处可见的{block}。",
+      "en": "In the mire of {biome} in {dimension}, rank rot feeds {block} on every side.",
       "weight": 5
     },
     {
@@ -2595,8 +2595,8 @@
         "biome:plains",
         "dim:overworld"
       ],
-      "zh": "§6{block} 铺满 {biome}。§8{dimension} 用最便宜的材料做最宽的暴露。",
-      "en": "§6{block} covers {biome}. §8{dimension} uses the cheapest material for the widest exposure.",
+      "zh": "{dimension}的{biome}铺满平庸的{block}，掩盖着地底千万年来未曾见光的骸骨。",
+      "en": "Plain {block} covers {biome} in {dimension}, hiding bones that have not seen daylight for ages.",
       "weight": 5
     },
     {
@@ -2606,8 +2606,8 @@
         "biome:mountain",
         "dim:overworld"
       ],
-      "zh": "§7{block} 是 {biome} 还没答应滚下去的部分。§8{dimension} 的高处，靠这种推迟撑着。",
-      "en": "§7{block} is the part of {biome} that has not yet agreed to roll down. §8The heights of {dimension} are held up by that postponement.",
+      "zh": "{dimension}的{biome}由冷硬的{block}铸成，沉默地承受着风雪与雷霆的捶打。",
+      "en": "{biome} in {dimension} is hewn of cold {block}, enduring wind and thunder in silence.",
       "weight": 5
     },
     {
@@ -2616,8 +2616,8 @@
         "block:fire",
         "dim:nether"
       ],
-      "zh": "§c{block} 在 {dimension} 里不算意外。§4意外是你以为它会自己灭。",
-      "en": "§c{block} is not an accident in {dimension}. §4The accident is thinking it will put itself out.",
+      "zh": "{dimension}的焦土上永不熄灭地燃烧着{block}，连空气都在痛苦地扭曲。",
+      "en": "{block} burns endlessly across the scorched ground of {dimension}, warping the very air.",
       "weight": 4
     },
     {
@@ -2626,8 +2626,8 @@
         "block:air",
         "world:night"
       ],
-      "zh": "§8你看着夜空。§7空处后面有星。星不是门，可门喜欢借它们的光点名。",
-      "en": "§8You are looking at the night sky. §7There are stars behind the empty. Stars are not a gate, but a gate likes to borrow their light when it calls roll.",
+      "zh": "黑夜之中，你的目光穿透空无一物的虚空——黑暗里，最危险的往往正是你看不见的东西。",
+      "en": "In the night, your gaze pierces empty air—in the dark, what you cannot see is often deadliest.",
       "weight": 4
     },
     {
@@ -2636,8 +2636,8 @@
         "block:air",
         "self:flying"
       ],
-      "zh": "§b你在空中看着更空的地方。§8飞行取消了地面的合同，没有取消坠落的草稿。",
-      "en": "§bYou are in the air, looking at a place that is even emptier. §8Flight cancelled the ground's contract. It did not cancel the draft of the fall.",
+      "zh": "高悬于半空，四周唯有无形的气流。纵然脱离了大地，你依然逃不出苍穹的注视。",
+      "en": "Suspended aloft with only empty air around you—leaving the earth does not escape the sky's gaze.",
       "weight": 4
     },
     {
@@ -2646,8 +2646,8 @@
         "block:container",
         "world:night"
       ],
-      "zh": "§6夜里的 {block} 更像一张闭着的嘴。§8嘴里面如果有光，光通常不想被你看见。",
-      "en": "§6{block} at night is more like a closed mouth. §8If there is light inside the mouth, the light usually does not want to be seen by you.",
+      "zh": "深夜里你站在{block}之前，清点着这些尘世的积蓄，仿佛它们能替你买回几分安宁。",
+      "en": "In the dead of night you stand before {block}, counting earthly hoards as if they could buy peace.",
       "weight": 4
     },
     {
@@ -2657,8 +2657,8 @@
         "world:day",
         "world:clear"
       ],
-      "zh": "§b晴天里 {block} 几乎消失。§8消失的障碍最容易让人忘记：看见不等于通过。",
-      "en": "§bIn clear daylight {block} nearly vanishes. §8A vanished obstacle is the easiest to forget. Seeing is not passage.",
+      "zh": "晴朗白昼的阳光透过{block}洒下，却照不暖一颗早已倾听过深渊低语的心智。",
+      "en": "Clear daylight streams through {block}, yet cannot warm a mind that has heard the Abyss.",
       "weight": 5
     },
     {
@@ -2668,8 +2668,8 @@
         "item:any",
         "self:hungry"
       ],
-      "zh": "§6你饿着，手里却有 {item}。§8停战协议已经握在手里。还没签字的是你的牙。",
-      "en": "§6You are hungry, and {item} is in your hand. §8The ceasefire is already in your grip. What has not signed is your teeth.",
+      "zh": "腹中饥火中烧，还不快将手中的{item}送入口中？莫让血肉之躯拖垮了你的意志。",
+      "en": "Starvation bites—eat that {item} in your hand before frail flesh drags down your will.",
       "weight": 5
     },
     {
@@ -2679,8 +2679,8 @@
         "item:any",
         "self:low_health"
       ],
-      "zh": "§d{item} 在手里，血已经不多。§8玻璃里的语法能不能改这行，要看你还敢不敢喝。",
-      "en": "§d{item} is in the hand, and the blood is already low. §8Whether the grammar in the glass can edit this line depends on whether you still dare to drink.",
+      "zh": "伤势已深，立刻饮下那瓶{item}吧——除非你已准备好提前结束这场荒诞的旅程。",
+      "en": "Your wounds run deep; drink that {item} now, unless you are ready to end this journey early.",
       "weight": 5
     },
     {
@@ -2690,8 +2690,8 @@
         "item:any",
         "entity:hostile"
       ],
-      "zh": "§c{item} 对着 {hostile}。§8距离已经缩短到臂长。臂长是一种很亲密的语法。",
-      "en": "§c{item} is pointed at {hostile}. §8The distance has already shortened to an arm. An arm's length is a very intimate grammar.",
+      "zh": "手中紧握{item}，面前便是{hostile}！让锋刃去替你回答它的咆哮。",
+      "en": "{item} in hand and {hostile} before you! Let the blade answer its snarl.",
       "weight": 5
     },
     {
@@ -2702,8 +2702,8 @@
         "entity:hostile",
         "world:night"
       ],
-      "zh": "§7夜里你拉着 {item}，对面是 {hostile}。§8线是直的。夜不负责让线变仁慈。",
-      "en": "§7At night you draw {item}, and {hostile} is on the other end. §8The line is straight. Night is not responsible for making the line kind.",
+      "zh": "黑夜之中，举起{item}瞄准那在暗处蠢蠢欲动的{hostile}！",
+      "en": "In the night, raise {item} and loose upon {hostile} stirring in the dark!",
       "weight": 6
     },
     {
@@ -2713,8 +2713,8 @@
         "item:tool",
         "block:ore"
       ],
-      "zh": "§7{item} 对着 {block}。§8一个想把沉默敲成库存，一个还没同意被提前阅读。",
-      "en": "§7{item} is aimed at {block}. §8One of them wants to knock silence into stock. The other has not agreed to be read early.",
+      "zh": "挥动{item}掘开面前的{block}吧——看看大地深处究竟还藏着多少未曾现世的矿藏。",
+      "en": "Swing {item} into {block}—see what buried wealth still hides within the stone.",
       "weight": 5
     },
     {
@@ -2724,8 +2724,8 @@
         "item:tool",
         "block:wood"
       ],
-      "zh": "§6{item} 认得 {block} 的纹路。§8纹路曾经是向上的。斧不关心向上。它关心放倒。",
-      "en": "§6{item} knows the grain of {block}. §8The grain used to point up. An axe does not care about up. It cares about laying things down.",
+      "zh": "用{item}劈开眼前的{block}，林木倒下之时，阴影便失去了它的遮蔽。",
+      "en": "Cleave {block} with {item}; when timber falls, shadows lose their cover.",
       "weight": 5
     },
     {
@@ -2735,8 +2735,8 @@
         "item:any",
         "self:hurt"
       ],
-      "zh": "§7你手里攥着 {item}，身上还是新伤。§8甲在手里，伤在身上。两边还没见面。见面也不保证谁赢。",
-      "en": "§7{item} is clenched in the hand, and the wound is still new. §8The plate is in the hand. The wound is on the body. They have not met. Meeting does not promise a winner.",
+      "zh": "身上已然负伤，快披上那件{item}吧，莫再让自己的血肉白白暴露在危险之下。",
+      "en": "Already wounded—put on {item} instead of leaving bare flesh exposed to further harm.",
       "weight": 5
     },
     {
@@ -2746,8 +2746,8 @@
         "item:any",
         "world:night"
       ],
-      "zh": "§7夜里翻开 {item}。§8纸吸收火把的方式，像一张嘴在试水温。",
-      "en": "§7You open {item} at night. §8The way the paper drinks the torch is a mouth testing the water.",
+      "zh": "深夜里握着{item}，究竟是在研读知识，还是在寻找足以安慰自己的虚妄文字？",
+      "en": "Holding {item} in the dead of night—seeking true lore, or merely words to comfort yourself?",
       "weight": 5
     },
     {
@@ -2758,8 +2758,8 @@
         "item:abyssal",
         "dim:omothol"
       ],
-      "zh": "§5{item} 在 {dimension} 里不必低声。§8这里的锁听得懂它的装订。装订是一种还没交出去的钥匙。",
-      "en": "§5{item} does not have to whisper in {dimension}. §8The locks here understand its binding. Binding is a key not yet handed over.",
+      "zh": "在{dimension}的圣城里捧着{item}——这本黑皮典籍终于回到了它真正主人的国度。",
+      "en": "Bearing {item} in the citadel of {dimension}—the dark tome has come home at last to its true master's realm.",
       "weight": 6
     },
     {
@@ -2769,8 +2769,8 @@
         "item:any",
         "dim:abyssal_wasteland"
       ],
-      "zh": "§3{item} 回到了 {dimension} 的空气里。§8它轻了一点。轻是因为口音回家了，不必再翻译。",
-      "en": "§3{item} is back in the air of {dimension}. §8It is a little lighter. Lighter, because the accent has come home and need not be translated.",
+      "zh": "在{dimension}的苍白荒原中紧握{item}，这件深渊器物正与周围的珊瑚共鸣不息。",
+      "en": "Gripping {item} in the pale wastes of {dimension}, this Abyssal relic hums in answer to the Coralium.",
       "weight": 5
     },
     {
@@ -2779,8 +2779,8 @@
         "item:empty",
         "entity:hostile"
       ],
-      "zh": "§7你空着手面对 {hostile}。§8空不是纯洁。是一种还没决定用哪颗牙的迟疑。",
-      "en": "§7You face {hostile} with empty hands. §8Empty is not innocence. It is a hesitation that has not chosen which tooth to use.",
+      "zh": "敌人{hostile}就在眼前，你却两手空空！立刻备好兵器，或者准备迎接撕咬吧。",
+      "en": "{hostile} stands before you and your hands are empty! Ready a weapon or brace for fangs.",
       "weight": 4
     },
     {
@@ -2790,8 +2790,8 @@
         "self:critical",
         "self:low_health"
       ],
-      "zh": "§4血已经很少，手里还是空的。§8这个组合不像战术。像一句写到结尾才发现没带笔的话。",
-      "en": "§4The blood is already low, and the hands are still empty. §8This combination does not look like a tactic. It looks like a sentence that reached the end and found it had brought no pen.",
+      "zh": "重伤濒死且两手空空——你此刻的处境，简直比奥穆索阶下囚还要凄惨。",
+      "en": "Critical, bleeding, and empty-handed—scarcely could a captive in Omothol look more helpless.",
       "weight": 5
     },
     {
@@ -2801,8 +2801,8 @@
         "entity:alone",
         "world:night"
       ],
-      "zh": "§8夜里，空地，空手。§7三种空叠在一起。叠多了，就会有东西来填，而且不一定征求你。",
-      "en": "§8Night, open ground, empty hands. §7Three emptinesses stacked. Stack enough, and something comes to fill them, not always with your consent.",
+      "zh": "黑夜里独自一人、两手空空地站在荒野之中——究竟是无所畏惧，还是已彻底麻木？",
+      "en": "Alone and empty-handed in the night—utterly fearless, or merely numb?",
       "weight": 5
     },
     {
@@ -2812,8 +2812,8 @@
         "item:any",
         "item:offhand"
       ],
-      "zh": "§c主手里是 {item}。§8另一只手也没闲着。两只手都忙的人，通常已经不打算解释。",
-      "en": "§c{item} is in the main hand. §8The other hand is not idle either. A person with both hands busy has usually stopped intending to explain.",
+      "zh": "主手{item}蓄势待发，副手亦已严阵以待——看来今夜的猎物在劫难逃了。",
+      "en": "{item} poised and offhand ready—tonight's quarry will not escape easily.",
       "weight": 5
     },
     {
@@ -2823,8 +2823,8 @@
         "item:any",
         "block:stone"
       ],
-      "zh": "§7{item} 对着 {block}。§8一个负责延长你的手，一个负责提醒你：延长不等于被允许。",
-      "en": "§7{item} is aimed at {block}. §8One of them exists to lengthen your hand. The other exists to remind you that length is not permission.",
+      "zh": "用{item}去凿碎面前的{block}吧，凡人总是在敲碎石头的过程中寻找着前路。",
+      "en": "Work {block} with {item}; mortals forever chip their way forward through stone.",
       "weight": 5
     },
     {
@@ -2834,8 +2834,8 @@
         "block:ore",
         "world:night"
       ],
-      "zh": "§e你夜里看见 {block}，手里却没有可以争论的工具。§8看见矿和带走矿，是两种完全不同的贪婪。",
-      "en": "§eYou see {block} at night, and there is no tool in your hand to argue with it. §8Seeing ore and taking ore are two entirely different greeds.",
+      "zh": "黑夜之中空着手盯着{block}发呆？没有趁手的镐尖，宝藏也只会永远沉睡在岩壁里。",
+      "en": "Staring at {block} empty-handed in the night? Without a pick, buried ore sleeps on forever.",
       "weight": 5
     },
     {
@@ -2844,8 +2844,8 @@
         "self:on_fire",
         "dim:nether"
       ],
-      "zh": "§c你在 {dimension} 里烧着。§4这里的火不觉得这是紧急情况。它觉得这是入乡随俗。",
-      "en": "§cYou are burning in {dimension}. §4The fire here does not consider it an emergency. It considers it local custom.",
+      "zh": "你在{dimension}的烈焰中浑身着火！还不快扑灭身上的火苗，难道想化作焦炭？",
+      "en": "You burn amid the furnaces of {dimension}! Quench the flames before you turn to cinder!",
       "weight": 4
     },
     {
@@ -2856,8 +2856,8 @@
         "biome:hell",
         "dim:nether"
       ],
-      "zh": "§4你泡在 {biome} 的热里，皮还在试图保持原样。§c{dimension} 不提供这种服务。",
-      "en": "§4You are soaked in the heat of {biome}, and the skin is still trying to stay the same. §c{dimension} does not offer that service.",
+      "zh": "在{dimension}的{biome}里坠入岩浆、烈火焚身——真是何等狼狈的绝境！",
+      "en": "Sinking into magma and ablaze in {biome} of {dimension}—what a wretched predicament!",
       "weight": 6
     },
     {
@@ -2867,8 +2867,8 @@
         "biome:ocean",
         "dim:overworld"
       ],
-      "zh": "§9你在 {biome} 的水里。§8{dimension} 暂时赦免了重量。赦免的期限写在你还剩多少气上。",
-      "en": "§9You are in the water of {biome}. §8{dimension} has briefly pardoned your weight. The term of the pardon is written in how much breath you have left.",
+      "zh": "你漂浮在{dimension}{biome}冰冷的海水中，四面皆是深不可测的蓝。",
+      "en": "You drift in the cold waves of {biome} in {dimension}, ringed by fathomless blue.",
       "weight": 5
     },
     {
@@ -2878,8 +2878,8 @@
         "world:night",
         "dim:overworld"
       ],
-      "zh": "§b夜里飞在 {dimension} 上面。§8下面的名字变小了。变小的东西仍会在你落地时恢复原判。",
-      "en": "§bFlying over {dimension} at night. §8The names below have grown small. Small things resume their sentence when you land.",
+      "zh": "在{dimension}的深夜高空飞行，星辰与月亮正在你头顶冷漠地注视着这具傀儡。",
+      "en": "Flying high through {dimension}'s night, moon and stars look coldly down upon this simulacrum.",
       "weight": 5
     },
     {
@@ -2889,8 +2889,8 @@
         "dim:end",
         "biome:end"
       ],
-      "zh": "§5你在 {biome} 上空。§8{dimension} 的岛看起来像可以错过的标点。错过以后，下面是没有修订的虚空。",
-      "en": "§5You are above {biome}. §8The islands of {dimension} look like punctuation you could miss. After the miss, what is below is a void with no revision.",
+      "zh": "掠过{dimension}的{biome}孤岛上空——千万抓紧飞行的力量，脚下便是万丈虚无。",
+      "en": "Skimming above the isles of {biome} in {dimension}—keep your lift, for endless void waits below.",
       "weight": 5
     },
     {
@@ -2899,8 +2899,8 @@
         "self:sneaking",
         "world:night"
       ],
-      "zh": "§7你在夜里把身体放低。§8夜已经提供了最大的隐蔽。再弯腰，只是向黑暗道歉。",
-      "en": "§7You lower the body at night. §8The night has already offered the largest cover. Bending further is only an apology to the dark.",
+      "zh": "深夜里压低身形潜行，恰似黑暗国度派出的密探般悄无声息。",
+      "en": "Creeping low through the dead of night, silent as an emissary of the Dark Realm.",
       "weight": 4
     },
     {
@@ -2909,8 +2909,8 @@
         "self:sprinting",
         "entity:hostile"
       ],
-      "zh": "§c你在跑，{hostile} 也在。§8跑是把恐惧排成直线。直线的另一头，常常就是它。",
-      "en": "§cYou are running, and {hostile} is here too. §8Running arranges fear into a straight line. The other end of the line is often the thing itself.",
+      "zh": "面对{hostile}却拔腿狂奔——无论是诱敌深入还是仓皇逃窜，都得拿出些真本事来。",
+      "en": "Sprinting before {hostile}—whether baiting a trap or fleeing in panic, show some resolve.",
       "weight": 4
     },
     {
@@ -2919,8 +2919,8 @@
         "self:hungry",
         "world:night"
       ],
-      "zh": "§6夜里肚子叫。§8叫的声音很诚实，诚实在黑暗里传得比脚步远。",
-      "en": "§6The stomach speaks at night. §8The sound is honest, and honesty travels farther in the dark than a footstep.",
+      "zh": "黑夜漫长而饥饿啃噬着胃囊，没有补给的探索者往往最先倒在黎明之前。",
+      "en": "The night stretches long and hunger gnaws; explorers without provisions fall first before dawn.",
       "weight": 4
     },
     {
@@ -2931,8 +2931,8 @@
         "world:clear",
         "dim:overworld"
       ],
-      "zh": "§a晴天，白天，这具身体还完整。§8{dimension} 最喜欢在这种时候给你一句不需要的提醒。",
-      "en": "§aClear day, and this body is still whole. §8{dimension} likes this moment best for a reminder you did not ask for.",
+      "zh": "在{dimension}晴朗的白昼下，这具躯壳尚且完好无损——莫要让这份安逸麻痹了你的警觉。",
+      "en": "Under clear noon in {dimension}, this frame stands whole—do not let ease dull your vigilance.",
       "weight": 6
     },
     {
@@ -2942,8 +2942,8 @@
         "self:low_health",
         "world:night"
       ],
-      "zh": "§4夜里，血少到可以数。§8数得清的生命不适合再计划明天。明天是给还有余数的人的。",
-      "en": "§4Night, and the blood is low enough to count. §8A life that can be counted should not plan tomorrow. Tomorrow is for people who still have a remainder.",
+      "zh": "深夜之中已然濒死！若再不寻得庇护，黑暗便会毫不留情地吞没你的残影。",
+      "en": "Dying in the dead of night! Seek shelter at once, or the dark will swallow your last trace without mercy.",
       "weight": 5
     },
     {
@@ -2953,8 +2953,8 @@
         "world:thunder",
         "dim:overworld"
       ],
-      "zh": "§e雷在 {dimension} 上宣读，你身上还有没干的伤。§8两种声音叠在一起，都不打算等你回复。",
-      "en": "§eThunder is reading aloud over {dimension}, and the wound on you is still wet. §8The two sounds overlap. Neither intends to wait for your reply.",
+      "zh": "伤痕累累地置身于{dimension}的雷暴之中——连天穹的怒火都在嘲弄你的脆弱。",
+      "en": "Wounded amid the thunderstorms of {dimension}—even the sky's fury mocks your frailty.",
       "weight": 5
     },
     {
@@ -2963,8 +2963,8 @@
         "self:potion",
         "world:night"
       ],
-      "zh": "§d夜里血里有别人的语法。§8黑不阻止它生效。生效的东西最喜欢没人看着的时候。",
-      "en": "§dAt night there is someone else's grammar in the blood. §8Dark does not stop it taking effect. What takes effect prefers an hour when no one is watching.",
+      "zh": "在黑夜中依靠药剂的微光维系力量——小心莫让药效消散在最危险的时刻。",
+      "en": "Leaning on potion-light in the dark of night—pray it does not fade at the worst hour.",
       "weight": 4
     },
     {
@@ -2974,8 +2974,8 @@
         "world:rain",
         "dim:overworld"
       ],
-      "zh": "§9{dimension} 在下雨，你还烧着。§c雨是一种慢的否定。火是一种快的坚持。你们三个都在场。",
-      "en": "§9It is raining in {dimension}, and you are still burning. §cRain is a slow negation. Fire is a fast insistence. All three of you are present.",
+      "zh": "身上的火焰在{dimension}的暴雨中嘶嘶熄灭，冰冷的雨水正替你洗去焦灼。",
+      "en": "Flames hiss out beneath the rain of {dimension}, cold water rinsing away the char.",
       "weight": 5
     },
     {
@@ -2984,8 +2984,8 @@
         "self:in_water",
         "world:rain"
       ],
-      "zh": "§9上面在落，周围也是水。§8世界暂时只剩一种材料。材料不打算跟你讨论呼吸。",
-      "en": "§9It is falling from above, and the surroundings are water too. §8The world is briefly made of one material. The material does not intend to discuss breathing.",
+      "zh": "天降暴雨，脚下又是积水——天地间的水汽仿佛要将你彻底淹没。",
+      "en": "Rain pours from above while water rises below—as if the elements meant to drown you whole.",
       "weight": 4
     },
     {
@@ -2994,8 +2994,8 @@
         "self:sneaking",
         "entity:alone"
       ],
-      "zh": "§7没有别人，你还在弯腰。§8弯给谁看。如果是给我，不必。我听得见直立的名字。",
-      "en": "§7There is no one else, and you are still bent. §8Bent for whom. If it is for me, there is no need. I can hear a name standing upright.",
+      "zh": "四周并无外人，你却依然本能地潜行——或许连你自己的影子也让你感到不安？",
+      "en": "No other soul is near, yet you still crouch in stealth—perhaps even your own shadow makes you uneasy?",
       "weight": 4
     },
     {
@@ -3004,8 +3004,8 @@
         "self:low_health",
         "entity:hostile"
       ],
-      "zh": "§c血不多，{hostile} 还在。§8这个组合很古老。古老的意思是：它通常只有一种结尾。",
-      "en": "§cThe blood is low, and {hostile} is still here. §8This combination is old. Old means it usually has only one ending.",
+      "zh": "生命垂危之际却仍要面对{hostile}！若无必胜的把握，便立刻退入阴影之中。",
+      "en": "Facing {hostile} on the edge of death! Without sure victory, slip back into the shadows.",
       "weight": 4
     },
     {
@@ -3015,8 +3015,8 @@
         "item:empty",
         "world:night"
       ],
-      "zh": "§6夜里，饿，空手。§8三种欠缺。欠缺叠在一起的时候，世界会开始看起来像食物。",
-      "en": "§6Night, hunger, empty hands. §8Three lacks. When lacks are stacked, the world begins to look like food.",
+      "zh": "黑夜里饥肠辘辘却又两手空空——再不寻些食物与武器，你连明晨的太阳都未必见得到。",
+      "en": "Starving and empty-handed in the night—find food and steel soon, or you may never see tomorrow's sun.",
       "weight": 5
     },
     {
@@ -3026,8 +3026,8 @@
         "entity:alone",
         "world:clear"
       ],
-      "zh": "§b晴天，无人，你在上面。§8下面的空地像一张还没写收件人的信。别太久。信会自己找地址。",
-      "en": "§bClear sky, no one, and you are above. §8The open ground below is a letter with no addressee yet. Do not stay long. Letters find addresses on their own.",
+      "zh": "晴空之下四下无人，你独自凌空翱翔——好一幅傲慢而又孤独的剪影。",
+      "en": "Alone beneath a clear sky, soaring aloft—what a proud and solitary silhouette.",
       "weight": 5
     }
   ]

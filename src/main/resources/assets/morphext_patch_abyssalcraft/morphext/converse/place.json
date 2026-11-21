@@ -5,8 +5,8 @@
       "aspects": [
         "biome:ocean"
       ],
-      "zh": "§9{biome}。§7水把地平线吃掉了。吃掉的东西，门不一定还。",
-      "en": "§9{biome}. §7The water has eaten the horizon. A gate does not always return what was eaten.",
+      "zh": "{biome}的波涛之下掩埋着比陆地更古老的秘密。水越深，沉睡之物的梦境便越沉重。",
+      "en": "Beneath the waves of {biome} lie secrets older than dry land. The deeper the water, the heavier the dreams of what sleeps below.",
       "weight": 4
     },
     {
@@ -14,8 +14,8 @@
       "aspects": [
         "biome:ocean"
       ],
-      "zh": "§b你站在 {biome} 边上。§8潮声像一群不肯报名的访客。",
-      "en": "§bYou stand at the edge of {biome}. §8The tide sounds like visitors who refuse to give their names.",
+      "zh": "你面对着一望无际的{biome}。在这片吞噬了地平线的深蓝之中，凡人何其渺小。",
+      "en": "You face the boundless expanse of {biome}. Before this deep blue that swallows the horizon, how small a mortal stands.",
       "weight": 4
     },
     {
@@ -23,8 +23,8 @@
       "aspects": [
         "biome:ocean"
       ],
-      "zh": "§8{biome} 没有路。§7没有路的地方，最适合放下一句不该说的话。",
-      "en": "§8{biome} has no road. §7A place without a road is the right place to set down a sentence that should not be spoken.",
+      "zh": "Ph'nglui mglw'nafh... {biome}的深处或许正矗立着一座非欧几里得几何构筑的巨石神庙。",
+      "en": "Ph'nglui mglw'nafh... In the depths of {biome} may stand a cyclopean temple wrought in non-Euclidean stone.",
       "weight": 4
     },
     {
@@ -32,8 +32,8 @@
       "aspects": [
         "biome:forest"
       ],
-      "zh": "§a{biome} 用叶子把天空盖住。§7盖住不是保护。是不想让上面的东西看见你。",
-      "en": "§a{biome} covers the sky with leaves. §7Covering is not protection. It is a wish that what is above should not see you.",
+      "zh": "{biome}的树冠遮蔽了天日，在枝叶交错的阴影里，仿佛有无数眼睛正在暗中窥视。",
+      "en": "The canopy of {biome} shuts out the sky; within the tangled shade of boughs, countless eyes seem to watch unseen.",
       "weight": 4
     },
     {
@@ -41,8 +41,8 @@
       "aspects": [
         "biome:forest"
       ],
-      "zh": "§7树很多，名字很少。§8{biome} 把名字都借给了年轮。",
-      "en": "§7There are many trees and few names. §8{biome} has lent its names to the rings.",
+      "zh": "林木在风中发出吱嘎的声响，像是无数枯骨在{biome}的深处低声交谈。",
+      "en": "Timber creaks in the wind, as though dry bones were conversing in whispers deep within {biome}.",
       "weight": 4
     },
     {
@@ -50,8 +50,8 @@
       "aspects": [
         "biome:forest"
       ],
-      "zh": "§2走进 {biome}，脚步会变软。§8软的地面在听。别把真名踩进土里。",
-      "en": "§2Step into {biome} and the footfall goes soft. §8Soft ground is listening. Do not tread your true name into it.",
+      "zh": "凡人总以为{biome}充满生机，却不知茂密的腐殖土下究竟掩埋着多少异教徒的骸骨。",
+      "en": "Mortals think {biome} teems with life, blind to how many pagan bones lie rotting beneath its rich loam.",
       "weight": 4
     },
     {
@@ -59,8 +59,8 @@
       "aspects": [
         "biome:desert"
       ],
-      "zh": "§e{biome} 把路晒成了遗忘。§7遗忘是一种很干的宗教。",
-      "en": "§e{biome} suns the road into forgetfulness. §7Forgetfulness is a very dry religion.",
+      "zh": "{biome}的黄沙掩埋了多少失落的古国与无名神庙？风沙之下，或许正压着一扇通往彼岸的石门。",
+      "en": "How many lost kingdoms and nameless temples lie buried beneath the sands of {biome}? Beneath the dunes may rest a stone gate to the beyond.",
       "weight": 4
     },
     {
@@ -68,8 +68,8 @@
       "aspects": [
         "biome:desert"
       ],
-      "zh": "§6热，亮，没有影子愿意久留。§8{biome} 连影子都往别处赶。",
-      "en": "§6Hot, bright, and no shadow cares to stay. §8{biome} drives even shadows elsewhere.",
+      "zh": "炽热的烈日炙烤着{biome}，却晒不干某些古老祭坛上早已干涸的血迹。",
+      "en": "A pitiless sun scorches {biome}, yet cannot bleach the ancient bloodstains from forgotten altars.",
       "weight": 4
     },
     {
@@ -77,8 +77,8 @@
       "aspects": [
         "biome:desert"
       ],
-      "zh": "§7{biome} 的沙子记仇，风负责搬家。§8你的脚印只是临时的罪名。",
-      "en": "§7The sand of {biome} keeps a grudge, and the wind moves house for it. §8Your footprint is only a temporary charge.",
+      "zh": "{biome}荒凉而枯寂，正如被外神掠夺了一切生机后的死星表面。",
+      "en": "{biome} lies barren and lifeless, like the surface of a dead star stripped bare by the Outer Gods.",
       "weight": 4
     },
     {
@@ -86,8 +86,8 @@
       "aspects": [
         "biome:mountain"
       ],
-      "zh": "§7{biome} 把世界折起来。§8折起来的地方，门缝比较多。",
-      "en": "§7{biome} folds the world. §8Where the world is folded, the cracks of gates are more numerous.",
+      "zh": "{biome}的绝壁直插云霄，仿佛大地正试图用脊梁去触碰那不可触及的星海。",
+      "en": "The sheer crags of {biome} pierce the clouds, as though the earth sought to touch the untouchable sea of stars.",
       "weight": 4
     },
     {
@@ -95,8 +95,8 @@
       "aspects": [
         "biome:mountain"
       ],
-      "zh": "§8高处的风还不认得扎哈尔。§7{biome} 会教它。教的学费通常是一口气。",
-      "en": "§8The wind up high does not yet know J'zahar. §7{biome} will teach it. The fee is usually a breath.",
+      "zh": "站在{biome}的高峰之上，凡俗的喧嚣渐行渐远，唯有冰冷的虚空离你更近了一步。",
+      "en": "Upon the heights of {biome}, mortal clamor fades below, and the cold Void draws one step nearer.",
       "weight": 4
     },
     {
@@ -104,8 +104,8 @@
       "aspects": [
         "biome:mountain"
       ],
-      "zh": "§6你在 {biome} 里往上走。§8向上是一种还没学会回家的固执。",
-      "en": "§6You climb through {biome}. §8Upward is a stubbornness that has not yet learned the way home.",
+      "zh": "{biome}的狂风在岩缝间呼啸，那声音宛如来自极北荒原的古老颂歌。",
+      "en": "Gales shriek through the clefts of {biome}, sounding like ancient chants carried down from frozen northern wastes.",
       "weight": 4
     },
     {
@@ -113,8 +113,8 @@
       "aspects": [
         "biome:swamp"
       ],
-      "zh": "§2{biome} 把脚吸住。§7吸住，是土地还没决定要不要把你写成自己的句子。",
-      "en": "§2{biome} holds the foot. §7Holding is the land not yet deciding whether to write you into its own sentence.",
+      "zh": "{biome}的泥沼散发着腐殖与死亡的气息，这片污浊之地与珊瑚荒原倒有几分神似。",
+      "en": "The mire of {biome} exhales rot and death; this fouled fen bears a striking kinship to the Coralium wastes.",
       "weight": 4
     },
     {
@@ -122,8 +122,8 @@
       "aspects": [
         "biome:swamp"
       ],
-      "zh": "§8雾、水、烂木头。§7{biome} 的词汇贫乏，意思却很黏。",
-      "en": "§8Fog, water, rotten wood. §7The vocabulary of {biome} is poor. The meaning is sticky.",
+      "zh": "浑浊的死水与低垂的藤蔓交织在{biome}之中，仿佛每一步都会踩进未知的坟墓。",
+      "en": "Stagnant water and hanging vines entwine throughout {biome}, as though every step might sink into an unmarked grave.",
       "weight": 4
     },
     {
@@ -131,8 +131,8 @@
       "aspects": [
         "biome:swamp"
       ],
-      "zh": "§3珊瑚喜欢这种地方。§7{biome} 还没投票，票箱却已经湿了。",
-      "en": "§3Coralium likes a place like this. §7{biome} has not voted yet. The ballot box is already wet.",
+      "zh": "在{biome}的迷雾里，鬼火与畸变的生物随时可能从腐烂的树根后悄然现身。",
+      "en": "Through the mists of {biome}, pale lights and warped things may slip out from behind rotting roots at any moment.",
       "weight": 4
     },
     {
@@ -140,8 +140,8 @@
       "aspects": [
         "biome:hell"
       ],
-      "zh": "§4{biome}。§8热得能把祷词烤焦。烤焦的祷词，下界当成方言。",
-      "en": "§4{biome}. §8Hot enough to char a prayer. The Nether takes a charred prayer for a dialect.",
+      "zh": "{biome}的硫磺与烈焰翻腾不息，然则比起黑暗国度的冰冷绝望，这片炼狱倒显得过于喧嚣了。",
+      "en": "Sulfur and flame churn endlessly in {biome}; yet beside the cold despair of the Dark Realm, this furnace seems almost noisy.",
       "weight": 4
     },
     {
@@ -149,8 +149,8 @@
       "aspects": [
         "biome:hell"
       ],
-      "zh": "§c{biome} 没有白天。§7没有白天的地方，不需要向太阳请假。",
-      "en": "§c{biome} has no day. §7A place without day does not ask the sun for leave.",
+      "zh": "炽热的岩浆河在{biome}中流淌，映照出无数扭曲哀嚎的亡魂倒影。",
+      "en": "Rivers of molten rock wind through {biome}, mirroring the contorted silhouettes of wailing shades.",
       "weight": 4
     },
     {
@@ -158,8 +158,8 @@
       "aspects": [
         "biome:hell"
       ],
-      "zh": "§6你走在 {biome} 里。§8脚下的石头在慢慢承认自己会饿。",
-      "en": "§6You walk in {biome}. §8The stone underfoot is slowly admitting that it can hunger.",
+      "zh": "你在{biome}的焦土上行走，脚下是地狱岩永恒的灼痛与永无止境的堕落。",
+      "en": "You tread the scorched crust of {biome}, over Netherrack steeped in perpetual torment and ruin.",
       "weight": 4
     },
     {
@@ -167,8 +167,8 @@
       "aspects": [
         "biome:cold"
       ],
-      "zh": "§b{biome} 把呼吸变成白字。§7白字散掉之前，不要把真名呼出去。",
-      "en": "§b{biome} turns breath into white letters. §7Before the letters scatter, do not breathe your true name out.",
+      "zh": "{biome}的刺骨严寒冻结了血流，却冻不住潜藏在宇宙暗面里的恶意。",
+      "en": "The biting frost of {biome} slows the blood, yet cannot freeze the malice lurking on the dark side of the cosmos.",
       "weight": 4
     },
     {
@@ -176,8 +176,8 @@
       "aspects": [
         "biome:cold"
       ],
-      "zh": "§7冷是一种很干净的拒绝。§8{biome} 拒绝得很彻底。",
-      "en": "§7Cold is a very clean refusal. §8{biome} refuses thoroughly.",
+      "zh": "冰雪覆盖着{biome}，将生机封死在苍白的坟墓之下，正如黑暗国度那永恒的死寂。",
+      "en": "Ice and snow shroud {biome}, sealing life beneath a pale tomb much like the eternal hush of the Dark Realm.",
       "weight": 4
     },
     {
@@ -185,8 +185,8 @@
       "aspects": [
         "biome:cold"
       ],
-      "zh": "§9{biome} 里，血会变慢。§8慢的血比较容易听见我。",
-      "en": "§9In {biome}, blood slows. §8Slow blood hears me more easily.",
+      "zh": "在这冰冷的{biome}之中，连呼吸都会凝成白霜。凡人的体温在浩瀚虚空面前显得何其微弱。",
+      "en": "In frigid {biome}, even breath freezes to white rime. How feeble mortal warmth is against the vastness of the Void.",
       "weight": 4
     },
     {
@@ -194,8 +194,8 @@
       "aspects": [
         "biome:jungle"
       ],
-      "zh": "§a{biome} 太密了。§7密到光要排队才能落地。",
-      "en": "§a{biome} is too thick. §7Thick enough that light must queue to reach the ground.",
+      "zh": "{biome}的藤蔓疯狂纠缠、彼此绞杀，宛如一团失去理智的血肉在盲目生长。",
+      "en": "The vines of {biome} tangle and strangle one another in frenzy, like a mass of mindless flesh growing blind.",
       "weight": 4
     },
     {
@@ -203,8 +203,8 @@
       "aspects": [
         "biome:jungle"
       ],
-      "zh": "§2叶子、湿热、看不见的牙。§8{biome} 把猎食写成天气。",
-      "en": "§2Leaves, damp heat, teeth you cannot see. §8{biome} writes predation as weather.",
+      "zh": "湿热的瘴气笼罩着{biome}，令人想起那些隐藏在失落丛林深处的古老食人祭坛。",
+      "en": "Steaming miasma blankets {biome}, recalling ancient blood-altars buried deep within lost jungles.",
       "weight": 4
     },
     {
@@ -212,8 +212,8 @@
       "aspects": [
         "biome:jungle"
       ],
-      "zh": "§7你在 {biome} 里拨开绿。§8绿会合上。合上的东西通常不想被读。",
-      "en": "§7You part the green in {biome}. §8The green closes. What closes usually does not wish to be read.",
+      "zh": "在{biome}的密林深处，每一次叶片的颤动都可能预示着潜伏者的扑击。",
+      "en": "Deep within the thickets of {biome}, every tremor of a leaf may herald a lurking predator's strike.",
       "weight": 4
     },
     {
@@ -221,8 +221,8 @@
       "aspects": [
         "biome:mesa"
       ],
-      "zh": "§6{biome} 像一页被烤硬的地层。§7地层记得水，水已经不记得它。",
-      "en": "§6{biome} is a page of strata baked hard. §7The strata remember water. Water has forgotten them.",
+      "zh": "{biome}的赤红岩层如同剥去皮肉后暴露在烈日下的骨骼，记录着大地古老的创伤。",
+      "en": "The crimson strata of {biome} rise like flayed bone bared to the sun, recording ancient wounds of the earth.",
       "weight": 4
     },
     {
@@ -230,8 +230,8 @@
       "aspects": [
         "biome:mesa"
       ],
-      "zh": "§c红土一层一层地沉默。§8{biome} 的沉默比大多数神殿整齐。",
-      "en": "§cRed earth is silent, layer by layer. §8The silence of {biome} is tidier than most temples.",
+      "zh": "风化千年的恶地石柱矗立在{biome}之中，恰似无数沉默的巨型墓碑。",
+      "en": "Weathered pillars of badlands stone stand across {biome} like countless silent monoliths over a forgotten grave.",
       "weight": 4
     },
     {
@@ -239,8 +239,8 @@
       "aspects": [
         "biome:mesa"
       ],
-      "zh": "§7{biome} 没有树愿意作证。§8没有证人的地方，门说话比较随意。",
-      "en": "§7No tree in {biome} will testify. §8Where there is no witness, a gate speaks more casually.",
+      "zh": "在{biome}干裂的土地上，黄金的诱惑曾引来无数贪婪的凡人，最终只留下累累白骨。",
+      "en": "Upon the parched earth of {biome}, the lure of gold once drew greedy mortals, leaving only bleached bones behind.",
       "weight": 4
     },
     {
@@ -248,8 +248,8 @@
       "aspects": [
         "biome:plains"
       ],
-      "zh": "§a{biome} 坦得过分。§7坦，是一种还没学会锁门的文明。",
-      "en": "§a{biome} is excessively open. §7Openness is a civilization that has not learned to lock a door.",
+      "zh": "{biome}一望无际，平坦得令人心生寒意——在这片毫无遮蔽的荒野上，你无处可藏。",
+      "en": "{biome} stretches flat and boundless—upon this unsheltered expanse, there is nowhere to hide.",
       "weight": 4
     },
     {
@@ -257,8 +257,8 @@
       "aspects": [
         "biome:plains"
       ],
-      "zh": "§7一眼能望到边。§8边的后面不一定还是 {biome}。有时是门槛。",
-      "en": "§7You can see the edge at a glance. §8Beyond the edge it is not necessarily still {biome}. Sometimes it is a threshold.",
+      "zh": "风吹过{biome}的草梢，掀起一阵阵灰绿色的波浪，宛如大地在不安地战栗。",
+      "en": "Wind sweeps the grass of {biome} in dull green waves, as though the earth itself were shivering.",
       "weight": 4
     },
     {
@@ -266,8 +266,8 @@
       "aspects": [
         "biome:plains"
       ],
-      "zh": "§e风在 {biome} 上跑，没有东西拦它。§8没有东西拦的风，最容易把名字吹丢。",
-      "en": "§eWind runs over {biome} with nothing to stop it. §8Wind that nothing stops is the kind that loses names.",
+      "zh": "在{biome}的开阔视野中，白昼看似平和，一旦夜幕降临，四面八方皆是潜行的阴影。",
+      "en": "Across the open flats of {biome}, day seems tranquil; yet once night falls, stalking shadows close in from every side.",
       "weight": 4
     },
     {
@@ -275,8 +275,8 @@
       "aspects": [
         "biome:river"
       ],
-      "zh": "§9{biome} 是一条不肯站定的路。§7路如果自己会走，就别跟着它去见门。",
-      "en": "§9{biome} is a road that will not stand still. §7If a road walks by itself, do not follow it to a gate.",
+      "zh": "{biome}的水流昼夜不息，将山峦的碎屑带向大海，一如时间将所有凡人的功业冲刷殆尽。",
+      "en": "The current of {biome} flows without ceasing, bearing mountain grit to the sea as time washes away all mortal works.",
       "weight": 4
     },
     {
@@ -284,8 +284,8 @@
       "aspects": [
         "biome:river"
       ],
-      "zh": "§b水在 {biome} 里赶路。§8它不知道自己在替谁送信。",
-      "en": "§bWater is hurrying through {biome}. §8It does not know whose letter it carries.",
+      "zh": "这条{biome}在荒野间蜿蜒前行，宛如大地皮肤上一道正在缓慢流血的裂痕。",
+      "en": "This {biome} winds through the wilds like a slow-bleeding cleft across the skin of the earth.",
       "weight": 4
     },
     {
@@ -293,8 +293,8 @@
       "aspects": [
         "biome:river"
       ],
-      "zh": "§7沿着 {biome} 走，脚会一直湿。§8湿的脚印比干的脚印更诚实。",
-      "en": "§7Walk along {biome} and the feet stay wet. §8A wet footprint is more honest than a dry one.",
+      "zh": "站在{biome}岸边俯视浑浊的水面，你看到的究竟是自己的倒影，还是扎哈尔的轮廓？",
+      "en": "Gazing down into the murky current of {biome}, do you see your own reflection—or the silhouette of J'zahar?",
       "weight": 4
     },
     {
@@ -302,8 +302,8 @@
       "aspects": [
         "biome:beach"
       ],
-      "zh": "§e{biome} 是海和陆地还没签字的边界。§7边界最容易被潮水改写。",
-      "en": "§e{biome} is a border the sea and the land have not signed. §7Borders are the easiest thing for a tide to rewrite.",
+      "zh": "{biome}是陆地与深海交界的脆弱边缘，恰如理智与疯狂之间那道随时会被浪涛吞没的堤岸。",
+      "en": "{biome} is the frail border where land meets deep water, like the dike between sanity and madness ever poised to drown.",
       "weight": 4
     },
     {
@@ -311,8 +311,8 @@
       "aspects": [
         "biome:beach"
       ],
-      "zh": "§7你站在 {biome} 上。§8沙认脚，浪不认。浪只认还没说出口的名字。",
-      "en": "§7You stand on {biome}. §8Sand recognizes a foot. The wave does not. The wave recognizes only a name not yet spoken.",
+      "zh": "海浪不断冲刷着{biome}的沙砾，如同时间的潮汐抹去凡人曾存在过的一切痕迹。",
+      "en": "Waves endlessly scour the sands of {biome}, as the tides of time erase every trace that mortals ever walked here.",
       "weight": 4
     },
     {
@@ -320,8 +320,8 @@
       "aspects": [
         "biome:beach"
       ],
-      "zh": "§6{biome} 把贝壳当成零钱。§8零钱买不到奥穆索的沉默。",
-      "en": "§6{biome} treats shells as small change. §8Small change cannot buy the silence of Omothol.",
+      "zh": "你立于{biome}之上，面向无垠的水域。莫要盯着海平线太久，以免看见不该浮出水面的阴影。",
+      "en": "You stand upon {biome}, facing the boundless waters. Do not stare too long at the horizon, lest you see what should never surface.",
       "weight": 4
     },
     {
@@ -329,8 +329,8 @@
       "aspects": [
         "biome:mushroom"
       ],
-      "zh": "§5{biome}。§7菌盖像一群不肯下雨的伞。伞下面的孢子比雨更想搬家。",
-      "en": "§5{biome}. §7The caps are umbrellas that refuse to rain. The spores beneath them are more eager to move house than rain is.",
+      "zh": "{biome}的菌丝蔓延整片岛屿，呈现出一种异界般的死寂与诡谲的安宁。",
+      "en": "Mycelium blankets the whole of {biome}, lending it an otherworldly stillness and an eerie, unnatural calm.",
       "weight": 4
     },
     {
@@ -338,8 +338,8 @@
       "aspects": [
         "biome:mushroom"
       ],
-      "zh": "§d巨大的菌把生长做成了建筑。§8{biome} 没请建筑师，也不打算付工钱。",
-      "en": "§dGiant fungi have made growth into architecture. §8{biome} hired no architect, and does not intend to pay.",
+      "zh": "巨大的菌伞矗立在{biome}，宛如来自犹格斯星的异星孢子在此地生根发芽。",
+      "en": "Giant fungal caps tower across {biome}, as though alien spores from Yuggoth had taken root upon this earth.",
       "weight": 4
     },
     {
@@ -347,8 +347,8 @@
       "aspects": [
         "biome:mushroom"
       ],
-      "zh": "§7{biome} 里几乎没有动物愿意留下名字。§8留下的是孢子。孢子不签名。",
-      "en": "§7Almost no animal in {biome} will leave a name. §8What remains is spores. Spores do not sign.",
+      "zh": "在{biome}，连怪物都似乎被这片菌毯所排斥——然则真正的疯狂从不需要怪物的爪牙。",
+      "en": "In {biome}, even common monsters seem shunned by the fungal mat—yet true madness needs neither fang nor claw.",
       "weight": 4
     },
     {
@@ -356,8 +356,8 @@
       "aspects": [
         "biome:void"
       ],
-      "zh": "§8{biome} 是世界同意缺席的地方。§5缺席也是一种在场，只是不报姓名。",
-      "en": "§8{biome} is where the world agreed to be absent. §5Absence is still a kind of presence. It simply does not give a name.",
+      "zh": "你已抵达{biome}。此地连物质与光线的残渣都已荡然无存，唯余纯粹的虚无。",
+      "en": "You have reached {biome}. Here not even dregs of matter or light remain—only pure, hollow nothingness.",
       "weight": 4
     },
     {
@@ -365,8 +365,8 @@
       "aspects": [
         "biome:void"
       ],
-      "zh": "§7你踩在 {biome} 上。§8脚下没有地质，只有一句还没写完的否定。",
-      "en": "§7You tread on {biome}. §8Underfoot there is no geology, only a negation that has not been finished.",
+      "zh": "在{biome}之中，一切方向都失去了意义。上下左右，皆是无底的黑暗。",
+      "en": "Within {biome}, all direction loses meaning. Above, below, and around lies only bottomless dark.",
       "weight": 4
     },
     {
@@ -374,8 +374,8 @@
       "aspects": [
         "biome:void"
       ],
-      "zh": "§5{biome} 不生长，不腐烂，不回答。§7不回答的地方，最适合守门。",
-      "en": "§5{biome} does not grow, rot, or answer. §7A place that does not answer is the best place to keep a gate.",
+      "zh": "{biome}令人联想到外神阿撒托斯所居的混沌中心——盲目、愚痴、却又主宰着一切终局。",
+      "en": "{biome} recalls the chaotic center where Azathoth dwells—blind, idiot, yet sovereign over every ending.",
       "weight": 4
     },
     {
@@ -383,8 +383,8 @@
       "aspects": [
         "biome:end"
       ],
-      "zh": "§5{biome}。§8末地把天空做成了私产，却忘了给门留一把钥匙。",
-      "en": "§5{biome}. §8The End made the sky into private property, and forgot to leave a key for the gate.",
+      "zh": "{biome}的虚空孤岛漂浮在无光之海，宛如被宇宙遗忘的一块碎骨。",
+      "en": "The void-bound isles of {biome} drift in a lightless sea, like shattered bone forgotten by the cosmos.",
       "weight": 4
     },
     {
@@ -392,8 +392,8 @@
       "aspects": [
         "biome:end"
       ],
-      "zh": "§7黄石、虚空、一只以为自己是终点的龙。§8{biome} 的终点是别人的门槛。",
-      "en": "§7Yellow stone, void, a dragon that thinks itself an ending. §8The ending of {biome} is someone else's threshold.",
+      "zh": "你在{biome}凝望着虚无的深渊。末影生物的低语与奥穆索的回响在此奇妙地交错。",
+      "en": "You gaze into the void from {biome}. The murmurs of Endermen weave strangely with the echoes of Omothol.",
       "weight": 4
     },
     {
@@ -401,8 +401,8 @@
       "aspects": [
         "biome:end"
       ],
-      "zh": "§d你在 {biome} 里走。§7脚步没有回声。没有回声的地方，话要自己负责。",
-      "en": "§dYou walk in {biome}. §7The steps have no echo. Where there is no echo, a sentence must answer for itself.",
+      "zh": "{biome}没有昼夜之分，唯有永恒的紫黑天幕与在虚空中徘徊的末影龙。",
+      "en": "{biome} knows neither day nor night—only an eternal violet-black vault and the winged sovereign stalking the void.",
       "weight": 4
     },
     {
@@ -410,8 +410,8 @@
       "aspects": [
         "biome:abyssal"
       ],
-      "zh": "§3{biome}。§8荒地的口音我听得懂。你只是借了我的耳朵。",
-      "en": "§3{biome}. §8I understand the accent of the wasteland. You have only borrowed my ears.",
+      "zh": "你已踏入{biome}。此地的每一寸土地都浸透了珊瑚的腐化，再无半点凡俗的生机。",
+      "en": "You have stepped into {biome}. Every span of this land is steeped in Coralium corruption, stripped of mortal vitality.",
       "weight": 4
     },
     {
@@ -419,8 +419,8 @@
       "aspects": [
         "biome:abyssal"
       ],
-      "zh": "§7珊瑚、暗石、盐一样的风。§8{biome} 是深渊写给自己的回信。",
-      "en": "§7Coralium, darkstone, a wind like salt. §8{biome} is the reply the abyss wrote to itself.",
+      "zh": "{biome}之中回荡着深渊荒地的悲鸣。唯有被选中的疯子，才敢在此地久留。",
+      "en": "Within {biome} echoes the wail of the Abyssal Wasteland. Only chosen madmen dare linger here.",
       "weight": 4
     },
     {
@@ -428,8 +428,8 @@
       "aspects": [
         "biome:abyssal"
       ],
-      "zh": "§3别在 {biome} 里假装游客。§5这张脸在这里不是游客。游客会被收成砖。",
-      "en": "§3Do not pretend to be a tourist in {biome}. §5This face is not a tourist here. Tourists are collected as brick.",
+      "zh": "看看{biome}那被侵蚀的岩石与苍白荒芜吧，凡人——这就是主世界拒绝倾听警告的下场。",
+      "en": "Behold the corroded stone and pale desolation of {biome}, mortal—such is the fate of an Overworld that refused to heed warning.",
       "weight": 4
     },
     {
@@ -437,8 +437,8 @@
       "aspects": [
         "biome:dread"
       ],
-      "zh": "§4{biome} 干，冷，像一口已经咳完的天空。",
-      "en": "§4{biome} is dry and cold, like a sky that has finished coughing.",
+      "zh": "你已步入{biome}的疆域。瘟疫、畸变与血肉的狂欢正在这片受诅咒的大地上演。",
+      "en": "You have crossed into {biome}. Plague, mutation, and a carnival of warped flesh reign upon this accursed soil.",
       "weight": 4
     },
     {
@@ -446,8 +446,8 @@
       "aspects": [
         "biome:dread"
       ],
-      "zh": "§7瘟疫在 {biome} 里有户口。§8户口比大多数祭司诚实。",
-      "en": "§7The plague has a household registration in {biome}. §8The registration is more honest than most priests.",
+      "zh": "{biome}的一切都在恐惧瘟疫的支配下扭曲蠕动。连岩石都在渗出令人作呕的脓液。",
+      "en": "All things in {biome} writhe beneath the Dread Plague. Even the stone weeps a sickening ichor.",
       "weight": 4
     },
     {
@@ -455,8 +455,8 @@
       "aspects": [
         "biome:dread"
       ],
-      "zh": "§8你走在 {biome} 上。§4地面把每一步登记成症状。别走太密。",
-      "en": "§8You walk on {biome}. §4The ground registers each step as a symptom. Do not walk too densely.",
+      "zh": "此处是{biome}，恐惧野兽查伽洛斯的领地。凡人的血肉在此地不过是待宰的养料。",
+      "en": "This is {biome}, the domain of Chagaroth the Dread Beast. Mortal flesh here is nothing more than fodder waiting to be claimed.",
       "weight": 4
     },
     {
@@ -464,8 +464,8 @@
       "aspects": [
         "biome:omothol"
       ],
-      "zh": "§5{biome}。§8到家了。家不欢迎借来的脚步，但认得这张脸。",
-      "en": "§5{biome}. §8You are home. Home does not welcome a borrowed step, but it knows this face.",
+      "zh": "你已回到{biome}——我的王国，群星之外最后一座尚且矗立的残破圣城。",
+      "en": "You have returned to {biome}—my kingdom, the last shattered citadel still standing beyond the stars.",
       "weight": 4
     },
     {
@@ -473,8 +473,8 @@
       "aspects": [
         "biome:omothol"
       ],
-      "zh": "§7奥穆索的尘不是土。§8{biome} 脚下漏出来的是算术，是锁，是我没写完的句子。",
-      "en": "§7The dust of Omothol is not soil. §8What leaks under {biome} is arithmetic, locks, and a sentence I did not finish.",
+      "zh": "踏足{biome}的每一寸土地吧，凡人。这里的每一块石砖都铭刻着旧日支配者的威仪。",
+      "en": "Tread every stone of {biome}, mortal. Each slab here bears the majesty of a Great Old One.",
       "weight": 4
     },
     {
@@ -482,8 +482,8 @@
       "aspects": [
         "biome:omothol"
       ],
-      "zh": "§5在 {biome} 里，低语不需要借嘴。§7你若还听得见我，说明门没有完全把你关在外面。",
-      "en": "§5In {biome} a whisper does not need a borrowed mouth. §7If you can still hear me, the gate has not shut you entirely outside.",
+      "zh": "在{biome}永恒的晦暗中，遗民们仍在低声吟诵着外神的颂词，等待着不可避免的终局。",
+      "en": "In the eternal twilight of {biome}, the Remnants still chant hymns to the Outer Gods, awaiting the inevitable end.",
       "weight": 4
     },
     {
@@ -491,8 +491,8 @@
       "aspects": [
         "biome:dark_realm"
       ],
-      "zh": "§8{biome}。§5黑暗国度不是夜。夜还会结束。这里的黑投票决定不结束。",
-      "en": "§8{biome}. §5The Dark Realm is not night. Night still ends. The black here has voted not to.",
+      "zh": "你已身处{biome}——那片由暗影编织、被外神遗弃在现实缝隙之外的绝望深渊。",
+      "en": "You stand within {biome}—that abyss of despair woven of shadow and cast beyond the seams of reality.",
       "weight": 4
     },
     {
@@ -500,8 +500,8 @@
       "aspects": [
         "biome:dark_realm"
       ],
-      "zh": "§7光在 {biome} 里是外来户。§8外来户通常活不久，除非它认得门。",
-      "en": "§7Light is an outsider in {biome}. §8Outsiders do not usually last, unless they know the gate.",
+      "zh": "欢迎来到{biome}，凡人。在这里，萨克索斯的怒火与无数暗影生物正窥伺着你的每一步。",
+      "en": "Welcome to {biome}, mortal. Here the wrath of Sacthoth and countless shadow beings stalk your every step.",
       "weight": 4
     },
     {
@@ -509,8 +509,8 @@
       "aspects": [
         "biome:dark_realm"
       ],
-      "zh": "§5你站在 {biome} 里。§8我的城不需要太阳。它需要记得锁的人。",
-      "en": "§5You stand in {biome}. §8My city does not need a sun. It needs someone who still remembers the locks.",
+      "zh": "{biome}没有太阳，没有星辰，唯有吞噬一切光明的无尽虚暗。",
+      "en": "{biome} knows neither sun nor stars—only endless, light-devouring gloom.",
       "weight": 4
     },
     {
@@ -518,8 +518,8 @@
       "aspects": [
         "biome:darklands"
       ],
-      "zh": "§8{biome} 是主世界被深渊改过口音的一块皮。§7皮还温着，口音已经冷了。",
-      "en": "§8{biome} is a hide of the overworld whose accent the abyss has edited. §7The hide is still warm. The accent has gone cold.",
+      "zh": "你踏入了{biome}。这片被黑暗之地气息浸染的土地，早已成为主世界与深渊之间的前哨。",
+      "en": "You have entered {biome}. This land steeped in Darklands taint has long served as an outpost between Overworld and Abyss.",
       "weight": 4
     },
     {
@@ -527,8 +527,8 @@
       "aspects": [
         "biome:darklands"
       ],
-      "zh": "§3黑暗之地不是黑暗国度。§7{biome} 只是门口的垫子。别把垫子当成殿。",
-      "en": "§3The Darklands are not the Dark Realm. §7{biome} is only the mat at the door. Do not take the mat for the hall.",
+      "zh": "{biome}的暗影石与畸变林木正在低语，它们在迎接着来自奥穆索的目光。",
+      "en": "The Darkstone and twisted timber of {biome} murmur in welcome to a gaze turned down from Omothol.",
       "weight": 4
     },
     {
@@ -536,8 +536,8 @@
       "aspects": [
         "biome:darklands"
       ],
-      "zh": "§7{biome} 里的树不信任白天。§8它们学会了一种更黑的绿。",
-      "en": "§7The trees in {biome} do not trust daylight. §8They have learned a blacker green.",
+      "zh": "在{biome}，连大地本身都透着不祥的晦暗。深渊的影子早已在此扎根。",
+      "en": "In {biome}, the very earth wears an ominous pallor. The shadow of the Abyss struck root here long ago.",
       "weight": 4
     },
     {
@@ -545,8 +545,8 @@
       "aspects": [
         "dim:overworld"
       ],
-      "zh": "§a{dimension}。§7你们把这层薄薄的白天叫作家。家是一种还没被收回的租约。",
-      "en": "§a{dimension}. §7You call this thin layer of daylight home. Home is a lease that has not yet been called in.",
+      "zh": "你仍在{dimension}。这片看似安宁、充满阳光与绿意的大地，正是深渊最理想的牧场。",
+      "en": "You remain in {dimension}. This seemingly tranquil earth of sun and green is the Abyss's finest pasture.",
       "weight": 4
     },
     {
@@ -554,8 +554,8 @@
       "aspects": [
         "dim:overworld"
       ],
-      "zh": "§7太阳、草、市集、墓碑。§8{dimension} 的词汇很满，锁却很少。",
-      "en": "§7Sun, grass, markets, gravestones. §8The vocabulary of {dimension} is full. The locks are few.",
+      "zh": "{dimension}的凡人每日耕作、筑城、繁衍，却从未察觉地底深处早已埋下了黑暗之地的种子。",
+      "en": "The mortals of {dimension} till, build, and multiply each day, blind to the Darklands seeds already buried beneath their feet.",
       "weight": 4
     },
     {
@@ -563,8 +563,8 @@
       "aspects": [
         "dim:overworld"
       ],
-      "zh": "§e你在 {dimension} 里借用这张脸。§8脸在这里太亮。亮的东西容易被当成神，也容易被当成猎物。",
-      "en": "§eYou borrow this face in {dimension}. §8The face is too bright here. Bright things are easily taken for gods, and easily taken for prey.",
+      "zh": "在{dimension}的蓝天之下，人们将秩序视为理所当然。多么天真，又多么脆弱的幻想。",
+      "en": "Beneath the blue skies of {dimension}, mortals take order for granted. How naive, and how brittle an illusion.",
       "weight": 4
     },
     {
@@ -572,8 +572,8 @@
       "aspects": [
         "dim:overworld"
       ],
-      "zh": "§7{dimension} 的门大多是木头做的。§5木头的门不认识我。认识我的那扇，不在这层。",
-      "en": "§7Most doors in {dimension} are made of wood. §5A wooden door does not know me. The one that does is not on this floor.",
+      "zh": "{dimension}只是无数世界中最表层的一页。翻开它，背后便是深渊荒地与无尽的疯狂。",
+      "en": "{dimension} is merely the topmost page of countless worlds. Turn it, and behind it lie the Abyssal Wasteland and endless madness.",
       "weight": 4
     },
     {
@@ -581,8 +581,8 @@
       "aspects": [
         "dim:nether"
       ],
-      "zh": "§4{dimension}。§8热，吵，神学很业余。硫磺不是深渊。",
-      "en": "§4{dimension}. §8Hot, loud, and the theology is amateur. Brimstone is not the abyss.",
+      "zh": "你置身于{dimension}。滚烫的硫磺与永恒的火焰在这里翻涌，恰似宇宙诞生前尚未冷却的余烬。",
+      "en": "You stand within {dimension}. Seething sulfur and undying flame churn here like uncooled embers from before the cosmos.",
       "weight": 4
     },
     {
@@ -590,8 +590,8 @@
       "aspects": [
         "dim:nether"
       ],
-      "zh": "§c{dimension} 把熔岩当成天空。§7天空不该有这么好的胃口。",
-      "en": "§c{dimension} treats lava as a sky. §7A sky should not have so fine an appetite.",
+      "zh": "{dimension}充斥着暴虐与诅咒，然则这片火狱的法则，比起外神的混沌仍显得过于直白。",
+      "en": "{dimension} brims with fury and curse; yet the laws of this furnace remain crude beside the chaos of the Outer Gods.",
       "weight": 4
     },
     {
@@ -599,8 +599,8 @@
       "aspects": [
         "dim:nether"
       ],
-      "zh": "§6要塞、骨头、一嘴不肯灭的火。§8{dimension} 是一封写给更深处的错信。",
-      "en": "§6Fortresses, bone, a mouth of fire that will not go out. §8{dimension} is a misaddressed letter to somewhere deeper.",
+      "zh": "在{dimension}的岩浆海之上，恶魂的哀鸣与死灵之书的嘶哑低语遥相呼应。",
+      "en": "Above the magma seas of {dimension}, the wails of ghasts answer the hoarse whispers of the Necronomicon.",
       "weight": 4
     },
     {
@@ -608,8 +608,8 @@
       "aspects": [
         "dim:nether"
       ],
-      "zh": "§7你在 {dimension} 里走。§8走得再深，也还没到我的门槛。别把热气误认成回家。",
-      "en": "§7You walk in {dimension}. §8However deep you go, you have not reached my threshold. Do not mistake heat for home.",
+      "zh": "炽热的空气扭曲了{dimension}的视线。小心莫让火焰烧毁了你仅存的理智。",
+      "en": "Scorching air warps all sight in {dimension}. Take care the flames do not consume what little sanity you retain.",
       "weight": 4
     },
     {
@@ -617,8 +617,8 @@
       "aspects": [
         "dim:end"
       ],
-      "zh": "§5{dimension}。§7末地以为虚空就是结局。结局是一种很自负的标点。",
-      "en": "§5{dimension}. §7The End thinks the void is a conclusion. A conclusion is a very vain piece of punctuation.",
+      "zh": "{dimension}是一片漂浮在无光虚空中的破碎遗迹，充满了异界的高傲与死寂。",
+      "en": "{dimension} is a shattered remnant adrift in lightless void, steeped in alien pride and dead silence.",
       "weight": 4
     },
     {
@@ -626,8 +626,8 @@
       "aspects": [
         "dim:end"
       ],
-      "zh": "§8龙、塔、一地不会腐烂的黄石。§7{dimension} 把永恒做成了布景。",
-      "en": "§8A dragon, towers, yellow stone that will not rot. §7{dimension} has made eternity into scenery.",
+      "zh": "在{dimension}的漆黑天幕下，末影之物以一种令深渊都觉得荒诞的姿态守望着虚无。",
+      "en": "Beneath the pitch-black vault of {dimension}, the things of the End keep watch over nothingness in a manner even the Abyss finds absurd.",
       "weight": 4
     },
     {
@@ -635,8 +635,8 @@
       "aspects": [
         "dim:end"
       ],
-      "zh": "§d{dimension} 的居民会瞬移。§8瞬移不是开门。开门的人不需要把方块抱在怀里。",
-      "en": "§dThe inhabitants of {dimension} can blink. §8Blinking is not opening a gate. A gatekeeper does not need to clutch a block.",
+      "zh": "虚空在{dimension}的脚下张开。此处虽无珊瑚与恐惧，却同样散发着末世的寒意。",
+      "en": "The void yawns beneath {dimension}. Though free of Coralium and Dread, it exhales the same chill of an ended age.",
       "weight": 4
     },
     {
@@ -644,8 +644,8 @@
       "aspects": [
         "dim:end"
       ],
-      "zh": "§7你站在 {dimension} 里。§5这张脸看过更远的终点。终点之后还有门。",
-      "en": "§7You stand in {dimension}. §5This face has seen a farther ending. After the ending there is still a gate.",
+      "zh": "{dimension}的居民厌恶直视，而深渊却偏偏喜欢将一切都看得一清二楚。",
+      "en": "The denizens of {dimension} despise being looked upon, whereas the Abyss delights in seeing all things laid bare.",
       "weight": 4
     },
     {
@@ -653,8 +653,8 @@
       "aspects": [
         "dim:abyssal_wasteland"
       ],
-      "zh": "§3{dimension}。§8荒地在呼吸。呼吸里有珊瑚，有盐，有我年轻时没关上的一扇窗。",
-      "en": "§3{dimension}. §8The wasteland is breathing. In the breath there is coralium, salt, and a window I did not shut when I was younger.",
+      "zh": "你已踏入{dimension}。这片苍白、死寂、被珊瑚瘟疫彻底吞噬的维度，正是人类盲目探索深渊的第一个墓碑。",
+      "en": "You have entered {dimension}. Pale, desolate, and devoured by the Coralium Plague, this realm is humanity's first tombstone for meddling with the Abyss.",
       "weight": 4
     },
     {
@@ -662,8 +662,8 @@
       "aspects": [
         "dim:abyssal_wasteland"
       ],
-      "zh": "§7你踩进了 {dimension}。§5路过这张脸的人，荒地不会当客人。",
-      "en": "§7You have stepped into {dimension}. §5The wasteland does not treat a passerby in this face as a guest.",
+      "zh": "在{dimension}中，无尽的骸骨与液态珊瑚见证了阿索拉曾统治的纪元。",
+      "en": "Across {dimension}, endless bone and liquid Coralium bear witness to the age once ruled by Asorah.",
       "weight": 4
     },
     {
@@ -671,8 +671,8 @@
       "aspects": [
         "dim:abyssal_wasteland"
       ],
-      "zh": "§8暗石、渊金、不肯退的潮。§7{dimension} 是深渊同意被踩的那一层。",
-      "en": "§8Darkstone, abyssalnite, a tide that will not withdraw. §7{dimension} is the layer the abyss agreed to be walked on.",
+      "zh": "抬头望向{dimension}那灰暗无光的天幕吧。这里没有救赎，只有蔓延不绝的畸变与腐化。",
+      "en": "Look up at the dim, lightless vault of {dimension}. Here there is no salvation—only creeping mutation and rot.",
       "weight": 4
     },
     {
@@ -680,8 +680,8 @@
       "aspects": [
         "dim:abyssal_wasteland"
       ],
-      "zh": "§3在 {dimension} 里，低语比较近。§8近，不是因为我大声。是因为这里的空气认得发信人。",
-      "en": "§3In {dimension} the whisper is closer. §8Not because I am loud. Because the air here knows the sender.",
+      "zh": "{dimension}的食尸鬼与深渊僵尸正在黑暗中游荡，它们曾是你这样的探索者。",
+      "en": "Ghouls and Abyssal zombies prowl the gloom of {dimension}; once, they too were explorers like you.",
       "weight": 4
     },
     {
@@ -689,8 +689,8 @@
       "aspects": [
         "dim:dreadlands"
       ],
-      "zh": "§4{dimension}。§7恐惧之地的冷是干的。干的冷会把骨头教成臣民。",
-      "en": "§4{dimension}. §7The cold of the Dreadlands is dry. Dry cold teaches bone to be a subject.",
+      "zh": "你进入了{dimension}。欢迎来到这片被恐惧瘟疫撕裂、由查伽洛斯统治的血肉炼狱。",
+      "en": "You have entered {dimension}. Welcome to the inferno of warped flesh torn by the Dread Plague and ruled by Chagaroth.",
       "weight": 4
     },
     {
@@ -698,8 +698,8 @@
       "aspects": [
         "dim:dreadlands"
       ],
-      "zh": "§8查伽洛斯的国境。§7{dimension} 用瘟疫写法律。法律不需要你同意。",
-      "en": "§8The realm of Cha'garoth. §7{dimension} writes its law in plague. The law does not require your consent.",
+      "zh": "在{dimension}，连大地都在痛苦地痉挛。恐惧守卫与畸变野兽在红雾中嘶吼不休。",
+      "en": "In {dimension}, the very earth convulses in agony. Dreadguards and mutated beasts howl endlessly through the crimson haze.",
       "weight": 4
     },
     {
@@ -707,8 +707,8 @@
       "aspects": [
         "dim:dreadlands"
       ],
-      "zh": "§c你走在 {dimension} 上。§8每一步都像在一份病历上签名。别签太快。",
-      "en": "§cYou walk on {dimension}. §8Each step is like signing a medical record. Do not sign too quickly.",
+      "zh": "你为何来到{dimension}？是为了寻觅惧质，还是为了亲眼见证理智被恐惧彻底碾碎？",
+      "en": "Why have you come to {dimension}? To harvest Dreadium, or to watch sanity crushed beneath sheer Dread?",
       "weight": 4
     },
     {
@@ -716,8 +716,8 @@
       "aspects": [
         "dim:dreadlands"
       ],
-      "zh": "§7{dimension} 的天空不下雨，它咳嗽。§8咳嗽是这里的天气，也是这里的礼仪。",
-      "en": "§7The sky of {dimension} does not rain. It coughs. §8A cough is the weather here, and the etiquette.",
+      "zh": "{dimension}的瘴气令人作呕，空气中充满了铁锈与腐肉的气味。",
+      "en": "The miasma of {dimension} turns the stomach, thick with the stench of rust and rotting meat.",
       "weight": 4
     },
     {
@@ -725,8 +725,8 @@
       "aspects": [
         "dim:omothol"
       ],
-      "zh": "§5{dimension}。§8我的城。你把我的腿借来走我的街，步子却还是凡人的。",
-      "en": "§5{dimension}. §8My city. You borrowed my legs to walk my street, and the step is still mortal.",
+      "zh": "你已抵达{dimension}——我的圣城，通往深渊之书与终极禁忌的最后门廊。",
+      "en": "You have arrived at {dimension}—my citadel, the final threshold leading to the Abyssalnomicon and ultimate forbidden truth.",
       "weight": 2
     },
     {
@@ -734,8 +734,8 @@
       "aspects": [
         "dim:omothol"
       ],
-      "zh": "§7奥穆索的锁不是装饰。§8{dimension} 里每一道缝都在数有没有人多带了一把钥匙。",
-      "en": "§7The locks of Omothol are not decoration. §8Every crack in {dimension} is counting whether someone brought an extra key.",
+      "zh": "欢迎来到你的末日，凡人，我是认真的。{dimension}从不宽恕任何企图亵渎旧日支配者的人。",
+      "en": "Welcome to your doom, mortal—I mean it. {dimension} forgives none who seek to profane a Great Old One.",
       "weight": 2
     },
     {
@@ -743,8 +743,8 @@
       "aspects": [
         "dim:omothol"
       ],
-      "zh": "§5到了 {dimension}，就别再把这张脸当成伪装。§7伪装在家里会变成失礼。",
-      "en": "§5Now that you are in {dimension}, stop treating this face as a disguise. §7A disguise at home becomes a discourtesy.",
+      "zh": "在{dimension}之中，现实的概念早已破碎。你所见的一切断壁残垣，皆是过往文明疯狂的见证。",
+      "en": "Within {dimension}, the concept of reality has long shattered. Every broken wall you see bears witness to the madness of vanished ages.",
       "weight": 2
     },
     {
@@ -752,8 +752,8 @@
       "aspects": [
         "dim:omothol"
       ],
-      "zh": "§8尘、算术、不肯睡的门。§7{dimension} 记得每一个把真名写错的访客。你现在算哪一种？",
-      "en": "§8Dust, arithmetic, a gate that refuses to sleep. §7{dimension} remembers every visitor who misspelled a true name. Which kind are you?",
+      "zh": "你竟披着我的形态走进了{dimension}？这究竟是莫大的讽刺，还是你已彻底陷入了幻觉？",
+      "en": "You walk into {dimension} wearing my own likeness? Is this supreme irony, or have you succumbed wholly to delusion?",
       "weight": 4
     },
     {
@@ -761,8 +761,8 @@
       "aspects": [
         "dim:dark_realm"
       ],
-      "zh": "§8{dimension}。§5黑暗国度。光在这里是非法移民，名字在这里是通货。",
-      "en": "§8{dimension}. §5The Dark Realm. Light is an illegal immigrant here. A name is currency.",
+      "zh": "欢迎来到{dimension}——黑暗之源、群星之外最深沉的梦魇之底。",
+      "en": "Welcome to {dimension}—the wellspring of darkness, the deepest floor of nightmare beyond the stars.",
       "weight": 2
     },
     {
@@ -770,8 +770,8 @@
       "aspects": [
         "dim:dark_realm"
       ],
-      "zh": "§5我的殿在 {dimension} 的更深处。§7你若还听得见这句话，说明你还没走到那一扇门前。",
-      "en": "§5My hall is deeper in {dimension}. §7If you can still hear this sentence, you have not yet reached that door.",
+      "zh": "在{dimension}里，萨克索斯的凝视无处不在。这片虚暗领域从不欢迎任何血肉之躯。",
+      "en": "Within {dimension}, the gaze of Sacthoth is everywhere. This realm of shadow welcomes no creature of flesh.",
       "weight": 2
     },
     {
@@ -779,8 +779,8 @@
       "aspects": [
         "dim:dark_realm"
       ],
-      "zh": "§8黑得没有回声。§7{dimension} 把回声都收成了税。税不用金子付。",
-      "en": "§8Black enough to have no echo. §7{dimension} collects echoes as tax. The tax is not paid in gold.",
+      "zh": "你竟敢踏足{dimension}？莫非你以为披着扎哈尔的空壳，便能在此地横行无忌？",
+      "en": "You dare set foot in {dimension}? Do you imagine wearing J'zahar's hollow shell grants you free reign here?",
       "weight": 4
     },
     {
@@ -788,8 +788,8 @@
       "aspects": [
         "dim:dark_realm"
       ],
-      "zh": "§4别在 {dimension} 里寻找太阳。§5太阳没被邀请。被邀请的是还肯把锁数完的人。",
-      "en": "§4Do not look for the sun in {dimension}. §5The sun was not invited. The invited are those who will still count the locks to the end.",
+      "zh": "{dimension}的每一寸空间都在排斥着光明与生命。你的理智在此地正以肉眼可见的速度崩塌。",
+      "en": "Every span of {dimension} rejects light and life. Your sanity here erodes before your very eyes.",
       "weight": 4
     },
     {
@@ -797,8 +797,8 @@
       "aspects": [
         "dim:other"
       ],
-      "zh": "§7{dimension}。§8一个我没有在门楣上登记的名字。未登记不等于不存在。",
-      "en": "§7{dimension}. §8A name I did not enter on the lintel. Unregistered is not the same as unreal.",
+      "zh": "你跨越了界域的裂隙，踏入了一片名为{dimension}的陌生维度。",
+      "en": "You have crossed a rift between worlds into an unfamiliar realm named {dimension}.",
       "weight": 4
     },
     {
@@ -806,8 +806,8 @@
       "aspects": [
         "dim:other"
       ],
-      "zh": "§8你站在 {dimension} 里。§7这张脸没有这里的钥匙。没有钥匙的地方，步子放轻。",
-      "en": "§8You stand in {dimension}. §7This face has no key to this place. Where there is no key, lighten the step.",
+      "zh": "无论{dimension}遵循着怎样的法则，在犹格·索托斯眼中，所有维度都不过是同一扇门后的不同房间。",
+      "en": "Whatever laws govern {dimension}, to Yog-Sothoth every dimension is merely another chamber behind the same Gate.",
       "weight": 4
     },
     {
@@ -815,8 +815,8 @@
       "aspects": [
         "dim:other"
       ],
-      "zh": "§5{dimension} 不在我常用的地图上。§8地图是给还会迷路的神准备的。我只是还没决定要不要把这里写成门。",
-      "en": "§5{dimension} is not on the map I usually keep. §8Maps are for gods who can still get lost. I have not yet decided whether to write this place as a gate.",
+      "zh": "{dimension}的空气带着异界的气息。记住，深渊的触角从不受限于已知的星图。",
+      "en": "The air of {dimension} carries an alien tang. Remember: the reach of the Abyss is never bound by known star-charts.",
       "weight": 4
     },
     {
@@ -824,8 +824,8 @@
       "aspects": [
         "dim:other"
       ],
-      "zh": "§7陌生的天空，陌生的地面。§8{dimension} 若有锁，先不要敲。敲错的门会记仇。",
-      "en": "§7A strange sky, a strange ground. §8If {dimension} has a lock, do not knock yet. A door knocked wrong keeps a grudge.",
+      "zh": "你在{dimension}探索着未知，却不知未知本身也在用千万只眼睛打量着你。",
+      "en": "You explore the unknown in {dimension}, unaware that the unknown itself appraises you with a thousand eyes.",
       "weight": 4
     },
     {
@@ -833,8 +833,8 @@
       "aspects": [
         "biome:ocean"
       ],
-      "zh": "§9盐在 {biome} 上记账。§8每一口浪都少写一个名字，多留一点空白。",
-      "en": "§9Salt keeps the books on {biome}. §8Each wave omits one name and keeps a little more blank.",
+      "zh": "{biome}的潮汐受着月相与群星的牵引，而群星，终有一日会回到它们应有的位置。",
+      "en": "The tides of {biome} answer the moon and the stars—and the stars, one day, shall return to their appointed places.",
       "weight": 4
     },
     {
@@ -842,8 +842,8 @@
       "aspects": [
         "biome:ocean"
       ],
-      "zh": "§b{biome} 把岸借给你站。§7借条写在泡沫上。泡沫不归档。",
-      "en": "§b{biome} lends you the shore to stand on. §7The receipt is written in foam. Foam does not file.",
+      "zh": "海水冰冷而深邃，正如深渊之水般拒绝透出任何一丝光明。",
+      "en": "The sea is cold and fathomless, refusing to yield a single spark of light from its abyssal floor.",
       "weight": 4
     },
     {
@@ -851,8 +851,8 @@
       "aspects": [
         "biome:ocean"
       ],
-      "zh": "§8往下看。§9{biome} 的深处没有门，只有一扇还没决定要不要开的黑。",
-      "en": "§8Look down. §9The deep of {biome} has no gate, only a black that has not decided whether to open.",
+      "zh": "莫要轻易潜入{biome}最幽暗的海沟，有些门扉一旦在水下开启，便再无合拢之日。",
+      "en": "Do not lightly dive into the darkest trenches of {biome}; some gates, once opened beneath the waves, never close again.",
       "weight": 4
     },
     {
@@ -860,8 +860,8 @@
       "aspects": [
         "biome:forest"
       ],
-      "zh": "§2{biome} 的年轮比村里的户口厚。§7树不点名，可它记得谁靠过。",
-      "en": "§2The rings of {biome} are thicker than a village register. §7Trees do not call roll. They remember who leaned.",
+      "zh": "在{biome}的幽暗小径上行走时，莫要回头去数身后究竟有几道影子。",
+      "en": "As you walk the dim trails of {biome}, do not turn back to count how many shadows follow behind you.",
       "weight": 4
     },
     {
@@ -869,8 +869,8 @@
       "aspects": [
         "biome:forest"
       ],
-      "zh": "§a阳光在 {biome} 里被切成零钱。§8零钱够你看路，不够你看清看路的人。",
-      "en": "§aSunlight is cut into small change inside {biome}. §8Enough to see the path. Not enough to see who is watching the path.",
+      "zh": "树皮的纹路扭曲盘结，竟隐约拼出死灵之书中某种禁忌的符印。",
+      "en": "The grain of the bark twists into knots that vaguely trace a forbidden sigil from the Necronomicon.",
       "weight": 4
     },
     {
@@ -878,8 +878,8 @@
       "aspects": [
         "biome:forest"
       ],
-      "zh": "§7别把营火靠着最老的那棵。§2{biome} 里，老的东西收费更静。",
-      "en": "§7Do not set a campfire against the oldest trunk. §2In {biome}, the old things charge more quietly.",
+      "zh": "{biome}的雾气在树干间缠绕，将现实与梦境的边界悄悄抹去。",
+      "en": "Mist coils between the trunks of {biome}, quietly blurring the border between waking and dream.",
       "weight": 4
     },
     {
@@ -887,8 +887,8 @@
       "aspects": [
         "biome:forest"
       ],
-      "zh": "§8蘑菇、腐叶、一声不报名的鸟。§2{biome} 把多余的眼睛都挂在高处。",
-      "en": "§8Mushrooms, rot, a bird that will not give its name. §2{biome} hangs its spare eyes up high.",
+      "zh": "{biome}偶尔传来的寂静，比野兽的嚎叫更令人不安——那是连虫豸都屏住呼吸的时刻。",
+      "en": "The sudden silences of {biome} are more unsettling than any beast's howl—the moments when even insects hold their breath.",
       "weight": 4
     },
     {
@@ -896,8 +896,8 @@
       "aspects": [
         "biome:forest"
       ],
-      "zh": "§2走出 {biome} 的时候数一数影子。§7少了一只，通常不是光的错。",
-      "en": "§2Count your shadows when you leave {biome}. §7If one is missing, it is rarely the light's fault.",
+      "zh": "即便在{biome}这样寻常的林地里，深渊的触角也随时可能从树根下悄然探出。",
+      "en": "Even in a woodland as ordinary as {biome}, the tendrils of the Abyss may surface at any moment from beneath the roots.",
       "weight": 4
     },
     {
@@ -905,8 +905,8 @@
       "aspects": [
         "biome:desert"
       ],
-      "zh": "§e{biome} 把脚印收成税。§8税不退。风是唯一的税吏，而且不识字。",
-      "en": "§e{biome} collects footprints as tax. §8The tax is not refunded. Wind is the only clerk, and it cannot read.",
+      "zh": "沙丘在风中缓缓迁徙，恰似奈亚拉托提普在尘世间不断变换的千百副面孔。",
+      "en": "The dunes shift slowly in the wind, like the thousand shifting masks of Nyarlathotep.",
       "weight": 4
     },
     {
@@ -914,8 +914,8 @@
       "aspects": [
         "biome:desert"
       ],
-      "zh": "§6正午的 {biome} 没有阴凉可贿赂。§7你只能跟自己的影子谈判，而影子也渴。",
-      "en": "§6Noon in {biome} has no shade to bribe. §7You can only bargain with your shadow, and the shadow is thirsty too.",
+      "zh": "在{biome}的无尽沙海里迷失方向，往往是凡人第一次听见沙格斯低吼的开端。",
+      "en": "Losing one's way in the endless sands of {biome} is often how mortals first hear the distant bellow of a Shoggoth.",
       "weight": 4
     },
     {
@@ -923,8 +923,8 @@
       "aspects": [
         "biome:desert"
       ],
-      "zh": "§e{biome} 的夜里冷得像一张撤掉的请柬。§8白天被邀请的热，晚上全部收回。",
-      "en": "§eNight in {biome} is cold as a withdrawn invitation. §8The heat that was invited by day is taken back in full.",
+      "zh": "烈风卷起{biome}的沙尘，遮蔽了前路，却遮不住头顶那片冷漠的苍穹。",
+      "en": "Hot gusts whip the dust of {biome}, blinding the path ahead yet leaving the indifferent heavens bare above.",
       "weight": 4
     },
     {
@@ -932,8 +932,8 @@
       "aspects": [
         "biome:mountain"
       ],
-      "zh": "§7{biome} 把路折成不愿意直说的句子。§8折痕处，风会替你读出破绽。",
-      "en": "§7{biome} folds the road into a sentence that will not speak straight. §8At the crease, the wind reads your flaw aloud.",
+      "zh": "群山沉默地耸立了千万年，它们见过无数文明的兴衰，也终将见证深渊的降临。",
+      "en": "The mountains have stood in silence for aeons; they have watched empires crumble, and they shall witness the Abyss descend.",
       "weight": 4
     },
     {
@@ -941,8 +941,8 @@
       "aspects": [
         "biome:mountain"
       ],
-      "zh": "§8站在 {biome} 上，世界显得小。§7小不是安全。是猎物被放在盘子中间。",
-      "en": "§8From {biome} the world looks small. §7Small is not safe. It is a meal set in the middle of the plate.",
+      "zh": "在{biome}的险峻山脊上，一步踏空便是万劫不复的深渊。",
+      "en": "Along the jagged ridges of {biome}, a single misstep plunges into an unforgiving chasm.",
       "weight": 4
     },
     {
@@ -950,8 +950,8 @@
       "aspects": [
         "biome:mountain"
       ],
-      "zh": "§7石头在 {biome} 里排队下山。§8你只是插队的那一个，而且不会滚得比它们久。",
-      "en": "§7Stone queues downhill in {biome}. §8You are the one cutting the line, and you will not roll as long as they do.",
+      "zh": "云雾缠绕着{biome}的峰巅，隐藏着不为人知的洞窟与沉睡于岩层中的恐惧。",
+      "en": "Clouds wreath the peaks of {biome}, concealing nameless caverns and horrors slumbering within the rock.",
       "weight": 4
     },
     {
@@ -959,8 +959,8 @@
       "aspects": [
         "biome:swamp"
       ],
-      "zh": "§2{biome} 把倒影留得比本人久。§8本人走了，倒影还在跟灯芯草商量。",
-      "en": "§2{biome} keeps a reflection longer than the person. §8The person leaves. The reflection is still conferring with the reeds.",
+      "zh": "{biome}是疾病与腐朽的温床，连阳光落在这里也显得有气无力。",
+      "en": "{biome} is a cradle of blight and decay; even sunlight falls sickly and weak upon its pools.",
       "weight": 4
     },
     {
@@ -968,8 +968,8 @@
       "aspects": [
         "biome:swamp"
       ],
-      "zh": "§8雾是 {biome} 的礼貌。§7它先挡住你的脸，再问你还要不要这张脸。",
-      "en": "§8Fog is the courtesy of {biome}. §7It covers your face first, then asks whether you still want it.",
+      "zh": "脚下的淤泥发出黏腻的声响，仿佛有无数双苍白的手正试图将你拖入{biome}深处。",
+      "en": "Sucking mud clings to your boots, as though countless pale hands were straining to drag you beneath {biome}.",
       "weight": 4
     },
     {
@@ -977,8 +977,8 @@
       "aspects": [
         "biome:swamp"
       ],
-      "zh": "§2踩进 {biome}，水会记住你的温度。§7记住不是欢迎。是登记。",
-      "en": "§2Step into {biome} and the water remembers your heat. §7Remembering is not a welcome. It is a filing.",
+      "zh": "莫要轻视{biome}的寂静——沼泽从不张扬它的吞噬。",
+      "en": "Do not scorn the stillness of {biome}—a swamp never announces what it swallows.",
       "weight": 4
     },
     {
@@ -986,8 +986,8 @@
       "aspects": [
         "biome:hell"
       ],
-      "zh": "§c{biome} 不需要太阳。§4它自己会烧，而且不打烊。",
-      "en": "§c{biome} does not need a sun. §4It burns on its own, and it does not close.",
+      "zh": "{biome}的恶魔与猪灵只懂得暴虐与贪婪，他们甚至不配听闻外神的真名。",
+      "en": "The fiends of {biome} know only brutality and greed; they are unworthy even to hear the true names of the Outer Gods.",
       "weight": 4
     },
     {
@@ -995,8 +995,8 @@
       "aspects": [
         "biome:hell"
       ],
-      "zh": "§4在 {biome} 里找阴影是一种迷信。§8阴影早被征去当燃料了。",
-      "en": "§4Looking for shade in {biome} is a superstition. §8The shade was conscripted as fuel long ago.",
+      "zh": "浓烟遮蔽了{biome}的穹顶，仿佛这片火海正试图将自己与真正的宇宙隔绝开来。",
+      "en": "Thick smoke chokes the vault of {biome}, as though this sea of fire sought to seal itself off from the true cosmos.",
       "weight": 4
     },
     {
@@ -1004,8 +1004,8 @@
       "aspects": [
         "biome:hell"
       ],
-      "zh": "§c{biome} 的地面会呼吸。§7呼出来的不是气。是还没冷却的判决。",
-      "en": "§cThe ground of {biome} breathes. §7What it exhales is not air. It is a verdict that has not cooled.",
+      "zh": "纵然{biome}炽烈如斯，也无法融化深渊守门人眼中那万古不变的寒意。",
+      "en": "Fierce as {biome} may burn, it cannot thaw the ageless chill in the eyes of the Gatekeeper of the Abyss.",
       "weight": 4
     },
     {
@@ -1013,8 +1013,8 @@
       "aspects": [
         "biome:cold"
       ],
-      "zh": "§b{biome} 把声音冻住再掰开。§8掰开的声音很脆，而且不再属于你。",
-      "en": "§b{biome} freezes a sound and snaps it. §8The snapped sound is brittle, and it is no longer yours.",
+      "zh": "{biome}的寒风如刀，刮过这具借来的躯壳。记住，在群星之间，寒冷才是永恒的常态。",
+      "en": "The gale of {biome} cuts like a blade across this borrowed shell. Remember: among the stars, cold is the eternal rule.",
       "weight": 4
     },
     {
@@ -1022,8 +1022,8 @@
       "aspects": [
         "biome:cold"
       ],
-      "zh": "§7雪在 {biome} 上覆盖脚印，像在帮你隐瞒。§8隐瞒通常是为了稍后呈堂。",
-      "en": "§7Snow covers tracks in {biome} as if helping you hide. §8Hiding is usually preparation for a later exhibit.",
+      "zh": "{biome}的寂静最容易让人产生幻听——你听见风雪中夹杂着的阿克洛语低吟了吗？",
+      "en": "The silence of {biome} breeds phantom voices—do you hear the Aklo murmurs woven into the howling snow?",
       "weight": 4
     },
     {
@@ -1031,8 +1031,8 @@
       "aspects": [
         "biome:cold"
       ],
-      "zh": "§b{biome} 的白不是清白。§8是一种把颜色都辞退了的纪律。",
-      "en": "§bThe white of {biome} is not innocence. §8It is a discipline that dismissed every color.",
+      "zh": "万物在{biome}中蛰伏或枯萎，唯有深渊的凝视不受寒暑所限。",
+      "en": "All things hibernate or wither in {biome}; only the gaze of the Abyss knows neither frost nor thaw.",
       "weight": 4
     },
     {
@@ -1040,8 +1040,8 @@
       "aspects": [
         "biome:jungle"
       ],
-      "zh": "§2{biome} 太密，密到光要申请过路。§7申请常常被叶子驳回。",
-      "en": "§2{biome} is so dense that light must apply for passage. §7The leaves often reject the application.",
+      "zh": "{biome}看似生机勃勃，实则是一座弱肉强食、毫无怜悯的绿色囚笼。",
+      "en": "{biome} appears bursting with life, yet it is a merciless green prison where flesh devours flesh.",
       "weight": 4
     },
     {
@@ -1049,8 +1049,8 @@
       "aspects": [
         "biome:jungle"
       ],
-      "zh": "§a潮湿在 {biome} 里是一种货币。§8你的衣服已经在花，还没问过你。",
-      "en": "§aDamp is a currency in {biome}. §8Your clothes are already spending it, and they did not ask you.",
+      "zh": "苔藓爬满了{biome}的巨石，将不知多少纪元前的石刻悄悄吞没。",
+      "en": "Moss creeps over the monoliths of {biome}, swallowing carvings left behind countless ages ago.",
       "weight": 4
     },
     {
@@ -1058,8 +1058,8 @@
       "aspects": [
         "biome:jungle"
       ],
-      "zh": "§2别相信 {biome} 里的安静。§7安静只是藤蔓把下一句话勒住了。",
-      "en": "§2Do not trust the quiet in {biome}. §7Quiet only means the vines have choked the next sentence.",
+      "zh": "在{biome}那令人窒息的闷热里，连理智都会随着汗水一同蒸发。",
+      "en": "In the suffocating heat of {biome}, even sanity evaporates alongside your sweat.",
       "weight": 4
     },
     {
@@ -1067,8 +1067,8 @@
       "aspects": [
         "biome:mesa"
       ],
-      "zh": "§6{biome} 把地层摊开给你看，像一本不许合上的账。§8账上没有雨的签名。",
-      "en": "§6{biome} lays its strata open like a ledger that must not be closed. §8Rain never signed it.",
+      "zh": "{biome}的色彩浓烈而荒诞，仿佛某位狂乱的画师用干涸的血液涂抹而成。",
+      "en": "The hues of {biome} are fierce and unnatural, as if smeared across the earth with dried blood by a mad painter.",
       "weight": 4
     },
     {
@@ -1076,8 +1076,8 @@
       "aspects": [
         "biome:mesa"
       ],
-      "zh": "§e台阶一层一层红下去。§6{biome} 在教你：下降也可以很干燥。",
-      "en": "§eThe steps go red, layer by layer. §6{biome} is teaching you that descent can be very dry.",
+      "zh": "寂静盘踞在{biome}的峡谷之间，连风声都带着几分干涸的沙哑。",
+      "en": "Silence broods among the canyons of {biome}, and even the wind carries a parched, rasping edge.",
       "weight": 4
     },
     {
@@ -1085,8 +1085,8 @@
       "aspects": [
         "biome:mesa"
       ],
-      "zh": "§6风在 {biome} 的岩层间找缝。§7找到了也不停留。停留是湿的习惯。",
-      "en": "§6Wind looks for cracks between the layers of {biome}. §7When it finds one, it does not stay. Staying is a wet habit.",
+      "zh": "高耸的岩壁俯瞰着你，正如奥穆索的残垣俯瞰着迷途的朝圣者。",
+      "en": "Towering cliffs look down upon you, much as the ruins of Omothol watch a lost pilgrim.",
       "weight": 4
     },
     {
@@ -1094,8 +1094,8 @@
       "aspects": [
         "biome:plains"
       ],
-      "zh": "§a{biome} 把一切都放在视线里。§7视线不是保护。是一种无处递交的暴露。",
-      "en": "§a{biome} puts everything in sight. §7Sight is not protection. It is an exposure with nowhere to be filed.",
+      "zh": "凡人喜爱在{biome}建立城邦与农田，却从不思考这片平地之下究竟掩埋过多少个纪元。",
+      "en": "Mortals love to raise towns and fields upon {biome}, never asking how many ages lie buried beneath the turf.",
       "weight": 4
     },
     {
@@ -1103,8 +1103,8 @@
       "aspects": [
         "biome:plains"
       ],
-      "zh": "§7风从 {biome} 这头吹到那头，中间不换气。§8你的名字会被一路带着走。",
-      "en": "§7Wind crosses {biome} without changing its breath. §8Your name gets carried the whole way.",
+      "zh": "{biome}的天空显得格外低垂，仿佛随时会倾覆下来，将所有生灵压成尘埃。",
+      "en": "The sky hangs unusually low over {biome}, as if poised to collapse and crush all living things to dust.",
       "weight": 4
     },
     {
@@ -1112,8 +1112,8 @@
       "aspects": [
         "biome:plains"
       ],
-      "zh": "§a在 {biome} 上跑，影子拉得很长。§8长影子好认。好认的东西先被选中。",
-      "en": "§aRun on {biome} and the shadow grows long. §8A long shadow is easy to recognize. Recognizable things are chosen first.",
+      "zh": "草叶摩挲的低响在{biome}回荡，像是一群看不见的信徒正在齐声诵念。",
+      "en": "The whisper of brushing grass echoes across {biome}, like an unseen congregation chanting in unison.",
       "weight": 4
     },
     {
@@ -1121,8 +1121,8 @@
       "aspects": [
         "biome:plains"
       ],
-      "zh": "§8{biome} 没有墙可以靠。§7靠墙是一种还没学会站在空处的习惯。",
-      "en": "§8{biome} has no wall to lean on. §7Leaning is a habit that has not learned to stand in the open.",
+      "zh": "你独行在{biome}之上，远方的地平线看似触手可及，实则永远遥不可及。",
+      "en": "You wander across {biome}; the distant horizon seems within reach, yet forever slips away.",
       "weight": 4
     },
     {
@@ -1130,8 +1130,8 @@
       "aspects": [
         "biome:plains"
       ],
-      "zh": "§2草在 {biome} 里低头。§7不是谦虚。是在听地底下有没有人点名。",
-      "en": "§2The grass bows in {biome}. §7Not from modesty. It is listening for a roll call under the ground.",
+      "zh": "这片平静的{biome}不过是一块尚未被珊瑚或恐惧染指的画布罢了。",
+      "en": "This quiet {biome} is merely a blank canvas not yet claimed by Coralium or Dread.",
       "weight": 4
     },
     {
@@ -1139,8 +1139,8 @@
       "aspects": [
         "biome:river"
       ],
-      "zh": "§9{biome} 不肯决定自己是路还是边界。§8不肯决定的水，最会把东西送走。",
-      "en": "§9{biome} will not decide whether it is a road or a border. §8Undecided water is the best at sending things away.",
+      "zh": "流水带走了落叶与尘埃，却带不走沉溺在{biome}水底的冰冷记忆。",
+      "en": "The river carries away fallen leaves and dust, yet cannot sweep away the cold memories drowned in {biome}.",
       "weight": 4
     },
     {
@@ -1148,8 +1148,8 @@
       "aspects": [
         "biome:river"
       ],
-      "zh": "§b沿着 {biome} 走，你会以为自己在前进。§7水在旁边用另一种速度否定你。",
-      "en": "§bWalk along {biome} and you will think you are advancing. §7The water beside you denies it at another speed.",
+      "zh": "{biome}的水声掩盖了岸边草丛里的动静。小心你的身后，凡人。",
+      "en": "The rush of {biome} masks every rustle in the bankside reeds. Mind what stands behind you, mortal.",
       "weight": 4
     },
     {
@@ -1157,8 +1157,8 @@
       "aspects": [
         "biome:river"
       ],
-      "zh": "§9{biome} 的弯是一种推迟。§8推迟入海，也推迟把你的倒影交出去。",
-      "en": "§9The bend of {biome} is a postponement. §8It postpones the sea, and postpones handing over your reflection.",
+      "zh": "即便是最清澈的{biome}，在珊瑚瘟疫降临之时，也会在一夜之间化作剧毒的蓝潮。",
+      "en": "Even the clearest {biome}, should the Coralium Plague strike, turns overnight into a venomous blue tide.",
       "weight": 4
     },
     {
@@ -1166,8 +1166,8 @@
       "aspects": [
         "biome:beach"
       ],
-      "zh": "§e{biome} 是海还没签字、陆已经松手的那一掌宽。§8你站在别人的让步上。",
-      "en": "§e{biome} is a palm's width where the sea has not signed and the land has already let go. §8You are standing on someone else's concession.",
+      "zh": "{biome}的潮声低沉而规律，宛如沉睡在海底古都中的存在正缓缓呼吸。",
+      "en": "The surf of {biome} booms low and rhythmic, like the slow breathing of something asleep in a sunken city.",
       "weight": 4
     },
     {
@@ -1175,8 +1175,8 @@
       "aspects": [
         "biome:beach"
       ],
-      "zh": "§6潮来的时候，{biome} 会短一截。§7短的那截里，往往有你刚放下的东西。",
-      "en": "§6When the tide comes, {biome} grows shorter. §7In the missing length there is often something you just set down.",
+      "zh": "沙粒在你的脚下流散。在这片{biome}上，没有任何足迹能留存到下一个涨潮。",
+      "en": "Sand shifts beneath your heels. Along {biome}, no footprint endures until the next high tide.",
       "weight": 4
     },
     {
@@ -1184,8 +1184,8 @@
       "aspects": [
         "biome:beach"
       ],
-      "zh": "§e贝壳在 {biome} 上张开，像一句没人要的证词。§8盐会替它保存，直到没人想听。",
-      "en": "§eShells lie open on {biome} like testimony nobody asked for. §8Salt will keep it until nobody wants to hear.",
+      "zh": "海风从{biome}掠过，带来远方深海的咸腥与某种古老而冰冷的叹息。",
+      "en": "Sea winds sweep across {biome}, bearing the brine of distant depths and a chill, ancient sigh.",
       "weight": 4
     },
     {
@@ -1193,8 +1193,8 @@
       "aspects": [
         "biome:mushroom"
       ],
-      "zh": "§d{biome} 安静得反常。§7反常通常是一种已经完成的驱逐。",
-      "en": "§d{biome} is quiet in the wrong way. §7The wrong kind of quiet is usually an eviction already finished.",
+      "zh": "你踩在{biome}松软的菌丝上，可曾想过整座岛屿或许本就是一个巨大的活体？",
+      "en": "Treading the spongy mycelium of {biome}, have you considered that the entire island may be a single living organism?",
       "weight": 4
     },
     {
@@ -1202,8 +1202,8 @@
       "aspects": [
         "biome:mushroom"
       ],
-      "zh": "§5菌盖把 {biome} 的天压低。§8压低的天，星不方便观看，门却方便低语。",
-      "en": "§5The caps press the sky of {biome} down. §8A low sky is inconvenient for stars and convenient for a gate's whisper.",
+      "zh": "{biome}的色彩灰紫而阴郁，恰似腐朽的梦境在现实中留下的斑驳印记。",
+      "en": "The hues of {biome} are bruised violet and ash, like mottled stains left behind by a decaying dream.",
       "weight": 4
     },
     {
@@ -1211,8 +1211,8 @@
       "aspects": [
         "biome:mushroom"
       ],
-      "zh": "§d别在 {biome} 里大声吃东西。§7这里的居民靠孢子吃饭，也靠声音辨认外来的嘴。",
-      "en": "§dDo not eat loudly in {biome}. §7The locals feed on spores, and they identify foreign mouths by sound.",
+      "zh": "纵使没有杀戮的喧嚣，{biome}的寂静本身也足以让孤独的灵魂悄然发狂。",
+      "en": "Even free of slaughter, the hush of {biome} alone is enough to drive a solitary mind quietly mad.",
       "weight": 4
     },
     {
@@ -1220,8 +1220,8 @@
       "aspects": [
         "biome:void"
       ],
-      "zh": "§8{biome} 把脚下的承诺撤走了。§7没有地的地方，坠落是一种语法，不是意外。",
-      "en": "§8{biome} has withdrawn the promise under your feet. §7Where there is no ground, falling is grammar, not an accident.",
+      "zh": "你悬停在{biome}的边缘，听不见任何回响。因为虚空从不回答凡人的呼喊。",
+      "en": "You linger at the edge of {biome} and hear no echo; for the Void never answers a mortal cry.",
       "weight": 4
     },
     {
@@ -1229,8 +1229,8 @@
       "aspects": [
         "biome:void"
       ],
-      "zh": "§7你在 {biome} 里找不到地平线。§8找不到的东西，就不欠你一个尽头。",
-      "en": "§7You will not find a horizon in {biome}. §8What cannot be found owes you no ending.",
+      "zh": "此处是{biome}，连时间本身也已在此冻结或消散。",
+      "en": "This is {biome}, where time itself has either frozen or dissolved.",
       "weight": 4
     },
     {
@@ -1238,8 +1238,8 @@
       "aspects": [
         "biome:void"
       ],
-      "zh": "§8{biome} 不长草，不落雨，不收留回声。§5回声若要活，得自己带一扇门来。",
-      "en": "§8{biome} grows no grass, takes no rain, shelters no echo. §5If an echo wants to live, it must bring its own gate.",
+      "zh": "若非这具傀儡尚且维系着你的轮廓，你在{biome}中早已化作一缕无名尘埃。",
+      "en": "Were it not for this simulacrum still holding your outline, you would already have dissolved to nameless dust in {biome}.",
       "weight": 4
     },
     {
@@ -1247,8 +1247,8 @@
       "aspects": [
         "biome:end"
       ],
-      "zh": "§5{biome} 的黄是一种过期的光。§8过期以后，它仍然照得见你，只是不再温暖。",
-      "en": "§5The yellow of {biome} is an expired light. §8After expiry it can still see you. It is simply no longer warm.",
+      "zh": "站在{biome}的边缘，只需向前迈出一步，便是连旧日支配者也懒得俯视的虚无。",
+      "en": "At the rim of {biome}, a single step forward leads into a nothingness even the Great Old Ones scarcely care to inspect.",
       "weight": 4
     },
     {
@@ -1256,8 +1256,8 @@
       "aspects": [
         "biome:end"
       ],
-      "zh": "§d站在 {biome} 上，星星显得很近。§7近不是亲切。是它们懒得再退开。",
-      "en": "§dOn {biome} the stars look near. §7Near is not fondness. They are tired of stepping back.",
+      "zh": "{biome}的紫颂与黑曜石见证了界域的破碎，恰如现实在犹格·索托斯面前崩溃的缩影。",
+      "en": "The chorus and obsidian of {biome} bear witness to a shattered realm—a miniature of reality collapsing before Yog-Sothoth.",
       "weight": 4
     },
     {
@@ -1265,8 +1265,8 @@
       "aspects": [
         "biome:end"
       ],
-      "zh": "§5{biome} 没有鸟。§8没有鸟的天空，沉默是原装的，不是被吓出来的。",
-      "en": "§5{biome} has no birds. §8A sky without birds comes silent from the factory. It was not frightened into it.",
+      "zh": "这片{biome}虽非奥穆索，却同样散发着末日降临后的冰冷死气。",
+      "en": "Though {biome} is not Omothol, it exhales the same cold, dead stillness of an ended world.",
       "weight": 4
     },
     {
@@ -1274,8 +1274,8 @@
       "aspects": [
         "biome:abyssal"
       ],
-      "zh": "§3{biome} 的风有盐，也有票根。§8珊瑚在这里不用竞选。它已经是气候。",
-      "en": "§3The wind of {biome} has salt in it, and ticket stubs. §8Coralium does not campaign here. It is already the climate.",
+      "zh": "{biome}的空气里弥漫着珊瑚瘟疫的腥甜。若没有防护，连你的骨髓也会化作苍蓝的结晶。",
+      "en": "The air of {biome} reeks of the sweet rot of the Coralium Plague. Unshielded, even your marrow would crystallize in sickly blue.",
       "weight": 4
     },
     {
@@ -1283,8 +1283,8 @@
       "aspects": [
         "biome:abyssal"
       ],
-      "zh": "§8在 {biome} 里，地平线是湿的。§3湿的边界最容易被改写，而且不通知原主人。",
-      "en": "§8In {biome} the horizon is wet. §3A wet border is easy to rewrite, and the former owner is not notified.",
+      "zh": "在{biome}，连死灵之书的书页都会微微发烫，仿佛在向这片沦陷之地致意。",
+      "en": "In {biome}, even the pages of the Necronomicon grow warm, as if saluting a fallen realm.",
       "weight": 4
     },
     {
@@ -1292,8 +1292,8 @@
       "aspects": [
         "biome:abyssal"
       ],
-      "zh": "§3别把 {biome} 当成废墟。§7废墟是结束后的样子。这里还在起草。",
-      "en": "§3Do not treat {biome} as a ruin. §7A ruin is what a place looks like after the end. This place is still drafting.",
+      "zh": "Iä! {biome}不过是深渊向现世伸出的第一道触须，真正的噩梦尚在更深处沉睡。",
+      "en": "Iä! {biome} is merely the first tendril the Abyss extends into the waking world; the true nightmare slumbers deeper still.",
       "weight": 4
     },
     {
@@ -1301,8 +1301,8 @@
       "aspects": [
         "biome:dread"
       ],
-      "zh": "§4{biome} 的土是干的，干得像一句咳完的话。§8话还在，水已经不认它。",
-      "en": "§4The soil of {biome} is dry, dry as a sentence after the cough. §8The sentence remains. The water has disowned it.",
+      "zh": "在{biome}中呼吸的每一口空气，都可能将恐惧的种子埋入你的肺腑。",
+      "en": "Every breath drawn in {biome} risks planting the seed of Dread deep within your lungs.",
       "weight": 4
     },
     {
@@ -1310,8 +1310,8 @@
       "aspects": [
         "biome:dread"
       ],
-      "zh": "§8瘟疫在 {biome} 里不必追人。§4人会自己走进症状里，还以为那是路。",
-      "en": "§8The plague in {biome} does not have to chase. §4People walk into the symptom and think it is a road.",
+      "zh": "红雾与焦土构成了{biome}的轮廓。莫要在此久留，除非你渴望沦为恐惧守卫的同类。",
+      "en": "Crimson mist and blighted earth define {biome}. Do not tarry here, unless you yearn to join the ranks of the Dreadguards.",
       "weight": 4
     },
     {
@@ -1319,8 +1319,8 @@
       "aspects": [
         "biome:dread"
       ],
-      "zh": "§4{biome} 的树如果还站着，不是因为活。§7是因为倒下去需要一种这里已经没有的许可。",
-      "en": "§4If a tree still stands in {biome}, it is not because it lives. §7Falling would require a permission this place no longer issues.",
+      "zh": "Iä! {biome}的惨状正是深渊赐予贪婪者的礼物——越是渴望力量，便越是面目全非。",
+      "en": "Iä! The horror of {biome} is the Abyss's gift to the greedy—the more power they crave, the less human they remain.",
       "weight": 4
     },
     {
@@ -1328,8 +1328,8 @@
       "aspects": [
         "biome:omothol"
       ],
-      "zh": "§5{biome} 的尘会自己排成算式。§8你踩乱一次，它就重算，并把你算进余数。",
-      "en": "§5The dust of {biome} arranges itself into sums. §8Disturb it once and it recalculates, with you in the remainder.",
+      "zh": "{biome}的空气里流动着纯粹的恐惧与位能。这具空心傀儡终于回到了它的源头。",
+      "en": "Pure dread and Potential Energy drift through the air of {biome}. This hollow puppet has returned at last to its source.",
       "weight": 4
     },
     {
@@ -1337,8 +1337,8 @@
       "aspects": [
         "biome:omothol"
       ],
-      "zh": "§7锁在 {biome} 里不是家具。§5是一种还在呼吸的标点。",
-      "en": "§7A lock in {biome} is not furniture. §5It is a punctuation mark that is still breathing.",
+      "zh": "看看{biome}的神庙与断壁吧。即便你曾击碎过我的幻影，你也永远无法杀死真正的扎哈尔。",
+      "en": "Behold the temples and broken walls of {biome}. Though you may have shattered my simulacrum, you can never slay the true J'zahar.",
       "weight": 4
     },
     {
@@ -1346,8 +1346,8 @@
       "aspects": [
         "biome:omothol"
       ],
-      "zh": "§8{biome} 不欢迎观光。§5观光是一种把神圣当成风景的无礼，风景会记仇。",
-      "en": "§8{biome} does not welcome sightseeing. §5Sightseeing is the rudeness of treating the sacred as a view. Views keep grudges.",
+      "zh": "Iä! {biome}的钟声早已停摆，唯有深渊的凝视依然笼罩着这片失落之境。",
+      "en": "Iä! The bells of {biome} fell silent long ago; only the Abyssal gaze still broods over this lost domain.",
       "weight": 4
     },
     {
@@ -1355,8 +1355,8 @@
       "aspects": [
         "biome:dark_realm"
       ],
-      "zh": "§8{biome} 把光退回到一个理论。§5理论照不见路，可它知道你在。",
-      "en": "§8{biome} has retired light to a theory. §5The theory cannot light a path, but it knows you are here.",
+      "zh": "在{biome}的黑暗里，连你身上的这具傀儡也不过是更大阴影中的一粒微尘。",
+      "en": "Within the darkness of {biome}, even this simulacrum you wear is scarcely a mote inside a greater shadow.",
       "weight": 4
     },
     {
@@ -1364,8 +1364,8 @@
       "aspects": [
         "biome:dark_realm"
       ],
-      "zh": "§5在 {biome} 里，影子比人先到。§8先到的那个，通常已经替你答应了什么。",
-      "en": "§5In {biome} the shadow arrives before the person. §8The one who arrives first has usually agreed to something in your name.",
+      "zh": "此处便是{biome}。你若在此陨落，连一丝残魂都不会被放回主世界。",
+      "en": "This is {biome}. Should you perish here, not a shred of your soul will ever be yielded back to the Overworld.",
       "weight": 4
     },
     {
@@ -1373,8 +1373,8 @@
       "aspects": [
         "biome:dark_realm"
       ],
-      "zh": "§8{biome} 没有远方。§7远方需要光来证明。这里只证明近处，而且近处已经太多。",
-      "en": "§8{biome} has no distance. §7Distance needs light as evidence. This place only proves nearness, and nearness is already too much.",
+      "zh": "Nilgh'ri... {biome}的每一阵阴风都在呼唤着黑暗之主的真名。",
+      "en": "Nilgh'ri... Every bleak gust in {biome} whispers the true names of the lords of darkness.",
       "weight": 4
     },
     {
@@ -1382,8 +1382,8 @@
       "aspects": [
         "biome:darklands"
       ],
-      "zh": "§3{biome} 长在不该长的纬度上。§8纬度没有投票，珊瑚替它投了。",
-      "en": "§3{biome} grows at a latitude where it should not. §8The latitude did not vote. Coralium voted for it.",
+      "zh": "小心{biome}中游荡的暗影潜行者与深渊生物。在这片土地上，连光明都显得格格不入。",
+      "en": "Beware the shadow beasts prowling {biome}. Upon this soil, even daylight seems an intruder.",
       "weight": 4
     },
     {
@@ -1391,8 +1391,8 @@
       "aspects": [
         "biome:darklands"
       ],
-      "zh": "§8走进 {biome}，鸟会先改口。§7改口以后的叫声，不再向主世界报到。",
-      "en": "§8Step into {biome} and the birds change their call first. §7After the change, the call no longer reports to the overworld.",
+      "zh": "{biome}是禁忌仪式的理想之地，这里的每一块石头都渴望着位能的灌注。",
+      "en": "{biome} is fertile ground for forbidden rites; every stone here thirsts for the pouring of Potential Energy.",
       "weight": 4
     },
     {
@@ -1400,8 +1400,8 @@
       "aspects": [
         "biome:darklands"
       ],
-      "zh": "§2树还是树的形状。§3{biome} 只换了树的效忠。效忠这种事，叶子不会告诉你。",
-      "en": "§2The trees still have the shape of trees. §3{biome} only changed their allegiance. Leaves do not announce allegiance.",
+      "zh": "你站在{biome}之上，是否感觉到脚底正传来与奥穆索同频的震颤？",
+      "en": "Standing upon {biome}, do you feel the tremor beneath your soles beating in unison with Omothol?",
       "weight": 4
     },
     {
@@ -1409,8 +1409,8 @@
       "aspects": [
         "dim:overworld"
       ],
-      "zh": "§a{dimension} 还相信白天会回来。§8这种相信很土，也很贵。贵在它还没破产。",
-      "en": "§a{dimension} still believes the day will return. §8The belief is provincial, and expensive. The expense is that it has not yet gone bankrupt.",
+      "zh": "你带着从奥穆索借来的形貌回到{dimension}，难道是想让这些凡人提前瞻仰他们的终局？",
+      "en": "You return to {dimension} wearing a likeness borrowed from Omothol—do you mean to grant these mortals an early glimpse of their end?",
       "weight": 4
     },
     {
@@ -1418,8 +1418,8 @@
       "aspects": [
         "dim:overworld"
       ],
-      "zh": "§7你在 {dimension} 里走路，像在一封还没寄出的信上踩脚印。§8收信人未必是我。",
-      "en": "§7You walk in {dimension} as if leaving prints on a letter not yet sent. §8The addressee is not necessarily me.",
+      "zh": "珍惜{dimension}尚且完整的模样吧。当群星归位之时，连山海也会在瞬间改写。",
+      "en": "Cherish {dimension} while it remains whole. When the stars are right, mountain and sea alike shall be rewritten in an instant.",
       "weight": 4
     },
     {
@@ -1427,8 +1427,8 @@
       "aspects": [
         "dim:nether"
       ],
-      "zh": "§c{dimension} 没有夜晚可以躲。§4躲需要一种这里不出售的黑暗：凉的那种。",
-      "en": "§c{dimension} has no night to hide in. §4Hiding needs a darkness this place does not sell: the cool kind.",
+      "zh": "{dimension}是凡人认知中最古老的地狱，却远远算不上深渊的终点。",
+      "en": "{dimension} is the oldest hell known to mortals, yet it lies nowhere near the true bottom of the Abyss.",
       "weight": 4
     },
     {
@@ -1436,8 +1436,8 @@
       "aspects": [
         "dim:nether"
       ],
-      "zh": "§4{dimension} 的天花板在滴火。§8滴下来的不是天气。是一种不肯写成雨的惩罚。",
-      "en": "§4The ceiling of {dimension} drips fire. §8What falls is not weather. It is a punishment that refuses to be written as rain.",
+      "zh": "哪怕在{dimension}的烈焰中心，黑暗国度的阴影依然能找到栖身之所。",
+      "en": "Even at the fiery heart of {dimension}, the shadow of the Dark Realm still finds room to linger.",
       "weight": 4
     },
     {
@@ -1445,8 +1445,8 @@
       "aspects": [
         "dim:end"
       ],
-      "zh": "§5{dimension} 把岛屿丢在虚空里，像丢弃写坏的草稿。§8草稿上还有人在走。",
-      "en": "§5{dimension} drops its islands into the void like spoiled drafts. §8Someone is still walking on the draft.",
+      "zh": "你在{dimension}徘徊，恰似一个迷失在星辰坟场中的幽灵。",
+      "en": "You wander {dimension} like a ghost lost within a graveyard of stars.",
       "weight": 4
     },
     {
@@ -1454,8 +1454,8 @@
       "aspects": [
         "dim:end"
       ],
-      "zh": "§d在 {dimension} 里，紫颂果的声音像远方的门铰。§7铰链响了，门不一定在你这边。",
-      "en": "§dIn {dimension} the chorus fruit sounds like a hinge far away. §7The hinge can creak without the door being on your side.",
+      "zh": "即便征服了{dimension}的巨龙，在真正的旧日支配者眼中，你也不过是折断了一根微不足道的骨刺。",
+      "en": "Even should you slay the dragon of {dimension}, in the eyes of a Great Old One you have snapped no more than a trivial spur.",
       "weight": 4
     },
     {
@@ -1463,8 +1463,8 @@
       "aspects": [
         "dim:abyssal_wasteland"
       ],
-      "zh": "§3{dimension} 的潮不退向海。§8它退向一种更老的盐，盐里有我的旧地址。",
-      "en": "§3The tide of {dimension} does not withdraw toward a sea. §8It withdraws toward an older salt, and the salt has my old address.",
+      "zh": "小心{dimension}中的每一滴蓝色液体。珊瑚不会怜悯任何试图掠夺它力量的凡人。",
+      "en": "Beware every drop of blue liquid in {dimension}. Coralium shows no mercy to mortals who seek to plunder its power.",
       "weight": 4
     },
     {
@@ -1472,8 +1472,8 @@
       "aspects": [
         "dim:abyssal_wasteland"
       ],
-      "zh": "§8你踩着 {dimension}，像踩着一封已读的威胁。§3已读不代表过期。",
-      "en": "§8You walk on {dimension} as on a threat already read. §3Read does not mean expired.",
+      "zh": "你携着我的形貌行走在{dimension}，仿佛一位旧日君王正在巡视自己早已腐烂的边疆。",
+      "en": "Walking {dimension} in my likeness, you resemble an ancient sovereign inspecting a frontier long since rotted away.",
       "weight": 4
     },
     {
@@ -1481,8 +1481,8 @@
       "aspects": [
         "dim:dreadlands"
       ],
-      "zh": "§4{dimension} 把健康定义成暂时没被登记。§8登记处从不下班。",
-      "en": "§4{dimension} defines health as not yet being registered. §8The registry never closes.",
+      "zh": "记住我在阿索拉陨落时说过的话：你们终究要为自己的傲慢付出代价，而{dimension}正是第一道刑场。",
+      "en": "Remember what was spoken at Asorah's fall: you mortals shall pay for your arrogance, and {dimension} is the first scaffold.",
       "weight": 4
     },
     {
@@ -1490,8 +1490,8 @@
       "aspects": [
         "dim:dreadlands"
       ],
-      "zh": "§8风在 {dimension} 里是干的，干得能把一句祷告磨成粉末。§4粉末仍然会传染。",
-      "en": "§8The wind in {dimension} is dry enough to grind a prayer to powder. §4The powder is still contagious.",
+      "zh": "在这血红的{dimension}中，唯有力量与疯狂能让你活过下一个呼吸。",
+      "en": "Within blood-red {dimension}, only strength and madness will carry you past the next breath.",
       "weight": 4
     },
     {
@@ -1499,8 +1499,8 @@
       "aspects": [
         "dim:omothol"
       ],
-      "zh": "§5{dimension} 的走廊比记忆长。§8长出来的那一截，通常是为了让你迷路到愿意交钥匙。",
-      "en": "§5The corridors of {dimension} are longer than memory. §8The extra length is usually there to lose you until you offer a key.",
+      "zh": "{dimension}的遗民们正在注视着你。只要他们还认得死灵之书的气息，便会向你低头或拔刀。",
+      "en": "The Remnants of {dimension} are watching you. So long as they scent the Necronomicon, they will bow—or draw steel.",
       "weight": 4
     },
     {
@@ -1508,8 +1508,8 @@
       "aspects": [
         "dim:omothol"
       ],
-      "zh": "§7在 {dimension} 里不要数门。§5数到的数目会变成你欠下的数目。",
-      "en": "§7Do not count doors in {dimension}. §5The number you reach becomes the number you owe.",
+      "zh": "Iä! {dimension}的钟声为你而鸣，傀儡。去面对你亲手招致的宿命吧。",
+      "en": "Iä! The bells of {dimension} toll for you, puppet. Go face the doom you summoned with your own hands.",
       "weight": 4
     },
     {
@@ -1517,8 +1517,8 @@
       "aspects": [
         "dim:dark_realm"
       ],
-      "zh": "§8{dimension} 是光同意缺席之后的座位。§5座位没有空着。缺席本身坐在那里。",
-      "en": "§8{dimension} is the seat light agreed to leave empty. §5The seat is not empty. Absence itself is sitting in it.",
+      "zh": "Iä! {dimension}没有尽头，亦无归途。唯有最强韧的疯子，才能在此地保全一丝清醒。",
+      "en": "Iä! {dimension} has neither end nor return. Only the most hardened madman keeps a shred of clarity here.",
       "weight": 4
     },
     {
@@ -1526,8 +1526,8 @@
       "aspects": [
         "dim:dark_realm"
       ],
-      "zh": "§5你在 {dimension} 里举起火把，像举起一条过期的法律。§8法律还亮，管辖权已经不在。",
-      "en": "§5You raise a torch in {dimension} like an expired law. §8The law still shines. The jurisdiction is gone.",
+      "zh": "暗影生物在{dimension}中如潮水般涌动，它们只听从最古老的黑暗法则。",
+      "en": "Shadow creatures surge like a tide through {dimension}, obeying naught but the oldest laws of darkness.",
       "weight": 4
     },
     {
@@ -1535,8 +1535,8 @@
       "aspects": [
         "dim:other"
       ],
-      "zh": "§7{dimension} 不在我常用的地图上。§8不在地图上的地方，往往是有人私自加的一页。",
-      "en": "§7{dimension} is not on the maps I keep at hand. §8A place off the map is often a page someone added without leave.",
+      "zh": "哪怕远离了奥穆索，这具傀儡体内的位能依然能让你在{dimension}听见我的声音。",
+      "en": "Far though you may be from Omothol, the Potential Energy within this vessel still lets you hear my voice in {dimension}.",
       "weight": 4
     },
     {
@@ -1544,8 +1544,8 @@
       "aspects": [
         "dim:other"
       ],
-      "zh": "§8我认得很多界。§7{dimension} 如果想被认得，就该先学会怎么敲门，而不是怎么把人扔进来。",
-      "en": "§8I know many realms. §7If {dimension} wants to be known, it should learn how to knock, not how to drop people in.",
+      "zh": "莫要以为换了一片天地，便能摆脱{dimension}之外那道永恒的凝望。",
+      "en": "Do not imagine that changing skies frees you from the eternal gaze watching beyond {dimension}.",
       "weight": 4
     }
   ]

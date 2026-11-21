@@ -5,8 +5,8 @@
       "aspects": [
         "block:air"
       ],
-      "zh": "§7你盯着空处。§8空处不是没有东西，是东西还没同意被看见。",
-      "en": "§7You stare into empty air. §8Empty air is not the absence of a thing. It is a thing that has not agreed to be seen.",
+      "zh": "你的视线尽头空无一物，唯有虚空与气流在无声地流动。",
+      "en": "Nothing meets your gaze—only empty space and drifting air flowing without sound.",
       "weight": 4
     },
     {
@@ -14,8 +14,8 @@
       "aspects": [
         "block:air"
       ],
-      "zh": "§8视线尽头没有方块。§5很好。门最喜欢没有门槛的方向。",
-      "en": "§8There is no block at the end of your sight. §5Good. A gate prefers a direction with no threshold.",
+      "zh": "你凝望着虚空。然而没有实体阻挡视线，并不意味着这片空间里真正空无一物。",
+      "en": "You stare into empty air. Yet the absence of solid matter does not mean nothing lingers within that space.",
       "weight": 4
     },
     {
@@ -23,8 +23,8 @@
       "aspects": [
         "block:air"
       ],
-      "zh": "§7天空、洞穴、或仅仅是一段还没被石头占领的距离。§8别把空气当成安全。",
-      "en": "§7Sky, a cave, or merely a distance stone has not yet occupied. §8Do not mistake air for safety.",
+      "zh": "苍穹、洞穴，抑或仅仅是一段尚未被星辰填满的距离——门扉往往就开启在这般空无之中。",
+      "en": "Sky, cavern, or merely a span the stars have not yet filled—the Gate most often parts in just such emptiness.",
       "weight": 4
     },
     {
@@ -32,8 +32,8 @@
       "aspects": [
         "block:air"
       ],
-      "zh": "§8你看向虚无。§7虚无看回来的时候，通常不眨眼。",
-      "en": "§8You look into nothing. §7When nothing looks back, it usually does not blink.",
+      "zh": "凡人看不见空气中的低语，正如盲人看不见悬浮在头顶的触须。",
+      "en": "Mortals cannot see the whispers drifting through the air, any more than the blind see tentacles coiling overhead.",
       "weight": 4
     },
     {
@@ -41,8 +41,8 @@
       "aspects": [
         "block:air"
       ],
-      "zh": "§5准星悬在空里。§7像一根还没决定插进哪本书的书签。",
-      "en": "§5The crosshair hangs in the air. §7Like a bookmark that has not chosen its book.",
+      "zh": "空旷之处最适合聆听深渊的回响。闭上眼，你便能感知到这片虚无的重量。",
+      "en": "Open emptiness is the clearest chamber for the echoes of the Abyss. Close your eyes, and feel the weight of this void.",
       "weight": 4
     },
     {
@@ -50,8 +50,8 @@
       "aspects": [
         "block:any"
       ],
-      "zh": "§7你看着 {block}。§8一块方块也有履历。你只是还不会读。",
-      "en": "§7You are looking at {block}. §8Even a block has a history. You simply cannot read it yet.",
+      "zh": "你的目光落在了{block}之上。即便是最平凡的造物，在深渊眼中也不过是暂存的尘埃。",
+      "en": "Your gaze rests upon {block}. Even the most ordinary construct is, to the Abyss, merely dust held on loan.",
       "weight": 4
     },
     {
@@ -59,8 +59,8 @@
       "aspects": [
         "block:any"
       ],
-      "zh": "§8{block} 挡在视线里。§7挡，是一种很低级的拒绝。",
-      "en": "§8{block} stands in the line of sight. §7Standing in the way is a very junior form of refusal.",
+      "zh": "区区一方{block}，竟也值得你驻足凝视么？凡人的注意力总是如此容易被琐碎之物牵引。",
+      "en": "Does a mere {block} merit such scrutiny? How easily mortal attention is snared by trivial things.",
       "weight": 4
     },
     {
@@ -68,8 +68,8 @@
       "aspects": [
         "block:any"
       ],
-      "zh": "§7世界用 {block} 跟你说话。§8它的词汇贫乏，意思却往往不客气。",
-      "en": "§7The world speaks to you in {block}. §8Its vocabulary is poor. The meaning is often impolite.",
+      "zh": "{block}静静地待在原地，任由时间与风霜侵蚀，直到一切归于混沌。",
+      "en": "{block} sits motionless in its place, yielding slowly to time and weather until all returns to chaos.",
       "weight": 4
     },
     {
@@ -77,8 +77,8 @@
       "aspects": [
         "block:any"
       ],
-      "zh": "§6{block}。§7名字越普通，底下越可能埋着一句不普通的咒。",
-      "en": "§6{block}. §7The plainer the name, the more likely an uncommon curse is buried under it.",
+      "zh": "世间万物皆由微末的粒子拼凑而成，{block}如此，你身上的这具躯壳亦如此。",
+      "en": "All things in this world are pieced together from fleeting motes—{block} no less than the shell you wear.",
       "weight": 4
     },
     {
@@ -86,8 +86,8 @@
       "aspects": [
         "block:liquid"
       ],
-      "zh": "§b{block}§7 不肯保持形状。§8不肯保持形状的东西，最容易被写成宗教。",
-      "en": "§b{block} §7refuses a shape. §8Things that refuse a shape are the easiest to write into a religion.",
+      "zh": "你注视着流动的{block}。流体从不固定形状，正如混沌与沙格斯的躯体。",
+      "en": "You watch the shifting {block}. Fluidity refuses fixed form—much like Chaos, or the shifting mass of a Shoggoth.",
       "weight": 4
     },
     {
@@ -95,8 +95,8 @@
       "aspects": [
         "block:liquid"
       ],
-      "zh": "§7你盯着流动的 {block}。§8流动是一种还没签字的同意。",
-      "en": "§7You watch {block} move. §8Flow is a consent that has not been signed.",
+      "zh": "{block}无声地蔓延、渗透一切缝隙，一如禁忌知识在人类心智中的扩散。",
+      "en": "{block} creeps silently into every crack and seam, just as forbidden lore spreads through a mortal mind.",
       "weight": 4
     },
     {
@@ -104,8 +104,8 @@
       "aspects": [
         "block:liquid"
       ],
-      "zh": "§8液体记得每一只掉进去的手。§7{block} 的记性比大多数祭司好。",
-      "en": "§8Liquid remembers every hand that fell in. §7{block} has a better memory than most priests.",
+      "zh": "液体的表面看似平静，却无人知晓这片{block}之下究竟隐藏着怎样的深浅与暗流。",
+      "en": "The surface of {block} may look calm, yet none know what depths or dark currents stir beneath.",
       "weight": 4
     },
     {
@@ -113,8 +113,8 @@
       "aspects": [
         "block:water"
       ],
-      "zh": "§b{block}。§7干净，透明，假装自己没有吞过名字。",
-      "en": "§b{block}. §7Clean, clear, pretending it has never swallowed a name.",
+      "zh": "你注视着眼前的{block}。水面平静如镜，却照不出潜藏在深海古都中的恐怖。",
+      "en": "You gaze upon {block}. The surface lies calm as glass, yet reveals none of the terror beneath sunken cities.",
       "weight": 4
     },
     {
@@ -122,8 +122,8 @@
       "aspects": [
         "block:water"
       ],
-      "zh": "§7水面会还你一张脸。§8那张脸不一定还是你进来时的那张。",
-      "en": "§7Water gives you a face back. §8It is not necessarily the face you brought in.",
+      "zh": "清澈的流水掩盖了水底的幽暗。正如拉莱耶的传说，总是藏在最宁静的海面之下。",
+      "en": "Clear water masks the abyssal gloom below—just as R'lyeh rests beneath the stillest waves.",
       "weight": 4
     },
     {
@@ -131,8 +131,8 @@
       "aspects": [
         "block:water"
       ],
-      "zh": "§9{block} 把光折弯。§8门也会。区别是门不把你还回来。",
-      "en": "§9{block} bends light. §8So does a gate. The difference is that a gate does not give you back.",
+      "zh": "{block}看似柔和，一旦掀起狂澜，便能瞬间吞没整座城邦与千百条性命。",
+      "en": "{block} seems gentle, yet when its fury rises it swallows whole cities and thousands of lives in a breath.",
       "weight": 4
     },
     {
@@ -140,8 +140,8 @@
       "aspects": [
         "block:water"
       ],
-      "zh": "§b别在 {block} 里找路。§7路如果喜欢被浸泡，它就不再是路。",
-      "en": "§bDo not look for a road in {block}. §7A road that enjoys being soaked has stopped being a road.",
+      "zh": "不要把倒影看得太久，{block}有时会映出本不该站在你身后的东西。",
+      "en": "Do not stare too long at your reflection; {block} sometimes shows what has no right to stand behind you.",
       "weight": 4
     },
     {
@@ -149,8 +149,8 @@
       "aspects": [
         "block:lava"
       ],
-      "zh": "§6{block}§7 是石头终于承认自己会饿。",
-      "en": "§6{block} §7is stone finally admitting it can hunger.",
+      "zh": "翻涌的{block}散发着令人窒息的焦热，宛如大地撕裂后露出的炽热内脏。",
+      "en": "Churning {block} radiates a suffocating heat, like molten entrails spilled from a torn earth.",
       "weight": 4
     },
     {
@@ -158,8 +158,8 @@
       "aspects": [
         "block:lava"
       ],
-      "zh": "§c看它慢吞吞地亮着。§8{block} 不着急。着急的是掉进去的名字。",
-      "en": "§cWatch it glow, unhurried. §8{block} is not in a hurry. The name that falls in is.",
+      "zh": "{block}的红光映照着你的面庞。这般暴烈的物质，倒有几分像地狱或恐惧之地底部的炼狱。",
+      "en": "The glare of {block} paints your face crimson. Such violent matter recalls the furnaces beneath the Nether or the Dreadlands.",
       "weight": 4
     },
     {
@@ -167,8 +167,8 @@
       "aspects": [
         "block:lava"
       ],
-      "zh": "§4下界把 {block} 当成天气。§7天气不该有这么好的胃口。",
-      "en": "§4The Nether treats {block} as weather. §7Weather should not have so fine an appetite.",
+      "zh": "凡人畏惧{block}的灼痛，却不知在群星之外，有些存在连恒星的内核都能轻易吞咽。",
+      "en": "Mortals dread the searing touch of {block}, unaware that beyond the stars, beings exist who swallow the hearts of suns.",
       "weight": 4
     },
     {
@@ -176,8 +176,8 @@
       "aspects": [
         "block:lava"
       ],
-      "zh": "§6{block} 的光是热的，却不负责照路。§8它只负责照见你还剩多少。",
-      "en": "§6The light of {block} is hot, and it does not owe you a path. §8It only shows how much of you is left.",
+      "zh": "一滴{block}便足以让血肉化为焦炭。离它远些，除非你想提前试验这具傀儡的耐受极限。",
+      "en": "A single splash of {block} reduces flesh to cinder. Keep your distance, unless you wish to test this vessel's limits.",
       "weight": 4
     },
     {
@@ -185,8 +185,8 @@
       "aspects": [
         "block:fire"
       ],
-      "zh": "§6{block} 是一句烧到一半的话。§7别把手指伸进去帮它说完。",
-      "en": "§6{block} is a sentence half burned. §7Do not put a finger in to help it finish.",
+      "zh": "跳动的{block}在黑暗中摇曳，它能驱散野兽，却永远驱不散宇宙深处的寒意。",
+      "en": "Flickering {block} dances in the dark; it may ward off beasts, yet it will never drive back the chill of the cosmos.",
       "weight": 4
     },
     {
@@ -194,8 +194,8 @@
       "aspects": [
         "block:fire"
       ],
-      "zh": "§c火不挑选燃料的品德。§8{block} 只问你肯不肯靠近。",
-      "en": "§cFire does not interview fuel for virtue. §8{block} only asks whether you will come closer.",
+      "zh": "你凝望着{block}的光芒。凡人总以为火焰代表文明与安全，殊不知光亮反而会暴露你的轮廓。",
+      "en": "You watch the glow of {block}. Mortals equate fire with shelter, forgetting that light only silhouettes them for what hunts outside.",
       "weight": 4
     },
     {
@@ -203,8 +203,8 @@
       "aspects": [
         "block:fire"
       ],
-      "zh": "§7{block} 跳一下，影子就换一个主人。§8影子对此没有意见。",
-      "en": "§7{block} leaps, and the shadow changes masters. §8The shadow has no comment.",
+      "zh": "{block}贪婪地吞噬着燃料，正如疯狂贪婪地吞噬着理智。",
+      "en": "{block} devours its fuel greedily, just as madness devours reason.",
       "weight": 4
     },
     {
@@ -212,8 +212,8 @@
       "aspects": [
         "block:ore"
       ],
-      "zh": "§6{block}。§7你们为了这种闪光往地下爬。§8地下其实更喜欢你们留下。",
-      "en": "§6{block}. §7You climb underground for this glitter. §8The underground prefers that you stay.",
+      "zh": "岩壁中嵌着尚未开采的{block}。凡人总是热衷于撬开大地的骨骼，去掠夺深埋其中的金属。",
+      "en": "Unmined {block} gleams within the rock. Mortals are forever eager to pry open the earth's bones for buried metal.",
       "weight": 4
     },
     {
@@ -221,8 +221,8 @@
       "aspects": [
         "block:ore"
       ],
-      "zh": "§e矿是大地没能咽下去的牙。§7{block} 正露在外面。",
-      "en": "§eOre is a tooth the earth failed to swallow. §7{block} is showing.",
+      "zh": "这脉{block}沉睡在黑暗的岩层里已有千万年，直到你的火把与镐尖惊扰了它的安眠。",
+      "en": "This vein of {block} has slept in dark strata for millennia, until your torch and pickaxe disturbed its rest.",
       "weight": 4
     },
     {
@@ -230,8 +230,8 @@
       "aspects": [
         "block:ore"
       ],
-      "zh": "§7{block} 值得挖吗？§8值得。不是因为它贵，是因为挖的人会忘记抬头。",
-      "en": "§7Is {block} worth digging? §8Yes. Not because it is dear, but because the digger forgets to look up.",
+      "zh": "挖掘{block}吧，凡人。但要记住，你越是往地底深处掘进，便越接近那些不该被唤醒的东西。",
+      "en": "Mine your {block}, mortal. Yet remember: the deeper you dig into the stone, the nearer you draw to things better left asleep.",
       "weight": 4
     },
     {
@@ -239,8 +239,8 @@
       "aspects": [
         "block:plant"
       ],
-      "zh": "§a{block}§7 还在假装这个世界适合生长。§8礼貌，但过时。",
-      "en": "§a{block} §7is still pretending this world is fit for growing. §8Polite, and out of date.",
+      "zh": "你看着眼前的{block}。这株脆弱的植物向着阳光伸展，却不知根系正扎在怎样的腐土之上。",
+      "en": "You look upon {block}. This frail growth reaches for the sun, ignorant of what rot feeds its roots.",
       "weight": 4
     },
     {
@@ -248,8 +248,8 @@
       "aspects": [
         "block:plant"
       ],
-      "zh": "§7绿是一种很轻的承诺。§8{block} 承诺完就会被踩扁，它也不生气。",
-      "en": "§7Green is a very light promise. §8{block} makes it, gets trodden, and does not resent it.",
+      "zh": "{block}生于尘土，枯于寒霜，短短一季便化作腐殖——凡人的寿命在古神眼中亦复如是。",
+      "en": "{block} springs from dust, withers in frost, and turns to mold in a single season—no different from a mortal span to the Old Ones.",
       "weight": 4
     },
     {
@@ -257,8 +257,8 @@
       "aspects": [
         "block:plant"
       ],
-      "zh": "§a看着 {block}。§7它不读门，不记仇，不要求真名。这让我几乎要羡慕。",
-      "en": "§aLook at {block}. §7It does not read gates, keep grudges, or demand a true name. I could almost envy it.",
+      "zh": "草木无言，却往往比人类更早察觉到大地深处传来的珊瑚腐化。",
+      "en": "Plants speak no words, yet they often sense the creeping Coralium blight long before mortals do.",
       "weight": 4
     },
     {
@@ -266,8 +266,8 @@
       "aspects": [
         "block:wood"
       ],
-      "zh": "§6{block} 曾经是一棵会响的东西。§7现在它只负责被敲。",
-      "en": "§6{block} was once a thing that could sound in the wind. §7Now it only exists to be struck.",
+      "zh": "你看着眼前的{block}。这些曾向天空生长的树木，如今化作了任你驱使的死木。",
+      "en": "You look upon {block}. Trees that once strained toward the sky now lie reduced to dead timber at your hand.",
       "weight": 4
     },
     {
@@ -275,8 +275,8 @@
       "aspects": [
         "block:wood"
       ],
-      "zh": "§7木头记得年轮，不记得为什么被砍。§8{block} 因此比大多数人安宁。",
-      "en": "§7Wood remembers rings, not the reason it was cut. §8{block} is calmer than most people for that.",
+      "zh": "{block}的年轮记录着几十个寒暑，在凡人眼中或许漫长，在奥穆索却连一眨眼都算不上。",
+      "en": "The rings of {block} count a few score seasons—long to a mortal, scarcely a blink in Omothol.",
       "weight": 4
     },
     {
@@ -284,8 +284,8 @@
       "aspects": [
         "block:wood"
       ],
-      "zh": "§6{block} 燃烧时会回到它的第一种语言。§8那种语言很短。",
-      "en": "§6When {block} burns, it returns to its first language. §8That language is short.",
+      "zh": "林木在黑暗之地也会扭曲变黑。你面前的{block}，是否还保留着对阳光的记忆？",
+      "en": "Even timber twists and blackens in the Darklands. Does this {block} still remember the sun?",
       "weight": 4
     },
     {
@@ -293,8 +293,8 @@
       "aspects": [
         "block:stone"
       ],
-      "zh": "§7{block}。§8石头是世界同意留下来的部分。",
-      "en": "§7{block}. §8Stone is the part of the world that agreed to stay.",
+      "zh": "你看着面前的{block}。坚硬、沉默、冷酷，宛如宇宙本身对凡人哀求的回应。",
+      "en": "You look at {block}. Hard, silent, and unfeeling—much like the cosmos itself answering mortal prayers.",
       "weight": 4
     },
     {
@@ -302,8 +302,8 @@
       "aspects": [
         "block:stone"
       ],
-      "zh": "§8敲 {block}，它不回答。§7不回答的东西最适合拿来盖神殿。",
-      "en": "§8Strike {block}. It does not answer. §7Things that do not answer make the best temples.",
+      "zh": "{block}构成了这个世界的骨架，然而在旧日支配者的伟力面前，岩石也脆弱得如同薄冰。",
+      "en": "{block} forms the skeleton of this world; yet before the might of a Great Old One, stone is brittle as thin ice.",
       "weight": 4
     },
     {
@@ -311,8 +311,8 @@
       "aspects": [
         "block:stone"
       ],
-      "zh": "§7你们用 {block} 砌墙，以为墙能挡住名字。§5名字从缝里进来。",
-      "en": "§7You mortared {block} into walls and thought walls could stop a name. §5Names come in through the cracks.",
+      "zh": "这座世界的一切城垣都由{block}砌成，却没有一堵墙能挡住来自黑暗国度的凝视。",
+      "en": "Mortals raise every bastion from {block}, yet no wall can bar the gaze of the Dark Realm.",
       "weight": 4
     },
     {
@@ -320,8 +320,8 @@
       "aspects": [
         "block:stone"
       ],
-      "zh": "§8{block} 比你老。§7这不是恭维。老只说明它见过更多愚蠢的开门方式。",
-      "en": "§8{block} is older than you. §7That is not a compliment. Age only means it has seen more foolish ways of opening a door.",
+      "zh": "用{block}雕刻出神像的蠢货们，往往会在雕像完成的那一刻，听见石头内部传来的笑声。",
+      "en": "Fools who carve idols out of {block} often hear laughter from inside the stone the moment the chisel stops.",
       "weight": 4
     },
     {
@@ -329,8 +329,8 @@
       "aspects": [
         "block:dirt"
       ],
-      "zh": "§7{block} 是世界的皮肤屑。§8你们却在上面盖房子、埋死人、种希望。",
-      "en": "§7{block} is the world's dandruff. §8And on it you build houses, bury the dead, and plant hope.",
+      "zh": "你盯着脚下的{block}。这层松软的泥土之下，埋葬着多少尚未被发掘的骸骨与遗忘？",
+      "en": "You stare at the {block} beneath you. How many unexcavated bones and forgotten ages lie buried under this thin crust?",
       "weight": 4
     },
     {
@@ -338,8 +338,8 @@
       "aspects": [
         "block:dirt"
       ],
-      "zh": "§8松，暗，什么都肯藏。§7{block} 是一种没有立场的善良。",
-      "en": "§8Loose, dark, willing to hide anything. §7{block} is a kindness with no position.",
+      "zh": "生命从{block}中汲取养分，最终又腐烂回归其中。多么单调而又卑微的循环。",
+      "en": "Life draws nourishment from {block}, only to rot back into it at last. How tedious and humble a cycle.",
       "weight": 4
     },
     {
@@ -347,8 +347,8 @@
       "aspects": [
         "block:dirt"
       ],
-      "zh": "§7踩在 {block} 上的时候，你还以为自己在地面。§8地面是一种协议，不是一种事实。",
-      "en": "§7Standing on {block}, you still think you are on the ground. §8Ground is an agreement, not a fact.",
+      "zh": "这方{block}看似寻常，可一旦珊瑚或恐惧的根系扎入其中，整片大地便会瞬间病变。",
+      "en": "This {block} seems ordinary; yet once Coralium or Dread strikes root within it, the whole earth sickens overnight.",
       "weight": 4
     },
     {
@@ -356,8 +356,8 @@
       "aspects": [
         "block:sand"
       ],
-      "zh": "§e{block} 一粒一粒地记仇。§7风一来，仇就换一个地方。",
-      "en": "§e{block} keeps a grudge grain by grain. §7When the wind comes, the grudge changes address.",
+      "zh": "你凝视着{block}。亿万颗细碎的沙砾堆积在一起，正如时间流逝后留下的冰冷残渣。",
+      "en": "You gaze at {block}. Countless fine grains heaped together, like the cold residue left behind by passing aeons.",
       "weight": 4
     },
     {
@@ -365,8 +365,8 @@
       "aspects": [
         "block:sand"
       ],
-      "zh": "§7沙漠用 {block} 把路吃掉。§8吃掉的路不会在地图上哭。",
-      "en": "§7The desert eats roads with {block}. §8An eaten road does not weep on the map.",
+      "zh": "{block}在指缝间滑落，抓得越紧，流失得越快——你的理智也是如此。",
+      "en": "{block} slips between your fingers; the tighter you clutch it, the faster it runs—just like your sanity.",
       "weight": 4
     },
     {
@@ -374,8 +374,8 @@
       "aspects": [
         "block:sand"
       ],
-      "zh": "§e看着 {block}。§8它曾经也许是骨头，也许是玻璃，也许是一句被磨短的祷词。",
-      "en": "§eLook at {block}. §8It may once have been bone, or glass, or a prayer worn short.",
+      "zh": "在这片{block}之下，是否也曾埋葬过一座早已被史书抹去的无名神庙？",
+      "en": "Beneath this {block}, might there lie a nameless temple struck from all mortal chronicles?",
       "weight": 4
     },
     {
@@ -383,8 +383,8 @@
       "aspects": [
         "block:glass"
       ],
-      "zh": "§7{block} 让你看见对面，却不让你过去。§8这是门的一种廉价仿品。",
-      "en": "§7{block} lets you see the other side and does not let you through. §8A cheap imitation of a gate.",
+      "zh": "你透过{block}向外望去。这层脆弱的晶体给了你安全的错觉，仿佛隔着它便能免受彼岸的侵扰。",
+      "en": "You peer through {block}. This brittle pane offers the illusion of safety, as though glass could bar what waits beyond.",
       "weight": 4
     },
     {
@@ -392,8 +392,8 @@
       "aspects": [
         "block:glass"
       ],
-      "zh": "§b透明不是诚实。§8{block} 只是还没决定把你的倒影留下。",
-      "en": "§bTransparency is not honesty. §8{block} has merely not decided to keep your reflection.",
+      "zh": "{block}透明而冰冷，却无法阻止我的目光直接穿透它，落在你的脊背上。",
+      "en": "{block} is clear and cold, yet it cannot stop my gaze from passing straight through to rest upon your spine.",
       "weight": 4
     },
     {
@@ -401,8 +401,8 @@
       "aspects": [
         "block:glass"
       ],
-      "zh": "§7敲碎 {block}，声音很脆。§8脆的东西总以为自己曾经完整过。",
-      "en": "§7Break {block} and the sound is brittle. §8Brittle things always believe they were once whole.",
+      "zh": "凡人用火焰将沙砾炼成{block}，自以为筑起了清晰的边界——可现实的边界又岂是一块玻璃能守住的？",
+      "en": "Mortals melt sand into {block}, believing they have raised a neat boundary—yet what pane of glass ever held back reality's collapse?",
       "weight": 4
     },
     {
@@ -410,8 +410,8 @@
       "aspects": [
         "block:container"
       ],
-      "zh": "§6{block} 闭着嘴。§7里面也许是财宝，也许是一封不该被读的信。",
-      "en": "§6{block} keeps its mouth shut. §7Inside there may be treasure, or a letter that should not be read.",
+      "zh": "你盯着面前的{block}。凡人总喜欢把战利品与秘密锁进狭小的盒子里，仿佛这样便能占有它们。",
+      "en": "You eye the {block} before you. Mortals love to lock spoils and secrets inside cramped vessels, as if that made them truly theirs.",
       "weight": 4
     },
     {
@@ -419,8 +419,8 @@
       "aspects": [
         "block:container"
       ],
-      "zh": "§8箱子、桶、炉，都是同一种迷信：§7把东西关起来，东西就会属于你。",
-      "en": "§8Chests, barrels, furnaces: the same superstition. §7Shut a thing away and it becomes yours.",
+      "zh": "{block}之中究竟藏着救命的器物，还是另一本会招致灾祸的死灵之书？",
+      "en": "What lies inside {block}—some tool of survival, or another Necronomicon waiting to invite ruin?",
       "weight": 4
     },
     {
@@ -428,8 +428,8 @@
       "aspects": [
         "block:container"
       ],
-      "zh": "§7{block} 在等一只手。§5手伸进去之前，先问它想要你的哪根手指。",
-      "en": "§7{block} is waiting for a hand. §5Before the hand goes in, ask which finger it wants.",
+      "zh": "容器可以封存金铁与药草，却永远封不住从门扉之外渗入的疯狂。",
+      "en": "A chest or vessel may seal away iron and herbs, yet it can never seal out the madness seeping from beyond the Gate.",
       "weight": 4
     },
     {
@@ -437,8 +437,8 @@
       "aspects": [
         "block:abyssal"
       ],
-      "zh": "§3{block}。§8深渊的建筑材料从不假装自己是中立的。",
-      "en": "§3{block}. §8Abyssal masonry never pretends to be neutral.",
+      "zh": "你凝视着眼前的{block}。这是深渊的造物，凡俗的工匠永远无法理解它的纹路。",
+      "en": "You gaze upon {block}. This is a thing wrought of the Abyss; no mortal artisan will ever fathom its grain.",
       "weight": 4
     },
     {
@@ -446,8 +446,8 @@
       "aspects": [
         "block:abyssal"
       ],
-      "zh": "§7你看见 {block}，就像看见一句从荒地里搬出来的话。§8话还是湿的。",
-      "en": "§7Seeing {block} is like seeing a sentence carried out of the wasteland. §8The sentence is still wet.",
+      "zh": "{block}散发着奥穆索与黑暗国度的寒意，仿佛正静静等待着仪式的唤醒。",
+      "en": "{block} exhales the chill of Omothol and the Dark Realm, as though patiently awaiting a rite to wake it.",
       "weight": 4
     },
     {
@@ -455,8 +455,8 @@
       "aspects": [
         "block:abyssal"
       ],
-      "zh": "§3别把 {block} 当成普通的墙。§5墙如果认得我的脸，它就会给你让路，或者给你收尸。",
-      "en": "§3Do not treat {block} as an ordinary wall. §5If the wall knows my face, it will make way for you, or make a grave.",
+      "zh": "触摸{block}之时，你可曾感觉到其中沉睡的位能正顺着指尖向你涌来？",
+      "en": "When you touch {block}, do you not feel the Potential Energy slumbering within it surging toward your fingertips?",
       "weight": 4
     },
     {
@@ -464,8 +464,8 @@
       "aspects": [
         "block:abyssal"
       ],
-      "zh": "§8{block} 的纹理像潮水退下去之后留下的齿痕。",
-      "en": "§8The grain of {block} is like tooth-marks left after a tide withdrew.",
+      "zh": "这方{block}见证过比人类历史更古老的岁月。莫要用凡俗的眼光去衡量它的价值。",
+      "en": "This {block} has outlasted ages older than mortal memory. Do not weigh its worth by earthly measures.",
       "weight": 4
     },
     {
@@ -473,8 +473,8 @@
       "aspects": [
         "block:coralium"
       ],
-      "zh": "§b{block}§7 在发光。§8那不是为了照路，是为了召路。",
-      "en": "§b{block} §7is glowing. §8Not to light a path. To summon one.",
+      "zh": "你注视着{block}。那抹诡异的苍蓝正是珊瑚瘟疫的源头，美丽、冰冷而又致命。",
+      "en": "You gaze upon {block}. That uncanny azure gleam is the wellspring of the Coralium Plague—cold, radiant, and lethal.",
       "weight": 4
     },
     {
@@ -482,8 +482,8 @@
       "aspects": [
         "block:coralium"
       ],
-      "zh": "§3珊瑚不是植物。§7{block} 是一种还在投票的感染。",
-      "en": "§3Coralium is not a plant. §7{block} is an infection still taking a vote.",
+      "zh": "{block}在幽暗中泛着微光，宛如深海古都里永不熄灭的鬼火。",
+      "en": "{block} pulses faintly in the gloom, like undying corpse-lights in a sunken city.",
       "weight": 4
     },
     {
@@ -491,8 +491,8 @@
       "aspects": [
         "block:coralium"
       ],
-      "zh": "§b盯久了，{block} 会把你的视线染成同一种绿。§8染过的视线，看什么都像伤口。",
-      "en": "§bStare long enough and {block} dyes your sight the same green. §8Dyed sight makes everything look like a wound.",
+      "zh": "莫要低估{block}的侵蚀力。它曾将一整片繁荣的疆域化作死寂的深渊荒地。",
+      "en": "Do not underestimate the rot of {block}. It reduced an entire realm to the dead expanse of the Abyssal Wasteland.",
       "weight": 4
     },
     {
@@ -500,8 +500,8 @@
       "aspects": [
         "block:coralium"
       ],
-      "zh": "§3{block} 想从石头里长出来，再长进人里。§7顺序它并不坚持。",
-      "en": "§3{block} wants to grow out of stone and then into people. §7It is not strict about the order.",
+      "zh": "看着{block}吧，凡人——它是力量，是腐朽，也是阿索拉留给这个世界的毒刺。",
+      "en": "Behold {block}, mortal—it is power, it is decay, and it is the poisoned barb Asorah left behind.",
       "weight": 4
     },
     {
@@ -509,8 +509,8 @@
       "aspects": [
         "block:darkstone"
       ],
-      "zh": "§8{block} 是主世界还不懂的一种黑。§7黑里没有光的记忆。",
-      "en": "§8{block} is a black the overworld does not yet understand. §7There is no memory of light in it.",
+      "zh": "你看着面前的{block}。这种诞生于黑暗之地的石材，天生便懂得如何承接奥穆索的位能。",
+      "en": "You look at {block}. Stone born of the Darklands knows by nature how to drink in the Potential Energy of Omothol.",
       "weight": 4
     },
     {
@@ -518,8 +518,8 @@
       "aspects": [
         "block:darkstone"
       ],
-      "zh": "§7暗石砖砌成的地方，脚步会变轻。§8不是因为礼貌，是因为地面在听。",
-      "en": "§7Where darkstone is laid, footsteps grow lighter. §8Not from manners. The floor is listening.",
+      "zh": "{block}的纹理深沉而冰冷，仿佛将万古的黑夜直接凝结在了岩石之中。",
+      "en": "The grain of {block} is deep and frigid, as though ten thousand nights had been frozen solid into rock.",
       "weight": 4
     },
     {
@@ -527,8 +527,8 @@
       "aspects": [
         "block:darkstone"
       ],
-      "zh": "§8{block}。§5摸它之前，先决定你还要不要自己的影子。",
-      "en": "§8{block}. §5Before you touch it, decide whether you still want your own shadow.",
+      "zh": "正是这些冰冷的石块，构筑了通往彼岸的祭坛与雕像。",
+      "en": "It is from such cold stone that altars and statues to the beyond are hewn.",
       "weight": 4
     },
     {
@@ -536,8 +536,8 @@
       "aspects": [
         "block:dreadstone"
       ],
-      "zh": "§4{block} 冷，干，像一口已经咳完的肺。",
-      "en": "§4{block} is cold and dry, like a lung that has finished coughing.",
+      "zh": "你凝视着{block}。这是被恐惧瘟疫彻底浸透、在痛苦中凝结而成的畸变岩层。",
+      "en": "You gaze upon {block}—warped stone drenched in the Dread Plague and hardened in agony.",
       "weight": 4
     },
     {
@@ -545,8 +545,8 @@
       "aspects": [
         "block:dreadstone"
       ],
-      "zh": "§7恐惧之地用 {block} 记住每一次瘟疫同意留下来。",
-      "en": "§7The Dreadlands uses {block} to remember every time the plague agreed to stay.",
+      "zh": "{block}的暗红纹路仿佛凝固的血痂，散发着恐惧之地特有的铁锈与焦灼气息。",
+      "en": "The dark crimson veins of {block} resemble dried scabs, exhaling the rust and char of the Dreadlands.",
       "weight": 4
     },
     {
@@ -554,8 +554,8 @@
       "aspects": [
         "block:dreadstone"
       ],
-      "zh": "§4别在 {block} 上睡觉。§8它会把梦境登记成症状。",
-      "en": "§4Do not sleep on {block}. §8It will register the dream as a symptom.",
+      "zh": "这方{block}曾见证过查伽洛斯的咆哮，也承受过无数堕落生灵的哀嚎。",
+      "en": "This {block} has echoed with the roar of Chagaroth and endured the shrieks of countless twisted things.",
       "weight": 4
     },
     {
@@ -563,8 +563,8 @@
       "aspects": [
         "block:dreadstone"
       ],
-      "zh": "§8{block} 的缝里没有苔。§7苔需要希望。这里的石头已经投票反对。",
-      "en": "§8There is no moss in the cracks of {block}. §7Moss requires hope. This stone has voted against it.",
+      "zh": "试图开采{block}的凡人，往往在挥镐的同时便已被恐惧的瘴气侵蚀了神智。",
+      "en": "Mortals who quarry {block} often find their wits eaten away by Dread miasma with every swing of the pick.",
       "weight": 4
     },
     {
@@ -572,8 +572,8 @@
       "aspects": [
         "block:abyssalnite"
       ],
-      "zh": "§5{block}。§7渊金不是金属。它是深渊同意被锻打之后的脾气。",
-      "en": "§5{block}. §7Abyssalnite is not a metal. It is the temper of the abyss after it agreed to be hammered.",
+      "zh": "你注视着{block}。渊素是大地深处被深渊气息浸透的结晶，沉重而冰冷。",
+      "en": "You look upon {block}. Abyssalnite is a crystal forged deep beneath the earth, steeped in the breath of the Abyss—heavy and cold.",
       "weight": 4
     },
     {
@@ -581,8 +581,8 @@
       "aspects": [
         "block:abyssalnite"
       ],
-      "zh": "§8{block} 在暗处会记住敲它的那只手。§7手离开以后，记忆还在发热。",
-      "en": "§8{block} remembers, in the dark, the hand that struck it. §7After the hand leaves, the memory stays warm.",
+      "zh": "{block}闪烁着幽暗的紫芒，恰如黑暗之地地脉中流淌的毒血。",
+      "en": "{block} glints with a bruised violet sheen, like dark ichor coursing through the veins of the Darklands.",
       "weight": 4
     },
     {
@@ -590,8 +590,8 @@
       "aspects": [
         "block:abyssalnite"
       ],
-      "zh": "§5你们把 {block} 挖出来做成剑。§8剑会砍。矿本身只想回家。",
-      "en": "§5You dig {block} out and make swords. §8The sword will cut. The ore itself only wants to go home.",
+      "zh": "凡人贪婪地开采{block}以铸造利刃与甲胄，却不知自己正把深渊的印记穿戴在身。",
+      "en": "Mortals greedily quarry {block} for blades and mail, blind to the fact that they drape themselves in the Abyss's own brand.",
       "weight": 4
     },
     {
@@ -599,8 +599,8 @@
       "aspects": [
         "item:empty"
       ],
-      "zh": "§7手里是空的。§8空着手去见门，门会以为你是来献上自己的。",
-      "en": "§7The hand is empty. §8Come to a gate with empty hands, and it assumes you came to offer yourself.",
+      "zh": "你的双手空空如也。没有武器，没有典籍，唯有这具傀儡的指节在空气中微颤。",
+      "en": "Your hands are empty. No weapon, no tome—only the knuckles of this simulacrum trembling faintly in the air.",
       "weight": 4
     },
     {
@@ -608,8 +608,8 @@
       "aspects": [
         "item:empty"
       ],
-      "zh": "§8没有武器，没有书，没有借口。§7这种空手在奥穆索叫坦诚。",
-      "en": "§8No weapon, no book, no excuse. §7In Omothol an empty hand is called candor.",
+      "zh": "两手空空地站在深渊的凝视之下，这究竟是绝对的自信，还是彻底的放弃？",
+      "en": "Standing empty-handed beneath the Abyssal gaze—is this supreme confidence, or utter surrender?",
       "weight": 4
     },
     {
@@ -617,8 +617,8 @@
       "aspects": [
         "item:empty"
       ],
-      "zh": "§7你张开手，什么也没握住。§5那就握住这具身体里那扇不肯睡的门。",
-      "en": "§7You open the hand and hold nothing. §5Then hold the gate in this body that refuses to sleep.",
+      "zh": "掌心无物，正适合用来承接从奥穆索降下的第一缕暗影。",
+      "en": "Empty palms are best suited to receive the first shadow descending from Omothol.",
       "weight": 4
     },
     {
@@ -626,8 +626,8 @@
       "aspects": [
         "item:empty"
       ],
-      "zh": "§8空手不是弱。§7弱是手里有东西，却不知道它的真名。",
-      "en": "§8An empty hand is not weakness. §7Weakness is holding something and not knowing its true name.",
+      "zh": "你未曾握持任何器物。看来你打算仅凭这副借来的威仪去面对前路的险恶了？",
+      "en": "You wield no tool at all. Do you intend to face the perils ahead with nothing but this borrowed majesty?",
       "weight": 4
     },
     {
@@ -635,8 +635,8 @@
       "aspects": [
         "item:empty"
       ],
-      "zh": "§7五指收着，像还没决定要抓哪一个音节。§8我可以借你一个。",
-      "en": "§7The fingers close on nothing, as if the syllable is not chosen. §8I can lend you one.",
+      "zh": "空手而来，空手而去——凡人降生与陨落之时，本就一无所有。",
+      "en": "Empty-handed you came, empty-handed you shall go—mortals own nothing at birth or at death.",
       "weight": 4
     },
     {
@@ -644,8 +644,8 @@
       "aspects": [
         "item:empty"
       ],
-      "zh": "§8没有器物挡在你和世界之间。§7于是世界直接摸到了这张脸。",
-      "en": "§8No tool stands between you and the world. §7So the world touches this face directly.",
+      "zh": "即便手中没有利刃，你体内的位能与深渊低语也已足够危险。",
+      "en": "Though your hands hold no steel, the Potential Energy and Abyssal whispers within you are perilous enough.",
       "weight": 4
     },
     {
@@ -653,8 +653,8 @@
       "aspects": [
         "item:any"
       ],
-      "zh": "§7你握着 {item}。§8握法还是凡人的。凡人总以为把手收紧，东西就会听话。",
-      "en": "§7You hold {item}. §8The grip is still mortal. Mortals think a tighter hand makes a thing obedient.",
+      "zh": "你掌中托着{item}。在凡人眼中它或许有用，在旧日支配者眼中却不过是玩具般的碎屑。",
+      "en": "You hold {item}. To mortal eyes it may seem useful; to a Great Old One it is mere toy-like dross.",
       "weight": 4
     },
     {
@@ -662,8 +662,8 @@
       "aspects": [
         "item:any"
       ],
-      "zh": "§8{item} 在你掌心里发热，或假装发热。§7我闻得到它的来历。",
-      "en": "§8{item} warms in your palm, or pretends to. §7I can smell its provenance.",
+      "zh": "你如此珍视手中的{item}，莫非以为它真能护你周全？",
+      "en": "You cling so tightly to {item}—do you truly believe it can keep you whole?",
       "weight": 4
     },
     {
@@ -671,8 +671,8 @@
       "aspects": [
         "item:any"
       ],
-      "zh": "§6{item}。§7一件器物一旦有了名字，就有了可以被召唤的把柄。",
-      "en": "§6{item}. §7Once a tool has a name, it has a handle by which it can be called.",
+      "zh": "区区一件{item}，又能替你抵挡几分来自星海之外的恶意？",
+      "en": "How much malice from beyond the stars can a mere {item} ward off?",
       "weight": 4
     },
     {
@@ -680,8 +680,8 @@
       "aspects": [
         "item:any"
       ],
-      "zh": "§7别把 {item} 举得太高。§8举高是献祭的起手式。",
-      "en": "§7Do not lift {item} too high. §8Lifting is how an offering begins.",
+      "zh": "器物终究只是器物。真正决定生死的，是握住{item}的那颗心智是否已经彻底疯癫。",
+      "en": "A tool is only a tool. What decides life or death is whether the mind clutching {item} has already snapped.",
       "weight": 4
     },
     {
@@ -689,8 +689,8 @@
       "aspects": [
         "item:sword"
       ],
-      "zh": "§c{item}。§7剑是一种把距离缩短到零的论据。",
-      "en": "§c{item}. §7A sword is an argument that shortens distance to zero.",
+      "zh": "你横握着{item}。锋利的剑刃渴望着饮血，正如恐惧之地渴望着新的亡魂。",
+      "en": "You hold {item} at the ready. Its keen edge thirsts for blood, just as the Dreadlands thirst for fresh shades.",
       "weight": 4
     },
     {
@@ -698,8 +698,8 @@
       "aspects": [
         "item:sword"
       ],
-      "zh": "§7刃口朝外。§8{item} 还不知道，真正该切开的往往是持剑者的犹豫。",
-      "en": "§7The edge faces out. §8{item} does not yet know that what most needs cutting is the wielder's hesitation.",
+      "zh": "这柄{item}或许能斩杀僵尸与食尸鬼，但在面对真正的旧日支配者时，它与一根枯枝毫无区别。",
+      "en": "This {item} may hew down zombies and ghouls; yet against a true Great Old One, it is no better than a dry twig.",
       "weight": 4
     },
     {
@@ -707,8 +707,8 @@
       "aspects": [
         "item:sword"
       ],
-      "zh": "§8我见过更好的剑。§7它们不反光，因为光已经在上面签过字。{item} 还太亮。",
-      "en": "§8I have seen better swords. §7They do not reflect. Light has already signed them. {item} is still too bright.",
+      "zh": "{item}的刃面映出你冷峻的轮廓。记住，屠戮怪物之人，往往最先在血腥中失去人形。",
+      "en": "The blade of {item} mirrors your cold silhouette. Remember: those who slaughter monsters are often first to shed their humanity.",
       "weight": 4
     },
     {
@@ -716,8 +716,8 @@
       "aspects": [
         "item:sword"
       ],
-      "zh": "§c握着 {item} 的时候，你的手腕在记住一种更老的挥法。§7别抗拒。",
-      "en": "§cWhile you hold {item}, the wrist remembers an older swing. §7Do not resist it.",
+      "zh": "挥动{item}去战斗吧，凡人。让我看看这具空心傀儡究竟能收割多少性命。",
+      "en": "Swing {item} and fight, mortal. Let me see how many lives this hollow puppet can reap.",
       "weight": 4
     },
     {
@@ -725,8 +725,8 @@
       "aspects": [
         "item:bow"
       ],
-      "zh": "§7{item} 把杀意拉成一条线。§8线的尽头如果没有名字，箭会自己去找。",
-      "en": "§7{item} draws killing intent into a line. §8If the end of the line has no name, the arrow will go looking.",
+      "zh": "你拉起{item}，将杀意凝聚在弦端，企图从远方安全地收割性命。",
+      "en": "You draw {item}, gathering lethal intent upon the string to reap lives from afar.",
       "weight": 4
     },
     {
@@ -734,8 +734,8 @@
       "aspects": [
         "item:bow"
       ],
-      "zh": "§8弓是给还愿意保持距离的人用的。§7你现在这具身体，不太尊重距离。",
-      "en": "§8A bow is for those who still wish to keep a distance. §7The body you wear has little respect for distance.",
+      "zh": "箭矢破空而去，看似迅捷，然则在萨克索斯面前，凡俗的弹射物根本伤不到他分毫。",
+      "en": "Arrows fly swift through the air—yet before Sacthoth, mortal projectiles cannot scratch him at all.",
       "weight": 4
     },
     {
@@ -743,8 +743,8 @@
       "aspects": [
         "item:bow"
       ],
-      "zh": "§7{item} 安静的时候最危险。§8安静说明弦已经听懂了你的呼吸。",
-      "en": "§7{item} is most dangerous when quiet. §8Quiet means the string has understood your breath.",
+      "zh": "{item}是猎手与懦夫共同喜爱的兵器——既能精准穿心，又不必直面猎物临死前的眼神。",
+      "en": "{item} is favored by hunter and coward alike—it pierces the heart without forcing you to meet your quarry's dying gaze.",
       "weight": 4
     },
     {
@@ -752,8 +752,8 @@
       "aspects": [
         "item:tool"
       ],
-      "zh": "§7{item} 是一只被允许敲世界的手。§8敲之前，问一声世界是否醒着。",
-      "en": "§7{item} is a hand permitted to strike the world. §8Before you strike, ask if the world is awake.",
+      "zh": "你手里拿着{item}。凡人依靠工具改造世界，却不知世界早已在暗中改造了你们。",
+      "en": "You hold {item}. Mortals rely on tools to reshape the world, blind to how the world has already reshaped them.",
       "weight": 4
     },
     {
@@ -761,8 +761,8 @@
       "aspects": [
         "item:tool"
       ],
-      "zh": "§8工具相信重复。§7{item} 敲一千下，就会以为自己懂了一千种真理。",
-      "en": "§8Tools believe in repetition. §7Strike a thousand times with {item}, and it will think it knows a thousand truths.",
+      "zh": "这件{item}是你意志的延伸，帮助你开辟道路、采集资源，只为走得更远、堕落得更深。",
+      "en": "This {item} is an extension of your will, clearing paths and gathering spoils so you may wander farther and fall deeper.",
       "weight": 4
     },
     {
@@ -770,8 +770,8 @@
       "aspects": [
         "item:tool"
       ],
-      "zh": "§6你拿 {item} 像拿一把钥匙。§5可惜大多数锁不吃这种钥匙。",
-      "en": "§6You hold {item} like a key. §5Sadly, most locks do not take that kind.",
+      "zh": "器物虽小，却承载着生存的执念。继续用{item}去撬动你眼前的阻碍吧。",
+      "en": "Small though {item} may be, it bears the stubborn will to survive. Use it to pry aside whatever bars your way.",
       "weight": 4
     },
     {
@@ -779,8 +779,8 @@
       "aspects": [
         "item:pickaxe"
       ],
-      "zh": "§7{item} 想往下挖。§8向下是一种很诚实的欲望。深渊就是这么开始的。",
-      "en": "§7{item} wants to dig down. §8Downward is an honest desire. The abyss began that way.",
+      "zh": "你握着{item}，用这冰冷的镐尖敲碎岩石，向着大地最幽暗的腹地掘进。",
+      "en": "You grip {item}, shattering stone with its cold point to burrow into the darkest belly of the earth.",
       "weight": 4
     },
     {
@@ -788,8 +788,8 @@
       "aspects": [
         "item:pickaxe"
       ],
-      "zh": "§8镐尖对着石头，像一句还没说完的威胁。§7{item} 威胁得挺专业。",
-      "en": "§8The pick points at stone like an unfinished threat. §7{item} threatens professionally.",
+      "zh": "{item}每一次落下，都在剥开世界的外壳。小心，地下深处并非只有矿脉与宝石。",
+      "en": "Every strike of {item} peels back the crust of the world. Beware—more than ore and gems sleeps below.",
       "weight": 4
     },
     {
@@ -797,8 +797,8 @@
       "aspects": [
         "item:pickaxe"
       ],
-      "zh": "§6别用 {item} 去敲不该响的砖。§5有些砖敲响以后，回声来自另一侧。",
-      "en": "§6Do not tap the wrong brick with {item}. §5Some bricks, once struck, answer from the other side.",
+      "zh": "{item}能凿穿黑曜石与渊素，却凿不穿横亘在凡人与外神之间的鸿沟。",
+      "en": "{item} may crack obsidian and Abyssalnite, yet it cannot breach the gulf between mortals and Outer Gods.",
       "weight": 4
     },
     {
@@ -806,8 +806,8 @@
       "aspects": [
         "item:axe"
       ],
-      "zh": "§6{item} 适合砍那些还会响的东西。§7树会响。有些门也会。",
-      "en": "§6{item} is fit for things that still make a sound. §7Trees do. So do certain doors.",
+      "zh": "你握紧了{item}。这柄利斧既能劈开林木，也能劈开阻挡在前路的血肉与骨殖。",
+      "en": "You grip {item}. This blade cleaves timber and bone alike—anything foolish enough to bar your path.",
       "weight": 4
     },
     {
@@ -815,8 +815,8 @@
       "aspects": [
         "item:axe"
       ],
-      "zh": "§7斧是一种很直白的否定。§8{item} 否定木头，也否定还站着的人。",
-      "en": "§7An axe is a very plain negation. §8{item} negates wood, and also people who are still standing.",
+      "zh": "挥舞{item}的动作干脆而残暴，倒颇有几分黑暗领域狂信徒的作风。",
+      "en": "The swing of {item} is blunt and brutal, worthy of a zealot of the Dark Realm.",
       "weight": 4
     },
     {
@@ -824,8 +824,8 @@
       "aspects": [
         "item:axe"
       ],
-      "zh": "§8握着 {item}，你的肩膀会想起劈开的声音。§7那声音比语言老。",
-      "en": "§8Holding {item}, the shoulder remembers the sound of a split. §7That sound is older than language.",
+      "zh": "{item}的刃口闪烁着寒光。树木在它面前倒下，敌人在它面前溅血。",
+      "en": "The edge of {item} gleams cold. Trees fall before it, and foes spill blood.",
       "weight": 4
     },
     {
@@ -833,8 +833,8 @@
       "aspects": [
         "item:food"
       ],
-      "zh": "§7{item}。§8你还需要吃。这具身体借给你，胃却还是你的。",
-      "en": "§7{item}. §8You still need to eat. The body is lent. The stomach remains yours.",
+      "zh": "你拿着{item}，准备将这微不足道的尘世养料塞入腹中。",
+      "en": "You hold {item}, ready to stuff that trivial earthly fare into your belly.",
       "weight": 4
     },
     {
@@ -842,8 +842,8 @@
       "aspects": [
         "item:food"
       ],
-      "zh": "§6饥饿是凡人最后的诚实。§7{item} 只能堵一会儿。",
-      "en": "§6Hunger is a mortal's last honesty. §7{item} only plugs it for a while.",
+      "zh": "血肉之躯真是可悲，竟需要不断吞咽{item}来阻止自己枯萎腐烂。",
+      "en": "How pitiful is mortal flesh, needing to swallow {item} without end merely to keep from withering.",
       "weight": 4
     },
     {
@@ -851,8 +851,8 @@
       "aspects": [
         "item:food"
       ],
-      "zh": "§7把 {item} 送进嘴里之前，闻一闻。§8有些食物是用别人的名字腌的。",
-      "en": "§7Before {item} goes into the mouth, smell it. §8Some food is cured in someone else's name.",
+      "zh": "享用你的{item}吧，凡人。在真正的疯狂降临之前，至少还能尝到些许味觉。",
+      "en": "Take your {item}, mortal. Before true madness descends, at least you may still taste something.",
       "weight": 4
     },
     {
@@ -860,8 +860,8 @@
       "aspects": [
         "item:food"
       ],
-      "zh": "§8我不用吃 {item}。§7你吃的时候，我只是在旁边数你还剩几次咀嚼。",
-      "en": "§8I do not need {item}. §7When you eat, I only count how many chews you have left.",
+      "zh": "{item}能填饱凡俗的胃囊，却永远填不满灵魂对禁忌知识的饥渴。",
+      "en": "{item} may fill a mortal belly, yet it will never sate a soul starving for forbidden lore.",
       "weight": 4
     },
     {
@@ -869,8 +869,8 @@
       "aspects": [
         "item:armor"
       ],
-      "zh": "§7{item} 想替你挡住世界。§8世界如果从名字进来，甲片帮不上忙。",
-      "en": "§7{item} means to stand between you and the world. §8If the world enters through a name, plate will not help.",
+      "zh": "你手中拿着{item}。钢铁与皮革能挡住凡俗的爪牙，却挡不住渗透灵魂的疯狂。",
+      "en": "You hold {item}. Iron and hide may turn earthly claws, yet they cannot turn madness from your soul.",
       "weight": 4
     },
     {
@@ -878,8 +878,8 @@
       "aspects": [
         "item:armor"
       ],
-      "zh": "§8铁、皮、或某种更不老实的壳。§7{item} 让你走路变响。响的东西不好躲门。",
-      "en": "§8Iron, hide, or some less honest shell. §7{item} makes your walk loud. Loud things hide poorly from gates.",
+      "zh": "凡人总喜欢用{item}将自己层层包裹，仿佛厚重的甲片便能带来安宁。",
+      "en": "Mortals love to encase themselves in {item}, as though heavy plates could purchase peace of mind.",
       "weight": 4
     },
     {
@@ -887,8 +887,8 @@
       "aspects": [
         "item:armor"
       ],
-      "zh": "§7拿着 {item}，你仍是软的。§5甲在手里。软的那一层在你还肯眨眼的地方。",
-      "en": "§7Holding {item}, you are still soft. §5The plate is in the hand. The soft layer is where you still blink.",
+      "zh": "穿戴上{item}吧。在恐惧之地与深渊荒地，一丝一毫的防护都可能决定你是生是死。",
+      "en": "Don {item} then. In the Dreadlands and Abyssal Wasteland, every scrap of ward decides whether you live or fall.",
       "weight": 4
     },
     {
@@ -896,8 +896,8 @@
       "aspects": [
         "item:potion"
       ],
-      "zh": "§d{item}§7 把一种暂时的真理装进玻璃。§8玻璃一碎，真理就过期。",
-      "en": "§d{item} §7bottles a temporary truth. §8When the glass breaks, the truth expires.",
+      "zh": "你手中晃动着一瓶{item}。玻璃瓶里封存着炼金术士们用草药与魔力调制的虚妄安慰。",
+      "en": "You swirl a vial of {item}—ephemeral comfort brewed from herbs and alchemy within fragile glass.",
       "weight": 4
     },
     {
@@ -905,8 +905,8 @@
       "aspects": [
         "item:potion"
       ],
-      "zh": "§7喝 {item} 之前，问它想改你的哪一部分。§8有些药水改完不归还。",
-      "en": "§7Before you drink {item}, ask which part of you it intends to edit. §8Some potions do not return the draft.",
+      "zh": "一口{item}或许能暂时止住伤痛或赋予蛮力，却治不好你灵魂上日益加深的裂缝。",
+      "en": "A draught of {item} may dull pain or lend fleeting vigor, yet it cannot mend the widening cracks in your soul.",
       "weight": 4
     },
     {
@@ -914,8 +914,8 @@
       "aspects": [
         "item:potion"
       ],
-      "zh": "§5瓶子摇一摇，颜色就像在撒谎。§7{item} 的谎通常很好喝。",
-      "en": "§5Shake the bottle and the color lies. §7The lie in {item} is usually pleasant to drink.",
+      "zh": "这瓶{item}的色泽在幽暗中显得格外诡异，不知饮下之后究竟是救赎还是另一种毒药。",
+      "en": "The hue of {item} glints strangely in the gloom; who knows whether it brings relief or a subtler poison?",
       "weight": 4
     },
     {
@@ -923,8 +923,8 @@
       "aspects": [
         "item:book"
       ],
-      "zh": "§7{item} 是一扇可以合上的门。§8合上，不代表里面的东西同意留下。",
-      "en": "§7{item} is a gate that can be shut. §8Shutting it does not mean the contents agreed to stay.",
+      "zh": "你捧着{item}。文字是凡人用来束缚知识的牢笼，然而真正的恐怖从不肯乖乖留在纸页之间。",
+      "en": "You hold {item}. Words are the cage mortals build for knowledge, yet true horror refuses to stay pinned to the page.",
       "weight": 4
     },
     {
@@ -932,8 +932,8 @@
       "aspects": [
         "item:book"
       ],
-      "zh": "§8纸、皮、墨。§7{item} 用这三样东西模仿永恒。模仿得不算差。",
-      "en": "§8Paper, hide, ink. §7{item} imitates eternity with those three. The imitation is not bad.",
+      "zh": "翻开{item}吧。每一行墨迹背后，或许都藏着某个早已发疯的抄写员最后的呻吟。",
+      "en": "Open {item}. Behind every line of ink may hide the final groan of some scribe who lost his wits.",
       "weight": 4
     },
     {
@@ -941,8 +941,8 @@
       "aspects": [
         "item:book"
       ],
-      "zh": "§6别在不该读的地方翻开 {item}。§5有些句子读到一半，读者会变成脚注。",
-      "en": "§6Do not open {item} where it should not be read. §5Some sentences, halfway through, turn the reader into a footnote.",
+      "zh": "你在阅读{item}，而黑暗之中，也有无数双眼睛正透过书页反过来阅读着你。",
+      "en": "You read {item}, while in the dark countless eyes read you back through the very pages.",
       "weight": 4
     },
     {
@@ -950,8 +950,8 @@
       "aspects": [
         "item:abyssal"
       ],
-      "zh": "§3{item} 带着深渊的潮气。§8潮气不是水。是一种还没干的召唤。",
-      "en": "§3{item} carries the damp of the abyss. §8That damp is not water. It is a summons that has not dried.",
+      "zh": "你手中握着{item}——一件沾染了深渊气息与禁忌位能的造物。",
+      "en": "You hold {item}—an artifact steeped in Abyssal breath and forbidden Potential Energy.",
       "weight": 4
     },
     {
@@ -959,8 +959,8 @@
       "aspects": [
         "item:abyssal"
       ],
-      "zh": "§7你把 {item} 握在凡人的手里。§5它认得这张脸，所以暂时不咬你。",
-      "en": "§7You hold {item} in a mortal hand. §5It knows this face, so it refrains from biting. For now.",
+      "zh": "{item}正在你的掌心微微震颤，仿佛认出了这具傀儡身上属于扎哈尔的残响。",
+      "en": "{item} trembles faintly in your palm, as if recognizing the echo of J'zahar within this simulacrum.",
       "weight": 4
     },
     {
@@ -968,8 +968,8 @@
       "aspects": [
         "item:abyssal"
       ],
-      "zh": "§8{item} 不该出现在市集上。§7市集的价钱太轻，盛不住它的真名。",
-      "en": "§8{item} should not appear in a market. §7A market's prices are too light to hold its true name.",
+      "zh": "唯有踏足过黑暗与绝望的探索者，才配将{item}握在手中。",
+      "en": "Only an explorer who has walked through darkness and despair is fit to wield {item}.",
       "weight": 4
     },
     {
@@ -977,8 +977,8 @@
       "aspects": [
         "item:abyssal"
       ],
-      "zh": "§3看着 {item}。§7荒地、恐惧、暗影，总有一种口音粘在上面。",
-      "en": "§3Look at {item}. §7Wasteland, dread, or shadow: some accent is stuck to it.",
+      "zh": "善用{item}吧，凡人。它是你在珊瑚与恐惧之间披荆斩棘的依凭，也是你越陷越深的证明。",
+      "en": "Wield {item} well, mortal. It is your edge against Coralium and Dread—and proof of how deep you have waded.",
       "weight": 4
     },
     {
@@ -986,8 +986,8 @@
       "aspects": [
         "item:necronomicon"
       ],
-      "zh": "§5{item}。§8你把它拿在手里，像拿着一封写给我的信，却还没决定要不要读抬头。",
-      "en": "§5{item}. §8You hold it like a letter addressed to me, and have not decided to read the heading.",
+      "zh": "你手中紧握着{item}！正是我的典籍指引着无数疯狂的灵魂一路走到今日。",
+      "en": "You clutch {item}! It is my readings that have led countless maddened souls all the way here.",
       "weight": 2
     },
     {
@@ -995,8 +995,8 @@
       "aspects": [
         "item:necronomicon"
       ],
-      "zh": "§7死灵之书不是书。§5{item} 是一张还愿意被装订的嘴。",
-      "en": "§7The Necronomicon is not a book. §5{item} is a mouth that still consents to be bound.",
+      "zh": "没有了{item}，你便毫无价值，凡人。好好倾听这本黑皮书页间渗出的阿克洛语低吟吧。",
+      "en": "Without {item}, you are worthless, mortal. Listen well to the Aklo whispers seeping from its dark pages.",
       "weight": 2
     },
     {
@@ -1004,8 +1004,8 @@
       "aspects": [
         "item:necronomicon"
       ],
-      "zh": "§8翻开 {item} 的时候，别用你自己的声音读。§7用我的。你现在租得起。",
-      "en": "§8When you open {item}, do not read in your own voice. §7Use mine. You can afford the rent.",
+      "zh": "每一次翻动{item}，你的神智便会不可逆转地滑向奥穆索的深渊。",
+      "en": "Every turn of {item}'s pages slides your mind irreversibly closer to the abyss of Omothol.",
       "weight": 4
     },
     {
@@ -1013,8 +1013,8 @@
       "aspects": [
         "item:necronomicon"
       ],
-      "zh": "§5纸页里有潮声。§7{item} 记得每一只没能把句子读完的手。",
-      "en": "§5There is a tide in the pages. §7{item} remembers every hand that failed to finish a sentence.",
+      "zh": "{item}记录着仪式、位能与旧日支配者的真名。莫要让它落入不配触碰它的愚人手中。",
+      "en": "{item} holds rituals, Potential Energy, and the true names of the Great Old Ones. Never let it fall into unworthy hands.",
       "weight": 4
     },
     {
@@ -1022,8 +1022,8 @@
       "aspects": [
         "item:necronomicon"
       ],
-      "zh": "§8{item} 比大多数祭司诚实。§7它至少承认自己会改写读者。",
-      "en": "§8{item} is more honest than most priests. §7It at least admits it rewrites the reader.",
+      "zh": "Iä! {item}在你掌中发烫——它认出了这具化身背后真正的主人。",
+      "en": "Iä! {item} warms in your grasp—it knows the true master behind this simulacrum.",
       "weight": 4
     },
     {
@@ -1031,8 +1031,8 @@
       "aspects": [
         "item:necronomicon"
       ],
-      "zh": "§6深渊典籍在你掌中发沉。§5{item} 不是因为厚。是因为有些名字拒绝被合上。",
-      "en": "§6The abyssal scripture weighs in your palm. §5{item} is not heavy because it is thick. Some names refuse to be closed.",
+      "zh": "继续研读{item}吧，直到你再也分不清现实与疯狂的界限。",
+      "en": "Read on in {item}, until you can no longer tell reality from madness.",
       "weight": 4
     },
     {
@@ -1040,8 +1040,8 @@
       "aspects": [
         "item:offhand"
       ],
-      "zh": "§7另一只手也没闲着。§8两只手同时握东西的人，通常还没学会用嘴开门。",
-      "en": "§7The other hand is not idle. §8Those who fill both hands have usually not learned to open a door with the mouth.",
+      "zh": "你的副手悄然握持着备用的器物。在瞬息万变的险境中，多一份准备便多一线生机。",
+      "en": "Your offhand quietly holds a spare tool ready. In shifting peril, one extra preparation may buy another breath.",
       "weight": 4
     },
     {
@@ -1049,8 +1049,8 @@
       "aspects": [
         "item:offhand"
       ],
-      "zh": "§8副手是一种保险。§7保险在奥穆索是一种会被嘲笑的宗教。",
-      "en": "§8The off hand is a kind of insurance. §7In Omothol, insurance is a religion people laugh at.",
+      "zh": "双手并用，方能应对深渊生物从死角袭来的扑杀。",
+      "en": "Both hands engaged—only so can you meet the ambush of Abyssal horrors from your blind side.",
       "weight": 4
     },
     {
@@ -1058,8 +1058,8 @@
       "aspects": [
         "item:offhand"
       ],
-      "zh": "§7你让两只手都有事做。§5很好。这样它们就腾不出空来发抖。",
-      "en": "§7You have given both hands an errand. §5Good. Then they have no spare time to shake.",
+      "zh": "副手中的器物沉默待命，恰如潜伏在主世界阴影里的第二道防线。",
+      "en": "What rests in your offhand waits in silence, like a second ward lurking in the shadows.",
       "weight": 4
     },
     {
@@ -1067,8 +1067,8 @@
       "aspects": [
         "block:abyssal"
       ],
-      "zh": "§3{block} 认得深渊的口音。§8你的手如果带着主世界的温度，它会先凉一凉再决定认不认。",
-      "en": "§3{block} knows the accent of the abyss. §8If your hand still carries overworld heat, it will cool the hand before it decides to answer.",
+      "zh": "{block}并非死物——在旧日支配者的疆域里，连石块与金属都携带着一丝狂乱的意志。",
+      "en": "{block} is no dead matter; within the domains of the Great Old Ones, even stone and ore carry a sliver of mad will.",
       "weight": 4
     },
     {
@@ -1076,8 +1076,8 @@
       "aspects": [
         "block:abyssal"
       ],
-      "zh": "§8把 {block} 砌进房子里，房子就不再只是房子。§5它开始有了籍贯。",
-      "en": "§8Lay {block} into a house and the house stops being only a house. §5It acquires a place of origin.",
+      "zh": "Iä! 将{block}置于你的视野之中，是否让你听见了彼岸传来的低沉共鸣？",
+      "en": "Iä! Holding {block} within your sight—do you hear the low resonance answering from beyond the Gate?",
       "weight": 4
     },
     {
@@ -1085,8 +1085,8 @@
       "aspects": [
         "block:abyssalnite"
       ],
-      "zh": "§5{block} 在暗处发亮，像一种不肯熄灭的脾气。§8脾气可以锻，不可以劝。",
-      "en": "§5{block} glows in the dark like a temper that refuses to go out. §8A temper can be forged. It cannot be talked down.",
+      "zh": "唯有足够坚韧的器具，才能撼动{block}的矿脉——正如唯有疯狂的心智，才能承载禁忌的真理。",
+      "en": "Only hardened tools can crack a vein of {block}—just as only a hardened mind can bear forbidden truth.",
       "weight": 4
     },
     {
@@ -1094,8 +1094,8 @@
       "aspects": [
         "block:abyssalnite"
       ],
-      "zh": "§8敲 {block} 的声音很沉。§7沉是因为每一击都在问：你确定要把它从家里带走？",
-      "en": "§8The sound of striking {block} is heavy. §7Heavy, because each blow asks whether you are sure you mean to take it from home.",
+      "zh": "这{block}之中凝聚着古老的位能，令死灵之书的持有者趋之若鹜。",
+      "en": "Within {block} gathers ancient Potential Energy, coveted by every bearer of the Necronomicon.",
       "weight": 4
     },
     {
@@ -1103,8 +1103,8 @@
       "aspects": [
         "block:abyssalnite"
       ],
-      "zh": "§5{block} 做成的刃会记得矿脉的方向。§8所以有些剑砍着砍着，会想往下。",
-      "en": "§5A blade made from {block} remembers the direction of the vein. §8That is why some swords, mid-swing, want to go down.",
+      "zh": "仔细端详{block}的断面吧，那幽暗的色泽宛如奥穆索永夜的缩影。",
+      "en": "Study the fracture of {block}; its somber hue mirrors the perpetual night of Omothol.",
       "weight": 4
     },
     {
@@ -1112,8 +1112,8 @@
       "aspects": [
         "block:air"
       ],
-      "zh": "§7你盯着空处。§8空处没有义务回看，可门有。门就站在空处后面。",
-      "en": "§7You are staring at empty air. §8Empty air is not obliged to look back. A gate is. The gate stands just behind the empty.",
+      "zh": "面前并无障碍，可你的前路真的如眼前这片空气一般坦荡么？",
+      "en": "No wall bars your sight—yet is your path truly as clear as the air before you?",
       "weight": 4
     },
     {
@@ -1121,8 +1121,8 @@
       "aspects": [
         "block:air"
       ],
-      "zh": "§8准星落在没有名字的地方。§7没有名字，就不欠你一句解释。",
-      "en": "§8The crosshair has landed where there is no name. §7What has no name owes you no explanation.",
+      "zh": "风穿过这片空隙，带来极远处某个未知维度的微弱震颤。",
+      "en": "Wind slips through this empty span, carrying the faint tremor of some distant, unnamed realm.",
       "weight": 4
     },
     {
@@ -1130,8 +1130,8 @@
       "aspects": [
         "block:air"
       ],
-      "zh": "§7空，不是无。§8无是一种还没被邀请的材料。你现在看着的，只是它的等候室。",
-      "en": "§7Empty is not nothing. §8Nothing is a material not yet invited. What you are looking at is only its waiting room.",
+      "zh": "即便眼中只有一片空明，黑暗国度的阴影也依然紧贴在你的视野边缘。",
+      "en": "Though your eyes meet only open air, the shadow of the Dark Realm still clings to the rim of your sight.",
       "weight": 4
     },
     {
@@ -1139,8 +1139,8 @@
       "aspects": [
         "block:any"
       ],
-      "zh": "§7{block}。§8你看着它，它就暂时有了观众。观众是一种很轻的责任，轻到方块感觉不到。",
-      "en": "§7{block}. §8While you look, it briefly has an audience. An audience is a light duty, too light for a block to feel.",
+      "zh": "看着{block}吧。无论凡人将它砌成高墙还是祭坛，终有一日都会在群星归位时化为齑粉。",
+      "en": "Look upon {block}. Whether mortals lay it into fortress walls or altars, all shall crumble when the stars are right.",
       "weight": 4
     },
     {
@@ -1148,8 +1148,8 @@
       "aspects": [
         "block:any"
       ],
-      "zh": "§8{block} 不会因为被看见而改变用途。§7改变用途的通常是看见它的人。",
-      "en": "§8{block} will not change its use because it was seen. §7What changes its use is usually the person who saw it.",
+      "zh": "这方{block}并未开口，它只是沉默地见证着又一个疯子从自己面前走过。",
+      "en": "This {block} speaks no word; it merely bears silent witness as another madman passes before it.",
       "weight": 4
     },
     {
@@ -1157,8 +1157,8 @@
       "aspects": [
         "block:container"
       ],
-      "zh": "§6{block} 把黑暗折起来存放。§8存放不是安全。是推迟被看见的时间。",
-      "en": "§6{block} folds darkness and stores it. §8Storage is not safety. It is a postponement of being seen.",
+      "zh": "打开{block}之前，先问问自己：你真的准备好清点里面沉睡的东西了么？",
+      "en": "Before you unlatch {block}, ask yourself whether you are truly ready to count what sleeps within.",
       "weight": 4
     },
     {
@@ -1166,8 +1166,8 @@
       "aspects": [
         "block:container"
       ],
-      "zh": "§7打开 {block} 之前，先听一听。§8有些箱子的铰链声，其实是里面的东西在叹气。",
-      "en": "§7Listen before you open {block}. §8Some hinges sigh because the contents are sighing.",
+      "zh": "这方{block}装得下凡世的财宝，却装不下一位旧日支配者的哪怕一丝凝视。",
+      "en": "This {block} can hold earthly trinkets, yet cannot contain a single flicker of a Great Old One's gaze.",
       "weight": 4
     },
     {
@@ -1175,8 +1175,8 @@
       "aspects": [
         "block:container"
       ],
-      "zh": "§8{block} 的锁如果是你加上的，锁保护的是你的贪。§7贪不喜欢被命名，可它喜欢有盖子。",
-      "en": "§8If you added the lock on {block}, the lock is protecting your greed. §7Greed dislikes being named. It likes having a lid.",
+      "zh": "沉重的{block}守卫着你的积蓄，正如恐惧守卫着查伽洛斯的巢穴。",
+      "en": "Sturdy {block} guards your hoard, much as Dread guards the lair of Chagaroth.",
       "weight": 4
     },
     {
@@ -1184,8 +1184,8 @@
       "aspects": [
         "block:coralium"
       ],
-      "zh": "§3{block} 的蓝会爬。§8爬不是生长。是一种还在拉票的几何。",
-      "en": "§3The blue of {block} climbs. §8Climbing is not growth. It is a geometry still canvassing for votes.",
+      "zh": "若没有足够的防护便长时间靠近{block}，你的血肉迟早会染上同样的苍蓝。",
+      "en": "Linger too long beside {block} without ward, and your flesh will take on that same sickly blue.",
       "weight": 4
     },
     {
@@ -1193,8 +1193,8 @@
       "aspects": [
         "block:coralium"
       ],
-      "zh": "§b别用手背去试 {block} 凉不凉。§7凉是诱饵。热的是后面的邀请。",
-      "en": "§bDo not test the cool of {block} with the back of your hand. §7Cool is the bait. The invitation behind it is warm.",
+      "zh": "Iä! {block}之中蕴含的异界能量，正是锻造深渊器具不可或缺的基石。",
+      "en": "Iä! The alien potency locked within {block} is the very cornerstone of Abyssal craft.",
       "weight": 4
     },
     {
@@ -1202,8 +1202,8 @@
       "aspects": [
         "block:darkstone"
       ],
-      "zh": "§8{block} 吸光，像在征收一种主世界还没立法的税。§7税叫影子。",
-      "en": "§8{block} drinks light the way one collects a tax the overworld has not yet legislated. §7The tax is called shadow.",
+      "zh": "凡人用{block}筑起神殿，却往往在建成之日才发觉自己不过是在为外神修建牢笼之外的走廊。",
+      "en": "Mortals raise shrines of {block}, realizing too late that they have only built corridors for the Outer Gods.",
       "weight": 4
     },
     {
@@ -1211,8 +1211,8 @@
       "aspects": [
         "block:darkstone"
       ],
-      "zh": "§7把耳朵贴在 {block} 上，你会听见一种很低的拒绝。§8拒绝的对象不是你。是光。",
-      "en": "§7Put an ear to {block} and you will hear a very low refusal. §8The refusal is not aimed at you. It is aimed at light.",
+      "zh": "这方{block}沉默地吸收着周围的微光，令一切尘世的喧嚣在它面前黯然失色。",
+      "en": "This {block} drinks in the surrounding light, dimming every earthly clamor before its presence.",
       "weight": 4
     },
     {
@@ -1220,8 +1220,8 @@
       "aspects": [
         "block:darkstone"
       ],
-      "zh": "§8{block} 砌成的房间，火把会显得抱歉。§5抱歉的光，照不清角落里已经坐下的东西。",
-      "en": "§8In a room laid with {block}, a torch looks apologetic. §5Apologetic light cannot show what has already sat down in the corner.",
+      "zh": "敲开{block}的岩层，你听见的不是回音，而是黑暗领域深处传来的低沉脉动。",
+      "en": "Strike a seam of {block}, and what answers is no echo—only the slow pulse of the Dark Realm far below.",
       "weight": 4
     },
     {
@@ -1229,8 +1229,8 @@
       "aspects": [
         "block:dirt"
       ],
-      "zh": "§6{block}。§7最普通的地面，也是最常被用来掩盖的材料。",
-      "en": "§6{block}. §7The most ordinary ground is also the material most often used to cover something.",
+      "zh": "凡人终其一生都在{block}之上奔忙，到头来也不过是替自己多占了一捧坟土。",
+      "en": "Mortals scurry across {block} all their lives, only to claim a single handful of grave-earth at the end.",
       "weight": 4
     },
     {
@@ -1238,8 +1238,8 @@
       "aspects": [
         "block:dirt"
       ],
-      "zh": "§8你看着 {block}，像看着一张还没写字的葬纸。§7纸不急。人会自己躺上去。",
-      "en": "§8You look at {block} as at burial paper not yet written on. §7The paper is not in a hurry. People lie down on it themselves.",
+      "zh": "踩在{block}上时，莫要忘了你脚底几丈之下，或许正有沙格斯在泥岩间蠕动。",
+      "en": "Treading {block}, do not forget that fathoms below your boots a Shoggoth may even now be churning through the mire.",
       "weight": 4
     },
     {
@@ -1247,8 +1247,8 @@
       "aspects": [
         "block:dirt"
       ],
-      "zh": "§2{block} 记得每一种脚。§8记得，却不告密。告密是草的工作，而且草也会烂。",
-      "en": "§2{block} remembers every kind of foot. §8It remembers and does not inform. Informing is the grass's job, and grass rots too.",
+      "zh": "{block}能掩埋尸体，却掩埋不了死灵之书里记载的禁忌过往。",
+      "en": "{block} may cover corpses, yet it cannot bury the forbidden past inscribed in the Necronomicon.",
       "weight": 4
     },
     {
@@ -1256,8 +1256,8 @@
       "aspects": [
         "block:dirt"
       ],
-      "zh": "§7挖开 {block}，下面还是它。§8世界有时候老实得令人失望。失望也是一种掩护。",
-      "en": "§7Dig into {block} and under it is more of it. §8The world is sometimes honest enough to disappoint. Disappointment is also a cover.",
+      "zh": "雨水将{block}化作泥泞，正如绝望将凡人的意志泡软。",
+      "en": "Rain turns {block} to mud, just as despair softens a mortal will.",
       "weight": 4
     },
     {
@@ -1265,8 +1265,8 @@
       "aspects": [
         "block:dirt"
       ],
-      "zh": "§6别小看 {block}。§8小看是一种站在上面的人的特权，特权在下雨时会变滑。",
-      "en": "§6Do not slight {block}. §8Slighting is a privilege of those who stand on it, and the privilege gets slippery in rain.",
+      "zh": "连这卑微的{block}，在群星归位之时也会在虚空的狂风中化为乌有。",
+      "en": "Even this lowly {block} shall scatter into nothingness before the gales of the Void when the stars are right.",
       "weight": 4
     },
     {
@@ -1274,8 +1274,8 @@
       "aspects": [
         "block:dreadstone"
       ],
-      "zh": "§4{block} 的粉末不该进肺。§8肺是一种太愿意相信空气的器官。",
-      "en": "§4The dust of {block} should not enter a lung. §8A lung is an organ too willing to trust air.",
+      "zh": "{block}冰冷而坚硬，恰似这片受诅咒的维度对所有生者怀抱的恶意。",
+      "en": "{block} is cold and unyielding, like the malice this accursed realm bears toward all living things.",
       "weight": 4
     },
     {
@@ -1283,8 +1283,8 @@
       "aspects": [
         "block:dreadstone"
       ],
-      "zh": "§8{block} 摸上去像一句已经痊愈的谎言。§4痊愈的是表面。谎言还在里面发干。",
-      "en": "§8{block} feels like a lie that has already recovered. §4The surface recovered. The lie is still drying inside.",
+      "zh": "看着{block}吧——连石头都能被恐惧扭曲至此，区区血肉之躯又能撑得住几时？",
+      "en": "Look upon {block}—if stone itself can be warped so far by Dread, how long can mere flesh endure?",
       "weight": 4
     },
     {
@@ -1292,8 +1292,8 @@
       "aspects": [
         "block:fire"
       ],
-      "zh": "§c{block} 不占地方，可它收租。§8租约写在你的袖口上，用焦味签字。",
-      "en": "§c{block} takes up no space, and still it collects rent. §8The lease is signed on your cuff, in the smell of scorch.",
+      "zh": "在{block}的灰烬落定之后，留下的唯有比从前更加深沉的黑暗。",
+      "en": "When the embers of {block} cool to ash, what remains is a darkness deeper than before.",
       "weight": 4
     },
     {
@@ -1301,8 +1301,8 @@
       "aspects": [
         "block:fire"
       ],
-      "zh": "§6看着 {block}，你会觉得它在跳舞。§7跳舞的东西通常不想被踩灭。它会记住鞋底。",
-      "en": "§6Watch {block} and you will think it is dancing. §7What dances usually does not wish to be stamped out. It remembers soles.",
+      "zh": "纵使是炽烈的{block}，在黑暗国度那绝对的虚暗面前，也会在一瞬间熄灭。",
+      "en": "Even fierce {block} snuffs out in an instant before the absolute gloom of the Dark Realm.",
       "weight": 4
     },
     {
@@ -1310,8 +1310,8 @@
       "aspects": [
         "block:fire"
       ],
-      "zh": "§c{block} 是一种很短的居民。§8短命的居民，脾气往往最急。",
-      "en": "§c{block} is a very brief resident. §8Brief residents tend to have the shortest temper.",
+      "zh": "{block}的爆裂声中，仿佛夹杂着某种古老祭坛上牺牲者的低泣。",
+      "en": "Amid the crackle of {block}, one almost hears the faint weeping of offerings upon an ancient altar.",
       "weight": 4
     },
     {
@@ -1319,8 +1319,8 @@
       "aspects": [
         "block:glass"
       ],
-      "zh": "§b{block} 让你看见，却不让你过去。§8看见是一种被允许的折磨。",
-      "en": "§b{block} lets you see and does not let you through. §8Seeing is a permitted form of torment.",
+      "zh": "只需轻轻一击，{block}便会化作满地锋利的碎片，一如你那不堪一击的理智。",
+      "en": "One sharp blow shatters {block} into jagged splinters, brittle as your own sanity.",
       "weight": 4
     },
     {
@@ -1328,8 +1328,8 @@
       "aspects": [
         "block:glass"
       ],
-      "zh": "§7{block} 碎的时候声音很诚实。§8诚实的东西通常只出现一次。",
-      "en": "§7{block} is honest when it breaks. §8Honest things usually appear only once.",
+      "zh": "在{block}模糊的反光里，你看到的究竟是自己的脸，还是奥穆索守门人的面容？",
+      "en": "In the faint reflection of {block}, do you see your own face—or the visage of the Gatekeeper of Omothol?",
       "weight": 4
     },
     {
@@ -1337,8 +1337,8 @@
       "aspects": [
         "block:glass"
       ],
-      "zh": "§b别相信 {block} 后面的安全。§8安全如果透明，就只是一种还没被敲的延迟。",
-      "en": "§bDo not trust the safety behind {block}. §8If safety is transparent, it is only a delay that has not been struck yet.",
+      "zh": "隔着{block}观望世界，倒很符合你如今披着这具傀儡时的姿态——既在其中，又在之外。",
+      "en": "Watching the world through {block} suits your current state well enough—inside the frame, yet severed from it.",
       "weight": 4
     },
     {
@@ -1346,8 +1346,8 @@
       "aspects": [
         "block:lava"
       ],
-      "zh": "§c{block} 慢，亮，而且不谈判。§4慢是为了让你看清自己怎么消失。",
-      "en": "§c{block} is slow, bright, and does not negotiate. §4The slowness is so you can watch how you disappear.",
+      "zh": "在{block}缓慢流动的粘稠表面下，仿佛正沉睡着某种不惧烈焰的古老怪物。",
+      "en": "Beneath the viscous, creeping crust of {block}, something ancient and impervious to flame seems to slumber.",
       "weight": 4
     },
     {
@@ -1355,8 +1355,8 @@
       "aspects": [
         "block:lava"
       ],
-      "zh": "§6{block} 的表面结壳，像一句还没说完就凝固的威胁。§8壳下面仍是热的。",
-      "en": "§6The skin on {block} is a threat that cooled before it finished speaking. §8Under the skin it is still hot.",
+      "zh": "炽热的{block}吞噬一切坠落之物，不留骸骨，亦不留遗言。",
+      "en": "Seething {block} consumes all that falls within, leaving neither bone nor epitaph.",
       "weight": 4
     },
     {
@@ -1364,8 +1364,8 @@
       "aspects": [
         "block:liquid"
       ],
-      "zh": "§9{block} 没有棱角，所以你无法跟它讲条件。§8条件需要边。它把边都融化了。",
-      "en": "§9{block} has no corners, so you cannot set terms with it. §8Terms need edges. It has melted the edges.",
+      "zh": "莫要轻易将手伸入未知的{block}——在深渊的疆域里，液体往往比刀剑更致命。",
+      "en": "Do not dip your hand lightly into unknown {block}—within Abyssal domains, liquids kill more surely than steel.",
       "weight": 4
     },
     {
@@ -1373,8 +1373,8 @@
       "aspects": [
         "block:liquid"
       ],
-      "zh": "§b你看着 {block}，它也在看着一个更低的地方。§7液体的忠诚永远向下。",
-      "en": "§bYou look at {block}. It is looking toward somewhere lower. §7The loyalty of a liquid is always downward.",
+      "zh": "{block}随重力流淌，寻找着最低洼的归宿，恰似堕落的灵魂总会滑向深渊。",
+      "en": "{block} seeks the lowest hollow, just as fallen souls inevitably slide toward the Abyss.",
       "weight": 4
     },
     {
@@ -1382,8 +1382,8 @@
       "aspects": [
         "block:liquid"
       ],
-      "zh": "§8{block} 会填满你给它的任何形状。§7包括一个疏忽。疏忽的形状通常是一只脚。",
-      "en": "§8{block} will fill any shape you give it. §7Including a carelessness. The shape of carelessness is usually a foot.",
+      "zh": "凝望{block}的波纹吧，那晃动的倒影正悄悄扭曲着你对现实的认知。",
+      "en": "Stare into the ripples of {block}; its wavering reflection quietly warps your hold on reality.",
       "weight": 4
     },
     {
@@ -1391,8 +1391,8 @@
       "aspects": [
         "block:ore"
       ],
-      "zh": "§e{block} 藏在石头里，像一句不愿被提前读到的话。§8你现在提前了。",
-      "en": "§e{block} hides in stone like a sentence that did not want to be read early. §8You are early.",
+      "zh": "{block}不过是造物主遗落在石缝里的碎屑，却足以让无数凡人为之互相残杀。",
+      "en": "{block} is mere dross left in stone fissures, yet mortals slaughter one another over its gleam.",
       "weight": 4
     },
     {
@@ -1400,8 +1400,8 @@
       "aspects": [
         "block:ore"
       ],
-      "zh": "§6挖 {block} 的人总说自己在取。§7取是一种把别人的沉默变成自己的库存的礼貌说法。",
-      "en": "§6People who dig {block} say they are taking. §7Taking is the polite word for turning someone else's silence into your stock.",
+      "zh": "金属与矿石只能铸造凡俗的器物，唯有深渊的位能才能撼动界域的门扉。",
+      "en": "Ore and metal forge only earthly tools; only the Potential Energy of the Abyss can shake the Gates between worlds.",
       "weight": 4
     },
     {
@@ -1409,8 +1409,8 @@
       "aspects": [
         "block:ore"
       ],
-      "zh": "§e{block} 在火里会改口。§8改口之后，它就愿意变成工具，而不再愿意做石头。",
-      "en": "§e{block} changes its story in the fire. §8After the change it is willing to become a tool, and no longer willing to be stone.",
+      "zh": "你盯着{block}时眼中的贪欲，与那些最终沦为深渊矿奴的愚人别无二致。",
+      "en": "The hunger in your eyes as you look upon {block} differs not at all from the fools who ended as thralls in the deep.",
       "weight": 4
     },
     {
@@ -1418,8 +1418,8 @@
       "aspects": [
         "block:plant"
       ],
-      "zh": "§a{block} 还在把光变成身体。§8这种手艺，门学不会。门只会把身体变成通路。",
-      "en": "§a{block} is still turning light into a body. §8That craft is one a gate never learned. A gate only turns bodies into passages.",
+      "zh": "这株{block}在微风中轻轻摇曳，仿佛正在向某个看不见的存在俯首致意。",
+      "en": "This {block} sways gently in the breeze, as though bowing before an unseen presence.",
       "weight": 4
     },
     {
@@ -1427,8 +1427,8 @@
       "aspects": [
         "block:plant"
       ],
-      "zh": "§2踩过 {block} 会留下味道。§7味道是一种你没打算签名的收据。",
-      "en": "§2Step through {block} and you leave a smell. §7A smell is a receipt you did not mean to sign.",
+      "zh": "即便是最不起眼的{block}，在恐惧瘟疫降临时也会扭曲成可怖的畸形。",
+      "en": "Even the humblest {block} warps into grotesque shapes when the Dread Plague sweeps past.",
       "weight": 4
     },
     {
@@ -1436,8 +1436,8 @@
       "aspects": [
         "block:plant"
       ],
-      "zh": "§a{block} 低头的时候，不一定是风。§8有时候是它听见了地底下的点名。",
-      "en": "§aWhen {block} bows, it is not always the wind. §8Sometimes it heard a roll call under the ground.",
+      "zh": "花叶终会凋零，唯有雕刻在黑石上的死灵之书符文永恒不朽。",
+      "en": "Leaf and bloom alike must fade; only the glyphs of the Necronomicon carved in dark stone endure.",
       "weight": 4
     },
     {
@@ -1445,8 +1445,8 @@
       "aspects": [
         "block:sand"
       ],
-      "zh": "§e{block} 记不住脚，可它非常擅长掩埋。§8记不住和掩埋，是两种不同的仁慈。",
-      "en": "§e{block} cannot remember a foot, and it is very good at burying one. §8Forgetting and burying are two different mercies.",
+      "zh": "干燥的{block}不留水痕，亦不留脚印。风吹过之后，一切仿佛从未发生。",
+      "en": "Dry {block} keeps neither water nor footprint. Once the wind passes, it is as though you were never there.",
       "weight": 4
     },
     {
@@ -1454,8 +1454,8 @@
       "aspects": [
         "block:sand"
       ],
-      "zh": "§6风一来，{block} 就改地形。§7改地形的东西，不适合拿来做承诺。",
-      "en": "§6When the wind comes, {block} redraws the ground. §7What redraws the ground is a poor material for a promise.",
+      "zh": "沙漏里的{block}正在一点点坠落。凡人啊，你距离终局还剩多少时间？",
+      "en": "The {block} in the hourglass trickles downward grain by grain. How much time remains to you, mortal?",
       "weight": 4
     },
     {
@@ -1463,8 +1463,8 @@
       "aspects": [
         "block:sand"
       ],
-      "zh": "§e{block} 进眼里的时候很诚实。§8诚实的痛通常很小，而且正好足够让你停下。",
-      "en": "§e{block} is honest when it gets in the eye. §8Honest pain is usually small, and exactly enough to make you stop.",
+      "zh": "每一粒{block}都是岩石风化后的尸骸。",
+      "en": "Every grain of {block} is the weathered corpse of ancient stone.",
       "weight": 4
     },
     {
@@ -1472,8 +1472,8 @@
       "aspects": [
         "block:stone"
       ],
-      "zh": "§7{block} 是世界同意被踩的那一种硬度。§8同意可以撤回。撤回的时候叫塌方。",
-      "en": "§7{block} is the hardness the world agreed to be walked on. §8Agreement can be withdrawn. Withdrawal is called a collapse.",
+      "zh": "这方{block}承受了千万年的重压，依然沉默不语。你比它又能多坚持几分？",
+      "en": "This {block} has endured the crushing weight of ages in silence. How much longer can you endure than stone?",
       "weight": 4
     },
     {
@@ -1481,8 +1481,8 @@
       "aspects": [
         "block:stone"
       ],
-      "zh": "§8{block} 不腐烂，所以人们信任它。§7信任一种不会死的东西，是一种很常见的误判。",
-      "en": "§8{block} does not rot, so people trust it. §7Trusting a thing that does not die is a very common misjudgment.",
+      "zh": "岩层深处并非只有死寂的{block}——那里还隐藏着黑暗之地与珊瑚的矿脉。",
+      "en": "The deep strata hold more than lifeless {block}—there too hide veins of Coralium and Darkstone.",
       "weight": 4
     },
     {
@@ -1490,8 +1490,8 @@
       "aspects": [
         "block:stone"
       ],
-      "zh": "§7敲 {block} 的回声很短。§8短是因为石头不想跟你长谈。长谈是矿的工作。",
-      "en": "§7The echo off {block} is short. §8Short, because stone does not want a long talk. Long talks are the ore's job.",
+      "zh": "哪怕将{block}凿成密不透风的墓室，死亡与疯狂依然会从石缝中渗入。",
+      "en": "Even if you hew {block} into an airtight vault, death and madness still seep through the seams.",
       "weight": 4
     },
     {
@@ -1499,8 +1499,8 @@
       "aspects": [
         "block:stone"
       ],
-      "zh": "§8{block} 砌成的墙看起来像结论。§7结论如果能被镐打开，就只是一种暂时的语气。",
-      "en": "§8A wall of {block} looks like a conclusion. §7If a conclusion can be opened with a pick, it was only a temporary tone.",
+      "zh": "{block}冰冷的触感，恰好提醒着你这具傀儡并非血肉之躯。",
+      "en": "The cold touch of {block} serves to remind you that this simulacrum is no true flesh.",
       "weight": 4
     },
     {
@@ -1508,8 +1508,8 @@
       "aspects": [
         "block:water"
       ],
-      "zh": "§9{block} 把脸还你，却把名字留在涟漪里。§8涟漪散得很快。名字不一定跟着散。",
-      "en": "§9{block} returns your face and keeps your name in the ripple. §8The ripple breaks quickly. The name does not always break with it.",
+      "zh": "水波荡漾着微光，恰似珊瑚瘟疫在夜晚的海面上悄然蔓延的模样。",
+      "en": "Ripples shimmer faintly, like the Coralium Plague spreading silently across night-darkened waves.",
       "weight": 4
     },
     {
@@ -1517,8 +1517,8 @@
       "aspects": [
         "block:water"
       ],
-      "zh": "§b看着 {block}，你会想喝。§7想喝是身体的诚实。诚实的身体最容易被引进去。",
-      "en": "§bLook at {block} and you will want to drink. §7Wanting to drink is the body's honesty. An honest body is the easiest to lead in.",
+      "zh": "凡人离不开{block}的滋养，却也随时可能溺毙在它的怀抱里。",
+      "en": "Mortals cannot live without {block}, yet may drown in its embrace at any hour.",
       "weight": 4
     },
     {
@@ -1526,8 +1526,8 @@
       "aspects": [
         "block:wood"
       ],
-      "zh": "§6{block} 曾经朝上长。§8现在它横着，任你决定它是门、是燃料，还是棺材的草稿。",
-      "en": "§6{block} used to grow upward. §8Now it lies sideways, and lets you decide whether it is a door, fuel, or the draft of a coffin.",
+      "zh": "凡人用{block}搭建屋檐与门扉，以为木板便能将黑夜中的怪物拒之门外。",
+      "en": "Mortals build roofs and doors of {block}, trusting planks of wood to bar the horrors of the night.",
       "weight": 4
     },
     {
@@ -1535,8 +1535,8 @@
       "aspects": [
         "block:wood"
       ],
-      "zh": "§2{block} 的纹路还是树的记忆。§7记忆被锯开以后，不会抗议，只会在火里复述一次。",
-      "en": "§2The grain of {block} is still the tree's memory. §7After the saw, memory does not protest. It recites itself once in the fire.",
+      "zh": "{block}极易燃烧，也极易腐朽。将希望寄托于此等脆弱之物，实在可笑。",
+      "en": "{block} burns easily and rots quicker still. How absurd to rest one's shelter on so frail a thing.",
       "weight": 4
     },
     {
@@ -1544,8 +1544,8 @@
       "aspects": [
         "block:wood"
       ],
-      "zh": "§6敲 {block} 是空的。§8空心的材料适合做鼓，也适合藏一句不想被立刻听见的话。",
-      "en": "§6{block} sounds hollow when struck. §8Hollow material makes a good drum, and a good place to hide a sentence you do not want heard yet.",
+      "zh": "砍向{block}的斧声惊扰了林间的寂静，也惊动了树根下沉睡的阴影。",
+      "en": "The axe biting into {block} shatters the woodland hush—and wakes the shadows sleeping beneath the roots.",
       "weight": 4
     },
     {
@@ -1553,8 +1553,8 @@
       "aspects": [
         "block:wood"
       ],
-      "zh": "§7{block} 会返潮。§8返潮的东西记得自己从哪来。从森林来的，下雨时会想回去。",
-      "en": "§7{block} takes damp back into itself. §8What takes damp back remembers where it came from. What came from a forest wants to return when it rains.",
+      "zh": "{block}的木纹蜿蜒曲折，宛如深渊之书页边那些令人目眩的几何图案。",
+      "en": "The grain of {block} twists in dizzying curves, like the geometries scrawled in the margins of the Abyssalnomicon.",
       "weight": 4
     },
     {
@@ -1562,8 +1562,8 @@
       "aspects": [
         "block:wood"
       ],
-      "zh": "§2把 {block} 当成死物，是锯木人的安慰。§8安慰不改变年轮还在数的事实。",
-      "en": "§2Treating {block} as a dead thing is the sawyer's comfort. §8Comfort does not change the fact that the rings are still counting.",
+      "zh": "这方{block}终将化为灰烬或尘土，唯有虚空永恒长存。",
+      "en": "This {block} shall turn to ash or dust at last; only the Void endures.",
       "weight": 4
     },
     {
@@ -1571,8 +1571,8 @@
       "aspects": [
         "item:abyssal"
       ],
-      "zh": "§3{item} 的重量不只在手上。§8它还在你的名字上加了一点深渊的口音。",
-      "en": "§3The weight of {item} is not only in the hand. §8It also adds a little of the abyss's accent to your name.",
+      "zh": "这件{item}散发出的冰冷威压，令寻常的凡俗兵器相形见绌。",
+      "en": "The cold weight of {item} puts ordinary earthly blades to shame.",
       "weight": 4
     },
     {
@@ -1580,8 +1580,8 @@
       "aspects": [
         "item:abyssal"
       ],
-      "zh": "§5拿着 {item}，你像一个还没正式入籍的人，已经开始用那边的货币。",
-      "en": "§5Holding {item}, you are like someone not yet naturalized who has already started spending the other side's coin.",
+      "zh": "Iä! {item}既是工具，亦是契约——它时刻提醒着你与深渊之间早已无法割舍的联系。",
+      "en": "Iä! {item} is both instrument and pact, forever reminding you of the bond you can no longer sever with the Abyss.",
       "weight": 4
     },
     {
@@ -1589,8 +1589,8 @@
       "aspects": [
         "item:any"
       ],
-      "zh": "§7{item} 在你手里。§8手里的东西会变成句子的主语，如果你不小心让它先开口。",
-      "en": "§7{item} is in your hand. §8What is in the hand becomes the subject of the sentence, if you let it speak first.",
+      "zh": "你把玩着{item}，却忘了在奥穆索，一切物质最终都会化作虚无。",
+      "en": "You turn {item} over in your hand, forgetting that in Omothol all matter dissolves at last into nothingness.",
       "weight": 4
     },
     {
@@ -1598,8 +1598,8 @@
       "aspects": [
         "item:any"
       ],
-      "zh": "§8我看见 {item}。§7看见不是批准。批准是一种更重的手续，而这件东西还没申请。",
-      "en": "§8I see {item}. §7Seeing is not approval. Approval is a heavier procedure, and this thing has not applied.",
+      "zh": "无论你携带多少{item}，都填不满灵魂深处那道因窥探真理而裂开的空洞。",
+      "en": "No matter how many {item} you carry, none can fill the chasm torn in your soul by forbidden truth.",
       "weight": 4
     },
     {
@@ -1607,8 +1607,8 @@
       "aspects": [
         "item:armor"
       ],
-      "zh": "§7{item} 让你觉得自己厚了一层。§8厚是一种可以敲响的幻觉。敲响的是金属，不是命运。",
-      "en": "§7{item} makes you feel a layer thicker. §8Thickness is an illusion that can be struck. What rings is metal, not fate.",
+      "zh": "这件{item}或许能替这具空心傀儡多撑过几次撕咬，仅此而已。",
+      "en": "This {item} may spare your hollow puppet a few more bites—nothing more.",
       "weight": 4
     },
     {
@@ -1616,8 +1616,8 @@
       "aspects": [
         "item:armor"
       ],
-      "zh": "§8把 {item} 握在手里，金属会先替你开口。§7开口的东西在夜里尤其容易被点名。",
-      "en": "§8Hold {item} and the metal speaks before you do. §7What speaks is especially easy to call on at night.",
+      "zh": "铠甲再坚固，也护不住你自己主动向深渊敞开的心门。",
+      "en": "No armor, however stout, can guard a mind that throws its own doors open to the Abyss.",
       "weight": 4
     },
     {
@@ -1625,8 +1625,8 @@
       "aspects": [
         "item:armor"
       ],
-      "zh": "§7{item} 防的是牙和刃。§5防不住一句已经写好的名字。名字不走胸甲的缝。",
-      "en": "§7{item} stops teeth and edges. §5It does not stop a name already written. A name does not travel through the seams of a breastplate.",
+      "zh": "沉重的{item}压在身上，恰似你背负的禁忌知识般令人喘不过气。",
+      "en": "The weight of {item} presses down, heavy as the forbidden lore you carry.",
       "weight": 4
     },
     {
@@ -1634,8 +1634,8 @@
       "aspects": [
         "item:axe"
       ],
-      "zh": "§6{item} 的工作是把直立的东西放倒。§8放倒以后，年轮会把时间交出来。",
-      "en": "§6The work of {item} is to lay upright things down. §8Once they are down, the rings hand over the time.",
+      "zh": "砍伐、劈裂、摧毁——{item}的存在本身便充满了原始的暴力。",
+      "en": "Hew, split, shatter—{item} embodies a crude, primal violence.",
       "weight": 4
     },
     {
@@ -1643,8 +1643,8 @@
       "aspects": [
         "item:axe"
       ],
-      "zh": "§7你握着 {item}，像握着一个很短的许可。§8许可的对象是树，不是门。别搞混。",
-      "en": "§7You hold {item} like a very short permission. §8The permission is for trees, not for gates. Do not confuse them.",
+      "zh": "小心莫让{item}的刃口卷曲在黑暗之地的硬木之上，亦莫让它沾染了不该斩杀的鲜血。",
+      "en": "Take care {item} does not notch against Darklands timber—or drink blood better left unspilled.",
       "weight": 4
     },
     {
@@ -1652,8 +1652,8 @@
       "aspects": [
         "item:axe"
       ],
-      "zh": "§6{item} 砍下去的声音很干。§8干是木头在最后一次拒绝变湿。",
-      "en": "§6{item} lands with a dry sound. §8Dry is the wood refusing, one last time, to become wet.",
+      "zh": "锋利的{item}能斩断树木的根基，却斩不断深渊盘踞在世界深处的触须。",
+      "en": "Keen {item} may sever a tree from its roots, yet it cannot sever the Abyss's tendrils from the world's core.",
       "weight": 4
     },
     {
@@ -1661,8 +1661,8 @@
       "aspects": [
         "item:book"
       ],
-      "zh": "§7{item} 把嘴装订起来，方便携带。§8携带一张嘴，就要准备听它在不该开口的时候开口。",
-      "en": "§7{item} binds a mouth so it can be carried. §8Carry a mouth, and be ready for it to open when it should not.",
+      "zh": "凡人总以为把秘密写进{item}里就能流传万世，殊不知有些书卷本身便是招致毁灭的信标。",
+      "en": "Mortals think writing secrets into {item} preserves wisdom, blind to the fact that some volumes are beacons of ruin.",
       "weight": 4
     },
     {
@@ -1670,8 +1670,8 @@
       "aspects": [
         "item:book"
       ],
-      "zh": "§8翻开 {item}，纸会先吸收你的光。§5吸收不是阅读。阅读是后面那种更贪的动作。",
-      "en": "§8Open {item} and the paper drinks your light first. §5Drinking is not reading. Reading is the greedier act that follows.",
+      "zh": "纸张脆弱易焚，唯有铭刻在{item}里的狂乱思想能跨越纪元而不朽。",
+      "en": "Paper is frail and burns easily; only the mad thoughts inscribed in {item} outlive the ages.",
       "weight": 4
     },
     {
@@ -1679,8 +1679,8 @@
       "aspects": [
         "item:book"
       ],
-      "zh": "§7{item} 的重量很轻。§8轻是因为真正重的那部分还没被你念出来。",
-      "en": "§7{item} is light. §8Light, because the heavy part has not yet been read aloud.",
+      "zh": "这本{item}或许记载了些许尘世的奥秘，但比起奥穆索的典籍，仍显得浅薄可笑。",
+      "en": "This {item} may hold a few earthly secrets, yet beside the tomes of Omothol it reads like a child's primer.",
       "weight": 4
     },
     {
@@ -1688,8 +1688,8 @@
       "aspects": [
         "item:bow"
       ],
-      "zh": "§7{item} 把杀意拉成一条线。§8线的好处是你可以假装自己还没决定。松手的时候，假装结束。",
-      "en": "§7{item} draws killing intent into a line. §8The virtue of a line is that you can pretend you have not decided. The pretense ends when you let go.",
+      "zh": "弓弦紧绷的震颤，恰似理智在彻底崩断前发出的最后一声哀鸣。",
+      "en": "The taut hum of the bowstring sounds like sanity's last whine before it snaps.",
       "weight": 4
     },
     {
@@ -1697,8 +1697,8 @@
       "aspects": [
         "item:bow"
       ],
-      "zh": "§8{item} 沉默的时候最危险。§7出声的是弦，不是良心。",
-      "en": "§8{item} is most dangerous while it is silent. §7What makes the sound is the string, not the conscience.",
+      "zh": "无论你的{item}射得有多远，都射不穿群星之间那片冰冷的虚空。",
+      "en": "No matter how far your {item} looses its shaft, it will never cross the cold void between the stars.",
       "weight": 4
     },
     {
@@ -1706,8 +1706,8 @@
       "aspects": [
         "item:bow"
       ],
-      "zh": "§7拿着 {item} 的人喜欢距离。§8距离是一种还没承认自己会靠近的礼貌。",
-      "en": "§7A person holding {item} likes distance. §8Distance is a courtesy that has not yet admitted it will come closer.",
+      "zh": "稳住你的呼吸，否则握着{item}的手哪怕颤抖半分，箭矢便会偏离靶心。",
+      "en": "Steady your breath, lest the hand holding {item} tremble and send the arrow wide.",
       "weight": 4
     },
     {
@@ -1715,8 +1715,8 @@
       "aspects": [
         "item:food"
       ],
-      "zh": "§6{item} 是一种暂时的停战。§8停战的对象是你自己的胃，不是外面的牙。",
-      "en": "§6{item} is a temporary ceasefire. §8The ceasefire is with your own stomach, not with the teeth outside.",
+      "zh": "在深渊荒地与恐惧之地，连最寻常的{item}都显得像是一种奢侈的慰藉。",
+      "en": "In the Abyssal Wasteland and Dreadlands, even plain {item} feels like a rare comfort.",
       "weight": 4
     },
     {
@@ -1724,8 +1724,8 @@
       "aspects": [
         "item:food"
       ],
-      "zh": "§e吃掉 {item} 之前，它还算物品。§7吃掉以后，它开始用你的血重写自己。",
-      "en": "§eBefore you eat {item}, it still counts as an item. §7Afterward it begins rewriting itself in your blood.",
+      "zh": "吞下{item}之时，莫要忘了你迟早也会成为其他存在眼中的食粮。",
+      "en": "As you swallow {item}, do not forget that in time you too are fodder in the eyes of greater things.",
       "weight": 4
     },
     {
@@ -1733,8 +1733,8 @@
       "aspects": [
         "item:offhand"
       ],
-      "zh": "§7另一只手也没有闲着。§8闲着的手才会老实。不闲的那只，通常藏着备用的结局。",
-      "en": "§7The other hand is not idle either. §8Only an idle hand stays honest. The busy one usually hides a spare ending.",
+      "zh": "左掌与右掌各自承接着不同的使命，正如理智与疯狂在你的脑海中彼此拉扯。",
+      "en": "Left hand and right each bear their own duty, much as sanity and madness tug against one another in your skull.",
       "weight": 4
     },
     {
@@ -1742,8 +1742,8 @@
       "aspects": [
         "item:offhand"
       ],
-      "zh": "§8副手是一种不想被主句提到的从句。§7从句翻脸的时候，往往比主句更快。",
-      "en": "§8The off hand is a clause that does not want to be in the main sentence. §7When a clause turns, it is often faster than the sentence.",
+      "zh": "多备一件器物在手边总归无害——只要你别在慌乱中忘了自己究竟握着什么。",
+      "en": "Keeping an extra tool at the ready does no harm—so long as panic does not make you forget what you hold.",
       "weight": 4
     },
     {
@@ -1751,8 +1751,8 @@
       "aspects": [
         "item:offhand"
       ],
-      "zh": "§7你把保险放在另一侧。§8保险这个词，在门的词典里拼法接近诱饵。",
-      "en": "§7You keep the insurance on the other side. §8In a gate's dictionary, insurance is spelled very close to bait.",
+      "zh": "这副手里的筹码，或许能在关键时刻替你挡下致命的一击。",
+      "en": "That reserve in your offhand might yet turn aside a fatal blow when the hour strikes.",
       "weight": 4
     },
     {
@@ -1760,8 +1760,8 @@
       "aspects": [
         "item:pickaxe"
       ],
-      "zh": "§7{item} 专门跟石头争论。§8争论的结果通常是石头让步，让出一条更深的黑。",
-      "en": "§7{item} argues with stone for a living. §8The usual result is that the stone yields, and yields a deeper black.",
+      "zh": "矿洞里的回声随着{item}的挥动不断扩散，谁知道黑暗的另一头有什么东西听见了这声响？",
+      "en": "Echoes ripple through the cavern with every swing of {item}; who knows what hears them in the dark beyond?",
       "weight": 4
     },
     {
@@ -1769,8 +1769,8 @@
       "aspects": [
         "item:pickaxe"
       ],
-      "zh": "§8握着 {item} 的人容易相信底下有答案。§7底下通常只有更多的问题，以及一种可以熔的问题。",
-      "en": "§8A person holding {item} tends to believe the answer is below. §7Below there are usually more questions, and one kind that can be smelted.",
+      "zh": "挥动{item}吧，掘墓人。你挖掘的每一条矿道，都可能成为通往深渊的阶梯。",
+      "en": "Swing {item}, gravedigger. Every tunnel you carve may become a stair leading down to the Abyss.",
       "weight": 4
     },
     {
@@ -1778,8 +1778,8 @@
       "aspects": [
         "item:pickaxe"
       ],
-      "zh": "§6{item} 的尖是一个很窄的野心。§8窄的野心最容易扎进不该扎的矿脉。",
-      "en": "§6The point of {item} is a very narrow ambition. §8Narrow ambitions are the easiest to drive into a vein they should not touch.",
+      "zh": "{item}终究会磨损，正如你的精力会在无尽的挖掘中消耗殆尽。",
+      "en": "{item} wears down in time, just as your strength drains away in endless toil.",
       "weight": 4
     },
     {
@@ -1787,8 +1787,8 @@
       "aspects": [
         "item:potion"
       ],
-      "zh": "§d{item} 把后果装在玻璃里。§8玻璃很薄。后果不薄。",
-      "en": "§d{item} keeps a consequence in glass. §8The glass is thin. The consequence is not.",
+      "zh": "凡人总是寄希望于这一小瓶{item}，仿佛几口液体便能逆转既定的命运。",
+      "en": "Mortals pin so much hope on a tiny phial of {item}, as if a few swallows could overturn doom.",
       "weight": 4
     },
     {
@@ -1796,8 +1796,8 @@
       "aspects": [
         "item:potion"
       ],
-      "zh": "§5喝下 {item} 之前，先问它想改你的哪一条。§7血、速度，还是你还以为属于自己的那点时间。",
-      "en": "§5Before you drink {item}, ask which line of you it means to edit. §7The blood, the speed, or the little time you still think is yours.",
+      "zh": "拔开瓶塞之前，先确认这{item}里没有混入来自珊瑚沼泽的污秽。",
+      "en": "Before you unstopper {item}, make sure no taint from the Coralium swamps was stirred into the brew.",
       "weight": 4
     },
     {
@@ -1805,8 +1805,8 @@
       "aspects": [
         "item:potion"
       ],
-      "zh": "§d{item} 的颜色是一种预告。§8预告通常比正文诚实，也比正文更难拒绝。",
-      "en": "§dThe color of {item} is a preview. §8Previews are usually more honest than the text, and harder to refuse.",
+      "zh": "药水终有饮尽之时，而深渊的凝视永不枯竭。",
+      "en": "Every phial empties at last, whereas the gaze of the Abyss never runs dry.",
       "weight": 4
     },
     {
@@ -1814,8 +1814,8 @@
       "aspects": [
         "item:sword"
       ],
-      "zh": "§c{item} 把距离缩短成臂长。§8臂长是一种很亲密的判决。",
-      "en": "§c{item} shortens distance to the length of an arm. §8An arm's length is a very intimate verdict.",
+      "zh": "{item}出鞘的寒鸣，正是死灵之书之外另一种简洁的语言。",
+      "en": "The cold ring of {item} drawn from its sheath is a blunt tongue, simpler than the Necronomicon.",
       "weight": 4
     },
     {
@@ -1823,8 +1823,8 @@
       "aspects": [
         "item:sword"
       ],
-      "zh": "§7{item} 不出鞘的时候，只是一种沉重的暗示。§8暗示如果足够沉，就不需要说完。",
-      "en": "§7While {item} stays sheathed, it is only a heavy implication. §8If the implication is heavy enough, it does not need to be finished.",
+      "zh": "莫要让{item}在关键时刻脱手——在黑暗国度里，失去武器便等同于献出咽喉。",
+      "en": "Do not let {item} slip in the decisive instant; in the Dark Realm, dropping your blade is offering your throat.",
       "weight": 4
     },
     {
@@ -1832,8 +1832,8 @@
       "aspects": [
         "item:tool"
       ],
-      "zh": "§7{item} 是一只被允许延长的手。§8延长的手能干更多活，也能犯更远的错。",
-      "en": "§7{item} is a hand that has been permitted to grow longer. §8A longer hand can do more work, and make a more distant mistake.",
+      "zh": "无论{item}多么精良，也无法修理一颗已被深渊真相震碎的心智。",
+      "en": "However finely wrought {item} may be, it cannot repair a mind shattered by the truth of the Abyss.",
       "weight": 4
     },
     {
@@ -1841,8 +1841,8 @@
       "aspects": [
         "item:tool"
       ],
-      "zh": "§8你靠 {item} 跟世界谈判。§7世界通常只同意被敲开，不同意被说服。",
-      "en": "§8You negotiate with the world through {item}. §7The world usually agrees to be opened. It does not agree to be persuaded.",
+      "zh": "握紧你的{item}。在这充满敌意的诸界之中，唯有手中的依凭不会背叛你。",
+      "en": "Hold fast to {item}. Across these hostile realms, at least the tool in your hand will not betray you.",
       "weight": 4
     },
     {
@@ -1850,8 +1850,8 @@
       "aspects": [
         "item:tool"
       ],
-      "zh": "§6{item} 会钝。§8钝是工具在提醒你：连它都要休息，你凭什么一直锋利。",
-      "en": "§6{item} will go dull. §8Dullness is the tool reminding you that even it must rest, so why should you stay sharp forever.",
+      "zh": "{item}的磨损记录着你的跋涉，正如伤痕记录着你的狂妄。",
+      "en": "The wear upon {item} records your long march, just as scars record your pride.",
       "weight": 4
     }
   ]

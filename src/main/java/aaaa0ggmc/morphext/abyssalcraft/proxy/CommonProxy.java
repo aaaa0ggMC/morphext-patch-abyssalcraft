@@ -5,6 +5,7 @@ import aaaa0ggmc.morphext.abyssalcraft.entity.MorphEntityBlackHole;
 import aaaa0ggmc.morphext.abyssalcraft.entity.MorphEntityImplosion;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
+import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.registry.EntityRegistry;
 
@@ -34,5 +35,8 @@ public class CommonProxy {
     }
 
     public void init(FMLInitializationEvent event) {
+    }
+
+    public void postInit(FMLPostInitializationEvent event) {
     }
 }

@@ -24,8 +24,10 @@ import net.minecraft.util.DamageSource;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.MathHelper;
 import net.minecraft.world.World;
+import io.netty.buffer.ByteBuf;
 import net.minecraftforge.common.ForgeHooks;
 import net.minecraftforge.fml.common.FMLCommonHandler;
+import net.minecraftforge.fml.common.registry.IEntityAdditionalSpawnData;
 
 import java.util.UUID;
 
@@ -35,7 +37,7 @@ import java.util.UUID;
  * 2. 核心防御：施法者宿主玩家、队友、深渊古神变身玩家享有 100% 引力免疫、伤害免疫与异次元放逐豁免；
  * 3. 彻底根除发射黑洞时宿主被强行吸入暴毙或流放暗黑领域的致命死穴。
  */
-public class MorphEntityBlackHole extends EntityBlackHole {
+public class MorphEntityBlackHole extends EntityBlackHole implements IEntityAdditionalSpawnData {
 
     private UUID ownerUUID;
     private double pullSpeed = 0.05D;
@@ -230,5 +232,15 @@ public class MorphEntityBlackHole extends EntityBlackHole {
                 ownerUUID = UUID.fromString(compound.getString("OwnerUUID"));
             } catch (Exception ignored) {}
         }
+    }
+
+    @Override
+    public void writeSpawnData(ByteBuf buffer) {
+        BossNativeHelper.writeUuid(buffer, ownerUUID);
+    }
+
+    @Override
+    public void readSpawnData(ByteBuf additionalData) {
+        this.ownerUUID = BossNativeHelper.readUuid(additionalData);
     }
 }

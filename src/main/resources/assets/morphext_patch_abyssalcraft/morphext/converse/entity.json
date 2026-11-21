@@ -5,8 +5,8 @@
       "aspects": [
         "entity:alone"
       ],
-      "zh": "§8星门这一侧没有第二颗心。§7寂静认得我的名字，却还不认得你的。",
-      "en": "§8There is no second heart on this side of the gate. §7The quiet knows my name. It does not yet know yours.",
+      "zh": "方圆之内别无他人，唯余你与这具空心傀儡独处。",
+      "en": "No other living soul stirs nearby—only you and this hollow simulacrum.",
       "weight": 4
     },
     {
@@ -14,8 +14,8 @@
       "aspects": [
         "entity:alone"
       ],
-      "zh": "§7你把空旷穿在身上走动。§8我曾在更空的地方教群星闭嘴。",
-      "en": "§7You walk about wearing the emptiness. §8I once taught the stars to be silent in a place emptier than this.",
+      "zh": "四下无人之际，死灵之书的低语往往最为清晰。你听见了么？",
+      "en": "When none are near, the whispers of the Necronomicon ring clearest. Do you hear them?",
       "weight": 4
     },
     {
@@ -23,8 +23,8 @@
       "aspects": [
         "entity:alone"
       ],
-      "zh": "§8没有眼睛在看你。§5那就由我来看。§7借来的皮囊不该以为自己隐身。",
-      "en": "§8No eyes are on you. §5Then I will look. §7A borrowed hide should not imagine it is unseen.",
+      "zh": "孤独并非安全，凡人。没有旁人的目光，不代表没有深渊的眼睛在注视着你。",
+      "en": "Solitude is not safety, mortal. The absence of mortal eyes does not mean the Abyss has looked away.",
       "weight": 4
     },
     {
@@ -32,8 +32,8 @@
       "aspects": [
         "entity:alone"
       ],
-      "zh": "§7四周干净得像一张尚未写下罪名的纸。§8别高兴。空白也是一种注视。",
-      "en": "§7It is clean around you, like a page before the charge is written. §8Do not be pleased. Blankness is a kind of stare.",
+      "zh": "你独自立于天地之间，恰如被群星遗忘在虚空角落的微尘。",
+      "en": "You stand alone between earth and sky, like a mote forgotten by the stars in a corner of the Void.",
       "weight": 4
     },
     {
@@ -41,8 +41,8 @@
       "aspects": [
         "entity:alone"
       ],
-      "zh": "§8十六步之内，连一声不情愿的呼吸都没有。§7这种安静在奥穆索要排队才领得到。",
-      "en": "§8Within sixteen paces, not one unwilling breath. §7In Omothol you would queue for a quiet like this.",
+      "zh": "寂静包裹着你，然而这片寂静之中，却藏着比喧嚣更沉重的压迫。",
+      "en": "Silence wraps around you—yet within this hush hides a weight heavier than any clamor.",
       "weight": 4
     },
     {
@@ -50,8 +50,8 @@
       "aspects": [
         "entity:alone"
       ],
-      "zh": "§5你独自站着。§7门不需要观众。观众是给那些还怕被忘记的神准备的。",
-      "en": "§5You stand alone. §7A gate does not need an audience. Audiences are for gods who still fear being forgotten.",
+      "zh": "没有同伴，没有猎物，唯有你自己的呼吸在耳畔回响。",
+      "en": "No companion, no quarry—only your own breath echoing in your ears.",
       "weight": 4
     },
     {
@@ -59,8 +59,8 @@
       "aspects": [
         "entity:alone"
       ],
-      "zh": "§7没有猎物，没有证人，没有借口。§8很好。现在你只能听见我。",
-      "en": "§7No prey, no witness, no excuse. §8Good. Now you can only hear me.",
+      "zh": "独行者最容易在漫长的沉默里迷失理智的边界。",
+      "en": "Those who walk alone are quickest to lose the borders of sanity in the long quiet.",
       "weight": 4
     },
     {
@@ -68,8 +68,8 @@
       "aspects": [
         "entity:alone"
       ],
-      "zh": "§8空地会骗人。§7它让你以为安全是一种距离，而不是一种许可。",
-      "en": "§8Open ground lies. §7It lets you think safety is a distance, not a permission.",
+      "zh": "四周空无一物，正好让我毫无干扰地审视你这具脆弱的容器。",
+      "en": "With nothing else around, I may examine your frail vessel without distraction.",
       "weight": 4
     },
     {
@@ -77,8 +77,8 @@
       "aspects": [
         "entity:any"
       ],
-      "zh": "§7有东西在十六步之内呼吸，或假装呼吸。§8我懒得替你数。",
-      "en": "§7Something within sixteen paces is breathing, or pretending to. §8I will not count it for you.",
+      "zh": "附近有生灵的气息在流动。无论它们是猎手还是猎物，终究都逃不过时间的吞噬。",
+      "en": "Living presences stir nearby. Whether hunter or prey, none escape the maw of time.",
       "weight": 4
     },
     {
@@ -86,8 +86,8 @@
       "aspects": [
         "entity:any"
       ],
-      "zh": "§8附近的存在像潮水拍门。§7你听见的是回声，我听见的是名字。",
-      "en": "§8The nearby presences slap the gate like a tide. §7You hear an echo. I hear names.",
+      "zh": "这片土地上尚有喘息之物在活动，证明疯狂的潮水还未彻底漫过此地。",
+      "en": "Things still draw breath around you—proof that the tide of madness has not yet drowned this place.",
       "weight": 4
     },
     {
@@ -95,8 +95,8 @@
       "aspects": [
         "entity:any"
       ],
-      "zh": "§5周围并不空。§7空的是你对它们的理解。",
-      "en": "§5The vicinity is not empty. §7What is empty is your understanding of it.",
+      "zh": "无数微不足道的生命在周围穿梭，各自奔忙于毫无意义的挣扎之中。",
+      "en": "Trivial lives scurry nearby, each lost in its own meaningless struggle.",
       "weight": 4
     },
     {
@@ -104,8 +104,8 @@
       "aspects": [
         "entity:any"
       ],
-      "zh": "§7它们挤在你借来的影子边上。§8影子不属于你，所以它们其实挤着我。",
-      "en": "§7They crowd the edge of the shadow you borrowed. §8The shadow is not yours, so they are crowding me.",
+      "zh": "有某种存在正与你同处这片空间。保持警惕吧，傀儡。",
+      "en": "Something shares this space with you. Keep watch, puppet.",
       "weight": 4
     },
     {
@@ -113,8 +113,8 @@
       "aspects": [
         "entity:any"
       ],
-      "zh": "§8近处有动静。§7动，是还没被写成静物的证据。",
-      "en": "§8There is movement nearby. §7Movement is evidence that something has not yet been written down as still life.",
+      "zh": "凡俗的生灵来去匆匆，唯有深渊的凝视永恒不移。",
+      "en": "Mortal creatures come and go like mist; only the Abyssal gaze never shifts.",
       "weight": 4
     },
     {
@@ -122,8 +122,8 @@
       "aspects": [
         "entity:count:one"
       ],
-      "zh": "§7只有一个。§8一个就够把一句不该说的话说完。",
-      "en": "§7Only one. §8One is enough to finish a sentence that should not be spoken.",
+      "zh": "这片寂静之中，唯有那唯一的一个身影与你遥遥相对。",
+      "en": "Within this stillness, only a single figure stands opposite you.",
       "weight": 4
     },
     {
@@ -131,8 +131,8 @@
       "aspects": [
         "entity:count:one"
       ],
-      "zh": "§8{count} 只生灵站在你的影子边上。§7它还不知道自己站在谁的影子里。",
-      "en": "§8{count} living thing stands at the edge of your shadow. §7It does not yet know whose shadow that is.",
+      "zh": "方圆之内仅存那{count}道孤零零的气息——恰如被世界遗弃的最后一个见证者。",
+      "en": "Only {count} lone presence lingers nearby—like the last witness abandoned by the world.",
       "weight": 4
     },
     {
@@ -140,8 +140,8 @@
       "aspects": [
         "entity:count:one"
       ],
-      "zh": "§7单独的见证者最危险。§8它会把你记成我。",
-      "en": "§7A lone witness is the most dangerous. §8It will remember you as me.",
+      "zh": "仅有{count}个目标在你的视野边缘游荡。是交锋，还是任其自生自灭？",
+      "en": "Just {count} solitary form drifts at the rim of your sight. Will you strike, or leave it to its fate?",
       "weight": 4
     },
     {
@@ -149,8 +149,8 @@
       "aspects": [
         "entity:count:one"
       ],
-      "zh": "§5一个就够了。§7门从不因为观众太少而拒绝打开。",
-      "en": "§5One is enough. §7A gate has never refused to open for lack of an audience.",
+      "zh": "唯一的存在往往比成群的乌合之众更值得留意。",
+      "en": "A solitary presence often merits closer watch than a mindless herd.",
       "weight": 4
     },
     {
@@ -158,8 +158,8 @@
       "aspects": [
         "entity:count:few"
       ],
-      "zh": "§7不多。§8{count} 个喉咙，够组成一小段不体面的合唱。",
-      "en": "§7Not many. §8{count} throats, enough for a short and indecent chorus.",
+      "zh": "只有寥寥几个身影在附近徘徊，倒也算不上什么大阵仗。",
+      "en": "Only a handful of figures linger nearby—scarcely a host worth naming.",
       "weight": 4
     },
     {
@@ -167,8 +167,8 @@
       "aspects": [
         "entity:count:few"
       ],
-      "zh": "§8几只东西围着借来的王座转。§7它们以为这是围猎。",
-      "en": "§8A few things circle the borrowed throne. §7They think this is a hunt.",
+      "zh": "你周遭的{count}道气息若隐若现，像是在试探，又像是在观望。",
+      "en": "Those {count} presences flicker around you, half probing, half watching.",
       "weight": 4
     },
     {
@@ -176,8 +176,8 @@
       "aspects": [
         "entity:count:few"
       ],
-      "zh": "§5{count}。§7这个数目在奥穆索连一顿像样的沉默都算不上。",
-      "en": "§5{count}. §7In Omothol that number would not even buy a decent silence.",
+      "zh": "数目虽少，却也足够在暗处织成一张致命的网。切莫掉以轻心。",
+      "en": "Few in number, yet enough to weave a lethal snare in the dark. Do not drop your guard.",
       "weight": 4
     },
     {
@@ -185,8 +185,8 @@
       "aspects": [
         "entity:count:few"
       ],
-      "zh": "§7{count} 个心跳，疏得能分开听。§8分开听，才能听见哪一个在说谎。",
-      "en": "§7{count} heartbeats, sparse enough to hear apart. §8Hear them apart, and you learn which one is lying.",
+      "zh": "仅此{count}个生灵在侧，尚不足以填满深渊的胃口。",
+      "en": "Merely {count} creatures at hand—scarcely enough to whet the appetite of the Abyss.",
       "weight": 4
     },
     {
@@ -194,8 +194,8 @@
       "aspects": [
         "entity:count:many"
       ],
-      "zh": "§4太多了。§7{count} 张嘴同时张着，像一口不肯合上的井。",
-      "en": "§4Too many. §7{count} mouths open at once, like a well that refuses to close.",
+      "zh": "成群的生灵在四周骚动，喧嚣声几乎要盖过深渊的低语。",
+      "en": "Crowds of creatures stir all around you, their clamor nearly drowning out the whispers of the Abyss.",
       "weight": 4
     },
     {
@@ -203,8 +203,8 @@
       "aspects": [
         "entity:count:many"
       ],
-      "zh": "§8它们挤在一起，把空气挤成了噪音。§5我讨厌噪音，除非噪音在求饶。",
-      "en": "§8They pack together until the air becomes noise. §5I dislike noise, unless the noise is begging.",
+      "zh": "整整{count}个身影在你的感知边缘攒动——好一幅群魔乱舞的景象。",
+      "en": "Full {count} figures swarm at the edge of your senses—quite the revel of lesser things.",
       "weight": 4
     },
     {
@@ -212,8 +212,8 @@
       "aspects": [
         "entity:count:many"
       ],
-      "zh": "§7{count} 个心跳叠在一处。§8听起来像一扇门在自己身上抓挠。",
-      "en": "§7{count} heartbeats stacked together. §8It sounds like a door scratching at itself.",
+      "zh": "如此众多的血肉聚集在此，简直像是一场专门为外神筹备的盛大祭典。",
+      "en": "So much flesh gathered in one place looks almost like a grand sacrifice prepared for the Outer Gods.",
       "weight": 4
     },
     {
@@ -221,8 +221,8 @@
       "aspects": [
         "entity:count:many"
       ],
-      "zh": "§c一群。§7群是给修格斯准备的词。§8这些还配不上。",
-      "en": "§cA swarm. §7Swarm is a word kept for shoggoths. §8These have not earned it.",
+      "zh": "四周足有{count}道气息交织在一起，混乱而嘈杂，令人联想起疯狂爆发前的征兆。",
+      "en": "No fewer than {count} presences tangle together around you—chaotic and loud, like an omen before madness breaks.",
       "weight": 4
     },
     {
@@ -230,8 +230,8 @@
       "aspects": [
         "entity:player"
       ],
-      "zh": "§7{player}§8 还把自己当成访客。§5门不会这么想。",
-      "en": "§7{player} §8still thinks of itself as a visitor. §5The gate disagrees.",
+      "zh": "另一位凡人{player}就在附近。在彼此猜忌与贪婪的驱使下，你们人类总是互相提防。",
+      "en": "Another mortal, {player}, is nearby. Driven by suspicion and greed, you humans forever watch one another askance.",
       "weight": 2
     },
     {
@@ -239,8 +239,8 @@
       "aspects": [
         "entity:player"
       ],
-      "zh": "§8另一个穿皮的东西。§7{player}，你的名字在我舌头上像一粒沙。",
-      "en": "§8Another thing in a skin. §7{player}, your name is a grain of sand on my tongue.",
+      "zh": "不知{player}在看见你如今这副模样时，心底究竟是敬畏，还是抑制不住的恐惧？",
+      "en": "When {player} beholds the form you wear, what stirs within—awe, or barely stifled terror?",
       "weight": 2
     },
     {
@@ -248,8 +248,8 @@
       "aspects": [
         "entity:player"
       ],
-      "zh": "§5{player}。§7我见过这个音节在更黑的水里沉下去。",
-      "en": "§5{player}. §7I have watched that syllable sink in blacker water.",
+      "zh": "这世上又多了一个窥探禁忌的灵魂——{player}距离疯狂还剩几步之遥？",
+      "en": "Another soul prowls near the forbidden—how many steps remain before {player} slips into madness?",
       "weight": 4
     },
     {
@@ -257,8 +257,8 @@
       "aspects": [
         "entity:player"
       ],
-      "zh": "§7你和 {player} 对视的时候，§8其实是三个人在看。",
-      "en": "§7When you and {player} meet eyes, §8three of us are looking.",
+      "zh": "你可以与{player}结伴同行，也可以在某个黑夜里将秘密永远留在自己的喉咙里。",
+      "en": "You may walk beside {player}, or keep your secrets locked in your throat when night falls.",
       "weight": 4
     },
     {
@@ -266,8 +266,8 @@
       "aspects": [
         "entity:player"
       ],
-      "zh": "§8{player} 会以为你是同类。§7同类是一种很短的误会。",
-      "en": "§8{player} will take you for kin. §7Kin is a very short misunderstanding.",
+      "zh": "在旧日支配者眼中，你与{player}并无区别，皆是在棋盘上挣扎的微小棋子。",
+      "en": "To a Great Old One, you and {player} are alike—tiny pawns scraping across the board.",
       "weight": 4
     },
     {
@@ -275,8 +275,8 @@
       "aspects": [
         "entity:player"
       ],
-      "zh": "§7别把真名借给 {player}。§8借出去的名字，回来时会少一笔。",
-      "en": "§7Do not lend your true name to {player}. §8A lent name comes back missing a stroke.",
+      "zh": "莫要向{player}轻易泄露死灵之书的真意，凡人的心智往往经不起真相的重量。",
+      "en": "Do not lightly reveal the Necronomicon's true meaning to {player}; mortal minds rarely bear the weight of truth.",
       "weight": 4
     },
     {
@@ -284,8 +284,8 @@
       "aspects": [
         "entity:villager"
       ],
-      "zh": "§7{entity}§8 还在用市集的逻辑活着。§7真可爱。市集烧起来也是这个味道。",
-      "en": "§7{entity} §8is still alive by the logic of a market. §7Charming. Markets smell the same when they burn.",
+      "zh": "一个普通的{entity}正在附近忙碌，对宇宙之外那令人发狂的真相一无所知。",
+      "en": "An ordinary {entity} bustles nearby, blissfully blind to the maddening truth beyond the cosmos.",
       "weight": 4
     },
     {
@@ -293,8 +293,8 @@
       "aspects": [
         "entity:villager"
       ],
-      "zh": "§8绿袍子，铜鼻子，一肚子交易。§7{entity} 不知道有些价钱是用真名付的。",
-      "en": "§8Green robes, a copper nose, a belly full of trade. §7{entity} does not know some prices are paid in true names.",
+      "zh": "看看这些{entity}吧——他们用几颗绿宝石换取安稳的幻觉，仿佛世界永远不会崩塌。",
+      "en": "Look at these {entity}—trading emeralds for the illusion of comfort, as though the world could never collapse.",
       "weight": 4
     },
     {
@@ -302,8 +302,8 @@
       "aspects": [
         "entity:villager"
       ],
-      "zh": "§7{entity} 会走路，会讨价。§8不会在星门前下跪，所以它还不算文明。",
-      "en": "§7{entity} can walk and haggle. §8It will not kneel before a gate, so it is not yet civilized.",
+      "zh": "在{entity}平庸的日常生活之下，深渊的阴影正在地底一寸寸地蔓延。",
+      "en": "Beneath the mundane days of {entity}, the shadow of the Abyss creeps onward inch by inch underground.",
       "weight": 4
     },
     {
@@ -311,8 +311,8 @@
       "aspects": [
         "entity:villager"
       ],
-      "zh": "§6{entity} 把白天叫工作。§7工作是一种还没学会饥饿的信仰。",
-      "en": "§6{entity} calls the daylight work. §7Work is a faith that has not yet learned hunger.",
+      "zh": "莫要惊扰这群无知的{entity}，或者……你也可以亲手撕开他们那脆弱的安宁。",
+      "en": "Do not startle these ignorant {entity}—or, if you will, tear open their fragile peace yourself.",
       "weight": 4
     },
     {
@@ -320,8 +320,8 @@
       "aspects": [
         "entity:zombie"
       ],
-      "zh": "§2{entity}§7 是一封写坏的信，收件人却还在走路。",
-      "en": "§2{entity} §7is a letter written wrong, and the addressee is still walking.",
+      "zh": "一具腐烂的{entity}正蹒跚逼近，嘴里发出含混不清的嘶哑低吼。",
+      "en": "A rotting {entity} shambles nearer, guttural groans scraping from its throat.",
       "weight": 4
     },
     {
@@ -329,8 +329,8 @@
       "aspects": [
         "entity:zombie"
       ],
-      "zh": "§8腐烂不是深渊的发明。§7你们主世界自己会把 {entity} 从土里推出来。",
-      "en": "§8Rot is not an invention of the abyss. §7Your overworld pushes {entity} out of the soil by itself.",
+      "zh": "这具{entity}毫无神智可言，仅仅被对活人血肉的本能渴望所驱使。",
+      "en": "This {entity} holds not a spark of mind, driven solely by brute craving for living flesh.",
       "weight": 4
     },
     {
@@ -338,8 +338,8 @@
       "aspects": [
         "entity:zombie"
       ],
-      "zh": "§7{entity} 张着嘴，像在回忆一口它已经咽不下的气。",
-      "en": "§7{entity} holds its mouth open, as if remembering a breath it can no longer swallow.",
+      "zh": "连死去多年的{entity}都知道渴望生机，可见凡人对死亡的恐惧是何等根深蒂固。",
+      "en": "Even a long-dead {entity} still reaches for the living—so deep-rooted is mortal terror of death.",
       "weight": 4
     },
     {
@@ -347,8 +347,8 @@
       "aspects": [
         "entity:zombie"
       ],
-      "zh": "§2慢，脏，不肯承认自己已经签过字。§7{entity} 是死亡的欠条。",
-      "en": "§2Slow, dirty, unwilling to admit the signature. §7{entity} is death's unpaid note.",
+      "zh": "在深渊荒地，连僵尸都会被珊瑚彻底异化。眼前的这只{entity}，倒还算得上“温和”。",
+      "en": "In the Abyssal Wasteland, even zombies are warped by Coralium; this {entity} before you seems mild by comparison.",
       "weight": 4
     },
     {
@@ -356,8 +356,8 @@
       "aspects": [
         "entity:skeleton"
       ],
-      "zh": "§7{entity} 把肉还清了，骨头却还在值班。§8勤快得令人生厌。",
-      "en": "§7{entity} has paid back its flesh, and the bones are still on duty. §8Disgustingly diligent.",
+      "zh": "一具苍白的{entity}正在黑暗中嘎吱作响，空洞的眼眶里跳动着执拗的冷火。",
+      "en": "A pale {entity} clatters in the dark, stubborn cold fire flickering in its hollow sockets.",
       "weight": 4
     },
     {
@@ -365,8 +365,8 @@
       "aspects": [
         "entity:skeleton"
       ],
-      "zh": "§8空眼眶对着你。§7{entity} 看见的不是你，是你身后那扇没关上的门。",
-      "en": "§8Empty sockets face you. §7{entity} does not see you. It sees the door behind you that was never shut.",
+      "zh": "失去了血肉的束缚后，这具{entity}反而成了更为纯粹的杀戮工具。",
+      "en": "Freed from the burden of flesh, this {entity} has become a cleaner instrument of slaughter.",
       "weight": 4
     },
     {
@@ -374,8 +374,8 @@
       "aspects": [
         "entity:skeleton"
       ],
-      "zh": "§7箭、弓、一串还会响的肋骨。§8{entity} 是主世界最诚实的居民。",
-      "en": "§7Arrows, a bow, a ribcage that still rattles. §8{entity} is the overworld's most honest citizen.",
+      "zh": "{entity}拉紧弓弦的声响在夜色中格外刺耳，仿佛死神正在校准准星。",
+      "en": "The creak of {entity} drawing its bowstring cuts sharply through the dark, like Death taking aim.",
       "weight": 4
     },
     {
@@ -383,8 +383,8 @@
       "aspects": [
         "entity:skeleton"
       ],
-      "zh": "§8{entity} 不需要肺也能把杀意吹出去。§7这是一种我认可的节俭。",
-      "en": "§8{entity} needs no lungs to exhale killing intent. §7A thrift I approve of.",
+      "zh": "即便化作一堆枯骨，{entity}依然被某种不死诅咒强行拖在尘世之间。",
+      "en": "Reduced to dry bone, {entity} is still dragged across the earth by some undying curse.",
       "weight": 4
     },
     {
@@ -392,8 +392,8 @@
       "aspects": [
         "entity:creeper"
       ],
-      "zh": "§a{entity}§7 走路没有脚步，只有倒计时。§8我欣赏这种礼貌。",
-      "en": "§a{entity} §7has no footsteps, only a countdown. §8I appreciate the manners.",
+      "zh": "一只{entity}正悄无声息地靠近——那绿色皮囊里塞满了随时准备撕碎血肉的火药。",
+      "en": "A {entity} creeps silently nearer—its green hide packed with powder eager to rend flesh.",
       "weight": 4
     },
     {
@@ -401,8 +401,8 @@
       "aspects": [
         "entity:creeper"
       ],
-      "zh": "§7别靠太近。§8{entity} 的拥抱比奥穆索的握手更短，也更彻底。",
-      "en": "§7Do not stand too close. §8{entity}'s embrace is shorter than a handshake in Omothol, and more complete.",
+      "zh": "小心背后那只{entity}。无声的接近与瞬间的爆裂，正是它唯一懂得的语言。",
+      "en": "Mind the {entity} at your back. Silent approach and sudden ruin are the only tongue it speaks.",
       "weight": 4
     },
     {
@@ -410,8 +410,8 @@
       "aspects": [
         "entity:creeper"
       ],
-      "zh": "§8那一声嘶嘶不是威胁。§7{entity} 在练习把自己从世界上删掉。",
-      "en": "§8That hiss is not a threat. §7{entity} is practicing how to delete itself from the world.",
+      "zh": "连那{entity}也敢把嘶嘶声指向披着扎哈尔形貌的你？真是毫无敬畏的蠢物。",
+      "en": "Even a {entity} dares aim its hiss at one wearing J'zahar's likeness? What a reverenceless thing.",
       "weight": 4
     },
     {
@@ -419,8 +419,8 @@
       "aspects": [
         "entity:creeper"
       ],
-      "zh": "§a四条腿，没有脸，一肚子光。§7{entity} 是一句走到句号就会炸开的话。",
-      "en": "§aFour legs, no face, a belly of light. §7{entity} is a sentence that detonates at the full stop.",
+      "zh": "在{entity}引爆自己之前解决它，否则这具傀儡的衣袍可就要染上焦黑的灰烬了。",
+      "en": "End that {entity} before it bursts, lest this simulacrum's robes be blackened with ash.",
       "weight": 4
     },
     {
@@ -428,8 +428,8 @@
       "aspects": [
         "entity:spider"
       ],
-      "zh": "§7{entity} 用八条腿写字。§8字迹难看，意思却很清楚：上面有肉。",
-      "en": "§7{entity} writes with eight legs. §8The hand is ugly. The meaning is clear: there is meat above.",
+      "zh": "一只多足的{entity}正潜伏在暗处，复眼里闪烁着冰冷而饥饿的红光。",
+      "en": "A many-legged {entity} lurks in the gloom, cold, hungry red glinting in its cluster of eyes.",
       "weight": 4
     },
     {
@@ -437,8 +437,8 @@
       "aspects": [
         "entity:spider"
       ],
-      "zh": "§8墙不是墙，是 {entity} 的地板。§7你还在用两条腿理解这座房子。",
-      "en": "§8A wall is not a wall. It is {entity}'s floor. §7You are still trying to understand the house with two legs.",
+      "zh": "{entity}在黑暗中编织着无形的罗网，耐心等待着鲁莽的猎物一头撞入。",
+      "en": "{entity} spins unseen snares in the dark, waiting patiently for rash prey to blunder in.",
       "weight": 4
     },
     {
@@ -446,8 +446,8 @@
       "aspects": [
         "entity:spider"
       ],
-      "zh": "§7多眼的东西看人，总是比人先眨眼。§8{entity} 已经眨过了。",
-      "en": "§7Many-eyed things look at people and blink first. §8{entity} already has.",
+      "zh": "那令人毛骨悚然的节肢摩擦声，预示着{entity}随时可能从头顶或岩壁猛扑而下。",
+      "en": "The chilling scrape of chitin warns that {entity} may drop from overhead or the rock face at any moment.",
       "weight": 4
     },
     {
@@ -455,8 +455,8 @@
       "aspects": [
         "entity:spider"
       ],
-      "zh": "§8丝是一种很安静的牢。§7{entity} 还没决定要不要把你写进去。",
-      "en": "§8Silk is a very quiet prison. §7{entity} has not yet decided whether to write you into it.",
+      "zh": "毒牙与蛛丝是{entity}赖以生存的伎俩——在真正的深渊生物面前，这不过是虫豸的把戏。",
+      "en": "Venomous fangs and silk are the tricks of {entity}—mere vermin's play beside true Abyssal horrors.",
       "weight": 4
     },
     {
@@ -464,8 +464,8 @@
       "aspects": [
         "entity:enderman"
       ],
-      "zh": "§5{entity}§7 也会搬方块。§8可怜。它以为搬运就是开门。",
-      "en": "§5{entity} §7moves blocks too. §8Pitiful. It thinks carrying is the same as opening.",
+      "zh": "那个修长的黑影{entity}正站在不远处，警惕地守望着虚空的秘密。",
+      "en": "That tall, dark figure—{entity}—stands not far off, jealously guarding the secrets of the void.",
       "weight": 4
     },
     {
@@ -473,8 +473,8 @@
       "aspects": [
         "entity:enderman"
       ],
-      "zh": "§8不要盯着它的眼。§7{entity} 的怒气只是一种更响的迷路。",
-      "en": "§8Do not stare into its eyes. §7{entity}'s anger is only a louder way of being lost.",
+      "zh": "{entity}厌恶被凡人直视双眸，仿佛它那双紫瞳里藏着什么不容亵渎的真理。",
+      "en": "{entity} despises being looked in the eye by mortals, as though its violet gaze hid some sacred truth.",
       "weight": 4
     },
     {
@@ -482,8 +482,8 @@
       "aspects": [
         "entity:enderman"
       ],
-      "zh": "§7紫粒在 {entity} 周围掉下来，像一句没说完的末地语。",
-      "en": "§7Purple motes fall around {entity}, like an End-sentence left unfinished.",
+      "zh": "看着它吧——连末地来的{entity}也懂得在深渊的目光下保持颤栗与敬畏。",
+      "en": "Look upon it—even {entity} of the End knows to shudder beneath the gaze of the Abyss.",
       "weight": 4
     },
     {
@@ -491,8 +491,8 @@
       "aspects": [
         "entity:enderman"
       ],
-      "zh": "§8它能瞬移。§5我能让瞬移变成回不来。§7今天先不表演。",
-      "en": "§8It can blink. §5I can make a blink into a place with no return. §7No performance today.",
+      "zh": "随手搬运泥土与石块的{entity}，究竟是在筑造什么，还是仅仅在盲目模仿早已失落的文明？",
+      "en": "What does {entity} build as it carries earth and stone—or does it merely mimic a vanished civilization blind?",
       "weight": 4
     },
     {
@@ -500,8 +500,8 @@
       "aspects": [
         "entity:enderman"
       ],
-      "zh": "§5{entity} 抱着一块不属于这里的石头。§7收藏家。末地盛产这种可怜的收藏家。",
-      "en": "§5{entity} clutches a stone that does not belong here. §7A collector. The End breeds them.",
+      "zh": "一旦激怒了{entity}，它便会撕裂空间瞬息而至。切莫在毫无防备时盯住它的脸。",
+      "en": "Provoke {entity} and it will tear through space in a blink. Do not lock eyes with it unprepared.",
       "weight": 4
     },
     {
@@ -509,8 +509,8 @@
       "aspects": [
         "entity:witch"
       ],
-      "zh": "§7{entity} 把瓶子当圣经。§8瓶子会碎，圣经也会，只是碎法不同。",
-      "en": "§7{entity} treats bottles as scripture. §8Bottles break. So does scripture. The fracture is merely different.",
+      "zh": "一个疯癫的{entity}正在附近低笑，手中攥着散发出刺鼻气味的诡异药瓶。",
+      "en": "A crazed {entity} cackles nearby, clutching foul-smelling phials of strange brews.",
       "weight": 4
     },
     {
@@ -518,8 +518,8 @@
       "aspects": [
         "entity:witch"
       ],
-      "zh": "§8鼻尖、锅、一嘴咒。§7{entity} 在模仿更老的职业，模仿得很吵。",
-      "en": "§8A nose, a cauldron, a mouthful of curse. §7{entity} is imitating an older profession, and doing it loudly.",
+      "zh": "{entity}自以为掌握了禁忌的魔药与诅咒，殊不知她在深渊眼中不过是个摆弄泥浆的学徒。",
+      "en": "{entity} fancies herself mistress of forbidden brews and hexes, blind to being a mere mud-dabbler before the Abyss.",
       "weight": 4
     },
     {
@@ -527,8 +527,8 @@
       "aspects": [
         "entity:witch"
       ],
-      "zh": "§5药水救不了 {entity}。§7有些病是从真名上长出来的。",
-      "en": "§5Potions will not save {entity}. §7Some sicknesses grow out of a true name.",
+      "zh": "小心{entity}投掷的毒剂！那些炼金残渣足以让大意的凡人痛苦哀嚎。",
+      "en": "Beware the toxins hurled by {entity}! Those alchemical dregs can bring a careless mortal to agony.",
       "weight": 4
     },
     {
@@ -536,8 +536,8 @@
       "aspects": [
         "entity:witch"
       ],
-      "zh": "§7{entity} 朝你扔瓶子的时候，§8它以为自己在施法。其实只是在倒垃圾。",
-      "en": "§7When {entity} throws a bottle at you, §8it thinks it is casting. It is only taking out the trash.",
+      "zh": "即便没有研读过死灵之书，{entity}也早已在孤独与偏执中滑向了疯狂的边缘。",
+      "en": "Without ever opening the Necronomicon, {entity} has already slid toward madness through solitude and spite.",
       "weight": 4
     },
     {
@@ -545,8 +545,8 @@
       "aspects": [
         "entity:slime"
       ],
-      "zh": "§a{entity}§7 是一口不肯成形的水。§8深渊里也有这种东西，只是更饿。",
-      "en": "§a{entity} §7is water that refuses a shape. §8The abyss has the same thing. It is only hungrier.",
+      "zh": "一团半透明的{entity}正在地面上弹跳蠕动，毫无章法可言。",
+      "en": "A translucent {entity} bounces and squelches across the ground without rhyme or reason.",
       "weight": 4
     },
     {
@@ -554,8 +554,8 @@
       "aspects": [
         "entity:slime"
       ],
-      "zh": "§7它分裂，是因为完整对 {entity} 来说太重。",
-      "en": "§7It splits because wholeness is too heavy for {entity}.",
+      "zh": "这低等的{entity}没有骨骼，亦没有大脑——简直像是沙格斯最可怜、最微不足道的拙劣模仿品。",
+      "en": "This lowly {entity} has neither bone nor brain—like the saddest, faintest caricature of a Shoggoth.",
       "weight": 4
     },
     {
@@ -563,8 +563,8 @@
       "aspects": [
         "entity:slime"
       ],
-      "zh": "§8踩上去会粘住靴子。§7粘住真名的那种，才叫修格斯。",
-      "en": "§8Step on it and it clings to the boots. §7The kind that clings to a true name is called a shoggoth.",
+      "zh": "黏腻的{entity}在泥土间留下湿滑的痕迹，既恶心，又显得荒诞可笑。",
+      "en": "Slimy {entity} leaves slick trails across the dirt—both repulsive and absurd.",
       "weight": 4
     },
     {
@@ -572,8 +572,8 @@
       "aspects": [
         "entity:slime"
       ],
-      "zh": "§a{entity} 跳一下，世界就多出一块不肯干的地方。§7讨厌，但诚实。",
-      "en": "§a{entity} hops, and the world gains a place that will not dry. §7Irritating, but honest.",
+      "zh": "将它劈碎之后，更大的{entity}只会分裂成更多烦人的小块。",
+      "en": "Cleave it apart, and a larger {entity} merely splits into more tiresome pieces.",
       "weight": 4
     },
     {
@@ -581,8 +581,8 @@
       "aspects": [
         "entity:animal"
       ],
-      "zh": "§7{animal} 还相信草、水和白天。§8三种都会被收回的东西。",
-      "en": "§7{animal} still believes in grass, water and daylight. §8Three things that can be repossessed.",
+      "zh": "一头卑微的{animal}正在附近徘徊，对头顶那片即将倾覆的星海一无所知。",
+      "en": "A lowly {animal} wanders nearby, blissfully ignorant of the star-sea poised to capsize overhead.",
       "weight": 4
     },
     {
@@ -590,8 +590,8 @@
       "aspects": [
         "entity:animal"
       ],
-      "zh": "§8温血，短命，不会读门。§7{animal} 是这个世界还没生病时的口音。",
-      "en": "§8Warm blood, a short life, no literacy in gates. §7{animal} is the accent of this world before it sickened.",
+      "zh": "这只{animal}只懂得觅食与苟活——有时，无知反而是凡俗生灵最大的仁慈。",
+      "en": "This {animal} knows only grazing and survival—at times, ignorance is the greatest mercy granted to mortal beasts.",
       "weight": 4
     },
     {
@@ -599,8 +599,8 @@
       "aspects": [
         "entity:animal"
       ],
-      "zh": "§7别杀太快。§8{animal} 的眼睛里没有神，这很稀罕。",
-      "en": "§7Do not kill it too quickly. §8There is no god in {animal}'s eyes. That is rare.",
+      "zh": "看着那只{animal}吧。在旧日支配者眼中，它与所谓智慧的凡人并无本质差异。",
+      "en": "Look upon that {animal}. To a Great Old One, it differs scarcely at all from supposedly wise mortals.",
       "weight": 4
     },
     {
@@ -608,8 +608,8 @@
       "aspects": [
         "entity:animal"
       ],
-      "zh": "§7{animal} 不认识扎哈尔。§8这是它这辈子最幸运的无知。",
-      "en": "§7{animal} does not know J'zahar. §8The luckiest ignorance it will ever have.",
+      "zh": "血肉之躯皆是脆弱的过客。今日的{animal}，明日便可能沦为珊瑚或恐惧的祭品。",
+      "en": "All flesh is a fragile passerby. Today's {animal} may become tomorrow's offering to Coralium or Dread.",
       "weight": 4
     },
     {
@@ -617,8 +617,8 @@
       "aspects": [
         "entity:wolf"
       ],
-      "zh": "§7{entity} 把牙借给信任。§8信任是一种我已经注销的货币。",
-      "en": "§7{entity} lends its teeth to trust. §8Trust is a currency I have already withdrawn.",
+      "zh": "一头警觉的{entity}在附近游走，那双野性的兽瞳正打量着你的每一个动作。",
+      "en": "A wary {entity} pads nearby, its feral eyes measuring your every move.",
       "weight": 4
     },
     {
@@ -626,8 +626,8 @@
       "aspects": [
         "entity:wolf"
       ],
-      "zh": "§8它摇尾巴的时候，空气会变软。§7软的东西在奥穆索活不久。",
-      "en": "§8When it wags, the air goes soft. §7Soft things do not last in Omothol.",
+      "zh": "{entity}懂得群体的法则与狩猎的耐心——莫要轻易激怒这头拥有利齿的野兽。",
+      "en": "{entity} knows the law of the pack and the patience of the hunt—do not lightly provoke its fangs.",
       "weight": 4
     },
     {
@@ -635,8 +635,8 @@
       "aspects": [
         "entity:wolf"
       ],
-      "zh": "§7{entity} 认得主人。§5你现在的气味，它该认成我。",
-      "en": "§7{entity} knows its master. §5The scent you wear now should read as mine.",
+      "zh": "看那{entity}的反应吧：究竟是将你视作可驯服的主人，还是嗅出了你体内非人的气息？",
+      "en": "Watch how {entity} reacts: does it see a master to follow, or scent something inhuman within you?",
       "weight": 4
     },
     {
@@ -644,8 +644,8 @@
       "aspects": [
         "entity:wolf"
       ],
-      "zh": "§8牙是白的，忠诚是热的。§7{entity} 两种都还没被世界收税。",
-      "en": "§8The teeth are white, the loyalty warm. §7The world has not taxed {entity} for either yet.",
+      "zh": "{entity}的嚎叫曾在无数个黑夜里令凡人战栗，然而在真正的外神面前，它也不过是条温顺的犬。",
+      "en": "The howl of {entity} has chilled mortals on countless nights; yet before the Outer Gods, it is a meek hound.",
       "weight": 4
     },
     {
@@ -653,8 +653,8 @@
       "aspects": [
         "entity:golem"
       ],
-      "zh": "§7{entity} 是被人捏出来的忠诚。§8捏得挺结实，脑子没捏进去。",
-      "en": "§7{entity} is loyalty pinched into shape by hands. §8The shape is solid. The mind was left out.",
+      "zh": "一尊沉默的{entity}矗立在附近，以泥土或金铁之躯执行着主人留下的死命令。",
+      "en": "A silent {entity} stands nearby, carrying out dead orders within a frame of clay or iron.",
       "weight": 4
     },
     {
@@ -662,8 +662,8 @@
       "aspects": [
         "entity:golem"
       ],
-      "zh": "§8铁、南瓜、一句命令。§7{entity} 比大多数祭司更守约。",
-      "en": "§8Iron, a pumpkin, a command. §7{entity} keeps a promise better than most priests.",
+      "zh": "没有灵魂、没有恐惧、亦没有理智——某种意义上，{entity}比凡人更接近傀儡的完美形态。",
+      "en": "No soul, no fear, no reason—in a sense, {entity} is closer to the pure form of a puppet than any mortal.",
       "weight": 4
     },
     {
@@ -671,8 +671,8 @@
       "aspects": [
         "entity:golem"
       ],
-      "zh": "§6拳头很重。§7重不过一扇不肯开的门。§8{entity} 可以去敲门。",
-      "en": "§6The fists are heavy. §7Not as heavy as a door that will not open. §8{entity} may knock.",
+      "zh": "看着那尊{entity}吧。凡人总以为自己能掌控亲手捏造的造物，直到造物失控的那一日。",
+      "en": "Behold that {entity}. Mortals always trust they control what their hands have shaped—until the day it turns.",
       "weight": 4
     },
     {
@@ -680,8 +680,8 @@
       "aspects": [
         "entity:golem"
       ],
-      "zh": "§7{entity} 不问为什么打。§8不问，是仆从里最接近神圣的美德。",
-      "en": "§7{entity} does not ask why it strikes. §8Not asking is the nearest thing a servant has to a sacred virtue.",
+      "zh": "{entity}沉重的脚步震动着地面，忠实地守卫着这片毫无意义的尘土。",
+      "en": "The heavy tread of {entity} shakes the earth as it guards this meaningless dust.",
       "weight": 4
     },
     {
@@ -689,8 +689,8 @@
       "aspects": [
         "entity:hostile"
       ],
-      "zh": "§c{hostile}§7 对你露出敌意。§8它还不知道敌意该朝哪个方向跪。",
-      "en": "§c{hostile} §7shows you hostility. §8It does not yet know which direction hostility is supposed to kneel.",
+      "zh": "暗处正有充满敌意的{hostile}向你逼近！收起你的松懈，凡人。",
+      "en": "A hostile {hostile} closes in from the dark! Cast aside your slackness, mortal.",
       "weight": 2
     },
     {
@@ -698,8 +698,8 @@
       "aspects": [
         "entity:hostile"
       ],
-      "zh": "§7猎食者。§8在我眼里，{hostile} 只是一块还会动的温度。",
-      "en": "§7A predator. §8To me, {hostile} is only a temperature that still moves.",
+      "zh": "那头{hostile}眼中闪烁着纯粹的杀意。在这残酷的诸界里，仁慈只会招致死亡。",
+      "en": "Pure malice gleams in the eyes of {hostile}. Across these cruel realms, mercy buys only death.",
       "weight": 4
     },
     {
@@ -707,8 +707,8 @@
       "aspects": [
         "entity:hostile"
       ],
-      "zh": "§8它想咬穿这层皮。§5皮下面是门，不是肉。§7{hostile} 会崩掉牙。",
-      "en": "§8It wants to bite through the hide. §5Under the hide is a gate, not meat. §7{hostile} will break its teeth.",
+      "zh": "阴影中的{hostile}已将你锁定为猎物——让它见识一下奥穆索守门人的怒火吧。",
+      "en": "{hostile} in the shadows has marked you as prey—show it the wrath of the Gatekeeper of Omothol.",
       "weight": 4
     },
     {
@@ -716,8 +716,8 @@
       "aspects": [
         "entity:hostile"
       ],
-      "zh": "§4让它来。§7{hostile} 的仇恨是免费的柴。",
-      "en": "§4Let it come. §7{hostile}'s hatred is free kindling.",
+      "zh": "小心应对眼前的{hostile}。哪怕是微小的疏忽，也足以让鲜血染红你的脚下。",
+      "en": "Meet that {hostile} with care. Even a slight lapse is enough to stain the ground beneath you red.",
       "weight": 4
     },
     {
@@ -725,8 +725,8 @@
       "aspects": [
         "entity:hostile"
       ],
-      "zh": "§c{hostile} 把你当成可以吃的东西。§8误会很深。可以吃的是它。",
-      "en": "§c{hostile} takes you for something edible. §8A deep misunderstanding. The edible one is it.",
+      "zh": "杀戮与被杀戮，本就是{hostile}与凡人之间唯一通行的法则。",
+      "en": "To slay or be slain is the only law recognized between {hostile} and mortal.",
       "weight": 4
     },
     {
@@ -734,8 +734,8 @@
       "aspects": [
         "entity:hostile"
       ],
-      "zh": "§7敌意有味道。§8{hostile} 身上的那股，像生锈的钥匙。",
-      "en": "§7Hostility has a smell. §8The one on {hostile} is like a rusted key.",
+      "zh": "利爪与獠牙正在逼近。握紧你的兵器，准备迎战{hostile}！",
+      "en": "Claw and fang draw near. Grip your weapon and face {hostile}!",
       "weight": 4
     },
     {
@@ -743,8 +743,8 @@
       "aspects": [
         "entity:undead"
       ],
-      "zh": "§2{entity}§7 拒绝躺下。§8这种固执在恐惧之地会被当成礼貌。",
-      "en": "§2{entity} §7refuses to lie down. §8In the Dreadlands that stubbornness passes for manners.",
+      "zh": "一具拒绝安息的{entity}正在附近徘徊，散发着腐尸与坟墓的恶臭。",
+      "en": "A {entity} that refuses rest shambles nearby, exhaling the stench of corpse and grave.",
       "weight": 4
     },
     {
@@ -752,8 +752,8 @@
       "aspects": [
         "entity:undead"
       ],
-      "zh": "§8死过一次的东西还会走路，说明死没有把工作做完。§7{entity} 是尾款。",
-      "en": "§8When a thing that died once still walks, death did not finish the job. §7{entity} is the balance due.",
+      "zh": "死灵之书早已揭示：死亡并非终点，有时它只是另一场更为丑陋的奴役的开始。",
+      "en": "The Necronomicon has long shown that death is no end—at times it is only the start of a uglier servitude.",
       "weight": 4
     },
     {
@@ -761,8 +761,8 @@
       "aspects": [
         "entity:undead"
       ],
-      "zh": "§7没有热血。§8{entity} 因此离我更近一点，也只近一点。",
-      "en": "§7No warm blood. §8{entity} is therefore a little closer to me. Only a little.",
+      "zh": "这头{entity}被抽去了灵魂，只剩下一具听命于黑暗本能的残破躯壳。",
+      "en": "This {entity} has been emptied of soul, leaving only a broken shell obeying dark instinct.",
       "weight": 4
     },
     {
@@ -770,8 +770,8 @@
       "aspects": [
         "entity:undead"
       ],
-      "zh": "§2{entity} 的影子比它的身体更像活物。§7影子还记得热。",
-      "en": "§2{entity}'s shadow looks more alive than its body. §7The shadow still remembers heat.",
+      "zh": "阳光或许能灼烧{entity}的腐肉，却烧不尽滋生不死诅咒的根源。",
+      "en": "Sunlight may sear the rot of {entity}, yet it cannot burn out the root of the undying curse.",
       "weight": 4
     },
     {
@@ -779,8 +779,8 @@
       "aspects": [
         "entity:boss"
       ],
-      "zh": "§6{boss}。§8又一个把自己写成标题的生物。§5标题是给我用的。",
-      "en": "§6{boss}. §8Another creature that wrote itself as a title. §5Titles are for me.",
+      "zh": "一股压倒性的威压正笼罩此地——{boss}就在你的面前！",
+      "en": "An overwhelming dread presses upon this place—{boss} stands before you!",
       "weight": 2
     },
     {
@@ -788,8 +788,8 @@
       "aspects": [
         "entity:boss"
       ],
-      "zh": "§c首领。§7{boss} 的王冠是借的，期限比它以为的短。",
-      "en": "§cA lord. §7{boss}'s crown is borrowed, and the term is shorter than it thinks.",
+      "zh": "面对{boss}吧，凡人！让我看看这具空心傀儡究竟能承受几分真正的狂怒。",
+      "en": "Face {boss}, mortal! Let me see how much true fury this hollow simulacrum can endure.",
       "weight": 2
     },
     {
@@ -797,8 +797,8 @@
       "aspects": [
         "entity:boss"
       ],
-      "zh": "§8我可以让 {boss} 从这片天空里消失。§7今天你若把光环关上，那是你的任性。",
-      "en": "§8I can make {boss} vanish from this sky. §7If you have shut the aura today, that is your indulgence.",
+      "zh": "{boss}的咆哮震颤着空气。若你的意志有半分动摇，下一瞬便会粉身碎骨。",
+      "en": "The roar of {boss} shakes the air. Should your will falter for a heartbeat, you will be shattered.",
       "weight": 4
     },
     {
@@ -806,8 +806,8 @@
       "aspects": [
         "entity:boss"
       ],
-      "zh": "§5{boss} 以为庞大就是古老。§7古老是一种方向，不是一种体积。",
-      "en": "§5{boss} thinks bulk is age. §7Age is a direction, not a volume.",
+      "zh": "能令{boss}现身于此，说明你已踏入了连死灵之书都要慎重警示的绝境。",
+      "en": "To stand before {boss} means you have entered a peril against which even the Necronomicon warns.",
       "weight": 4
     },
     {
@@ -815,8 +815,8 @@
       "aspects": [
         "entity:boss"
       ],
-      "zh": "§6看 {boss} 如何占据房间。§8真正的古神不占房间。古神就是房间。",
-      "en": "§6Watch how {boss} occupies the room. §8A true Old One does not occupy a room. The Old One is the room.",
+      "zh": "莫要指望{boss}会向你俯首。在生死搏杀的熔炉里，唯有强者配得上继续前行。",
+      "en": "Do not expect {boss} to bow. In the crucible of lethal combat, only the strong earn the right to walk on.",
       "weight": 4
     },
     {
@@ -824,8 +824,8 @@
       "aspects": [
         "entity:abyssal"
       ],
-      "zh": "§3{entity}§7 带着深渊的口音。§8听见它，就像听见家门在错误的一侧响。",
-      "en": "§3{entity} §7speaks with an abyssal accent. §8Hearing it is like hearing the house door on the wrong side.",
+      "zh": "你周遭游荡着{entity}——深渊的造物已悄然渗入此界。",
+      "en": "{entity} prowls nearby—a creature of the Abyss already seeping into this realm.",
       "weight": 4
     },
     {
@@ -833,8 +833,8 @@
       "aspects": [
         "entity:abyssal"
       ],
-      "zh": "§8珊瑚、暗石、盐一样的绝望。§7{entity} 是荒地上长出来的句子。",
-      "en": "§8Coralium, darkstone, a despair like salt. §7{entity} is a sentence grown out of the wasteland.",
+      "zh": "那头{entity}散发着熟悉的腐朽与疯狂气息，仿佛奥穆索的门扉就在它身后半掩。",
+      "en": "That {entity} reeks of familiar rot and madness, as though the Gate of Omothol stood ajar behind it.",
       "weight": 4
     },
     {
@@ -842,8 +842,8 @@
       "aspects": [
         "entity:abyssal"
       ],
-      "zh": "§7不要对 {entity} 客气。§5它认识我，不认识你。",
-      "en": "§7Do not be polite to {entity}. §5It knows me. It does not know you.",
+      "zh": "在{entity}的眼中，凡俗的秩序一文不值。莫要以为这具傀儡的皮囊能令它对你彻底驯服。",
+      "en": "In the eyes of {entity}, mortal order is worthless. Do not assume this simulacrum's likeness guarantees its obedience.",
       "weight": 4
     },
     {
@@ -851,8 +851,8 @@
       "aspects": [
         "entity:abyssal"
       ],
-      "zh": "§3{entity} 的骨头里有潮声。§8那潮不退，它只是换了一张嘴。",
-      "en": "§3There is a tide in {entity}'s bones. §8The tide does not ebb. It only changes mouths.",
+      "zh": "{entity}的低嘶在空气中回荡，宛如黑暗国度奏响的前奏。",
+      "en": "The hiss of {entity} ripples through the air like a prelude from the Dark Realm.",
       "weight": 4
     },
     {
@@ -860,8 +860,8 @@
       "aspects": [
         "entity:coralium"
       ],
-      "zh": "§b{entity}§7 的缝里渗着珊瑚。§8那不是矿，是一种还没投票通过的宗教。",
-      "en": "§b{entity} §7seeps coralium from its seams. §8That is not an ore. It is a religion that has not yet been voted in.",
+      "zh": "一头被珊瑚瘟疫彻底吞噬的{entity}正在附近蠕动，浑身泛着病态的苍蓝。",
+      "en": "A {entity} wholly consumed by the Coralium Plague writhes nearby, glowing with a sickly azure.",
       "weight": 4
     },
     {
@@ -869,8 +869,8 @@
       "aspects": [
         "entity:coralium"
       ],
-      "zh": "§3感染会走路的时候，就叫 {entity}。§7你现在也在用我的腿走路。想过这一点吗？",
-      "en": "§3When an infection learns to walk, it is called {entity}. §7You are walking on my legs now. Have you considered that?",
+      "zh": "看看那{entity}吧——那就是触犯珊瑚禁忌后的最终下场。",
+      "en": "Behold that {entity}—such is the final end of meddling with the taboo of Coralium.",
       "weight": 4
     },
     {
@@ -878,8 +878,8 @@
       "aspects": [
         "entity:coralium"
       ],
-      "zh": "§8蓝绿色的饥渴。§7{entity} 想把整座世界染成同一种伤口。",
-      "en": "§8A blue-green thirst. §7{entity} wants the whole world dyed into one kind of wound.",
+      "zh": "{entity}的血肉早已腐烂结晶，唯有疯狂的杀意仍在驱使着它的骸骨。",
+      "en": "The flesh of {entity} rotted and crystallized long ago; only mad malice still drives its bones.",
       "weight": 4
     },
     {
@@ -887,8 +887,8 @@
       "aspects": [
         "entity:coralium"
       ],
-      "zh": "§b别摸 {entity} 的光。§7那光会顺着指纹爬进你还没说出口的名字。",
-      "en": "§bDo not touch the light on {entity}. §7It climbs a fingerprint into a name you have not spoken yet.",
+      "zh": "小心莫让{entity}的爪牙划破你的皮囊，珊瑚的毒素可不会讲半分情面。",
+      "en": "Take care the claws of {entity} do not tear your hide; Coralium venom knows no mercy.",
       "weight": 4
     },
     {
@@ -896,8 +896,8 @@
       "aspects": [
         "entity:dread"
       ],
-      "zh": "§4{entity}§7 从恐惧之地带来一种更干的冷。§8冷到骨头会自己跪下。",
-      "en": "§4{entity} §7brings a drier cold from the Dreadlands. §8Cold enough that bone kneels by itself.",
+      "zh": "一头被恐惧瘟疫彻底扭曲的{entity}正在附近嘶吼，浑身渗出令人作呕的脓血。",
+      "en": "A {entity} warped beyond recognition by the Dread Plague howls nearby, oozing foul ichor.",
       "weight": 4
     },
     {
@@ -905,8 +905,8 @@
       "aspects": [
         "entity:dread"
       ],
-      "zh": "§8瘟疫不是病。§7在 {entity} 身上，它是国籍。",
-      "en": "§8The plague is not a disease. §7On {entity}, it is citizenship.",
+      "zh": "那就是{entity}——恐惧之地的原生噩梦，理性与形态被彻底碾碎后的产物。",
+      "en": "That is {entity}—a native nightmare of the Dreadlands, born when reason and form are crushed to pulp.",
       "weight": 4
     },
     {
@@ -914,8 +914,8 @@
       "aspects": [
         "entity:dread"
       ],
-      "zh": "§7查伽洛斯的影子还没到，{entity} 已经先替他咳嗽了。",
-      "en": "§7Cha'garoth's shadow is not here yet, and {entity} is already coughing on his behalf.",
+      "zh": "千万莫让{entity}的毒爪触及你的躯体，恐惧瘟疫的蔓延可比珊瑚更加狂暴。",
+      "en": "Never let the tainted claws of {entity} graze your flesh; the Dread Plague spreads fiercer than Coralium.",
       "weight": 4
     },
     {
@@ -923,8 +923,8 @@
       "aspects": [
         "entity:dread"
       ],
-      "zh": "§5恐惧之地的孩子。§8{entity}，回家的路不经过你的牙。",
-      "en": "§5A child of the Dreadlands. §8{entity}, the way home does not run through your teeth.",
+      "zh": "在{entity}扭曲的嚎叫声中，我仿佛又听见了查伽洛斯在巢穴深处的喘息。",
+      "en": "In the mangled shriek of {entity}, I hear once more the heavy breathing of Chagaroth in its lair.",
       "weight": 4
     },
     {
@@ -932,8 +932,8 @@
       "aspects": [
         "entity:shadow"
       ],
-      "zh": "§8{entity} 是光同意缺席之后留下的形状。",
-      "en": "§8{entity} is the shape left behind after light agreed to be absent.",
+      "zh": "一团来自黑暗国度的{entity}正在阴影中蠕动，仿佛连光线都在恐惧它的存在。",
+      "en": "A {entity} of the Dark Realm writhes within the shade, as though light itself feared its presence.",
       "weight": 4
     },
     {
@@ -941,8 +941,8 @@
       "aspects": [
         "entity:shadow"
       ],
-      "zh": "§7暗影生物不投射影子。§8{entity} 自己就是那句被删掉的注脚。",
-      "en": "§7Shadow-things cast no shadow. §8{entity} is the footnote that was deleted.",
+      "zh": "那{entity}没有血肉，没有骨骼，唯有纯粹的虚暗与无尽的憎恨。",
+      "en": "That {entity} has neither flesh nor bone—only pure shadow and unending hate.",
       "weight": 4
     },
     {
@@ -950,8 +950,8 @@
       "aspects": [
         "entity:shadow"
       ],
-      "zh": "§5别用火去照 {entity}。§7火只会让它记住你的轮廓。",
-      "en": "§5Do not show {entity} to fire. §7Fire only teaches it your outline.",
+      "zh": "萨克索斯的眷族{entity}最喜爱在无光的角落里伏击大意的旅人。",
+      "en": "{entity}, kin of Sacthoth, delights in ambushing careless travelers from lightless corners.",
       "weight": 4
     },
     {
@@ -959,8 +959,8 @@
       "aspects": [
         "entity:shadow"
       ],
-      "zh": "§8{entity} 走路不踩实。§7它踩的是你还没决定要不要留下的那一步。",
-      "en": "§8{entity} does not step on solid ground. §7It steps on the pace you have not decided to keep.",
+      "zh": "小心{entity}的触摸！黑暗生物的每一次打击都在削弱你与光明之间的联系。",
+      "en": "Beware the touch of {entity}! Every blow from a shadow creature frays your tie to the light.",
       "weight": 4
     },
     {
@@ -968,8 +968,8 @@
       "aspects": [
         "entity:shoggoth"
       ],
-      "zh": "§2{entity}。§8不定形，高腐蚀，一肚子别人的脸。§7我的旧仆人里，它最不懂礼仪，也最懂饥饿。",
-      "en": "§2{entity}. §8Shapeless, caustic, a belly full of other faces. §7Of my old servants, it has the worst manners and the best hunger.",
+      "zh": "Tekeli-li! 一头令人作呕的{entity}就在附近蠕动——那团不断沸腾增殖的原生质怪物！",
+      "en": "Tekeli-li! A loathsome {entity} churns nearby—that seething, ever-multiplying mass of protoplasm!",
       "weight": 2
     },
     {
@@ -977,8 +977,8 @@
       "aspects": [
         "entity:shoggoth"
       ],
-      "zh": "§7修格斯不需要骨头。§8{entity} 用你的犹豫当骨架。",
-      "en": "§7A shoggoth does not need bones. §8{entity} uses your hesitation as a spine.",
+      "zh": "连古老者都曾因{entity}的反叛而覆灭，区区凡人岂敢轻视这头不可名状的肉山？",
+      "en": "Even the Elder Things fell before the rebellion of {entity}; what mortal dares scorn this nameless mound of flesh?",
       "weight": 2
     },
     {
@@ -986,8 +986,8 @@
       "aspects": [
         "entity:shoggoth"
       ],
-      "zh": "§5看它流动。§7{entity} 在模仿一种它从未被允许拥有的身体。",
-      "en": "§5Watch it flow. §7{entity} is imitating a body it was never permitted to own.",
+      "zh": "{entity}的体表不断睁开又闭合着千万只眼睛，散发着令人疯狂的恶臭与尖啸。",
+      "en": "A thousand eyes open and shut across {entity}, exhaling a maddening stench and shrill piping.",
       "weight": 4
     },
     {
@@ -995,8 +995,8 @@
       "aspects": [
         "entity:shoggoth"
       ],
-      "zh": "§8酸液走过的地方，名字会变短。§7{entity} 已经从你脚边开始删了。",
-      "en": "§8Where the acid has walked, names grow shorter. §7{entity} has already begun deleting from beside your feet.",
+      "zh": "若不想被{entity}酸液般的躯体吞噬殆尽，便快些清理它周围滋生的巨石与粘液！",
+      "en": "If you do not wish to be dissolved inside {entity}, clear the monoliths and ooze breeding around it!",
       "weight": 4
     },
     {
@@ -1004,8 +1004,8 @@
       "aspects": [
         "entity:shoggoth"
       ],
-      "zh": "§2别对 {entity} 发号施令。§7它记得旧主人的声音。你的声音还太新。",
-      "en": "§2Do not give {entity} orders. §7It remembers the old keeper's voice. Yours is still too new.",
+      "zh": "看着{entity}那不断变换的畸形器官吧——这就是失去了理智与约束的混沌本身。",
+      "en": "Behold the shifting, grotesque organs of {entity}—that is Chaos itself, stripped of reason and restraint.",
       "weight": 4
     },
     {
@@ -1013,8 +1013,8 @@
       "aspects": [
         "entity:omothol"
       ],
-      "zh": "§5{entity}§7 带着奥穆索的尘。§8那尘不是土，是门缝里漏出来的算术。",
-      "en": "§5{entity} §7carries the dust of Omothol. §8That dust is not soil. It is arithmetic leaking from a door-crack.",
+      "zh": "一个源自奥穆索的{entity}正站在附近——它身上带着那座失落圣城特有的腐朽与尊严。",
+      "en": "A {entity} born of Omothol stands nearby, bearing the peculiar decay and dignity of that lost citadel.",
       "weight": 4
     },
     {
@@ -1022,8 +1022,8 @@
       "aspects": [
         "entity:omothol"
       ],
-      "zh": "§8同乡。§7{entity} 不一定认你，但它认这张脸。别辜负这张脸。",
-      "en": "§8A countryman. §7{entity} may not know you, it knows this face. Do not waste the face.",
+      "zh": "那名{entity}是禁忌知识的守护者，亦是群星之外最后的遗民。",
+      "en": "That {entity} is a keeper of forbidden lore—one of the last remnants beyond the stars.",
       "weight": 2
     },
     {
@@ -1031,8 +1031,8 @@
       "aspects": [
         "entity:omothol"
       ],
-      "zh": "§7奥穆索的东西出现在外面，通常意味着有人把锁当了装饰。§8{entity} 就是证据。",
-      "en": "§7When something of Omothol appears outside, someone has been using the lock as decoration. §8{entity} is the evidence.",
+      "zh": "在{entity}面前，莫要显露出凡人的浅薄与无知，否则连阿克洛语的嘲讽你也听不懂。",
+      "en": "Before {entity}, do not parade mortal shallowness, lest you fail to grasp even its mockery in Aklo.",
       "weight": 4
     },
     {
@@ -1040,8 +1040,8 @@
       "aspects": [
         "entity:omothol"
       ],
-      "zh": "§5{entity} 不该在门外散步。§8门若自己开门，我就该回去数一数锁。",
-      "en": "§5{entity} should not be strolling outside the gate. §8If the gate opened itself, I should go back and count the locks.",
+      "zh": "连{entity}都在低声赞颂着外神的名字。你是否也能听懂那古老的音节？",
+      "en": "Even {entity} murmurs hymns to the Outer Gods. Can you decipher those ancient syllables?",
       "weight": 4
     },
     {
@@ -1049,8 +1049,8 @@
       "aspects": [
         "entity:demon"
       ],
-      "zh": "§4{entity}§7 以为角和硫磺就算堕落。§8堕落是一种地理，不是一种化妆。",
-      "en": "§4{entity} §7thinks horns and brimstone are damnation. §8Damnation is a geography, not a cosmetic.",
+      "zh": "一头散发着硫磺与暴虐气息的{entity}正在附近徘徊。",
+      "en": "A {entity} reeking of sulfur and fury prowls nearby.",
       "weight": 4
     },
     {
@@ -1058,8 +1058,8 @@
       "aspects": [
         "entity:demon"
       ],
-      "zh": "§8下界的神学很吵。§7{entity} 就是那声吵的一个脚注。",
-      "en": "§8Nether theology is loud. §7{entity} is one footnote of that noise.",
+      "zh": "凡人称{entity}为恶魔，却不知在真正的外神面前，地狱的爪牙也不过是暴躁的看门犬。",
+      "en": "Mortals call {entity} a demon, unaware that before the Outer Gods, the fiends of hell are mere ill-tempered hounds.",
       "weight": 4
     },
     {
@@ -1067,8 +1067,8 @@
       "aspects": [
         "entity:demon"
       ],
-      "zh": "§c让它咆哮。§7{entity} 的火焰在黑暗国度里连烛火都算不上。",
-      "en": "§cLet it roar. §7{entity}'s flame would not pass for a candle in the Dark Realm.",
+      "zh": "那{entity}眼中燃烧着贪婪与毁灭欲，然而它的火焰照不亮奥穆索的半寸阴影。",
+      "en": "Greed and ruin burn in the eyes of {entity}, yet its flames cannot light a single span of Omothol's shadow.",
       "weight": 4
     },
     {
@@ -1076,8 +1076,8 @@
       "aspects": [
         "entity:demon"
       ],
-      "zh": "§4{entity} 想用恐惧做交易。§8恐惧之地的瘟疫听了会笑。",
-      "en": "§4{entity} wants to trade in fear. §8The plague of the Dreadlands would laugh.",
+      "zh": "莫要轻视{entity}的利爪，下界的狂暴依然足以撕裂大意的凡胎。",
+      "en": "Do not scorn the claws of {entity}; Nether-born fury still suffices to shred a careless mortal.",
       "weight": 4
     },
     {
@@ -1085,8 +1085,8 @@
       "aspects": [
         "entity:antimatter"
       ],
-      "zh": "§5{entity}§7 是一个被写成负数的生物。§8碰到它，存在会做减法。",
-      "en": "§5{entity} §7is a creature written as a negative number. §8Touch it, and existence subtracts.",
+      "zh": "反物质的存在本身便是对现实法则的亵渎——稍有触碰，便会引发湮灭的狂潮。",
+      "en": "Antimatter is an affront to the laws of reality itself—one touch unleashes a tide of annihilation.",
       "weight": 4
     },
     {
@@ -1094,8 +1094,8 @@
       "aspects": [
         "entity:antimatter"
       ],
-      "zh": "§8反物质不憎恨你。§7{entity} 只是无法和你同时为真。",
-      "en": "§8Antimatter does not hate you. §7{entity} simply cannot be true at the same time as you.",
+      "zh": "那团{entity}在视野中扭曲着光线，仿佛宇宙在自我撕裂时留下的伤疤。",
+      "en": "That {entity} warps the light around it, like a scar left where the cosmos tore itself open.",
       "weight": 4
     },
     {
@@ -1103,8 +1103,8 @@
       "aspects": [
         "entity:antimatter"
       ],
-      "zh": "§7我允许这种东西活着，是为了提醒门：§8有些开口是用来抵消的。",
-      "en": "§7I allow such things to live so the gate remembers: §8some openings exist to cancel.",
+      "zh": "远离{entity}，凡人！湮灭从不区分敌我，亦不在乎你是否披着扎哈尔的形貌。",
+      "en": "Keep clear of {entity}, mortal! Annihilation spares neither friend nor foe, nor cares that you wear J'zahar's form.",
       "weight": 4
     },
     {
@@ -1112,8 +1112,8 @@
       "aspects": [
         "entity:antimatter"
       ],
-      "zh": "§5靠近 {entity} 时，别说自己的名字。§7负数最爱吃肯定句。",
-      "en": "§5Near {entity}, do not say your own name. §7A negative number prefers to eat an affirmative sentence.",
+      "zh": "{entity}散发着令人牙酸的虚无气息，宛如阿撒托斯梦呓中泄出的一粒火星。",
+      "en": "{entity} exhales a teeth-gritting emptiness, like a stray spark from the dreams of Azathoth.",
       "weight": 4
     },
     {
@@ -1121,8 +1121,8 @@
       "aspects": [
         "entity:dragon"
       ],
-      "zh": "§5{entity}。§8翅膀、长啸、一块会飞的终点。§7末地以为这就是神。",
-      "en": "§5{entity}. §8Wings, a long cry, an ending that learned to fly. §7The End thinks this is a god.",
+      "zh": "巨龙{entity}振翼掠过虚空，傲慢地俯视着脚下的一切凡物。",
+      "en": "The dragon {entity} beats its wings across the void, looking down in pride upon all earthly things.",
       "weight": 2
     },
     {
@@ -1130,8 +1130,8 @@
       "aspects": [
         "entity:dragon"
       ],
-      "zh": "§7龙会守塔，会喷息，会把天空占成私产。§8{entity} 不会守门。这是区别。",
-      "en": "§7Dragons keep towers, breathe, and claim the sky as private property. §8{entity} does not keep a gate. That is the difference.",
+      "zh": "这头{entity}自诩为末地的主宰，然而在旧日支配者的漫长纪元里，龙族也不过是新近诞生的幼雏。",
+      "en": "This {entity} styles itself sovereign of the End; yet beside the aeons of the Great Old Ones, dragons are mere hatchlings.",
       "weight": 4
     },
     {
@@ -1139,8 +1139,8 @@
       "aspects": [
         "entity:dragon"
       ],
-      "zh": "§6看它盘旋。§7{entity} 的影子比它的信仰更大。",
-      "en": "§6Watch it circle. §7{entity}'s shadow is larger than its faith.",
+      "zh": "看着{entity}吐出的龙息吧——紫色的吐息虽烈，却远不及黑暗领域的一缕寒风致命。",
+      "en": "Watch the breath of {entity}—fierce as that violet fire may be, it is far less lethal than a single chill gust from the Dark Realm.",
       "weight": 4
     },
     {
@@ -1148,8 +1148,8 @@
       "aspects": [
         "entity:dragon"
       ],
-      "zh": "§8若它朝你俯冲，记住：§5你现在的喉咙能说出让天空裂开的词。§7不必急着说。",
-      "en": "§8If it dives at you, remember: §5the throat you wear can speak a word that splits sky. §7No need to hurry.",
+      "zh": "去折断{entity}的羽翼吧，凡人。看看这头末地霸主在深渊的注视下能挣扎几时。",
+      "en": "Break the wings of {entity}, mortal. Let us see how long this lord of the End lasts beneath the Abyssal gaze.",
       "weight": 4
     },
     {
@@ -1157,8 +1157,8 @@
       "aspects": [
         "entity:dragon"
       ],
-      "zh": "§5{entity} 把末地当成巢。§8巢是给还会害怕风的东西准备的。",
-      "en": "§5{entity} treats the End as a nest. §8Nests are for things that still fear the wind.",
+      "zh": "即便{entity}盘踞在黑曜石柱之间，它也逃不过群星归位时的终极寂灭。",
+      "en": "Though {entity} perches among obsidian pillars, it cannot escape the final silence when the stars are right.",
       "weight": 4
     },
     {
@@ -1166,8 +1166,8 @@
       "aspects": [
         "entity:ghoul"
       ],
-      "zh": "§7{entity} 是饿的一种步行形态。§8深渊、暗影、恐惧，换一层皮，牙还是那副牙。",
-      "en": "§7{entity} is hunger in a walking tense. §8Abyss, shadow, dread: change the hide, the teeth stay.",
+      "zh": "一头饥渴难耐的{entity}正在附近潜行，它那腐烂的喉咙里正发出贪婪的喘息。",
+      "en": "A starving {entity} stalks nearby, wet, greedy rasps rattling in its rotting throat.",
       "weight": 4
     },
     {
@@ -1175,8 +1175,8 @@
       "aspects": [
         "entity:ghoul"
       ],
-      "zh": "§8食尸鬼不会问肉从哪来。§7{entity} 问的是还剩多少。",
-      "en": "§8A ghoul does not ask where the meat came from. §7{entity} asks how much is left.",
+      "zh": "{entity}曾是啃食腐肉与禁忌典籍的可悲生物，如今只剩下对鲜血的本能渴望。",
+      "en": "{entity} was once a wretched thing feeding on carrion and forbidden lore; now only brute thirst for blood remains.",
       "weight": 4
     },
     {
@@ -1184,8 +1184,8 @@
       "aspects": [
         "entity:ghoul"
       ],
-      "zh": "§3弯腰，长臂，一嘴不该有的微笑。§7{entity} 在向我行一个它自己发明的礼。",
-      "en": "§3A stoop, long arms, a smile that should not exist. §7{entity} is offering a courtesy it invented itself.",
+      "zh": "在深渊荒地与黑暗之地，像{entity}这样的食尸鬼多如牛毛，它们是疯狂最忠实的清道夫。",
+      "en": "Across the Abyssal Wasteland and Darklands, ghouls like {entity} swarm without number—madness's most faithful scavengers.",
       "weight": 4
     },
     {
@@ -1193,8 +1193,8 @@
       "aspects": [
         "entity:ghoul"
       ],
-      "zh": "§7{entity} 的手指太长，像还没决定要抓哪一块名字。",
-      "en": "§7{entity}'s fingers are too long, as if they have not chosen which piece of a name to take.",
+      "zh": "那只{entity}正嗅着你的气味。莫要让这具傀儡的皮囊沦为它的盘中餐。",
+      "en": "That {entity} has caught your scent. Do not let this simulacrum's hide become its supper.",
       "weight": 4
     },
     {
@@ -1202,8 +1202,8 @@
       "aspects": [
         "entity:minion"
       ],
-      "zh": "§7{entity} 是某人没做完的句子。§8仆从最可悲的地方，是还以为自己有主语。",
-      "en": "§7{entity} is someone's unfinished sentence. §8The saddest thing about a minion is that it still thinks it has a subject.",
+      "zh": "那{entity}正是忠实侍奉于门扉之前的仆从——连它的每一次呼吸都在向扎哈尔致敬。",
+      "en": "That {entity} is a faithful servant before the Gate—every breath it draws pays homage to J'zahar.",
       "weight": 4
     },
     {
@@ -1211,8 +1211,8 @@
       "aspects": [
         "entity:minion"
       ],
-      "zh": "§8小的，附属的，可替换的。§7{entity} 若认得这张脸，就让它滚到一边去。",
-      "en": "§8Small, attached, replaceable. §7If {entity} knows this face, let it crawl aside.",
+      "zh": "看看这只忠诚的{entity}吧。在无尽黑暗的意志面前，它比任何凡人都更懂得顺从。",
+      "en": "Look upon this loyal {entity}. Before the will of infinite darkness, it understands obedience better than any mortal.",
       "weight": 4
     },
     {
@@ -1220,8 +1220,8 @@
       "aspects": [
         "entity:minion"
       ],
-      "zh": "§5仆从不该挡在门和主人之间。§7{entity} 正挡着。",
-      "en": "§5A minion should not stand between a gate and its keeper. §7{entity} is standing there.",
+      "zh": "有{entity}随行在侧，凡俗的宵小之辈便不敢轻易造次。",
+      "en": "With {entity} at hand, petty earthly pests dare not step too boldly.",
       "weight": 4
     },
     {
@@ -1229,8 +1229,8 @@
       "aspects": [
         "entity:minion"
       ],
-      "zh": "§8{entity} 的忠诚薄得能透光。§7透过去，后面通常是一个更贪的主人。",
-      "en": "§8{entity}'s loyalty is thin enough to see through. §7Behind it there is usually a greedier master.",
+      "zh": "这头{entity}认得你身上的气息。去吧，驱使它去撕碎那些阻碍道路的愚人。",
+      "en": "This {entity} knows the scent you wear. Go—turn it loose upon whatever fools bar your path.",
       "weight": 4
     },
     {
@@ -1238,8 +1238,8 @@
       "aspects": [
         "entity:item"
       ],
-      "zh": "§7地上有东西。§8{entity} 被谁扔下，谁就承认它暂时不重要。",
-      "en": "§7Something is on the ground. §8Whoever dropped {entity} has admitted it is temporarily unimportant.",
+      "zh": "地上散落着{entity}，宛如某个早已陨落的旅人匆忙间遗弃的遗物。",
+      "en": "{entity} lies scattered upon the ground, like a relic dropped in haste by some fallen traveler.",
       "weight": 4
     },
     {
@@ -1247,8 +1247,8 @@
       "aspects": [
         "entity:item"
       ],
-      "zh": "§8闪光的掉落物像一句被打断的贪心。§7{entity} 还在等一只手。",
-      "en": "§8A glittering drop is an interrupted greed. §7{entity} is still waiting for a hand.",
+      "zh": "连这微不足道的{entity}也被遗弃在尘埃里——俯身拾起它，还是任由它被世界刷新抹去？",
+      "en": "Even this trivial {entity} lies abandoned in the dust—stoop to claim it, or leave it to vanish?",
       "weight": 4
     },
     {
@@ -1256,8 +1256,8 @@
       "aspects": [
         "entity:item"
       ],
-      "zh": "§7别为地上的 {entity} 弯腰太久。§8弯腰是给祭坛用的姿势。",
-      "en": "§7Do not stoop too long for {entity}. §8Stooping is a posture reserved for altars.",
+      "zh": "凡人一生都在收集各种{entity}，到头来却没有一样能带进黑暗国度。",
+      "en": "Mortals spend their lives hoarding every sort of {entity}, yet cannot carry a single scrap into the Dark Realm.",
       "weight": 4
     },
     {
@@ -1265,8 +1265,8 @@
       "aspects": [
         "entity:item"
       ],
-      "zh": "§6{entity} 躺在土里，像一个还没人认领的罪名。§7你可以捡，也可以让它继续当证据。",
-      "en": "§6{entity} lies in the dirt like a charge no one has claimed. §7You may pick it up, or leave it as evidence.",
+      "zh": "那枚静静躺在地上的{entity}，或许正是开启下一场仪式的微小拼图。",
+      "en": "That {entity} resting quietly on the earth may be the small piece needed for your next ritual.",
       "weight": 4
     },
     {
@@ -1274,8 +1274,8 @@
       "aspects": [
         "entity:projectile"
       ],
-      "zh": "§c有东西在飞。§7{entity} 把杀意做成了直线。",
-      "en": "§cSomething is in the air. §7{entity} has made killing intent into a straight line.",
+      "zh": "一枚{entity}正破空袭来！莫要像木桩一样傻站着，躲开或击碎它！",
+      "en": "A {entity} streaks through the air! Do not stand like a post—evade or shatter it!",
       "weight": 4
     },
     {
@@ -1283,8 +1283,8 @@
       "aspects": [
         "entity:projectile"
       ],
-      "zh": "§8箭、火球、或一颗还没决定落地的诅咒。§7{entity} 经过时，空气会让一下。",
-      "en": "§8An arrow, a fireball, or a curse that has not chosen its ground. §7When {entity} passes, the air steps aside.",
+      "zh": "呼啸的{entity}划破空气，带着凡俗兵器特有的急躁与杀意。",
+      "en": "The whistling {entity} slices the air with the frantic malice of mortal arms.",
       "weight": 4
     },
     {
@@ -1292,8 +1292,8 @@
       "aspects": [
         "entity:projectile"
       ],
-      "zh": "§7躲，或者让它知道自己在朝谁飞。§5{entity} 多半不识字。",
-      "en": "§7Dodge, or teach it whose way it is flying. §5{entity} is probably illiterate.",
+      "zh": "区区一枚{entity}，也妄图撼动深渊守门人的威严？",
+      "en": "Does a mere {entity} presume to rattle the majesty of the Gatekeeper of the Abyss?",
       "weight": 4
     },
     {
@@ -1301,8 +1301,8 @@
       "aspects": [
         "entity:projectile"
       ],
-      "zh": "§c{entity} 不会转弯。§8不会转弯的东西，最容易被一扇门收下。",
-      "en": "§c{entity} cannot turn. §8Things that cannot turn are the easiest for a gate to collect.",
+      "zh": "在{entity}命中这具傀儡之前，先一步决定你的身法吧。",
+      "en": "Move before that {entity} finds its mark upon this simulacrum.",
       "weight": 4
     },
     {
@@ -1310,8 +1310,8 @@
       "aspects": [
         "entity:looked"
       ],
-      "zh": "§d你正看着 {looked}。§8于是我也看着。两道视线叠在一起，会烧穿名字。",
-      "en": "§dYou are looking at {looked}. §8So I am looking too. Two lines of sight, stacked, burn through a name.",
+      "zh": "你正紧紧盯着那{looked}。记住，当你凝视某种存在时，深渊也在借你的双眼审视着它。",
+      "en": "You fix your gaze upon {looked}. Remember: when you stare at a creature, the Abyss appraises it through your eyes.",
       "weight": 2
     },
     {
@@ -1319,8 +1319,8 @@
       "aspects": [
         "entity:looked"
       ],
-      "zh": "§7准星是一种很粗鲁的手指。§5你用它点中了 {looked}。",
-      "en": "§7A crosshair is a very rude finger. §5You have pointed it at {looked}.",
+      "zh": "你的视线锁定了{looked}。究竟是猎手在打量猎物，还是疯子在寻找同类？",
+      "en": "Your sight locks onto {looked}. Is it a hunter sizing up quarry, or a madman seeking kin?",
       "weight": 2
     },
     {
@@ -1328,8 +1328,8 @@
       "aspects": [
         "entity:looked"
       ],
-      "zh": "§8{looked} 还不知道自己被一扇门选中。§7别眨眼，否则它会以为那是赦免。",
-      "en": "§8{looked} does not yet know a gate has chosen it. §7Do not blink, or it will mistake that for pardon.",
+      "zh": "那{looked}似乎感受到了你目光中携带的异界寒意，正不安地躁动着。",
+      "en": "That {looked} seems to feel the alien chill in your stare and shifts uneasily.",
       "weight": 4
     },
     {
@@ -1337,8 +1337,8 @@
       "aspects": [
         "entity:looked"
       ],
-      "zh": "§5视线所及，即是审问开始的地方。§7今日的被告是 {looked}。",
-      "en": "§5Where the gaze falls, the inquiry begins. §7Today's accused is {looked}.",
+      "zh": "看清{looked}的轮廓了吧？在群星归位之时，这世间的一切形貌都将被彻底重塑。",
+      "en": "Do you see {looked} clearly? When the stars are right, every form in this world shall be remade.",
       "weight": 4
     },
     {
@@ -1346,8 +1346,8 @@
       "aspects": [
         "entity:looked"
       ],
-      "zh": "§d盯着 {looked} 的时候，你的喉咙会想说一个词。§8先别说。词比剑先到。",
-      "en": "§dWhile you stare at {looked}, your throat wants a word. §8Do not say it yet. The word arrives before the sword.",
+      "zh": "你注视着{looked}，而我注视着你——这层层叠叠的凝视之中，究竟谁才是真正的猎人？",
+      "en": "You watch {looked}, and I watch you—amid these layered gazes, who is the true hunter?",
       "weight": 4
     },
     {
@@ -1355,8 +1355,8 @@
       "aspects": [
         "entity:abyssal"
       ],
-      "zh": "§3{entity} 的出身写在珊瑚上，不写在族谱上。§8族谱会烧。珊瑚会投票。",
-      "en": "§3The origin of {entity} is written in coralium, not in a genealogy. §8A genealogy burns. Coralium votes.",
+      "zh": "看着{entity}吧。它正是深渊对这片尘世最直白的嘲弄。",
+      "en": "Behold {entity}. It is the Abyss's plainest mockery of this mortal dust.",
       "weight": 4
     },
     {
@@ -1364,8 +1364,8 @@
       "aspects": [
         "entity:abyssal"
       ],
-      "zh": "§8你看见 {entity}，就像看见一封从荒地寄来、地址却是你的信。§3别急着退回。",
-      "en": "§8Seeing {entity} is like seeing a letter from the wasteland addressed to you. §3Do not be quick to return it.",
+      "zh": "Iä! 既然{entity}已现身于此，你便当知晓自己距离真正的深渊有多近。",
+      "en": "Iä! Since {entity} walks here, you ought to know how near you stand to the true Abyss.",
       "weight": 4
     },
     {
@@ -1373,8 +1373,8 @@
       "aspects": [
         "entity:animal"
       ],
-      "zh": "§a{animal} 活着，是因为它还没被写进菜单。§8菜单在奥穆索不缺纸。",
-      "en": "§a{animal} lives because it has not yet been written onto a menu. §8Omothol is not short of paper.",
+      "zh": "那{animal}似乎本能地察觉到了你身上属于奥穆索的寒意。",
+      "en": "That {animal} seems to sense by instinct the chill of Omothol clinging to you.",
       "weight": 4
     },
     {
@@ -1382,8 +1382,8 @@
       "aspects": [
         "entity:animal"
       ],
-      "zh": "§7{entity} 的眼睛里没有神。§8这是一种清洁。清洁的东西最容易被弄脏。",
-      "en": "§7There is no god in the eyes of {entity}. §8That is a kind of cleanliness. Clean things are the easiest to soil.",
+      "zh": "温顺的{animal}在尘世间啃食草叶，却不知大地之下正沉睡着何等恐怖。",
+      "en": "Tame {animal} crops the grass in peace, unaware of what horrors slumber beneath the turf.",
       "weight": 4
     },
     {
@@ -1391,8 +1391,8 @@
       "aspects": [
         "entity:antimatter"
       ],
-      "zh": "§5{entity} 不是黑暗。§8黑暗还承认光曾经来过。它连这个都不承认。",
-      "en": "§5{entity} is not darkness. §8Darkness still admits that light once visited. This does not even admit that.",
+      "zh": "哪怕是最坚硬的渊素与黑曜石，在{entity}的湮灭面前也会化作虚无。",
+      "en": "Even hardened Abyssalnite and obsidian dissolve to nothing before the annihilation of {entity}.",
       "weight": 4
     },
     {
@@ -1400,8 +1400,8 @@
       "aspects": [
         "entity:antimatter"
       ],
-      "zh": "§8靠近 {entity} 的时候，名字会先变轻。§7轻到可以不落地。不落地的名字，很难再叫回来。",
-      "en": "§8Near {entity}, a name grows light first. §7Light enough not to land. A name that does not land is hard to call back.",
+      "zh": "凝视{entity}过久，连你的灵魂都仿佛要被那股倒错的法则抽空。",
+      "en": "Stare too long at {entity}, and it feels as though your very soul might be drained by its inverted laws.",
       "weight": 4
     },
     {
@@ -1409,8 +1409,8 @@
       "aspects": [
         "entity:any"
       ],
-      "zh": "§7视野里有东西在动。§8动不等于活。可动已经足够让门侧过耳。",
-      "en": "§7Something in view is moving. §8Moving is not living. Moving is already enough for a gate to turn its ear.",
+      "zh": "你听见周围的动静了么？世界仍在喧嚣，直到群星归位的那一刻。",
+      "en": "Do you hear the stirrings around you? The world still chatters—until the hour the stars are right.",
       "weight": 4
     },
     {
@@ -1418,8 +1418,8 @@
       "aspects": [
         "entity:boss"
       ],
-      "zh": "§5{boss} 也要排队。§8排队的队伍很短，短到只容得下一种结局。",
-      "en": "§5{boss} must queue as well. §8The queue is short, short enough for only one ending.",
+      "zh": "Iä! {boss}的怒火已在眼前燃起——拔出你的利刃，或者化作尘埃！",
+      "en": "Iä! The wrath of {boss} blazes before you—draw your steel, or crumble to dust!",
       "weight": 4
     },
     {
@@ -1427,8 +1427,8 @@
       "aspects": [
         "entity:coralium"
       ],
-      "zh": "§3{entity} 身上的蓝不是装饰。§8是一种还在计票的颜色。",
-      "en": "§3The blue on {entity} is not decoration. §8It is a color still counting votes.",
+      "zh": "在{entity}嘶哑的喉音里，我听见了深渊荒地那永恒的哀歌。",
+      "en": "In the rasping throat of {entity}, I hear the eternal dirge of the Abyssal Wasteland.",
       "weight": 4
     },
     {
@@ -1436,8 +1436,8 @@
       "aspects": [
         "entity:coralium"
       ],
-      "zh": "§b靠近 {entity}，皮肤会先听见。§7听见的不是话。是感染在自我介绍。",
-      "en": "§bNear {entity}, the skin hears first. §7What it hears is not speech. It is an infection introducing itself.",
+      "zh": "{entity}曾是某个不自量力的探索者，如今不过是深渊脚下的一具行尸。",
+      "en": "That {entity} was once some overreaching explorer; now it is merely a walking husk beneath the Abyss.",
       "weight": 4
     },
     {
@@ -1445,8 +1445,8 @@
       "aspects": [
         "entity:count:few"
       ],
-      "zh": "§7{count} 个活物。§8这个数目够组成一次误会，不够组成一次军团。",
-      "en": "§7{count} living things. §8Enough for a misunderstanding. Not enough for a legion.",
+      "zh": "这{count}个徘徊不去的影子，究竟是你的猎物，还是先一步踏入陷阱的饵料？",
+      "en": "Are these {count} lingering shadows your quarry, or bait set ahead of a trap?",
       "weight": 4
     },
     {
@@ -1454,8 +1454,8 @@
       "aspects": [
         "entity:count:few"
       ],
-      "zh": "§8{entity} 不是唯一的。§7不多。不多的时候，每一个都显得像被点过名。",
-      "en": "§8{entity} is not the only one. §7There are not many. When there are not many, each one looks as if it has been named.",
+      "zh": "寥寥{count}道微弱的脉动在黑暗里起伏，很快便会归于沉寂。",
+      "en": "A mere {count} faint pulses rise and fall in the dark, soon to settle into silence.",
       "weight": 4
     },
     {
@@ -1463,8 +1463,8 @@
       "aspects": [
         "entity:count:many"
       ],
-      "zh": "§c{count}。§8多到可以被称为天气。天气不需要你同意才落下。",
-      "en": "§c{count}. §8Enough to be called weather. Weather does not ask your consent before it falls.",
+      "zh": "莫要被这{count}个喧闹的家伙迷乱了心神。记住，数量在真正的伟力面前毫无意义。",
+      "en": "Do not let these {count} noisy creatures rattle your wits. Remember: numbers mean nothing before true might.",
       "weight": 4
     },
     {
@@ -1472,8 +1472,8 @@
       "aspects": [
         "entity:count:many"
       ],
-      "zh": "§7数不清的时候，就不要数。§5{entity} 会替你把数目记在牙齿上。",
-      "en": "§7When you cannot count, stop counting. §5{entity} will keep the number on its teeth for you.",
+      "zh": "蚁群再多，也不过是大脚落下前的一片黑影罢了。",
+      "en": "However thick the swarm, it is still just a dark smudge before the boot descends.",
       "weight": 4
     },
     {
@@ -1481,8 +1481,8 @@
       "aspects": [
         "entity:count:one"
       ],
-      "zh": "§7只有 {count}。§8一是最诚实的数目，也是最容易被看完的数目。",
-      "en": "§7Only {count}. §8One is the most honest number, and the easiest number to finish looking at.",
+      "zh": "这{count}道孤独的影子站在不远处，似乎也在打量着你这具奇异的化身。",
+      "en": "This {count} lone shadow stands not far off, seemingly appraising your strange simulacrum in return.",
       "weight": 4
     },
     {
@@ -1490,8 +1490,8 @@
       "aspects": [
         "entity:count:one"
       ],
-      "zh": "§8{entity} 独自承担了周围所有的注视。§7注视这种东西，单独领的时候最重。",
-      "en": "§8{entity} is carrying every nearby stare alone. §7A stare is heaviest when collected singly.",
+      "zh": "仅有{count}物在此，正好让你看清深渊的注视是如何在它身上投下阴影的。",
+      "en": "Only {count} creature—just enough to watch the Abyssal gaze cast its shadow over it.",
       "weight": 4
     },
     {
@@ -1499,8 +1499,8 @@
       "aspects": [
         "entity:creeper"
       ],
-      "zh": "§a{entity} 走路没有声音，像一句还没说出口的结束。§8结束通常很短。",
-      "en": "§a{entity} walks without sound, like an ending not yet spoken. §8Endings are usually brief.",
+      "zh": "以自我毁灭来换取敌人的伤痛——这{entity}的疯狂倒有几分原始的悲壮。",
+      "en": "Trading its own ruin to wound a foe—there is a crude, frantic devotion in that {entity}.",
       "weight": 4
     },
     {
@@ -1508,8 +1508,8 @@
       "aspects": [
         "entity:creeper"
       ],
-      "zh": "§7别把 {entity} 的安静当成害羞。§8害羞不会把周围的方块改写成过去时。",
-      "en": "§7Do not take the quiet of {entity} for shyness. §8Shyness does not rewrite the nearby blocks into the past tense.",
+      "zh": "{entity}的嘶鸣在耳边响起，如同定时引信发出的最后倒数。",
+      "en": "The hiss of {entity} rises at your ear like the final countdown of a burning fuse.",
       "weight": 4
     },
     {
@@ -1517,8 +1517,8 @@
       "aspects": [
         "entity:demon"
       ],
-      "zh": "§c{entity} 的角是一种还没退休的论点。§4论点烫手，而且不接受反驳。",
-      "en": "§cThe horns of {entity} are an argument that has not retired. §4The argument burns, and it does not take rebuttal.",
+      "zh": "来自火焰深渊的{entity}，与来自星海深渊的我们，本就不是同一条道路上的存在。",
+      "en": "{entity} of the fiery pit and we of the starless Abyss were never meant to walk the same path.",
       "weight": 4
     },
     {
@@ -1526,8 +1526,8 @@
       "aspects": [
         "entity:demon"
       ],
-      "zh": "§4你看见 {entity}，它也看见你借用的这张脸。§8借来的脸在火里尤其好认。",
-      "en": "§4You see {entity}. It sees the borrowed face as well. §8A borrowed face is especially easy to recognize in fire.",
+      "zh": "若那{entity}敢于冒犯，便让它见识一下何为真正的深渊威压。",
+      "en": "Should that {entity} dare offend you, show it the weight of true Abyssal dread.",
       "weight": 4
     },
     {
@@ -1535,8 +1535,8 @@
       "aspects": [
         "entity:dragon"
       ],
-      "zh": "§5{entity} 把天空当成私人走廊。§8走廊的通行费写在翅膀的影子里。",
-      "en": "§5{entity} treats the sky as a private corridor. §8The toll is written in the shadow of the wings.",
+      "zh": "巨兽的咆哮震动虚空，却撼动不了守门人半点心神。",
+      "en": "The roar of the great beast shakes the void, yet stirs not a hair on the Gatekeeper's brow.",
       "weight": 4
     },
     {
@@ -1544,8 +1544,8 @@
       "aspects": [
         "entity:dread"
       ],
-      "zh": "§4{entity} 咳嗽的方式像在宣读名单。§8名单上如果没有你，只是还没念到。",
-      "en": "§4{entity} coughs the way one reads a list. §8If your name is not on it, that only means it has not been reached.",
+      "zh": "凡人踏入恐惧之地却未能保全自己，最终便会化作如{entity}这般的丑陋怪物。",
+      "en": "Mortals who enter the Dreadlands and fail to keep themselves whole end as wretched things like {entity}.",
       "weight": 4
     },
     {
@@ -1553,8 +1553,8 @@
       "aspects": [
         "entity:dread"
       ],
-      "zh": "§8靠近 {entity}，空气会变干。§7干不是清洁。是水分已经选择了另一边。",
-      "en": "§8Near {entity} the air goes dry. §7Dry is not clean. The moisture has chosen another side.",
+      "zh": "用利刃与火焰净化眼前的{entity}吧，否则它只会继续散播绝望的瘟疫。",
+      "en": "Purge that {entity} before you with steel and flame, lest it spread its plague of despair further.",
       "weight": 4
     },
     {
@@ -1562,8 +1562,8 @@
       "aspects": [
         "entity:enderman"
       ],
-      "zh": "§5{entity} 搬得动方块，搬不动自己的注视。§8所以它讨厌被看。被看是一种它不会的搬运。",
-      "en": "§5{entity} can carry blocks. It cannot carry its own stare. §8That is why it hates being seen. Being seen is a carrying it never learned.",
+      "zh": "空间在{entity}周身微微扭曲，恰如犹格·索托斯门扉开启前的一丝微澜。",
+      "en": "Space ripples faintly around {entity}, like a tiny tremor before the Gate of Yog-Sothoth swings wide.",
       "weight": 4
     },
     {
@@ -1571,8 +1571,8 @@
       "aspects": [
         "entity:ghoul"
       ],
-      "zh": "§4{entity} 还记得肉的形状，忘了肉原来的主人。§8遗忘在这里是一种消化。",
-      "en": "§4{entity} still remembers the shape of flesh and has forgotten the former owner. §8Forgetting, here, is a kind of digestion.",
+      "zh": "腐臭与恶寒随着{entity}的逼近而弥漫开来。赐予它一个痛快的终结吧。",
+      "en": "Stench and chill creep closer with {entity}. Grant it a swift end.",
       "weight": 4
     },
     {
@@ -1580,8 +1580,8 @@
       "aspects": [
         "entity:ghoul"
       ],
-      "zh": "§8别跟 {entity} 讨论埋葬。§7它的意见是：埋葬是一种把食物藏起来的坏习惯。",
-      "en": "§8Do not discuss burial with {entity}. §7Its opinion is that burial is a bad habit of hiding food.",
+      "zh": "看着{entity}那副枯槁的模样——那就是过度沉溺于肉体欲望与黑暗力量的下场。",
+      "en": "Look at the gaunt frame of {entity}—such is the end of gorging on dark power and base hunger.",
       "weight": 4
     },
     {
@@ -1589,8 +1589,8 @@
       "aspects": [
         "entity:golem"
       ],
-      "zh": "§7{entity} 的忠诚是别人写进去的。§8写进去的东西可以擦。擦的时候它不会谢谢你。",
-      "en": "§7The loyalty of {entity} was written in by someone else. §8What was written can be erased. It will not thank you while you erase it.",
+      "zh": "若连死物都能被赋予行动的指令，你又怎知自己不是某位外神指尖的一尊{entity}？",
+      "en": "If even dead matter can be given marching orders, how do you know you are not a {entity} at some Outer God's fingertips?",
       "weight": 4
     },
     {
@@ -1598,8 +1598,8 @@
       "aspects": [
         "entity:golem"
       ],
-      "zh": "§8{entity} 不做梦。§7不做梦的守卫，最适合守一扇也不做梦的门。",
-      "en": "§8{entity} does not dream. §7A guard that does not dream is the right guard for a gate that does not dream either.",
+      "zh": "冰冷的{entity}不会流血，也不会哀嚎，直到它被彻底砸成一堆废铁或碎石。",
+      "en": "Cold {entity} neither bleeds nor weeps, until it is smashed back into scrap and rubble.",
       "weight": 4
     },
     {
@@ -1607,8 +1607,8 @@
       "aspects": [
         "entity:item"
       ],
-      "zh": "§7{entity} 躺在地上，像一句被主人弃权的话。§8弃权的话仍然可以被捡起来，重新说。",
-      "en": "§7{entity} lies on the ground like a sentence its owner abstained from. §8An abstained sentence can still be picked up and spoken again.",
+      "zh": "尘归尘，土归土。无人拾取的{entity}很快便会消散在虚空之中。",
+      "en": "Dust to dust. An unclaimed {entity} soon dissolves back into nothingness.",
       "weight": 4
     },
     {
@@ -1616,8 +1616,8 @@
       "aspects": [
         "entity:item"
       ],
-      "zh": "§8地上的 {entity} 没有腿，可它在旅行。§7旅行的目的地通常是一只更贪的手。",
-      "en": "§8{entity} on the ground has no legs, and still it travels. §7The destination is usually a greedier hand.",
+      "zh": "你的目光落在了地上的{entity}。去吧，拿走这属于尘世的碎屑。",
+      "en": "Your eyes fall upon {entity} on the ground. Go on—gather up that earthly scrap.",
       "weight": 4
     },
     {
@@ -1625,8 +1625,8 @@
       "aspects": [
         "entity:looked"
       ],
-      "zh": "§e你在看 {looked}。§8看是一种不经允许的接触。接触会留下温度。",
-      "en": "§eYou are looking at {looked}. §8Looking is a touch without permission. Touch leaves heat.",
+      "zh": "既已看准了{looked}，便决定它的命运吧：放过它，或是将它碾作尘埃。",
+      "en": "Now that you have {looked} in your sights, decide its fate: spare it, or grind it to dust.",
       "weight": 4
     },
     {
@@ -1634,8 +1634,8 @@
       "aspects": [
         "entity:minion"
       ],
-      "zh": "§7{entity} 不是主人。§8它是一句被派出来的话，话本身没有决定权。",
-      "en": "§7{entity} is not the master. §8It is a sentence sent out on an errand. The sentence has no vote.",
+      "zh": "哪怕只是门扉守卫者最微末的{entity}，也携带着来自奥穆索的冰冷威严。",
+      "en": "Even the humblest {entity} of the Gatekeeper carries the cold majesty of Omothol.",
       "weight": 4
     },
     {
@@ -1643,8 +1643,8 @@
       "aspects": [
         "entity:minion"
       ],
-      "zh": "§8打倒 {entity} 不会让写信的人停笔。§5笔在更远的地方，而且不疼。",
-      "en": "§8Striking down {entity} will not make the writer stop. §5The pen is farther away, and it does not hurt.",
+      "zh": "Iä! {entity}已在此待命，只待一声令下便会扑向猎物。",
+      "en": "Iä! {entity} waits ready here, needing only a word to lunge at its prey.",
       "weight": 4
     },
     {
@@ -1652,8 +1652,8 @@
       "aspects": [
         "entity:omothol"
       ],
-      "zh": "§5{entity} 带着锁的气味。§8不是铁的气味。是一种算式被写完之后的气味。",
-      "en": "§5{entity} carries the smell of a lock. §8Not the smell of iron. The smell of a sum after it has been finished.",
+      "zh": "{entity}的目光穿透了你的皮囊，仿佛在分辨你究竟是主人，还是一个偷穿圣袍的窃贼。",
+      "en": "The gaze of {entity} pierces your hide, weighing whether you are its master or a thief in stolen robes.",
       "weight": 4
     },
     {
@@ -1661,8 +1661,8 @@
       "aspects": [
         "entity:omothol"
       ],
-      "zh": "§7{entity} 出现在不该出现的地方，说明有人把钥匙借出去了。§5借钥匙的人，很少还得起。",
-      "en": "§7{entity} appearing where it should not means someone lent a key. §5People who lend keys rarely repay the loan.",
+      "zh": "奥穆索的住民从不轻易施舍怜悯——若无死灵之书在手，在{entity}眼中你便毫无价值。",
+      "en": "The denizens of Omothol never deal in pity; without a Necronomicon, you are worthless in {entity}'s eyes.",
       "weight": 4
     },
     {
@@ -1670,8 +1670,8 @@
       "aspects": [
         "entity:projectile"
       ],
-      "zh": "§c{entity} 已经离手。§8离手的东西最诚实：它不再听劝，只听方向。",
-      "en": "§c{entity} has already left the hand. §8What has left the hand is honest. It no longer listens to advice, only to direction.",
+      "zh": "{entity}虽快，却快不过空间撕裂时的那一瞬闪光。",
+      "en": "Swift as {entity} flies, it is slower than the flash of space tearing apart.",
       "weight": 4
     },
     {
@@ -1679,8 +1679,8 @@
       "aspects": [
         "entity:projectile"
       ],
-      "zh": "§7躲开 {entity}，如果你还打算用这具身体听我把话说完。§8话不喜欢被打断成两截。",
-      "en": "§7Dodge {entity}, if you still mean to hear me finish in this body. §8A sentence dislikes being cut in half.",
+      "zh": "留神那道飞来的{entity}——哪怕是细小的箭矢，攒射之下也能洞穿铠甲。",
+      "en": "Mind that incoming {entity}—even a slender shaft pierces plate when loosed in earnest.",
       "weight": 4
     },
     {
@@ -1688,8 +1688,8 @@
       "aspects": [
         "entity:shadow"
       ],
-      "zh": "§8{entity} 比光先学会走路。§5所以它不需要你把火把放下才存在。",
-      "en": "§8{entity} learned to walk before the light did. §5It does not need you to lower the torch in order to exist.",
+      "zh": "在{entity}面前，寻常的刀剑往往显得笨拙而无力，唯有深渊的力量能与之抗衡。",
+      "en": "Against {entity}, common blades often feel clumsy and dull; only Abyssal power meets it on equal ground.",
       "weight": 4
     },
     {
@@ -1697,8 +1697,8 @@
       "aspects": [
         "entity:shadow"
       ],
-      "zh": "§5盯着 {entity} 看，你会以为自己在看一块污渍。§8污渍不会回看。它会。",
-      "en": "§5Stare at {entity} and you will think you are looking at a stain. §8A stain does not look back. This does.",
+      "zh": "Iä! {entity}的眼睛在漆黑中闪烁，宛如黑暗领域向现世投来的冰冷一瞥。",
+      "en": "Iä! The eyes of {entity} glint in the pitch dark, like a cold glance cast from the Dark Realm.",
       "weight": 4
     },
     {
@@ -1706,8 +1706,8 @@
       "aspects": [
         "entity:shoggoth"
       ],
-      "zh": "§2{entity} 没有固定的脸，所以每一张脸都是临时的。§8临时的东西最不在乎弄丢。",
-      "en": "§2{entity} has no fixed face, so every face is provisional. §8Provisional things care the least about losing one.",
+      "zh": "Tekeli-li! {entity}的咆哮声撕扯着耳膜，连死灵之书的持有者也必须对它保持敬畏。",
+      "en": "Tekeli-li! The shriek of {entity} tears at the ears; even a bearer of the Necronomicon must treat it with wariness.",
       "weight": 4
     },
     {
@@ -1715,8 +1715,8 @@
       "aspects": [
         "entity:skeleton"
       ],
-      "zh": "§7{entity} 把肉还了回去，把弓留下来。§8留下的通常是更有用的那一半。",
-      "en": "§7{entity} returned the flesh and kept the bow. §8What is kept is usually the more useful half.",
+      "zh": "敲碎这具{entity}的骨殖吧。死去已久的东西，理当安分地回到坟墓里去。",
+      "en": "Shatter the bones of this {entity}. What died long ago ought to stay quiet in its grave.",
       "weight": 4
     },
     {
@@ -1724,8 +1724,8 @@
       "aspects": [
         "entity:skeleton"
       ],
-      "zh": "§8{entity} 的骨头敲在一起，像一种很省纸的记账。§7每一响，少一个人。",
-      "en": "§8The bones of {entity} knock together like bookkeeping that saves on paper. §7Each click, one person fewer.",
+      "zh": "那{entity}的骸骨看似脆弱，然则暗处射出的冷箭依然致命。",
+      "en": "The frame of {entity} looks brittle, yet a cold arrow loosed from the dark remains lethal.",
       "weight": 4
     },
     {
@@ -1733,8 +1733,8 @@
       "aspects": [
         "entity:skeleton"
       ],
-      "zh": "§7箭从 {entity} 手里离开的时候没有犹豫。§8犹豫是肉的功能。它已经卸载了。",
-      "en": "§7The arrow leaves the hand of {entity} without hesitation. §8Hesitation is a function of flesh. That function has been uninstalled.",
+      "zh": "在奥穆索，连白骨都会在漫长的岁月里风化成灰——唯有这凡世的{entity}还在四处游荡。",
+      "en": "In Omothol even bone weathers to ash over the aeons—only this earthly {entity} still wanders abroad.",
       "weight": 4
     },
     {
@@ -1742,8 +1742,8 @@
       "aspects": [
         "entity:skeleton"
       ],
-      "zh": "§8白天的 {entity} 也会射。§7太阳只是一种照明，不是停战协定。",
-      "en": "§8{entity} will shoot by day as well. §7The sun is a lamp, not a ceasefire.",
+      "zh": "听啊，{entity}肋骨碰撞的脆响，宛如丧钟在为你敲响拍子。",
+      "en": "Listen to the brittle clatter of {entity}'s ribs, keeping time like a funeral bell.",
       "weight": 4
     },
     {
@@ -1751,8 +1751,8 @@
       "aspects": [
         "entity:slime"
       ],
-      "zh": "§a{entity} 把身体当成可以分割的遗产。§8遗产越分越小，恶意并不跟着变小。",
-      "en": "§a{entity} treats its body as an estate that can be divided. §8The estate gets smaller. The malice does not.",
+      "zh": "连这团没有心智的胶质都知道追逐活人的体温，何其原始的本能。",
+      "en": "Even this mindless jelly knows enough to chase the warmth of living flesh—what crude instinct.",
       "weight": 4
     },
     {
@@ -1760,8 +1760,8 @@
       "aspects": [
         "entity:slime"
       ],
-      "zh": "§7踩到 {entity} 的声音很轻。§8轻是因为你踩的是一份还没决定大小的胃口。",
-      "en": "§7The sound of stepping on {entity} is soft. §8Soft, because you are stepping on an appetite that has not chosen its size.",
+      "zh": "踩碎这团卑微的软泥吧，莫让它污了这具化身的衣角。",
+      "en": "Crush this lowly ooze underfoot; do not let it foul the hem of this simulacrum.",
       "weight": 4
     },
     {
@@ -1769,8 +1769,8 @@
       "aspects": [
         "entity:spider"
       ],
-      "zh": "§8{entity} 在墙上走，像在否定地板的权威。§7权威这种东西，多几条腿就显得可疑。",
-      "en": "§8{entity} walks on the wall as if denying the authority of the floor. §7Authority looks suspicious once there are extra legs.",
+      "zh": "无论{entity}爬得有多快，也逃不出群星归位时那张笼罩天地的巨网。",
+      "en": "However swiftly {entity} scuttles, it cannot outrun the vast web that falls when the stars are right.",
       "weight": 4
     },
     {
@@ -1778,8 +1778,8 @@
       "aspects": [
         "entity:spider"
       ],
-      "zh": "§7{entity} 的眼睛很多，可它并不因此更懂你。§8多出来的眼睛只是为了不错过你逃跑的方向。",
-      "en": "§7{entity} has many eyes and is not wiser for them. §8The extra eyes are only there so it does not miss the direction of your escape.",
+      "zh": "当心别让{entity}绕到你的视野盲区。多足的猎手最擅长从阴影里偷袭。",
+      "en": "Watch that {entity} does not slip into your blind spot; many-legged hunters excel at ambush.",
       "weight": 4
     },
     {
@@ -1787,8 +1787,8 @@
       "aspects": [
         "entity:undead"
       ],
-      "zh": "§8{entity} 拒绝把死亡当成句号。§7句号是给还在乎语法的人用的。",
-      "en": "§8{entity} refuses to treat death as a full stop. §7Full stops are for people who still care about grammar.",
+      "zh": "让这具{entity}彻底归于死寂吧。在这个世界上，行走的尸体已经够多了。",
+      "en": "Return this {entity} to true stillness. There are already enough walking corpses in this world.",
       "weight": 4
     },
     {
@@ -1796,8 +1796,8 @@
       "aspects": [
         "entity:undead"
       ],
-      "zh": "§7你闻得见 {entity}。§8闻得见，说明它还没完成离开。完成的东西不留气味。",
-      "en": "§7You can smell {entity}. §8If you can smell it, it has not finished leaving. Finished things leave no scent.",
+      "zh": "腐烂的皮囊下，{entity}早已忘却了生前曾有过的名字与祈祷。",
+      "en": "Beneath its rotting hide, {entity} has long forgotten the name and prayers it knew in life.",
       "weight": 4
     },
     {
@@ -1805,8 +1805,8 @@
       "aspects": [
         "entity:villager"
       ],
-      "zh": "§a{entity} 用绿宝石衡量世界。§8绿宝石衡量不了门。门不零售。",
-      "en": "§a{entity} measures the world in emeralds. §8Emeralds cannot measure a gate. Gates are not sold by the piece.",
+      "zh": "对于{entity}而言，能在一个不知情的世界里老去，或许是莫大的幸运。",
+      "en": "For {entity}, growing old in an unsuspecting world may be the greatest fortune they could ask.",
       "weight": 4
     },
     {
@@ -1814,8 +1814,8 @@
       "aspects": [
         "entity:villager"
       ],
-      "zh": "§7{entity} 关门的声音很熟练。§8熟练是一种长期害怕的职业病。",
-      "en": "§7{entity} is practiced at the sound of a closing door. §8Practice is the occupational disease of a long fear.",
+      "zh": "这些{entity}甚至不敢念出黑暗之地的名字，更遑论直面奥穆索的守门人。",
+      "en": "These {entity} dare not even speak the name of the Darklands, let alone face the Gatekeeper of Omothol.",
       "weight": 4
     },
     {
@@ -1823,8 +1823,8 @@
       "aspects": [
         "entity:witch"
       ],
-      "zh": "§5{entity} 把玻璃瓶当成小型的界。§8界里装的如果是你，瓶子不会写你的名字。",
-      "en": "§5{entity} treats a glass bottle as a small realm. §8If you are what it holds, the bottle will not write your name.",
+      "zh": "让那个喧闹的{entity}闭嘴吧，她的药水味道令人作呕。",
+      "en": "Silence that noisy {entity}; the stench of her brews turns the stomach.",
       "weight": 4
     },
     {
@@ -1832,8 +1832,8 @@
       "aspects": [
         "entity:witch"
       ],
-      "zh": "§d药水从 {entity} 手里扔出来的时候已经选好了主语。§7主语很少是瓶子自己。",
-      "en": "§dWhen the potion leaves the hand of {entity}, the subject has already been chosen. §7The subject is rarely the bottle.",
+      "zh": "区区凡俗的草药巫术，又岂能与黑暗国度真正的仪式相提并论？",
+      "en": "How could mere herbal sorcery compare to the true rituals of the Dark Realm?",
       "weight": 4
     },
     {
@@ -1841,8 +1841,8 @@
       "aspects": [
         "entity:wolf"
       ],
-      "zh": "§7{entity} 的忠诚看起来像爱。§8爱如果可以被骨头买下，就只是一种还没涨价的合同。",
-      "en": "§7The loyalty of {entity} looks like love. §8If love can be bought with a bone, it is only a contract that has not yet raised its price.",
+      "zh": "野性尚存的{entity}在荒野间自由奔跑，尚未被珊瑚或恐惧染指。",
+      "en": "Wild {entity} still runs free across the wastes, untouched as yet by Coralium or Dread.",
       "weight": 4
     },
     {
@@ -1850,8 +1850,8 @@
       "aspects": [
         "entity:wolf"
       ],
-      "zh": "§8{entity} 低吼的时候，空气会变窄。§7窄是为了让你知道：这条路已经有主人，而主人不是你。",
-      "en": "§8When {entity} growls, the air narrows. §7It narrows so you will know the path already has an owner, and the owner is not you.",
+      "zh": "顺从的猎犬与狂暴的恶狼之间，往往只隔着一道饥饿的界限。",
+      "en": "Between a loyal hound and a rabid wolf lies only the thin line of hunger.",
       "weight": 4
     },
     {
@@ -1859,8 +1859,8 @@
       "aspects": [
         "entity:zombie"
       ],
-      "zh": "§2{entity} 走路的姿势像在回忆一门已经停开的课。§8课的内容是饥饿。",
-      "en": "§2{entity} walks as if recalling a class that no longer meets. §8The subject of the class is hunger.",
+      "zh": "一剑劈开这具{entity}的头颅吧，莫让这堆腐肉继续污染你的视线。",
+      "en": "Cleave the skull of this {entity} and be done; do not let rotting meat clutter your sight.",
       "weight": 4
     },
     {
@@ -1868,8 +1868,8 @@
       "aspects": [
         "entity:zombie"
       ],
-      "zh": "§7太阳会烧 {entity}。§8烧得掉的是皮。烧不掉的是它还想靠近你的那一点。",
-      "en": "§7The sun burns {entity}. §8What burns is the skin. What does not burn is the part that still wants to come closer.",
+      "zh": "腐朽的{entity}摇摇晃晃地走来，恰如凡人文明在末日降临前的最后蹒跚。",
+      "en": "The decayed {entity} lurches forward, like mortal civilization staggering toward its final hour.",
       "weight": 4
     },
     {
@@ -1877,8 +1877,8 @@
       "aspects": [
         "entity:zombie"
       ],
-      "zh": "§8{entity} 不会敲门。§7不会敲门的客人，通常认为门是一种可以嚼的意见。",
-      "en": "§8{entity} does not knock. §7A guest who does not knock usually thinks a door is an opinion that can be chewed.",
+      "zh": "莫要被这具迟钝的{entity}围困——蚁多尚且能咬死象。",
+      "en": "Do not let sluggish {entity} box you in—even slow things kill when they swarm.",
       "weight": 4
     },
     {
@@ -1886,8 +1886,8 @@
       "aspects": [
         "entity:zombie"
       ],
-      "zh": "§2一群里如果有 {entity}，安静就会先变质。§8变质从呻吟开始，以你的名字结束。",
-      "en": "§2If {entity} is in the crowd, the quiet spoils first. §8The spoiling begins as a groan and ends as your name.",
+      "zh": "它曾经也有过名字与过往，如今却只是一具连灵魂都已遗失的空壳。",
+      "en": "Once it had a name and a past; now it is only an empty husk that misplaced even its soul.",
       "weight": 4
     }
   ]
